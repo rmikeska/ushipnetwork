@@ -1,0 +1,15 @@
+/* Typography */
+body {
+  color: $base-text-color;
+  font-size: $base-font-size;
+  font-family: $base-font-family;
+  font-weight: $base-font-weight;
+  line-height: $base-line-height;
+}
+
+h1,
+h2 {
+  font-weight: $bold;
+  text-transform: $uppercase;
+  letter-spacing: $letter-spacing;
+}
