@@ -587,8 +587,8 @@ h2 {
 /* line 20, sass/_partials/_header.scss */
 .pageHeader-logo {
   height: 49px;
-  background: transparent url("/ushipcampaigns/wp-content/themes/ushipnetwork/images/uship-logo.png") center center no-repeat;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/ushipcampaigns/wp-content/themes/ushipnetwork/images/uship-logo.svg");
+  background: transparent url("/wp-content/themes/ushipnetwork/images/uship-logo.png") center center no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/uship-logo.svg");
   background-repeat: no-repeat;
 }
 
