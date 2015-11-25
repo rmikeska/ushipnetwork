@@ -1,0 +1,16 @@
+.hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.hero-text {
+  padding: 95px 0;
+  margin: 0 auto;
+  max-width: 780px;
+  text-align: center;
+  font-weight: $bold;
+  color: $white;
+  line-height: 43.2px;
+  text-shadow: 0 4px 5.88px rgba(0, 0, 0, 0.72);
+}
