@@ -9,33 +9,20 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
+<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<?php
+		if ( have_rows('flexible_content') ):
+			while ( have_rows('flexible_content') ) : the_row();
+				if ( get_row_layout() == 'hero_small_no_cta' ): ?>
 
-	<div class="entry-content">
-		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'ushipnetwork' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
+					<?php $hero_small_image = get_sub_field('hero_small_image'); ?>
 
-	<footer class="entry-footer">
-		<?php
-			edit_post_link(
-				sprintf(
-					/* translators: %s: Name of current post */
-					esc_html__( 'Edit %s', 'ushipnetwork' ),
-					the_title( '<span class="screen-reader-text">"', '"</span>', false )
-				),
-				'<span class="edit-link">',
-				'</span>'
-			);
-		?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
+					<section class="hero" style="background-image: url('<?php echo $hero_small_image['url']; ?>');">
+						<h1 class="hero-text"><?php the_sub_field('hero_small_text'); ?></h1>
+					</section>
+
+				<?php endif; ?>
+			<?php endwhile; ?>
+		<?php endif; ?>
+</div>
 

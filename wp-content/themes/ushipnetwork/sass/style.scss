@@ -1,9 +1,7 @@
 /*
 Theme Name: ushipnetwork
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
-Description: Description
+Author: Rudy Mikeska
+Description: uShip Site Network Theme
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -30,6 +28,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "_partials/variables";
 @import "_partials/typography";
 @import "_partials/header";
+@import "_partials/hero";
 
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,900italic');
 
@@ -44,7 +43,7 @@ a {
 }
 
 .pageContent {
-  padding-top: 80px;
+  padding-top: 141px;
 }
 
 /* Hide some shit for now */

@@ -1,9 +1,7 @@
 /*
 Theme Name: ushipnetwork
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
-Description: Description
+Author: Rudy Mikeska
+Description: uShip Site Network Theme
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -241,7 +239,7 @@ dfn {
 /* line 142, sass/_partials/_normalize.scss */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  margin: 0;
 }
 
 /**
@@ -631,13 +629,32 @@ h2 {
   font-weight: 700;
 }
 
-/* line 37, sass/style.scss */
+/* line 1, sass/_partials/_hero.scss */
+.hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+
+/* line 7, sass/_partials/_hero.scss */
+.hero-text {
+  padding: 103px 0;
+  margin: 0 auto;
+  max-width: 780px;
+  text-align: center;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 43.2px;
+  text-shadow: 0 4px 5.88px rgba(0, 0, 0, 0.72);
+}
+
+/* line 36, sass/style.scss */
 a {
   color: #333333;
   text-decoration: none;
 }
 
-/* line 42, sass/style.scss */
+/* line 41, sass/style.scss */
 .pageWrapper {
   overflow: hidden;
   *zoom: 1;
@@ -646,18 +663,18 @@ a {
   margin-right: auto;
 }
 
-/* line 46, sass/style.scss */
+/* line 45, sass/style.scss */
 .pageContent {
-  padding-top: 80px;
+  padding-top: 141px;
 }
 
 /* Hide some shit for now */
-/* line 51, sass/style.scss */
+/* line 50, sass/style.scss */
 .pageHeader-primaryNav {
   display: none;
 }
 
-/* line 55, sass/style.scss */
+/* line 54, sass/style.scss */
 .entry-header {
   display: none;
 }
