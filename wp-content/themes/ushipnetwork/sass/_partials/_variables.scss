@@ -1,3 +1,6 @@
+/* Set Asset Path */
+$asset-path: "/wp-content/themes/ushipnetwork/images";
+
 /* Base Text Styles */
 $base-text-color: #333333;
 $base-font-size: 16px;
@@ -10,10 +13,7 @@ $bold: 700;
 $letter-spacing: 0.1em;
 $uppercase: uppercase;
 
-/* Heading Text Styles */
-
-
-/* Colors */
+/* Base Colors */
 $navy: #1C2431;
 $primary-green: #00B437;
 $bright-blue: #02AAF3;
@@ -21,3 +21,10 @@ $white: #FFFFFF;
 $light-gray: #F4F4F4;
 $uship-blue: #0083BB;
 $alert: #F65F5F;
+
+/* Header Styles */
+
+$pageheader-boxshadow: 0 3px 8px 0 rgba(0, 0, 0, 0.025);
+$pageheader-height: 80px;
+$subnav-height: 61px;
+$subnav-title-bg: #f4f4f4;

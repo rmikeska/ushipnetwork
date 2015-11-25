@@ -542,10 +542,11 @@ th {
   padding: 0;
 }
 
+/* Set Asset Path */
 /* Base Text Styles */
 /* General Text Utility Styles */
-/* Heading Text Styles */
-/* Colors */
+/* Base Colors */
+/* Header Styles */
 /* Typography */
 /* line 2, sass/_partials/_typography.scss */
 body {
@@ -571,20 +572,29 @@ h2 {
   height: 80px;
   width: 100%;
   background: #FFFFFF;
-  box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.13);
   z-index: 3;
 }
+/* line 10, sass/_partials/_header.scss */
+.pageHeader :after {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.025);
+}
 
-/* line 12, sass/_partials/_header.scss */
+/* line 21, sass/_partials/_header.scss */
 .pageHeader-homeLink {
   display: block;
   padding: 15px 34px;
   height: 80px;
-  max-width: 150px;
+  max-width: 138px;
   background: #0083BB;
 }
 
-/* line 20, sass/_partials/_header.scss */
+/* line 29, sass/_partials/_header.scss */
 .pageHeader-logo {
   height: 49px;
   background: transparent url("/wp-content/themes/ushipnetwork/images/uship-logo.png") center center no-repeat;
@@ -592,7 +602,42 @@ h2 {
   background-repeat: no-repeat;
 }
 
-/* line 38, sass/style.scss */
+/* Sub Nav */
+/* line 40, sass/_partials/_header.scss */
+.pageHeader-subNav {
+  height: 61px;
+}
+
+/* line 44, sass/_partials/_header.scss */
+.menu-about-sub-nav-container {
+  float: left;
+}
+/* line 47, sass/_partials/_header.scss */
+.menu-about-sub-nav-container li {
+  float: left;
+  min-width: 138px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 61px;
+}
+/* line 55, sass/_partials/_header.scss */
+.menu-about-sub-nav-container a {
+  display: block;
+}
+
+/* line 60, sass/_partials/_header.scss */
+.pageHeader-subNav-title {
+  background: #f4f4f4;
+  font-weight: 700;
+}
+
+/* line 37, sass/style.scss */
+a {
+  color: #333333;
+  text-decoration: none;
+}
+
+/* line 42, sass/style.scss */
 .pageWrapper {
   overflow: hidden;
   *zoom: 1;
@@ -601,12 +646,18 @@ h2 {
   margin-right: auto;
 }
 
-/* line 42, sass/style.scss */
+/* line 46, sass/style.scss */
 .pageContent {
   padding-top: 80px;
 }
 
-/* line 46, sass/style.scss */
-.pageHeader-nav {
+/* Hide some shit for now */
+/* line 51, sass/style.scss */
+.pageHeader-primaryNav {
+  display: none;
+}
+
+/* line 55, sass/style.scss */
+.entry-header {
   display: none;
 }

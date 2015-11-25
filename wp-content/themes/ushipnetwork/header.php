@@ -26,9 +26,12 @@
 		<a class="pageHeader-homeLink" href="<?php echo esc_url( home_url( '/' ) ); ?>">
 			<div class="pageHeader-logo"></div>
 		</a>
-		<nav class="pageHeader-nav">
+		<nav class="pageHeader-primaryNav">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ushipnetwork' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+		</nav>
+		<nav class="pageHeader-subNav">
+			<?php wp_nav_menu( array('menu' => 'About Sub Nav', 'items_wrap' => '<ul><li class="pageHeader-subNav-title">About</li>%3$s</ul>' ) ); ?>
 		</nav>
 	</header>
 
