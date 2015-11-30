@@ -51,6 +51,24 @@ a {
   display: none;
 }
 
-.entry-header {
-  display: none;
+.longFormContent-withDivider {
+  @include outer-container(620px);
+  padding-top: 75px;
+  padding-bottom: 75px;
+
+  p {
+    line-height: 30px;
+  }
+}
+
+.longFormContent-withDivider p:not(:last-child):after {
+  content: '/';
+  display: block;
+  margin: 0 auto;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  text-align: center;
+  line-height: 100%;
+  font-size: 30px;
+  color: #dddddd;
 }

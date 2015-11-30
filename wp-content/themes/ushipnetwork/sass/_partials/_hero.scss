@@ -1,13 +1,13 @@
-.hero {
+.heroSmall {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
 }
 
-.hero-text {
+.heroSmall-text {
   padding: 95px 0;
   margin: 0 auto;
-  max-width: 780px;
+  max-width: 800px;
   text-align: center;
   font-weight: $bold;
   color: $white;

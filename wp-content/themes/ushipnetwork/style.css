@@ -548,7 +548,7 @@ th {
 /* Typography */
 /* line 2, sass/_partials/_typography.scss */
 body {
-  color: #333333;
+  color: #262626;
   font-size: 16px;
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -604,13 +604,14 @@ h2 {
 /* line 40, sass/_partials/_header.scss */
 .pageHeader-subNav {
   height: 61px;
+  background: #FFFFFF;
 }
 
-/* line 44, sass/_partials/_header.scss */
+/* line 45, sass/_partials/_header.scss */
 .menu-about-sub-nav-container {
   float: left;
 }
-/* line 47, sass/_partials/_header.scss */
+/* line 48, sass/_partials/_header.scss */
 .menu-about-sub-nav-container li {
   float: left;
   min-width: 138px;
@@ -618,29 +619,29 @@ h2 {
   text-transform: uppercase;
   line-height: 61px;
 }
-/* line 55, sass/_partials/_header.scss */
+/* line 56, sass/_partials/_header.scss */
 .menu-about-sub-nav-container a {
   display: block;
 }
 
-/* line 60, sass/_partials/_header.scss */
+/* line 61, sass/_partials/_header.scss */
 .pageHeader-subNav-title {
   background: #f4f4f4;
   font-weight: 700;
 }
 
 /* line 1, sass/_partials/_hero.scss */
-.hero {
+.heroSmall {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
 }
 
 /* line 7, sass/_partials/_hero.scss */
-.hero-text {
+.heroSmall-text {
   padding: 95px 0;
   margin: 0 auto;
-  max-width: 780px;
+  max-width: 800px;
   text-align: center;
   font-weight: 700;
   color: #FFFFFF;
@@ -650,7 +651,7 @@ h2 {
 
 /* line 36, sass/style.scss */
 a {
-  color: #333333;
+  color: #262626;
   text-decoration: none;
 }
 
@@ -675,6 +676,29 @@ a {
 }
 
 /* line 54, sass/style.scss */
-.entry-header {
-  display: none;
+.longFormContent-withDivider {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+/* line 59, sass/style.scss */
+.longFormContent-withDivider p {
+  line-height: 30px;
+}
+
+/* line 64, sass/style.scss */
+.longFormContent-withDivider p:not(:last-child):after {
+  content: '/';
+  display: block;
+  margin: 0 auto;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  text-align: center;
+  line-height: 100%;
+  font-size: 30px;
+  color: #dddddd;
 }
