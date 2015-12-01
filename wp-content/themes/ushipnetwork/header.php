@@ -23,15 +23,17 @@
 <body <?php body_class(); ?>>
 <div class="pageWrapper">
 	<header class="pageHeader">
-		<a class="pageHeader-homeLink" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-			<div class="pageHeader-logo"></div>
-		</a>
-		<nav class="pageHeader-primaryNav">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ushipnetwork' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav>
+		<div class="pageHeader-primaryRow">
+			<a class="pageHeader-homeLink" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+				<div class="pageHeader-logo"></div>
+			</a>
+			<nav class="pageHeader-primaryNav">
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ushipnetwork' ); ?></button>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+			</nav>
+		</div>
 		<nav class="pageHeader-subNav">
-			<?php wp_nav_menu( array('menu' => 'About Sub Nav', 'items_wrap' => '<ul><li class="pageHeader-subNav-title">About</li>%3$s</ul>' ) ); ?>
+			<?php wp_nav_menu( array('menu' => 'About Sub Nav', 'items_wrap' => '<ul><li class="pageHeader-subNav-title"><a href="/">About</a></li>%3$s</ul>' ) ); ?>
 		</nav>
 	</header>
 

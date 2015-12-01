@@ -1,21 +1,20 @@
-/* Header */
-
+/*** Header ***/
 .pageHeader {
   position: fixed;
-  height: $pageheader-height;
   width: 100%;
   background: $white;
   z-index: 3;
+}
 
-  :after {
-    position: absolute;
-    content: '';
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    box-shadow: $pageheader-boxshadow;
-  }
+.pageHeader-primaryRow:after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: $pageheader-boxshadow;
 }
 
 .pageHeader-homeLink {
@@ -33,11 +32,11 @@
   background-repeat: no-repeat;
 }
 
-
-/* Sub Nav */
-
-
+/*** Sub Nav ***/
 .pageHeader-subNav {
+  position: absolute;
+  z-index: -2;
+  width: 100%;
   height: $subnav-height;
   background: $white;
 }
@@ -54,11 +53,19 @@
   }
 
   a {
-    display: block;
+    padding-bottom: 5px;
   }
 }
 
 .pageHeader-subNav-title {
   background: $subnav-title-bg;
   font-weight: $bold;
+}
+
+/*** Current Menu Item/Hover ***/
+.pageHeader .current-menu-item a,
+.pageHeader .menu-item a:hover {
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: $bright-blue;
 }

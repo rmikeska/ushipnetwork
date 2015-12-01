@@ -540,11 +540,11 @@ th {
   padding: 0;
 }
 
-/* Set Asset Path */
-/* Base Text Styles */
-/* General Text Utility Styles */
-/* Base Colors */
-/* Header Styles */
+/*** Set Asset Path ***/
+/*** Base Text ***/
+/*** General Text Utilities ***/
+/*** Base Colors ***/
+/*** Header ***/
 /* Typography */
 /* line 2, sass/_partials/_typography.scss */
 body {
@@ -563,27 +563,28 @@ h2 {
   letter-spacing: 0.1em;
 }
 
-/* Header */
-/* line 3, sass/_partials/_header.scss */
+/*** Header ***/
+/* line 2, sass/_partials/_header.scss */
 .pageHeader {
   position: fixed;
-  height: 80px;
   width: 100%;
   background: #FFFFFF;
   z-index: 3;
 }
-/* line 10, sass/_partials/_header.scss */
-.pageHeader :after {
+
+/* line 9, sass/_partials/_header.scss */
+.pageHeader-primaryRow:after {
   position: absolute;
+  z-index: -1;
   content: '';
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
-  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.025);
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.13);
 }
 
-/* line 21, sass/_partials/_header.scss */
+/* line 20, sass/_partials/_header.scss */
 .pageHeader-homeLink {
   display: block;
   padding: 15px 34px;
@@ -592,7 +593,7 @@ h2 {
   background: #0083BB;
 }
 
-/* line 29, sass/_partials/_header.scss */
+/* line 28, sass/_partials/_header.scss */
 .pageHeader-logo {
   height: 49px;
   background: transparent url("/wp-content/themes/ushipnetwork/images/uship-logo.png") center center no-repeat;
@@ -600,18 +601,21 @@ h2 {
   background-repeat: no-repeat;
 }
 
-/* Sub Nav */
-/* line 40, sass/_partials/_header.scss */
+/*** Sub Nav ***/
+/* line 36, sass/_partials/_header.scss */
 .pageHeader-subNav {
+  position: absolute;
+  z-index: -2;
+  width: 100%;
   height: 61px;
   background: #FFFFFF;
 }
 
-/* line 45, sass/_partials/_header.scss */
+/* line 44, sass/_partials/_header.scss */
 .menu-about-sub-nav-container {
   float: left;
 }
-/* line 48, sass/_partials/_header.scss */
+/* line 47, sass/_partials/_header.scss */
 .menu-about-sub-nav-container li {
   float: left;
   min-width: 138px;
@@ -619,25 +623,66 @@ h2 {
   text-transform: uppercase;
   line-height: 61px;
 }
-/* line 56, sass/_partials/_header.scss */
+/* line 55, sass/_partials/_header.scss */
 .menu-about-sub-nav-container a {
-  display: block;
+  padding-bottom: 5px;
 }
 
-/* line 61, sass/_partials/_header.scss */
+/* line 60, sass/_partials/_header.scss */
 .pageHeader-subNav-title {
   background: #f4f4f4;
   font-weight: 700;
 }
 
-/* line 1, sass/_partials/_hero.scss */
+/*** Current Menu Item/Hover ***/
+/* line 66, sass/_partials/_header.scss */
+.pageHeader .current-menu-item a,
+.pageHeader .menu-item a:hover {
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: #02AAF3;
+}
+
+/*********************
+Base
+*********************/
+/* line 40, sass/style.scss */
+a {
+  color: #262626;
+  text-decoration: none;
+}
+
+/* line 45, sass/style.scss */
+.pageHeader-primaryNav {
+  display: none;
+}
+
+/* line 49, sass/style.scss */
+.pageWrapper {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 53, sass/style.scss */
+.pageContent {
+  padding-top: 141px;
+}
+
+/*********************
+Modules
+*********************/
+/*** Hero Small ***/
+/* line 62, sass/style.scss */
 .heroSmall {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
 }
 
-/* line 7, sass/_partials/_hero.scss */
+/* line 68, sass/style.scss */
 .heroSmall-text {
   padding: 95px 0;
   margin: 0 auto;
@@ -649,33 +694,8 @@ h2 {
   text-shadow: 0 4px 5.88px rgba(0, 0, 0, 0.72);
 }
 
-/* line 36, sass/style.scss */
-a {
-  color: #262626;
-  text-decoration: none;
-}
-
-/* line 41, sass/style.scss */
-.pageWrapper {
-  overflow: hidden;
-  *zoom: 1;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* line 45, sass/style.scss */
-.pageContent {
-  padding-top: 141px;
-}
-
-/* Hide some shit for now */
-/* line 50, sass/style.scss */
-.pageHeader-primaryNav {
-  display: none;
-}
-
-/* line 54, sass/style.scss */
+/*** Long Form Content with Divider ***/
+/* line 80, sass/style.scss */
 .longFormContent-withDivider {
   overflow: hidden;
   *zoom: 1;
@@ -685,12 +705,12 @@ a {
   padding-top: 75px;
   padding-bottom: 75px;
 }
-/* line 59, sass/style.scss */
+/* line 85, sass/style.scss */
 .longFormContent-withDivider p {
   line-height: 30px;
 }
 
-/* line 64, sass/style.scss */
+/* line 90, sass/style.scss */
 .longFormContent-withDivider p:not(:last-child):after {
   content: '/';
   display: block;

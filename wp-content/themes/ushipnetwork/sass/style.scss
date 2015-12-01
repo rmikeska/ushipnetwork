@@ -28,14 +28,22 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "_partials/variables";
 @import "_partials/typography";
 @import "_partials/header";
-@import "_partials/hero";
 
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,900italic');
 
 
+
+/*********************
+Base
+*********************/
+
 a {
   color: $base-text-color;
   text-decoration: none;
+}
+
+.pageHeader-primaryNav {
+  display: none;
 }
 
 .pageWrapper {
@@ -46,11 +54,29 @@ a {
   padding-top: 141px;
 }
 
-/* Hide some shit for now */
-.pageHeader-primaryNav {
-  display: none;
+/*********************
+Modules
+*********************/
+
+/*** Hero Small ***/
+.heroSmall {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
 }
 
+.heroSmall-text {
+  padding: 95px 0;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+  font-weight: $bold;
+  color: $white;
+  line-height: 43.2px;
+  text-shadow: 0 4px 5.88px rgba(0, 0, 0, 0.72);
+}
+
+ /*** Long Form Content with Divider ***/
 .longFormContent-withDivider {
   @include outer-container(620px);
   padding-top: 75px;

@@ -23,13 +23,13 @@
 			<?php elseif (get_row_layout() == 'long_form_content_with_divider'): ?>
 
 				<section class="longFormContent-withDivider">
-					<?php while( have_rows('text_blocks') ): the_row();
+					<?php while( have_rows('long_form_content_with_divider_content') ): the_row();
 
-						$text_block = get_sub_field('text_block_paragraph');
+						$text_block = get_sub_field('long_form_content_with_divider_content_text_block');
 
 					?>
 
-					<p><?php the_sub_field('text_block_paragraph'); ?></p>
+					<p><?php the_sub_field('long_form_content_with_divider_content_text_block'); ?></p>
 
 					<?php endwhile; ?>
 				</section>
