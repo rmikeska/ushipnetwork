@@ -644,20 +644,22 @@ h2 {
 }
 
 /*********************
+**********************
 Base
+**********************
 *********************/
-/* line 40, sass/style.scss */
+/* line 41, sass/style.scss */
 a {
   color: #262626;
   text-decoration: none;
 }
 
-/* line 45, sass/style.scss */
+/* line 46, sass/style.scss */
 .pageHeader-primaryNav {
   display: none;
 }
 
-/* line 49, sass/style.scss */
+/* line 50, sass/style.scss */
 .pageWrapper {
   overflow: hidden;
   *zoom: 1;
@@ -666,23 +668,27 @@ a {
   margin-right: auto;
 }
 
-/* line 53, sass/style.scss */
+/* line 54, sass/style.scss */
 .pageContent {
   padding-top: 141px;
 }
 
 /*********************
+**********************
 Modules
+**********************
 *********************/
-/*** Hero Small ***/
-/* line 62, sass/style.scss */
+/*********************
+Hero Small
+*********************/
+/* line 71, sass/style.scss */
 .heroSmall {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
 }
 
-/* line 68, sass/style.scss */
+/* line 77, sass/style.scss */
 .heroSmall-container {
   overflow: hidden;
   *zoom: 1;
@@ -692,7 +698,7 @@ Modules
   padding: 95px 10px;
 }
 
-/* line 73, sass/style.scss */
+/* line 82, sass/style.scss */
 .heroSmall-text {
   text-align: center;
   font-weight: 700;
@@ -701,8 +707,10 @@ Modules
   text-shadow: 0 4px 5.88px rgba(0, 0, 0, 0.72);
 }
 
-/*** Long Form Content with Divider ***/
-/* line 82, sass/style.scss */
+/*********************
+Long Form Content with Divider
+*********************/
+/* line 95, sass/style.scss */
 .longFormContentWithDivider-container {
   overflow: hidden;
   *zoom: 1;
@@ -712,12 +720,12 @@ Modules
   padding: 75px 10px;
 }
 
-/* line 87, sass/style.scss */
+/* line 100, sass/style.scss */
 .longFormContentWithDivider-text {
   line-height: 30px;
 }
 
-/* line 91, sass/style.scss */
+/* line 104, sass/style.scss */
 .longFormContentWithDivider p:not(:last-child):after {
   content: '/';
   display: block;
@@ -730,23 +738,25 @@ Modules
   color: #dddddd;
 }
 
-/*** Strip Copy Callout ***/
-/* line 104, sass/style.scss */
+/*********************
+Strip Copy Callout
+*********************/
+/* line 121, sass/style.scss */
 .stripCopyCallout {
   background-color: #f4f4f4;
 }
 
-/* line 108, sass/style.scss */
+/* line 125, sass/style.scss */
 .stripCopyCallout-container {
   overflow: hidden;
   *zoom: 1;
-  max-width: 640px;
+  max-width: 660px;
   margin-left: auto;
   margin-right: auto;
   padding: 39px 10px;
 }
 
-/* line 113, sass/style.scss */
+/* line 130, sass/style.scss */
 .stripCopyCallout-text {
   font-size: 18px;
   line-height: 24px;
@@ -754,20 +764,24 @@ Modules
   font-weight: 700;
 }
 
-/*** Full Width Image ***/
-/* line 121, sass/style.scss */
+/*********************
+Full Width Image
+*********************/
+/* line 142, sass/style.scss */
 .fullWidthImage-image {
   width: 100%;
   height: auto;
 }
 
-/*** Data Strip Callout ***/
-/* line 127, sass/style.scss */
+/*********************
+Data Strip Callout
+*********************/
+/* line 152, sass/style.scss */
 .stripDataCallout {
   background-color: #000000;
 }
 
-/* line 131, sass/style.scss */
+/* line 156, sass/style.scss */
 .stripDataCallout-container {
   overflow: hidden;
   *zoom: 1;
@@ -777,7 +791,7 @@ Modules
   padding: 69px 10px;
 }
 
-/* line 136, sass/style.scss */
+/* line 161, sass/style.scss */
 .stripDataCallout-block {
   float: left;
   display: block;
@@ -790,7 +804,7 @@ Modules
   margin-right: 0;
 }
 
-/* line 141, sass/style.scss */
+/* line 166, sass/style.scss */
 .stripDataCallout-block-inner {
   overflow: hidden;
   *zoom: 1;
@@ -800,12 +814,12 @@ Modules
   height: 100%;
 }
 
-/* line 146, sass/style.scss */
+/* line 171, sass/style.scss */
 .stripDataCallout-block:not(:first-child) .stripDataCallout-block-inner {
   float: right;
 }
 
-/* line 150, sass/style.scss */
+/* line 175, sass/style.scss */
 .stripDataCallout-block-number {
   display: block;
   float: left;
@@ -816,7 +830,7 @@ Modules
   text-transform: uppercase;
 }
 
-/* line 160, sass/style.scss */
+/* line 185, sass/style.scss */
 .stripDataCallout-block-title {
   display: block;
   float: left;
