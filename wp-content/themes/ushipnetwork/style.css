@@ -683,10 +683,17 @@ Modules
 }
 
 /* line 68, sass/style.scss */
+.heroSmall-container {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 95px 10px;
+}
+
+/* line 73, sass/style.scss */
 .heroSmall-text {
-  padding: 95px 0;
-  margin: 0 auto;
-  max-width: 800px;
   text-align: center;
   font-weight: 700;
   color: #FFFFFF;
@@ -695,23 +702,23 @@ Modules
 }
 
 /*** Long Form Content with Divider ***/
-/* line 80, sass/style.scss */
-.longFormContent-withDivider {
+/* line 82, sass/style.scss */
+.longFormContentWithDivider-container {
   overflow: hidden;
   *zoom: 1;
-  max-width: 620px;
+  max-width: 640px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding: 75px 10px;
 }
-/* line 85, sass/style.scss */
-.longFormContent-withDivider p {
+
+/* line 87, sass/style.scss */
+.longFormContentWithDivider-text {
   line-height: 30px;
 }
 
-/* line 90, sass/style.scss */
-.longFormContent-withDivider p:not(:last-child):after {
+/* line 91, sass/style.scss */
+.longFormContentWithDivider p:not(:last-child):after {
   content: '/';
   display: block;
   margin: 0 auto;
@@ -721,4 +728,101 @@ Modules
   line-height: 100%;
   font-size: 30px;
   color: #dddddd;
+}
+
+/*** Strip Copy Callout ***/
+/* line 104, sass/style.scss */
+.stripCopyCallout {
+  background-color: #f4f4f4;
+}
+
+/* line 108, sass/style.scss */
+.stripCopyCallout-container {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 39px 10px;
+}
+
+/* line 113, sass/style.scss */
+.stripCopyCallout-text {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  font-weight: 700;
+}
+
+/*** Full Width Image ***/
+/* line 121, sass/style.scss */
+.fullWidthImage-image {
+  width: 100%;
+  height: auto;
+}
+
+/*** Data Strip Callout ***/
+/* line 127, sass/style.scss */
+.stripDataCallout {
+  background-color: #000000;
+}
+
+/* line 131, sass/style.scss */
+.stripDataCallout-container {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: 990px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 69px 10px;
+}
+
+/* line 136, sass/style.scss */
+.stripDataCallout-block {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  color: #FFFFFF;
+}
+/* line 89, sass/neat/grid/_span-columns.scss */
+.stripDataCallout-block:last-child {
+  margin-right: 0;
+}
+
+/* line 141, sass/style.scss */
+.stripDataCallout-block-inner {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+
+/* line 146, sass/style.scss */
+.stripDataCallout-block:not(:first-child) .stripDataCallout-block-inner {
+  float: right;
+}
+
+/* line 150, sass/style.scss */
+.stripDataCallout-block-number {
+  display: block;
+  float: left;
+  padding-right: 14px;
+  font-size: 36px;
+  line-height: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+/* line 160, sass/style.scss */
+.stripDataCallout-block-title {
+  display: block;
+  float: left;
+  max-width: 115px;
+  font-size: 11px;
+  line-height: 13.2px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
