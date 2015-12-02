@@ -34,9 +34,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 
 /*********************
+**********************
 Base
+**********************
 *********************/
-
 a {
   color: $base-text-color;
   text-decoration: none;
@@ -54,11 +55,19 @@ a {
   padding-top: 141px;
 }
 
+
+
 /*********************
+**********************
 Modules
+**********************
 *********************/
 
-/*** Hero Small ***/
+
+
+/*********************
+Hero Small
+*********************/
 .heroSmall {
   background-repeat: no-repeat;
   background-size: cover;
@@ -78,7 +87,11 @@ Modules
   text-shadow: 0 4px 5.88px rgba(0, 0, 0, 0.72);
 }
 
- /*** Long Form Content with Divider ***/
+
+
+/*********************
+Long Form Content with Divider
+*********************/
 .longFormContentWithDivider-container {
   @include outer-container(640px);
   padding: 75px 10px;
@@ -100,13 +113,17 @@ Modules
   color: #dddddd;
 }
 
-/*** Strip Copy Callout ***/
+
+
+/*********************
+Strip Copy Callout
+*********************/
 .stripCopyCallout {
   background-color: #f4f4f4;
 }
 
 .stripCopyCallout-container {
-  @include outer-container(640px);
+  @include outer-container(660px);
   padding: 39px 10px;
 }
 
@@ -117,13 +134,21 @@ Modules
   font-weight: $bold;
 }
 
-/*** Full Width Image ***/
+
+
+/*********************
+Full Width Image
+*********************/
 .fullWidthImage-image {
   width: 100%;
   height: auto;
 }
 
-/*** Data Strip Callout ***/
+
+
+/*********************
+Data Strip Callout
+*********************/
 .stripDataCallout {
   background-color: #000000;
 }
