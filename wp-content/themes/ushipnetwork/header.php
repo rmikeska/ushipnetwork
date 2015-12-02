@@ -33,7 +33,15 @@
 			</nav>
 		</div>
 		<nav class="pageHeader-subNav">
-			<?php wp_nav_menu( array('menu' => 'About Sub Nav', 'items_wrap' => '<ul><li class="pageHeader-subNav-title"><a href="/">About</a></li>%3$s</ul>' ) ); ?>
+			<?php
+				global $site_id;
+				if ($site_id == 1):
+				  wp_nav_menu( array('menu' => 'About Sub Nav', 'items_wrap' => '<ul><li class="pageHeader-subNav-title"><a href="/">About</a></li>%3$s</ul>' ) );
+				elseif ($site_id == 2):
+					wp_nav_menu( array('menu' => 'About Sub Nav', 'items_wrap' => '<ul><li class="pageHeader-subNav-title"><a href="/br/">Sobre</a></li>%3$s</ul>' ) );
+				endif;
+			?>
+
 		</nav>
 	</header>
 
