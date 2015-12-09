@@ -673,6 +673,30 @@ a {
   padding-top: 141px;
 }
 
+/* line 57, sass/style.scss */
+.white {
+  background-color: #ffffff;
+}
+
+/* line 60, sass/style.scss */
+.grey {
+  background-color: #f4f4f4;
+}
+
+/* line 63, sass/style.scss */
+.buttonGreenTransparent {
+  display: block;
+  margin: 0 auto;
+  padding: 7px 10px;
+  text-align: center;
+  max-width: 124px;
+  max-height: 43px;
+  border: 3px solid #00B437;
+  border-radius: 3px;
+  color: #00B437;
+  font-weight: 700;
+}
+
 /*********************
 **********************
 Modules
@@ -681,14 +705,14 @@ Modules
 /*********************
 Hero Small
 *********************/
-/* line 71, sass/style.scss */
+/* line 89, sass/style.scss */
 .heroSmall {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
 }
 
-/* line 77, sass/style.scss */
+/* line 95, sass/style.scss */
 .heroSmall-container {
   overflow: hidden;
   *zoom: 1;
@@ -698,7 +722,7 @@ Hero Small
   padding: 95px 10px;
 }
 
-/* line 82, sass/style.scss */
+/* line 100, sass/style.scss */
 .heroSmall-text {
   text-align: center;
   font-weight: 700;
@@ -710,7 +734,7 @@ Hero Small
 /*********************
 Long Form Content with Divider
 *********************/
-/* line 95, sass/style.scss */
+/* line 113, sass/style.scss */
 .longFormContentWithDivider-container {
   overflow: hidden;
   *zoom: 1;
@@ -720,12 +744,12 @@ Long Form Content with Divider
   padding: 75px 10px;
 }
 
-/* line 100, sass/style.scss */
+/* line 118, sass/style.scss */
 .longFormContentWithDivider-text {
   line-height: 30px;
 }
 
-/* line 104, sass/style.scss */
+/* line 122, sass/style.scss */
 .longFormContentWithDivider p:not(:last-child):after {
   content: '/';
   display: block;
@@ -741,12 +765,7 @@ Long Form Content with Divider
 /*********************
 Strip Copy Callout
 *********************/
-/* line 121, sass/style.scss */
-.stripCopyCallout {
-  background-color: #f4f4f4;
-}
-
-/* line 125, sass/style.scss */
+/* line 139, sass/style.scss */
 .stripCopyCallout-container {
   overflow: hidden;
   *zoom: 1;
@@ -756,7 +775,7 @@ Strip Copy Callout
   padding: 39px 10px;
 }
 
-/* line 130, sass/style.scss */
+/* line 144, sass/style.scss */
 .stripCopyCallout-text {
   font-size: 18px;
   line-height: 24px;
@@ -767,21 +786,23 @@ Strip Copy Callout
 /*********************
 Full Width Image
 *********************/
-/* line 142, sass/style.scss */
-.fullWidthImage-image {
-  width: 100%;
-  height: auto;
+/* line 156, sass/style.scss */
+.fullWidthImage {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 600px;
 }
 
 /*********************
 Data Strip Callout
 *********************/
-/* line 152, sass/style.scss */
+/* line 168, sass/style.scss */
 .stripDataCallout {
   background-color: #000000;
 }
 
-/* line 156, sass/style.scss */
+/* line 172, sass/style.scss */
 .stripDataCallout-container {
   overflow: hidden;
   *zoom: 1;
@@ -791,7 +812,7 @@ Data Strip Callout
   padding: 69px 10px;
 }
 
-/* line 161, sass/style.scss */
+/* line 177, sass/style.scss */
 .stripDataCallout-block {
   float: left;
   display: block;
@@ -804,7 +825,7 @@ Data Strip Callout
   margin-right: 0;
 }
 
-/* line 166, sass/style.scss */
+/* line 182, sass/style.scss */
 .stripDataCallout-block-inner {
   overflow: hidden;
   *zoom: 1;
@@ -814,12 +835,12 @@ Data Strip Callout
   height: 100%;
 }
 
-/* line 171, sass/style.scss */
+/* line 187, sass/style.scss */
 .stripDataCallout-block:not(:first-child) .stripDataCallout-block-inner {
   float: right;
 }
 
-/* line 175, sass/style.scss */
+/* line 191, sass/style.scss */
 .stripDataCallout-block-number {
   display: block;
   float: left;
@@ -830,7 +851,7 @@ Data Strip Callout
   text-transform: uppercase;
 }
 
-/* line 185, sass/style.scss */
+/* line 201, sass/style.scss */
 .stripDataCallout-block-title {
   display: block;
   float: left;
@@ -839,4 +860,139 @@ Data Strip Callout
   line-height: 13.2px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+/*********************
+Testimonials
+*********************/
+/* line 216, sass/style.scss */
+.testimonials-container {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: 1070px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 85px 10px;
+}
+
+/* line 221, sass/style.scss */
+.testimonials-intro {
+  padding-bottom: 45px;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* line 230, sass/style.scss */
+.testimonials-block {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+/* line 89, sass/neat/grid/_span-columns.scss */
+.testimonials-block:last-child {
+  margin-right: 0;
+}
+
+/* line 234, sass/style.scss */
+.testimonials-image {
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  height: 254px;
+  width: 380px;
+}
+
+/* line 243, sass/style.scss */
+.testimonials-text {
+  padding: 35px 0;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/* line 250, sass/style.scss */
+.testimonials-source {
+  padding-bottom: 10px;
+}
+
+/* line 254, sass/style.scss */
+.testimonials-source,
+.testimonials-category {
+  font-size: 18px;
+}
+
+/*********************
+Bios
+*********************/
+/* line 264, sass/style.scss */
+.bios-container {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: 840px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 85px 10px;
+}
+
+/* line 269, sass/style.scss */
+.bios-intro {
+  padding-bottom: 45px;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* line 278, sass/style.scss */
+.bios-subintro {
+  padding-bottom: 63px;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+}
+
+/* line 285, sass/style.scss */
+.bios-block {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+}
+/* line 89, sass/neat/grid/_span-columns.scss */
+.bios-block:last-child {
+  margin-right: 0;
+}
+
+/* line 289, sass/style.scss */
+.bios-image {
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  height: 192px;
+  width: 192px;
+}
+
+/* line 298, sass/style.scss */
+.bios-name {
+  padding: 26px 16px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* line 307, sass/style.scss */
+.bios-description {
+  padding-bottom: 26px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
 }

@@ -54,6 +54,24 @@ a {
 .pageContent {
   padding-top: 141px;
 }
+.white {
+  background-color: #ffffff;
+}
+.grey {
+  background-color: #f4f4f4;
+}
+.buttonGreenTransparent {
+  display: block;
+  margin: 0 auto;
+  padding: 7px 10px;
+  text-align: center;
+  max-width: 124px;
+  max-height: 43px;
+  border: 3px solid $primary-green;
+  border-radius: 3px;
+  color: $primary-green;
+  font-weight: $bold;
+}
 
 
 
@@ -118,10 +136,6 @@ Long Form Content with Divider
 /*********************
 Strip Copy Callout
 *********************/
-.stripCopyCallout {
-  background-color: #f4f4f4;
-}
-
 .stripCopyCallout-container {
   @include outer-container(660px);
   padding: 39px 10px;
@@ -139,9 +153,11 @@ Strip Copy Callout
 /*********************
 Full Width Image
 *********************/
-.fullWidthImage-image {
-  width: 100%;
-  height: auto;
+.fullWidthImage {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 600px;
 }
 
 
@@ -190,4 +206,107 @@ Data Strip Callout
   line-height: 13.2px;
   font-weight: $bold;
   text-transform: $uppercase;
+}
+
+
+
+/*********************
+Testimonials
+*********************/
+.testimonials-container {
+  @include outer-container(1070px);
+  padding: 85px 10px;
+}
+
+.testimonials-intro {
+  padding-bottom: 45px;
+  text-transform: $uppercase;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  font-weight: $bold;
+}
+
+.testimonials-block {
+  @include span-columns(6);
+}
+
+.testimonials-image {
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  height: 254px;
+  width: 380px;
+}
+
+.testimonials-text {
+  padding: 35px 0;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.testimonials-source {
+  padding-bottom: 10px;
+}
+
+.testimonials-source,
+.testimonials-category {
+  font-size: 18px;
+}
+
+
+
+/*********************
+Bios
+*********************/
+.bios-container {
+  @include outer-container(840px);
+  padding: 85px 10px;
+}
+
+.bios-intro {
+  padding-bottom: 45px;
+  text-transform: $uppercase;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  font-weight: $bold;
+}
+
+.bios-subintro {
+  padding-bottom: 63px;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.bios-block {
+  @include span-columns(4);
+}
+
+.bios-image {
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  height: 192px;
+  width: 192px;
+}
+
+.bios-name {
+  padding: 26px 16px;
+  text-align: center;
+  font-weight: $bold;
+  text-transform: $uppercase;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.bios-description {
+  padding-bottom: 26px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
 }
