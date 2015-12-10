@@ -1,0 +1,30 @@
+.pageFooter-container {
+  @include outer-container(1200px);
+  padding: 30px 10px;
+}
+
+.pageFooter-legal {
+  @include span-columns(6);
+  font-size: 16px;
+}
+
+.pageFooter-links {
+  @include span-columns(6);
+}
+
+.pageFooter-links-list {
+  float: right;
+}
+
+.pageFooter-links-list-item {
+  float: left;
+}
+
+.pageFooter-links-list-item:not(:last-child):after {
+  content: "|";
+  padding: 0 5px;
+}
+
+.pageFooter-links-list-item a {
+  color: $bright-blue;
+}
