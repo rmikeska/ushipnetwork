@@ -28,6 +28,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "_partials/variables";
 @import "_partials/typography";
 @import "_partials/header";
+@import "_partials/footer";
 
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,900italic');
 
@@ -54,11 +55,26 @@ a {
 .pageContent {
   padding-top: 141px;
 }
-.white {
-  background-color: #ffffff;
+.sectionWhite {
+  background-color: $white;
 }
-.grey {
-  background-color: #f4f4f4;
+.sectionGrey {
+  background-color: $light-grey;
+}
+.sectionNavy {
+  background-color: $navy;
+}
+.buttonGreen {
+  display: block;
+  margin: 0 auto;
+  padding: 13px 10px;
+  text-align: center;
+  max-width: 220px;
+  max-height: 50px;
+  background-color: $primary-green;
+  border-radius: 3px;
+  color: $white;
+  font-weight: $bold;
 }
 .buttonGreenTransparent {
   display: block;
@@ -309,4 +325,58 @@ Bios
   text-align: center;
   font-size: 16px;
   line-height: 24px;
+}
+
+
+
+/*********************
+Bookend
+*********************/
+.bookend-container {
+  @include outer-container(1160px);
+  padding: 64px 10px;
+  position: relative;
+}
+
+.bookend-intro {
+  padding-bottom: 32px;
+  text-transform: $uppercase;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  font-weight: $bold;
+}
+
+.bookend-nav {
+  display: block;
+  position: absolute;
+  top: 50%;
+  text-transform: $uppercase;
+  font-weight: $bold;
+}
+
+.bookend-navPrevious {
+  left: 10px;
+}
+
+.bookend-navPrevious:before {
+  float: left;
+  content: "";
+  background: url("#{$asset-path}/previous.png") center center no-repeat;
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+}
+
+.bookend-navNext {
+  right: 10px;
+}
+
+.bookend-navNext:after {
+  float: right;
+  content: "";
+  background: url("#{$asset-path}/next.png") center center no-repeat;
+  width: 24px;
+  height: 24px;
+  margin-left: 20px;
 }
