@@ -778,27 +778,36 @@ Modules
 **********************
 *********************/
 /*********************
-Hero Small
+Hero
 *********************/
 /* line 105, sass/style.scss */
-.heroSmall {
+.hero {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
 }
 
 /* line 111, sass/style.scss */
-.heroSmall-container {
+.hero-container {
   overflow: hidden;
   *zoom: 1;
   max-width: 820px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* line 115, sass/style.scss */
+.heroSmall .hero-container {
   padding: 95px 10px;
 }
 
-/* line 116, sass/style.scss */
-.heroSmall-text {
+/* line 119, sass/style.scss */
+.heroLarge .hero-container {
+  padding: 103px 10px;
+}
+
+/* line 123, sass/style.scss */
+.hero-headline {
   text-align: center;
   font-weight: 700;
   color: #FFFFFF;
@@ -806,10 +815,15 @@ Hero Small
   text-shadow: 0 4px 5.88px rgba(0, 0, 0, 0.72);
 }
 
+/* line 131, sass/style.scss */
+.heroLarge .hero-headline {
+  padding-bottom: 65px;
+}
+
 /*********************
 Long Form Content with Divider
 *********************/
-/* line 129, sass/style.scss */
+/* line 140, sass/style.scss */
 .longFormContentWithDivider-container {
   overflow: hidden;
   *zoom: 1;
@@ -819,12 +833,12 @@ Long Form Content with Divider
   padding: 75px 10px;
 }
 
-/* line 134, sass/style.scss */
+/* line 145, sass/style.scss */
 .longFormContentWithDivider-text {
   line-height: 30px;
 }
 
-/* line 138, sass/style.scss */
+/* line 149, sass/style.scss */
 .longFormContentWithDivider p:not(:last-child):after {
   content: '/';
   display: block;
@@ -840,7 +854,7 @@ Long Form Content with Divider
 /*********************
 Strip Copy Callout
 *********************/
-/* line 155, sass/style.scss */
+/* line 166, sass/style.scss */
 .stripCopyCallout-container {
   overflow: hidden;
   *zoom: 1;
@@ -850,7 +864,7 @@ Strip Copy Callout
   padding: 39px 10px;
 }
 
-/* line 160, sass/style.scss */
+/* line 171, sass/style.scss */
 .stripCopyCallout-text {
   font-size: 18px;
   line-height: 24px;
@@ -859,25 +873,48 @@ Strip Copy Callout
 }
 
 /*********************
-Full Width Image
+Strip Copy & Image Callout
 *********************/
-/* line 172, sass/style.scss */
-.fullWidthImage {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
-  height: 600px;
+/* line 183, sass/style.scss */
+.stripCopyWithImageCallout-container {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 63px 10px;
+  position: relative;
+  overflow: visible;
+}
+
+/* line 190, sass/style.scss */
+.stripCopyWithImageCallout-text {
+  margin: 0 auto;
+  max-width: 500px;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #F4F4F4;
+}
+
+/* line 201, sass/style.scss */
+.stripCopyWithImageCallout-image {
+  position: absolute;
+  top: 14px;
+  left: 10px;
 }
 
 /*********************
 Data Strip Callout
 *********************/
-/* line 184, sass/style.scss */
+/* line 212, sass/style.scss */
 .stripDataCallout {
   background-color: #000000;
 }
 
-/* line 188, sass/style.scss */
+/* line 216, sass/style.scss */
 .stripDataCallout-container {
   overflow: hidden;
   *zoom: 1;
@@ -887,7 +924,7 @@ Data Strip Callout
   padding: 69px 10px;
 }
 
-/* line 193, sass/style.scss */
+/* line 221, sass/style.scss */
 .stripDataCallout-block {
   float: left;
   display: block;
@@ -900,7 +937,7 @@ Data Strip Callout
   margin-right: 0;
 }
 
-/* line 198, sass/style.scss */
+/* line 226, sass/style.scss */
 .stripDataCallout-block-inner {
   overflow: hidden;
   *zoom: 1;
@@ -910,12 +947,12 @@ Data Strip Callout
   height: 100%;
 }
 
-/* line 203, sass/style.scss */
+/* line 231, sass/style.scss */
 .stripDataCallout-block:not(:first-child) .stripDataCallout-block-inner {
   float: right;
 }
 
-/* line 207, sass/style.scss */
+/* line 235, sass/style.scss */
 .stripDataCallout-block-number {
   display: block;
   float: left;
@@ -926,7 +963,7 @@ Data Strip Callout
   text-transform: uppercase;
 }
 
-/* line 217, sass/style.scss */
+/* line 245, sass/style.scss */
 .stripDataCallout-block-title {
   display: block;
   float: left;
@@ -938,9 +975,20 @@ Data Strip Callout
 }
 
 /*********************
+Full Width Image
+*********************/
+/* line 260, sass/style.scss */
+.fullWidthImage {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 600px;
+}
+
+/*********************
 Testimonials
 *********************/
-/* line 232, sass/style.scss */
+/* line 272, sass/style.scss */
 .testimonials-container {
   overflow: hidden;
   *zoom: 1;
@@ -950,7 +998,7 @@ Testimonials
   padding: 85px 10px;
 }
 
-/* line 237, sass/style.scss */
+/* line 277, sass/style.scss */
 .testimonials-intro {
   padding-bottom: 45px;
   text-transform: uppercase;
@@ -960,7 +1008,7 @@ Testimonials
   font-weight: 700;
 }
 
-/* line 246, sass/style.scss */
+/* line 286, sass/style.scss */
 .testimonials-block {
   float: left;
   display: block;
@@ -972,7 +1020,7 @@ Testimonials
   margin-right: 0;
 }
 
-/* line 250, sass/style.scss */
+/* line 290, sass/style.scss */
 .testimonials-image {
   margin: 0 auto;
   background-repeat: no-repeat;
@@ -982,7 +1030,7 @@ Testimonials
   width: 380px;
 }
 
-/* line 259, sass/style.scss */
+/* line 299, sass/style.scss */
 .testimonials-text {
   padding: 35px 0;
   font-style: italic;
@@ -990,12 +1038,12 @@ Testimonials
   line-height: 30px;
 }
 
-/* line 266, sass/style.scss */
+/* line 306, sass/style.scss */
 .testimonials-source {
   padding-bottom: 10px;
 }
 
-/* line 270, sass/style.scss */
+/* line 310, sass/style.scss */
 .testimonials-source,
 .testimonials-category {
   font-size: 18px;
@@ -1004,7 +1052,7 @@ Testimonials
 /*********************
 Bios
 *********************/
-/* line 280, sass/style.scss */
+/* line 320, sass/style.scss */
 .bios-container {
   overflow: hidden;
   *zoom: 1;
@@ -1014,7 +1062,7 @@ Bios
   padding: 85px 10px;
 }
 
-/* line 285, sass/style.scss */
+/* line 325, sass/style.scss */
 .bios-intro {
   padding-bottom: 45px;
   text-transform: uppercase;
@@ -1024,7 +1072,7 @@ Bios
   font-weight: 700;
 }
 
-/* line 294, sass/style.scss */
+/* line 334, sass/style.scss */
 .bios-subintro {
   padding-bottom: 63px;
   font-size: 18px;
@@ -1032,7 +1080,7 @@ Bios
   text-align: center;
 }
 
-/* line 301, sass/style.scss */
+/* line 341, sass/style.scss */
 .bios-block {
   float: left;
   display: block;
@@ -1044,7 +1092,7 @@ Bios
   margin-right: 0;
 }
 
-/* line 305, sass/style.scss */
+/* line 345, sass/style.scss */
 .bios-image {
   margin: 0 auto;
   background-repeat: no-repeat;
@@ -1054,7 +1102,7 @@ Bios
   width: 192px;
 }
 
-/* line 314, sass/style.scss */
+/* line 354, sass/style.scss */
 .bios-name {
   padding: 26px 16px;
   text-align: center;
@@ -1064,7 +1112,7 @@ Bios
   line-height: 24px;
 }
 
-/* line 323, sass/style.scss */
+/* line 363, sass/style.scss */
 .bios-description {
   padding-bottom: 26px;
   text-align: center;
@@ -1075,7 +1123,7 @@ Bios
 /*********************
 Bookend
 *********************/
-/* line 335, sass/style.scss */
+/* line 375, sass/style.scss */
 .bookend-container {
   overflow: hidden;
   *zoom: 1;
@@ -1086,7 +1134,7 @@ Bookend
   position: relative;
 }
 
-/* line 341, sass/style.scss */
+/* line 381, sass/style.scss */
 .bookend-intro {
   padding-bottom: 32px;
   text-transform: uppercase;
@@ -1096,7 +1144,7 @@ Bookend
   font-weight: 700;
 }
 
-/* line 350, sass/style.scss */
+/* line 390, sass/style.scss */
 .bookend-nav {
   display: block;
   position: absolute;
@@ -1105,12 +1153,12 @@ Bookend
   font-weight: 700;
 }
 
-/* line 358, sass/style.scss */
+/* line 398, sass/style.scss */
 .bookend-navPrevious {
   left: 10px;
 }
 
-/* line 362, sass/style.scss */
+/* line 402, sass/style.scss */
 .bookend-navPrevious:before {
   float: left;
   content: "";
@@ -1120,12 +1168,12 @@ Bookend
   margin-right: 20px;
 }
 
-/* line 371, sass/style.scss */
+/* line 411, sass/style.scss */
 .bookend-navNext {
   right: 10px;
 }
 
-/* line 375, sass/style.scss */
+/* line 415, sass/style.scss */
 .bookend-navNext:after {
   float: right;
   content: "";

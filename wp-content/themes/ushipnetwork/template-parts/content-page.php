@@ -12,13 +12,23 @@
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php if (have_rows('flexible_content')):
 		while (have_rows('flexible_content')) : the_row();
-			if (get_row_layout() == 'hero_small_no_cta'): ?>
+			if (get_row_layout() == 'hero'): ?>
 
-				<?php $hero_small_image = get_sub_field('hero_small_image'); ?>
+			  <?php $hero_size = get_sub_field('hero_size'); ?>
+				<?php $hero_image = get_sub_field('hero_image'); ?>
 
-				<section class="heroSmall" style="background-image: url('<?php echo $hero_small_image['url']; ?>');">
-					<div class="heroSmall-container">
-						<h1 class="heroSmall-text"><?php the_sub_field('hero_small_text'); ?></h1>
+				<section class="hero <?php echo $hero_size; ?>" style="background-image: url('<?php echo $hero_image['url']; ?>');">
+					<div class="hero-container">
+						<h1 class="hero-headline"><?php the_sub_field('hero_headline'); ?></h1>
+						<h5 class="hero-subheadline"><?php the_sub_field('hero_subheadline'); ?></h5>
+
+						<?php while(have_rows('hero_cta')): the_row(); ?>
+
+							<?php $hero_cta_url = get_sub_field('hero_cta_url'); ?>
+
+							<a class="hero-cta buttonGreen" href="<?php echo $hero_cta_url; ?>"><?php the_sub_field('hero_cta_text'); ?></a>
+
+						<?php endwhile; ?>
 					</div>
 				</section>
 
@@ -44,11 +54,16 @@
 					</div>
 				</section>
 
-			<?php elseif (get_row_layout() == 'full_width_image'): ?>
+			<?php elseif (get_row_layout() == 'strip_copy_with_image_callout'): ?>
 
-				<?php $full_width_image_image = get_sub_field('full_width_image_image'); ?>
+				<?php $section_bg_color = get_sub_field('strip_copy_with_image_callout_background_color'); ?>
+				<?php $strip_copy_with_image_callout_image = get_sub_field('strip_copy_with_image_callout_image'); ?>
 
-				<section class="fullWidthImage" style="background-image: url('<?php echo $full_width_image_image['url']; ?>');">
+				<section class="stripCopyWithImageCallout <?php echo $section_bg_color; ?>">
+					<div class="stripCopyWithImageCallout-container">
+						<h3 class="stripCopyWithImageCallout-text"><?php the_sub_field('strip_copy_with_image_callout_text'); ?></h3>
+						<img class="stripCopyWithImageCallout-image" src="<?php echo $strip_copy_with_image_callout_image['url']; ?>">
+					</div>
 				</section>
 
 			<?php elseif (get_row_layout() == 'strip_data_callout'): ?>
@@ -68,6 +83,13 @@
 							<?php endwhile; ?>
 						<?php endwhile; ?>
 					</div>
+				</section>
+
+			<?php elseif (get_row_layout() == 'full_width_image'): ?>
+
+				<?php $full_width_image_image = get_sub_field('full_width_image_image'); ?>
+
+				<section class="fullWidthImage" style="background-image: url('<?php echo $full_width_image_image['url']; ?>');">
 				</section>
 
 			<?php elseif (get_row_layout() == 'testimonials'): ?>

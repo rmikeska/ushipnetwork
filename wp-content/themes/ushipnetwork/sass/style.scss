@@ -100,25 +100,36 @@ Modules
 
 
 /*********************
-Hero Small
+Hero
 *********************/
-.heroSmall {
+.hero {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
 }
 
-.heroSmall-container {
+.hero-container {
   @include outer-container(820px);
+}
+
+.heroSmall .hero-container {
   padding: 95px 10px;
 }
 
-.heroSmall-text {
+.heroLarge .hero-container {
+  padding: 103px 10px;
+}
+
+.hero-headline {
   text-align: center;
   font-weight: $bold;
   color: $white;
   line-height: 43.2px;
   text-shadow: 0 4px 5.88px rgba(0, 0, 0, 0.72);
+}
+
+.heroLarge .hero-headline {
+  padding-bottom: 65px;
 }
 
 
@@ -167,13 +178,30 @@ Strip Copy Callout
 
 
 /*********************
-Full Width Image
+Strip Copy & Image Callout
 *********************/
-.fullWidthImage {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
-  height: 600px;
+.stripCopyWithImageCallout-container {
+  @include outer-container(1000px);
+  padding: 63px 10px;
+  position: relative;
+  overflow: visible;
+}
+
+.stripCopyWithImageCallout-text {
+  margin: 0 auto;
+  max-width: 500px;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  font-weight: $bold;
+  text-transform: $uppercase;
+  color: $light-grey;
+}
+
+.stripCopyWithImageCallout-image {
+  position: absolute;
+  top: 14px;
+  left: 10px;
 }
 
 
@@ -222,6 +250,18 @@ Data Strip Callout
   line-height: 13.2px;
   font-weight: $bold;
   text-transform: $uppercase;
+}
+
+
+
+/*********************
+Full Width Image
+*********************/
+.fullWidthImage {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 600px;
 }
 
 
