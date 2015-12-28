@@ -55,34 +55,45 @@ a {
 .pageContent {
   padding-top: 141px;
 }
+
 .sectionWhite {
   background-color: $white;
 }
+
 .sectionGrey {
   background-color: $light-grey;
 }
+
 .sectionNavy {
   background-color: $navy;
 }
+
 .buttonGreen {
   display: block;
   margin: 0 auto;
-  padding: 13px 10px;
   text-align: center;
-  max-width: 220px;
-  max-height: 50px;
   background-color: $primary-green;
   border-radius: 3px;
   color: $white;
   font-weight: $bold;
 }
+
+.buttonLarge {
+  padding: 10px 10px;
+  max-width: 220px;
+  max-height: 50px;
+}
+
+.buttonSmall {
+  padding: 7px 10px;
+  max-width: 124px;
+  max-height: 43px;
+}
+
 .buttonGreenTransparent {
   display: block;
   margin: 0 auto;
-  padding: 7px 10px;
   text-align: center;
-  max-width: 124px;
-  max-height: 43px;
   border: 3px solid $primary-green;
   border-radius: 3px;
   color: $primary-green;
@@ -202,6 +213,7 @@ Strip Copy & Image Callout
   position: absolute;
   top: 14px;
   left: 10px;
+  z-index: 2;
 }
 
 
@@ -250,6 +262,131 @@ Data Strip Callout
   line-height: 13.2px;
   font-weight: $bold;
   text-transform: $uppercase;
+}
+
+
+
+/*********************
+Image L/R, Copy L/R With Background Image
+*********************/
+.imageCopyWithBackground {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  position: relative;
+  overflow: hidden;
+}
+
+.imageCopyWithBackground:before {
+  content: '';
+  position: absolute;
+  top: -150%;
+  width: 100%;
+  height: 300%;
+}
+
+.imageCopyWithBackground.positionRight:before {
+  left: -40%;
+  -webkit-transform: rotate(-330deg);
+  -moz-transform: rotate(-330deg);
+  transform: rotate(-330deg);
+}
+
+.imageCopyWithBackground.positionLeft:before {
+  right: -40%;
+  -webkit-transform: rotate(330deg);
+  -moz-transform: rotate(330deg);
+  transform: rotate(330deg);
+}
+
+.imageCopyWithBackground.overlayGrey:before {
+  background-color: $light-grey;
+}
+
+.imageCopyWithBackground.overlayWhite:before {
+  background-color: $white;
+}
+
+// .imageCopyWithBackground.overlayWhite {
+//   background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
+// }
+
+.imageCopyWithBackground-container {
+  @include outer-container(1160px);
+  padding: 85px 10px;
+  position: relative;
+}
+
+.imageCopyWithBackground-copy,
+.imageCopyWithBackground-image {
+  @include span-columns(6);
+}
+
+.imageCopyWithBackground.positionLeft .imageCopyWithBackground-image {
+  float: left;
+}
+
+.imageCopyWithBackground.positionLeft .imageCopyWithBackground-copy {
+  float: right;
+}
+
+.imageCopyWithBackground.positionRight .imageCopyWithBackground-image {
+  float: right;
+}
+
+.imageCopyWithBackground.positionRight .imageCopyWithBackground-copy {
+  float: left;
+}
+
+.imageCopyWithBackground-image-image {
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+  max-width: 500px;
+  height: auto;
+}
+
+.imageCopyWithBackground.positionLeft .imageCopyWithBackground-image-image {
+  left: 10px;
+}
+
+.imageCopyWithBackground.positionRight .imageCopyWithBackground-image-image {
+  right: 0;
+}
+
+.imageCopyWithBackground.alignmentMiddle .imageCopyWithBackground-image-image {
+  top: 0;
+}
+
+.imageCopyWithBackground.alignmentBottom .imageCopyWithBackground-image-image {
+  top: auto;
+}
+
+.imageCopyWithBackground-copy-intro {
+  padding-bottom: 18px;
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: $bold;
+  text-transform: $uppercase;
+  line-height: 24px;
+  border-bottom: 2px solid #e6e6e6;
+}
+
+.imageCopyWithBackground-copy-block-title {
+  font-weight: $bold;
+  text-transform: $uppercase;
+}
+
+.imageCopyWithBackground-copy-block-text {
+  padding-bottom: 20px;
+  line-height: 30px;
+}
+
+.imageCopyWithBackground-copy-block-custom strong {
+  font-weight: $bold;
+  text-transform: $uppercase;
+  font-size: 14px;
+  line-height: 30px;
 }
 
 

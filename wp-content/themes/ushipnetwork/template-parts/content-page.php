@@ -26,7 +26,7 @@
 
 							<?php $hero_cta_url = get_sub_field('hero_cta_url'); ?>
 
-							<a class="hero-cta buttonGreen" href="<?php echo $hero_cta_url; ?>"><?php the_sub_field('hero_cta_text'); ?></a>
+							<a class="hero-cta buttonGreen buttonLarge" href="<?php echo $hero_cta_url; ?>"><?php the_sub_field('hero_cta_text'); ?></a>
 
 						<?php endwhile; ?>
 					</div>
@@ -85,6 +85,51 @@
 					</div>
 				</section>
 
+			<?php elseif (get_row_layout() == 'image_copy_with_background'): ?>
+
+				<?php $bg_image = get_sub_field('image_copy_with_background_background_image'); ?>
+				<?php $bg_image_overlay = get_sub_field('image_copy_with_background_background_image_overlay'); ?>
+				<?php $bg_color = get_sub_field('image_copy_with_background_background_color'); ?>
+				<?php $image_horizontal_position = get_sub_field('image_copy_with_background_feature_image_horizontal_position'); ?>
+				<?php $image_vertical_position = get_sub_field('image_copy_with_background_feature_image_vertical_position'); ?>
+				<?php $image = get_sub_field('image_copy_with_background_feature_image'); ?>
+
+				<section class="imageCopyWithBackground <?php echo $bg_color . ' ' . $image_horizontal_position . ' ' . $image_vertical_position; ?>" style="background-image: <?php echo $bg_image_overlay; ?>, url('<?php echo $bg_image['url']; ?>');">
+					<div class="imageCopyWithBackground-container">
+						<div class="imageCopyWithBackground-image">
+							<img class="imageCopyWithBackground-image-image" src="<?php echo $image['url']; ?>">
+						</div>
+						<div class="imageCopyWithBackground-copy">
+							<h3 class="imageCopyWithBackground-copy-intro"><?php the_sub_field('image_copy_with_background_copy_intro'); ?></h3>
+
+							<?php while(have_rows('image_copy_with_background_copy_block')): the_row(); ?>
+								<?php while(have_rows('image_copy_with_background_copy_block_content')): the_row(); ?>
+
+									<?php if (get_sub_field('image_copy_with_background_copy_block_title') && get_sub_field('image_copy_with_background_copy_block_title') != ""): ?>
+									  <h6 class="imageCopyWithBackground-copy-block-title"><?php the_sub_field('image_copy_with_background_copy_block_title'); ?></h6>
+									<?php endif; ?>
+
+									<p class="imageCopyWithBackground-copy-block-text"><?php the_sub_field('image_copy_with_background_copy_block_text'); ?></p>
+
+									<?php if (get_sub_field('image_copy_with_background_copy_block_custom') && get_sub_field('image_copy_with_background_copy_block_custom') != ""): ?>
+									  <div class="imageCopyWithBackground-copy-block-custom"><?php the_sub_field('image_copy_with_background_copy_block_custom'); ?></div>
+									<?php endif; ?>
+
+								<?php endwhile; ?>
+							<?php endwhile; ?>
+
+							<?php while(have_rows('image_copy_with_background_copy_cta')): the_row(); ?>
+
+								<?php $cta_url = get_sub_field('image_copy_with_background_copy_cta_url'); ?>
+
+								<a class="imageCopyWithBackground-cta buttonGreenTransparent buttonLarge" href="<?php echo $cta_url; ?>"><?php the_sub_field('image_copy_with_background_copy_cta_text'); ?></a>
+
+							<?php endwhile; ?>
+
+						</div>
+					</div>
+				</section>
+
 			<?php elseif (get_row_layout() == 'full_width_image'): ?>
 
 				<?php $full_width_image_image = get_sub_field('full_width_image_image'); ?>
@@ -136,7 +181,7 @@
 									<div class="bios-image" style="background-image: url('<?php echo $bios_image['url']; ?>');"></div>
 									<p class="bios-name"><?php the_sub_field('bios_name'); ?></p>
 									<p class="bios-description"><?php the_sub_field('bios_description'); ?></p>
-									<a class="bios-linkedin buttonGreenTransparent" target="_blank" href="<?php echo $bios_linkedin_url; ?>">LinkedIn</a>
+									<a class="bios-linkedin buttonGreenTransparent buttonSmall" target="_blank" href="<?php echo $bios_linkedin_url; ?>">LinkedIn</a>
 								</div>
 
 							<?php endwhile; ?>
@@ -151,7 +196,7 @@
 				<section class="bookend">
 					<div class="bookend-container">
 						<h3 class="bookend-intro"><?php the_sub_field('bookend_intro'); ?></h3>
-						<a class="bookend-cta buttonGreen" href="<?php echo $bookend_cta_url; ?>"><?php the_sub_field('bookend_cta_text'); ?></a>
+						<a class="bookend-cta buttonGreen buttonLarge" href="<?php echo $bookend_cta_url; ?>"><?php the_sub_field('bookend_cta_text'); ?></a>
 
 						<?php while(have_rows('bookend_previous_block')): the_row(); ?>
 
