@@ -557,7 +557,8 @@ body {
 
 /* line 10, sass/_partials/_typography.scss */
 h1,
-h2 {
+h2,
+h3 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -1348,7 +1349,7 @@ Contact
 /*********************
 Bookend
 *********************/
-/* line 557, sass/style.scss */
+/* line 558, sass/style.scss */
 .bookend-container {
   overflow: hidden;
   *zoom: 1;
@@ -1359,7 +1360,7 @@ Bookend
   position: relative;
 }
 
-/* line 563, sass/style.scss */
+/* line 564, sass/style.scss */
 .bookend-intro {
   padding-bottom: 32px;
   text-transform: uppercase;
@@ -1369,7 +1370,7 @@ Bookend
   font-weight: 700;
 }
 
-/* line 572, sass/style.scss */
+/* line 573, sass/style.scss */
 .bookend-nav {
   display: block;
   position: absolute;
@@ -1379,12 +1380,12 @@ Bookend
   color: #262626;
 }
 
-/* line 581, sass/style.scss */
+/* line 582, sass/style.scss */
 .bookend-navPrevious {
   left: 10px;
 }
 
-/* line 585, sass/style.scss */
+/* line 586, sass/style.scss */
 .bookend-navPrevious:before {
   float: left;
   content: "";
@@ -1394,12 +1395,12 @@ Bookend
   margin-right: 20px;
 }
 
-/* line 594, sass/style.scss */
+/* line 595, sass/style.scss */
 .bookend-navNext {
   right: 10px;
 }
 
-/* line 598, sass/style.scss */
+/* line 599, sass/style.scss */
 .bookend-navNext:after {
   float: right;
   content: "";
