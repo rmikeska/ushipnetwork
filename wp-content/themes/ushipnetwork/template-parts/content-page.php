@@ -206,7 +206,9 @@
 
 										<?php $contact_link_url = get_sub_field('contact_link_url'); ?>
 
-										<a class="emphasisLink" target="_blank" href="<?php echo $contact_link_url; ?>"><?php the_sub_field('contact_link_text'); ?></a>
+										<div class="contact-links-content-link">
+											<a class="emphasisLink" target="_blank" href="<?php echo $contact_link_url; ?>"><?php the_sub_field('contact_link_text'); ?></a>
+										</div>
 
 									<?php endwhile; ?>
 								<?php endwhile; ?>

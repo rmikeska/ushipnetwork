@@ -1339,16 +1339,16 @@ Contact
 .contact-links-content {
   float: right;
 }
-/* line 548, sass/style.scss */
-.contact-links-content a {
-  display: block;
+
+/* line 549, sass/style.scss */
+.contact-links-content-link {
   margin-bottom: 35px;
 }
 
 /*********************
 Bookend
 *********************/
-/* line 559, sass/style.scss */
+/* line 557, sass/style.scss */
 .bookend-container {
   overflow: hidden;
   *zoom: 1;
@@ -1359,7 +1359,7 @@ Bookend
   position: relative;
 }
 
-/* line 565, sass/style.scss */
+/* line 563, sass/style.scss */
 .bookend-intro {
   padding-bottom: 32px;
   text-transform: uppercase;
@@ -1369,7 +1369,7 @@ Bookend
   font-weight: 700;
 }
 
-/* line 574, sass/style.scss */
+/* line 572, sass/style.scss */
 .bookend-nav {
   display: block;
   position: absolute;
@@ -1379,12 +1379,12 @@ Bookend
   color: #262626;
 }
 
-/* line 583, sass/style.scss */
+/* line 581, sass/style.scss */
 .bookend-navPrevious {
   left: 10px;
 }
 
-/* line 587, sass/style.scss */
+/* line 585, sass/style.scss */
 .bookend-navPrevious:before {
   float: left;
   content: "";
@@ -1394,12 +1394,12 @@ Bookend
   margin-right: 20px;
 }
 
-/* line 596, sass/style.scss */
+/* line 594, sass/style.scss */
 .bookend-navNext {
   right: 10px;
 }
 
-/* line 600, sass/style.scss */
+/* line 598, sass/style.scss */
 .bookend-navNext:after {
   float: right;
   content: "";
