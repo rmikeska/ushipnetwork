@@ -107,8 +107,6 @@
 									  <h6 class="slantedMap-copy-block-title"><?php the_sub_field('slanted_map_copy_block_title'); ?></h6>
 									<?php endif; ?>
 
-									<p class="slantedMap-copy-block-text"><?php the_sub_field('slanted_map_copy_block_text'); ?></p>
-
 									<?php if (get_sub_field('slanted_map_copy_block_custom') && get_sub_field('slanted_map_copy_block_custom') != ""): ?>
 									  <div class="slantedMap-copy-block-custom"><?php the_sub_field('slanted_map_copy_block_custom'); ?></div>
 									<?php endif; ?>
