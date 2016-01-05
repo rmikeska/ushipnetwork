@@ -557,8 +557,7 @@ body {
 
 /* line 10, sass/_partials/_typography.scss */
 h1,
-h2,
-h3 {
+h2 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -1004,10 +1003,10 @@ Data Strip Callout
 }
 
 /*********************
-Image L/R, Copy L/R With Background Image
+Slanted Map
 *********************/
 /* line 288, sass/style.scss */
-.imageCopyWithBackground {
+.slantedMap {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
@@ -1016,7 +1015,7 @@ Image L/R, Copy L/R With Background Image
 }
 
 /* line 296, sass/style.scss */
-.imageCopyWithBackground:before {
+.slantedMap:before {
   content: '';
   position: absolute;
   top: -150%;
@@ -1025,7 +1024,7 @@ Image L/R, Copy L/R With Background Image
 }
 
 /* line 304, sass/style.scss */
-.imageCopyWithBackground.positionRight:before {
+.slantedMap.positionRight:before {
   left: -40%;
   -webkit-transform: rotate(-330deg);
   -moz-transform: rotate(-330deg);
@@ -1033,7 +1032,7 @@ Image L/R, Copy L/R With Background Image
 }
 
 /* line 311, sass/style.scss */
-.imageCopyWithBackground.positionLeft:before {
+.slantedMap.positionLeft:before {
   right: -40%;
   -webkit-transform: rotate(330deg);
   -moz-transform: rotate(330deg);
@@ -1041,17 +1040,27 @@ Image L/R, Copy L/R With Background Image
 }
 
 /* line 318, sass/style.scss */
-.imageCopyWithBackground.overlayGrey:before {
-  background-color: #F4F4F4;
+.slantedMap.mapBackgroundGrey {
+  background: url("/wp-content/themes/ushipnetwork/images/map_light_2x.jpg") center center no-repeat;
 }
 
 /* line 322, sass/style.scss */
-.imageCopyWithBackground.overlayWhite:before {
-  background-color: #FFFFFF;
+.slantedMap.mapBackgroundWhite {
+  background: url("/wp-content/themes/ushipnetwork/images/map_dark_2x.jpg") center center no-repeat;
+}
+
+/* line 326, sass/style.scss */
+.slantedMap.mapBackgroundGrey:before {
+  background-color: #F4F4F4;
 }
 
 /* line 330, sass/style.scss */
-.imageCopyWithBackground-container {
+.slantedMap.mapBackgroundWhite:before {
+  background-color: #FFFFFF;
+}
+
+/* line 334, sass/style.scss */
+.slantedMap-container {
   overflow: hidden;
   *zoom: 1;
   max-width: 1160px;
@@ -1061,42 +1070,42 @@ Image L/R, Copy L/R With Background Image
   position: relative;
 }
 
-/* line 336, sass/style.scss */
-.imageCopyWithBackground-copy,
-.imageCopyWithBackground-image {
+/* line 340, sass/style.scss */
+.slantedMap-copy,
+.slantedMap-image {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%;
 }
 /* line 89, sass/neat/grid/_span-columns.scss */
-.imageCopyWithBackground-copy:last-child,
-.imageCopyWithBackground-image:last-child {
+.slantedMap-copy:last-child,
+.slantedMap-image:last-child {
   margin-right: 0;
 }
 
-/* line 341, sass/style.scss */
-.imageCopyWithBackground.positionLeft .imageCopyWithBackground-image {
+/* line 345, sass/style.scss */
+.slantedMap.positionLeft .slantedMap-image {
   float: left;
 }
 
-/* line 345, sass/style.scss */
-.imageCopyWithBackground.positionLeft .imageCopyWithBackground-copy {
-  float: right;
-}
-
 /* line 349, sass/style.scss */
-.imageCopyWithBackground.positionRight .imageCopyWithBackground-image {
+.slantedMap.positionLeft .slantedMap-copy {
   float: right;
 }
 
 /* line 353, sass/style.scss */
-.imageCopyWithBackground.positionRight .imageCopyWithBackground-copy {
-  float: left;
+.slantedMap.positionRight .slantedMap-image {
+  float: right;
 }
 
 /* line 357, sass/style.scss */
-.imageCopyWithBackground-image-image {
+.slantedMap.positionRight .slantedMap-copy {
+  float: left;
+}
+
+/* line 361, sass/style.scss */
+.slantedMap-image-image {
   position: absolute;
   bottom: 0;
   margin: auto;
@@ -1104,28 +1113,28 @@ Image L/R, Copy L/R With Background Image
   height: auto;
 }
 
-/* line 365, sass/style.scss */
-.imageCopyWithBackground.positionLeft .imageCopyWithBackground-image-image {
+/* line 369, sass/style.scss */
+.slantedMap.positionLeft .slantedMap-image-image {
   left: 10px;
 }
 
-/* line 369, sass/style.scss */
-.imageCopyWithBackground.positionRight .imageCopyWithBackground-image-image {
+/* line 373, sass/style.scss */
+.slantedMap.positionRight .slantedMap-image-image {
   right: 0;
 }
 
-/* line 373, sass/style.scss */
-.imageCopyWithBackground.alignmentMiddle .imageCopyWithBackground-image-image {
+/* line 377, sass/style.scss */
+.slantedMap.alignmentMiddle .slantedMap-image-image {
   top: 0;
 }
 
-/* line 377, sass/style.scss */
-.imageCopyWithBackground.alignmentBottom .imageCopyWithBackground-image-image {
+/* line 381, sass/style.scss */
+.slantedMap.alignmentBottom .slantedMap-image-image {
   top: auto;
 }
 
-/* line 381, sass/style.scss */
-.imageCopyWithBackground-copy-intro {
+/* line 385, sass/style.scss */
+.slantedMap-copy-intro {
   padding-bottom: 18px;
   margin-bottom: 24px;
   font-size: 24px;
@@ -1135,27 +1144,27 @@ Image L/R, Copy L/R With Background Image
   border-bottom: 2px solid #e6e6e6;
 }
 
-/* line 391, sass/style.scss */
-.imageCopyWithBackground-copy-block-title {
+/* line 395, sass/style.scss */
+.slantedMap-copy-block-title {
   font-weight: 700;
   text-transform: uppercase;
 }
 
-/* line 396, sass/style.scss */
-.imageCopyWithBackground-copy-block-text {
+/* line 400, sass/style.scss */
+.slantedMap-copy-block-text {
   padding-bottom: 20px;
   line-height: 30px;
 }
 
-/* line 401, sass/style.scss */
-.imageCopyWithBackground-copy-block-custom p {
+/* line 405, sass/style.scss */
+.slantedMap-copy-block-custom p {
   line-height: 30px;
 }
 
 /*********************
 Full Width Image
 *********************/
-/* line 410, sass/style.scss */
+/* line 414, sass/style.scss */
 .fullWidthImage {
   background-repeat: no-repeat;
   background-size: cover;
@@ -1166,7 +1175,7 @@ Full Width Image
 /*********************
 Testimonials
 *********************/
-/* line 422, sass/style.scss */
+/* line 426, sass/style.scss */
 .testimonials-container {
   overflow: hidden;
   *zoom: 1;
@@ -1176,7 +1185,7 @@ Testimonials
   padding: 85px 10px;
 }
 
-/* line 427, sass/style.scss */
+/* line 431, sass/style.scss */
 .testimonials-intro {
   padding-bottom: 45px;
   text-transform: uppercase;
@@ -1186,7 +1195,7 @@ Testimonials
   font-weight: 700;
 }
 
-/* line 436, sass/style.scss */
+/* line 440, sass/style.scss */
 .testimonials-block {
   float: left;
   display: block;
@@ -1198,7 +1207,7 @@ Testimonials
   margin-right: 0;
 }
 
-/* line 440, sass/style.scss */
+/* line 444, sass/style.scss */
 .testimonials-image {
   margin: 0 auto;
   background-repeat: no-repeat;
@@ -1208,7 +1217,7 @@ Testimonials
   width: 380px;
 }
 
-/* line 449, sass/style.scss */
+/* line 453, sass/style.scss */
 .testimonials-text {
   padding: 35px 0;
   font-style: italic;
@@ -1216,12 +1225,12 @@ Testimonials
   line-height: 30px;
 }
 
-/* line 456, sass/style.scss */
+/* line 460, sass/style.scss */
 .testimonials-source {
   padding-bottom: 10px;
 }
 
-/* line 460, sass/style.scss */
+/* line 464, sass/style.scss */
 .testimonials-source,
 .testimonials-category {
   font-size: 18px;
@@ -1230,7 +1239,7 @@ Testimonials
 /*********************
 Bios
 *********************/
-/* line 470, sass/style.scss */
+/* line 474, sass/style.scss */
 .bios-container {
   overflow: hidden;
   *zoom: 1;
@@ -1240,7 +1249,7 @@ Bios
   padding: 85px 10px;
 }
 
-/* line 475, sass/style.scss */
+/* line 479, sass/style.scss */
 .bios-intro {
   padding-bottom: 45px;
   text-transform: uppercase;
@@ -1250,7 +1259,7 @@ Bios
   font-weight: 700;
 }
 
-/* line 484, sass/style.scss */
+/* line 488, sass/style.scss */
 .bios-subintro {
   padding-bottom: 63px;
   font-size: 18px;
@@ -1258,7 +1267,7 @@ Bios
   text-align: center;
 }
 
-/* line 491, sass/style.scss */
+/* line 495, sass/style.scss */
 .bios-block {
   float: left;
   display: block;
@@ -1270,7 +1279,7 @@ Bios
   margin-right: 0;
 }
 
-/* line 495, sass/style.scss */
+/* line 499, sass/style.scss */
 .bios-image {
   margin: 0 auto;
   background-repeat: no-repeat;
@@ -1280,7 +1289,7 @@ Bios
   width: 192px;
 }
 
-/* line 504, sass/style.scss */
+/* line 508, sass/style.scss */
 .bios-name {
   padding: 26px 16px;
   text-align: center;
@@ -1290,7 +1299,7 @@ Bios
   line-height: 24px;
 }
 
-/* line 513, sass/style.scss */
+/* line 517, sass/style.scss */
 .bios-description {
   padding-bottom: 26px;
   text-align: center;
@@ -1301,7 +1310,7 @@ Bios
 /*********************
 Contact
 *********************/
-/* line 525, sass/style.scss */
+/* line 529, sass/style.scss */
 .contact-container {
   overflow: hidden;
   *zoom: 1;
@@ -1311,7 +1320,7 @@ Contact
   padding: 85px 10px;
 }
 
-/* line 530, sass/style.scss */
+/* line 534, sass/style.scss */
 .contact-info,
 .contact-links {
   float: left;
@@ -1325,7 +1334,7 @@ Contact
   margin-right: 0;
 }
 
-/* line 535, sass/style.scss */
+/* line 539, sass/style.scss */
 .contact-info-intro {
   padding-bottom: 18px;
   margin-bottom: 24px;
@@ -1336,12 +1345,12 @@ Contact
   border-bottom: 2px solid #e6e6e6;
 }
 
-/* line 545, sass/style.scss */
+/* line 549, sass/style.scss */
 .contact-links-content {
   float: right;
 }
 
-/* line 549, sass/style.scss */
+/* line 553, sass/style.scss */
 .contact-links-content-link {
   margin-bottom: 35px;
 }
@@ -1349,7 +1358,7 @@ Contact
 /*********************
 Bookend
 *********************/
-/* line 558, sass/style.scss */
+/* line 562, sass/style.scss */
 .bookend-container {
   overflow: hidden;
   *zoom: 1;
@@ -1360,7 +1369,7 @@ Bookend
   position: relative;
 }
 
-/* line 564, sass/style.scss */
+/* line 568, sass/style.scss */
 .bookend-intro {
   padding-bottom: 32px;
   text-transform: uppercase;
@@ -1370,7 +1379,7 @@ Bookend
   font-weight: 700;
 }
 
-/* line 573, sass/style.scss */
+/* line 577, sass/style.scss */
 .bookend-nav {
   display: block;
   position: absolute;
@@ -1380,12 +1389,12 @@ Bookend
   color: #262626;
 }
 
-/* line 582, sass/style.scss */
+/* line 586, sass/style.scss */
 .bookend-navPrevious {
   left: 10px;
 }
 
-/* line 586, sass/style.scss */
+/* line 590, sass/style.scss */
 .bookend-navPrevious:before {
   float: left;
   content: "";
@@ -1395,12 +1404,12 @@ Bookend
   margin-right: 20px;
 }
 
-/* line 595, sass/style.scss */
+/* line 599, sass/style.scss */
 .bookend-navNext {
   right: 10px;
 }
 
-/* line 599, sass/style.scss */
+/* line 603, sass/style.scss */
 .bookend-navNext:after {
   float: right;
   content: "";

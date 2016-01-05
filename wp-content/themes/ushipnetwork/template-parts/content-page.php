@@ -85,44 +85,42 @@
 					</div>
 				</section>
 
-			<?php elseif (get_row_layout() == 'image_copy_with_background'): ?>
+			<?php elseif (get_row_layout() == 'slanted_map'): ?>
 
-				<?php $bg_image = get_sub_field('image_copy_with_background_background_image'); ?>
-				<?php $bg_image_overlay = get_sub_field('image_copy_with_background_background_image_overlay'); ?>
-				<?php $bg_color = get_sub_field('image_copy_with_background_background_color'); ?>
-				<?php $image_horizontal_position = get_sub_field('image_copy_with_background_feature_image_horizontal_position'); ?>
-				<?php $image_vertical_position = get_sub_field('image_copy_with_background_feature_image_vertical_position'); ?>
-				<?php $image = get_sub_field('image_copy_with_background_feature_image'); ?>
+				<?php $bg_color = get_sub_field('slanted_map_bg_color'); ?>
+				<?php $image_horizontal_position = get_sub_field('slanted_map_image_horizontal_position'); ?>
+				<?php $image_vertical_position = get_sub_field('slanted_map_image_vertical_position'); ?>
+				<?php $image = get_sub_field('slanted_map_image'); ?>
 
-				<section class="imageCopyWithBackground <?php echo $bg_color . ' ' . $image_horizontal_position . ' ' . $image_vertical_position; ?>" style="background-image: <?php echo $bg_image_overlay; ?>, url('<?php echo $bg_image['url']; ?>');">
-					<div class="imageCopyWithBackground-container">
-						<div class="imageCopyWithBackground-image">
-							<img class="imageCopyWithBackground-image-image" src="<?php echo $image['url']; ?>">
+				<section class="slantedMap <?php echo $bg_color . ' ' . $image_horizontal_position . ' ' . $image_vertical_position; ?>">
+					<div class="slantedMap-container">
+						<div class="slantedMap-image">
+							<img class="slantedMap-image-image" src="<?php echo $image['url']; ?>">
 						</div>
-						<div class="imageCopyWithBackground-copy">
-							<h3 class="imageCopyWithBackground-copy-intro"><?php the_sub_field('image_copy_with_background_copy_intro'); ?></h3>
+						<div class="slantedMap-copy">
+							<h3 class="slantedMap-copy-intro"><?php the_sub_field('slanted_map_copy_intro'); ?></h3>
 
-							<?php while(have_rows('image_copy_with_background_copy_block')): the_row(); ?>
-								<?php while(have_rows('image_copy_with_background_copy_block_content')): the_row(); ?>
+							<?php while(have_rows('slanted_map_copy_block')): the_row(); ?>
+								<?php while(have_rows('slanted_map_copy_block_content')): the_row(); ?>
 
-									<?php if (get_sub_field('image_copy_with_background_copy_block_title') && get_sub_field('image_copy_with_background_copy_block_title') != ""): ?>
-									  <h6 class="imageCopyWithBackground-copy-block-title"><?php the_sub_field('image_copy_with_background_copy_block_title'); ?></h6>
+									<?php if (get_sub_field('slanted_map_copy_block_title') && get_sub_field('slanted_map_copy_block_title') != ""): ?>
+									  <h6 class="slantedMap-copy-block-title"><?php the_sub_field('slanted_map_copy_block_title'); ?></h6>
 									<?php endif; ?>
 
-									<p class="imageCopyWithBackground-copy-block-text"><?php the_sub_field('image_copy_with_background_copy_block_text'); ?></p>
+									<p class="slantedMap-copy-block-text"><?php the_sub_field('slanted_map_copy_block_text'); ?></p>
 
-									<?php if (get_sub_field('image_copy_with_background_copy_block_custom') && get_sub_field('image_copy_with_background_copy_block_custom') != ""): ?>
-									  <div class="imageCopyWithBackground-copy-block-custom"><?php the_sub_field('image_copy_with_background_copy_block_custom'); ?></div>
+									<?php if (get_sub_field('slanted_map_copy_block_custom') && get_sub_field('slanted_map_copy_block_custom') != ""): ?>
+									  <div class="slantedMap-copy-block-custom"><?php the_sub_field('slanted_map_copy_block_custom'); ?></div>
 									<?php endif; ?>
 
 								<?php endwhile; ?>
 							<?php endwhile; ?>
 
-							<?php while(have_rows('image_copy_with_background_copy_cta')): the_row(); ?>
+							<?php while(have_rows('slanted_map_copy_cta')): the_row(); ?>
 
-								<?php $cta_url = get_sub_field('image_copy_with_background_copy_cta_url'); ?>
+								<?php $cta_url = get_sub_field('slanted_map_copy_cta_url'); ?>
 
-								<a class="imageCopyWithBackground-cta buttonGreenTransparent buttonLarge" href="<?php echo $cta_url; ?>"><?php the_sub_field('image_copy_with_background_copy_cta_text'); ?></a>
+								<a class="slantedMap-cta buttonGreenTransparent buttonLarge" href="<?php echo $cta_url; ?>"><?php the_sub_field('slanted_map_copy_cta_text'); ?></a>
 
 							<?php endwhile; ?>
 

@@ -283,9 +283,9 @@ Data Strip Callout
 
 
 /*********************
-Image L/R, Copy L/R With Background Image
+Slanted Map
 *********************/
-.imageCopyWithBackground {
+.slantedMap {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
@@ -293,7 +293,7 @@ Image L/R, Copy L/R With Background Image
   overflow: hidden;
 }
 
-.imageCopyWithBackground:before {
+.slantedMap:before {
   content: '';
   position: absolute;
   top: -150%;
@@ -301,60 +301,64 @@ Image L/R, Copy L/R With Background Image
   height: 300%;
 }
 
-.imageCopyWithBackground.positionRight:before {
+.slantedMap.positionRight:before {
   left: -40%;
   -webkit-transform: rotate(-330deg);
   -moz-transform: rotate(-330deg);
   transform: rotate(-330deg);
 }
 
-.imageCopyWithBackground.positionLeft:before {
+.slantedMap.positionLeft:before {
   right: -40%;
   -webkit-transform: rotate(330deg);
   -moz-transform: rotate(330deg);
   transform: rotate(330deg);
 }
 
-.imageCopyWithBackground.overlayGrey:before {
+.slantedMap.mapBackgroundGrey {
+  background: url("#{$asset-path}/map_light_2x.jpg") center center no-repeat;
+}
+
+.slantedMap.mapBackgroundWhite {
+  background: url("#{$asset-path}/map_dark_2x.jpg") center center no-repeat;
+}
+
+.slantedMap.mapBackgroundGrey:before {
   background-color: $light-grey;
 }
 
-.imageCopyWithBackground.overlayWhite:before {
+.slantedMap.mapBackgroundWhite:before {
   background-color: $white;
 }
 
-// .imageCopyWithBackground.overlayWhite {
-//   background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
-// }
-
-.imageCopyWithBackground-container {
+.slantedMap-container {
   @include outer-container(1160px);
   padding: 85px 10px;
   position: relative;
 }
 
-.imageCopyWithBackground-copy,
-.imageCopyWithBackground-image {
+.slantedMap-copy,
+.slantedMap-image {
   @include span-columns(6);
 }
 
-.imageCopyWithBackground.positionLeft .imageCopyWithBackground-image {
+.slantedMap.positionLeft .slantedMap-image {
   float: left;
 }
 
-.imageCopyWithBackground.positionLeft .imageCopyWithBackground-copy {
+.slantedMap.positionLeft .slantedMap-copy {
   float: right;
 }
 
-.imageCopyWithBackground.positionRight .imageCopyWithBackground-image {
+.slantedMap.positionRight .slantedMap-image {
   float: right;
 }
 
-.imageCopyWithBackground.positionRight .imageCopyWithBackground-copy {
+.slantedMap.positionRight .slantedMap-copy {
   float: left;
 }
 
-.imageCopyWithBackground-image-image {
+.slantedMap-image-image {
   position: absolute;
   bottom: 0;
   margin: auto;
@@ -362,23 +366,23 @@ Image L/R, Copy L/R With Background Image
   height: auto;
 }
 
-.imageCopyWithBackground.positionLeft .imageCopyWithBackground-image-image {
+.slantedMap.positionLeft .slantedMap-image-image {
   left: 10px;
 }
 
-.imageCopyWithBackground.positionRight .imageCopyWithBackground-image-image {
+.slantedMap.positionRight .slantedMap-image-image {
   right: 0;
 }
 
-.imageCopyWithBackground.alignmentMiddle .imageCopyWithBackground-image-image {
+.slantedMap.alignmentMiddle .slantedMap-image-image {
   top: 0;
 }
 
-.imageCopyWithBackground.alignmentBottom .imageCopyWithBackground-image-image {
+.slantedMap.alignmentBottom .slantedMap-image-image {
   top: auto;
 }
 
-.imageCopyWithBackground-copy-intro {
+.slantedMap-copy-intro {
   padding-bottom: 18px;
   margin-bottom: 24px;
   font-size: 24px;
@@ -388,17 +392,17 @@ Image L/R, Copy L/R With Background Image
   border-bottom: 2px solid #e6e6e6;
 }
 
-.imageCopyWithBackground-copy-block-title {
+.slantedMap-copy-block-title {
   font-weight: $bold;
   text-transform: $uppercase;
 }
 
-.imageCopyWithBackground-copy-block-text {
+.slantedMap-copy-block-text {
   padding-bottom: 20px;
   line-height: 30px;
 }
 
-.imageCopyWithBackground-copy-block-custom p {
+.slantedMap-copy-block-custom p {
   line-height: 30px;
 }
 
