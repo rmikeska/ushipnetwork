@@ -132,7 +132,7 @@ Hero
 .hero {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
 }
 
 .hero-container {
@@ -288,7 +288,7 @@ Slanted Map
 .slantedMap {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom center;
+  background-position: center;
   position: relative;
   overflow: hidden;
 }
@@ -302,25 +302,25 @@ Slanted Map
 }
 
 .slantedMap.positionRight:before {
-  left: -40%;
-  -webkit-transform: rotate(-330deg);
-  -moz-transform: rotate(-330deg);
-  transform: rotate(-330deg);
+  left: -45%;
+  -webkit-transform: rotate(-325deg);
+  -moz-transform: rotate(-325deg);
+  transform: rotate(-325deg);
 }
 
 .slantedMap.positionLeft:before {
-  right: -40%;
-  -webkit-transform: rotate(330deg);
-  -moz-transform: rotate(330deg);
-  transform: rotate(330deg);
+  right: -45%;
+  -webkit-transform: rotate(325deg);
+  -moz-transform: rotate(325deg);
+  transform: rotate(325deg);
 }
 
 .slantedMap.mapBackgroundGrey {
-  background: url("#{$asset-path}/map_light_2x.jpg") center center no-repeat;
+  background-image: url("#{$asset-path}/map_light_2x.jpg");
 }
 
 .slantedMap.mapBackgroundWhite {
-  background: url("#{$asset-path}/map_dark_2x.jpg") center center no-repeat;
+  background-image: url("#{$asset-path}/map_dark_2x.jpg");
 }
 
 .slantedMap.mapBackgroundGrey:before {
@@ -337,49 +337,76 @@ Slanted Map
   position: relative;
 }
 
-.slantedMap-copy,
+.slantedMap-copyDesktop {
+  @include span-columns(6);
+}
+
 .slantedMap-image {
   @include span-columns(6);
 }
 
-.slantedMap.positionLeft .slantedMap-image {
-  float: left;
+.slantedMap-copyMobile {
+  display: none;
 }
 
-.slantedMap.positionLeft .slantedMap-copy {
+@media screen and (max-width: 769px) {
+  .slantedMap-copyDesktop {
+    display: none !important;
+  }
+  .slantedMap-copyMobile {
+    display: block !important;
+    padding: 40px 10px;
+  }
+}
+
+.slantedMap-image {
+  position: absolute;
+  height: 100%;
+}
+
+.slantedMap.alignmentMiddle .slantedMap-image {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slantedMap.alignmentBottom .slantedMap-image {
+  top: auto;
+}
+
+.slantedMap.positionLeft .slantedMap-image {
+  left: 0;
+}
+
+.slantedMap.positionLeft .slantedMap-copyDesktop {
   float: right;
 }
 
 .slantedMap.positionRight .slantedMap-image {
-  float: right;
+  right: 0;
+  margin-right: 0;
 }
 
-.slantedMap.positionRight .slantedMap-copy {
+.slantedMap.positionRight .slantedMap-copyDesktop {
   float: left;
 }
 
 .slantedMap-image-image {
-  position: absolute;
-  bottom: 0;
-  margin: auto;
-  max-width: 500px;
-  height: auto;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  margin: 0 auto;
 }
 
-.slantedMap.positionLeft .slantedMap-image-image {
-  left: 10px;
-}
+@media screen and (max-width: 769px) {
+  .slantedMap-container {
+    min-height: 300px;
+  }
 
-.slantedMap.positionRight .slantedMap-image-image {
-  right: 0;
-}
-
-.slantedMap.alignmentMiddle .slantedMap-image-image {
-  top: 0;
-}
-
-.slantedMap.alignmentBottom .slantedMap-image-image {
-  top: auto;
+  .slantedMap-image {
+    width: 100%;
+    padding: 25px 10px;
+  }
 }
 
 .slantedMap-copy-intro {
@@ -414,7 +441,7 @@ Full Width Image
 .fullWidthImage {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center;
+  background-position: center;
   height: 600px;
 }
 
@@ -445,7 +472,7 @@ Testimonials
   margin: 0 auto;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: top center;
+  background-position: center;
   height: 254px;
   width: 380px;
 }
@@ -500,7 +527,7 @@ Bios
   margin: 0 auto;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: top center;
+  background-position: center;
   height: 192px;
   width: 192px;
 }

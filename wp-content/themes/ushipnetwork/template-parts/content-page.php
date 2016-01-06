@@ -91,13 +91,14 @@
 				<?php $image_horizontal_position = get_sub_field('slanted_map_image_horizontal_position'); ?>
 				<?php $image_vertical_position = get_sub_field('slanted_map_image_vertical_position'); ?>
 				<?php $image = get_sub_field('slanted_map_image'); ?>
+				<?php $image_width = get_sub_field('slanted_map_image_width'); ?>
 
 				<section class="slantedMap <?php echo $bg_color . ' ' . $image_horizontal_position . ' ' . $image_vertical_position; ?>">
 					<div class="slantedMap-container">
 						<div class="slantedMap-image">
-							<img class="slantedMap-image-image" src="<?php echo $image['url']; ?>">
+							<div class="slantedMap-image-image" style="background-image: url('<?php echo $image['url']; ?>'); max-width: <?php echo $image_width; ?>px;"></div>
 						</div>
-						<div class="slantedMap-copy">
+						<div class="slantedMap-copyDesktop">
 							<h3 class="slantedMap-copy-intro"><?php the_sub_field('slanted_map_copy_intro'); ?></h3>
 
 							<?php while(have_rows('slanted_map_copy_block')): the_row(); ?>
@@ -124,6 +125,33 @@
 
 						</div>
 					</div>
+				</section>
+
+				<section class="slantedMap-copyMobile">
+					<h3 class="slantedMap-copy-intro"><?php the_sub_field('slanted_map_copy_intro'); ?></h3>
+
+					<?php while(have_rows('slanted_map_copy_block')): the_row(); ?>
+						<?php while(have_rows('slanted_map_copy_block_content')): the_row(); ?>
+
+							<?php if (get_sub_field('slanted_map_copy_block_title') && get_sub_field('slanted_map_copy_block_title') != ""): ?>
+							  <h6 class="slantedMap-copy-block-title"><?php the_sub_field('slanted_map_copy_block_title'); ?></h6>
+							<?php endif; ?>
+
+							<?php if (get_sub_field('slanted_map_copy_block_custom') && get_sub_field('slanted_map_copy_block_custom') != ""): ?>
+							  <div class="slantedMap-copy-block-custom"><?php the_sub_field('slanted_map_copy_block_custom'); ?></div>
+							<?php endif; ?>
+
+						<?php endwhile; ?>
+					<?php endwhile; ?>
+
+					<?php while(have_rows('slanted_map_copy_cta')): the_row(); ?>
+
+						<?php $cta_url = get_sub_field('slanted_map_copy_cta_url'); ?>
+
+						<a class="slantedMap-cta buttonGreenTransparent buttonLarge" href="<?php echo $cta_url; ?>"><?php the_sub_field('slanted_map_copy_cta_text'); ?></a>
+
+					<?php endwhile; ?>
+
 				</section>
 
 			<?php elseif (get_row_layout() == 'full_width_image'): ?>

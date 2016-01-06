@@ -811,7 +811,7 @@ Hero
 .hero {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
 }
 
 /* line 138, sass/style.scss */
@@ -1009,7 +1009,7 @@ Slanted Map
 .slantedMap {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom center;
+  background-position: center;
   position: relative;
   overflow: hidden;
 }
@@ -1025,28 +1025,28 @@ Slanted Map
 
 /* line 304, sass/style.scss */
 .slantedMap.positionRight:before {
-  left: -40%;
-  -webkit-transform: rotate(-330deg);
-  -moz-transform: rotate(-330deg);
-  transform: rotate(-330deg);
+  left: -45%;
+  -webkit-transform: rotate(-325deg);
+  -moz-transform: rotate(-325deg);
+  transform: rotate(-325deg);
 }
 
 /* line 311, sass/style.scss */
 .slantedMap.positionLeft:before {
-  right: -40%;
-  -webkit-transform: rotate(330deg);
-  -moz-transform: rotate(330deg);
-  transform: rotate(330deg);
+  right: -45%;
+  -webkit-transform: rotate(325deg);
+  -moz-transform: rotate(325deg);
+  transform: rotate(325deg);
 }
 
 /* line 318, sass/style.scss */
 .slantedMap.mapBackgroundGrey {
-  background: url("/wp-content/themes/ushipnetwork/images/map_light_2x.jpg") center center no-repeat;
+  background-image: url("/wp-content/themes/ushipnetwork/images/map_light_2x.jpg");
 }
 
 /* line 322, sass/style.scss */
 .slantedMap.mapBackgroundWhite {
-  background: url("/wp-content/themes/ushipnetwork/images/map_dark_2x.jpg") center center no-repeat;
+  background-image: url("/wp-content/themes/ushipnetwork/images/map_dark_2x.jpg");
 }
 
 /* line 326, sass/style.scss */
@@ -1071,7 +1071,18 @@ Slanted Map
 }
 
 /* line 340, sass/style.scss */
-.slantedMap-copy,
+.slantedMap-copyDesktop {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+/* line 89, sass/neat/grid/_span-columns.scss */
+.slantedMap-copyDesktop:last-child {
+  margin-right: 0;
+}
+
+/* line 344, sass/style.scss */
 .slantedMap-image {
   float: left;
   display: block;
@@ -1079,61 +1090,87 @@ Slanted Map
   width: 48.82117%;
 }
 /* line 89, sass/neat/grid/_span-columns.scss */
-.slantedMap-copy:last-child,
 .slantedMap-image:last-child {
   margin-right: 0;
 }
 
-/* line 345, sass/style.scss */
-.slantedMap.positionLeft .slantedMap-image {
-  float: left;
+/* line 348, sass/style.scss */
+.slantedMap-copyMobile {
+  display: none;
 }
 
-/* line 349, sass/style.scss */
-.slantedMap.positionLeft .slantedMap-copy {
-  float: right;
-}
+@media screen and (max-width: 769px) {
+  /* line 353, sass/style.scss */
+  .slantedMap-copyDesktop {
+    display: none !important;
+  }
 
-/* line 353, sass/style.scss */
-.slantedMap.positionRight .slantedMap-image {
-  float: right;
+  /* line 356, sass/style.scss */
+  .slantedMap-copyMobile {
+    display: block !important;
+    padding: 40px 10px;
+  }
 }
-
-/* line 357, sass/style.scss */
-.slantedMap.positionRight .slantedMap-copy {
-  float: left;
-}
-
-/* line 361, sass/style.scss */
-.slantedMap-image-image {
+/* line 362, sass/style.scss */
+.slantedMap-image {
   position: absolute;
-  bottom: 0;
-  margin: auto;
-  max-width: 500px;
-  height: auto;
+  height: 100%;
 }
 
-/* line 369, sass/style.scss */
-.slantedMap.positionLeft .slantedMap-image-image {
-  left: 10px;
+/* line 367, sass/style.scss */
+.slantedMap.alignmentMiddle .slantedMap-image {
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-/* line 373, sass/style.scss */
-.slantedMap.positionRight .slantedMap-image-image {
-  right: 0;
-}
-
-/* line 377, sass/style.scss */
-.slantedMap.alignmentMiddle .slantedMap-image-image {
-  top: 0;
-}
-
-/* line 381, sass/style.scss */
-.slantedMap.alignmentBottom .slantedMap-image-image {
+/* line 372, sass/style.scss */
+.slantedMap.alignmentBottom .slantedMap-image {
   top: auto;
 }
 
-/* line 385, sass/style.scss */
+/* line 376, sass/style.scss */
+.slantedMap.positionLeft .slantedMap-image {
+  left: 0;
+}
+
+/* line 380, sass/style.scss */
+.slantedMap.positionLeft .slantedMap-copyDesktop {
+  float: right;
+}
+
+/* line 384, sass/style.scss */
+.slantedMap.positionRight .slantedMap-image {
+  right: 0;
+  margin-right: 0;
+}
+
+/* line 389, sass/style.scss */
+.slantedMap.positionRight .slantedMap-copyDesktop {
+  float: left;
+}
+
+/* line 393, sass/style.scss */
+.slantedMap-image-image {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 769px) {
+  /* line 402, sass/style.scss */
+  .slantedMap-container {
+    min-height: 300px;
+  }
+
+  /* line 406, sass/style.scss */
+  .slantedMap-image {
+    width: 100%;
+    padding: 25px 10px;
+  }
+}
+/* line 412, sass/style.scss */
 .slantedMap-copy-intro {
   padding-bottom: 18px;
   margin-bottom: 24px;
@@ -1144,19 +1181,19 @@ Slanted Map
   border-bottom: 2px solid #e6e6e6;
 }
 
-/* line 395, sass/style.scss */
+/* line 422, sass/style.scss */
 .slantedMap-copy-block-title {
   font-weight: 700;
   text-transform: uppercase;
 }
 
-/* line 400, sass/style.scss */
+/* line 427, sass/style.scss */
 .slantedMap-copy-block-text {
   padding-bottom: 20px;
   line-height: 30px;
 }
 
-/* line 405, sass/style.scss */
+/* line 432, sass/style.scss */
 .slantedMap-copy-block-custom p {
   line-height: 30px;
 }
@@ -1164,18 +1201,18 @@ Slanted Map
 /*********************
 Full Width Image
 *********************/
-/* line 414, sass/style.scss */
+/* line 441, sass/style.scss */
 .fullWidthImage {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center;
+  background-position: center;
   height: 600px;
 }
 
 /*********************
 Testimonials
 *********************/
-/* line 426, sass/style.scss */
+/* line 453, sass/style.scss */
 .testimonials-container {
   overflow: hidden;
   *zoom: 1;
@@ -1185,7 +1222,7 @@ Testimonials
   padding: 85px 10px;
 }
 
-/* line 431, sass/style.scss */
+/* line 458, sass/style.scss */
 .testimonials-intro {
   padding-bottom: 45px;
   text-transform: uppercase;
@@ -1195,7 +1232,7 @@ Testimonials
   font-weight: 700;
 }
 
-/* line 440, sass/style.scss */
+/* line 467, sass/style.scss */
 .testimonials-block {
   float: left;
   display: block;
@@ -1207,17 +1244,17 @@ Testimonials
   margin-right: 0;
 }
 
-/* line 444, sass/style.scss */
+/* line 471, sass/style.scss */
 .testimonials-image {
   margin: 0 auto;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: top center;
+  background-position: center;
   height: 254px;
   width: 380px;
 }
 
-/* line 453, sass/style.scss */
+/* line 480, sass/style.scss */
 .testimonials-text {
   padding: 35px 0;
   font-style: italic;
@@ -1225,12 +1262,12 @@ Testimonials
   line-height: 30px;
 }
 
-/* line 460, sass/style.scss */
+/* line 487, sass/style.scss */
 .testimonials-source {
   padding-bottom: 10px;
 }
 
-/* line 464, sass/style.scss */
+/* line 491, sass/style.scss */
 .testimonials-source,
 .testimonials-category {
   font-size: 18px;
@@ -1239,7 +1276,7 @@ Testimonials
 /*********************
 Bios
 *********************/
-/* line 474, sass/style.scss */
+/* line 501, sass/style.scss */
 .bios-container {
   overflow: hidden;
   *zoom: 1;
@@ -1249,7 +1286,7 @@ Bios
   padding: 85px 10px;
 }
 
-/* line 479, sass/style.scss */
+/* line 506, sass/style.scss */
 .bios-intro {
   padding-bottom: 45px;
   text-transform: uppercase;
@@ -1259,7 +1296,7 @@ Bios
   font-weight: 700;
 }
 
-/* line 488, sass/style.scss */
+/* line 515, sass/style.scss */
 .bios-subintro {
   padding-bottom: 63px;
   font-size: 18px;
@@ -1267,7 +1304,7 @@ Bios
   text-align: center;
 }
 
-/* line 495, sass/style.scss */
+/* line 522, sass/style.scss */
 .bios-block {
   float: left;
   display: block;
@@ -1279,17 +1316,17 @@ Bios
   margin-right: 0;
 }
 
-/* line 499, sass/style.scss */
+/* line 526, sass/style.scss */
 .bios-image {
   margin: 0 auto;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: top center;
+  background-position: center;
   height: 192px;
   width: 192px;
 }
 
-/* line 508, sass/style.scss */
+/* line 535, sass/style.scss */
 .bios-name {
   padding: 26px 16px;
   text-align: center;
@@ -1299,7 +1336,7 @@ Bios
   line-height: 24px;
 }
 
-/* line 517, sass/style.scss */
+/* line 544, sass/style.scss */
 .bios-description {
   padding-bottom: 26px;
   text-align: center;
@@ -1310,7 +1347,7 @@ Bios
 /*********************
 Contact
 *********************/
-/* line 529, sass/style.scss */
+/* line 556, sass/style.scss */
 .contact-container {
   overflow: hidden;
   *zoom: 1;
@@ -1320,7 +1357,7 @@ Contact
   padding: 85px 10px;
 }
 
-/* line 534, sass/style.scss */
+/* line 561, sass/style.scss */
 .contact-info,
 .contact-links {
   float: left;
@@ -1334,7 +1371,7 @@ Contact
   margin-right: 0;
 }
 
-/* line 539, sass/style.scss */
+/* line 566, sass/style.scss */
 .contact-info-intro {
   padding-bottom: 18px;
   margin-bottom: 24px;
@@ -1345,12 +1382,12 @@ Contact
   border-bottom: 2px solid #e6e6e6;
 }
 
-/* line 549, sass/style.scss */
+/* line 576, sass/style.scss */
 .contact-links-content {
   float: right;
 }
 
-/* line 553, sass/style.scss */
+/* line 580, sass/style.scss */
 .contact-links-content-link {
   margin-bottom: 35px;
 }
@@ -1358,7 +1395,7 @@ Contact
 /*********************
 Bookend
 *********************/
-/* line 562, sass/style.scss */
+/* line 589, sass/style.scss */
 .bookend-container {
   overflow: hidden;
   *zoom: 1;
@@ -1369,7 +1406,7 @@ Bookend
   position: relative;
 }
 
-/* line 568, sass/style.scss */
+/* line 595, sass/style.scss */
 .bookend-intro {
   padding-bottom: 32px;
   text-transform: uppercase;
@@ -1379,7 +1416,7 @@ Bookend
   font-weight: 700;
 }
 
-/* line 577, sass/style.scss */
+/* line 604, sass/style.scss */
 .bookend-nav {
   display: block;
   position: absolute;
@@ -1389,12 +1426,12 @@ Bookend
   color: #262626;
 }
 
-/* line 586, sass/style.scss */
+/* line 613, sass/style.scss */
 .bookend-navPrevious {
   left: 10px;
 }
 
-/* line 590, sass/style.scss */
+/* line 617, sass/style.scss */
 .bookend-navPrevious:before {
   float: left;
   content: "";
@@ -1404,12 +1441,12 @@ Bookend
   margin-right: 20px;
 }
 
-/* line 599, sass/style.scss */
+/* line 626, sass/style.scss */
 .bookend-navNext {
   right: 10px;
 }
 
-/* line 603, sass/style.scss */
+/* line 630, sass/style.scss */
 .bookend-navNext:after {
   float: right;
   content: "";
