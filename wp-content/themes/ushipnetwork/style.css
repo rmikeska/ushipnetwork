@@ -1018,48 +1018,60 @@ Slanted Map
 .slantedMap:before {
   content: '';
   position: absolute;
-  top: -150%;
+  top: -250%;
   width: 100%;
-  height: 300%;
+  height: 500%;
 }
 
 /* line 304, sass/style.scss */
 .slantedMap.positionRight:before {
-  left: -45%;
+  left: -40%;
   -webkit-transform: rotate(-325deg);
   -moz-transform: rotate(-325deg);
   transform: rotate(-325deg);
 }
+@media screen and (max-width: 769px) {
+  /* line 304, sass/style.scss */
+  .slantedMap.positionRight:before {
+    left: -50%;
+  }
+}
 
-/* line 311, sass/style.scss */
+/* line 315, sass/style.scss */
 .slantedMap.positionLeft:before {
-  right: -45%;
+  right: -40%;
   -webkit-transform: rotate(325deg);
   -moz-transform: rotate(325deg);
   transform: rotate(325deg);
 }
+@media screen and (max-width: 769px) {
+  /* line 315, sass/style.scss */
+  .slantedMap.positionLeft:before {
+    right: -50%;
+  }
+}
 
-/* line 318, sass/style.scss */
+/* line 326, sass/style.scss */
 .slantedMap.mapBackgroundGrey {
   background-image: url("/wp-content/themes/ushipnetwork/images/map_light_2x.jpg");
 }
 
-/* line 322, sass/style.scss */
+/* line 330, sass/style.scss */
 .slantedMap.mapBackgroundWhite {
   background-image: url("/wp-content/themes/ushipnetwork/images/map_dark_2x.jpg");
 }
 
-/* line 326, sass/style.scss */
+/* line 334, sass/style.scss */
 .slantedMap.mapBackgroundGrey:before {
   background-color: #F4F4F4;
 }
 
-/* line 330, sass/style.scss */
+/* line 338, sass/style.scss */
 .slantedMap.mapBackgroundWhite:before {
   background-color: #FFFFFF;
 }
 
-/* line 334, sass/style.scss */
+/* line 342, sass/style.scss */
 .slantedMap-container {
   overflow: hidden;
   *zoom: 1;
@@ -1069,8 +1081,14 @@ Slanted Map
   padding: 85px 10px;
   position: relative;
 }
+@media screen and (max-width: 769px) {
+  /* line 342, sass/style.scss */
+  .slantedMap-container {
+    min-height: 300px;
+  }
+}
 
-/* line 340, sass/style.scss */
+/* line 352, sass/style.scss */
 .slantedMap-copyDesktop {
   float: left;
   display: block;
@@ -1081,8 +1099,14 @@ Slanted Map
 .slantedMap-copyDesktop:last-child {
   margin-right: 0;
 }
+@media screen and (max-width: 769px) {
+  /* line 352, sass/style.scss */
+  .slantedMap-copyDesktop {
+    display: none !important;
+  }
+}
 
-/* line 344, sass/style.scss */
+/* line 360, sass/style.scss */
 .slantedMap-image {
   float: left;
   display: block;
@@ -1094,62 +1118,64 @@ Slanted Map
   margin-right: 0;
 }
 
-/* line 348, sass/style.scss */
+/* line 364, sass/style.scss */
 .slantedMap-copyMobile {
   display: none;
 }
-
 @media screen and (max-width: 769px) {
-  /* line 353, sass/style.scss */
-  .slantedMap-copyDesktop {
-    display: none !important;
-  }
-
-  /* line 356, sass/style.scss */
+  /* line 364, sass/style.scss */
   .slantedMap-copyMobile {
     display: block !important;
     padding: 40px 10px;
   }
 }
-/* line 362, sass/style.scss */
+
+/* line 373, sass/style.scss */
 .slantedMap-image {
   position: absolute;
   height: 100%;
 }
+@media screen and (max-width: 769px) {
+  /* line 373, sass/style.scss */
+  .slantedMap-image {
+    width: 100%;
+    padding: 25px 10px;
+  }
+}
 
-/* line 367, sass/style.scss */
+/* line 383, sass/style.scss */
 .slantedMap.alignmentMiddle .slantedMap-image {
   top: 50%;
   transform: translateY(-50%);
 }
 
-/* line 372, sass/style.scss */
+/* line 388, sass/style.scss */
 .slantedMap.alignmentBottom .slantedMap-image {
   top: auto;
 }
 
-/* line 376, sass/style.scss */
+/* line 392, sass/style.scss */
 .slantedMap.positionLeft .slantedMap-image {
   left: 0;
 }
 
-/* line 380, sass/style.scss */
+/* line 396, sass/style.scss */
 .slantedMap.positionLeft .slantedMap-copyDesktop {
   float: right;
 }
 
-/* line 384, sass/style.scss */
+/* line 400, sass/style.scss */
 .slantedMap.positionRight .slantedMap-image {
   right: 0;
   margin-right: 0;
 }
 
-/* line 389, sass/style.scss */
+/* line 405, sass/style.scss */
 .slantedMap.positionRight .slantedMap-copyDesktop {
   float: left;
 }
 
-/* line 393, sass/style.scss */
+/* line 409, sass/style.scss */
 .slantedMap-image-image {
   background-size: contain;
   background-position: center;
@@ -1158,19 +1184,7 @@ Slanted Map
   margin: 0 auto;
 }
 
-@media screen and (max-width: 769px) {
-  /* line 402, sass/style.scss */
-  .slantedMap-container {
-    min-height: 300px;
-  }
-
-  /* line 406, sass/style.scss */
-  .slantedMap-image {
-    width: 100%;
-    padding: 25px 10px;
-  }
-}
-/* line 412, sass/style.scss */
+/* line 417, sass/style.scss */
 .slantedMap-copy-intro {
   padding-bottom: 18px;
   margin-bottom: 24px;
@@ -1181,19 +1195,19 @@ Slanted Map
   border-bottom: 2px solid #e6e6e6;
 }
 
-/* line 422, sass/style.scss */
+/* line 427, sass/style.scss */
 .slantedMap-copy-block-title {
   font-weight: 700;
   text-transform: uppercase;
 }
 
-/* line 427, sass/style.scss */
+/* line 432, sass/style.scss */
 .slantedMap-copy-block-text {
   padding-bottom: 20px;
   line-height: 30px;
 }
 
-/* line 432, sass/style.scss */
+/* line 437, sass/style.scss */
 .slantedMap-copy-block-custom p {
   line-height: 30px;
 }
@@ -1201,7 +1215,7 @@ Slanted Map
 /*********************
 Full Width Image
 *********************/
-/* line 441, sass/style.scss */
+/* line 446, sass/style.scss */
 .fullWidthImage {
   background-repeat: no-repeat;
   background-size: cover;
@@ -1212,7 +1226,7 @@ Full Width Image
 /*********************
 Testimonials
 *********************/
-/* line 453, sass/style.scss */
+/* line 458, sass/style.scss */
 .testimonials-container {
   overflow: hidden;
   *zoom: 1;
@@ -1222,7 +1236,7 @@ Testimonials
   padding: 85px 10px;
 }
 
-/* line 458, sass/style.scss */
+/* line 463, sass/style.scss */
 .testimonials-intro {
   padding-bottom: 45px;
   text-transform: uppercase;
@@ -1232,7 +1246,7 @@ Testimonials
   font-weight: 700;
 }
 
-/* line 467, sass/style.scss */
+/* line 472, sass/style.scss */
 .testimonials-block {
   float: left;
   display: block;
@@ -1244,7 +1258,7 @@ Testimonials
   margin-right: 0;
 }
 
-/* line 471, sass/style.scss */
+/* line 476, sass/style.scss */
 .testimonials-image {
   margin: 0 auto;
   background-repeat: no-repeat;
@@ -1254,7 +1268,7 @@ Testimonials
   width: 380px;
 }
 
-/* line 480, sass/style.scss */
+/* line 485, sass/style.scss */
 .testimonials-text {
   padding: 35px 0;
   font-style: italic;
@@ -1262,12 +1276,12 @@ Testimonials
   line-height: 30px;
 }
 
-/* line 487, sass/style.scss */
+/* line 492, sass/style.scss */
 .testimonials-source {
   padding-bottom: 10px;
 }
 
-/* line 491, sass/style.scss */
+/* line 496, sass/style.scss */
 .testimonials-source,
 .testimonials-category {
   font-size: 18px;
@@ -1276,7 +1290,7 @@ Testimonials
 /*********************
 Bios
 *********************/
-/* line 501, sass/style.scss */
+/* line 506, sass/style.scss */
 .bios-container {
   overflow: hidden;
   *zoom: 1;
@@ -1286,7 +1300,7 @@ Bios
   padding: 85px 10px;
 }
 
-/* line 506, sass/style.scss */
+/* line 511, sass/style.scss */
 .bios-intro {
   padding-bottom: 45px;
   text-transform: uppercase;
@@ -1296,7 +1310,7 @@ Bios
   font-weight: 700;
 }
 
-/* line 515, sass/style.scss */
+/* line 520, sass/style.scss */
 .bios-subintro {
   padding-bottom: 63px;
   font-size: 18px;
@@ -1304,7 +1318,7 @@ Bios
   text-align: center;
 }
 
-/* line 522, sass/style.scss */
+/* line 527, sass/style.scss */
 .bios-block {
   float: left;
   display: block;
@@ -1316,7 +1330,7 @@ Bios
   margin-right: 0;
 }
 
-/* line 526, sass/style.scss */
+/* line 531, sass/style.scss */
 .bios-image {
   margin: 0 auto;
   background-repeat: no-repeat;
@@ -1326,7 +1340,7 @@ Bios
   width: 192px;
 }
 
-/* line 535, sass/style.scss */
+/* line 540, sass/style.scss */
 .bios-name {
   padding: 26px 16px;
   text-align: center;
@@ -1336,7 +1350,7 @@ Bios
   line-height: 24px;
 }
 
-/* line 544, sass/style.scss */
+/* line 549, sass/style.scss */
 .bios-description {
   padding-bottom: 26px;
   text-align: center;
@@ -1347,7 +1361,7 @@ Bios
 /*********************
 Contact
 *********************/
-/* line 556, sass/style.scss */
+/* line 561, sass/style.scss */
 .contact-container {
   overflow: hidden;
   *zoom: 1;
@@ -1357,7 +1371,7 @@ Contact
   padding: 85px 10px;
 }
 
-/* line 561, sass/style.scss */
+/* line 566, sass/style.scss */
 .contact-info,
 .contact-links {
   float: left;
@@ -1371,7 +1385,7 @@ Contact
   margin-right: 0;
 }
 
-/* line 566, sass/style.scss */
+/* line 571, sass/style.scss */
 .contact-info-intro {
   padding-bottom: 18px;
   margin-bottom: 24px;
@@ -1382,12 +1396,12 @@ Contact
   border-bottom: 2px solid #e6e6e6;
 }
 
-/* line 576, sass/style.scss */
+/* line 581, sass/style.scss */
 .contact-links-content {
   float: right;
 }
 
-/* line 580, sass/style.scss */
+/* line 585, sass/style.scss */
 .contact-links-content-link {
   margin-bottom: 35px;
 }
@@ -1395,7 +1409,7 @@ Contact
 /*********************
 Bookend
 *********************/
-/* line 589, sass/style.scss */
+/* line 594, sass/style.scss */
 .bookend-container {
   overflow: hidden;
   *zoom: 1;
@@ -1406,7 +1420,7 @@ Bookend
   position: relative;
 }
 
-/* line 595, sass/style.scss */
+/* line 600, sass/style.scss */
 .bookend-intro {
   padding-bottom: 32px;
   text-transform: uppercase;
@@ -1416,7 +1430,7 @@ Bookend
   font-weight: 700;
 }
 
-/* line 604, sass/style.scss */
+/* line 609, sass/style.scss */
 .bookend-nav {
   display: block;
   position: absolute;
@@ -1426,12 +1440,12 @@ Bookend
   color: #262626;
 }
 
-/* line 613, sass/style.scss */
+/* line 618, sass/style.scss */
 .bookend-navPrevious {
   left: 10px;
 }
 
-/* line 617, sass/style.scss */
+/* line 622, sass/style.scss */
 .bookend-navPrevious:before {
   float: left;
   content: "";
@@ -1441,12 +1455,12 @@ Bookend
   margin-right: 20px;
 }
 
-/* line 626, sass/style.scss */
+/* line 631, sass/style.scss */
 .bookend-navNext {
   right: 10px;
 }
 
-/* line 630, sass/style.scss */
+/* line 635, sass/style.scss */
 .bookend-navNext:after {
   float: right;
   content: "";
