@@ -1137,55 +1137,53 @@ Slanted Map
   max-width: 100%;
   height: auto;
 }
+
+/* line 376, sass/style.scss */
+.slantedMap.alignmentMiddle .slantedMap-image-image {
+  padding: 85px 0;
+}
 @media screen and (max-width: 769px) {
-  /* line 369, sass/style.scss */
-  .slantedMap-image-image {
+  /* line 376, sass/style.scss */
+  .slantedMap.alignmentMiddle .slantedMap-image-image {
     padding: 20px 0;
   }
 }
 
-@media screen and (max-width: 769px) {
-  /* line 380, sass/style.scss */
-  .slantedMap.alignmentBottom .slantedMap-image-image {
-    padding-bottom: 0;
-  }
-}
-
-/* line 386, sass/style.scss */
+/* line 384, sass/style.scss */
 .slantedMap.alignmentLeft .slantedMap-image-image {
   float: left;
 }
 @media screen and (max-width: 769px) {
-  /* line 386, sass/style.scss */
+  /* line 384, sass/style.scss */
   .slantedMap.alignmentLeft .slantedMap-image-image {
     float: none;
   }
 }
 
-/* line 394, sass/style.scss */
+/* line 392, sass/style.scss */
 .slantedMap.alignmentRight .slantedMap-image-image {
   float: right;
 }
 @media screen and (max-width: 769px) {
-  /* line 394, sass/style.scss */
+  /* line 392, sass/style.scss */
   .slantedMap.alignmentRight .slantedMap-image-image {
     float: none;
   }
 }
 
-/* line 402, sass/style.scss */
+/* line 400, sass/style.scss */
 .slantedMap-copyMobile {
   display: none;
 }
 @media screen and (max-width: 769px) {
-  /* line 402, sass/style.scss */
+  /* line 400, sass/style.scss */
   .slantedMap-copyMobile {
     display: block !important;
     padding: 40px 20px;
   }
 }
 
-/* line 411, sass/style.scss */
+/* line 409, sass/style.scss */
 .slantedMap-copy-intro {
   padding-bottom: 18px;
   margin-bottom: 24px;
@@ -1194,19 +1192,19 @@ Slanted Map
   border-bottom: 2px solid #e6e6e6;
 }
 
-/* line 419, sass/style.scss */
-.slantedMap-copy-block-title {
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-/* line 424, sass/style.scss */
+/* line 417, sass/style.scss */
 .slantedMap-copy-block-text {
   padding-bottom: 20px;
   line-height: 30px;
 }
 
-/* line 429, sass/style.scss */
+/* line 422, sass/style.scss */
+.slantedMap-copy-block-text h6 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* line 427, sass/style.scss */
 .slantedMap-copy-block-text p {
   line-height: 30px;
 }
@@ -1214,7 +1212,7 @@ Slanted Map
 /*********************
 Full Width Image
 *********************/
-/* line 438, sass/style.scss */
+/* line 436, sass/style.scss */
 .fullWidthImage-image {
   width: 100%;
   height: auto;
@@ -1223,7 +1221,7 @@ Full Width Image
 /*********************
 Testimonials
 *********************/
-/* line 448, sass/style.scss */
+/* line 446, sass/style.scss */
 .testimonials-container {
   overflow: hidden;
   *zoom: 1;
@@ -1233,7 +1231,7 @@ Testimonials
   padding: 85px 20px;
 }
 
-/* line 453, sass/style.scss */
+/* line 451, sass/style.scss */
 .testimonials-intro {
   padding-bottom: 45px;
   font-size: 24px;
@@ -1241,7 +1239,7 @@ Testimonials
   text-align: center;
 }
 
-/* line 460, sass/style.scss */
+/* line 458, sass/style.scss */
 .testimonials-block {
   float: left;
   display: block;
@@ -1253,7 +1251,7 @@ Testimonials
   margin-right: 0;
 }
 
-/* line 464, sass/style.scss */
+/* line 462, sass/style.scss */
 .testimonials-image {
   display: block;
   margin: 0 auto;
@@ -1261,7 +1259,7 @@ Testimonials
   height: auto;
 }
 
-/* line 471, sass/style.scss */
+/* line 469, sass/style.scss */
 .testimonials-text {
   padding: 35px 0;
   font-style: italic;
@@ -1269,12 +1267,12 @@ Testimonials
   line-height: 30px;
 }
 
-/* line 478, sass/style.scss */
+/* line 476, sass/style.scss */
 .testimonials-source {
   padding-bottom: 10px;
 }
 
-/* line 482, sass/style.scss */
+/* line 480, sass/style.scss */
 .testimonials-source,
 .testimonials-category {
   font-size: 18px;
@@ -1283,7 +1281,7 @@ Testimonials
 /*********************
 Bios
 *********************/
-/* line 492, sass/style.scss */
+/* line 490, sass/style.scss */
 .bios-container {
   overflow: hidden;
   *zoom: 1;
@@ -1293,7 +1291,7 @@ Bios
   padding: 85px 20px;
 }
 
-/* line 497, sass/style.scss */
+/* line 495, sass/style.scss */
 .bios-intro {
   padding-bottom: 45px;
   font-size: 24px;
@@ -1301,7 +1299,7 @@ Bios
   text-align: center;
 }
 
-/* line 504, sass/style.scss */
+/* line 502, sass/style.scss */
 .bios-subintro {
   padding-bottom: 63px;
   font-size: 18px;
@@ -1309,7 +1307,7 @@ Bios
   text-align: center;
 }
 
-/* line 511, sass/style.scss */
+/* line 509, sass/style.scss */
 .bios-block {
   float: left;
   display: block;
@@ -1321,7 +1319,7 @@ Bios
   margin-right: 0;
 }
 
-/* line 515, sass/style.scss */
+/* line 513, sass/style.scss */
 .bios-image {
   display: block;
   margin: 0 auto;
@@ -1329,7 +1327,7 @@ Bios
   height: auto;
 }
 
-/* line 522, sass/style.scss */
+/* line 520, sass/style.scss */
 .bios-name {
   padding: 26px 16px;
   text-align: center;
@@ -1339,7 +1337,7 @@ Bios
   line-height: 24px;
 }
 
-/* line 531, sass/style.scss */
+/* line 529, sass/style.scss */
 .bios-description {
   padding-bottom: 26px;
   text-align: center;
@@ -1350,7 +1348,7 @@ Bios
 /*********************
 Contact
 *********************/
-/* line 543, sass/style.scss */
+/* line 541, sass/style.scss */
 .contact-container {
   overflow: hidden;
   *zoom: 1;
@@ -1360,7 +1358,7 @@ Contact
   padding: 85px 20px;
 }
 
-/* line 548, sass/style.scss */
+/* line 546, sass/style.scss */
 .contact-info,
 .contact-links {
   float: left;
@@ -1374,7 +1372,7 @@ Contact
   margin-right: 0;
 }
 
-/* line 553, sass/style.scss */
+/* line 551, sass/style.scss */
 .contact-info-intro {
   padding-bottom: 18px;
   margin-bottom: 24px;
@@ -1383,12 +1381,12 @@ Contact
   border-bottom: 2px solid #e6e6e6;
 }
 
-/* line 561, sass/style.scss */
+/* line 559, sass/style.scss */
 .contact-links-content {
   float: right;
 }
 
-/* line 565, sass/style.scss */
+/* line 563, sass/style.scss */
 .contact-links-content-link {
   margin-bottom: 35px;
 }
@@ -1396,7 +1394,7 @@ Contact
 /*********************
 Bookend
 *********************/
-/* line 574, sass/style.scss */
+/* line 572, sass/style.scss */
 .bookend-container {
   overflow: hidden;
   *zoom: 1;
@@ -1407,7 +1405,7 @@ Bookend
   position: relative;
 }
 
-/* line 580, sass/style.scss */
+/* line 578, sass/style.scss */
 .bookend-intro {
   padding-bottom: 32px;
   font-size: 24px;
@@ -1415,7 +1413,7 @@ Bookend
   text-align: center;
 }
 
-/* line 587, sass/style.scss */
+/* line 585, sass/style.scss */
 .bookend-nav {
   display: block;
   position: absolute;
@@ -1425,12 +1423,12 @@ Bookend
   color: #262626;
 }
 
-/* line 596, sass/style.scss */
+/* line 594, sass/style.scss */
 .bookend-navPrevious {
   left: 10px;
 }
 
-/* line 600, sass/style.scss */
+/* line 598, sass/style.scss */
 .bookend-navPrevious:before {
   float: left;
   content: "";
@@ -1440,12 +1438,12 @@ Bookend
   margin-right: 20px;
 }
 
-/* line 609, sass/style.scss */
+/* line 607, sass/style.scss */
 .bookend-navNext {
   right: 10px;
 }
 
-/* line 613, sass/style.scss */
+/* line 611, sass/style.scss */
 .bookend-navNext:after {
   float: right;
   content: "";

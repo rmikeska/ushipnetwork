@@ -18,19 +18,18 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,900italic');
 @import "bourbon/bourbon";
 @import "neat/neat";
 @import "compass";
 @import "compass/reset";
-
 @import "_partials/normalize";
 @import "_partials/mixins";
 @import "_partials/variables";
 @import "_partials/typography";
 @import "_partials/header";
 @import "_partials/footer";
-
-@import url('https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,900italic');
+@import "_partials/modules/hero";
 
 
 
@@ -118,48 +117,6 @@ a {
   width: 19px;
   height: 12px;
   margin-left: 15px;
-}
-
-
-
-/*********************
-**********************
-Modules
-**********************
-*********************/
-
-
-
-/*********************
-Hero
-*********************/
-.hero {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.hero-container {
-  @include outer-container(800px);
-}
-
-.heroSmall .hero-container {
-  padding: 95px 20px;
-}
-
-.heroLarge .hero-container {
-  padding: 103px 20px;
-}
-
-.hero-headline {
-  text-align: center;
-  color: $white;
-  line-height: 43.2px;
-  text-shadow: 0 4px 5.88px rgba(0, 0, 0, 0.72);
-}
-
-.heroLarge .hero-headline {
-  padding-bottom: 65px;
 }
 
 
@@ -371,15 +328,13 @@ Slanted Map
   margin: 0 auto;
   max-width: 100%;
   height: auto;
+}
+
+.slantedMap.alignmentMiddle .slantedMap-image-image {
+  padding: 85px 0;
 
   @media screen and (max-width: 769px) {
     padding: 20px 0;
-  }
-}
-
-.slantedMap.alignmentBottom .slantedMap-image-image {
-  @media screen and (max-width: 769px) {
-    padding-bottom: 0;
   }
 }
 
@@ -416,14 +371,14 @@ Slanted Map
   border-bottom: 2px solid #e6e6e6;
 }
 
-.slantedMap-copy-block-title {
-  font-weight: $bold;
-  text-transform: uppercase;
-}
-
 .slantedMap-copy-block-text {
   padding-bottom: 20px;
   line-height: 30px;
+}
+
+.slantedMap-copy-block-text h6 {
+  font-weight: $bold;
+  text-transform: uppercase;
 }
 
 .slantedMap-copy-block-text p {

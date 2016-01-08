@@ -1,0 +1,30 @@
+/*** Hero ***/
+
+.hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-container {
+  @include outer-container(800px);
+}
+
+.heroSmall .hero-container {
+  padding: 95px 20px;
+}
+
+.heroLarge .hero-container {
+  padding: 103px 20px;
+}
+
+.hero-headline {
+  text-align: center;
+  color: $white;
+  line-height: 43.2px;
+  text-shadow: 0 4px 5.88px rgba(0, 0, 0, 0.72);
+}
+
+.heroLarge .hero-headline {
+  padding-bottom: 65px;
+}

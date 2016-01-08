@@ -1,4 +1,5 @@
 /*** Header ***/
+
 .pageHeader {
   position: fixed;
   width: 100%;
@@ -33,6 +34,7 @@
 }
 
 /*** Sub Nav ***/
+
 .pageHeader-subNav {
   position: absolute;
   z-index: -2;
@@ -68,6 +70,7 @@
 }
 
 /*** Current Menu Item/Hover ***/
+
 .pageHeader .current-menu-item a,
 .pageHeader .menu-item a:hover {
   border-bottom-width: 3px;
