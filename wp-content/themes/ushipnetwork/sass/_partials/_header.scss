@@ -39,6 +39,10 @@
   width: 100%;
   height: $subnav-height;
   background: $white;
+
+  @media screen and (max-width: 769px) {
+    display: none;
+  }
 }
 
 .menu-about-sub-nav-container {
@@ -48,7 +52,7 @@
     float: left;
     min-width: 138px;
     text-align: center;
-    text-transform: $uppercase;
+    text-transform: uppercase;
     line-height: $subnav-height;
   }
 

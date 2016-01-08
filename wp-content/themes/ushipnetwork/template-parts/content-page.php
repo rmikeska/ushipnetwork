@@ -38,7 +38,7 @@
 					<div class="longFormContentWithDivider-container">
 						<?php while(have_rows('long_form_content_with_divider_content')): the_row(); ?>
 
-						<p class="longFormContentWithDivider-text"><?php the_sub_field('long_form_content_with_divider_content_text_block'); ?></p>
+						<div class="longFormContentWithDivider-text"><?php the_sub_field('long_form_content_with_divider_content_text_block'); ?></div>
 
 						<?php endwhile; ?>
 					</div>
@@ -50,19 +50,7 @@
 
 				<section class="stripCopyCallout <?php echo $section_bg_color; ?>">
 					<div class="stripCopyCallout-container">
-						<h3 class="stripCopyCallout-text"><?php the_sub_field('strip_copy_callout_text'); ?></h3>
-					</div>
-				</section>
-
-			<?php elseif (get_row_layout() == 'strip_copy_with_image_callout'): ?>
-
-				<?php $section_bg_color = get_sub_field('strip_copy_with_image_callout_background_color'); ?>
-				<?php $strip_copy_with_image_callout_image = get_sub_field('strip_copy_with_image_callout_image'); ?>
-
-				<section class="stripCopyWithImageCallout <?php echo $section_bg_color; ?>">
-					<div class="stripCopyWithImageCallout-container">
-						<h3 class="stripCopyWithImageCallout-text"><?php the_sub_field('strip_copy_with_image_callout_text'); ?></h3>
-						<img class="stripCopyWithImageCallout-image" src="<?php echo $strip_copy_with_image_callout_image['url']; ?>">
+						<h4 class="stripCopyCallout-text"><?php the_sub_field('strip_copy_callout_text'); ?></h4>
 					</div>
 				</section>
 
@@ -88,17 +76,17 @@
 			<?php elseif (get_row_layout() == 'slanted_map'): ?>
 
 				<?php $bg_color = get_sub_field('slanted_map_bg_color'); ?>
-				<?php $image_horizontal_position = get_sub_field('slanted_map_image_horizontal_position'); ?>
-				<?php $image_vertical_position = get_sub_field('slanted_map_image_vertical_position'); ?>
+				<?php $bg_position = get_sub_field('slanted_map_bg_position'); ?>
+				<?php $image_vertical_alignment = get_sub_field('slanted_map_image_vertical_alignment'); ?>
+				<?php $image_horizontal_alignment = get_sub_field('slanted_map_image_horizontal_alignment'); ?>
 				<?php $image = get_sub_field('slanted_map_image'); ?>
-				<?php $image_width = get_sub_field('slanted_map_image_width'); ?>
 
-				<section class="slantedMap <?php echo $bg_color . ' ' . $image_horizontal_position . ' ' . $image_vertical_position; ?>">
+				<section class="slantedMap <?php echo $bg_color . ' ' . $bg_position . ' ' . $image_vertical_alignment . ' ' . $image_horizontal_alignment; ?>">
 					<div class="slantedMap-container">
 						<div class="slantedMap-image">
-							<div class="slantedMap-image-image" style="background-image: url('<?php echo $image['url']; ?>'); max-width: <?php echo $image_width; ?>px;"></div>
+							<img class="slantedMap-image-image" src="<?php echo $image['url']; ?>">
 						</div>
-						<div class="slantedMap-copyDesktop">
+						<div class="slantedMap-copy">
 							<h3 class="slantedMap-copy-intro"><?php the_sub_field('slanted_map_copy_intro'); ?></h3>
 
 							<?php while(have_rows('slanted_map_copy_block')): the_row(); ?>
@@ -108,8 +96,8 @@
 									  <h6 class="slantedMap-copy-block-title"><?php the_sub_field('slanted_map_copy_block_title'); ?></h6>
 									<?php endif; ?>
 
-									<?php if (get_sub_field('slanted_map_copy_block_custom') && get_sub_field('slanted_map_copy_block_custom') != ""): ?>
-									  <div class="slantedMap-copy-block-custom"><?php the_sub_field('slanted_map_copy_block_custom'); ?></div>
+									<?php if (get_sub_field('slanted_map_copy_block_text') && get_sub_field('slanted_map_copy_block_text') != ""): ?>
+									  <div class="slantedMap-copy-block-text"><?php the_sub_field('slanted_map_copy_block_text'); ?></div>
 									<?php endif; ?>
 
 								<?php endwhile; ?>
@@ -137,8 +125,8 @@
 							  <h6 class="slantedMap-copy-block-title"><?php the_sub_field('slanted_map_copy_block_title'); ?></h6>
 							<?php endif; ?>
 
-							<?php if (get_sub_field('slanted_map_copy_block_custom') && get_sub_field('slanted_map_copy_block_custom') != ""): ?>
-							  <div class="slantedMap-copy-block-custom"><?php the_sub_field('slanted_map_copy_block_custom'); ?></div>
+							<?php if (get_sub_field('slanted_map_copy_block_text') && get_sub_field('slanted_map_copy_block_text') != ""): ?>
+							  <div class="slantedMap-copy-block-text"><?php the_sub_field('slanted_map_copy_block_text'); ?></div>
 							<?php endif; ?>
 
 						<?php endwhile; ?>
@@ -158,7 +146,8 @@
 
 				<?php $full_width_image_image = get_sub_field('full_width_image_image'); ?>
 
-				<section class="fullWidthImage" style="background-image: url('<?php echo $full_width_image_image['url']; ?>');">
+				<section class="fullWidthImage">
+					<img class="fullWidthImage-image" src="<?php echo $full_width_image_image['url']; ?>">
 				</section>
 
 			<?php elseif (get_row_layout() == 'testimonials'): ?>
@@ -175,8 +164,8 @@
 								<?php $testimonials_image = get_sub_field('testimonials_image'); ?>
 
 								<div class="testimonials-block">
-									<div class="testimonials-image" style="background-image: url('<?php echo $testimonials_image['url']; ?>');"></div>
-									<p class="testimonials-text"><?php the_sub_field('testimonials_text'); ?></p>
+									<img class="testimonials-image" src="<?php echo $testimonials_image['url']; ?>">
+									<div class="testimonials-text"><?php the_sub_field('testimonials_text'); ?></div>
 									<p class="testimonials-source"><?php the_sub_field('testimonials_source'); ?></p>
 									<p class="testimonials-category"><?php the_sub_field('testimonials_category'); ?></p>
 								</div>
@@ -202,9 +191,9 @@
 								<?php $bios_linkedin_url = get_sub_field('bios_linkedin'); ?>
 
 								<div class="bios-block">
-									<div class="bios-image" style="background-image: url('<?php echo $bios_image['url']; ?>');"></div>
+									<img class="bios-image" src="<?php echo $bios_image['url']; ?>">
 									<p class="bios-name"><?php the_sub_field('bios_name'); ?></p>
-									<p class="bios-description"><?php the_sub_field('bios_description'); ?></p>
+									<div class="bios-description"><?php the_sub_field('bios_description'); ?></div>
 									<a class="bios-linkedin buttonGreenTransparent buttonSmall" target="_blank" href="<?php echo $bios_linkedin_url; ?>">LinkedIn</a>
 								</div>
 

@@ -54,6 +54,10 @@ a {
 
 .pageContent {
   padding-top: 141px;
+
+  @media screen and (max-width: 769px) {
+    padding-top: 80px;
+  }
 }
 
 .sectionWhite {
@@ -136,20 +140,19 @@ Hero
 }
 
 .hero-container {
-  @include outer-container(820px);
+  @include outer-container(800px);
 }
 
 .heroSmall .hero-container {
-  padding: 95px 10px;
+  padding: 95px 20px;
 }
 
 .heroLarge .hero-container {
-  padding: 103px 10px;
+  padding: 103px 20px;
 }
 
 .hero-headline {
   text-align: center;
-  font-weight: $bold;
   color: $white;
   line-height: 43.2px;
   text-shadow: 0 4px 5.88px rgba(0, 0, 0, 0.72);
@@ -166,14 +169,14 @@ Long Form Content with Divider
 *********************/
 .longFormContentWithDivider-container {
   @include outer-container(640px);
-  padding: 75px 10px;
+  padding: 75px 20px;
 }
 
 .longFormContentWithDivider-text {
   line-height: 30px;
 }
 
-.longFormContentWithDivider p:not(:last-child):after {
+.longFormContentWithDivider div:not(:last-child):after {
   content: '/';
   display: block;
   margin: 0 auto;
@@ -192,7 +195,7 @@ Strip Copy Callout
 *********************/
 .stripCopyCallout-container {
   @include outer-container(660px);
-  padding: 39px 10px;
+  padding: 39px 20px;
 }
 
 .stripCopyCallout-text {
@@ -205,45 +208,15 @@ Strip Copy Callout
 
 
 /*********************
-Strip Copy & Image Callout
-*********************/
-.stripCopyWithImageCallout-container {
-  @include outer-container(1000px);
-  padding: 63px 10px;
-  position: relative;
-  overflow: visible;
-}
-
-.stripCopyWithImageCallout-text {
-  margin: 0 auto;
-  max-width: 500px;
-  font-size: 18px;
-  line-height: 24px;
-  text-align: center;
-  font-weight: $bold;
-  text-transform: $uppercase;
-  color: $light-grey;
-}
-
-.stripCopyWithImageCallout-image {
-  position: absolute;
-  top: 14px;
-  left: 10px;
-  z-index: 2;
-}
-
-
-
-/*********************
 Data Strip Callout
 *********************/
 .stripDataCallout {
-  background-color: #000000;
+  background-color: $navy;
 }
 
 .stripDataCallout-container {
   @include outer-container(990px);
-  padding: 69px 10px;
+  padding: 69px 20px;
 }
 
 .stripDataCallout-block {
@@ -267,7 +240,7 @@ Data Strip Callout
   font-size: 36px;
   line-height: 24px;
   font-weight: $black;
-  text-transform: $uppercase;
+  text-transform: uppercase;
 }
 
 .stripDataCallout-block-title {
@@ -277,7 +250,7 @@ Data Strip Callout
   font-size: 11px;
   line-height: 13.2px;
   font-weight: $bold;
-  text-transform: $uppercase;
+  text-transform: uppercase;
 }
 
 
@@ -301,7 +274,7 @@ Slanted Map
   height: 500%;
 }
 
-.slantedMap.positionRight:before {
+.slantedMap.mapBackgroundRight:before {
   left: -40%;
   -webkit-transform: rotate(-325deg);
   -moz-transform: rotate(-325deg);
@@ -312,7 +285,7 @@ Slanted Map
   }
 }
 
-.slantedMap.positionLeft:before {
+.slantedMap.mapBackgroundLeft:before {
   right: -40%;
   -webkit-transform: rotate(325deg);
   -moz-transform: rotate(325deg);
@@ -340,8 +313,11 @@ Slanted Map
 }
 
 .slantedMap-container {
-  @include outer-container(1160px);
-  padding: 85px 10px;
+  @include outer-container(1180px);
+  @include display(flex);
+  @include align-items(center);
+  @include justify-content(center);
+  padding: 0 20px;
   position: relative;
 
   @media screen and (max-width: 769px) {
@@ -349,8 +325,10 @@ Slanted Map
   }
 }
 
-.slantedMap-copyDesktop {
-  @include span-columns(6);
+.slantedMap-copy {
+  max-width: 50%;
+  @include flex(1);
+  padding: 85px 0;
 
   @media screen and (max-width: 769px) {
     display: none !important;
@@ -358,7 +336,67 @@ Slanted Map
 }
 
 .slantedMap-image {
-  @include span-columns(6);
+  max-width: 50%;
+  @include flex(1);
+
+  @media screen and (max-width: 769px) {
+    max-width: 100%;
+  }
+}
+
+.slantedMap.mapBackgroundLeft .slantedMap-image {
+  order: 1;
+}
+
+.slantedMap.mapBackgroundLeft .slantedMap-copy {
+  order: 2;
+  margin-left: 20px;
+}
+
+.slantedMap.mapBackgroundRight .slantedMap-image {
+  order: 2;
+}
+
+.slantedMap.mapBackgroundRight .slantedMap-copy {
+  order: 1;
+  margin-right: 20px;
+}
+
+.slantedMap.alignmentBottom .slantedMap-image {
+  align-self: flex-end;
+}
+
+.slantedMap-image-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+
+  @media screen and (max-width: 769px) {
+    padding: 20px 0;
+  }
+}
+
+.slantedMap.alignmentBottom .slantedMap-image-image {
+  @media screen and (max-width: 769px) {
+    padding-bottom: 0;
+  }
+}
+
+.slantedMap.alignmentLeft .slantedMap-image-image {
+  float: left;
+
+  @media screen and (max-width: 769px) {
+    float: none;
+  }
+}
+
+.slantedMap.alignmentRight .slantedMap-image-image {
+  float: right;
+
+  @media screen and (max-width: 769px) {
+    float: none;
+  }
 }
 
 .slantedMap-copyMobile {
@@ -366,67 +404,21 @@ Slanted Map
 
   @media screen and (max-width: 769px) {
     display: block !important;
-    padding: 40px 10px;
+    padding: 40px 20px;
   }
-}
-
-.slantedMap-image {
-  position: absolute;
-  height: 100%;
-
-  @media screen and (max-width: 769px) {
-    width: 100%;
-    padding: 25px 10px;
-  }
-}
-
-.slantedMap.alignmentMiddle .slantedMap-image {
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.slantedMap.alignmentBottom .slantedMap-image {
-  top: auto;
-}
-
-.slantedMap.positionLeft .slantedMap-image {
-  left: 0;
-}
-
-.slantedMap.positionLeft .slantedMap-copyDesktop {
-  float: right;
-}
-
-.slantedMap.positionRight .slantedMap-image {
-  right: 0;
-  margin-right: 0;
-}
-
-.slantedMap.positionRight .slantedMap-copyDesktop {
-  float: left;
-}
-
-.slantedMap-image-image {
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100%;
-  margin: 0 auto;
 }
 
 .slantedMap-copy-intro {
   padding-bottom: 18px;
   margin-bottom: 24px;
   font-size: 24px;
-  font-weight: $bold;
-  text-transform: $uppercase;
   line-height: 24px;
   border-bottom: 2px solid #e6e6e6;
 }
 
 .slantedMap-copy-block-title {
   font-weight: $bold;
-  text-transform: $uppercase;
+  text-transform: uppercase;
 }
 
 .slantedMap-copy-block-text {
@@ -434,7 +426,7 @@ Slanted Map
   line-height: 30px;
 }
 
-.slantedMap-copy-block-custom p {
+.slantedMap-copy-block-text p {
   line-height: 30px;
 }
 
@@ -443,11 +435,9 @@ Slanted Map
 /*********************
 Full Width Image
 *********************/
-.fullWidthImage {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 600px;
+.fullWidthImage-image {
+  width: 100%;
+  height: auto;
 }
 
 
@@ -457,16 +447,14 @@ Testimonials
 *********************/
 .testimonials-container {
   @include outer-container(1070px);
-  padding: 85px 10px;
+  padding: 85px 20px;
 }
 
 .testimonials-intro {
   padding-bottom: 45px;
-  text-transform: $uppercase;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
-  font-weight: $bold;
 }
 
 .testimonials-block {
@@ -474,12 +462,10 @@ Testimonials
 }
 
 .testimonials-image {
+  display: block;
   margin: 0 auto;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  height: 254px;
-  width: 380px;
+  max-width: 100%;
+  height: auto;
 }
 
 .testimonials-text {
@@ -505,16 +491,14 @@ Bios
 *********************/
 .bios-container {
   @include outer-container(840px);
-  padding: 85px 10px;
+  padding: 85px 20px;
 }
 
 .bios-intro {
   padding-bottom: 45px;
-  text-transform: $uppercase;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
-  font-weight: $bold;
 }
 
 .bios-subintro {
@@ -529,19 +513,17 @@ Bios
 }
 
 .bios-image {
+  display: block;
   margin: 0 auto;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  height: 192px;
-  width: 192px;
+  max-width: 100%;
+  height: auto;
 }
 
 .bios-name {
   padding: 26px 16px;
   text-align: center;
   font-weight: $bold;
-  text-transform: $uppercase;
+  text-transform: uppercase;
   font-size: 16px;
   line-height: 24px;
 }
@@ -560,7 +542,7 @@ Contact
 *********************/
 .contact-container {
   @include outer-container(1080px);
-  padding: 85px 10px;
+  padding: 85px 20px;
 }
 
 .contact-info,
@@ -571,10 +553,8 @@ Contact
 .contact-info-intro {
   padding-bottom: 18px;
   margin-bottom: 24px;
-  text-transform: $uppercase;
   font-size: 24px;
   line-height: 24px;
-  font-weight: $bold;
   border-bottom: 2px solid #e6e6e6;
 }
 
@@ -593,24 +573,22 @@ Bookend
 *********************/
 .bookend-container {
   @include outer-container(1160px);
-  padding: 64px 10px;
+  padding: 64px 20px;
   position: relative;
 }
 
 .bookend-intro {
   padding-bottom: 32px;
-  text-transform: $uppercase;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
-  font-weight: $bold;
 }
 
 .bookend-nav {
   display: block;
   position: absolute;
   top: 50%;
-  text-transform: $uppercase;
+  text-transform: uppercase;
   font-weight: $bold;
   color: $base-text-color;
 }
