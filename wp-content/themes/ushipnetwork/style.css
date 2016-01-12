@@ -18,6 +18,7 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,900italic");
+/* Tools/Libraries */
 /* line 4, sass/neat/grid/_box-sizing.scss */
 html {
   box-sizing: border-box;
@@ -93,6 +94,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+/* Base */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -545,8 +547,8 @@ th {
 /*** General Text Utilities ***/
 /*** Base Colors ***/
 /*** Header ***/
-/* Typography */
-/* line 2, sass/_partials/_typography.scss */
+/*** Typography ***/
+/* line 3, sass/_partials/_typography.scss */
 body {
   color: #262626;
   font-size: 16px;
@@ -555,7 +557,7 @@ body {
   line-height: 1.5;
 }
 
-/* line 10, sass/_partials/_typography.scss */
+/* line 11, sass/_partials/_typography.scss */
 h1,
 h2,
 h3 {
@@ -565,7 +567,7 @@ h3 {
 }
 
 /*** Header ***/
-/* line 2, sass/_partials/_header.scss */
+/* line 3, sass/_partials/_header.scss */
 .pageHeader {
   position: fixed;
   width: 100%;
@@ -573,7 +575,7 @@ h3 {
   z-index: 3;
 }
 
-/* line 9, sass/_partials/_header.scss */
+/* line 10, sass/_partials/_header.scss */
 .pageHeader-primaryRow:after {
   position: absolute;
   z-index: -1;
@@ -585,7 +587,7 @@ h3 {
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.13);
 }
 
-/* line 20, sass/_partials/_header.scss */
+/* line 21, sass/_partials/_header.scss */
 .pageHeader-homeLink {
   display: block;
   padding: 15px 34px;
@@ -594,7 +596,7 @@ h3 {
   background: #0083BB;
 }
 
-/* line 28, sass/_partials/_header.scss */
+/* line 29, sass/_partials/_header.scss */
 .pageHeader-logo {
   height: 49px;
   background: transparent url("/wp-content/themes/ushipnetwork/images/uship-logo.png") center center no-repeat;
@@ -603,7 +605,7 @@ h3 {
 }
 
 /*** Sub Nav ***/
-/* line 36, sass/_partials/_header.scss */
+/* line 38, sass/_partials/_header.scss */
 .pageHeader-subNav {
   position: absolute;
   z-index: -2;
@@ -612,17 +614,17 @@ h3 {
   background: #FFFFFF;
 }
 @media screen and (max-width: 769px) {
-  /* line 36, sass/_partials/_header.scss */
+  /* line 38, sass/_partials/_header.scss */
   .pageHeader-subNav {
     display: none;
   }
 }
 
-/* line 48, sass/_partials/_header.scss */
+/* line 50, sass/_partials/_header.scss */
 .menu-about-sub-nav-container {
   float: left;
 }
-/* line 51, sass/_partials/_header.scss */
+/* line 53, sass/_partials/_header.scss */
 .menu-about-sub-nav-container li {
   float: left;
   min-width: 138px;
@@ -630,20 +632,20 @@ h3 {
   text-transform: uppercase;
   line-height: 60px;
 }
-/* line 59, sass/_partials/_header.scss */
+/* line 61, sass/_partials/_header.scss */
 .menu-about-sub-nav-container a {
   padding-bottom: 5px;
   color: #262626;
 }
 
-/* line 65, sass/_partials/_header.scss */
+/* line 67, sass/_partials/_header.scss */
 .pageHeader-subNav-title {
   background: #f4f4f4;
   font-weight: 700;
 }
 
 /*** Current Menu Item/Hover ***/
-/* line 71, sass/_partials/_header.scss */
+/* line 74, sass/_partials/_header.scss */
 .pageHeader .current-menu-item a,
 .pageHeader .menu-item a:hover {
   border-bottom-width: 3px;
@@ -651,7 +653,8 @@ h3 {
   border-bottom-color: #02AAF3;
 }
 
-/* line 1, sass/_partials/_footer.scss */
+/*** Footer ***/
+/* line 3, sass/_partials/_footer.scss */
 .pageFooter-container {
   overflow: hidden;
   *zoom: 1;
@@ -661,7 +664,7 @@ h3 {
   padding: 30px 10px;
 }
 
-/* line 6, sass/_partials/_footer.scss */
+/* line 8, sass/_partials/_footer.scss */
 .pageFooter-legal {
   float: left;
   display: block;
@@ -674,7 +677,7 @@ h3 {
   margin-right: 0;
 }
 
-/* line 11, sass/_partials/_footer.scss */
+/* line 13, sass/_partials/_footer.scss */
 .pageFooter-links {
   float: left;
   display: block;
@@ -686,44 +689,40 @@ h3 {
   margin-right: 0;
 }
 
-/* line 15, sass/_partials/_footer.scss */
+/* line 17, sass/_partials/_footer.scss */
 .pageFooter-links-list {
   float: right;
 }
 
-/* line 19, sass/_partials/_footer.scss */
+/* line 21, sass/_partials/_footer.scss */
 .pageFooter-links-list-item {
   float: left;
 }
 
-/* line 23, sass/_partials/_footer.scss */
+/* line 25, sass/_partials/_footer.scss */
 .pageFooter-links-list-item:not(:last-child):after {
   content: "|";
   padding: 0 5px;
 }
 
-/* line 28, sass/_partials/_footer.scss */
+/* line 30, sass/_partials/_footer.scss */
 .pageFooter-links-list-item a {
   color: #02AAF3;
 }
 
-/*********************
-**********************
-Base
-**********************
-*********************/
-/* line 42, sass/style.scss */
+/*** Base ***/
+/* line 3, sass/_partials/_base.scss */
 a {
   color: #02AAF3;
   text-decoration: none;
 }
 
-/* line 47, sass/style.scss */
+/* line 8, sass/_partials/_base.scss */
 .pageHeader-primaryNav {
   display: none;
 }
 
-/* line 51, sass/style.scss */
+/* line 12, sass/_partials/_base.scss */
 .pageWrapper {
   overflow: hidden;
   *zoom: 1;
@@ -732,33 +731,33 @@ a {
   margin-right: auto;
 }
 
-/* line 55, sass/style.scss */
+/* line 16, sass/_partials/_base.scss */
 .pageContent {
   padding-top: 141px;
 }
 @media screen and (max-width: 769px) {
-  /* line 55, sass/style.scss */
+  /* line 16, sass/_partials/_base.scss */
   .pageContent {
     padding-top: 80px;
   }
 }
 
-/* line 63, sass/style.scss */
+/* line 24, sass/_partials/_base.scss */
 .sectionWhite {
   background-color: #FFFFFF;
 }
 
-/* line 67, sass/style.scss */
+/* line 28, sass/_partials/_base.scss */
 .sectionGrey {
   background-color: #F4F4F4;
 }
 
-/* line 71, sass/style.scss */
+/* line 32, sass/_partials/_base.scss */
 .sectionNavy {
   background-color: #1C2431;
 }
 
-/* line 75, sass/style.scss */
+/* line 36, sass/_partials/_base.scss */
 .buttonGreen {
   display: block;
   margin: 0 auto;
@@ -769,21 +768,21 @@ a {
   font-weight: 700;
 }
 
-/* line 85, sass/style.scss */
+/* line 46, sass/_partials/_base.scss */
 .buttonLarge {
   padding: 10px 10px;
   max-width: 220px;
   max-height: 50px;
 }
 
-/* line 91, sass/style.scss */
+/* line 52, sass/_partials/_base.scss */
 .buttonSmall {
   padding: 7px 10px;
   max-width: 124px;
   max-height: 43px;
 }
 
-/* line 97, sass/style.scss */
+/* line 58, sass/_partials/_base.scss */
 .buttonGreenTransparent {
   display: block;
   margin: 0 auto;
@@ -794,7 +793,7 @@ a {
   font-weight: 700;
 }
 
-/* line 107, sass/style.scss */
+/* line 68, sass/_partials/_base.scss */
 .emphasisLink {
   padding-bottom: 5px;
   border-bottom: 3px solid #00B437;
@@ -802,7 +801,7 @@ a {
   font-weight: 700;
 }
 
-/* line 114, sass/style.scss */
+/* line 75, sass/_partials/_base.scss */
 .emphasisLink:after {
   display: inline-block;
   content: "";
@@ -812,114 +811,183 @@ a {
   margin-left: 15px;
 }
 
-/*********************
-**********************
-Modules
-**********************
-*********************/
-/*********************
-Hero
-*********************/
-/* line 136, sass/style.scss */
-.hero {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-/* line 142, sass/style.scss */
-.hero-container {
+/* Page Content Modules */
+/*** Bios ***/
+/* line 3, sass/_partials/modules/_bios.scss */
+.bios-container {
   overflow: hidden;
   *zoom: 1;
-  max-width: 800px;
+  max-width: 840px;
   margin-left: auto;
   margin-right: auto;
+  padding: 85px 20px;
 }
 
-/* line 146, sass/style.scss */
-.heroSmall .hero-container {
-  padding: 95px 20px;
-}
-
-/* line 150, sass/style.scss */
-.heroLarge .hero-container {
-  padding: 103px 20px;
-}
-
-/* line 154, sass/style.scss */
-.hero-headline {
-  text-align: center;
-  color: #FFFFFF;
-  line-height: 43.2px;
-  text-shadow: 0 4px 5.88px rgba(0, 0, 0, 0.72);
-}
-
-/* line 161, sass/style.scss */
-.heroLarge .hero-headline {
-  padding-bottom: 65px;
-}
-
-/*********************
-Long Form Content with Divider
-*********************/
-/* line 170, sass/style.scss */
-.longFormContentWithDivider-container {
-  overflow: hidden;
-  *zoom: 1;
-  max-width: 640px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 75px 20px;
-}
-
-/* line 175, sass/style.scss */
-.longFormContentWithDivider-text {
-  line-height: 30px;
-}
-
-/* line 179, sass/style.scss */
-.longFormContentWithDivider div:not(:last-child):after {
-  content: '/';
-  display: block;
-  margin: 0 auto;
-  padding-top: 35px;
-  padding-bottom: 35px;
-  text-align: center;
-  line-height: 100%;
-  font-size: 30px;
-  color: #dddddd;
-}
-
-/*********************
-Strip Copy Callout
-*********************/
-/* line 196, sass/style.scss */
-.stripCopyCallout-container {
-  overflow: hidden;
-  *zoom: 1;
-  max-width: 660px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 39px 20px;
-}
-
-/* line 201, sass/style.scss */
-.stripCopyCallout-text {
-  font-size: 18px;
+/* line 8, sass/_partials/modules/_bios.scss */
+.bios-intro {
+  padding-bottom: 45px;
+  font-size: 24px;
   line-height: 24px;
   text-align: center;
-  font-weight: 700;
 }
 
-/*********************
-Data Strip Callout
-*********************/
-/* line 213, sass/style.scss */
+/* line 15, sass/_partials/modules/_bios.scss */
+.bios-subintro {
+  padding-bottom: 63px;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+}
+
+/* line 22, sass/_partials/modules/_bios.scss */
+.bios-block {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+}
+/* line 89, sass/neat/grid/_span-columns.scss */
+.bios-block:last-child {
+  margin-right: 0;
+}
+
+/* line 26, sass/_partials/modules/_bios.scss */
+.bios-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 33, sass/_partials/modules/_bios.scss */
+.bios-name {
+  padding: 26px 16px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* line 42, sass/_partials/modules/_bios.scss */
+.bios-description {
+  padding-bottom: 26px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/*** Bookend ***/
+/* line 3, sass/_partials/modules/_bookend.scss */
+.bookend-container {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 64px 20px;
+  position: relative;
+}
+
+/* line 9, sass/_partials/modules/_bookend.scss */
+.bookend-intro {
+  padding-bottom: 32px;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
+/* line 16, sass/_partials/modules/_bookend.scss */
+.bookend-nav {
+  display: block;
+  position: absolute;
+  top: 50%;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #262626;
+}
+
+/* line 25, sass/_partials/modules/_bookend.scss */
+.bookend-navPrevious {
+  left: 10px;
+}
+
+/* line 29, sass/_partials/modules/_bookend.scss */
+.bookend-navPrevious:before {
+  float: left;
+  content: "";
+  background: url("/wp-content/themes/ushipnetwork/images/previous.png") center center no-repeat;
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+}
+
+/* line 38, sass/_partials/modules/_bookend.scss */
+.bookend-navNext {
+  right: 10px;
+}
+
+/* line 42, sass/_partials/modules/_bookend.scss */
+.bookend-navNext:after {
+  float: right;
+  content: "";
+  background: url("/wp-content/themes/ushipnetwork/images/next.png") center center no-repeat;
+  width: 24px;
+  height: 24px;
+  margin-left: 20px;
+}
+
+/*** Contact ***/
+/* line 3, sass/_partials/modules/_contact.scss */
+.contact-container {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 85px 20px;
+}
+
+/* line 8, sass/_partials/modules/_contact.scss */
+.contact-info,
+.contact-links {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+/* line 89, sass/neat/grid/_span-columns.scss */
+.contact-info:last-child,
+.contact-links:last-child {
+  margin-right: 0;
+}
+
+/* line 13, sass/_partials/modules/_contact.scss */
+.contact-info-intro {
+  padding-bottom: 18px;
+  margin-bottom: 24px;
+  font-size: 24px;
+  line-height: 24px;
+  border-bottom: 2px solid #e6e6e6;
+}
+
+/* line 21, sass/_partials/modules/_contact.scss */
+.contact-links-content {
+  float: right;
+}
+
+/* line 25, sass/_partials/modules/_contact.scss */
+.contact-links-content-link {
+  margin-bottom: 35px;
+}
+
+/*** Data Strip Callout ***/
+/* line 3, sass/_partials/modules/_datastripcallout.scss */
 .stripDataCallout {
   background-color: #1C2431;
 }
 
-/* line 217, sass/style.scss */
+/* line 7, sass/_partials/modules/_datastripcallout.scss */
 .stripDataCallout-container {
   overflow: hidden;
   *zoom: 1;
@@ -929,7 +997,7 @@ Data Strip Callout
   padding: 69px 20px;
 }
 
-/* line 222, sass/style.scss */
+/* line 12, sass/_partials/modules/_datastripcallout.scss */
 .stripDataCallout-block {
   float: left;
   display: block;
@@ -942,7 +1010,7 @@ Data Strip Callout
   margin-right: 0;
 }
 
-/* line 227, sass/style.scss */
+/* line 17, sass/_partials/modules/_datastripcallout.scss */
 .stripDataCallout-block-inner {
   overflow: hidden;
   *zoom: 1;
@@ -952,12 +1020,12 @@ Data Strip Callout
   height: 100%;
 }
 
-/* line 232, sass/style.scss */
+/* line 22, sass/_partials/modules/_datastripcallout.scss */
 .stripDataCallout-block:not(:first-child) .stripDataCallout-block-inner {
   float: right;
 }
 
-/* line 236, sass/style.scss */
+/* line 26, sass/_partials/modules/_datastripcallout.scss */
 .stripDataCallout-block-number {
   display: block;
   float: left;
@@ -968,7 +1036,7 @@ Data Strip Callout
   text-transform: uppercase;
 }
 
-/* line 246, sass/style.scss */
+/* line 36, sass/_partials/modules/_datastripcallout.scss */
 .stripDataCallout-block-title {
   display: block;
   float: left;
@@ -979,10 +1047,84 @@ Data Strip Callout
   text-transform: uppercase;
 }
 
-/*********************
-Slanted Map
-*********************/
-/* line 261, sass/style.scss */
+/*** Full Width Image ***/
+/* line 3, sass/_partials/modules/_fullwidthimage.scss */
+.fullWidthImage-image {
+  width: 100%;
+  height: auto;
+}
+
+/*** Hero ***/
+/* line 3, sass/_partials/modules/_hero.scss */
+.hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* line 9, sass/_partials/modules/_hero.scss */
+.hero-container {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 13, sass/_partials/modules/_hero.scss */
+.heroSmall .hero-container {
+  padding: 95px 20px;
+}
+
+/* line 17, sass/_partials/modules/_hero.scss */
+.heroLarge .hero-container {
+  padding: 103px 20px;
+}
+
+/* line 21, sass/_partials/modules/_hero.scss */
+.hero-headline {
+  text-align: center;
+  color: #FFFFFF;
+  line-height: 43.2px;
+  text-shadow: 0 4px 5.88px rgba(0, 0, 0, 0.72);
+}
+
+/* line 28, sass/_partials/modules/_hero.scss */
+.heroLarge .hero-headline {
+  padding-bottom: 65px;
+}
+
+/*** Long Form Content with Divider ***/
+/* line 3, sass/_partials/modules/_longformcontent.scss */
+.longFormContentWithDivider-container {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 75px 20px;
+}
+
+/* line 8, sass/_partials/modules/_longformcontent.scss */
+.longFormContentWithDivider-text {
+  line-height: 30px;
+}
+
+/* line 12, sass/_partials/modules/_longformcontent.scss */
+.longFormContentWithDivider div:not(:last-child):after {
+  content: '/';
+  display: block;
+  margin: 0 auto;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  text-align: center;
+  line-height: 100%;
+  font-size: 30px;
+  color: #dddddd;
+}
+
+/*** Slanted Map ***/
+/* line 3, sass/_partials/modules/_slantedmap.scss */
 .slantedMap {
   background-repeat: no-repeat;
   background-size: cover;
@@ -991,7 +1133,7 @@ Slanted Map
   overflow: hidden;
 }
 
-/* line 269, sass/style.scss */
+/* line 11, sass/_partials/modules/_slantedmap.scss */
 .slantedMap:before {
   content: '';
   position: absolute;
@@ -1000,7 +1142,7 @@ Slanted Map
   height: 500%;
 }
 
-/* line 277, sass/style.scss */
+/* line 19, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.mapBackgroundRight:before {
   left: -40%;
   -webkit-transform: rotate(-325deg);
@@ -1008,13 +1150,13 @@ Slanted Map
   transform: rotate(-325deg);
 }
 @media screen and (max-width: 769px) {
-  /* line 277, sass/style.scss */
+  /* line 19, sass/_partials/modules/_slantedmap.scss */
   .slantedMap.mapBackgroundRight:before {
     left: -50%;
   }
 }
 
-/* line 288, sass/style.scss */
+/* line 30, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.mapBackgroundLeft:before {
   right: -40%;
   -webkit-transform: rotate(325deg);
@@ -1022,33 +1164,33 @@ Slanted Map
   transform: rotate(325deg);
 }
 @media screen and (max-width: 769px) {
-  /* line 288, sass/style.scss */
+  /* line 30, sass/_partials/modules/_slantedmap.scss */
   .slantedMap.mapBackgroundLeft:before {
     right: -50%;
   }
 }
 
-/* line 299, sass/style.scss */
+/* line 41, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.mapBackgroundGrey {
   background-image: url("/wp-content/themes/ushipnetwork/images/map_light_2x.jpg");
 }
 
-/* line 303, sass/style.scss */
+/* line 45, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.mapBackgroundWhite {
   background-image: url("/wp-content/themes/ushipnetwork/images/map_dark_2x.jpg");
 }
 
-/* line 307, sass/style.scss */
+/* line 49, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.mapBackgroundGrey:before {
   background-color: #F4F4F4;
 }
 
-/* line 311, sass/style.scss */
+/* line 53, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.mapBackgroundWhite:before {
   background-color: #FFFFFF;
 }
 
-/* line 315, sass/style.scss */
+/* line 57, sass/_partials/modules/_slantedmap.scss */
 .slantedMap-container {
   overflow: hidden;
   *zoom: 1;
@@ -1070,13 +1212,13 @@ Slanted Map
   position: relative;
 }
 @media screen and (max-width: 769px) {
-  /* line 315, sass/style.scss */
+  /* line 57, sass/_partials/modules/_slantedmap.scss */
   .slantedMap-container {
     min-height: 300px;
   }
 }
 
-/* line 328, sass/style.scss */
+/* line 70, sass/_partials/modules/_slantedmap.scss */
 .slantedMap-copy {
   max-width: 50%;
   -webkit-flex: 1;
@@ -1084,53 +1226,53 @@ Slanted Map
   padding: 85px 0;
 }
 @media screen and (max-width: 769px) {
-  /* line 328, sass/style.scss */
+  /* line 70, sass/_partials/modules/_slantedmap.scss */
   .slantedMap-copy {
     display: none !important;
   }
 }
 
-/* line 338, sass/style.scss */
+/* line 80, sass/_partials/modules/_slantedmap.scss */
 .slantedMap-image {
   max-width: 50%;
   -webkit-flex: 1;
   flex: 1;
 }
 @media screen and (max-width: 769px) {
-  /* line 338, sass/style.scss */
+  /* line 80, sass/_partials/modules/_slantedmap.scss */
   .slantedMap-image {
     max-width: 100%;
   }
 }
 
-/* line 347, sass/style.scss */
+/* line 89, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.mapBackgroundLeft .slantedMap-image {
   order: 1;
 }
 
-/* line 351, sass/style.scss */
+/* line 93, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.mapBackgroundLeft .slantedMap-copy {
   order: 2;
   margin-left: 20px;
 }
 
-/* line 356, sass/style.scss */
+/* line 98, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.mapBackgroundRight .slantedMap-image {
   order: 2;
 }
 
-/* line 360, sass/style.scss */
+/* line 102, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.mapBackgroundRight .slantedMap-copy {
   order: 1;
   margin-right: 20px;
 }
 
-/* line 365, sass/style.scss */
+/* line 107, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.alignmentBottom .slantedMap-image {
   align-self: flex-end;
 }
 
-/* line 369, sass/style.scss */
+/* line 111, sass/_partials/modules/_slantedmap.scss */
 .slantedMap-image-image {
   display: block;
   margin: 0 auto;
@@ -1138,52 +1280,52 @@ Slanted Map
   height: auto;
 }
 
-/* line 376, sass/style.scss */
+/* line 118, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.alignmentMiddle .slantedMap-image-image {
   padding: 85px 0;
 }
 @media screen and (max-width: 769px) {
-  /* line 376, sass/style.scss */
+  /* line 118, sass/_partials/modules/_slantedmap.scss */
   .slantedMap.alignmentMiddle .slantedMap-image-image {
     padding: 20px 0;
   }
 }
 
-/* line 384, sass/style.scss */
+/* line 126, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.alignmentLeft .slantedMap-image-image {
   float: left;
 }
 @media screen and (max-width: 769px) {
-  /* line 384, sass/style.scss */
+  /* line 126, sass/_partials/modules/_slantedmap.scss */
   .slantedMap.alignmentLeft .slantedMap-image-image {
     float: none;
   }
 }
 
-/* line 392, sass/style.scss */
+/* line 134, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.alignmentRight .slantedMap-image-image {
   float: right;
 }
 @media screen and (max-width: 769px) {
-  /* line 392, sass/style.scss */
+  /* line 134, sass/_partials/modules/_slantedmap.scss */
   .slantedMap.alignmentRight .slantedMap-image-image {
     float: none;
   }
 }
 
-/* line 400, sass/style.scss */
+/* line 142, sass/_partials/modules/_slantedmap.scss */
 .slantedMap-copyMobile {
   display: none;
 }
 @media screen and (max-width: 769px) {
-  /* line 400, sass/style.scss */
+  /* line 142, sass/_partials/modules/_slantedmap.scss */
   .slantedMap-copyMobile {
     display: block !important;
     padding: 40px 20px;
   }
 }
 
-/* line 409, sass/style.scss */
+/* line 151, sass/_partials/modules/_slantedmap.scss */
 .slantedMap-copy-intro {
   padding-bottom: 18px;
   margin-bottom: 24px;
@@ -1192,36 +1334,44 @@ Slanted Map
   border-bottom: 2px solid #e6e6e6;
 }
 
-/* line 417, sass/style.scss */
+/* line 159, sass/_partials/modules/_slantedmap.scss */
 .slantedMap-copy-block-text {
   padding-bottom: 20px;
   line-height: 30px;
 }
 
-/* line 422, sass/style.scss */
+/* line 164, sass/_partials/modules/_slantedmap.scss */
 .slantedMap-copy-block-text h6 {
   font-weight: 700;
   text-transform: uppercase;
 }
 
-/* line 427, sass/style.scss */
+/* line 169, sass/_partials/modules/_slantedmap.scss */
 .slantedMap-copy-block-text p {
   line-height: 30px;
 }
 
-/*********************
-Full Width Image
-*********************/
-/* line 436, sass/style.scss */
-.fullWidthImage-image {
-  width: 100%;
-  height: auto;
+/*** Strip Copy Callout ***/
+/* line 3, sass/_partials/modules/_stripcopycallout.scss */
+.stripCopyCallout-container {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: 660px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 39px 20px;
 }
 
-/*********************
-Testimonials
-*********************/
-/* line 446, sass/style.scss */
+/* line 8, sass/_partials/modules/_stripcopycallout.scss */
+.stripCopyCallout-text {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  font-weight: 700;
+}
+
+/*** Testimonials ***/
+/* line 3, sass/_partials/modules/_testimonials.scss */
 .testimonials-container {
   overflow: hidden;
   *zoom: 1;
@@ -1231,7 +1381,7 @@ Testimonials
   padding: 85px 20px;
 }
 
-/* line 451, sass/style.scss */
+/* line 8, sass/_partials/modules/_testimonials.scss */
 .testimonials-intro {
   padding-bottom: 45px;
   font-size: 24px;
@@ -1239,7 +1389,7 @@ Testimonials
   text-align: center;
 }
 
-/* line 458, sass/style.scss */
+/* line 15, sass/_partials/modules/_testimonials.scss */
 .testimonials-block {
   float: left;
   display: block;
@@ -1251,7 +1401,7 @@ Testimonials
   margin-right: 0;
 }
 
-/* line 462, sass/style.scss */
+/* line 19, sass/_partials/modules/_testimonials.scss */
 .testimonials-image {
   display: block;
   margin: 0 auto;
@@ -1259,7 +1409,7 @@ Testimonials
   height: auto;
 }
 
-/* line 469, sass/style.scss */
+/* line 26, sass/_partials/modules/_testimonials.scss */
 .testimonials-text {
   padding: 35px 0;
   font-style: italic;
@@ -1267,188 +1417,13 @@ Testimonials
   line-height: 30px;
 }
 
-/* line 476, sass/style.scss */
+/* line 33, sass/_partials/modules/_testimonials.scss */
 .testimonials-source {
   padding-bottom: 10px;
 }
 
-/* line 480, sass/style.scss */
+/* line 37, sass/_partials/modules/_testimonials.scss */
 .testimonials-source,
 .testimonials-category {
   font-size: 18px;
-}
-
-/*********************
-Bios
-*********************/
-/* line 490, sass/style.scss */
-.bios-container {
-  overflow: hidden;
-  *zoom: 1;
-  max-width: 840px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 85px 20px;
-}
-
-/* line 495, sass/style.scss */
-.bios-intro {
-  padding-bottom: 45px;
-  font-size: 24px;
-  line-height: 24px;
-  text-align: center;
-}
-
-/* line 502, sass/style.scss */
-.bios-subintro {
-  padding-bottom: 63px;
-  font-size: 18px;
-  line-height: 30px;
-  text-align: center;
-}
-
-/* line 509, sass/style.scss */
-.bios-block {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 31.76157%;
-}
-/* line 89, sass/neat/grid/_span-columns.scss */
-.bios-block:last-child {
-  margin-right: 0;
-}
-
-/* line 513, sass/style.scss */
-.bios-image {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  height: auto;
-}
-
-/* line 520, sass/style.scss */
-.bios-name {
-  padding: 26px 16px;
-  text-align: center;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-/* line 529, sass/style.scss */
-.bios-description {
-  padding-bottom: 26px;
-  text-align: center;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-/*********************
-Contact
-*********************/
-/* line 541, sass/style.scss */
-.contact-container {
-  overflow: hidden;
-  *zoom: 1;
-  max-width: 1080px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 85px 20px;
-}
-
-/* line 546, sass/style.scss */
-.contact-info,
-.contact-links {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
-}
-/* line 89, sass/neat/grid/_span-columns.scss */
-.contact-info:last-child,
-.contact-links:last-child {
-  margin-right: 0;
-}
-
-/* line 551, sass/style.scss */
-.contact-info-intro {
-  padding-bottom: 18px;
-  margin-bottom: 24px;
-  font-size: 24px;
-  line-height: 24px;
-  border-bottom: 2px solid #e6e6e6;
-}
-
-/* line 559, sass/style.scss */
-.contact-links-content {
-  float: right;
-}
-
-/* line 563, sass/style.scss */
-.contact-links-content-link {
-  margin-bottom: 35px;
-}
-
-/*********************
-Bookend
-*********************/
-/* line 572, sass/style.scss */
-.bookend-container {
-  overflow: hidden;
-  *zoom: 1;
-  max-width: 1160px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 64px 20px;
-  position: relative;
-}
-
-/* line 578, sass/style.scss */
-.bookend-intro {
-  padding-bottom: 32px;
-  font-size: 24px;
-  line-height: 24px;
-  text-align: center;
-}
-
-/* line 585, sass/style.scss */
-.bookend-nav {
-  display: block;
-  position: absolute;
-  top: 50%;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #262626;
-}
-
-/* line 594, sass/style.scss */
-.bookend-navPrevious {
-  left: 10px;
-}
-
-/* line 598, sass/style.scss */
-.bookend-navPrevious:before {
-  float: left;
-  content: "";
-  background: url("/wp-content/themes/ushipnetwork/images/previous.png") center center no-repeat;
-  width: 24px;
-  height: 24px;
-  margin-right: 20px;
-}
-
-/* line 607, sass/style.scss */
-.bookend-navNext {
-  right: 10px;
-}
-
-/* line 611, sass/style.scss */
-.bookend-navNext:after {
-  float: right;
-  content: "";
-  background: url("/wp-content/themes/ushipnetwork/images/next.png") center center no-repeat;
-  width: 24px;
-  height: 24px;
-  margin-left: 20px;
 }

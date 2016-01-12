@@ -1,0 +1,13 @@
+/*** Strip Copy Callout ***/
+
+.stripCopyCallout-container {
+  @include outer-container(660px);
+  padding: 39px 20px;
+}
+
+.stripCopyCallout-text {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  font-weight: $bold;
+}

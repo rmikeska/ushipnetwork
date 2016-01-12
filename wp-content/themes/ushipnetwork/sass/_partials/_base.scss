@@ -1,0 +1,82 @@
+/*** Base ***/
+
+a {
+  color: $bright-blue;
+  text-decoration: none;
+}
+
+.pageHeader-primaryNav {
+  display: none;
+}
+
+.pageWrapper {
+  @include outer-container(100%);
+}
+
+.pageContent {
+  padding-top: 141px;
+
+  @media screen and (max-width: 769px) {
+    padding-top: 80px;
+  }
+}
+
+.sectionWhite {
+  background-color: $white;
+}
+
+.sectionGrey {
+  background-color: $light-grey;
+}
+
+.sectionNavy {
+  background-color: $navy;
+}
+
+.buttonGreen {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  background-color: $primary-green;
+  border-radius: 3px;
+  color: $white;
+  font-weight: $bold;
+}
+
+.buttonLarge {
+  padding: 10px 10px;
+  max-width: 220px;
+  max-height: 50px;
+}
+
+.buttonSmall {
+  padding: 7px 10px;
+  max-width: 124px;
+  max-height: 43px;
+}
+
+.buttonGreenTransparent {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  border: 3px solid $primary-green;
+  border-radius: 3px;
+  color: $primary-green;
+  font-weight: $bold;
+}
+
+.emphasisLink {
+  padding-bottom: 5px;
+  border-bottom: 3px solid $primary-green;
+  color: $base-text-color;
+  font-weight: $bold;
+}
+
+.emphasisLink:after {
+  display: inline-block;
+  content: "";
+  background: url("#{$asset-path}/link-arrow.png") center center no-repeat;
+  width: 19px;
+  height: 12px;
+  margin-left: 15px;
+}

@@ -1,0 +1,22 @@
+/*** Long Form Content with Divider ***/
+
+.longFormContentWithDivider-container {
+  @include outer-container(640px);
+  padding: 75px 20px;
+}
+
+.longFormContentWithDivider-text {
+  line-height: 30px;
+}
+
+.longFormContentWithDivider div:not(:last-child):after {
+  content: '/';
+  display: block;
+  margin: 0 auto;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  text-align: center;
+  line-height: 100%;
+  font-size: 30px;
+  color: #dddddd;
+}

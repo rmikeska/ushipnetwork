@@ -1,0 +1,49 @@
+/*** Bookend ***/
+
+.bookend-container {
+  @include outer-container(1160px);
+  padding: 64px 20px;
+  position: relative;
+}
+
+.bookend-intro {
+  padding-bottom: 32px;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.bookend-nav {
+  display: block;
+  position: absolute;
+  top: 50%;
+  text-transform: uppercase;
+  font-weight: $bold;
+  color: $base-text-color;
+}
+
+.bookend-navPrevious {
+  left: 10px;
+}
+
+.bookend-navPrevious:before {
+  float: left;
+  content: "";
+  background: url("#{$asset-path}/previous.png") center center no-repeat;
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+}
+
+.bookend-navNext {
+  right: 10px;
+}
+
+.bookend-navNext:after {
+  float: right;
+  content: "";
+  background: url("#{$asset-path}/next.png") center center no-repeat;
+  width: 24px;
+  height: 24px;
+  margin-left: 20px;
+}

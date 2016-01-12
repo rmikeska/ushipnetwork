@@ -1,0 +1,27 @@
+/*** Contact ***/
+
+.contact-container {
+  @include outer-container(1080px);
+  padding: 85px 20px;
+}
+
+.contact-info,
+.contact-links {
+  @include span-columns(6);
+}
+
+.contact-info-intro {
+  padding-bottom: 18px;
+  margin-bottom: 24px;
+  font-size: 24px;
+  line-height: 24px;
+  border-bottom: 2px solid #e6e6e6;
+}
+
+.contact-links-content {
+  float: right;
+}
+
+.contact-links-content-link {
+  margin-bottom: 35px;
+}

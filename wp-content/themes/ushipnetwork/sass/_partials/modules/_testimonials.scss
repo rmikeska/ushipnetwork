@@ -1,0 +1,40 @@
+/*** Testimonials ***/
+
+.testimonials-container {
+  @include outer-container(1070px);
+  padding: 85px 20px;
+}
+
+.testimonials-intro {
+  padding-bottom: 45px;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.testimonials-block {
+  @include span-columns(6);
+}
+
+.testimonials-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.testimonials-text {
+  padding: 35px 0;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.testimonials-source {
+  padding-bottom: 10px;
+}
+
+.testimonials-source,
+.testimonials-category {
+  font-size: 18px;
+}

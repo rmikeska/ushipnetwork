@@ -11,14 +11,8 @@
 
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-
-
-	<!-- Hero Module -->
 	<?php include("acf-modules/hero.php");?>
 
-
-
-	<!-- General Body Content Modules -->
 	<?php if (have_rows('flexible_content')): ?>
 		<?php while (have_rows('flexible_content')) : the_row(); ?>
 
@@ -58,9 +52,6 @@
 		<?php endwhile; ?>
 	<?php endif; ?>
 
-
-
-	<!-- Bookend Module -->
 	<?php include("acf-modules/bookend.php");?>
 
 </div>
