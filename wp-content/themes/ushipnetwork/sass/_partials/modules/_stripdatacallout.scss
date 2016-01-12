@@ -1,4 +1,4 @@
-/*** Data Strip Callout ***/
+/*** Strip Data Callout ***/
 
 .stripDataCallout {
   background-color: $navy;
@@ -23,7 +23,7 @@
   float: right;
 }
 
-.stripDataCallout-block-number {
+.stripDataCallout-block-value {
   display: block;
   float: left;
   padding-right: 14px;
@@ -33,7 +33,7 @@
   text-transform: uppercase;
 }
 
-.stripDataCallout-block-title {
+.stripDataCallout-block-caption {
   display: block;
   float: left;
   max-width: 115px;

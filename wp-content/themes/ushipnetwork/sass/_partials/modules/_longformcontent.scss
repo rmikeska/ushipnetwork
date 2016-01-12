@@ -1,15 +1,15 @@
-/*** Long Form Content with Divider ***/
+/*** Long Form Content ***/
 
-.longFormContentWithDivider-container {
+.longFormContent-container {
   @include outer-container(640px);
   padding: 75px 20px;
 }
 
-.longFormContentWithDivider-text {
+.longFormContent-text {
   line-height: 30px;
 }
 
-.longFormContentWithDivider div:not(:last-child):after {
+.longFormContent div:not(:last-child):after {
   content: '/';
   display: block;
   margin: 0 auto;

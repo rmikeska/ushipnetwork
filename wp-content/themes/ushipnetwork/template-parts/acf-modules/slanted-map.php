@@ -12,29 +12,18 @@
     <div class="slantedMap-copy">
       <h3 class="slantedMap-copy-intro"><?php the_sub_field('slanted_map_copy_intro'); ?></h3>
       <div class="slantedMap-copy-block-text"><?php the_sub_field('slanted_map_copy_block_text'); ?></div>
-
       <?php while(have_rows('slanted_map_copy_cta')): the_row(); ?>
-
         <?php $cta_url = get_sub_field('slanted_map_copy_cta_url'); ?>
-
         <a class="slantedMap-cta buttonGreenTransparent buttonLarge" href="<?php echo $cta_url; ?>"><?php the_sub_field('slanted_map_copy_cta_text'); ?></a>
-
       <?php endwhile; ?>
-
     </div>
   </div>
 </section>
-
 <section class="slantedMap-copyMobile">
   <h3 class="slantedMap-copy-intro"><?php the_sub_field('slanted_map_copy_intro'); ?></h3>
   <div class="slantedMap-copy-block-text"><?php the_sub_field('slanted_map_copy_block_text'); ?></div>
-
   <?php while(have_rows('slanted_map_copy_cta')): the_row(); ?>
-
     <?php $cta_url = get_sub_field('slanted_map_copy_cta_url'); ?>
-
     <a class="slantedMap-cta buttonGreenTransparent buttonLarge" href="<?php echo $cta_url; ?>"><?php the_sub_field('slanted_map_copy_cta_text'); ?></a>
-
   <?php endwhile; ?>
-
 </section>
