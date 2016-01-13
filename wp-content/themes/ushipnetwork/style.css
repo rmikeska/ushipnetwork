@@ -546,7 +546,6 @@ th {
 /*** Base Text ***/
 /*** General Text Utilities ***/
 /*** Base Colors ***/
-/*** Header ***/
 /*** Typography ***/
 /* line 3, sass/_partials/_typography.scss */
 body {
@@ -590,22 +589,42 @@ h3 {
 /* line 21, sass/_partials/_header.scss */
 .pageHeader-homeLink {
   display: block;
-  padding: 15px 34px;
+  padding: 22.5px 34px;
   height: 80px;
   max-width: 138px;
   background: #0083BB;
 }
+@media screen and (max-width: 769px) {
+  /* line 21, sass/_partials/_header.scss */
+  .pageHeader-homeLink {
+    padding: 14.5px 34px;
+    height: 64px;
+    max-width: 100%;
+    background: #FFFFFF;
+  }
+}
 
-/* line 29, sass/_partials/_header.scss */
+/* line 36, sass/_partials/_header.scss */
 .pageHeader-logo {
-  height: 49px;
-  background: transparent url("/wp-content/themes/ushipnetwork/images/uship-logo.png") center center no-repeat;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/uship-logo.svg");
+  width: 70px;
+  height: 35px;
+  margin: 0 auto;
+  background: transparent url("/wp-content/themes/ushipnetwork/images/uship_logo_white.png") center center no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/uship_logo_white.svg");
   background-repeat: no-repeat;
+  background-size: contain;
+}
+@media screen and (max-width: 769px) {
+  /* line 36, sass/_partials/_header.scss */
+  .pageHeader-logo {
+    background: transparent url("/wp-content/themes/ushipnetwork/images/uship_logo_blue.png") center center no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/uship_logo_blue.svg");
+    background-size: contain;
+  }
 }
 
 /*** Sub Nav ***/
-/* line 38, sass/_partials/_header.scss */
+/* line 54, sass/_partials/_header.scss */
 .pageHeader-subNav {
   position: absolute;
   z-index: -2;
@@ -614,17 +633,17 @@ h3 {
   background: #FFFFFF;
 }
 @media screen and (max-width: 769px) {
-  /* line 38, sass/_partials/_header.scss */
+  /* line 54, sass/_partials/_header.scss */
   .pageHeader-subNav {
     display: none;
   }
 }
 
-/* line 50, sass/_partials/_header.scss */
+/* line 66, sass/_partials/_header.scss */
 .menu-about-sub-nav-container {
   float: left;
 }
-/* line 53, sass/_partials/_header.scss */
+/* line 69, sass/_partials/_header.scss */
 .menu-about-sub-nav-container li {
   float: left;
   min-width: 138px;
@@ -632,20 +651,20 @@ h3 {
   text-transform: uppercase;
   line-height: 60px;
 }
-/* line 61, sass/_partials/_header.scss */
+/* line 77, sass/_partials/_header.scss */
 .menu-about-sub-nav-container a {
   padding-bottom: 5px;
   color: #262626;
 }
 
-/* line 67, sass/_partials/_header.scss */
+/* line 83, sass/_partials/_header.scss */
 .pageHeader-subNav-title {
-  background: #f4f4f4;
+  background: #F4F4F4;
   font-weight: 700;
 }
 
 /*** Current Menu Item/Hover ***/
-/* line 74, sass/_partials/_header.scss */
+/* line 90, sass/_partials/_header.scss */
 .pageHeader .current-menu-item a,
 .pageHeader .menu-item a:hover {
   border-bottom-width: 3px;
@@ -738,7 +757,7 @@ a {
 @media screen and (max-width: 769px) {
   /* line 16, sass/_partials/_base.scss */
   .pageContent {
-    padding-top: 80px;
+    padding-top: 64px;
   }
 }
 
@@ -1069,29 +1088,77 @@ a {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  align-content: center;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  padding: 0 20px;
 }
 
-/* line 13, sass/_partials/modules/_hero.scss */
+/* line 19, sass/_partials/modules/_hero.scss */
+.hero-container > * {
+  -webkit-flex: 1;
+  flex: 1;
+  -webkit-flex-basis: 100%;
+  flex-basis: 100%;
+}
+
+/* line 24, sass/_partials/modules/_hero.scss */
 .heroSmall .hero-container {
-  padding: 95px 20px;
+  min-height: 275px;
+}
+@media screen and (max-width: 769px) {
+  /* line 24, sass/_partials/modules/_hero.scss */
+  .heroSmall .hero-container {
+    min-height: 215px;
+  }
 }
 
-/* line 17, sass/_partials/modules/_hero.scss */
+/* line 32, sass/_partials/modules/_hero.scss */
 .heroLarge .hero-container {
-  padding: 103px 20px;
+  min-height: 350px;
+}
+@media screen and (max-width: 769px) {
+  /* line 32, sass/_partials/modules/_hero.scss */
+  .heroLarge .hero-container {
+    min-height: 215px;
+  }
 }
 
-/* line 21, sass/_partials/modules/_hero.scss */
+/* line 40, sass/_partials/modules/_hero.scss */
 .hero-headline {
   text-align: center;
   color: #FFFFFF;
-  line-height: 43.2px;
+  line-height: 1.35em;
   text-shadow: 0 4px 5.88px rgba(0, 0, 0, 0.72);
 }
+@media screen and (max-width: 769px) {
+  /* line 40, sass/_partials/modules/_hero.scss */
+  .hero-headline {
+    font-size: 1.75em;
+  }
+}
 
-/* line 28, sass/_partials/modules/_hero.scss */
+/* line 51, sass/_partials/modules/_hero.scss */
 .heroLarge .hero-headline {
   padding-bottom: 65px;
+}
+@media screen and (max-width: 769px) {
+  /* line 51, sass/_partials/modules/_hero.scss */
+  .heroLarge .hero-headline {
+    padding-bottom: 20px;
+  }
 }
 
 /*** Long Form Content ***/

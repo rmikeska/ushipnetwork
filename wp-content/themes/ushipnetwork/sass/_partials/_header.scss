@@ -15,22 +15,38 @@
   width: 100%;
   top: 0;
   left: 0;
-  box-shadow: $pageheader-boxshadow;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.13);
 }
 
 .pageHeader-homeLink {
   display: block;
-  padding: 15px 34px;
-  height: $pageheader-height;
+  padding: 22.5px 34px;
+  height: 80px;
   max-width: 138px;
   background: $uship-blue;
+
+  @media screen and (max-width: 769px) {
+    padding: 14.5px 34px;
+    height: 64px;
+    max-width: 100%;
+    background: $white;
+  }
 }
 
 .pageHeader-logo {
-  height: 49px;
-  background: transparent url("#{$asset-path}/uship-logo.png") center center no-repeat;
-  background-image: linear-gradient(transparent, transparent), url("#{$asset-path}/uship-logo.svg");
+  width: 70px;
+  height: 35px;
+  margin: 0 auto;
+  background: transparent url("#{$asset-path}/uship_logo_white.png") center center no-repeat;
+  background-image: linear-gradient(transparent, transparent), url("#{$asset-path}/uship_logo_white.svg");
   background-repeat: no-repeat;
+  background-size: contain;
+
+  @media screen and (max-width: 769px) {
+    background: transparent url("#{$asset-path}/uship_logo_blue.png") center center no-repeat;
+    background-image: linear-gradient(transparent, transparent), url("#{$asset-path}/uship_logo_blue.svg");
+    background-size: contain;
+  }
 }
 
 /*** Sub Nav ***/
@@ -39,7 +55,7 @@
   position: absolute;
   z-index: -2;
   width: 100%;
-  height: $subnav-height;
+  height: 60px;
   background: $white;
 
   @media screen and (max-width: 769px) {
@@ -55,7 +71,7 @@
     min-width: 138px;
     text-align: center;
     text-transform: uppercase;
-    line-height: $subnav-height;
+    line-height: 60px;
   }
 
   a {
@@ -65,7 +81,7 @@
 }
 
 .pageHeader-subNav-title {
-  background: $subnav-title-bg;
+  background: $light-grey;
   font-weight: $bold;
 }
 
