@@ -7,13 +7,13 @@
 }
 
 .hero-container {
-  @include outer-container(800px);
+  @include outer-container(820px);
+  @include section-padding(0);
   @include display(flex);
   @include align-items(center);
   @include justify-content(center);
   @include align-content(center);
   @include flex-flow(row wrap);
-  padding: 0 20px;
 }
 
 .hero-container > * {
@@ -24,7 +24,7 @@
 .heroSmall .hero-container {
   min-height: 275px;
 
-  @media screen and (max-width: 769px) {
+  @media #{$default-break} {
     min-height: 215px;
   }
 }
@@ -32,7 +32,7 @@
 .heroLarge .hero-container {
   min-height: 350px;
 
-  @media screen and (max-width: 769px) {
+  @media #{$default-break} {
     min-height: 215px;
   }
 }
@@ -43,7 +43,7 @@
   line-height: 1.35em;
   text-shadow: 0 4px 5.88px rgba(0, 0, 0, 0.72);
 
-  @media screen and (max-width: 769px) {
+  @media #{$default-break} {
     font-size: 1.75em;
   }
 }
@@ -51,7 +51,7 @@
 .heroLarge .hero-headline {
   padding-bottom: 65px;
 
-  @media screen and (max-width: 769px) {
+  @media #{$default-break} {
     padding-bottom: 20px;
   }
 }

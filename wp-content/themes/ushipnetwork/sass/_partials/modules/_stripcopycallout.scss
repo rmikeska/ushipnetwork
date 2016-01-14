@@ -1,8 +1,12 @@
 /*** Strip Copy Callout ***/
 
 .stripCopyCallout-container {
-  @include outer-container(660px);
-  padding: 39px 20px;
+  @include outer-container(690px);
+  @include section-padding(39px);
+
+  @media #{$default-break} {
+    @include section-padding(60px);
+  }
 }
 
 .stripCopyCallout-text {

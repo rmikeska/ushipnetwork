@@ -20,14 +20,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,900italic');
 
-/* Tools/Libraries */
+/* Tools/Libraries/Helpers */
 @import "bourbon/bourbon";
 @import "neat/neat";
 @import "compass";
 @import "compass/reset";
+@import "_partials/normalize";
 
 /* Base */
-@import "_partials/normalize";
 @import "_partials/mixins";
 @import "_partials/variables";
 @import "_partials/typography";

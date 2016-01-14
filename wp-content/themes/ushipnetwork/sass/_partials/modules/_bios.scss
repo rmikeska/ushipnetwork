@@ -1,8 +1,8 @@
 /*** Bios ***/
 
 .bios-container {
-  @include outer-container(840px);
-  padding: 85px 20px;
+  @include outer-container(860px);
+  @include section-padding(85px);
 }
 
 .bios-intro {

@@ -1,8 +1,12 @@
 /*** Long Form Content ***/
 
 .longFormContent-container {
-  @include outer-container(640px);
-  padding: 75px 20px;
+  @include outer-container(660px);
+  @include section-padding(75px);
+
+  @media #{$default-break} {
+    @include section-padding(60px);
+  }
 }
 
 .longFormContent-text {
@@ -19,4 +23,9 @@
   line-height: 100%;
   font-size: 30px;
   color: #dddddd;
+
+  @media #{$default-break} {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }

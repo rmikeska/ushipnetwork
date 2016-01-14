@@ -1,0 +1,6 @@
+@mixin section-padding($value) {
+  padding-top: $value;
+  padding-right: $section-padding;
+  padding-bottom: $value;
+  padding-left: $section-padding;
+}

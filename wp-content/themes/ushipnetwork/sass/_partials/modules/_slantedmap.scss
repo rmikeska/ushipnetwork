@@ -22,7 +22,7 @@
   -moz-transform: rotate(-325deg);
   transform: rotate(-325deg);
 
-  @media screen and (max-width: 769px) {
+  @media #{$default-break} {
     left: -50%;
   }
 }
@@ -33,7 +33,7 @@
   -moz-transform: rotate(325deg);
   transform: rotate(325deg);
 
-  @media screen and (max-width: 769px) {
+  @media #{$default-break} {
     right: -50%;
   }
 }
@@ -55,35 +55,29 @@
 }
 
 .slantedMap-container {
-  @include outer-container(1180px);
+  @include outer-container(1200px);
+  @include section-padding(0);
+  position: relative;
   @include display(flex);
   @include align-items(center);
   @include justify-content(center);
-  padding: 0 20px;
-  position: relative;
 
-  @media screen and (max-width: 769px) {
+  @media #{$default-break} {
     min-height: 300px;
   }
 }
 
 .slantedMap-copy {
-  max-width: 50%;
   @include flex(1);
   padding: 85px 0;
 
-  @media screen and (max-width: 769px) {
+  @media #{$default-break} {
     display: none !important;
   }
 }
 
 .slantedMap-image {
-  max-width: 50%;
   @include flex(1);
-
-  @media screen and (max-width: 769px) {
-    max-width: 100%;
-  }
 }
 
 .slantedMap.mapBackgroundLeft .slantedMap-image {
@@ -118,7 +112,7 @@
 .slantedMap.alignmentMiddle .slantedMap-image-image {
   padding: 85px 0;
 
-  @media screen and (max-width: 769px) {
+  @media #{$default-break} {
     padding: 20px 0;
   }
 }
@@ -126,7 +120,7 @@
 .slantedMap.alignmentLeft .slantedMap-image-image {
   float: left;
 
-  @media screen and (max-width: 769px) {
+  @media #{$default-break} {
     float: none;
   }
 }
@@ -134,7 +128,7 @@
 .slantedMap.alignmentRight .slantedMap-image-image {
   float: right;
 
-  @media screen and (max-width: 769px) {
+  @media #{$default-break} {
     float: none;
   }
 }
@@ -142,9 +136,9 @@
 .slantedMap-copyMobile {
   display: none;
 
-  @media screen and (max-width: 769px) {
+  @media #{$default-break} {
     display: block !important;
-    padding: 40px 20px;
+    @include section-padding(40px);
   }
 }
 

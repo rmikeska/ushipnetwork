@@ -1,8 +1,8 @@
 /*** Contact ***/
 
 .contact-container {
-  @include outer-container(1080px);
-  padding: 85px 20px;
+  @include outer-container(1070px);
+  @include section-padding(85px);
 }
 
 .contact-info,

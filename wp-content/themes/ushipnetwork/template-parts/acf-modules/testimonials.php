@@ -3,6 +3,10 @@
 <section class="testimonials <?php echo $section_bg_color; ?>">
   <div class="testimonials-container">
     <h3 class="testimonials-intro"><?php the_sub_field('testimonials_intro'); ?></h3>
+    <?php if(get_sub_field('testimonials_intro_sub')): ?>
+      <h6 class="testimonials-subintro"><?php the_sub_field('testimonials_intro_sub'); ?></h6>
+    <?php endif; ?>
+    <div class="testimonials-row">
     <?php while(have_rows('testimonials_content')): the_row(); ?>
       <?php $testimonials_image = get_sub_field('testimonials_image'); ?>
       <div class="testimonials-block">
@@ -12,5 +16,6 @@
         <p class="testimonials-category"><?php the_sub_field('testimonials_category'); ?></p>
       </div>
     <?php endwhile; ?>
+    </div>
   </div>
 </section>

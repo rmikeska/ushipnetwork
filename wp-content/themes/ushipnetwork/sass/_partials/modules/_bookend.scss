@@ -1,8 +1,8 @@
 /*** Bookend ***/
 
 .bookend-container {
-  @include outer-container(1160px);
-  padding: 64px 20px;
+  @include outer-container(1180px);
+  @include section-padding(64px);
   position: relative;
 }
 
