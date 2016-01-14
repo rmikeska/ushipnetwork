@@ -17,8 +17,7 @@
 }
 
 .hero-container > * {
-  @include flex(1);
-  @include flex-basis(100%);
+  @include flex(1 100%);
 }
 
 .heroSmall .hero-container {

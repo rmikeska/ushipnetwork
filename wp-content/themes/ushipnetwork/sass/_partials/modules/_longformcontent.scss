@@ -22,7 +22,7 @@
   text-align: center;
   line-height: 100%;
   font-size: 30px;
-  color: #dddddd;
+  color: $divider-color;
 
   @media #{$default-break} {
     padding-top: 30px;

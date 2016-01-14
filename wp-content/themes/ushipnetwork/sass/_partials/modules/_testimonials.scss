@@ -22,14 +22,15 @@
 
 .testimonials-subintro {
   padding-bottom: 60px;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
   font-size: 18px;
   line-height: 30px;
-  text-align: center;
 }
 
 .testimonials-row {
   @include display(flex);
-  @include align-items(flex-start);
   @include justify-content(center);
 
   @media #{$default-break} {
@@ -41,10 +42,10 @@
   @include flex(1);
 
   &:not(:last-child) {
-    padding-right: 70px;
+    margin-right: 70px;
 
     @media #{$default-break} {
-      padding-right: 0;
+      margin-right: 0;
       padding-bottom: 60px;
     }
   }

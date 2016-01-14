@@ -19,8 +19,11 @@
 .stripDataCallout-block {
   color: $white;
 
-  @media #{$default-break} {
-    &:not(:last-child) {
+  &:not(:last-child) {
+    margin-right: 50px;
+
+    @media #{$default-break} {
+      margin-right: 0;
       padding-bottom: 69px;
     }
   }
@@ -30,6 +33,7 @@
   @include display(flex);
   @include align-items(center);
   @include justify-content(flex-start);
+  max-width: 275px;
 }
 
 .stripDataCallout-block-value {

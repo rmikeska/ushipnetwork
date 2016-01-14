@@ -2,11 +2,7 @@
 
 .stripCopyCallout-container {
   @include outer-container(690px);
-  @include section-padding(39px);
-
-  @media #{$default-break} {
-    @include section-padding(60px);
-  }
+  @include section-padding(40px);
 }
 
 .stripCopyCallout-text {

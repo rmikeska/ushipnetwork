@@ -3,11 +3,26 @@
 .contact-container {
   @include outer-container(1070px);
   @include section-padding(85px);
+  @include display(flex);
+  @include justify-content(center);
+
+  @media #{$default-break} {
+    @include section-padding(40px);
+    @include flex-direction(column);
+  }
 }
 
-.contact-info,
-.contact-links {
-  @include span-columns(6);
+.contact-container > * {
+  @include flex(1);
+
+  &:not(:last-child) {
+    margin-right: 70px;
+
+    @media #{$default-break} {
+      margin-right: 0;
+      padding-bottom: 40px;
+    }
+  }
 }
 
 .contact-info-intro {
@@ -15,11 +30,15 @@
   margin-bottom: 24px;
   font-size: 24px;
   line-height: 24px;
-  border-bottom: 2px solid #e6e6e6;
+  border-bottom: 1px solid $divider-color;
 }
 
 .contact-links-content {
   float: right;
+
+  @media #{$default-break} {
+    float: none;
+  }
 }
 
 .contact-links-content-link {

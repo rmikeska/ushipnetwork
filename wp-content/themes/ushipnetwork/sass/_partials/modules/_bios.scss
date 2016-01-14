@@ -3,6 +3,10 @@
 .bios-container {
   @include outer-container(860px);
   @include section-padding(85px);
+
+  @media #{$default-break} {
+    @include section-padding(60px);
+  }
 }
 
 .bios-intro {
@@ -10,17 +14,41 @@
   font-size: 24px;
   line-height: 24px;
   text-align: center;
+
+  @media #{$default-break} {
+    padding-bottom: 40px;
+  }
 }
 
 .bios-subintro {
-  padding-bottom: 63px;
+  padding-bottom: 60px;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
   font-size: 18px;
   line-height: 30px;
-  text-align: center;
+}
+
+.bios-row {
+  @include display(flex);
+  @include justify-content(center);
+
+  @media #{$default-break} {
+    @include flex-direction(column);
+  }
 }
 
 .bios-block {
-  @include span-columns(4);
+  @include flex(1);
+
+  &:not(:last-child) {
+    margin-right: 70px;
+
+    @media #{$default-break} {
+      margin-right: 0;
+      padding-bottom: 60px;
+    }
+  }
 }
 
 .bios-image {

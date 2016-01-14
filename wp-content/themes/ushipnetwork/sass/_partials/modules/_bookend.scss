@@ -1,16 +1,24 @@
 /*** Bookend ***/
 
+.bookend {
+  border-bottom: 1px solid $divider-color;
+}
+
 .bookend-container {
   @include outer-container(1180px);
-  @include section-padding(64px);
+  @include section-padding(60px);
   position: relative;
 }
 
 .bookend-intro {
-  padding-bottom: 32px;
+  padding-bottom: 30px;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 32px;
   text-align: center;
+
+  @media #{$default-break} {
+    padding-top: 144px;
+  }
 }
 
 .bookend-nav {
@@ -20,10 +28,14 @@
   text-transform: uppercase;
   font-weight: $bold;
   color: $base-text-color;
+
+  @media #{$default-break} {
+    top: 60px;
+  }
 }
 
 .bookend-navPrevious {
-  left: 10px;
+  left: $section-padding;
 }
 
 .bookend-navPrevious:before {
@@ -36,7 +48,7 @@
 }
 
 .bookend-navNext {
-  right: 10px;
+  right: $section-padding;
 }
 
 .bookend-navNext:after {
@@ -46,4 +58,19 @@
   width: 24px;
   height: 24px;
   margin-left: 20px;
+}
+
+.bookend-divider {
+  display: none;
+
+  @media #{$default-break} {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 144px;
+    left: 0;
+    right: 0;
+    background: $divider-color;
+  }
 }

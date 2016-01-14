@@ -67,17 +67,16 @@
   }
 }
 
-.slantedMap-copy {
+.slantedMap-container > * {
   @include flex(1);
+}
+
+.slantedMap-copy {
   padding: 85px 0;
 
   @media #{$default-break} {
     display: none !important;
   }
-}
-
-.slantedMap-image {
-  @include flex(1);
 }
 
 .slantedMap.mapBackgroundLeft .slantedMap-image {
@@ -147,7 +146,7 @@
   margin-bottom: 24px;
   font-size: 24px;
   line-height: 24px;
-  border-bottom: 2px solid #e6e6e6;
+  border-bottom: 1px solid $divider-color;
 }
 
 .slantedMap-copy-block-text {
