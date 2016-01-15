@@ -1,9 +1,7 @@
 /*** Slanted Map ***/
 
 .slantedMap {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  @include background-image;
   position: relative;
   overflow: hidden;
 }
@@ -55,7 +53,7 @@
 }
 
 .slantedMap-container {
-  @include outer-container(1200px);
+  @include container(1160px);
   @include section-padding(0);
   position: relative;
   @include display(flex);
@@ -112,7 +110,7 @@
   padding: 85px 0;
 
   @media #{$default-break} {
-    padding: 20px 0;
+    padding: 40px 0;
   }
 }
 

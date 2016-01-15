@@ -1,13 +1,11 @@
 /*** Hero ***/
 
 .hero {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  @include background-image;
 }
 
 .hero-container {
-  @include outer-container(820px);
+  @include container(780px);
   @include section-padding(0);
   @include display(flex);
   @include align-items(center);

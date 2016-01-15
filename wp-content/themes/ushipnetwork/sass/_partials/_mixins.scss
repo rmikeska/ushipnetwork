@@ -1,6 +1,27 @@
+/*** Symmetrical top/bottom section padding with default l/r section padding ***/
+
 @mixin section-padding($value) {
   padding-top: $value;
   padding-right: $section-padding;
   padding-bottom: $value;
   padding-left: $section-padding;
+}
+
+/*** Default background image styles ***/
+
+@mixin background-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*** Default section container with max-width calculation ***/
+
+@mixin container($container-width) {
+  @include clearfix;
+  @include calc(max-width, "#{$container-width} + #{$section-padding}*2");
+  margin: {
+    left: auto;
+    right: auto;
+  }
 }

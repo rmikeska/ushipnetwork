@@ -5,7 +5,7 @@
 }
 
 .stripDataCallout-container {
-  @include outer-container(1020px);
+  @include container(980px);
   @include section-padding(69px);
   @include display(flex);
   @include align-items(center);

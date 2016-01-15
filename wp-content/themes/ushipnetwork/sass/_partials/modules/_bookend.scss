@@ -5,7 +5,7 @@
 }
 
 .bookend-container {
-  @include outer-container(1180px);
+  @include container(1140px);
   @include section-padding(60px);
   position: relative;
 }

@@ -1,7 +1,7 @@
 /*** Bios ***/
 
 .bios-container {
-  @include outer-container(860px);
+  @include container(820px);
   @include section-padding(85px);
 
   @media #{$default-break} {

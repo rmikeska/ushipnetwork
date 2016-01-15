@@ -1,5 +1,10 @@
 /*** Full Width Image ***/
 
+.fullWidthImage {
+  max-height: 600px;
+  overflow: hidden;
+}
+
 .fullWidthImage-image {
   width: 100%;
   height: auto;

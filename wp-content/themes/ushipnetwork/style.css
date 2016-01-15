@@ -542,6 +542,9 @@ th {
 }
 
 /* Base */
+/*** Symmetrical top/bottom section padding with default l/r section padding ***/
+/*** Default background image styles ***/
+/*** Default section container with max-width calculation ***/
 /*** Set Asset Path ***/
 /*** Base Text ***/
 /*** General Typography Utilities ***/
@@ -678,7 +681,8 @@ h3 {
 .pageFooter-container {
   overflow: hidden;
   *zoom: 1;
-  max-width: 1220px;
+  max-width: -webkit-calc(1180px + 20px*2);
+  max-width: calc(1180px + 20px*2);
   margin-left: auto;
   margin-right: auto;
   padding-top: 30px;
@@ -872,7 +876,8 @@ a {
 .bios-container {
   overflow: hidden;
   *zoom: 1;
-  max-width: 860px;
+  max-width: -webkit-calc(820px + 20px*2);
+  max-width: calc(820px + 20px*2);
   margin-left: auto;
   margin-right: auto;
   padding-top: 85px;
@@ -987,7 +992,8 @@ a {
 .bookend-container {
   overflow: hidden;
   *zoom: 1;
-  max-width: 1180px;
+  max-width: -webkit-calc(1140px + 20px*2);
+  max-width: calc(1140px + 20px*2);
   margin-left: auto;
   margin-right: auto;
   padding-top: 60px;
@@ -1080,7 +1086,8 @@ a {
 .contact-container {
   overflow: hidden;
   *zoom: 1;
-  max-width: 1070px;
+  max-width: -webkit-calc(1030px + 20px*2);
+  max-width: calc(1030px + 20px*2);
   margin-left: auto;
   margin-right: auto;
   padding-top: 85px;
@@ -1161,7 +1168,8 @@ a {
 .stripDataCallout-container {
   overflow: hidden;
   *zoom: 1;
-  max-width: 1020px;
+  max-width: -webkit-calc(980px + 20px*2);
+  max-width: calc(980px + 20px*2);
   margin-left: auto;
   margin-right: auto;
   padding-top: 69px;
@@ -1238,6 +1246,12 @@ a {
 
 /*** Full Width Image ***/
 /* line 3, sass/_partials/modules/_fullwidthimage.scss */
+.fullWidthImage {
+  max-height: 600px;
+  overflow: hidden;
+}
+
+/* line 8, sass/_partials/modules/_fullwidthimage.scss */
 .fullWidthImage-image {
   width: 100%;
   height: auto;
@@ -1251,11 +1265,12 @@ a {
   background-position: center;
 }
 
-/* line 9, sass/_partials/modules/_hero.scss */
+/* line 7, sass/_partials/modules/_hero.scss */
 .hero-container {
   overflow: hidden;
   *zoom: 1;
-  max-width: 820px;
+  max-width: -webkit-calc(780px + 20px*2);
+  max-width: calc(780px + 20px*2);
   margin-left: auto;
   margin-right: auto;
   padding-top: 0;
@@ -1279,35 +1294,35 @@ a {
   flex-flow: row wrap;
 }
 
-/* line 19, sass/_partials/modules/_hero.scss */
+/* line 17, sass/_partials/modules/_hero.scss */
 .hero-container > * {
   -webkit-flex: 1 100%;
   flex: 1 100%;
 }
 
-/* line 23, sass/_partials/modules/_hero.scss */
+/* line 21, sass/_partials/modules/_hero.scss */
 .heroSmall .hero-container {
   min-height: 275px;
 }
 @media only screen and (max-width: 769px) {
-  /* line 23, sass/_partials/modules/_hero.scss */
+  /* line 21, sass/_partials/modules/_hero.scss */
   .heroSmall .hero-container {
     min-height: 215px;
   }
 }
 
-/* line 31, sass/_partials/modules/_hero.scss */
+/* line 29, sass/_partials/modules/_hero.scss */
 .heroLarge .hero-container {
   min-height: 350px;
 }
 @media only screen and (max-width: 769px) {
-  /* line 31, sass/_partials/modules/_hero.scss */
+  /* line 29, sass/_partials/modules/_hero.scss */
   .heroLarge .hero-container {
     min-height: 215px;
   }
 }
 
-/* line 39, sass/_partials/modules/_hero.scss */
+/* line 37, sass/_partials/modules/_hero.scss */
 .hero-headline {
   text-align: center;
   color: #FFFFFF;
@@ -1315,18 +1330,18 @@ a {
   text-shadow: 0 4px 5.88px rgba(0, 0, 0, 0.72);
 }
 @media only screen and (max-width: 769px) {
-  /* line 39, sass/_partials/modules/_hero.scss */
+  /* line 37, sass/_partials/modules/_hero.scss */
   .hero-headline {
     font-size: 1.75em;
   }
 }
 
-/* line 50, sass/_partials/modules/_hero.scss */
+/* line 48, sass/_partials/modules/_hero.scss */
 .heroLarge .hero-headline {
   padding-bottom: 65px;
 }
 @media only screen and (max-width: 769px) {
-  /* line 50, sass/_partials/modules/_hero.scss */
+  /* line 48, sass/_partials/modules/_hero.scss */
   .heroLarge .hero-headline {
     padding-bottom: 20px;
   }
@@ -1337,7 +1352,8 @@ a {
 .longFormContent-container {
   overflow: hidden;
   *zoom: 1;
-  max-width: 660px;
+  max-width: -webkit-calc(620px + 20px*2);
+  max-width: calc(620px + 20px*2);
   margin-left: auto;
   margin-right: auto;
   padding-top: 75px;
@@ -1390,7 +1406,7 @@ a {
   overflow: hidden;
 }
 
-/* line 11, sass/_partials/modules/_slantedmap.scss */
+/* line 9, sass/_partials/modules/_slantedmap.scss */
 .slantedMap:before {
   content: '';
   position: absolute;
@@ -1399,7 +1415,7 @@ a {
   height: 500%;
 }
 
-/* line 19, sass/_partials/modules/_slantedmap.scss */
+/* line 17, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.mapBackgroundRight:before {
   left: -40%;
   -webkit-transform: rotate(-325deg);
@@ -1407,13 +1423,13 @@ a {
   transform: rotate(-325deg);
 }
 @media only screen and (max-width: 769px) {
-  /* line 19, sass/_partials/modules/_slantedmap.scss */
+  /* line 17, sass/_partials/modules/_slantedmap.scss */
   .slantedMap.mapBackgroundRight:before {
     left: -50%;
   }
 }
 
-/* line 30, sass/_partials/modules/_slantedmap.scss */
+/* line 28, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.mapBackgroundLeft:before {
   right: -40%;
   -webkit-transform: rotate(325deg);
@@ -1421,37 +1437,38 @@ a {
   transform: rotate(325deg);
 }
 @media only screen and (max-width: 769px) {
-  /* line 30, sass/_partials/modules/_slantedmap.scss */
+  /* line 28, sass/_partials/modules/_slantedmap.scss */
   .slantedMap.mapBackgroundLeft:before {
     right: -50%;
   }
 }
 
-/* line 41, sass/_partials/modules/_slantedmap.scss */
+/* line 39, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.mapBackgroundGrey {
   background-image: url("/wp-content/themes/ushipnetwork/images/map_light_2x.jpg");
 }
 
-/* line 45, sass/_partials/modules/_slantedmap.scss */
+/* line 43, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.mapBackgroundWhite {
   background-image: url("/wp-content/themes/ushipnetwork/images/map_dark_2x.jpg");
 }
 
-/* line 49, sass/_partials/modules/_slantedmap.scss */
+/* line 47, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.mapBackgroundGrey:before {
   background-color: #F4F4F4;
 }
 
-/* line 53, sass/_partials/modules/_slantedmap.scss */
+/* line 51, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.mapBackgroundWhite:before {
   background-color: #FFFFFF;
 }
 
-/* line 57, sass/_partials/modules/_slantedmap.scss */
+/* line 55, sass/_partials/modules/_slantedmap.scss */
 .slantedMap-container {
   overflow: hidden;
   *zoom: 1;
-  max-width: 1200px;
+  max-width: -webkit-calc(1160px + 20px*2);
+  max-width: calc(1160px + 20px*2);
   margin-left: auto;
   margin-right: auto;
   padding-top: 0;
@@ -1472,57 +1489,57 @@ a {
   justify-content: center;
 }
 @media only screen and (max-width: 769px) {
-  /* line 57, sass/_partials/modules/_slantedmap.scss */
+  /* line 55, sass/_partials/modules/_slantedmap.scss */
   .slantedMap-container {
     min-height: 300px;
   }
 }
 
-/* line 70, sass/_partials/modules/_slantedmap.scss */
+/* line 68, sass/_partials/modules/_slantedmap.scss */
 .slantedMap-container > * {
   -webkit-flex: 1;
   flex: 1;
 }
 
-/* line 74, sass/_partials/modules/_slantedmap.scss */
+/* line 72, sass/_partials/modules/_slantedmap.scss */
 .slantedMap-copy {
   padding: 85px 0;
 }
 @media only screen and (max-width: 769px) {
-  /* line 74, sass/_partials/modules/_slantedmap.scss */
+  /* line 72, sass/_partials/modules/_slantedmap.scss */
   .slantedMap-copy {
     display: none !important;
   }
 }
 
-/* line 82, sass/_partials/modules/_slantedmap.scss */
+/* line 80, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.mapBackgroundLeft .slantedMap-image {
   order: 1;
 }
 
-/* line 86, sass/_partials/modules/_slantedmap.scss */
+/* line 84, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.mapBackgroundLeft .slantedMap-copy {
   order: 2;
   margin-left: 20px;
 }
 
-/* line 91, sass/_partials/modules/_slantedmap.scss */
+/* line 89, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.mapBackgroundRight .slantedMap-image {
   order: 2;
 }
 
-/* line 95, sass/_partials/modules/_slantedmap.scss */
+/* line 93, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.mapBackgroundRight .slantedMap-copy {
   order: 1;
   margin-right: 20px;
 }
 
-/* line 100, sass/_partials/modules/_slantedmap.scss */
+/* line 98, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.alignmentBottom .slantedMap-image {
   align-self: flex-end;
 }
 
-/* line 104, sass/_partials/modules/_slantedmap.scss */
+/* line 102, sass/_partials/modules/_slantedmap.scss */
 .slantedMap-image-image {
   display: block;
   margin: 0 auto;
@@ -1530,45 +1547,45 @@ a {
   height: auto;
 }
 
-/* line 111, sass/_partials/modules/_slantedmap.scss */
+/* line 109, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.alignmentMiddle .slantedMap-image-image {
   padding: 85px 0;
 }
 @media only screen and (max-width: 769px) {
-  /* line 111, sass/_partials/modules/_slantedmap.scss */
+  /* line 109, sass/_partials/modules/_slantedmap.scss */
   .slantedMap.alignmentMiddle .slantedMap-image-image {
-    padding: 20px 0;
+    padding: 40px 0;
   }
 }
 
-/* line 119, sass/_partials/modules/_slantedmap.scss */
+/* line 117, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.alignmentLeft .slantedMap-image-image {
   float: left;
 }
 @media only screen and (max-width: 769px) {
-  /* line 119, sass/_partials/modules/_slantedmap.scss */
+  /* line 117, sass/_partials/modules/_slantedmap.scss */
   .slantedMap.alignmentLeft .slantedMap-image-image {
     float: none;
   }
 }
 
-/* line 127, sass/_partials/modules/_slantedmap.scss */
+/* line 125, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.alignmentRight .slantedMap-image-image {
   float: right;
 }
 @media only screen and (max-width: 769px) {
-  /* line 127, sass/_partials/modules/_slantedmap.scss */
+  /* line 125, sass/_partials/modules/_slantedmap.scss */
   .slantedMap.alignmentRight .slantedMap-image-image {
     float: none;
   }
 }
 
-/* line 135, sass/_partials/modules/_slantedmap.scss */
+/* line 133, sass/_partials/modules/_slantedmap.scss */
 .slantedMap-copyMobile {
   display: none;
 }
 @media only screen and (max-width: 769px) {
-  /* line 135, sass/_partials/modules/_slantedmap.scss */
+  /* line 133, sass/_partials/modules/_slantedmap.scss */
   .slantedMap-copyMobile {
     display: block !important;
     padding-top: 40px;
@@ -1578,7 +1595,7 @@ a {
   }
 }
 
-/* line 144, sass/_partials/modules/_slantedmap.scss */
+/* line 142, sass/_partials/modules/_slantedmap.scss */
 .slantedMap-copy-intro {
   padding-bottom: 18px;
   margin-bottom: 24px;
@@ -1587,19 +1604,19 @@ a {
   border-bottom: 1px solid #dddddd;
 }
 
-/* line 152, sass/_partials/modules/_slantedmap.scss */
+/* line 150, sass/_partials/modules/_slantedmap.scss */
 .slantedMap-copy-block-text {
   padding-bottom: 20px;
   line-height: 30px;
 }
 
-/* line 157, sass/_partials/modules/_slantedmap.scss */
+/* line 155, sass/_partials/modules/_slantedmap.scss */
 .slantedMap-copy-block-text h6 {
   font-weight: 700;
   text-transform: uppercase;
 }
 
-/* line 162, sass/_partials/modules/_slantedmap.scss */
+/* line 160, sass/_partials/modules/_slantedmap.scss */
 .slantedMap-copy-block-text p {
   line-height: 30px;
 }
@@ -1609,7 +1626,8 @@ a {
 .stripCopyCallout-container {
   overflow: hidden;
   *zoom: 1;
-  max-width: 690px;
+  max-width: -webkit-calc(650px + 20px*2);
+  max-width: calc(650px + 20px*2);
   margin-left: auto;
   margin-right: auto;
   padding-top: 40px;
@@ -1631,7 +1649,8 @@ a {
 .testimonials-container {
   overflow: hidden;
   *zoom: 1;
-  max-width: 1110px;
+  max-width: -webkit-calc(1070px + 20px*2);
+  max-width: calc(1070px + 20px*2);
   margin-left: auto;
   margin-right: auto;
   padding-top: 85px;

@@ -1,7 +1,7 @@
 /*** Strip Copy Callout ***/
 
 .stripCopyCallout-container {
-  @include outer-container(690px);
+  @include container(650px);
   @include section-padding(40px);
 }
 

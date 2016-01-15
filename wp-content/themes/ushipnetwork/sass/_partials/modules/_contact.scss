@@ -1,7 +1,7 @@
 /*** Contact ***/
 
 .contact-container {
-  @include outer-container(1070px);
+  @include container(1030px);
   @include section-padding(85px);
   @include display(flex);
   @include justify-content(center);

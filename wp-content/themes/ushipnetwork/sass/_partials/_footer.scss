@@ -1,7 +1,7 @@
 /*** Footer ***/
 
 .pageFooter-container {
-  @include outer-container(1220px);
+  @include container(1180px);
   @include section-padding(30px);
   @include display(flex);
   @include justify-content(center);
