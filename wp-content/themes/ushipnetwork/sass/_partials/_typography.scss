@@ -3,10 +3,8 @@
 body {
   color: $base-text-color;
   font-size: $base-font-size;
-  // font-family: $base-font-family;
-  font-family: $lato-regular;
-  font-weight: $base-font-weight;
   line-height: $base-line-height;
+  font-family: $lato-regular, sans-serif;
 }
 
 h1,

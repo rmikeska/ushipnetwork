@@ -7,45 +7,29 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: ushipnetwork
 Tags:
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-
-ushipnetwork is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
-
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 
-// @import url('https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,900italic');
-
-/* Tools/Libraries/Helpers */
-@import "_partials/font";
-@import "bourbon/bourbon";
-@import "neat/neat";
-@import "compass";
-@import "compass/reset";
-@import "_partials/normalize";
-
-/* Base */
-@import "_partials/mixins";
-@import "_partials/variables";
-@import "_partials/typography";
-@import "_partials/header";
-@import "_partials/footer";
-@import "_partials/base";
-
-/* Page Content Modules */
-@import "_partials/modules/bios";
-@import "_partials/modules/bookend";
-@import "_partials/modules/contact";
-@import "_partials/modules/stripdatacallout";
-@import "_partials/modules/fullwidthimage";
-@import "_partials/modules/hero";
-@import "_partials/modules/longformcontent";
-@import "_partials/modules/slantedmap";
-@import "_partials/modules/stripcopycallout";
-@import "_partials/modules/testimonials";
+@import "bourbon/bourbon",
+        "neat/neat",
+        "compass",
+        "compass/reset",
+        "_partials/normalize",
+        "_partials/font",
+        "_partials/mixins",
+        "_partials/variables",
+        "_partials/typography",
+        "_partials/header",
+        "_partials/footer",
+        "_partials/base",
+        "_partials/modules/bios",
+        "_partials/modules/bookend",
+        "_partials/modules/contact",
+        "_partials/modules/stripdatacallout",
+        "_partials/modules/fullwidthimage",
+        "_partials/modules/hero",
+        "_partials/modules/longformcontent",
+        "_partials/modules/slantedmap",
+        "_partials/modules/stripcopycallout",
+        "_partials/modules/testimonials";
 
 

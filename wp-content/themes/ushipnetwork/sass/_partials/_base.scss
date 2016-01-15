@@ -14,7 +14,7 @@ a {
 }
 
 .pageContent {
-  padding-top: 141px;
+  padding-top: 140px;
 
   @media screen and (max-width: 769px) {
     padding-top: 64px;
@@ -40,7 +40,7 @@ a {
   background-color: $primary-green;
   border-radius: 3px;
   color: $white;
-  font-weight: $bold;
+  font-family: $lato-bold;
 }
 
 .buttonLarge {
@@ -62,14 +62,14 @@ a {
   border: 3px solid $primary-green;
   border-radius: 3px;
   color: $primary-green;
-  font-weight: $bold;
+  font-family: $lato-bold;
 }
 
 .emphasisLink {
   padding-bottom: 5px;
   border-bottom: 3px solid $primary-green;
   color: $base-text-color;
-  font-weight: $bold;
+  font-family: $lato-bold;
 }
 
 .emphasisLink:after {

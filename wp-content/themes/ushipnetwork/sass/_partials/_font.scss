@@ -1,45 +1,36 @@
+/*** Lato ***/
+
 $lato-regular: "LatoRegular";
-$lato-medium: "LatoMedium";
 $lato-bold: "LatoBold";
-$lato-semibold: "LatoSemiBold";
-// $type-path: "/wp-content/themes/ushipnetwork/type/";
+$lato-black: "LatoBlack";
+$lato-type-path: "/wp-content/themes/ushipnetwork/type/lato/";
 
 @font-face {
   font-family: 'LatoRegular';
-  src: url('/wp-content/themes/ushipnetwork/type/lato/lato-regular-webfont.eot');
-  src: url('/wp-content/themes/ushipnetwork/type/lato/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
-       url('/wp-content/themes/ushipnetwork/type/lato/lato-regular-webfont.woff2') format('woff2'),
-       url('/wp-content/themes/ushipnetwork/type/lato/lato-regular-webfont.woff') format('woff'),
-       url('/wp-content/themes/ushipnetwork/type/lato/lato-regular-webfont.ttf')  format('truetype'),
-       url('/wp-content/themes/ushipnetwork/type/lato/lato-regular-webfont.svg#lato-regular-webfont') format('svg');
-}
-
-@font-face {
-  font-family: 'LatoMedium';
-  src: url('/wp-content/themes/ushipnetwork/type/lato/lato-medium-webfont.eot');
-  src: url('/wp-content/themes/ushipnetwork/type/lato/lato-medium-webfont.eot?#iefix') format('embedded-opentype'),
-       url('/wp-content/themes/ushipnetwork/type/lato/lato-medium-webfont.woff2') format('woff2'),
-       url('/wp-content/themes/ushipnetwork/type/lato/lato-medium-webfont.woff') format('woff'),
-       url('/wp-content/themes/ushipnetwork/type/lato/lato-medium-webfont.ttf')  format('truetype'),
-       url('/wp-content/themes/ushipnetwork/type/lato/lato-medium-webfont.svg#lato-medium-webfont') format('svg');
+  src: url($lato-type-path + 'lato-regular.eot');
+  src: url($lato-type-path + 'lato-regular.eot?#iefix') format('embedded-opentype'),
+       url($lato-type-path + 'lato-regular.woff2') format('woff2'),
+       url($lato-type-path + 'lato-regular.woff') format('woff'),
+       url($lato-type-path + 'lato-regular.ttf')  format('truetype'),
+       url($lato-type-path + 'lato-regular.svg#lato-regular') format('svg');
 }
 
 @font-face {
   font-family: 'LatoBold';
-  src: url('/wp-content/themes/ushipnetwork/type/lato/lato-bold-webfont.eot');
-  src: url('/wp-content/themes/ushipnetwork/type/lato/lato-bold-webfont.eot?#iefix') format('embedded-opentype'),
-       url('/wp-content/themes/ushipnetwork/type/lato/lato-bold-webfont.woff2') format('woff2'),
-       url('/wp-content/themes/ushipnetwork/type/lato/lato-bold-webfont.woff') format('woff'),
-       url('/wp-content/themes/ushipnetwork/type/lato/lato-bold-webfont.ttf')  format('truetype'),
-       url('/wp-content/themes/ushipnetwork/type/lato/lato-bold-webfont.svg#lato-bold-webfont') format('svg');
+  src: url($lato-type-path + 'lato-bold.eot');
+  src: url($lato-type-path + 'lato-bold.eot?#iefix') format('embedded-opentype'),
+       url($lato-type-path + 'lato-bold.woff2') format('woff2'),
+       url($lato-type-path + 'lato-bold.woff') format('woff'),
+       url($lato-type-path + 'lato-bold.ttf')  format('truetype'),
+       url($lato-type-path + 'lato-bold.svg#lato-bold') format('svg');
 }
 
 @font-face {
-  font-family: 'LatoSemiBold';
-  src: url('/wp-content/themes/ushipnetwork/type/lato/lato-semibold-webfont.eot');
-  src: url('/wp-content/themes/ushipnetwork/type/lato/lato-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-       url('/wp-content/themes/ushipnetwork/type/lato/lato-semibold-webfont.woff2') format('woff2'),
-       url('/wp-content/themes/ushipnetwork/type/lato/lato-semibold-webfont.woff') format('woff'),
-       url('/wp-content/themes/ushipnetwork/type/lato/lato-semibold-webfont.ttf')  format('truetype'),
-       url('/wp-content/themes/ushipnetwork/type/lato/lato-semibold-webfont.svg#lato-semibold-webfont') format('svg');
+  font-family: 'LatoBlack';
+  src: url($lato-type-path + 'lato-black.eot');
+  src: url($lato-type-path + 'lato-black.eot?#iefix') format('embedded-opentype'),
+       url($lato-type-path + 'lato-black.woff2') format('woff2'),
+       url($lato-type-path + 'lato-black.woff') format('woff'),
+       url($lato-type-path + 'lato-black.ttf')  format('truetype'),
+       url($lato-type-path + 'lato-black.svg#lato-black') format('svg');
 }
