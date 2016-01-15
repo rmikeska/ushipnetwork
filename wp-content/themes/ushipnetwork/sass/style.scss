@@ -18,9 +18,10 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 
-@import url('https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,900italic');
+// @import url('https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,900italic');
 
 /* Tools/Libraries/Helpers */
+@import "_partials/font";
 @import "bourbon/bourbon";
 @import "neat/neat";
 @import "compass";

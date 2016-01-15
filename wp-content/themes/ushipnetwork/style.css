@@ -17,8 +17,27 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
-@import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,900italic");
 /* Tools/Libraries/Helpers */
+@font-face {
+  font-family: 'LatoRegular';
+  src: url("/wp-content/themes/ushipnetwork/type/lato/lato-regular-webfont.eot");
+  src: url("/wp-content/themes/ushipnetwork/type/lato/lato-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/ushipnetwork/type/lato/lato-regular-webfont.woff2") format("woff2"), url("/wp-content/themes/ushipnetwork/type/lato/lato-regular-webfont.woff") format("woff"), url("/wp-content/themes/ushipnetwork/type/lato/lato-regular-webfont.ttf") format("truetype"), url("/wp-content/themes/ushipnetwork/type/lato/lato-regular-webfont.svg#lato-regular-webfont") format("svg");
+}
+@font-face {
+  font-family: 'LatoMedium';
+  src: url("/wp-content/themes/ushipnetwork/type/lato/lato-medium-webfont.eot");
+  src: url("/wp-content/themes/ushipnetwork/type/lato/lato-medium-webfont.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/ushipnetwork/type/lato/lato-medium-webfont.woff2") format("woff2"), url("/wp-content/themes/ushipnetwork/type/lato/lato-medium-webfont.woff") format("woff"), url("/wp-content/themes/ushipnetwork/type/lato/lato-medium-webfont.ttf") format("truetype"), url("/wp-content/themes/ushipnetwork/type/lato/lato-medium-webfont.svg#lato-medium-webfont") format("svg");
+}
+@font-face {
+  font-family: 'LatoBold';
+  src: url("/wp-content/themes/ushipnetwork/type/lato/lato-bold-webfont.eot");
+  src: url("/wp-content/themes/ushipnetwork/type/lato/lato-bold-webfont.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/ushipnetwork/type/lato/lato-bold-webfont.woff2") format("woff2"), url("/wp-content/themes/ushipnetwork/type/lato/lato-bold-webfont.woff") format("woff"), url("/wp-content/themes/ushipnetwork/type/lato/lato-bold-webfont.ttf") format("truetype"), url("/wp-content/themes/ushipnetwork/type/lato/lato-bold-webfont.svg#lato-bold-webfont") format("svg");
+}
+@font-face {
+  font-family: 'LatoSemiBold';
+  src: url("/wp-content/themes/ushipnetwork/type/lato/lato-semibold-webfont.eot");
+  src: url("/wp-content/themes/ushipnetwork/type/lato/lato-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/ushipnetwork/type/lato/lato-semibold-webfont.woff2") format("woff2"), url("/wp-content/themes/ushipnetwork/type/lato/lato-semibold-webfont.woff") format("woff"), url("/wp-content/themes/ushipnetwork/type/lato/lato-semibold-webfont.ttf") format("truetype"), url("/wp-content/themes/ushipnetwork/type/lato/lato-semibold-webfont.svg#lato-semibold-webfont") format("svg");
+}
 /* line 4, sass/neat/grid/_box-sizing.scss */
 html {
   box-sizing: border-box;
@@ -545,7 +564,7 @@ th {
 /*** Symmetrical top/bottom section padding with default l/r section padding ***/
 /*** Default background image styles ***/
 /*** Default section container with max-width calculation ***/
-/*** Set Asset Path ***/
+/*** Set Image Asset Path ***/
 /*** Base Text ***/
 /*** General Typography Utilities ***/
 /*** Base Colors ***/
@@ -555,16 +574,16 @@ th {
 body {
   color: #262626;
   font-size: 16px;
-  font-family: "Lato", sans-serif;
+  font-family: "LatoRegular";
   font-weight: 400;
   line-height: 1.5;
 }
 
-/* line 11, sass/_partials/_typography.scss */
+/* line 12, sass/_partials/_typography.scss */
 h1,
 h2,
 h3 {
-  font-weight: 700;
+  font-family: "LatoBold";
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
