@@ -1,11 +1,10 @@
 /*** Bios ***/
 
 .bios-container {
-  @include container(820px);
-  @include section-padding(85px);
+  @include container(820px, 85px, 20px);
 
   @media #{$default-break} {
-    @include section-padding(60px);
+    @include container(820px, 60px, 20px);
   }
 }
 
@@ -58,7 +57,8 @@
 }
 
 .bios-name {
-  padding: 27px 15px;
+  padding-top: 27px;
+  padding-bottom: 15px;
   text-align: center;
   font-family: $lato-bold;
   text-transform: uppercase;

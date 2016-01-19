@@ -5,8 +5,7 @@
 }
 
 .stripDataCallout-container {
-  @include container(980px);
-  @include section-padding(65px);
+  @include container(980px, 65px, 20px);
   @include display(flex);
   @include align-items(center);
   @include justify-content(space-between);
@@ -33,7 +32,6 @@
   @include display(flex);
   @include align-items(center);
   @include justify-content(flex-start);
-  max-width: 300px;
 }
 
 .stripDataCallout-block-value {

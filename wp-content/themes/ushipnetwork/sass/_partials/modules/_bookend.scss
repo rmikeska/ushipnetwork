@@ -6,8 +6,7 @@
 }
 
 .bookend-container {
-  @include container(1140px);
-  @include section-padding(64px);
+  @include container(1140px, 64px, 20px);
   position: relative;
 }
 
@@ -39,7 +38,7 @@
 }
 
 .bookend-navPrevious {
-  left: $section-padding;
+  left: 20px;
 }
 
 .bookend-navPrevious:before {
@@ -57,7 +56,7 @@
 }
 
 .bookend-navNext {
-  right: $section-padding;
+  right: 20px;
 }
 
 .bookend-navNext:after {

@@ -1,11 +1,10 @@
 /*** Long Form Content ***/
 
 .longFormContent-container {
-  @include container(620px);
-  @include section-padding(75px);
+  @include container(620px, 75px, 20px);
 
   @media #{$default-break} {
-    @include section-padding(60px);
+    @include container(620px, 60px, 20px);
   }
 }
 

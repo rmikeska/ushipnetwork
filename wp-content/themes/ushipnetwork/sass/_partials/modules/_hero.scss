@@ -5,8 +5,7 @@
 }
 
 .hero-container {
-  @include container(780px);
-  @include section-padding(0);
+  @include container(780px, 0, 20px);
   @include display(flex);
   @include align-items(center);
   @include justify-content(center);

@@ -546,9 +546,6 @@ th {
   src: url("/wp-content/themes/ushipnetwork/type/lato/lato-black.eot");
   src: url("/wp-content/themes/ushipnetwork/type/lato/lato-black.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/ushipnetwork/type/lato/lato-black.woff2") format("woff2"), url("/wp-content/themes/ushipnetwork/type/lato/lato-black.woff") format("woff"), url("/wp-content/themes/ushipnetwork/type/lato/lato-black.ttf") format("truetype"), url("/wp-content/themes/ushipnetwork/type/lato/lato-black.svg#lato-black") format("svg");
 }
-/*** Symmetrical top/bottom section padding with default l/r section padding ***/
-/*** Default background image styles ***/
-/*** Default section container with max-width calculation ***/
 /*** Set Image Asset Path ***/
 /*** Base Text ***/
 /*** Base Colors ***/
@@ -712,64 +709,64 @@ h3 {
   }
 }
 
-/* line 14, sass/_partials/_footer.scss */
+/* line 13, sass/_partials/_footer.scss */
 .pageFooter-container > * {
   -webkit-flex: 1;
   flex: 1;
 }
-/* line 17, sass/_partials/_footer.scss */
+/* line 16, sass/_partials/_footer.scss */
 .pageFooter-container > *:not(:last-child) {
   margin-right: 50px;
 }
 @media only screen and (max-width: 769px) {
-  /* line 17, sass/_partials/_footer.scss */
+  /* line 16, sass/_partials/_footer.scss */
   .pageFooter-container > *:not(:last-child) {
     margin-right: 0;
   }
 }
 
 @media only screen and (max-width: 769px) {
-  /* line 26, sass/_partials/_footer.scss */
+  /* line 25, sass/_partials/_footer.scss */
   .pageFooter-links {
     order: 1;
     padding-bottom: 20px;
   }
 }
 
-/* line 33, sass/_partials/_footer.scss */
+/* line 32, sass/_partials/_footer.scss */
 .pageFooter-legal {
   font-size: 16px;
 }
 @media only screen and (max-width: 769px) {
-  /* line 33, sass/_partials/_footer.scss */
+  /* line 32, sass/_partials/_footer.scss */
   .pageFooter-legal {
     order: 2;
   }
 }
 
-/* line 41, sass/_partials/_footer.scss */
+/* line 40, sass/_partials/_footer.scss */
 .pageFooter-links-list {
   float: right;
 }
 @media only screen and (max-width: 769px) {
-  /* line 41, sass/_partials/_footer.scss */
+  /* line 40, sass/_partials/_footer.scss */
   .pageFooter-links-list {
     float: none;
   }
 }
 
-/* line 49, sass/_partials/_footer.scss */
+/* line 48, sass/_partials/_footer.scss */
 .pageFooter-links-list-item {
   float: left;
 }
 
-/* line 53, sass/_partials/_footer.scss */
+/* line 52, sass/_partials/_footer.scss */
 .pageFooter-links-list-item:not(:last-child):after {
   content: "|";
   padding: 0 5px;
 }
 
-/* line 58, sass/_partials/_footer.scss */
+/* line 57, sass/_partials/_footer.scss */
 .pageFooter-links-list-item a {
   color: #02AAF3;
 }
@@ -895,6 +892,12 @@ a {
 @media only screen and (max-width: 769px) {
   /* line 3, sass/_partials/modules/_bios.scss */
   .bios-container {
+    overflow: hidden;
+    *zoom: 1;
+    max-width: -webkit-calc(820px + 20px*2);
+    max-width: calc(820px + 20px*2);
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 60px;
     padding-right: 20px;
     padding-bottom: 60px;
@@ -902,7 +905,7 @@ a {
   }
 }
 
-/* line 12, sass/_partials/modules/_bios.scss */
+/* line 11, sass/_partials/modules/_bios.scss */
 .bios-intro {
   padding-bottom: 40px;
   font-size: 24px;
@@ -910,13 +913,13 @@ a {
   text-align: center;
 }
 @media only screen and (max-width: 769px) {
-  /* line 12, sass/_partials/modules/_bios.scss */
+  /* line 11, sass/_partials/modules/_bios.scss */
   .bios-intro {
     padding-bottom: 40px;
   }
 }
 
-/* line 23, sass/_partials/modules/_bios.scss */
+/* line 22, sass/_partials/modules/_bios.scss */
 .bios-subintro {
   padding-bottom: 60px;
   margin: 0 auto;
@@ -925,7 +928,7 @@ a {
   line-height: 30px;
 }
 
-/* line 31, sass/_partials/modules/_bios.scss */
+/* line 30, sass/_partials/modules/_bios.scss */
 .bios-row {
   display: -webkit-box;
   display: -moz-box;
@@ -938,31 +941,31 @@ a {
   justify-content: center;
 }
 @media only screen and (max-width: 769px) {
-  /* line 31, sass/_partials/modules/_bios.scss */
+  /* line 30, sass/_partials/modules/_bios.scss */
   .bios-row {
     -webkit-flex-direction: column;
     flex-direction: column;
   }
 }
 
-/* line 40, sass/_partials/modules/_bios.scss */
+/* line 39, sass/_partials/modules/_bios.scss */
 .bios-block {
   -webkit-flex: 1;
   flex: 1;
 }
-/* line 43, sass/_partials/modules/_bios.scss */
+/* line 42, sass/_partials/modules/_bios.scss */
 .bios-block:not(:last-child) {
   margin-right: 70px;
 }
 @media only screen and (max-width: 769px) {
-  /* line 43, sass/_partials/modules/_bios.scss */
+  /* line 42, sass/_partials/modules/_bios.scss */
   .bios-block:not(:last-child) {
     margin-right: 0;
     padding-bottom: 60px;
   }
 }
 
-/* line 53, sass/_partials/modules/_bios.scss */
+/* line 52, sass/_partials/modules/_bios.scss */
 .bios-image {
   display: block;
   margin: 0 auto;
@@ -970,9 +973,10 @@ a {
   height: auto;
 }
 
-/* line 60, sass/_partials/modules/_bios.scss */
+/* line 59, sass/_partials/modules/_bios.scss */
 .bios-name {
-  padding: 27px 15px;
+  padding-top: 27px;
+  padding-bottom: 15px;
   text-align: center;
   font-family: "LatoBold";
   text-transform: uppercase;
@@ -1008,7 +1012,7 @@ a {
   position: relative;
 }
 
-/* line 14, sass/_partials/modules/_bookend.scss */
+/* line 13, sass/_partials/modules/_bookend.scss */
 .bookend-intro {
   padding-bottom: 32px;
   font-size: 24px;
@@ -1016,13 +1020,13 @@ a {
   text-align: center;
 }
 @media only screen and (max-width: 769px) {
-  /* line 14, sass/_partials/modules/_bookend.scss */
+  /* line 13, sass/_partials/modules/_bookend.scss */
   .bookend-intro {
     padding-top: 144px;
   }
 }
 
-/* line 25, sass/_partials/modules/_bookend.scss */
+/* line 24, sass/_partials/modules/_bookend.scss */
 .bookend-nav {
   display: block;
   position: absolute;
@@ -1035,18 +1039,18 @@ a {
   line-height: 24px;
 }
 @media only screen and (max-width: 769px) {
-  /* line 25, sass/_partials/modules/_bookend.scss */
+  /* line 24, sass/_partials/modules/_bookend.scss */
   .bookend-nav {
     top: 60px;
   }
 }
 
-/* line 41, sass/_partials/modules/_bookend.scss */
+/* line 40, sass/_partials/modules/_bookend.scss */
 .bookend-navPrevious {
   left: 20px;
 }
 
-/* line 45, sass/_partials/modules/_bookend.scss */
+/* line 44, sass/_partials/modules/_bookend.scss */
 .bookend-navPrevious:before {
   float: left;
   content: '';
@@ -1059,18 +1063,18 @@ a {
   margin-right: 20px;
 }
 @media only screen and (max-width: 769px) {
-  /* line 45, sass/_partials/modules/_bookend.scss */
+  /* line 44, sass/_partials/modules/_bookend.scss */
   .bookend-navPrevious:before {
     margin-right: 10px;
   }
 }
 
-/* line 59, sass/_partials/modules/_bookend.scss */
+/* line 58, sass/_partials/modules/_bookend.scss */
 .bookend-navNext {
   right: 20px;
 }
 
-/* line 63, sass/_partials/modules/_bookend.scss */
+/* line 62, sass/_partials/modules/_bookend.scss */
 .bookend-navNext:after {
   float: right;
   content: '';
@@ -1083,18 +1087,18 @@ a {
   margin-left: 20px;
 }
 @media only screen and (max-width: 769px) {
-  /* line 63, sass/_partials/modules/_bookend.scss */
+  /* line 62, sass/_partials/modules/_bookend.scss */
   .bookend-navNext:after {
     margin-left: 10px;
   }
 }
 
-/* line 77, sass/_partials/modules/_bookend.scss */
+/* line 76, sass/_partials/modules/_bookend.scss */
 .bookend-divider {
   display: none;
 }
 @media only screen and (max-width: 769px) {
-  /* line 77, sass/_partials/modules/_bookend.scss */
+  /* line 76, sass/_partials/modules/_bookend.scss */
   .bookend-divider {
     display: block;
     position: absolute;
@@ -1133,6 +1137,12 @@ a {
 @media only screen and (max-width: 769px) {
   /* line 3, sass/_partials/modules/_contact.scss */
   .contact-container {
+    overflow: hidden;
+    *zoom: 1;
+    max-width: -webkit-calc(1030px + 20px*2);
+    max-width: calc(1030px + 20px*2);
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 60px;
     padding-right: 20px;
     padding-bottom: 60px;
@@ -1142,24 +1152,24 @@ a {
   }
 }
 
-/* line 15, sass/_partials/modules/_contact.scss */
+/* line 14, sass/_partials/modules/_contact.scss */
 .contact-container > * {
   -webkit-flex: 1;
   flex: 1;
 }
-/* line 18, sass/_partials/modules/_contact.scss */
+/* line 17, sass/_partials/modules/_contact.scss */
 .contact-container > *:not(:last-child) {
   margin-right: 70px;
 }
 @media only screen and (max-width: 769px) {
-  /* line 18, sass/_partials/modules/_contact.scss */
+  /* line 17, sass/_partials/modules/_contact.scss */
   .contact-container > *:not(:last-child) {
     margin-right: 0;
     padding-bottom: 40px;
   }
 }
 
-/* line 28, sass/_partials/modules/_contact.scss */
+/* line 27, sass/_partials/modules/_contact.scss */
 .contact-info-intro {
   padding-bottom: 18px;
   margin-bottom: 24px;
@@ -1168,18 +1178,18 @@ a {
   border-bottom: 1px solid #dddddd;
 }
 
-/* line 36, sass/_partials/modules/_contact.scss */
+/* line 35, sass/_partials/modules/_contact.scss */
 .contact-links-content {
   float: right;
 }
 @media only screen and (max-width: 769px) {
-  /* line 36, sass/_partials/modules/_contact.scss */
+  /* line 35, sass/_partials/modules/_contact.scss */
   .contact-links-content {
     float: none;
   }
 }
 
-/* line 44, sass/_partials/modules/_contact.scss */
+/* line 43, sass/_partials/modules/_contact.scss */
 .contact-links-content-link:not(:last-child) {
   margin-bottom: 35px;
 }
@@ -1222,23 +1232,23 @@ a {
   }
 }
 
-/* line 19, sass/_partials/modules/_stripdatacallout.scss */
+/* line 18, sass/_partials/modules/_stripdatacallout.scss */
 .stripDataCallout-block {
   color: #FFFFFF;
 }
-/* line 22, sass/_partials/modules/_stripdatacallout.scss */
+/* line 21, sass/_partials/modules/_stripdatacallout.scss */
 .stripDataCallout-block:not(:last-child) {
   margin-right: 50px;
 }
 @media only screen and (max-width: 769px) {
-  /* line 22, sass/_partials/modules/_stripdatacallout.scss */
+  /* line 21, sass/_partials/modules/_stripdatacallout.scss */
   .stripDataCallout-block:not(:last-child) {
     margin-right: 0;
     padding-bottom: 65px;
   }
 }
 
-/* line 32, sass/_partials/modules/_stripdatacallout.scss */
+/* line 31, sass/_partials/modules/_stripdatacallout.scss */
 .stripDataCallout-block-inner {
   display: -webkit-box;
   display: -moz-box;
@@ -1251,10 +1261,9 @@ a {
   align-items: center;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
-  max-width: 300px;
 }
 
-/* line 39, sass/_partials/modules/_stripdatacallout.scss */
+/* line 37, sass/_partials/modules/_stripdatacallout.scss */
 .stripDataCallout-block-value {
   padding-right: 10px;
   font-size: 36px;
@@ -1264,7 +1273,7 @@ a {
   letter-spacing: 0.025em;
 }
 
-/* line 48, sass/_partials/modules/_stripdatacallout.scss */
+/* line 46, sass/_partials/modules/_stripdatacallout.scss */
 .stripDataCallout-block-caption {
   font-size: 11px;
   font-family: "LatoBold";
@@ -1323,35 +1332,35 @@ a {
   flex-flow: row wrap;
 }
 
-/* line 17, sass/_partials/modules/_hero.scss */
+/* line 16, sass/_partials/modules/_hero.scss */
 .hero-container > * {
   -webkit-flex: 1 100%;
   flex: 1 100%;
 }
 
-/* line 21, sass/_partials/modules/_hero.scss */
+/* line 20, sass/_partials/modules/_hero.scss */
 .heroSmall .hero-container {
   min-height: 275px;
 }
 @media only screen and (max-width: 769px) {
-  /* line 21, sass/_partials/modules/_hero.scss */
+  /* line 20, sass/_partials/modules/_hero.scss */
   .heroSmall .hero-container {
     min-height: 215px;
   }
 }
 
-/* line 29, sass/_partials/modules/_hero.scss */
+/* line 28, sass/_partials/modules/_hero.scss */
 .heroLarge .hero-container {
   min-height: 350px;
 }
 @media only screen and (max-width: 769px) {
-  /* line 29, sass/_partials/modules/_hero.scss */
+  /* line 28, sass/_partials/modules/_hero.scss */
   .heroLarge .hero-container {
     min-height: 215px;
   }
 }
 
-/* line 37, sass/_partials/modules/_hero.scss */
+/* line 36, sass/_partials/modules/_hero.scss */
 .hero-headline {
   text-align: center;
   color: #FFFFFF;
@@ -1360,18 +1369,18 @@ a {
   font-size: 36px;
 }
 @media only screen and (max-width: 769px) {
-  /* line 37, sass/_partials/modules/_hero.scss */
+  /* line 36, sass/_partials/modules/_hero.scss */
   .hero-headline {
     font-size: 30px;
   }
 }
 
-/* line 49, sass/_partials/modules/_hero.scss */
+/* line 48, sass/_partials/modules/_hero.scss */
 .heroLarge .hero-headline {
   padding-bottom: 40px;
 }
 @media only screen and (max-width: 769px) {
-  /* line 49, sass/_partials/modules/_hero.scss */
+  /* line 48, sass/_partials/modules/_hero.scss */
   .heroLarge .hero-headline {
     padding-bottom: 20px;
   }
@@ -1394,6 +1403,12 @@ a {
 @media only screen and (max-width: 769px) {
   /* line 3, sass/_partials/modules/_longformcontent.scss */
   .longFormContent-container {
+    overflow: hidden;
+    *zoom: 1;
+    max-width: -webkit-calc(620px + 20px*2);
+    max-width: calc(620px + 20px*2);
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 60px;
     padding-right: 20px;
     padding-bottom: 60px;
@@ -1401,12 +1416,12 @@ a {
   }
 }
 
-/* line 12, sass/_partials/modules/_longformcontent.scss */
+/* line 11, sass/_partials/modules/_longformcontent.scss */
 .longFormContent-text {
   line-height: 30px;
 }
 
-/* line 16, sass/_partials/modules/_longformcontent.scss */
+/* line 15, sass/_partials/modules/_longformcontent.scss */
 .longFormContent div:not(:last-child):after {
   display: block;
   content: '';
@@ -1418,7 +1433,7 @@ a {
   margin-bottom: 35px;
 }
 @media only screen and (max-width: 769px) {
-  /* line 16, sass/_partials/modules/_longformcontent.scss */
+  /* line 15, sass/_partials/modules/_longformcontent.scss */
   .longFormContent div:not(:last-child):after {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -1501,14 +1516,14 @@ a {
 .slantedMap-container {
   overflow: hidden;
   *zoom: 1;
-  max-width: -webkit-calc(1160px + 20px*2);
-  max-width: calc(1160px + 20px*2);
+  max-width: -webkit-calc(1160px + 62px*2);
+  max-width: calc(1160px + 62px*2);
   margin-left: auto;
   margin-right: auto;
   padding-top: 0;
-  padding-right: 20px;
+  padding-right: 62px;
   padding-bottom: 0;
-  padding-left: 20px;
+  padding-left: 62px;
   position: relative;
   display: -webkit-box;
   display: -moz-box;
@@ -1529,51 +1544,51 @@ a {
   }
 }
 
-/* line 71, sass/_partials/modules/_slantedmap.scss */
+/* line 70, sass/_partials/modules/_slantedmap.scss */
 .slantedMap-container > * {
   -webkit-flex: 1;
   flex: 1;
 }
 
-/* line 75, sass/_partials/modules/_slantedmap.scss */
+/* line 74, sass/_partials/modules/_slantedmap.scss */
 .slantedMap-copy {
   padding: 85px 0;
 }
 @media only screen and (max-width: 769px) {
-  /* line 75, sass/_partials/modules/_slantedmap.scss */
+  /* line 74, sass/_partials/modules/_slantedmap.scss */
   .slantedMap-copy {
     display: none !important;
   }
 }
 
-/* line 83, sass/_partials/modules/_slantedmap.scss */
+/* line 82, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.mapBackgroundLeft .slantedMap-image {
   order: 1;
 }
 
-/* line 87, sass/_partials/modules/_slantedmap.scss */
+/* line 86, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.mapBackgroundLeft .slantedMap-copy {
   order: 2;
   margin-left: 20px;
 }
 
-/* line 92, sass/_partials/modules/_slantedmap.scss */
+/* line 91, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.mapBackgroundRight .slantedMap-image {
   order: 2;
 }
 
-/* line 96, sass/_partials/modules/_slantedmap.scss */
+/* line 95, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.mapBackgroundRight .slantedMap-copy {
   order: 1;
   margin-right: 20px;
 }
 
-/* line 101, sass/_partials/modules/_slantedmap.scss */
+/* line 100, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.alignmentBottom .slantedMap-image {
   align-self: flex-end;
 }
 
-/* line 105, sass/_partials/modules/_slantedmap.scss */
+/* line 104, sass/_partials/modules/_slantedmap.scss */
 .slantedMap-image-image {
   display: block;
   margin: 0 auto;
@@ -1581,47 +1596,53 @@ a {
   height: auto;
 }
 
-/* line 112, sass/_partials/modules/_slantedmap.scss */
+/* line 111, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.alignmentMiddle .slantedMap-image-image {
   padding: 85px 0;
 }
 @media only screen and (max-width: 769px) {
-  /* line 112, sass/_partials/modules/_slantedmap.scss */
+  /* line 111, sass/_partials/modules/_slantedmap.scss */
   .slantedMap.alignmentMiddle .slantedMap-image-image {
     padding: 40px 0;
   }
 }
 
-/* line 120, sass/_partials/modules/_slantedmap.scss */
+/* line 119, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.alignmentLeft .slantedMap-image-image {
   float: left;
 }
 @media only screen and (max-width: 769px) {
-  /* line 120, sass/_partials/modules/_slantedmap.scss */
+  /* line 119, sass/_partials/modules/_slantedmap.scss */
   .slantedMap.alignmentLeft .slantedMap-image-image {
     float: none;
   }
 }
 
-/* line 128, sass/_partials/modules/_slantedmap.scss */
+/* line 127, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.alignmentRight .slantedMap-image-image {
   float: right;
 }
 @media only screen and (max-width: 769px) {
-  /* line 128, sass/_partials/modules/_slantedmap.scss */
+  /* line 127, sass/_partials/modules/_slantedmap.scss */
   .slantedMap.alignmentRight .slantedMap-image-image {
     float: none;
   }
 }
 
-/* line 136, sass/_partials/modules/_slantedmap.scss */
+/* line 135, sass/_partials/modules/_slantedmap.scss */
 .slantedMap-copyMobile {
   display: none;
 }
 @media only screen and (max-width: 769px) {
-  /* line 136, sass/_partials/modules/_slantedmap.scss */
+  /* line 135, sass/_partials/modules/_slantedmap.scss */
   .slantedMap-copyMobile {
     display: block !important;
+    overflow: hidden;
+    *zoom: 1;
+    max-width: -webkit-calc(100% + 20px*2);
+    max-width: calc(100% + 20px*2);
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 30px;
     padding-right: 20px;
     padding-bottom: 30px;
@@ -1629,12 +1650,12 @@ a {
   }
 }
 
-/* line 145, sass/_partials/modules/_slantedmap.scss */
+/* line 144, sass/_partials/modules/_slantedmap.scss */
 .slantedMap.mapBackgroundGrey + .slantedMap-copyMobile {
   background-color: #F4F4F4;
 }
 
-/* line 149, sass/_partials/modules/_slantedmap.scss */
+/* line 148, sass/_partials/modules/_slantedmap.scss */
 .slantedMap-copy-intro {
   padding-bottom: 18px;
   margin-bottom: 24px;
@@ -1643,21 +1664,23 @@ a {
   border-bottom: 1px solid #dddddd;
 }
 
-/* line 157, sass/_partials/modules/_slantedmap.scss */
+/* line 156, sass/_partials/modules/_slantedmap.scss */
 .slantedMap-copy-block-text {
   padding-bottom: 20px;
   line-height: 30px;
 }
 
-/* line 162, sass/_partials/modules/_slantedmap.scss */
+/* line 161, sass/_partials/modules/_slantedmap.scss */
 .slantedMap-copy-block-text h6 {
   font-family: "LatoBold";
   text-transform: uppercase;
 }
 
-/* line 167, sass/_partials/modules/_slantedmap.scss */
-.slantedMap-copy-block-text p {
-  line-height: 30px;
+/* line 166, sass/_partials/modules/_slantedmap.scss */
+.slantedMap-copy-block-text strong {
+  display: inline-block;
+  padding-bottom: 10px;
+  line-height: 24px;
 }
 
 /*** Strip Copy Callout ***/
@@ -1675,7 +1698,7 @@ a {
   padding-left: 20px;
 }
 
-/* line 8, sass/_partials/modules/_stripcopycallout.scss */
+/* line 7, sass/_partials/modules/_stripcopycallout.scss */
 .stripCopyCallout-text {
   font-size: 18px;
   line-height: 24px;
@@ -1700,6 +1723,12 @@ a {
 @media only screen and (max-width: 769px) {
   /* line 3, sass/_partials/modules/_testimonials.scss */
   .testimonials-container {
+    overflow: hidden;
+    *zoom: 1;
+    max-width: -webkit-calc(1070px + 20px*2);
+    max-width: calc(1070px + 20px*2);
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 60px;
     padding-right: 20px;
     padding-bottom: 60px;
@@ -1707,7 +1736,7 @@ a {
   }
 }
 
-/* line 12, sass/_partials/modules/_testimonials.scss */
+/* line 11, sass/_partials/modules/_testimonials.scss */
 .testimonials-intro {
   padding-bottom: 40px;
   font-size: 24px;
@@ -1715,13 +1744,13 @@ a {
   text-align: center;
 }
 @media only screen and (max-width: 769px) {
-  /* line 12, sass/_partials/modules/_testimonials.scss */
+  /* line 11, sass/_partials/modules/_testimonials.scss */
   .testimonials-intro {
     padding-bottom: 40px;
   }
 }
 
-/* line 23, sass/_partials/modules/_testimonials.scss */
+/* line 22, sass/_partials/modules/_testimonials.scss */
 .testimonials-subintro {
   padding-bottom: 60px;
   margin: 0 auto;
@@ -1730,7 +1759,7 @@ a {
   line-height: 30px;
 }
 
-/* line 31, sass/_partials/modules/_testimonials.scss */
+/* line 30, sass/_partials/modules/_testimonials.scss */
 .testimonials-row {
   display: -webkit-box;
   display: -moz-box;
@@ -1743,31 +1772,31 @@ a {
   justify-content: center;
 }
 @media only screen and (max-width: 769px) {
-  /* line 31, sass/_partials/modules/_testimonials.scss */
+  /* line 30, sass/_partials/modules/_testimonials.scss */
   .testimonials-row {
     -webkit-flex-direction: column;
     flex-direction: column;
   }
 }
 
-/* line 40, sass/_partials/modules/_testimonials.scss */
+/* line 39, sass/_partials/modules/_testimonials.scss */
 .testimonials-block {
   -webkit-flex: 1;
   flex: 1;
 }
-/* line 43, sass/_partials/modules/_testimonials.scss */
+/* line 42, sass/_partials/modules/_testimonials.scss */
 .testimonials-block:not(:last-child) {
   margin-right: 70px;
 }
 @media only screen and (max-width: 769px) {
-  /* line 43, sass/_partials/modules/_testimonials.scss */
+  /* line 42, sass/_partials/modules/_testimonials.scss */
   .testimonials-block:not(:last-child) {
     margin-right: 0;
     padding-bottom: 60px;
   }
 }
 
-/* line 53, sass/_partials/modules/_testimonials.scss */
+/* line 52, sass/_partials/modules/_testimonials.scss */
 .testimonials-image {
   display: block;
   margin: 0 auto;
@@ -1775,7 +1804,7 @@ a {
   height: auto;
 }
 
-/* line 60, sass/_partials/modules/_testimonials.scss */
+/* line 59, sass/_partials/modules/_testimonials.scss */
 .testimonials-text {
   padding: 35px 0;
   font-style: italic;
@@ -1783,12 +1812,12 @@ a {
   line-height: 30px;
 }
 @media only screen and (max-width: 769px) {
-  /* line 60, sass/_partials/modules/_testimonials.scss */
+  /* line 59, sass/_partials/modules/_testimonials.scss */
   .testimonials-text {
     padding: 10px 0;
   }
 }
-/* line 70, sass/_partials/modules/_testimonials.scss */
+/* line 69, sass/_partials/modules/_testimonials.scss */
 .testimonials-text p {
   overflow: hidden;
   -ms-text-overflow: ellipsis;
@@ -1799,7 +1828,7 @@ a {
   display: -webkit-box;
 }
 
-/* line 81, sass/_partials/modules/_testimonials.scss */
+/* line 80, sass/_partials/modules/_testimonials.scss */
 .testimonials-source {
   padding-bottom: 10px;
 }

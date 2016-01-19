@@ -1,13 +1,12 @@
 /*** Contact ***/
 
 .contact-container {
-  @include container(1030px);
-  @include section-padding(85px);
+  @include container(1030px, 85px, 20px);
   @include display(flex);
   @include justify-content(center);
 
   @media #{$default-break} {
-    @include section-padding(60px);
+    @include container(1030px, 60px, 20px);
     @include flex-direction(column);
   }
 }

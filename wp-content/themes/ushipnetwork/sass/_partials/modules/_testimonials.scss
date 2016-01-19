@@ -1,11 +1,10 @@
 /*** Testimonials ***/
 
 .testimonials-container {
-  @include container(1070px);
-  @include section-padding(85px);
+  @include container(1070px, 85px, 20px);
 
   @media #{$default-break} {
-    @include section-padding(60px);
+    @include container(1070px, 60px, 20px);
   }
 }
 
