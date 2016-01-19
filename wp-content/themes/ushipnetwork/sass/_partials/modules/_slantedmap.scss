@@ -1,7 +1,6 @@
 /*** Slanted Map ***/
 
 .slantedMap {
-  @include background-image;
   position: relative;
   overflow: hidden;
 }
@@ -36,12 +35,16 @@
   }
 }
 
-.slantedMap.mapBackgroundGrey {
-  background-image: url("#{$asset-path}/map_light_2x.jpg");
+.slantedMap.mapBackgroundWhite {
+  background-image: linear-gradient(transparent, transparent), url("#{$asset-path}/map_lightlines.svg");
+  background-color: #ececec;
+  @include background-image;
 }
 
-.slantedMap.mapBackgroundWhite {
-  background-image: url("#{$asset-path}/map_dark_2x.jpg");
+.slantedMap.mapBackgroundGrey {
+  background-image: linear-gradient(transparent, transparent), url("#{$asset-path}/map_darklines.svg");
+  background-color: $white;
+  @include background-image;
 }
 
 .slantedMap.mapBackgroundGrey:before {
@@ -143,7 +146,7 @@
   padding-bottom: 18px;
   margin-bottom: 24px;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 1.2;
   border-bottom: 1px solid $divider-color;
 }
 

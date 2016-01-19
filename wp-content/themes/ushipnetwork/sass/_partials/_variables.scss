@@ -8,10 +8,6 @@ $base-text-color: #262626;
 $base-font-size: 16px;
 $base-line-height: 1.5;
 
-/*** General Typography Utilities ***/
-
-$letter-spacing: 0.1em;
-
 /*** Base Colors ***/
 
 $navy: #1C2431;
@@ -24,6 +20,7 @@ $alert: #F65F5F;
 
 /*** Helpers ***/
 
+$header-box-shadow: 0 4px 5.88px 0.12px rgba(0, 0, 0, 0.13);
 $divider-color: #dddddd;
 $section-padding: 20px;
 $default-break: "only screen and (max-width: 769px)";

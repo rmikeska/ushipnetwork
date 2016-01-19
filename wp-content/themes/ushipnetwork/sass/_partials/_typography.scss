@@ -5,6 +5,7 @@ body {
   font-size: $base-font-size;
   line-height: $base-line-height;
   font-family: $lato-regular, sans-serif;
+  letter-spacing: 0.01em;
 }
 
 h1,
@@ -12,5 +13,5 @@ h2,
 h3 {
   font-family: $lato-bold;
   text-transform: uppercase;
-  letter-spacing: $letter-spacing;
+  letter-spacing: 0.1em;
 }

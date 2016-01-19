@@ -6,7 +6,7 @@
 
 .stripDataCallout-container {
   @include container(980px);
-  @include section-padding(69px);
+  @include section-padding(65px);
   @include display(flex);
   @include align-items(center);
   @include justify-content(space-between);
@@ -42,10 +42,12 @@
   line-height: 100%;
   font-family: $lato-black;
   text-transform: uppercase;
+  letter-spacing: 0.025em;
 }
 
 .stripDataCallout-block-caption {
   font-size: 11px;
   font-family: $lato-bold;
   text-transform: uppercase;
+  letter-spacing: 0.1em;
 }

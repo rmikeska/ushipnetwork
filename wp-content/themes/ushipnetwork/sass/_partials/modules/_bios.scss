@@ -10,7 +10,7 @@
 }
 
 .bios-intro {
-  padding-bottom: 45px;
+  padding-bottom: 40px;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
@@ -21,11 +21,10 @@
 }
 
 .bios-subintro {
-  padding-bottom: 60px;
+  padding-bottom: 45px;
   margin: 0 auto;
   max-width: 800px;
   text-align: center;
-  font-size: 18px;
   line-height: 30px;
 }
 
@@ -59,17 +58,15 @@
 }
 
 .bios-name {
-  padding: 26px 16px;
+  padding: 27px 15px;
   text-align: center;
   font-family: $lato-bold;
   text-transform: uppercase;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
 }
 
 .bios-description {
-  padding-bottom: 26px;
+  padding-bottom: 27px;
   text-align: center;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
 }
