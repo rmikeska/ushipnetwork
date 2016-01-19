@@ -1230,7 +1230,7 @@ a {
   align-items: center;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
-  max-width: 275px;
+  max-width: 300px;
 }
 
 /* line 39, sass/_partials/modules/_stripdatacallout.scss */
