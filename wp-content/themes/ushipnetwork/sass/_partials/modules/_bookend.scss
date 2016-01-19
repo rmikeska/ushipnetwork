@@ -44,11 +44,16 @@
 
 .bookend-navPrevious:before {
   float: left;
-  content: "";
+  content: '';
   background-image: linear-gradient(transparent, transparent), url("#{$asset-path}/back_arrow.svg");
+  @include background-image;
   width: 24px;
   height: 24px;
   margin-right: 20px;
+
+  @media #{$default-break} {
+    margin-right: 10px;
+  }
 }
 
 .bookend-navNext {
@@ -57,11 +62,16 @@
 
 .bookend-navNext:after {
   float: right;
-  content: "";
+  content: '';
   background-image: linear-gradient(transparent, transparent), url("#{$asset-path}/forward_arrow.svg");
+  @include background-image;
   width: 24px;
   height: 24px;
   margin-left: 20px;
+
+  @media #{$default-break} {
+    margin-left: 10px;
+  }
 }
 
 .bookend-divider {

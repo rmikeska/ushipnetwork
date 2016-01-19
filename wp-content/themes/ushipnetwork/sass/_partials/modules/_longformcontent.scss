@@ -14,18 +14,17 @@
 }
 
 .longFormContent div:not(:last-child):after {
-  content: '/';
   display: block;
-  margin: 0 auto;
-  padding-top: 35px;
-  padding-bottom: 35px;
-  text-align: center;
-  line-height: 100%;
-  font-size: 30px;
-  color: $divider-color;
+  content: '';
+  background-image: linear-gradient(transparent, transparent), url("#{$asset-path}/paragraph_slash.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30px;
+  margin-top: 35px;
+  margin-bottom: 35px;
 
   @media #{$default-break} {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }

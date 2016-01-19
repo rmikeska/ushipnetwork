@@ -74,8 +74,9 @@ a {
 
 .emphasisLink:after {
   display: inline-block;
-  content: "";
-  background: url("#{$asset-path}/link-arrow.png") center center no-repeat;
+  content: '';
+  background-image: linear-gradient(transparent, transparent), url("#{$asset-path}/arrow_link.svg");
+  @include background-image;
   width: 19px;
   height: 12px;
   margin-left: 15px;

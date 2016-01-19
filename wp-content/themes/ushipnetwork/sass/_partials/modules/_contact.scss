@@ -7,7 +7,7 @@
   @include justify-content(center);
 
   @media #{$default-break} {
-    @include section-padding(40px);
+    @include section-padding(60px);
     @include flex-direction(column);
   }
 }
@@ -41,6 +41,6 @@
   }
 }
 
-.contact-links-content-link {
+.contact-links-content-link:not(:last-child) {
   margin-bottom: 35px;
 }

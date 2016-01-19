@@ -138,8 +138,12 @@
 
   @media #{$default-break} {
     display: block !important;
-    @include section-padding(40px);
+    @include section-padding(30px);
   }
+}
+
+.slantedMap.mapBackgroundGrey + .slantedMap-copyMobile {
+  background-color: $light-grey;
 }
 
 .slantedMap-copy-intro {
