@@ -6,14 +6,14 @@
 }
 
 .bookend-container {
-  @include container(1140px, 64px, 20px);
+  @include container(1140px, 60px, 20px);
   position: relative;
 }
 
 .bookend-intro {
   padding-bottom: 30px;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 32px;
   text-align: center;
 
   @media #{$default-break} {
