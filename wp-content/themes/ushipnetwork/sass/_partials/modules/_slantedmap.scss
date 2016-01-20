@@ -64,6 +64,7 @@
 
   @media #{$default-break} {
     min-height: 300px;
+    @include container(100%, 0, 20px);
   }
 }
 
@@ -72,7 +73,7 @@
 }
 
 .slantedMap-copy {
-  padding: 85px 0;
+  padding: 75px 0;
 
   @media #{$default-break} {
     display: none !important;
@@ -109,7 +110,7 @@
 }
 
 .slantedMap.alignmentMiddle .slantedMap-image-image {
-  padding: 85px 0;
+  padding: 75px 0;
 
   @media #{$default-break} {
     padding: 40px 0;
@@ -154,8 +155,11 @@
 }
 
 .slantedMap-copy-block-text {
-  padding-bottom: 20px;
   line-height: 30px;
+}
+
+.slantedMap-copy-block-text:not(:last-child) {
+  padding-bottom: 20px;
 }
 
 .slantedMap-copy-block-text h6 {
@@ -165,6 +169,9 @@
 
 .slantedMap-copy-block-text strong {
   display: inline-block;
-  padding-bottom: 10px;
   line-height: 24px;
+}
+
+.slantedMap-copy-block-text strong:not(:last-child) {
+  padding-bottom: 10px;
 }

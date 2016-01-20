@@ -4,19 +4,15 @@
   @include container(1070px, 85px, 20px);
 
   @media #{$default-break} {
-    @include container(1070px, 60px, 20px);
+    @include container(100%, 60px, 20px);
   }
 }
 
 .testimonials-intro {
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
-
-  @media #{$default-break} {
-    padding-bottom: 40px;
-  }
 }
 
 .testimonials-subintro {
