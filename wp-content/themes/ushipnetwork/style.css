@@ -875,6 +875,29 @@ a {
   margin-left: 15px;
 }
 
+/* line 1, sass/_partials/_blog.scss */
+.post {
+  max-width: 300px;
+}
+
+/* line 4, sass/_partials/_blog.scss */
+.post-featureImage {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 300px;
+}
+
+/* line 10, sass/_partials/_blog.scss */
+.post-title {
+  font-family: "LatoBold";
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  line-height: 23px;
+}
+
 /*** Bios ***/
 /* line 3, sass/_partials/modules/_bios.scss */
 .bios-container {

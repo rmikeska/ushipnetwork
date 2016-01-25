@@ -1,0 +1,16 @@
+.post {
+  max-width: 300px;
+}
+.post-featureImage {
+  @include background-image;
+  height: 200px;
+  width: 300px;
+}
+
+.post-title {
+  font-family: $lato-bold;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  line-height: 23px;
+}
