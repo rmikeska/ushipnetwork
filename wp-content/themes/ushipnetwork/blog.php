@@ -28,22 +28,20 @@ get_header(); ?>
 
   <?php $cats = get_categories('include=3,4,5,6,7');
 
-    echo '<div class="catmenu">';
+    echo '<div class="categoryMenu">'.'<ul class="categoryMenu-list">';
 
-    echo '<li class="catall"><a>All Posts</a></li>';
+    echo '<li><a class="catall">All Posts</a></li>';
 
     foreach ($cats as $cat) {
       $cat_id= $cat->term_id;
-      echo '<li class="cat'.$cat_id.'">';
-      echo '<a>'.$cat->name.'</a>';
-      echo '</li>';
+      echo '<li><a class="cat'.$cat_id.'">'.$cat->name.'</a></li>';
     }
 
-    echo '</div>';
+    echo '</ul>'.'</div>';
 
-    echo '<div class="posts-group">';
+    echo '<div class="postsGroup">';
 
-    echo '<div class="posts-group-container catall">';
+    echo '<div class="postsGroup-container catall">';
     query_posts("posts_per_page=12");
 
     if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -52,15 +50,17 @@ get_header(); ?>
       <?php if (has_post_thumbnail( $post->ID ) ): ?>
         <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
         <div class="post-featureImage" style="background-image: url('<?php echo $image[0]; ?>')"></div>
+      <?php elseif (!has_post_thumbnail( $post->ID ) ): ?>
+        <div class="post-featureImage emptyImage"></div>
       <?php endif; ?>
-      <div>
+      <div class="post-tag-group">
         <?php
         $categories = get_the_category();
         $separator = ', ';
         $output = '';
         if ( ! empty( $categories ) ) {
             foreach( $categories as $category ) {
-                $output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" alt="' . esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $category->name ) ) . '">' . esc_html( $category->name ) . '</a>' . $separator;
+                $output .= '<a class="post-tag" href="' . esc_url( get_category_link( $category->term_id ) ) . '" alt="' . esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $category->name ) ) . '">' . esc_html( $category->name ) . '</a>' . $separator;
             }
             echo trim( $output, $separator );
         }
@@ -76,24 +76,26 @@ get_header(); ?>
 
     foreach ($cats as $cat) {
       $cat_id= $cat->term_id;
-      echo '<div class="posts-container cat'.$cat_id.'">';
+      echo '<div class="postsGroup-container cat'.$cat_id.'">';
       query_posts("cat=$cat_id&posts_per_page=12");
 
       if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-      <div>
+      <div class="post">
         <?php if (has_post_thumbnail( $post->ID ) ): ?>
           <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
           <div class="post-featureImage" style="background-image: url('<?php echo $image[0]; ?>')"></div>
+        <?php elseif (!has_post_thumbnail( $post->ID ) ): ?>
+          <div class="post-featureImage emptyImage"></div>
         <?php endif; ?>
-        <div>
+        <div class="post-tag-group">
           <?php
           $categories = get_the_category();
           $separator = ', ';
           $output = '';
           if ( ! empty( $categories ) ) {
               foreach( $categories as $category ) {
-                  $output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" alt="' . esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $category->name ) ) . '">' . esc_html( $category->name ) . '</a>' . $separator;
+                  $output .= '<a class="post-tag" href="' . esc_url( get_category_link( $category->term_id ) ) . '" alt="' . esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $category->name ) ) . '">' . esc_html( $category->name ) . '</a>' . $separator;
               }
               echo trim( $output, $separator );
           }

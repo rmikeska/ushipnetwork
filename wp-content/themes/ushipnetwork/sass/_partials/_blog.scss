@@ -1,10 +1,74 @@
+.categoryMenu {
+  @include container(1020px, 50px, 20px);
+}
+
+.categoryMenu-list {
+  @include display(flex);
+  @include align-items(center);
+  @include justify-content(space-between);
+}
+
+.categoryMenu-list li {
+  @include flex(1);
+  text-align: center;
+}
+
+.categoryMenu-list li a {
+  padding-bottom: 9px;
+  cursor: pointer;
+  color: $base-text-color;
+  text-transform: uppercase;
+  font-family: $lato-bold;
+  letter-spacing: 0.1em;
+  line-height: 24px;
+}
+
+.categoryMenu-list li a:hover,
+.categoryMenu-list li.categoryMenu-active a{
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: $bright-blue;
+}
+
+.postsGroup {
+  @include container(1040px, 25px, 20px);
+}
+
+.postsGroup-container {
+  @include display(flex);
+  @include align-items(flex-start);
+  @include justify-content(space-around);
+  @include flex-direction(row);
+  @include flex-flow(row wrap);
+  @include align-content(flex-end);
+}
+
 .post {
   max-width: 300px;
+  padding-bottom: 100px;
 }
+
 .post-featureImage {
   @include background-image;
   height: 200px;
   width: 300px;
+}
+
+.post-featureImage.emptyImage {
+  background-image: linear-gradient(transparent, transparent), url("#{$asset-path}/empty_image_thumbnail.jpg");
+}
+
+.post-tag-group {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.post-tag {
+  text-transform: uppercase;
+  font-family: $lato-bold;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
 }
 
 .post-title {
@@ -13,4 +77,12 @@
   font-size: 18px;
   letter-spacing: 0.05em;
   line-height: 23px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
 }
