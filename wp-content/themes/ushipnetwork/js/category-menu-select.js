@@ -1,7 +1,7 @@
 jQuery(document).ready(function ($) {
 
     $('.post').hide().each(function (i) {
-        $(this).delay((i++) * 200).fadeTo(1000, 1);
+        $(this).delay((i++) * 100).fadeTo(300, 1);
     });
 
     $('div.postsGroup .postsGroup-container:not(:first-child)').hide();
@@ -13,7 +13,7 @@ jQuery(document).ready(function ($) {
         $('div.' + elementClassName).show().siblings('div.postsGroup-container').hide();
 
         $('div.' + elementClassName).children('.post').hide().each(function (i) {
-            $(this).delay((i++) * 200).fadeTo(1000, 1);
+            $(this).delay((i++) * 100).fadeTo(300, 1);
         });
 
         $(this).parent().addClass('categoryMenu-active').siblings().removeClass('categoryMenu-active');

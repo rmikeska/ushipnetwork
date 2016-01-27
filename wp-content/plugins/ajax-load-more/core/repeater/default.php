@@ -1,13 +1,9 @@
 <div class="post">
   <?php if (has_post_thumbnail( $post->ID ) ): ?>
     <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-    <a class="post-featureImage-link" href="<?php the_permalink();?>">
-      <div class="post-featureImage" style="background-image: url('<?php echo $image[0]; ?>')"></div>
-    </a>
+    <div class="post-featureImage" style="background-image: url('<?php echo $image[0]; ?>')"></div>
   <?php elseif (!has_post_thumbnail( $post->ID ) ): ?>
-    <a class="post-featureImage-link" href="<?php the_permalink();?>">
-      <div class="post-featureImage emptyImage"></div>
-    </a>
+    <div class="post-featureImage emptyImage"></div>
   <?php endif; ?>
   <div class="post-tag-group">
     <?php
@@ -22,6 +18,6 @@
     }
     ?>
   </div>
-  <a class="post-title" href="<?php the_permalink();?>"><?php the_title(); ?></a>
-  <a class="emphasisLink" href="<?php the_permalink();?>">Read Article</a>
+  <h4 class="post-title"><?php the_title(); ?></h4>
+  <a class="emphasisLink" target="_blank" href="<?php the_permalink();?>">Read Article</a>
 </div>

@@ -945,7 +945,8 @@ a {
 }
 
 /* line 37, sass/_partials/_blog.scss */
-.postsGroup-container {
+.postsGroup-container,
+.alm-reveal {
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -965,13 +966,18 @@ a {
   align-content: flex-end;
 }
 
-/* line 46, sass/_partials/_blog.scss */
+/* line 47, sass/_partials/_blog.scss */
 .post {
   max-width: 300px;
   padding-bottom: 100px;
 }
 
-/* line 51, sass/_partials/_blog.scss */
+/* line 52, sass/_partials/_blog.scss */
+.post-featureImage-link {
+  display: block;
+}
+
+/* line 56, sass/_partials/_blog.scss */
 .post-featureImage {
   background-repeat: no-repeat;
   background-size: cover;
@@ -980,18 +986,18 @@ a {
   width: 300px;
 }
 
-/* line 57, sass/_partials/_blog.scss */
+/* line 62, sass/_partials/_blog.scss */
 .post-featureImage.emptyImage {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/empty_image_thumbnail.jpg");
 }
 
-/* line 61, sass/_partials/_blog.scss */
+/* line 66, sass/_partials/_blog.scss */
 .post-tag-group {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-/* line 66, sass/_partials/_blog.scss */
+/* line 71, sass/_partials/_blog.scss */
 .post-tag {
   text-transform: uppercase;
   font-family: "LatoBold";
@@ -1000,11 +1006,12 @@ a {
   letter-spacing: 0.05em;
 }
 
-/* line 74, sass/_partials/_blog.scss */
+/* line 79, sass/_partials/_blog.scss */
 .post-title {
   font-family: "LatoBold";
   text-transform: uppercase;
   font-size: 18px;
+  color: #262626;
   letter-spacing: 0.05em;
   line-height: 23px;
   margin-bottom: 30px;
@@ -1015,6 +1022,11 @@ a {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   display: -webkit-box;
+}
+
+/* line 96, sass/_partials/_blog.scss */
+.ajax-load-more-wrap {
+  width: 100%;
 }
 
 /*** Bios ***/
