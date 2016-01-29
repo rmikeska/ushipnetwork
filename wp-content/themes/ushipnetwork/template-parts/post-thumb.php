@@ -2,11 +2,11 @@
   <?php if (has_post_thumbnail( $post->ID ) ): ?>
     <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
     <a class="post-featureImage-link" href="<?php the_permalink();?>">
-      <div class="post-featureImage" style="background-image: url('<?php echo $image[0]; ?>')"></div>
+      <img class="post-featureImage" src="<?php echo $image[0]; ?>">
     </a>
   <?php elseif (!has_post_thumbnail( $post->ID ) ): ?>
     <a class="post-featureImage-link" href="<?php the_permalink();?>">
-      <div class="post-featureImage emptyImage"></div>
+      <img class="post-featureImage emptyImage" src="/wp-content/themes/ushipnetwork/images/empty_image_thumbnail.jpg">
     </a>
   <?php endif; ?>
   <div class="post-tag-group">

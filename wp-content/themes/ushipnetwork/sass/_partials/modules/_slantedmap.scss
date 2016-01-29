@@ -56,7 +56,7 @@
 }
 
 .slantedMap-container {
-  @include container(1160px, 0, 62px);
+  @include container(1160px, 0, 0, 62px);
   position: relative;
   @include display(flex);
   @include align-items(center);
@@ -64,7 +64,7 @@
 
   @media #{$default-break} {
     min-height: 300px;
-    @include container(100%, 0, 20px);
+    @include container(100%, 0, 0, 20px);
   }
 }
 
@@ -138,7 +138,7 @@
 
   @media #{$default-break} {
     display: block !important;
-      @include container(100%, 30px, 20px);
+      @include container(100%, 30px, 30px, 20px);
   }
 }
 

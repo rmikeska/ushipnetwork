@@ -6,7 +6,7 @@
 }
 
 .bookend-container {
-  @include container(1140px, 60px, 20px);
+  @include container(1140px, 60px, 60px, 20px);
   position: relative;
 }
 

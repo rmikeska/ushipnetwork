@@ -36,6 +36,9 @@ a {
 .buttonGreen {
   display: block;
   margin: 0 auto;
+  width: 100%;
+  border: none;
+  letter-spacing: 0.01em;
   text-align: center;
   background-color: $primary-green;
   border-radius: 3px;
@@ -58,6 +61,9 @@ a {
 .buttonGreenTransparent {
   display: block;
   margin: 0 auto;
+  width: 100%;
+  border: none;
+  letter-spacing: 0.01em;
   text-align: center;
   border: 3px solid $primary-green;
   border-radius: 3px;

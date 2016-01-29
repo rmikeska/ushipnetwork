@@ -1,5 +1,9 @@
 .categoryMenu {
-  @include container(1020px, 50px, 20px);
+  @include container(1020px, 50px, 0, 20px);
+
+  @media only screen and (max-width: 1080px) {
+    display: none;
+  }
 }
 
 .categoryMenu-list {
@@ -31,7 +35,11 @@
 }
 
 .postsGroup {
-  @include container(1040px, 25px, 20px);
+  @include container(1020px, 75px, 64px, 20px);
+}
+
+.postsGroup-container {
+  margin-right: -60px;
 }
 
 .postsGroup-container,
@@ -39,14 +47,18 @@
   @include display(flex);
   @include align-items(flex-start);
   @include justify-content(space-around);
-  @include flex-direction(row);
   @include flex-flow(row wrap);
   @include align-content(flex-end);
 }
 
 .post {
-  max-width: 300px;
+  max-width: 360px;
   padding-bottom: 100px;
+  padding-right: 60px;
+
+  @media #{$default-break} {
+    padding-bottom: 60px;
+  }
 }
 
 .post-featureImage-link {
@@ -54,13 +66,8 @@
 }
 
 .post-featureImage {
-  @include background-image;
-  height: 200px;
   width: 300px;
-}
-
-.post-featureImage.emptyImage {
-  background-image: linear-gradient(transparent, transparent), url("#{$asset-path}/empty_image_thumbnail.jpg");
+  height: 200px;
 }
 
 .post-tag-group {
@@ -95,4 +102,24 @@
 
 .ajax-load-more-wrap {
   width: 100%;
+}
+
+.alm-btn-wrap {
+  padding-right: 60px;
+}
+
+.alm-load-more-btn {
+  padding: 13px 10px;
+  max-width: 220px;
+  max-height: 50px;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  border: none;
+  letter-spacing: 0.01em;
+  text-align: center;
+  background-color: $primary-green;
+  border-radius: 3px;
+  color: $white;
+  font-family: $lato-bold;
 }
