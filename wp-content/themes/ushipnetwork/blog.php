@@ -22,7 +22,7 @@ get_header(); ?>
 
     echo '<div class="categoryMenu">'.'<ul class="categoryMenu-list">';
 
-    echo '<li><a class="catall">All Posts</a></li>';
+    echo '<li class="categoryMenu-active"><a class="catall">All Posts</a></li>';
 
     foreach ($cats as $cat) {
       $cat_id= $cat->term_id;
