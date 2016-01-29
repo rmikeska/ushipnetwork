@@ -32,6 +32,10 @@
 
       <?php include("contact.php");?>
 
+    <?php elseif (get_row_layout() == 'press'): ?>
+
+      <?php include("press.php");?>
+
     <?php endif; ?>
   <?php endwhile; ?>
 <?php endif; ?>

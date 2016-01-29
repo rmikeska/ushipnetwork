@@ -866,9 +866,10 @@ a {
   border-bottom: 3px solid #00B437;
   color: #262626;
   font-family: "LatoBold";
+  font-size: 18px;
 }
 
-/* line 81, sass/_partials/_base.scss */
+/* line 82, sass/_partials/_base.scss */
 .emphasisLink:after {
   display: inline-block;
   content: '';
@@ -982,14 +983,14 @@ a {
 }
 
 /* line 54, sass/_partials/_blog.scss */
-.post {
+.postThumb {
   max-width: 360px;
   padding-bottom: 100px;
   padding-right: 60px;
 }
 @media only screen and (max-width: 769px) {
   /* line 54, sass/_partials/_blog.scss */
-  .post {
+  .postThumb {
     padding-bottom: 60px;
   }
 }
@@ -2028,4 +2029,78 @@ a {
 /* line 76, sass/_partials/modules/_testimonials.scss */
 .testimonials-source {
   padding-bottom: 10px;
+}
+
+/* line 1, sass/_partials/modules/_press.scss */
+.pressStrip {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: -webkit-calc(1120px + 20px*2);
+  max-width: calc(1120px + 20px*2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 769px) {
+  /* line 1, sass/_partials/modules/_press.scss */
+  .pressStrip {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+}
+
+/* line 12, sass/_partials/modules/_press.scss */
+.pressStrip-block {
+  -webkit-flex: 1;
+  flex: 1;
+}
+@media only screen and (max-width: 769px) {
+  /* line 12, sass/_partials/modules/_press.scss */
+  .pressStrip-block {
+    padding-bottom: 60px;
+  }
+}
+
+/* line 20, sass/_partials/modules/_press.scss */
+.pressStrip-block:not(:last-child) {
+  margin-right: 70px;
+}
+@media only screen and (max-width: 769px) {
+  /* line 20, sass/_partials/modules/_press.scss */
+  .pressStrip-block:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+/* line 28, sass/_partials/modules/_press.scss */
+.post-caption {
+  font-family: "LatoBold";
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding-bottom: 35px;
+}
+@media only screen and (max-width: 769px) {
+  /* line 28, sass/_partials/modules/_press.scss */
+  .post-caption {
+    padding-bottom: 25px;
+  }
+}
+
+/* line 40, sass/_partials/modules/_press.scss */
+.post-time {
+  color: #999999;
 }

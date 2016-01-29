@@ -1,0 +1,42 @@
+.pressStrip {
+  @include container(1120px, 30px, 50px, 20px);
+  @include display(flex);
+  @include justify-content(center);
+
+  @media #{$default-break} {
+    @include flex-direction(column);
+    padding-bottom: 0;
+  }
+}
+
+.pressStrip-block {
+  @include flex(1);
+
+  @media #{$default-break} {
+    padding-bottom: 60px;
+  }
+}
+
+.pressStrip-block:not(:last-child) {
+  margin-right: 70px;
+
+  @media #{$default-break} {
+    margin-right: 0;
+  }
+}
+
+.post-caption {
+  font-family: $lato-bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding-bottom: 35px;
+
+  @media #{$default-break} {
+    padding-bottom: 25px;
+  }
+}
+
+.post-time {
+  color: #999999;
+}

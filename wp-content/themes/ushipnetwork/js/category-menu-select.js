@@ -1,6 +1,6 @@
 jQuery(document).ready(function ($) {
 
-    $('.post').hide().each(function (i) {
+    $('.postThumb').hide().each(function (i) {
         $(this).delay((i++) * 100).fadeTo(300, 1);
     });
 
@@ -12,7 +12,7 @@ jQuery(document).ready(function ($) {
 
         $('div.' + elementClassName).show().siblings('div.postsGroup-container').hide();
 
-        $('div.' + elementClassName).children('.post').hide().each(function (i) {
+        $('div.' + elementClassName).children('.postThumb').hide().each(function (i) {
             $(this).delay((i++) * 100).fadeTo(300, 1);
         });
 
