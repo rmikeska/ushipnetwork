@@ -6,7 +6,7 @@
     </a>
   <?php elseif (!has_post_thumbnail( $post->ID ) ): ?>
     <a class="post-featureImage-link" href="<?php the_permalink();?>">
-      <img class="post-featureImage emptyImage" src="/wp-content/themes/ushipnetwork/images/empty_image_thumbnail.jpg">
+      <img class="post-featureImage emptyImage" src="/wp-content/themes/ushipnetwork/images/empty_image_thumbnail_2x.jpg">
     </a>
   <?php endif; ?>
   <div class="post-tag-group">
