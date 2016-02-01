@@ -18,13 +18,19 @@ get_header(); ?>
 
   <?php include("template-parts/acf-modules/top-content.php");?>
 
-  <?php $cats = get_categories('include=3,4,5,6,7');
+  <?php
 
     echo '<div class="categoryMenu">'.'<ul class="categoryMenu-list">';
 
     echo '<li class="categoryMenu-active"><a class="catall">All Posts</a></li>';
 
-    foreach ($cats as $cat) {
+    $catIDs = get_cat_ID( $cat_name='Company News' );
+    $catIDs .= ',' . get_cat_ID( $cat_name='Just For Fun' );
+    $catIDs .= ',' . get_cat_ID( $cat_name='Product Updates' );
+    $catIDs .= ',' . get_cat_ID( $cat_name='Shipping Code' );
+
+    $cats = get_categories('include='.$catIDs);
+    foreach($cats as $cat) {
       $cat_id= $cat->term_id;
       echo '<li><a class="cat'.$cat_id.'">'.$cat->name.'</a></li>';
     }
@@ -34,7 +40,10 @@ get_header(); ?>
     echo '<div class="postsGroup">';
 
     echo '<div class="postsGroup-container catall">';
-    query_posts("posts_per_page=12");
+
+
+    $catIDs = '-' . get_cat_ID( $cat_name='Press' );
+    query_posts("cat=$catIDs&posts_per_page=12");
 
     if (have_posts()) : while (have_posts()) : the_post(); ?>
 
