@@ -882,7 +882,8 @@ a {
   margin-left: 15px;
 }
 
-/* line 1, sass/_partials/_blog.scss */
+/*** Blog Landing ***/
+/* line 3, sass/_partials/_blog.scss */
 .categoryMenu {
   overflow: hidden;
   *zoom: 1;
@@ -896,13 +897,13 @@ a {
   padding-left: 20px;
 }
 @media only screen and (max-width: 1080px) {
-  /* line 1, sass/_partials/_blog.scss */
+  /* line 3, sass/_partials/_blog.scss */
   .categoryMenu {
     display: none;
   }
 }
 
-/* line 9, sass/_partials/_blog.scss */
+/* line 11, sass/_partials/_blog.scss */
 .categoryMenu-list {
   display: -webkit-box;
   display: -moz-box;
@@ -917,14 +918,14 @@ a {
   justify-content: space-between;
 }
 
-/* line 15, sass/_partials/_blog.scss */
+/* line 17, sass/_partials/_blog.scss */
 .categoryMenu-list li {
   -webkit-flex: 1;
   flex: 1;
   text-align: center;
 }
 
-/* line 20, sass/_partials/_blog.scss */
+/* line 22, sass/_partials/_blog.scss */
 .categoryMenu-list li a {
   padding-bottom: 9px;
   cursor: pointer;
@@ -935,7 +936,7 @@ a {
   line-height: 24px;
 }
 
-/* line 30, sass/_partials/_blog.scss */
+/* line 32, sass/_partials/_blog.scss */
 .categoryMenu-list li a:hover,
 .categoryMenu-list li.categoryMenu-active a {
   border-bottom-width: 3px;
@@ -943,7 +944,7 @@ a {
   border-bottom-color: #02AAF3;
 }
 
-/* line 37, sass/_partials/_blog.scss */
+/* line 39, sass/_partials/_blog.scss */
 .postsGroup {
   overflow: hidden;
   *zoom: 1;
@@ -957,12 +958,12 @@ a {
   padding-left: 20px;
 }
 
-/* line 41, sass/_partials/_blog.scss */
+/* line 43, sass/_partials/_blog.scss */
 .postsGroup-container {
   margin-right: -60px;
 }
 
-/* line 45, sass/_partials/_blog.scss */
+/* line 47, sass/_partials/_blog.scss */
 .postsGroup-container,
 .alm-reveal {
   display: -webkit-box;
@@ -982,37 +983,37 @@ a {
   align-content: flex-end;
 }
 
-/* line 54, sass/_partials/_blog.scss */
+/* line 56, sass/_partials/_blog.scss */
 .postThumb {
   max-width: 360px;
   padding-bottom: 100px;
   padding-right: 60px;
 }
 @media only screen and (max-width: 769px) {
-  /* line 54, sass/_partials/_blog.scss */
+  /* line 56, sass/_partials/_blog.scss */
   .postThumb {
     padding-bottom: 60px;
   }
 }
 
-/* line 64, sass/_partials/_blog.scss */
+/* line 66, sass/_partials/_blog.scss */
 .post-featureImage-link {
   display: block;
 }
 
-/* line 68, sass/_partials/_blog.scss */
+/* line 70, sass/_partials/_blog.scss */
 .post-featureImage {
   width: 300px;
   height: 200px;
 }
 
-/* line 73, sass/_partials/_blog.scss */
+/* line 75, sass/_partials/_blog.scss */
 .post-tag-group {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-/* line 78, sass/_partials/_blog.scss */
+/* line 80, sass/_partials/_blog.scss */
 .post-tag {
   text-transform: uppercase;
   font-family: "LatoBold";
@@ -1021,7 +1022,7 @@ a {
   letter-spacing: 0.05em;
 }
 
-/* line 86, sass/_partials/_blog.scss */
+/* line 88, sass/_partials/_blog.scss */
 .post-title {
   font-family: "LatoBold";
   text-transform: uppercase;
@@ -1039,17 +1040,17 @@ a {
   display: -webkit-box;
 }
 
-/* line 103, sass/_partials/_blog.scss */
+/* line 105, sass/_partials/_blog.scss */
 .ajax-load-more-wrap {
   width: 100%;
 }
 
-/* line 107, sass/_partials/_blog.scss */
+/* line 109, sass/_partials/_blog.scss */
 .alm-btn-wrap {
   padding-right: 60px;
 }
 
-/* line 111, sass/_partials/_blog.scss */
+/* line 113, sass/_partials/_blog.scss */
 .alm-load-more-btn {
   padding: 13px 10px;
   max-width: 220px;
@@ -1064,6 +1065,75 @@ a {
   border-radius: 3px;
   color: #FFFFFF;
   font-family: "LatoBold";
+}
+
+/*** Single Post ***/
+/* line 3, sass/_partials/_single.scss */
+article.post {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: -webkit-calc(620px + 20px*2);
+  max-width: calc(620px + 20px*2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+}
+
+/* line 7, sass/_partials/_single.scss */
+article .post-featureImage {
+  width: 100%;
+  height: auto;
+}
+
+/* line 12, sass/_partials/_single.scss */
+.entry-header {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+/* line 17, sass/_partials/_single.scss */
+.entry-title {
+  padding-bottom: 30px;
+  font-family: "LatoBold";
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+}
+
+/* line 25, sass/_partials/_single.scss */
+.entry-meta {
+  font-family: "LatoBold";
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 14px;
+}
+
+/* line 32, sass/_partials/_single.scss */
+.posted-on {
+  padding-top: 14px;
+  padding-bottom: 13px;
+  margin-bottom: 42px;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  line-height: 1;
+}
+
+/* line 41, sass/_partials/_single.scss */
+.entry-content {
+  line-height: 30px;
+}
+
+/* line 45, sass/_partials/_single.scss */
+.entry-content p {
+  padding-bottom: 35px;
+}
+
+/* line 49, sass/_partials/_single.scss */
+.cat-list {
+  float: right;
 }
 
 /*** Bios ***/
