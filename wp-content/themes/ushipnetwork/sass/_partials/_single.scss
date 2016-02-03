@@ -1,0 +1,51 @@
+/*** Single Post ***/
+
+article.post {
+  @include container(620px, 50px, 50px, 20px);
+}
+
+article .post-featureImage {
+  width: 100%;
+  height: auto;
+}
+
+.entry-header {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.entry-title {
+  padding-bottom: 30px;
+  font-family: $lato-bold;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+}
+
+.entry-meta {
+  font-family: $lato-bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 14px;
+}
+
+.posted-on {
+  padding-top: 14px;
+  padding-bottom: 13px;
+  margin-bottom: 42px;
+  border-top: 1px solid $divider-color;
+  border-bottom: 1px solid $divider-color;
+  line-height: 1;
+}
+
+.entry-content {
+  line-height: 30px;
+}
+
+.entry-content p {
+  padding-bottom: 35px;
+}
+
+.cat-list {
+  float: right;
+}
