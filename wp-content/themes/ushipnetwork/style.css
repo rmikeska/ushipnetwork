@@ -773,17 +773,22 @@ h3 {
 
 /*** Base ***/
 /* line 3, sass/_partials/_base.scss */
+body {
+  min-width: 315px;
+}
+
+/* line 7, sass/_partials/_base.scss */
 a {
   color: #02AAF3;
   text-decoration: none;
 }
 
-/* line 8, sass/_partials/_base.scss */
+/* line 12, sass/_partials/_base.scss */
 .pageHeader-primaryNav {
   display: none;
 }
 
-/* line 12, sass/_partials/_base.scss */
+/* line 16, sass/_partials/_base.scss */
 .pageWrapper {
   overflow: hidden;
   *zoom: 1;
@@ -792,33 +797,33 @@ a {
   margin-right: auto;
 }
 
-/* line 16, sass/_partials/_base.scss */
+/* line 20, sass/_partials/_base.scss */
 .pageContent {
   padding-top: 140px;
 }
 @media screen and (max-width: 769px) {
-  /* line 16, sass/_partials/_base.scss */
+  /* line 20, sass/_partials/_base.scss */
   .pageContent {
     padding-top: 64px;
   }
 }
 
-/* line 24, sass/_partials/_base.scss */
+/* line 28, sass/_partials/_base.scss */
 .sectionWhite {
   background-color: #FFFFFF;
 }
 
-/* line 28, sass/_partials/_base.scss */
+/* line 32, sass/_partials/_base.scss */
 .sectionGrey {
   background-color: #F4F4F4;
 }
 
-/* line 32, sass/_partials/_base.scss */
+/* line 36, sass/_partials/_base.scss */
 .sectionNavy {
   background-color: #1C2431;
 }
 
-/* line 36, sass/_partials/_base.scss */
+/* line 40, sass/_partials/_base.scss */
 .buttonGreen {
   display: block;
   margin: 0 auto;
@@ -832,21 +837,21 @@ a {
   font-family: "LatoBold";
 }
 
-/* line 49, sass/_partials/_base.scss */
+/* line 53, sass/_partials/_base.scss */
 .buttonLarge {
   padding: 13px 10px;
   max-width: 220px;
   max-height: 50px;
 }
 
-/* line 55, sass/_partials/_base.scss */
+/* line 59, sass/_partials/_base.scss */
 .buttonSmall {
   padding: 7px 10px;
   max-width: 124px;
   max-height: 43px;
 }
 
-/* line 61, sass/_partials/_base.scss */
+/* line 65, sass/_partials/_base.scss */
 .buttonGreenTransparent {
   display: block;
   margin: 0 auto;
@@ -860,7 +865,7 @@ a {
   font-family: "LatoBold";
 }
 
-/* line 74, sass/_partials/_base.scss */
+/* line 78, sass/_partials/_base.scss */
 .emphasisLink {
   padding-bottom: 5px;
   border-bottom: 3px solid #00B437;
@@ -869,7 +874,7 @@ a {
   font-size: 18px;
 }
 
-/* line 82, sass/_partials/_base.scss */
+/* line 86, sass/_partials/_base.scss */
 .emphasisLink:after {
   display: inline-block;
   content: '';
@@ -1090,7 +1095,7 @@ article .post-featureImage {
 
 /* line 12, sass/_partials/_single.scss */
 .entry-header {
-  padding-top: 30px;
+  padding-top: 25px;
   padding-bottom: 40px;
 }
 
@@ -1104,36 +1109,140 @@ article .post-featureImage {
 }
 
 /* line 25, sass/_partials/_single.scss */
-.entry-meta {
+.entry-meta,
+.entry-footer {
   font-family: "LatoBold";
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-size: 14px;
 }
 
-/* line 32, sass/_partials/_single.scss */
+/* line 33, sass/_partials/_single.scss */
 .posted-on {
   padding-top: 14px;
-  padding-bottom: 13px;
+  padding-bottom: 12px;
   margin-bottom: 42px;
   border-top: 1px solid #dddddd;
   border-bottom: 1px solid #dddddd;
-  line-height: 1;
+  line-height: 24px;
+}
+@media only screen and (max-width: 769px) {
+  /* line 33, sass/_partials/_single.scss */
+  .posted-on {
+    border: none;
+    padding-top: 0;
+    margin-bottom: 14px;
+  }
 }
 
-/* line 41, sass/_partials/_single.scss */
+/* line 48, sass/_partials/_single.scss */
 .entry-content {
   line-height: 30px;
 }
 
-/* line 45, sass/_partials/_single.scss */
+/* line 52, sass/_partials/_single.scss */
 .entry-content p {
   padding-bottom: 35px;
 }
 
-/* line 49, sass/_partials/_single.scss */
-.cat-list {
+/* line 56, sass/_partials/_single.scss */
+.entry-header .cat-list {
   float: right;
+}
+
+@media only screen and (max-width: 769px) {
+  /* line 60, sass/_partials/_single.scss */
+  .entry-meta .cat-list {
+    display: none;
+  }
+}
+
+/* line 66, sass/_partials/_single.scss */
+.shareButtons {
+  float: right;
+}
+@media only screen and (max-width: 769px) {
+  /* line 66, sass/_partials/_single.scss */
+  .shareButtons {
+    float: none;
+    margin-top: 14px;
+    padding-top: 14px;
+    padding-bottom: 12px;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+  }
+}
+
+/* line 79, sass/_partials/_single.scss */
+.shareButtons .addtoany_list {
+  display: inline-block;
+  float: right;
+  margin-left: 15px;
+}
+
+/* line 85, sass/_partials/_single.scss */
+.addtoany_list a {
+  float: left;
+  width: 24px;
+  height: 24px;
+}
+
+/* line 91, sass/_partials/_single.scss */
+.addtoany_list a:not(:first-child) {
+  margin-left: 10px;
+}
+@media only screen and (max-width: 769px) {
+  /* line 91, sass/_partials/_single.scss */
+  .addtoany_list a:not(:first-child) {
+    margin-left: 60px;
+  }
+}
+
+/* line 99, sass/_partials/_single.scss */
+.shareButtons .a2a_button_facebook {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/facebook.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* line 106, sass/_partials/_single.scss */
+.shareButtons .a2a_button_twitter {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/twitter.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* line 113, sass/_partials/_single.scss */
+.shareButtons .a2a_button_linkedin {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/linkedin.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* line 120, sass/_partials/_single.scss */
+.footer-byline {
+  padding-top: 14px;
+  padding-bottom: 12px;
+  margin-bottom: 30px;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  line-height: 24px;
+}
+@media only screen and (max-width: 769px) {
+  /* line 120, sass/_partials/_single.scss */
+  .footer-byline {
+    border: none;
+    padding-top: 0;
+    margin-bottom: 14px;
+  }
+}
+
+/* line 135, sass/_partials/_single.scss */
+.entry-footer .cat-list {
+  float: left;
 }
 
 /*** Bios ***/

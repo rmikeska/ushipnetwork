@@ -1,5 +1,9 @@
 /*** Base ***/
 
+body {
+  min-width: 315px;
+}
+
 a {
   color: $bright-blue;
   text-decoration: none;

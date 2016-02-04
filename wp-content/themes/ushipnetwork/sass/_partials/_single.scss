@@ -10,7 +10,7 @@ article .post-featureImage {
 }
 
 .entry-header {
-  padding-top: 30px;
+  padding-top: 25px;
   padding-bottom: 40px;
 }
 
@@ -22,7 +22,8 @@ article .post-featureImage {
   letter-spacing: 0.1em;
 }
 
-.entry-meta {
+.entry-meta,
+.entry-footer {
   font-family: $lato-bold;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -31,11 +32,17 @@ article .post-featureImage {
 
 .posted-on {
   padding-top: 14px;
-  padding-bottom: 13px;
+  padding-bottom: 12px;
   margin-bottom: 42px;
   border-top: 1px solid $divider-color;
   border-bottom: 1px solid $divider-color;
-  line-height: 1;
+  line-height: 24px;
+
+  @media #{$default-break} {
+    border: none;
+    padding-top: 0;
+    margin-bottom: 14px;
+  }
 }
 
 .entry-content {
@@ -46,6 +53,85 @@ article .post-featureImage {
   padding-bottom: 35px;
 }
 
-.cat-list {
+.entry-header .cat-list {
   float: right;
+}
+
+.entry-meta .cat-list {
+  @media #{$default-break} {
+    display: none;
+  }
+}
+
+.shareButtons {
+  float: right;
+
+  @media #{$default-break} {
+    float: none;
+    margin-top: 14px;
+    padding-top: 14px;
+    padding-bottom: 12px;
+    border-top: 1px solid $divider-color;
+    border-bottom: 1px solid $divider-color;
+  }
+}
+
+.shareButtons .addtoany_list {
+  display: inline-block;
+  float: right;
+  margin-left: 15px;
+}
+
+.addtoany_list a {
+  float: left;
+  width: 24px;
+  height: 24px;
+}
+
+.addtoany_list a:not(:first-child) {
+  margin-left: 10px;
+
+  @media #{$default-break} {
+    margin-left: 60px;
+  }
+}
+
+.shareButtons .a2a_button_facebook {
+  background-image: linear-gradient(transparent, transparent), url("#{$asset-path}/facebook.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.shareButtons .a2a_button_twitter {
+  background-image: linear-gradient(transparent, transparent), url("#{$asset-path}/twitter.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.shareButtons .a2a_button_linkedin {
+  background-image: linear-gradient(transparent, transparent), url("#{$asset-path}/linkedin.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer-byline {
+  padding-top: 14px;
+  padding-bottom: 12px;
+  margin-bottom: 30px;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  line-height: 24px;
+
+  @media #{$default-break} {
+    border: none;
+    padding-top: 0;
+    margin-bottom: 14px;
+  }
+}
+
+.entry-footer .cat-list {
+  float: left;
 }

@@ -31,7 +31,13 @@ function ushipnetwork_posted_on() {
 		'<span>' . esc_html( get_the_author() ) . '</span>'
 	);
 
-	echo '<div class="posted-on">' . $posted_on . '</div>';
+	echo '<div class="posted-on">' . $posted_on . '<div class="shareButtons">' . 'Share';
+
+	if ( function_exists( 'ADDTOANY_SHARE_SAVE_KIT' ) ) {
+	  ADDTOANY_SHARE_SAVE_KIT( array( 'use_current_page' => true ) );
+	}
+
+	echo '</div>' . '</div>';
 
 	echo '<div class="byline">' . $byline . '<span class="cat-list">tags: ';
 
@@ -57,17 +63,32 @@ if ( ! function_exists( 'ushipnetwork_entry_footer' ) ) :
 function ushipnetwork_entry_footer() {
 	// Hide category and tag text for pages.
 	if ( 'post' === get_post_type() ) {
-		/* translators: used between list items, there is a space after the comma */
-		$categories_list = get_the_category_list( esc_html__( ', ', 'ushipnetwork' ) );
-		if ( $categories_list && ushipnetwork_categorized_blog() ) {
-			printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'ushipnetwork' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+		$byline = sprintf(
+			esc_html_x( 'by %s', 'post author', 'ushipnetwork' ),
+			'<span>' . esc_html( get_the_author() ) . '</span>'
+		);
+
+		echo '<div class="footer-byline">' . $byline . '<div class="shareButtons">' . 'Share';
+
+		if ( function_exists( 'ADDTOANY_SHARE_SAVE_KIT' ) ) {
+		  ADDTOANY_SHARE_SAVE_KIT( array( 'use_current_page' => true ) );
 		}
 
-		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '', esc_html__( ', ', 'ushipnetwork' ) );
-		if ( $tags_list ) {
-			printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'ushipnetwork' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+		echo '</div>' . '</div>';
+
+		echo '<span class="cat-list">tags: ';
+
+		$categories = get_the_category();
+		$separator = ', ';
+		$output = '';
+		if ( ! empty( $categories ) ) {
+		    foreach( $categories as $category ) {
+		        $output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" alt="' . esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $category->name ) ) . '">' . esc_html( $category->name ) . '</a>' . $separator;
+		    }
+		    echo trim( $output, $separator );
 		}
+
+		echo '</span>';
 	}
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {

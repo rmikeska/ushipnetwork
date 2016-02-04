@@ -18,14 +18,12 @@
 	  <img class="post-featureImage emptyImage" src="/wp-content/themes/ushipnetwork/images/empty_image_thumbnail_2x.jpg">
 	<?php endif; ?>
 
-	<header class="entry-header">
+	<div class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
 		<div class="entry-meta">
 			<?php ushipnetwork_posted_on(); ?>
-		</div><!-- .entry-meta -->
-	</header><!-- .entry-header -->
-
+		</div>
+	</div>
 	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php
@@ -34,10 +32,9 @@
 				'after'  => '</div>',
 			) );
 		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<!-- <?php ushipnetwork_entry_footer(); ?> -->
-	</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
+	</div>
+	<div class="entry-footer">
+		<?php ushipnetwork_entry_footer(); ?>
+	</div>
+</article>
 

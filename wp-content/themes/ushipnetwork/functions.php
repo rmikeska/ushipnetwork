@@ -154,3 +154,8 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Tell AddToAny to fuck off with all their js.
+ */
+add_filter( 'addtoany_script_disabled', '__return_true' );
