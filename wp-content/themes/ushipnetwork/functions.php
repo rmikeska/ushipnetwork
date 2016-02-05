@@ -42,6 +42,11 @@ function ushipnetwork_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
+	// Add featured image sizes
+	set_post_thumbnail_size( 300, 200, true );
+	add_image_size( 'post-thumb', 300, 200, true );
+	add_image_size( 'post-feature', 620, 413, true );
+
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary Menu', 'ushipnetwork' ),
@@ -156,3 +161,18 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Shorten post thumb titles
+ */
+function short_title($after = null, $length) {
+	$mytitle = get_the_title();
+	$size = strlen($mytitle);
+	if($size>$length) {
+		$mytitle = substr($mytitle, 0, $length);
+		$mytitle = explode(' ',$mytitle);
+		array_pop($mytitle);
+		$mytitle = implode(" ",$mytitle).$after;
+	}
+	return $mytitle;
+}

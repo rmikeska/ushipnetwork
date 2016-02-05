@@ -1,6 +1,6 @@
 <div class="postThumb">
   <?php if (has_post_thumbnail( $post->ID ) ): ?>
-    <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+    <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'post-thumb' ); ?>
     <a class="post-featureImage-link" href="<?php the_permalink();?>">
       <img class="post-featureImage" src="<?php echo $image[0]; ?>">
     </a>
@@ -22,6 +22,6 @@
     }
     ?>
   </div>
-  <a class="post-title" href="<?php the_permalink();?>"><?php the_title(); ?></a>
+  <a class="post-title" href="<?php the_permalink();?>"><?php echo short_title('...', 70); ?></a>
   <a class="emphasisLink" href="<?php the_permalink();?>">Read Article</a>
 </div>

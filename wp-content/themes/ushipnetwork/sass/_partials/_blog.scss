@@ -86,6 +86,7 @@
 }
 
 .post-title {
+  display: block;
   font-family: $lato-bold;
   text-transform: uppercase;
   font-size: 18px;
@@ -93,13 +94,6 @@
   letter-spacing: 0.05em;
   line-height: 23px;
   margin-bottom: 30px;
-  overflow: hidden;
-  -ms-text-overflow: ellipsis;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  display: -webkit-box;
 }
 
 .ajax-load-more-wrap {

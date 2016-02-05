@@ -1029,6 +1029,7 @@ a {
 
 /* line 88, sass/_partials/_blog.scss */
 .post-title {
+  display: block;
   font-family: "LatoBold";
   text-transform: uppercase;
   font-size: 18px;
@@ -1036,26 +1037,19 @@ a {
   letter-spacing: 0.05em;
   line-height: 23px;
   margin-bottom: 30px;
-  overflow: hidden;
-  -ms-text-overflow: ellipsis;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  display: -webkit-box;
 }
 
-/* line 105, sass/_partials/_blog.scss */
+/* line 99, sass/_partials/_blog.scss */
 .ajax-load-more-wrap {
   width: 100%;
 }
 
-/* line 109, sass/_partials/_blog.scss */
+/* line 103, sass/_partials/_blog.scss */
 .alm-btn-wrap {
   padding-right: 60px;
 }
 
-/* line 113, sass/_partials/_blog.scss */
+/* line 107, sass/_partials/_blog.scss */
 .alm-load-more-btn {
   padding: 13px 10px;
   max-width: 220px;
@@ -1081,7 +1075,7 @@ article.post {
   max-width: calc(620px + 20px*2);
   margin-left: auto;
   margin-right: auto;
-  padding-top: 50px;
+  padding-top: 35px;
   padding-right: 20px;
   padding-bottom: 50px;
   padding-left: 20px;
@@ -1241,6 +1235,171 @@ article .post-featureImage {
 /* line 132, sass/_partials/_single.scss */
 .entry-footer .cat-list {
   float: left;
+}
+
+/* line 136, sass/_partials/_single.scss */
+.blog-return {
+  display: inline-block;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+  font-family: "LatoBold";
+  color: #262626;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 24px;
+}
+
+/* line 147, sass/_partials/_single.scss */
+.blog-return:before {
+  float: left;
+  content: '';
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/blog_return.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+/* line 157, sass/_partials/_single.scss */
+.relatedPosts {
+  background-color: #F4F4F4;
+}
+
+/* line 161, sass/_partials/_single.scss */
+.relatedPosts-container {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: -webkit-calc(1020px + 20px*2);
+  max-width: calc(1020px + 20px*2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 85px;
+  padding-right: 20px;
+  padding-bottom: 85px;
+  padding-left: 20px;
+}
+@media only screen and (max-width: 1080px) {
+  /* line 161, sass/_partials/_single.scss */
+  .relatedPosts-container {
+    overflow: hidden;
+    *zoom: 1;
+    max-width: -webkit-calc(100% + 20px*2);
+    max-width: calc(100% + 20px*2);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    padding-right: 20px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+  }
+}
+
+/* line 169, sass/_partials/_single.scss */
+.relatedPosts-intro {
+  padding-bottom: 30px;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  padding-bottom: 45px;
+}
+@media only screen and (max-width: 1080px) {
+  /* line 169, sass/_partials/_single.scss */
+  .relatedPosts-intro {
+    padding-bottom: 35px;
+  }
+}
+
+/* line 181, sass/_partials/_single.scss */
+.relatedPosts-strip {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 1080px) {
+  /* line 181, sass/_partials/_single.scss */
+  .relatedPosts-strip {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+}
+
+/* line 191, sass/_partials/_single.scss */
+.relatedPosts-strip .postThumb {
+  margin: 0 auto;
+  -webkit-flex: 1;
+  flex: 1;
+  padding-bottom: 0;
+}
+@media only screen and (max-width: 1080px) {
+  /* line 191, sass/_partials/_single.scss */
+  .relatedPosts-strip .postThumb {
+    max-width: 300px;
+    padding-bottom: 60px;
+    padding-right: 0;
+  }
+}
+
+/* line 203, sass/_partials/_single.scss */
+.relatedPosts-strip .postThumb:last-child {
+  padding-right: 0;
+}
+@media only screen and (max-width: 1080px) {
+  /* line 203, sass/_partials/_single.scss */
+  .relatedPosts-strip .postThumb:last-child {
+    padding-bottom: 0;
+  }
+}
+
+/* line 211, sass/_partials/_single.scss */
+.postBookend-container {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: -webkit-calc(100% + 20px*2);
+  max-width: calc(100% + 20px*2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 65px;
+  padding-right: 20px;
+  padding-bottom: 65px;
+  padding-left: 20px;
+}
+@media only screen and (max-width: 1080px) {
+  /* line 211, sass/_partials/_single.scss */
+  .postBookend-container {
+    overflow: hidden;
+    *zoom: 1;
+    max-width: -webkit-calc(100% + 20px*2);
+    max-width: calc(100% + 20px*2);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    padding-right: 20px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+  }
+}
+
+/* line 1, sass/_partials/_archive.scss */
+.archive-content .page-header {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: -webkit-calc(620px + 20px*2);
+  max-width: calc(620px + 20px*2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 35px;
+  padding-right: 20px;
+  padding-bottom: 0;
+  padding-left: 20px;
 }
 
 /*** Bios ***/
@@ -2192,18 +2351,8 @@ article .post-featureImage {
     padding: 10px 0;
   }
 }
-/* line 65, sass/_partials/modules/_testimonials.scss */
-.testimonials-text p {
-  overflow: hidden;
-  -ms-text-overflow: ellipsis;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  display: -webkit-box;
-}
 
-/* line 76, sass/_partials/modules/_testimonials.scss */
+/* line 66, sass/_partials/modules/_testimonials.scss */
 .testimonials-source {
   padding-bottom: 10px;
 }

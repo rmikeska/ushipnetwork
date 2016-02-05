@@ -28,7 +28,7 @@ function ushipnetwork_posted_on() {
 
 	$byline = sprintf(
 		esc_html_x( 'by %s', 'post author', 'ushipnetwork' ),
-		'<span>' . esc_html( get_the_author() ) . '</span>'
+		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 	);
 
 	echo '<div class="posted-on">' . $posted_on . '<div class="share">' . 'Share';
@@ -63,7 +63,7 @@ function ushipnetwork_entry_footer() {
 	if ( 'post' === get_post_type() ) {
 		$byline = sprintf(
 			esc_html_x( 'by %s', 'post author', 'ushipnetwork' ),
-			'<span>' . esc_html( get_the_author() ) . '</span>'
+			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 		);
 
 		echo '<div class="footer-byline">' . $byline . '<div class="share">' . 'Share';
@@ -84,12 +84,6 @@ function ushipnetwork_entry_footer() {
 		    echo trim( $output, $separator );
 		}
 
-		echo '</span>';
-	}
-
-	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-		echo '<span class="comments-link">';
-		comments_popup_link( esc_html__( 'Leave a comment', 'ushipnetwork' ), esc_html__( '1 Comment', 'ushipnetwork' ), esc_html__( '% Comments', 'ushipnetwork' ) );
 		echo '</span>';
 	}
 
