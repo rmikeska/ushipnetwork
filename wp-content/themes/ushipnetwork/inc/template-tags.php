@@ -31,11 +31,9 @@ function ushipnetwork_posted_on() {
 		'<span>' . esc_html( get_the_author() ) . '</span>'
 	);
 
-	echo '<div class="posted-on">' . $posted_on . '<div class="shareButtons">' . 'Share';
+	echo '<div class="posted-on">' . $posted_on . '<div class="share">' . 'Share';
 
-	if ( function_exists( 'ADDTOANY_SHARE_SAVE_KIT' ) ) {
-	  ADDTOANY_SHARE_SAVE_KIT( array( 'use_current_page' => true ) );
-	}
+	include("share.php");
 
 	echo '</div>' . '</div>';
 
@@ -68,11 +66,9 @@ function ushipnetwork_entry_footer() {
 			'<span>' . esc_html( get_the_author() ) . '</span>'
 		);
 
-		echo '<div class="footer-byline">' . $byline . '<div class="shareButtons">' . 'Share';
+		echo '<div class="footer-byline">' . $byline . '<div class="share">' . 'Share';
 
-		if ( function_exists( 'ADDTOANY_SHARE_SAVE_KIT' ) ) {
-		  ADDTOANY_SHARE_SAVE_KIT( array( 'use_current_page' => true ) );
-		}
+		include("share.php");
 
 		echo '</div>' . '</div>';
 

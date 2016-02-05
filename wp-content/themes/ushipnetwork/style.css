@@ -1158,12 +1158,12 @@ article .post-featureImage {
 }
 
 /* line 66, sass/_partials/_single.scss */
-.shareButtons {
+.share {
   float: right;
 }
 @media only screen and (max-width: 769px) {
   /* line 66, sass/_partials/_single.scss */
-  .shareButtons {
+  .share {
     float: none;
     margin-top: 14px;
     padding-top: 14px;
@@ -1174,55 +1174,53 @@ article .post-featureImage {
 }
 
 /* line 79, sass/_partials/_single.scss */
-.shareButtons .addtoany_list {
-  display: inline-block;
+.share-list {
   float: right;
   margin-left: 15px;
 }
 
-/* line 85, sass/_partials/_single.scss */
-.addtoany_list a {
-  float: left;
-  width: 24px;
-  height: 24px;
-}
-
-/* line 91, sass/_partials/_single.scss */
-.addtoany_list a:not(:first-child) {
+/* line 84, sass/_partials/_single.scss */
+.share-list li:not(:first-child) {
   margin-left: 10px;
 }
 @media only screen and (max-width: 769px) {
-  /* line 91, sass/_partials/_single.scss */
-  .addtoany_list a:not(:first-child) {
+  /* line 84, sass/_partials/_single.scss */
+  .share-list li:not(:first-child) {
     margin-left: 60px;
   }
 }
 
-/* line 99, sass/_partials/_single.scss */
-.shareButtons .a2a_button_facebook {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/facebook.svg");
+/* line 92, sass/_partials/_single.scss */
+.share-list li {
+  float: left;
+}
+
+/* line 96, sass/_partials/_single.scss */
+.share-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-/* line 106, sass/_partials/_single.scss */
-.shareButtons .a2a_button_twitter {
+/* line 105, sass/_partials/_single.scss */
+.share-icon.share-icon-facebook {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/facebook.svg");
+}
+
+/* line 109, sass/_partials/_single.scss */
+.share-icon.share-icon-twitter {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/twitter.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 /* line 113, sass/_partials/_single.scss */
-.shareButtons .a2a_button_linkedin {
+.share-icon.share-icon-linkedin {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/linkedin.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
-/* line 120, sass/_partials/_single.scss */
+/* line 117, sass/_partials/_single.scss */
 .footer-byline {
   padding-top: 14px;
   padding-bottom: 12px;
@@ -1232,7 +1230,7 @@ article .post-featureImage {
   line-height: 24px;
 }
 @media only screen and (max-width: 769px) {
-  /* line 120, sass/_partials/_single.scss */
+  /* line 117, sass/_partials/_single.scss */
   .footer-byline {
     border: none;
     padding-top: 0;
@@ -1240,7 +1238,7 @@ article .post-featureImage {
   }
 }
 
-/* line 135, sass/_partials/_single.scss */
+/* line 132, sass/_partials/_single.scss */
 .entry-footer .cat-list {
   float: left;
 }

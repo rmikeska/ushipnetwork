@@ -63,7 +63,7 @@ article .post-featureImage {
   }
 }
 
-.shareButtons {
+.share {
   float: right;
 
   @media #{$default-break} {
@@ -76,19 +76,12 @@ article .post-featureImage {
   }
 }
 
-.shareButtons .addtoany_list {
-  display: inline-block;
+.share-list {
   float: right;
   margin-left: 15px;
 }
 
-.addtoany_list a {
-  float: left;
-  width: 24px;
-  height: 24px;
-}
-
-.addtoany_list a:not(:first-child) {
+.share-list li:not(:first-child) {
   margin-left: 10px;
 
   @media #{$default-break} {
@@ -96,25 +89,29 @@ article .post-featureImage {
   }
 }
 
-.shareButtons .a2a_button_facebook {
+.share-list li {
+  float: left;
+}
+
+.share-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.share-icon.share-icon-facebook {
   background-image: linear-gradient(transparent, transparent), url("#{$asset-path}/facebook.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
-.shareButtons .a2a_button_twitter {
+.share-icon.share-icon-twitter {
   background-image: linear-gradient(transparent, transparent), url("#{$asset-path}/twitter.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
-.shareButtons .a2a_button_linkedin {
+.share-icon.share-icon-linkedin {
   background-image: linear-gradient(transparent, transparent), url("#{$asset-path}/linkedin.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .footer-byline {

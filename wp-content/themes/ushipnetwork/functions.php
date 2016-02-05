@@ -120,6 +120,8 @@ function ushipnetwork_scripts() {
 
 	wp_enqueue_script( 'categoryselect', get_template_directory_uri() . '/js/category-menu-select.js', array(), '20160121', true );
 
+	wp_enqueue_script( 'share', get_template_directory_uri() . '/js/share.js', array(), '20160205', true );
+
 	wp_enqueue_script( 'ushipnetwork-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'ushipnetwork-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
@@ -154,8 +156,3 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
-
-/**
- * Tell AddToAny to fuck off with all their js.
- */
-add_filter( 'addtoany_script_disabled', '__return_true' );
