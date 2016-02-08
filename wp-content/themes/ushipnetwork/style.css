@@ -574,13 +574,24 @@ h3 {
 .pageHeader {
   position: fixed;
   top: 0;
-  z-index: 2;
   width: 100%;
   background: #FFFFFF;
+  z-index: 3;
+}
+
+/* line 11, sass/_partials/_header.scss */
+.pageHeader-primaryRow:after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
   box-shadow: 0 4px 5.88px 0.12px rgba(0, 0, 0, 0.13);
 }
 
-/* line 12, sass/_partials/_header.scss */
+/* line 22, sass/_partials/_header.scss */
 .pageHeader-homeLink {
   display: block;
   padding: 22.5px 34px;
@@ -589,7 +600,7 @@ h3 {
   background: #0083BB;
 }
 @media only screen and (max-width: 769px) {
-  /* line 12, sass/_partials/_header.scss */
+  /* line 22, sass/_partials/_header.scss */
   .pageHeader-homeLink {
     padding: 14.5px 34px;
     height: 64px;
@@ -598,7 +609,7 @@ h3 {
   }
 }
 
-/* line 27, sass/_partials/_header.scss */
+/* line 37, sass/_partials/_header.scss */
 .pageHeader-logo {
   width: 70px;
   height: 35px;
@@ -609,7 +620,7 @@ h3 {
   background-size: contain;
 }
 @media only screen and (max-width: 769px) {
-  /* line 27, sass/_partials/_header.scss */
+  /* line 37, sass/_partials/_header.scss */
   .pageHeader-logo {
     background: transparent url("/wp-content/themes/ushipnetwork/images/uship_logo_blue.png") center center no-repeat;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/uship_logo_blue.svg");
@@ -618,28 +629,27 @@ h3 {
 }
 
 /*** Sub Nav ***/
-/* line 45, sass/_partials/_header.scss */
+/* line 55, sass/_partials/_header.scss */
 .pageHeader-subNav {
-  position: fixed;
-  top: 80px;
-  z-index: 1;
+  position: absolute;
+  z-index: -2;
   width: 100%;
   height: 61px;
   background: #FFFFFF;
   box-shadow: 0 4px 5.88px 0.12px rgba(0, 0, 0, 0.13);
 }
 @media only screen and (max-width: 769px) {
-  /* line 45, sass/_partials/_header.scss */
+  /* line 55, sass/_partials/_header.scss */
   .pageHeader-subNav {
     display: none;
   }
 }
 
-/* line 59, sass/_partials/_header.scss */
+/* line 68, sass/_partials/_header.scss */
 .menu-about-sub-nav-container {
   float: left;
 }
-/* line 62, sass/_partials/_header.scss */
+/* line 71, sass/_partials/_header.scss */
 .menu-about-sub-nav-container li {
   float: left;
   min-width: 138px;
@@ -647,21 +657,21 @@ h3 {
   text-transform: uppercase;
   line-height: 60px;
 }
-/* line 70, sass/_partials/_header.scss */
+/* line 79, sass/_partials/_header.scss */
 .menu-about-sub-nav-container a {
   padding-bottom: 5px;
   color: #262626;
   font-size: 14px;
 }
 
-/* line 77, sass/_partials/_header.scss */
+/* line 86, sass/_partials/_header.scss */
 .pageHeader-subNav-title {
   background: #F4F4F4;
   font-family: "LatoBold";
 }
 
 /*** Current Menu Item/Hover ***/
-/* line 84, sass/_partials/_header.scss */
+/* line 93, sass/_partials/_header.scss */
 .pageHeader .current-menu-item a,
 .pageHeader .menu-item a:hover {
   border-bottom-width: 3px;
