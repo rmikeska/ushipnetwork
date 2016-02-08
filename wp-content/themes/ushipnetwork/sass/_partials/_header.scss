@@ -16,6 +16,10 @@
   top: 0;
   left: 0;
   box-shadow: $header-box-shadow;
+
+  @media #{$default-break} {
+    display: none;
+  }
 }
 
 .pageHeader-homeLink {
