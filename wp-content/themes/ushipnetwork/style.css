@@ -581,7 +581,7 @@ h3 {
 /* line 10, sass/_partials/_header.scss */
 .pageHeader-primaryRow:after {
   position: absolute;
-  z-index: -1;
+  z-index: 2;
   content: '';
   height: 100%;
   width: 100%;
@@ -631,7 +631,7 @@ h3 {
 /* line 54, sass/_partials/_header.scss */
 .pageHeader-subNav {
   position: absolute;
-  z-index: -2;
+  z-index: 1;
   width: 100%;
   height: 61px;
   background: #FFFFFF;
