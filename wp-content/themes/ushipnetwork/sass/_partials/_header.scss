@@ -4,6 +4,8 @@
   position: fixed;
   width: 100%;
   background: $white;
+  z-index: 3;
+  top: 0;
 }
 
 .pageHeader-primaryRow:after {
