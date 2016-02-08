@@ -4,7 +4,6 @@
   position: fixed;
   width: 100%;
   background: $white;
-  z-index: 3;
 }
 
 .pageHeader-primaryRow:after {
@@ -16,10 +15,6 @@
   top: 0;
   left: 0;
   box-shadow: $header-box-shadow;
-
-  @media #{$default-break} {
-    display: none;
-  }
 }
 
 .pageHeader-homeLink {

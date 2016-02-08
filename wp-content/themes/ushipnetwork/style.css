@@ -575,10 +575,9 @@ h3 {
   position: fixed;
   width: 100%;
   background: #FFFFFF;
-  z-index: 3;
 }
 
-/* line 10, sass/_partials/_header.scss */
+/* line 9, sass/_partials/_header.scss */
 .pageHeader-primaryRow:after {
   position: absolute;
   z-index: 2;
@@ -589,14 +588,8 @@ h3 {
   left: 0;
   box-shadow: 0 4px 5.88px 0.12px rgba(0, 0, 0, 0.13);
 }
-@media only screen and (max-width: 769px) {
-  /* line 10, sass/_partials/_header.scss */
-  .pageHeader-primaryRow:after {
-    display: none;
-  }
-}
 
-/* line 25, sass/_partials/_header.scss */
+/* line 20, sass/_partials/_header.scss */
 .pageHeader-homeLink {
   display: block;
   padding: 22.5px 34px;
@@ -605,7 +598,7 @@ h3 {
   background: #0083BB;
 }
 @media only screen and (max-width: 769px) {
-  /* line 25, sass/_partials/_header.scss */
+  /* line 20, sass/_partials/_header.scss */
   .pageHeader-homeLink {
     padding: 14.5px 34px;
     height: 64px;
@@ -614,7 +607,7 @@ h3 {
   }
 }
 
-/* line 40, sass/_partials/_header.scss */
+/* line 35, sass/_partials/_header.scss */
 .pageHeader-logo {
   width: 70px;
   height: 35px;
@@ -625,7 +618,7 @@ h3 {
   background-size: contain;
 }
 @media only screen and (max-width: 769px) {
-  /* line 40, sass/_partials/_header.scss */
+  /* line 35, sass/_partials/_header.scss */
   .pageHeader-logo {
     background: transparent url("/wp-content/themes/ushipnetwork/images/uship_logo_blue.png") center center no-repeat;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/uship_logo_blue.svg");
@@ -634,7 +627,7 @@ h3 {
 }
 
 /*** Sub Nav ***/
-/* line 58, sass/_partials/_header.scss */
+/* line 53, sass/_partials/_header.scss */
 .pageHeader-subNav {
   position: absolute;
   z-index: 1;
@@ -644,17 +637,17 @@ h3 {
   box-shadow: 0 4px 5.88px 0.12px rgba(0, 0, 0, 0.13);
 }
 @media only screen and (max-width: 769px) {
-  /* line 58, sass/_partials/_header.scss */
+  /* line 53, sass/_partials/_header.scss */
   .pageHeader-subNav {
     display: none;
   }
 }
 
-/* line 71, sass/_partials/_header.scss */
+/* line 66, sass/_partials/_header.scss */
 .menu-about-sub-nav-container {
   float: left;
 }
-/* line 74, sass/_partials/_header.scss */
+/* line 69, sass/_partials/_header.scss */
 .menu-about-sub-nav-container li {
   float: left;
   min-width: 138px;
@@ -662,21 +655,21 @@ h3 {
   text-transform: uppercase;
   line-height: 60px;
 }
-/* line 82, sass/_partials/_header.scss */
+/* line 77, sass/_partials/_header.scss */
 .menu-about-sub-nav-container a {
   padding-bottom: 5px;
   color: #262626;
   font-size: 14px;
 }
 
-/* line 89, sass/_partials/_header.scss */
+/* line 84, sass/_partials/_header.scss */
 .pageHeader-subNav-title {
   background: #F4F4F4;
   font-family: "LatoBold";
 }
 
 /*** Current Menu Item/Hover ***/
-/* line 96, sass/_partials/_header.scss */
+/* line 91, sass/_partials/_header.scss */
 .pageHeader .current-menu-item a,
 .pageHeader .menu-item a:hover {
   border-bottom-width: 3px;
