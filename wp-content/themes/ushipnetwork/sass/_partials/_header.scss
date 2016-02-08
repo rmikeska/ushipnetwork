@@ -5,6 +5,7 @@
   width: 100%;
   background: $white;
   z-index: 3;
+  -webkit-transform: translateZ(0);
 }
 
 .pageHeader-primaryRow:after {

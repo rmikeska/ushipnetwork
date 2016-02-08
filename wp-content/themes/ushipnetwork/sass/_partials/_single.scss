@@ -149,7 +149,7 @@ article .post-featureImage {
   content: '';
   background-image: linear-gradient(transparent, transparent), url("#{$asset-path}/blog_return.svg");
   @include background-image;
-  width: 24px;
+  width: 28px;
   height: 24px;
   margin-right: 12px;
 }
