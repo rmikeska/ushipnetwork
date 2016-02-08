@@ -573,22 +573,10 @@ h3 {
 /* line 3, sass/_partials/_header.scss */
 .pageHeader {
   position: fixed;
+  top: 0;
+  z-index: 3;
   width: 100%;
   background: #FFFFFF;
-  z-index: 3;
-  top: 0;
-}
-
-/* line 11, sass/_partials/_header.scss */
-.pageHeader-primaryRow:after {
-  position: absolute;
-  z-index: 2;
-  content: '';
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  box-shadow: 0 4px 5.88px 0.12px rgba(0, 0, 0, 0.13);
 }
 
 /* line 22, sass/_partials/_header.scss */

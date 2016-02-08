@@ -2,22 +2,22 @@
 
 .pageHeader {
   position: fixed;
+  top: 0;
+  z-index: 3;
   width: 100%;
   background: $white;
-  z-index: 3;
-  top: 0;
 }
 
-.pageHeader-primaryRow:after {
-  position: absolute;
-  z-index: 2;
-  content: '';
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  box-shadow: $header-box-shadow;
-}
+// .pageHeader-primaryRow:after {
+//   position: absolute;
+//   z-index: 2;
+//   content: '';
+//   height: 100%;
+//   width: 100%;
+//   top: 0;
+//   left: 0;
+//   box-shadow: $header-box-shadow;
+// }
 
 .pageHeader-homeLink {
   display: block;
