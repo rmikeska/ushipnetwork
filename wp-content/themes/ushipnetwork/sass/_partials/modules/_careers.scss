@@ -1,0 +1,63 @@
+.careersListings {
+
+  #resumator-logo {
+    display: none;
+  }
+
+  #resumator-wrapper {
+    @include container(780px, 70px, 115px, 20px);
+  }
+
+  .resumator-job {
+    position: relative;
+    padding: 27px 0;
+    border-top: 1px solid $divider-color;
+  }
+
+  .resumator-job-view-details {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .resumator-job-title {
+    font-family: $lato-bold;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding-bottom: 10px;
+  }
+
+  .resumator-job-info {
+    float: left;
+  }
+
+  .resumator-job-heading {
+    font-family: $lato-bold;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  .resumator-jobs-text {
+    line-height: 30px;
+  }
+
+  .resumator-job-heading {
+    margin-right: 5px;
+  }
+
+  .resumator-job-department,
+  .resumator-job-info-details .resumator-job-heading {
+    margin-left: 45px;
+  }
+
+  p {
+    line-height: 30px;
+  }
+
+  strong {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+}
