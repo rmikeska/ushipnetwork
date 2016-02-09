@@ -2132,7 +2132,7 @@ function acf_decode_choices( $string = '' ) {
 		
 		return array();
 		
-	// force array on single numeric values
+	// allow numeric values (same as string)
 	} elseif( is_numeric($string) ) {
 		
 		// allow
@@ -2140,7 +2140,7 @@ function acf_decode_choices( $string = '' ) {
 	// bail early if not a a string
 	} elseif( !is_string($string) ) {
 		
-		return $string;
+		return array();
 		
 	}
 	

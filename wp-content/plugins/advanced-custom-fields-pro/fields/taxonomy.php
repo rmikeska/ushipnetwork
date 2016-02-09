@@ -349,18 +349,30 @@ class acf_field_taxonomy extends acf_field {
 		$value = acf_get_valid_terms($value, $field['taxonomy']);
 		
 		
-		// load/save
+		// load_terms
 		if( $field['load_terms'] ) {
 			
 			// get terms
 			$term_ids = wp_get_object_terms($post_id, $field['taxonomy'], array('fields' => 'ids', 'orderby' => 'none'));
 			
 			
-			// error
-			if( is_wp_error($term_ids) ) {
+			// bail early if no terms
+			if( empty($term_ids) || is_wp_error($term_ids) ) return false;
+			
+			
+			// sort
+			if( !empty($value) ) {
 				
-				return false;
+				$order = array();
+				
+				foreach( $term_ids as $i => $v ) {
 					
+					$order[ $i ] = array_search($v, $value);
+					
+				}
+				
+				array_multisort($order, $term_ids);
+				
 			}
 			
 			
@@ -1008,7 +1020,7 @@ class acf_field_taxonomy extends acf_field {
 		}
 		
 		
-		?><p class="acf-submit"><button class="acf-button blue" type="submit"><?php _e("Add", 'acf'); ?></button><i class="acf-spinner"></i><span></span></p></form><?php
+		?><p class="acf-submit"><button class="acf-button button button-primary" type="submit"><?php _e("Add", 'acf'); ?></button><i class="acf-spinner"></i><span></span></p></form><?php
 		
 		
 		// die

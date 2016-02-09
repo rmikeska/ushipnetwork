@@ -788,11 +788,17 @@ a {
 }
 
 /* line 12, sass/_partials/_base.scss */
+b, strong {
+  font-weight: normal;
+  font-family: "LatoBold";
+}
+
+/* line 17, sass/_partials/_base.scss */
 .pageHeader-primaryNav {
   display: none;
 }
 
-/* line 16, sass/_partials/_base.scss */
+/* line 21, sass/_partials/_base.scss */
 .pageWrapper {
   overflow: hidden;
   *zoom: 1;
@@ -801,33 +807,33 @@ a {
   margin-right: auto;
 }
 
-/* line 20, sass/_partials/_base.scss */
+/* line 25, sass/_partials/_base.scss */
 .pageContent {
   padding-top: 140px;
 }
 @media screen and (max-width: 769px) {
-  /* line 20, sass/_partials/_base.scss */
+  /* line 25, sass/_partials/_base.scss */
   .pageContent {
     padding-top: 64px;
   }
 }
 
-/* line 28, sass/_partials/_base.scss */
+/* line 33, sass/_partials/_base.scss */
 .sectionWhite {
   background-color: #FFFFFF;
 }
 
-/* line 32, sass/_partials/_base.scss */
+/* line 37, sass/_partials/_base.scss */
 .sectionGrey {
   background-color: #F4F4F4;
 }
 
-/* line 36, sass/_partials/_base.scss */
+/* line 41, sass/_partials/_base.scss */
 .sectionNavy {
   background-color: #1C2431;
 }
 
-/* line 40, sass/_partials/_base.scss */
+/* line 45, sass/_partials/_base.scss */
 .buttonGreen {
   display: block;
   margin: 0 auto;
@@ -841,21 +847,21 @@ a {
   font-family: "LatoBold";
 }
 
-/* line 53, sass/_partials/_base.scss */
+/* line 58, sass/_partials/_base.scss */
 .buttonLarge {
   padding: 13px 10px;
   max-width: 220px;
   max-height: 50px;
 }
 
-/* line 59, sass/_partials/_base.scss */
+/* line 64, sass/_partials/_base.scss */
 .buttonSmall {
   padding: 7px 10px;
   max-width: 124px;
   max-height: 43px;
 }
 
-/* line 65, sass/_partials/_base.scss */
+/* line 70, sass/_partials/_base.scss */
 .buttonGreenTransparent {
   display: block;
   margin: 0 auto;
@@ -869,7 +875,7 @@ a {
   font-family: "LatoBold";
 }
 
-/* line 78, sass/_partials/_base.scss */
+/* line 83, sass/_partials/_base.scss */
 .emphasisLink {
   padding-bottom: 5px;
   border-bottom: 3px solid #00B437;
@@ -878,7 +884,7 @@ a {
   font-size: 18px;
 }
 
-/* line 86, sass/_partials/_base.scss */
+/* line 91, sass/_partials/_base.scss */
 .emphasisLink:after {
   display: inline-block;
   content: '';
@@ -1912,6 +1918,15 @@ article .post-featureImage {
   }
 }
 
+/* line 56, sass/_partials/modules/_hero.scss */
+.hero-subheadline {
+  max-width: 530px;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 18px;
+  text-shadow: 0 4px 5.88px rgba(0, 0, 0, 0.72);
+}
+
 /*** Long Form Content ***/
 /* line 3, sass/_partials/modules/_longformcontent.scss */
 .longFormContent-container {
@@ -2433,4 +2448,75 @@ article .post-featureImage {
 /* line 40, sass/_partials/modules/_press.scss */
 .post-time {
   color: #999999;
+}
+
+/* line 3, sass/_partials/modules/_careers.scss */
+.careersListings #resumator-logo {
+  display: none;
+}
+/* line 7, sass/_partials/modules/_careers.scss */
+.careersListings #resumator-wrapper {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: -webkit-calc(780px + 20px*2);
+  max-width: calc(780px + 20px*2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 70px;
+  padding-right: 20px;
+  padding-bottom: 115px;
+  padding-left: 20px;
+}
+/* line 11, sass/_partials/modules/_careers.scss */
+.careersListings .resumator-job {
+  position: relative;
+  padding: 27px 0;
+  border-top: 1px solid #dddddd;
+}
+/* line 17, sass/_partials/modules/_careers.scss */
+.careersListings .resumator-job-view-details {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* line 23, sass/_partials/modules/_careers.scss */
+.careersListings .resumator-job-title {
+  font-family: "LatoBold";
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding-bottom: 10px;
+}
+/* line 31, sass/_partials/modules/_careers.scss */
+.careersListings .resumator-job-info {
+  float: left;
+}
+/* line 35, sass/_partials/modules/_careers.scss */
+.careersListings .resumator-job-heading {
+  font-family: "LatoBold";
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+/* line 42, sass/_partials/modules/_careers.scss */
+.careersListings .resumator-jobs-text {
+  line-height: 30px;
+}
+/* line 46, sass/_partials/modules/_careers.scss */
+.careersListings .resumator-job-heading {
+  margin-right: 5px;
+}
+/* line 50, sass/_partials/modules/_careers.scss */
+.careersListings .resumator-job-department,
+.careersListings .resumator-job-info-details .resumator-job-heading {
+  margin-left: 45px;
+}
+/* line 55, sass/_partials/modules/_careers.scss */
+.careersListings p {
+  line-height: 30px;
+}
+/* line 59, sass/_partials/modules/_careers.scss */
+.careersListings strong {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }

@@ -36,6 +36,10 @@
 
       <?php include("press.php");?>
 
+    <?php elseif (get_row_layout() == 'careers'): ?>
+
+      <?php include("careers.php");?>
+
     <?php endif; ?>
   <?php endwhile; ?>
 <?php endif; ?>

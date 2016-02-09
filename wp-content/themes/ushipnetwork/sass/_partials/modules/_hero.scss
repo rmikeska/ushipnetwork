@@ -52,3 +52,11 @@
     padding-bottom: 20px;
   }
 }
+
+.hero-subheadline {
+  max-width: 530px;
+  text-align: center;
+  color: $white;
+  font-size: 18px;
+  text-shadow: 0 4px 5.88px rgba(0, 0, 0, 0.72);
+}
