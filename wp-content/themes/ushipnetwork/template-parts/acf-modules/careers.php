@@ -4,7 +4,18 @@
     jQuery(document).ready(function ($) {
       $('style').remove();
 
-      $('.resumator-job-description').hide();
+      $('.resumator-job-view-details').remove();
+
+      $('.resumator-job-link').remove();
+
+      $('.resumator-job-info-details').each( function() {
+        $(this).append('<a class="resumator-view-details">View Details</a>');
+      });
+
+      $('.resumator-view-details').click(function () {
+        $(this).parent().next().slideToggle('fast');
+        $('.resumator-job-description').not($(this).parent().next()).slideUp('fast');
+      });
     })
   </script>
 

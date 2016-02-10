@@ -9,15 +9,8 @@
   }
 
   .resumator-job {
-    position: relative;
     padding: 27px 0;
     border-top: 1px solid $divider-color;
-  }
-
-  .resumator-job-view-details {
-    position: absolute;
-    top: 0;
-    right: 0;
   }
 
   .resumator-job-title {
@@ -29,7 +22,7 @@
   }
 
   .resumator-job-info {
-    float: left;
+    // float: left;
   }
 
   .resumator-job-heading {
@@ -43,8 +36,13 @@
     line-height: 30px;
   }
 
-  .resumator-job-heading {
+  .resumator-job-info-details.resumator-jobs-text {
+    line-height: 24px;
+  }
+
+  .resumator-job-heading.resumator-jobs-text {
     margin-right: 5px;
+    line-height: 25px;
   }
 
   .resumator-job-department,
@@ -59,5 +57,27 @@
   strong {
     text-transform: uppercase;
     letter-spacing: 0.05em;
+  }
+
+  .resumator-view-details {
+    float: right;
+    line-height: 26px;
+    font-family: $lato-bold;
+    font-size: 17px;
+    cursor: pointer;
+  }
+
+  .resumator-view-details:before {
+    margin-left: 10px;
+    float: right;
+    content: '';
+    background-image: linear-gradient(transparent, transparent), url("#{$asset-path}/accordian_arrow.svg");
+    @include background-image;
+    width: 24px;
+    height: 24px;
+  }
+
+  .resumator-job-description {
+    display: none;
   }
 }
