@@ -22,6 +22,10 @@
     }
   }
 
+  .resumator-job:last-of-type {
+    border-bottom: 1px solid $divider-color;
+  }
+
   .resumator-job-title {
     font-family: $lato-bold;
     line-height: 30px;

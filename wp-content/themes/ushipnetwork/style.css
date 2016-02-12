@@ -2486,6 +2486,10 @@ article .post-featureImage {
   }
 }
 /* line 25, sass/_partials/modules/_careers.scss */
+.careersListings .resumator-job:last-of-type {
+  border-bottom: 1px solid #dddddd;
+}
+/* line 29, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-job-title {
   font-family: "LatoBold";
   line-height: 30px;
@@ -2494,58 +2498,58 @@ article .post-featureImage {
   padding-bottom: 10px;
 }
 @media only screen and (max-width: 769px) {
-  /* line 25, sass/_partials/modules/_careers.scss */
+  /* line 29, sass/_partials/modules/_careers.scss */
   .careersListings .resumator-job-title {
     padding-bottom: 50px;
   }
 }
-/* line 41, sass/_partials/modules/_careers.scss */
+/* line 45, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-job-info,
 .careersListings .resumator-job-info-details {
   display: inline;
 }
 @media only screen and (max-width: 769px) {
-  /* line 41, sass/_partials/modules/_careers.scss */
+  /* line 45, sass/_partials/modules/_careers.scss */
   .careersListings .resumator-job-info,
   .careersListings .resumator-job-info-details {
     display: none;
   }
 }
-/* line 50, sass/_partials/modules/_careers.scss */
+/* line 54, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-job-heading {
   font-family: "LatoBold";
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
 }
-/* line 57, sass/_partials/modules/_careers.scss */
+/* line 61, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-jobs-text {
   line-height: 24px;
 }
-/* line 61, sass/_partials/modules/_careers.scss */
+/* line 65, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-job-info-details.resumator-jobs-text {
   line-height: 24px;
 }
-/* line 65, sass/_partials/modules/_careers.scss */
+/* line 69, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-job-heading.resumator-jobs-text {
   margin-right: 3px;
   line-height: 25px;
 }
-/* line 70, sass/_partials/modules/_careers.scss */
+/* line 74, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-job-department,
 .careersListings .resumator-job-info-details .resumator-job-heading {
   margin-left: 45px;
 }
-/* line 75, sass/_partials/modules/_careers.scss */
+/* line 79, sass/_partials/modules/_careers.scss */
 .careersListings p, .careersListings li {
   line-height: 30px;
 }
-/* line 79, sass/_partials/modules/_careers.scss */
+/* line 83, sass/_partials/modules/_careers.scss */
 .careersListings strong {
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
-/* line 84, sass/_partials/modules/_careers.scss */
+/* line 88, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-view-details {
   position: absolute;
   top: 27px;
@@ -2557,12 +2561,12 @@ article .post-featureImage {
   text-transform: none;
 }
 @media only screen and (max-width: 769px) {
-  /* line 84, sass/_partials/modules/_careers.scss */
+  /* line 88, sass/_partials/modules/_careers.scss */
   .careersListings .resumator-view-details {
     top: 90px;
   }
 }
-/* line 99, sass/_partials/modules/_careers.scss */
+/* line 103, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-view-details:before {
   margin-left: 10px;
   float: right;
@@ -2574,16 +2578,16 @@ article .post-featureImage {
   width: 28px;
   height: 24px;
 }
-/* line 109, sass/_partials/modules/_careers.scss */
+/* line 113, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-view-details.arrow-closed:before {
   transform: rotateX(180deg);
 }
-/* line 113, sass/_partials/modules/_careers.scss */
+/* line 117, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-job-description {
   display: none;
   padding-top: 30px;
 }
-/* line 118, sass/_partials/modules/_careers.scss */
+/* line 122, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-apply-button {
   display: block;
   margin: 0 10px 0 auto;
@@ -2600,12 +2604,12 @@ article .post-featureImage {
   height: 43px;
 }
 @media only screen and (max-width: 769px) {
-  /* line 118, sass/_partials/modules/_careers.scss */
+  /* line 122, sass/_partials/modules/_careers.scss */
   .careersListings .resumator-apply-button {
     margin: 0 auto 20px auto;
   }
 }
-/* line 138, sass/_partials/modules/_careers.scss */
+/* line 142, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-forward-button {
   display: block;
   margin: 0 auto;
@@ -2623,16 +2627,16 @@ article .post-featureImage {
   background: transparent;
 }
 @media only screen and (max-width: 769px) {
-  /* line 138, sass/_partials/modules/_careers.scss */
+  /* line 142, sass/_partials/modules/_careers.scss */
   .careersListings .resumator-forward-button {
     margin: 0 auto 20px auto;
   }
 }
-/* line 159, sass/_partials/modules/_careers.scss */
+/* line 163, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-buttons li a img {
   display: none;
 }
-/* line 163, sass/_partials/modules/_careers.scss */
+/* line 167, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-buttons li a {
   display: block;
   width: 30px;
@@ -2643,13 +2647,13 @@ article .post-featureImage {
   background-position: center;
 }
 @media only screen and (max-width: 769px) {
-  /* line 173, sass/_partials/modules/_careers.scss */
+  /* line 177, sass/_partials/modules/_careers.scss */
   .careersListings .resumator-buttons li:nth-of-type(1),
   .careersListings .resumator-buttons li:nth-of-type(2) {
     width: 100%;
   }
 }
-/* line 180, sass/_partials/modules/_careers.scss */
+/* line 184, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-buttons li:nth-of-type(3),
 .careersListings .resumator-buttons li:nth-of-type(4),
 .careersListings .resumator-buttons li:nth-of-type(5) {
@@ -2657,7 +2661,7 @@ article .post-featureImage {
   margin-top: 9px !important;
 }
 @media only screen and (max-width: 769px) {
-  /* line 180, sass/_partials/modules/_careers.scss */
+  /* line 184, sass/_partials/modules/_careers.scss */
   .careersListings .resumator-buttons li:nth-of-type(3),
   .careersListings .resumator-buttons li:nth-of-type(4),
   .careersListings .resumator-buttons li:nth-of-type(5) {
@@ -2666,15 +2670,15 @@ article .post-featureImage {
     margin-right: auto !important;
   }
 }
-/* line 193, sass/_partials/modules/_careers.scss */
+/* line 197, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-buttons li:nth-of-type(3) a {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/twitter.svg");
 }
-/* line 197, sass/_partials/modules/_careers.scss */
+/* line 201, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-buttons li:nth-of-type(4) a {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/facebook.svg");
 }
-/* line 201, sass/_partials/modules/_careers.scss */
+/* line 205, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-buttons li:nth-of-type(5) a {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/linkedin.svg");
 }
