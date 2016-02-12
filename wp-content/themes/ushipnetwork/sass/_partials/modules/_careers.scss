@@ -102,7 +102,7 @@
     content: '';
     background-image: linear-gradient(transparent, transparent), url("#{$asset-path}/accordian_arrow.svg");
     @include background-image;
-    width: 24px;
+    width: 28px;
     height: 24px;
   }
 
@@ -126,7 +126,7 @@
     border-radius: 3px;
     color: $white;
     font-family: $lato-bold;
-    padding: 10px 10px;
+    padding: 0 10px;
     width: 154px;
     height: 43px;
 
@@ -146,7 +146,7 @@
     border-radius: 3px;
     color: $primary-green;
     font-family: $lato-bold;
-    padding: 10px 10px;
+    padding: 0 10px;
     width: 154px;
     height: 43px;
     background: transparent;
@@ -164,6 +164,7 @@
     display: block;
     width: 30px;
     height: 24px;
+    margin: 0 auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -181,6 +182,12 @@
   .resumator-buttons li:nth-of-type(5) {
     float: right !important;
     margin-top: 9px !important;
+
+    @media #{$default-break} {
+      width: 100%;
+      margin-top: 15px !important;
+      margin-right: auto !important;
+    }
   }
 
   .resumator-buttons li:nth-of-type(3) a {
