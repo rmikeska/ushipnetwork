@@ -2665,20 +2665,19 @@ article .post-featureImage {
   .careersListings .resumator-buttons li:nth-of-type(3),
   .careersListings .resumator-buttons li:nth-of-type(4),
   .careersListings .resumator-buttons li:nth-of-type(5) {
-    width: 100%;
-    margin-top: 15px !important;
-    margin-right: auto !important;
+    margin-right: 0 !important;
+    margin-left: 10px !important;
   }
 }
-/* line 197, sass/_partials/modules/_careers.scss */
+/* line 196, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-buttons li:nth-of-type(3) a {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/twitter.svg");
 }
-/* line 201, sass/_partials/modules/_careers.scss */
+/* line 200, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-buttons li:nth-of-type(4) a {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/facebook.svg");
 }
-/* line 205, sass/_partials/modules/_careers.scss */
+/* line 204, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-buttons li:nth-of-type(5) a {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/linkedin.svg");
 }

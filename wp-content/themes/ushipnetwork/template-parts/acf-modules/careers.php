@@ -18,8 +18,6 @@
         $(this).text(function (i, v) {
            return v === 'View Details' ? 'Hide Details' : 'View Details'
         })
-        // $(this).text('Hide Details');
-        // $('.resumator-job-description').not($(this).parent().next()).slideUp('fast');
       });
     })
   </script>
