@@ -8,13 +8,18 @@
 
       $('.resumator-job-link').remove();
 
-      $('.resumator-job-info-details').each( function() {
-        $(this).append('<a class="resumator-view-details">View Details</a>');
+      $('.resumator-job').each( function() {
+        $(this).prepend('<a class="resumator-view-details">View Details</a>');
       });
 
       $('.resumator-view-details').click(function () {
-        $(this).parent().next().slideToggle('fast');
-        $('.resumator-job-description').not($(this).parent().next()).slideUp('fast');
+        $(this).siblings('.resumator-job-description').slideToggle('fast');
+        $(this).toggleClass('arrow-closed');
+        $(this).text(function (i, v) {
+           return v === 'View Details' ? 'Hide Details' : 'View Details'
+        })
+        // $(this).text('Hide Details');
+        // $('.resumator-job-description').not($(this).parent().next()).slideUp('fast');
       });
     })
   </script>

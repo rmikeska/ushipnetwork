@@ -24,7 +24,7 @@
 <div class="pageWrapper">
 	<header class="pageHeader">
 		<div class="pageHeader-primaryRow">
-			<a class="pageHeader-homeLink" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+			<a class="pageHeader-homeLink" href="//www.uship.com/">
 				<div class="pageHeader-logo"></div>
 			</a>
 			<nav class="pageHeader-primaryNav">
