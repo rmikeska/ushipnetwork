@@ -32,16 +32,7 @@
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 			</nav>
 		</div>
-		<nav class="pageHeader-subNav">
-			<?php
-				global $blog_id;
-				if ($blog_id == 1):
-				  wp_nav_menu( array('menu' => 'About Sub Nav', 'items_wrap' => '<ul><li class="pageHeader-subNav-title"><a href="/">About</a></li>%3$s</ul>' ) );
-				elseif ($blog_id == 2):
-					wp_nav_menu( array('menu' => 'About Sub Nav', 'items_wrap' => '<ul><li class="pageHeader-subNav-title"><a href="/br/">Sobre</a></li>%3$s</ul>' ) );
-				endif;
-			?>
-		</nav>
+		<?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_id' => 'secondary-menu', 'container_class' => 'secondary-menu' ) ); ?>
 	</header>
 
 	<main class="pageContent">

@@ -632,7 +632,7 @@ h3 {
 
 /*** Sub Nav ***/
 /* line 57, sass/_partials/_header.scss */
-.pageHeader-subNav {
+.secondary-menu {
   position: absolute;
   z-index: -2;
   width: 100%;
@@ -643,40 +643,40 @@ h3 {
 }
 @media only screen and (max-width: 769px) {
   /* line 57, sass/_partials/_header.scss */
-  .pageHeader-subNav {
+  .secondary-menu {
     display: none;
   }
 }
-
-/* line 71, sass/_partials/_header.scss */
-.menu-about-sub-nav-container {
-  float: left;
-}
-/* line 74, sass/_partials/_header.scss */
-.menu-about-sub-nav-container li {
+/* line 70, sass/_partials/_header.scss */
+.secondary-menu li {
   float: left;
   min-width: 138px;
   text-align: center;
   text-transform: uppercase;
   line-height: 60px;
 }
-/* line 82, sass/_partials/_header.scss */
-.menu-about-sub-nav-container a {
+/* line 78, sass/_partials/_header.scss */
+.secondary-menu a {
   padding-bottom: 5px;
   color: #262626;
   font-size: 14px;
 }
 
-/* line 89, sass/_partials/_header.scss */
-.pageHeader-subNav-title {
+/* line 85, sass/_partials/_header.scss */
+.secondary-menu li:first-of-type {
   background: #F4F4F4;
   font-family: "LatoBold";
 }
 
-/*** Current Menu Item/Hover ***/
-/* line 96, sass/_partials/_header.scss */
-.pageHeader .current-menu-item a,
-.pageHeader .menu-item a:hover {
+/* line 90, sass/_partials/_header.scss */
+.secondary-menu li:first-of-type a,
+.secondary-menu li:first-of-type a:hover {
+  border: none;
+}
+
+/* line 95, sass/_partials/_header.scss */
+.secondary-menu .current-menu-item a,
+.secondary-menu li a:hover {
   border-bottom-width: 3px;
   border-bottom-style: solid;
   border-bottom-color: #02AAF3;

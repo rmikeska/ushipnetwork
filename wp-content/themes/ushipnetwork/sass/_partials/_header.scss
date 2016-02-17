@@ -54,7 +54,7 @@
 
 /*** Sub Nav ***/
 
-.pageHeader-subNav {
+.secondary-menu {
   position: absolute;
   z-index: -2;
   width: 100%;
@@ -66,10 +66,6 @@
   @media #{$default-break} {
     display: none;
   }
-}
-
-.menu-about-sub-nav-container {
-  float: left;
 
   li {
     float: left;
@@ -86,15 +82,18 @@
   }
 }
 
-.pageHeader-subNav-title {
+.secondary-menu li:first-of-type {
   background: $light-grey;
   font-family: $lato-bold;
 }
 
-/*** Current Menu Item/Hover ***/
+.secondary-menu li:first-of-type a,
+.secondary-menu li:first-of-type a:hover {
+  border: none;
+}
 
-.pageHeader .current-menu-item a,
-.pageHeader .menu-item a:hover {
+.secondary-menu .current-menu-item a,
+.secondary-menu li a:hover {
   border-bottom-width: 3px;
   border-bottom-style: solid;
   border-bottom-color: $bright-blue;
