@@ -1,5 +1,15 @@
 jQuery(document).ready(function ($) {
 
+    // Page content padding if secondary nav exists
+
+    if ($('.secondary-menu').length > 0) {
+        $('.pageContent').css('padding-top', '140px');
+    }
+
+
+
+    // Blog home effects
+
     $('.postThumb').hide().each(function (i) {
         $(this).delay((i++) * 100).fadeTo(300, 1);
     });
@@ -17,5 +27,17 @@ jQuery(document).ready(function ($) {
         });
 
         $(this).parent().addClass('categoryMenu-active').siblings().removeClass('categoryMenu-active');
+    });
+
+
+
+    // Open share icons in new window
+
+    var socialLink = $('.share-icon');
+
+    socialLink.live('click', function (){
+        newwindow = window.open($(this).attr('href'),'','height=450,width=700');
+        if (window.focus) {newwindow.focus()}
+        return false;
     });
 })

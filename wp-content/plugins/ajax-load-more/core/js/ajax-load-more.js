@@ -4,7 +4,7 @@
  * http://wordpress.org/plugins/ajax-load-more/
  * https://connekthq.com/plugins/ajax-load-more/
  *
- * Copyright 2015 Connekt Media - http://connekthq.com
+ * Copyright 2016 Connekt Media - https://connekthq.com
  * Free to use under the GPLv2 license.
  * http://www.gnu.org/licenses/gpl-2.0.html
  *
@@ -49,11 +49,19 @@
       alm.repeater = alm.content.attr('data-repeater');
       alm.theme_repeater = alm.content.attr('data-theme-repeater');
       
+      alm.alternate_array =  '';
+      alm.alternate = alm.content.attr('data-alternate'); // is Alternating Templates enabled?
+      alm.alternate_sequence = alm.content.attr('data-alternate-sequence');
+      alm.alternate_sequence_max = alm.content.attr('data-alternate-sequence-max');
+      alm.alternate_repeater = alm.content.attr('data-alternate-repeater');
+      alm.alternate_theme_repeater = alm.content.attr('data-alternate-theme-repeater');
+      
       alm.scroll_distance = parseInt(alm.content.attr('data-scroll-distance'));
       alm.max_pages = parseInt(alm.content.attr('data-max-pages'));
       alm.pause_override = alm.content.attr('data-pause-override'); // true | false  
       alm.pause = alm.content.attr('data-pause'); // true | false 
-      alm.transition = alm.content.attr('data-transition');
+      alm.transition = alm.content.attr('data-transition'); 
+      alm.transition_container = alm.content.attr('data-transition-container');
       alm.images_loaded = alm.content.attr('data-images-loaded');
       alm.destroy_after = alm.content.attr('data-destroy-after');
       alm.lang = alm.content.attr('data-lang');
@@ -256,6 +264,12 @@
          alm.transition = 'none';
       }else {
          alm.transition = 'slide';
+      }      
+      
+      if (alm.transition_container === undefined || alm.transition_container === 'true'){
+         alm.transition_container = true;
+      }else {
+         alm.transition_container = false;
       }
       
 
@@ -382,8 +396,7 @@
          
          var action = 'alm_query_posts';
          
-         // If this is a comment query
-         
+         // If this is a comment query         
          if(alm.comments === 'true'){
             action = 'alm_comments_query';
             alm.posts_per_page = alm.comments_per_page;
@@ -399,7 +412,17 @@
             };
             
          }
-          
+         
+         // Set Alternate Query params         
+         if(alm.alternate === 'true'){            
+            alm.alternate_array = {
+               'alternate': 'true',
+               'alternate_sequence': alm.alternate_sequence,
+               'alternate_sequence_max': alm.alternate_sequence_max,
+               'alternate_repeater': alm.alternate_repeater,
+               'alternate_theme_repeater': alm.alternate_theme_repeater,
+            };            
+         }                   
       
          $.ajax({
             type: "GET",
@@ -411,6 +434,7 @@
                cache_id: alm.cache_id,
                repeater: alm.repeater,
                theme_repeater: alm.theme_repeater,
+               alternate: alm.alternate_array,
                comments: alm.comments_array,
                post_type: alm.post_type,
                post_format: alm.content.attr('data-post-format'),
@@ -530,23 +554,31 @@
                }
             }
             
+            // isPaged
             if(alm.isPaged){ 
                alm.posts_per_page = alm.content.attr('data-posts-per-page'); // Reset our posts per page variable
                alm.page = alm.start_page - 1; // Set our new page #
             }                    
          }         
          
-         
+         // We have results!
          if (alm.data.length > 0) {
             if(!alm.paging){
                
-               if(alm.previous_post){
-               	alm.el = $('<div class="alm-reveal alm-previous-post post-'+alm.previous_post_id+'" data-id="'+alm.previous_post_id+'" data-title="'+alm.previous_post_title+'" data-url="'+alm.previous_post_permalink+'"/>');	               
+               if(alm.previous_post){ // If Previous Post, create container and append data              
+               	alm.el = $('<div class="alm-reveal alm-previous-post post-'+alm.previous_post_id+'" data-id="'+alm.previous_post_id+'" data-title="'+alm.previous_post_title+'" data-url="'+alm.previous_post_permalink+'"/>');	  
+               	alm.el.append(alm.data).hide();          
                }else{
-               	alm.el = $('<div class="alm-reveal"/>');
+                  
+                  if(!alm.transition_container){ // If transiton container == false
+                     alm.data.hide();
+                     alm.el = alm.data;
+                  }else{ // Normal transition
+               	   alm.el = $('<div class="alm-reveal"/>');
+                     alm.el.append(alm.data).hide();
+               	}               	
                }
                
-               alm.el.append(alm.data).hide();
                alm.content.append(alm.el);
                
                if (alm.transition === 'fade') { // Fade transition
@@ -696,15 +728,16 @@
 
          } else { 
             
+	         if(!alm.paging){
+            	alm.button.delay(alm.speed).removeClass('loading').addClass('done');
+            	alm.resetBtnText();
+            }            
+            
             // ALM Done
             if ($.isFunction($.fn.almDone)) {
                $.fn.almDone(alm);				
             }
             
-	         if(!alm.paging){
-            	alm.button.delay(alm.speed).removeClass('loading').addClass('done');
-            	alm.resetBtnText();
-            }
             alm.loading = false;
             alm.finished = true;
          }
@@ -838,7 +871,7 @@
 
 
 
-      /* alm.AjaxLoadMore.isVisible()
+      /*  alm.AjaxLoadMore.isVisible()
        * 
        *  Check to see if element is visible before loading posts
        *  @since 2.1.2
@@ -854,7 +887,7 @@
       
       
 
-      /* Window scroll and touchmove events
+      /*  Window scroll and touchmove events
        * 
        *  Load posts as user scrolls the page
        *  @since 1.0

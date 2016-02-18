@@ -576,14 +576,14 @@ h3 {
   top: 0;
   width: 100%;
   background: #FFFFFF;
-  z-index: 3;
+  z-index: 1;
   -webkit-transform: translateZ(0);
 }
 
 /* line 12, sass/_partials/_header.scss */
 .pageHeader-primaryRow:after {
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   content: '';
   height: 100%;
   width: 100%;
@@ -634,7 +634,7 @@ h3 {
 /* line 57, sass/_partials/_header.scss */
 .secondary-menu {
   position: absolute;
-  z-index: -2;
+  z-index: -1;
   width: 100%;
   height: 61px;
   background: #FFFFFF;
@@ -809,7 +809,7 @@ b, strong {
 
 /* line 25, sass/_partials/_base.scss */
 .pageContent {
-  padding-top: 140px;
+  padding-top: 80px;
 }
 @media screen and (max-width: 769px) {
   /* line 25, sass/_partials/_base.scss */
@@ -2680,4 +2680,154 @@ article .post-featureImage {
 /* line 204, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-buttons li:nth-of-type(5) a {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/linkedin.svg");
+}
+
+/* line 1, sass/_partials/modules/_splitscreen.scss */
+.splitScreen {
+  display: inline-block;
+  width: 100%;
+}
+
+/* line 6, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel {
+  position: relative;
+  float: left;
+  width: 50%;
+  margin: 0 auto;
+  padding: 185px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+/* line 19, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel-container {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: -webkit-calc(475px + 60px*2);
+  max-width: calc(475px + 60px*2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0;
+  padding-right: 60px;
+  padding-bottom: 0;
+  padding-left: 60px;
+  z-index: 1;
+}
+
+/* line 24, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel-headline {
+  font-size: 60px;
+  text-shadow: 0 4px 5.88px rgba(0, 0, 0, 0.72);
+  line-height: 72px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* line 32, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel-subheadline {
+  font-size: 16px;
+  text-shadow: 0 4px 5.88px rgba(0, 0, 0, 0.72);
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* line 40, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel-arrow {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/hiw_arrow.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+  margin: 65px auto 90px auto;
+}
+
+/* line 48, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+}
+
+/* line 60, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel:hover:before {
+  opacity: 1;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/* line 67, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel.panelLeft:hover * {
+  opacity: 1;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 72, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel.panelLeft:hover:before {
+  background-color: #1C2431;
+}
+/* line 76, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel.panelLeft:hover .splitScreen-panel-headline {
+  color: #02AAF3;
+  text-shadow: none;
+}
+/* line 81, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel.panelLeft:hover .splitScreen-panel-subheadline {
+  text-shadow: none;
+}
+/* line 85, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel.panelLeft:hover .splitScreen-panel-arrow {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/hiw_arrow_bright-blue.svg");
+}
+
+/* line 92, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel.panelRight:hover * {
+  opacity: 1;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 97, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel.panelRight:hover:before {
+  background-color: #02AAF3;
+}
+/* line 101, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel.panelRight:hover .splitScreen-panel-headline {
+  color: #1C2431;
+  text-shadow: none;
+}
+/* line 106, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel.panelRight:hover .splitScreen-panel-subheadline {
+  text-shadow: none;
+}
+/* line 110, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel.panelRight:hover .splitScreen-panel-arrow {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/hiw_arrow_navy.svg");
 }

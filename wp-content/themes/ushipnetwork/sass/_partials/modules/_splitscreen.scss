@@ -1,0 +1,113 @@
+.splitScreen {
+  display: inline-block;
+  width: 100%;
+}
+
+.splitScreen-panel {
+  position: relative;
+  float: left;
+  width: 50%;
+  margin: 0 auto;
+  // min-height: 740px;
+  padding: 185px 0;
+  @include background-image;
+  @include display(flex);
+  @include align-items(center);
+  @include justify-content(center);
+}
+
+.splitScreen-panel-container {
+  @include container(475px, 0, 0, 60px);
+  z-index: 1;
+}
+
+.splitScreen-panel-headline {
+  font-size: 60px;
+  text-shadow: 0 4px 5.88px rgba(0, 0, 0, 0.72);
+  line-height: 72px;
+  text-align: center;
+  color: $white;
+}
+
+.splitScreen-panel-subheadline {
+  font-size: 16px;
+  text-shadow: 0 4px 5.88px rgba(0, 0, 0, 0.72);
+  line-height: 28px;
+  text-align: center;
+  color: $white;
+}
+
+.splitScreen-panel-arrow {
+  background-image: linear-gradient(transparent, transparent), url("#{$asset-path}/hiw_arrow.svg");
+  @include background-image;
+  width: 40px;
+  height: 40px;
+  margin: 65px auto 90px auto;
+}
+
+.splitScreen-panel:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  @include transition(all 0.2s ease-in-out);
+  opacity: 0;
+}
+
+.splitScreen-panel:hover:before {
+  opacity: 1;
+  @include transition(all 0.2s ease-in-out);
+}
+
+.splitScreen-panel.panelLeft:hover {
+
+  * {
+    opacity: 1;
+    @include transition(all 0.2s ease-in-out);
+  }
+
+  &:before {
+    background-color: $navy;
+  }
+
+  .splitScreen-panel-headline {
+    color: $bright-blue;
+    text-shadow: none;
+  }
+
+  .splitScreen-panel-subheadline {
+    text-shadow: none;
+  }
+
+  .splitScreen-panel-arrow {
+    background-image: linear-gradient(transparent, transparent), url("#{$asset-path}/hiw_arrow_bright-blue.svg");
+  }
+}
+
+.splitScreen-panel.panelRight:hover {
+
+  * {
+    opacity: 1;
+    @include transition(all 0.2s ease-in-out);
+  }
+
+  &:before {
+    background-color: $bright-blue;
+  }
+
+  .splitScreen-panel-headline {
+    color: $navy;
+    text-shadow: none;
+  }
+
+  .splitScreen-panel-subheadline {
+    text-shadow: none;
+  }
+
+  .splitScreen-panel-arrow {
+    background-image: linear-gradient(transparent, transparent), url("#{$asset-path}/hiw_arrow_navy.svg");
+  }
+}
