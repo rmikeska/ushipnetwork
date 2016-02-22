@@ -15,7 +15,7 @@
 
   <footer class="pageFooter">
     <div class="pageFooter-container">
-      <small class="pageFooter-legal">Copyright &copy; 2015, uShip Inc. and its licensors. All rights reserved.</small>
+      <small class="pageFooter-legal">Copyright &copy; 2016, uShip Inc. and its licensors. All rights reserved.</small>
       <div class="pageFooter-links">
         <ul class="pageFooter-links-list">
           <li class="pageFooter-links-list-item"><a href="#" target="_blank">uShip User Agreement</a></li>

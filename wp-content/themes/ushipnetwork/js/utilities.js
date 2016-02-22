@@ -40,4 +40,8 @@ jQuery(document).ready(function ($) {
         if (window.focus) {newwindow.focus()}
         return false;
     });
+
+    setTimeout(function (){
+        $('.splitScreen-panel').addClass('panelHover');
+    }, 1000);
 })

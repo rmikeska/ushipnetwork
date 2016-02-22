@@ -2683,18 +2683,21 @@ article .post-featureImage {
 }
 
 /* line 1, sass/_partials/modules/_splitscreen.scss */
-.splitScreen {
-  display: inline-block;
-  width: 100%;
+.splitScreen-row {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* line 6, sass/_partials/modules/_splitscreen.scss */
+/* line 5, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-panel {
   position: relative;
   float: left;
   width: 50%;
   margin: 0 auto;
-  padding: 185px 0;
+  min-height: 740px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -2711,7 +2714,7 @@ article .post-featureImage {
   justify-content: center;
 }
 
-/* line 19, sass/_partials/modules/_splitscreen.scss */
+/* line 17, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-panel-container {
   overflow: hidden;
   *zoom: 1;
@@ -2726,7 +2729,7 @@ article .post-featureImage {
   z-index: 1;
 }
 
-/* line 24, sass/_partials/modules/_splitscreen.scss */
+/* line 22, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-panel-headline {
   font-size: 60px;
   text-shadow: 0 4px 5.88px rgba(0, 0, 0, 0.72);
@@ -2735,7 +2738,7 @@ article .post-featureImage {
   color: #FFFFFF;
 }
 
-/* line 32, sass/_partials/modules/_splitscreen.scss */
+/* line 30, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-panel-subheadline {
   font-size: 16px;
   text-shadow: 0 4px 5.88px rgba(0, 0, 0, 0.72);
@@ -2744,18 +2747,20 @@ article .post-featureImage {
   color: #FFFFFF;
 }
 
-/* line 40, sass/_partials/modules/_splitscreen.scss */
-.splitScreen-panel-arrow {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/hiw_arrow.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+/* line 38, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel .circledArrow {
+  display: block;
   width: 40px;
   height: 40px;
   margin: 65px auto 90px auto;
 }
 
-/* line 48, sass/_partials/modules/_splitscreen.scss */
+/* line 45, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel .circledArrow path {
+  fill: #FFFFFF;
+}
+
+/* line 49, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-panel:before {
   position: absolute;
   content: '';
@@ -2764,70 +2769,230 @@ article .post-featureImage {
   width: 100%;
   height: 100%;
   z-index: 0;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+}
+
+/* line 59, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel.panelHover:before {
   opacity: 0;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
 
-/* line 60, sass/_partials/modules/_splitscreen.scss */
-.splitScreen-panel:hover:before {
+/* line 66, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel.panelHover:hover:before {
   opacity: 1;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
 
-/* line 67, sass/_partials/modules/_splitscreen.scss */
-.splitScreen-panel.panelLeft:hover * {
-  opacity: 1;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+/* line 74, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel.panelHover:hover * {
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
-/* line 72, sass/_partials/modules/_splitscreen.scss */
-.splitScreen-panel.panelLeft:hover:before {
+
+/* line 82, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel.panelLeft.panelHover:hover:before {
   background-color: #1C2431;
 }
-/* line 76, sass/_partials/modules/_splitscreen.scss */
-.splitScreen-panel.panelLeft:hover .splitScreen-panel-headline {
+/* line 86, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel.panelLeft.panelHover:hover .splitScreen-panel-headline {
   color: #02AAF3;
   text-shadow: none;
 }
-/* line 81, sass/_partials/modules/_splitscreen.scss */
-.splitScreen-panel.panelLeft:hover .splitScreen-panel-subheadline {
+/* line 91, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel.panelLeft.panelHover:hover .splitScreen-panel-subheadline {
   text-shadow: none;
 }
-/* line 85, sass/_partials/modules/_splitscreen.scss */
-.splitScreen-panel.panelLeft:hover .splitScreen-panel-arrow {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/hiw_arrow_bright-blue.svg");
+/* line 95, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel.panelLeft.panelHover:hover .circledArrow path {
+  fill: #02AAF3;
 }
 
-/* line 92, sass/_partials/modules/_splitscreen.scss */
-.splitScreen-panel.panelRight:hover * {
-  opacity: 1;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-/* line 97, sass/_partials/modules/_splitscreen.scss */
-.splitScreen-panel.panelRight:hover:before {
+/* line 101, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel.panelRight.panelHover:hover:before {
   background-color: #02AAF3;
 }
-/* line 101, sass/_partials/modules/_splitscreen.scss */
-.splitScreen-panel.panelRight:hover .splitScreen-panel-headline {
+/* line 105, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel.panelRight.panelHover:hover .splitScreen-panel-headline {
   color: #1C2431;
   text-shadow: none;
 }
-/* line 106, sass/_partials/modules/_splitscreen.scss */
-.splitScreen-panel.panelRight:hover .splitScreen-panel-subheadline {
+/* line 110, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel.panelRight.panelHover:hover .splitScreen-panel-subheadline {
   text-shadow: none;
 }
-/* line 110, sass/_partials/modules/_splitscreen.scss */
-.splitScreen-panel.panelRight:hover .splitScreen-panel-arrow {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/hiw_arrow_navy.svg");
+/* line 114, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel.panelRight.panelHover:hover .circledArrow path {
+  fill: #1C2431;
+}
+
+/* line 119, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-strip {
+  background-color: #F4F4F4;
+}
+
+/* line 123, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-strip-container {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: -webkit-calc(100% + 60px*2);
+  max-width: calc(100% + 60px*2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0;
+  padding-right: 60px;
+  padding-bottom: 0;
+  padding-left: 60px;
+}
+
+/* line 127, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-strip {
+  z-index: 1;
+  position: relative;
+  float: left;
+  width: 50%;
+  margin: 0 auto;
+  min-height: 80px;
+  color: #999999;
+  text-transform: uppercase;
+  font-family: "LatoBold";
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+/* line 142, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-strip-headline {
+  font-size: 24px;
+  line-height: 29px;
+  padding-bottom: 5px;
+}
+
+/* line 148, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-strip-subheadline {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+/* line 153, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-strip .circledArrow {
+  width: 24px;
+  height: 24px;
+}
+
+/* line 158, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-strip span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 163, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-strip .circledArrow path {
+  fill: #999999;
+}
+
+/* line 167, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-strip:hover {
+  background-color: #FFFFFF;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+/* line 174, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-strip:hover .circledArrow path {
+  fill: #02AAF3;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+/* line 181, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-strip:first-child:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #F4F4F4;
+  -webkit-transform-origin: 100% 0;
+  -ms-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+  -webkit-transform: skew(-45deg);
+  -ms-transform: skew(-45deg);
+  transform: skew(-45deg);
+  z-index: -1;
+}
+
+/* line 198, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-strip:first-child:hover {
+  background-color: #F4F4F4;
+}
+
+/* line 202, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-strip:first-child:hover:after {
+  background: #FFFFFF;
+}
+
+/* line 206, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-strip:nth-child(2):hover ~ a {
+  background-color: #FFFFFF;
 }
