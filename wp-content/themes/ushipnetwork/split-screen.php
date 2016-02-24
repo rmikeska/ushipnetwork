@@ -37,7 +37,7 @@ get_header(); ?>
     </a>
     <a href="#" class="splitScreen-strip">
       <div class="splitScreen-strip-container">
-        <h2 class="splitScreen-strip-headline">uShip Partnerships
+        <h2 class="splitScreen-strip-headline">Partnerships
           <span>
             <?php include("images/circled_arrow.svg");?>
           </span>

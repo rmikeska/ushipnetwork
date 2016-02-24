@@ -35,13 +35,23 @@ jQuery(document).ready(function ($) {
 
     var socialLink = $('.share-icon');
 
-    socialLink.live('click', function (){
+    socialLink.live('click', function () {
         newwindow = window.open($(this).attr('href'),'','height=450,width=700');
         if (window.focus) {newwindow.focus()}
         return false;
     });
 
-    setTimeout(function (){
-        $('.splitScreen-panel').addClass('panelHover');
-    }, 1000);
+
+
+    // Delay HIW home page panel hover effects. Remove hover syles for mobile
+
+    $(window).on('load resize', function () {
+        if ($(window).width() < 769) {
+            $('.splitScreen-panel').removeClass('panelHover');
+        } else {
+            setTimeout(function () {
+                $('.splitScreen-panel').addClass('panelHover');
+            }, 1000);
+        }
+    });
 })

@@ -12,11 +12,49 @@
   @include display(flex);
   @include align-items(center);
   @include justify-content(center);
+
+  @media #{$default-break} {
+    float: none;
+    width: 100%;
+    min-height: 275px;
+  }
+}
+
+.splitScreen-panel.panelLeft {
+
+  @media #{$default-break} {
+    background-color: $navy;
+    background-image: none !important;
+  }
+
+  &:before {
+    @media #{$default-break} {
+      display: none;
+    }
+  }
+}
+
+.splitScreen-panel.panelRight {
+
+  @media #{$default-break} {
+    background-color: $bright-blue;
+    background-image: none !important;
+  }
+
+  &:before {
+    @media #{$default-break} {
+      display: none;
+    }
+  }
 }
 
 .splitScreen-panel-container {
   @include container(475px, 0, 0, 60px);
   z-index: 1;
+
+  @media #{$default-break} {
+    @include container(100%, 0, 0, 20px);
+  }
 }
 
 .splitScreen-panel-headline {
@@ -25,6 +63,11 @@
   line-height: 72px;
   text-align: center;
   color: $white;
+
+  @media #{$default-break} {
+    font-size: 42px;
+    line-height: 1.2;
+  }
 }
 
 .splitScreen-panel-subheadline {
@@ -33,6 +76,10 @@
   line-height: 28px;
   text-align: center;
   color: $white;
+
+  @media #{$default-break} {
+    font-size: 14px;
+  }
 }
 
 .splitScreen-panel .circledArrow {
@@ -40,6 +87,12 @@
   width: 40px;
   height: 40px;
   margin: 65px auto 90px auto;
+
+  @media #{$default-break} {
+    width: 30px;
+    height: 30px;
+    margin: 12px auto 12px auto;
+  }
 }
 
 .splitScreen-panel .circledArrow path {
@@ -78,6 +131,16 @@
   }
 }
 
+.splitScreen-panel.panelHover:hover {
+  .splitScreen-panel-headline {
+    text-shadow: none;
+  }
+
+  .splitScreen-panel-subheadline {
+    text-shadow: none;
+  }
+}
+
 .splitScreen-panel.panelLeft.panelHover:hover {
   &:before {
     background-color: $navy;
@@ -85,11 +148,6 @@
 
   .splitScreen-panel-headline {
     color: $bright-blue;
-    text-shadow: none;
-  }
-
-  .splitScreen-panel-subheadline {
-    text-shadow: none;
   }
 
   .circledArrow path {
@@ -104,11 +162,6 @@
 
   .splitScreen-panel-headline {
     color: $navy;
-    text-shadow: none;
-  }
-
-  .splitScreen-panel-subheadline {
-    text-shadow: none;
   }
 
   .circledArrow path {
@@ -121,14 +174,13 @@
 }
 
 .splitScreen-strip-container {
-  @include container(100%, 0, 0, 60px);
+  @include container(100%, 20px, 20px, 60px);
 }
 
 .splitScreen-strip {
   z-index: 1;
   position: relative;
   float: left;
-  width: 50%;
   margin: 0 auto;
   min-height: 80px;
   color: $dark-grey;
@@ -137,6 +189,14 @@
   @include display(flex);
   @include align-items(center);
   @include justify-content(center);
+}
+
+.splitScreen-strip:first-child {
+  @include calc(width, "50% + 15px");
+}
+
+.splitScreen-strip:nth-child(2) {
+  @include calc(width, "50% - 15px");
 }
 
 .splitScreen-strip-headline {
@@ -178,31 +238,28 @@
   @include transition-timing-function(ease-in-out);
 }
 
-.splitScreen-strip:first-child:after {
+.splitScreen-strip:after {
   content:  '';
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   background: $light-grey;
   -webkit-transform-origin: 100% 0;
   -ms-transform-origin: 100% 0;
   transform-origin: 100% 0;
-  -webkit-transform: skew(-45deg);
-  -ms-transform: skew(-45deg);
-  transform: skew(-45deg);
+  @include transform(skew(-20deg));
   z-index: -1;
 }
 
-.splitScreen-strip:first-child:hover {
-  background-color: $light-grey;
+.splitScreen-strip:first-child:after {
+  border-right: 1px solid $divider-color;
 }
 
-.splitScreen-strip:first-child:hover:after {
+.splitScreen-strip:hover:after {
   background: $white;
-}
-
-.splitScreen-strip:nth-child(2):hover ~ a {
-  background-color: $white;
+  @include transition-property(all);
+  @include transition-duration(0.2s);
+  @include transition-timing-function(ease-in-out);
 }
