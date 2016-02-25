@@ -27,21 +27,23 @@ get_header(); ?>
   <div class="splitScreen-row">
     <a href="#" class="splitScreen-strip">
       <div class="splitScreen-strip-container">
-        <h2 class="splitScreen-strip-headline">Business Shippers
-          <span>
+        <div class="splitScreen-strip-headline-container">
+          <h2 class="splitScreen-strip-headline">Business Shippers</h2>
+          <span class="splitScreen-strip-arrow">
             <?php include("images/circled_arrow.svg");?>
           </span>
-        </h2>
+        </div>
         <h4 class="splitScreen-strip-subheadline">Lorem ipsum dolor sit amet.</h4>
       </div>
     </a>
     <a href="#" class="splitScreen-strip">
       <div class="splitScreen-strip-container">
-        <h2 class="splitScreen-strip-headline">Partnerships
-          <span>
+        <div class="splitScreen-strip-headline-container">
+          <h2 class="splitScreen-strip-headline">Partnerships</h2>
+          <span class="splitScreen-strip-arrow">
             <?php include("images/circled_arrow.svg");?>
           </span>
-        </h2>
+        </div>
         <h4 class="splitScreen-strip-subheadline">Lorem ipsum dolor sit amet.</h4>
       </div>
     </a>

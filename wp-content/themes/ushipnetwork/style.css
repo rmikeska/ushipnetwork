@@ -576,7 +576,7 @@ h3 {
   top: 0;
   width: 100%;
   background: #FFFFFF;
-  z-index: 1;
+  z-index: 2;
   -webkit-transform: translateZ(0);
 }
 
@@ -2503,53 +2503,53 @@ article .post-featureImage {
     padding-bottom: 50px;
   }
 }
-/* line 45, sass/_partials/modules/_careers.scss */
+/* line 41, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-job-info,
 .careersListings .resumator-job-info-details {
   display: inline;
 }
 @media only screen and (max-width: 769px) {
-  /* line 45, sass/_partials/modules/_careers.scss */
+  /* line 41, sass/_partials/modules/_careers.scss */
   .careersListings .resumator-job-info,
   .careersListings .resumator-job-info-details {
     display: none;
   }
 }
-/* line 54, sass/_partials/modules/_careers.scss */
+/* line 50, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-job-heading {
   font-family: "LatoBold";
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
 }
-/* line 61, sass/_partials/modules/_careers.scss */
+/* line 57, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-jobs-text {
   line-height: 24px;
 }
-/* line 65, sass/_partials/modules/_careers.scss */
+/* line 61, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-job-info-details.resumator-jobs-text {
   line-height: 24px;
 }
-/* line 69, sass/_partials/modules/_careers.scss */
+/* line 65, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-job-heading.resumator-jobs-text {
   margin-right: 3px;
   line-height: 25px;
 }
-/* line 74, sass/_partials/modules/_careers.scss */
+/* line 70, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-job-department,
 .careersListings .resumator-job-info-details .resumator-job-heading {
   margin-left: 45px;
 }
-/* line 79, sass/_partials/modules/_careers.scss */
+/* line 75, sass/_partials/modules/_careers.scss */
 .careersListings p, .careersListings li {
   line-height: 30px;
 }
-/* line 83, sass/_partials/modules/_careers.scss */
+/* line 79, sass/_partials/modules/_careers.scss */
 .careersListings strong {
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
-/* line 88, sass/_partials/modules/_careers.scss */
+/* line 84, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-view-details {
   position: absolute;
   top: 27px;
@@ -2561,12 +2561,12 @@ article .post-featureImage {
   text-transform: none;
 }
 @media only screen and (max-width: 769px) {
-  /* line 88, sass/_partials/modules/_careers.scss */
+  /* line 84, sass/_partials/modules/_careers.scss */
   .careersListings .resumator-view-details {
     top: 90px;
   }
 }
-/* line 103, sass/_partials/modules/_careers.scss */
+/* line 99, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-view-details:before {
   margin-left: 10px;
   float: right;
@@ -2578,16 +2578,16 @@ article .post-featureImage {
   width: 28px;
   height: 24px;
 }
-/* line 113, sass/_partials/modules/_careers.scss */
+/* line 109, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-view-details.arrow-closed:before {
   transform: rotateX(180deg);
 }
-/* line 117, sass/_partials/modules/_careers.scss */
+/* line 113, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-job-description {
   display: none;
   padding-top: 30px;
 }
-/* line 122, sass/_partials/modules/_careers.scss */
+/* line 118, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-apply-button {
   display: block;
   margin: 0 10px 0 auto;
@@ -2604,12 +2604,12 @@ article .post-featureImage {
   height: 43px;
 }
 @media only screen and (max-width: 769px) {
-  /* line 122, sass/_partials/modules/_careers.scss */
+  /* line 118, sass/_partials/modules/_careers.scss */
   .careersListings .resumator-apply-button {
     margin: 0 auto 20px auto;
   }
 }
-/* line 142, sass/_partials/modules/_careers.scss */
+/* line 138, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-forward-button {
   display: block;
   margin: 0 auto;
@@ -2627,16 +2627,16 @@ article .post-featureImage {
   background: transparent;
 }
 @media only screen and (max-width: 769px) {
-  /* line 142, sass/_partials/modules/_careers.scss */
+  /* line 138, sass/_partials/modules/_careers.scss */
   .careersListings .resumator-forward-button {
     margin: 0 auto 20px auto;
   }
 }
-/* line 163, sass/_partials/modules/_careers.scss */
+/* line 159, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-buttons li a img {
   display: none;
 }
-/* line 167, sass/_partials/modules/_careers.scss */
+/* line 163, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-buttons li a {
   display: block;
   width: 30px;
@@ -2647,13 +2647,13 @@ article .post-featureImage {
   background-position: center;
 }
 @media only screen and (max-width: 769px) {
-  /* line 177, sass/_partials/modules/_careers.scss */
+  /* line 173, sass/_partials/modules/_careers.scss */
   .careersListings .resumator-buttons li:nth-of-type(1),
   .careersListings .resumator-buttons li:nth-of-type(2) {
     width: 100%;
   }
 }
-/* line 184, sass/_partials/modules/_careers.scss */
+/* line 180, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-buttons li:nth-of-type(3),
 .careersListings .resumator-buttons li:nth-of-type(4),
 .careersListings .resumator-buttons li:nth-of-type(5) {
@@ -2661,7 +2661,7 @@ article .post-featureImage {
   margin-top: 9px !important;
 }
 @media only screen and (max-width: 769px) {
-  /* line 184, sass/_partials/modules/_careers.scss */
+  /* line 180, sass/_partials/modules/_careers.scss */
   .careersListings .resumator-buttons li:nth-of-type(3),
   .careersListings .resumator-buttons li:nth-of-type(4),
   .careersListings .resumator-buttons li:nth-of-type(5) {
@@ -2669,15 +2669,15 @@ article .post-featureImage {
     margin-left: 10px !important;
   }
 }
-/* line 196, sass/_partials/modules/_careers.scss */
+/* line 192, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-buttons li:nth-of-type(3) a {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/twitter.svg");
 }
-/* line 200, sass/_partials/modules/_careers.scss */
+/* line 196, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-buttons li:nth-of-type(4) a {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/facebook.svg");
 }
-/* line 204, sass/_partials/modules/_careers.scss */
+/* line 200, sass/_partials/modules/_careers.scss */
 .careersListings .resumator-buttons li:nth-of-type(5) a {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/linkedin.svg");
 }
@@ -2945,15 +2945,31 @@ article .post-featureImage {
   padding-right: 60px;
   padding-bottom: 20px;
   padding-left: 60px;
+  max-height: 86px;
+  overflow: hidden;
+}
+@media only screen and (max-width: 769px) {
+  /* line 176, sass/_partials/modules/_splitscreen.scss */
+  .splitScreen-strip-container {
+    overflow: hidden;
+    *zoom: 1;
+    max-width: -webkit-calc(100% + 20px*2);
+    max-width: calc(100% + 20px*2);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+  }
 }
 
-/* line 180, sass/_partials/modules/_splitscreen.scss */
+/* line 186, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip {
   z-index: 1;
   position: relative;
   float: left;
   margin: 0 auto;
-  min-height: 80px;
   color: #999999;
   text-transform: uppercase;
   font-family: "LatoBold";
@@ -2970,49 +2986,96 @@ article .post-featureImage {
   justify-content: center;
 }
 
-/* line 194, sass/_partials/modules/_splitscreen.scss */
+/* line 199, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip:first-child {
   width: -webkit-calc(50% + 15px);
   width: calc(50% + 15px);
 }
+@media only screen and (max-width: 769px) {
+  /* line 199, sass/_partials/modules/_splitscreen.scss */
+  .splitScreen-strip:first-child {
+    width: 100%;
+  }
+}
 
-/* line 198, sass/_partials/modules/_splitscreen.scss */
+/* line 207, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip:nth-child(2) {
   width: -webkit-calc(50% - 15px);
   width: calc(50% - 15px);
 }
+@media only screen and (max-width: 769px) {
+  /* line 207, sass/_partials/modules/_splitscreen.scss */
+  .splitScreen-strip:nth-child(2) {
+    width: 100%;
+  }
+}
 
-/* line 202, sass/_partials/modules/_splitscreen.scss */
+/* line 215, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-strip-headline-container {
+  margin-bottom: 7px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-align-content: center;
+  align-content: center;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 769px) {
+  /* line 215, sass/_partials/modules/_splitscreen.scss */
+  .splitScreen-strip-headline-container {
+    margin-bottom: 0;
+  }
+}
+
+/* line 227, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip-headline {
   font-size: 24px;
   line-height: 29px;
-  padding-bottom: 5px;
+  margin-right: 15px;
+}
+@media only screen and (max-width: 769px) {
+  /* line 227, sass/_partials/modules/_splitscreen.scss */
+  .splitScreen-strip-headline {
+    font-size: 18px;
+  }
 }
 
-/* line 208, sass/_partials/modules/_splitscreen.scss */
+/* line 237, sass/_partials/modules/_splitscreen.scss */
+.splitScreen-strip-arrow {
+  display: block;
+}
+
+/* line 241, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip-subheadline {
   font-size: 14px;
   line-height: 17px;
 }
+@media only screen and (max-width: 769px) {
+  /* line 241, sass/_partials/modules/_splitscreen.scss */
+  .splitScreen-strip-subheadline {
+    display: none;
+  }
+}
 
-/* line 213, sass/_partials/modules/_splitscreen.scss */
+/* line 250, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip .circledArrow {
   width: 24px;
   height: 24px;
 }
 
-/* line 218, sass/_partials/modules/_splitscreen.scss */
-.splitScreen-strip span {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-/* line 223, sass/_partials/modules/_splitscreen.scss */
+/* line 255, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip .circledArrow path {
   fill: #999999;
 }
 
-/* line 227, sass/_partials/modules/_splitscreen.scss */
+/* line 259, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip:hover {
   background-color: #FFFFFF;
   -moz-transition-property: all;
@@ -3029,7 +3092,7 @@ article .post-featureImage {
   transition-timing-function: ease-in-out;
 }
 
-/* line 234, sass/_partials/modules/_splitscreen.scss */
+/* line 266, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip:hover .circledArrow path {
   fill: #02AAF3;
   -moz-transition-property: all;
@@ -3046,7 +3109,7 @@ article .post-featureImage {
   transition-timing-function: ease-in-out;
 }
 
-/* line 241, sass/_partials/modules/_splitscreen.scss */
+/* line 273, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip:after {
   content: '';
   position: absolute;
@@ -3064,13 +3127,19 @@ article .post-featureImage {
   transform: skew(-20deg);
   z-index: -1;
 }
+@media only screen and (max-width: 769px) {
+  /* line 273, sass/_partials/modules/_splitscreen.scss */
+  .splitScreen-strip:after {
+    display: none;
+  }
+}
 
-/* line 256, sass/_partials/modules/_splitscreen.scss */
+/* line 292, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip:first-child:after {
   border-right: 1px solid #dddddd;
 }
 
-/* line 260, sass/_partials/modules/_splitscreen.scss */
+/* line 296, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip:hover:after {
   background: #FFFFFF;
   -moz-transition-property: all;

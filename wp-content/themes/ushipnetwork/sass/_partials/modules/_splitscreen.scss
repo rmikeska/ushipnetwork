@@ -175,6 +175,12 @@
 
 .splitScreen-strip-container {
   @include container(100%, 20px, 20px, 60px);
+  max-height: 86px;
+  overflow: hidden;
+
+  @media #{$default-break} {
+    @include container(100%,15px, 15px, 20px);
+  }
 }
 
 .splitScreen-strip {
@@ -182,7 +188,6 @@
   position: relative;
   float: left;
   margin: 0 auto;
-  min-height: 80px;
   color: $dark-grey;
   text-transform: uppercase;
   font-family: $lato-bold;
@@ -193,31 +198,58 @@
 
 .splitScreen-strip:first-child {
   @include calc(width, "50% + 15px");
+
+  @media #{$default-break} {
+    width: 100%;
+  }
 }
 
 .splitScreen-strip:nth-child(2) {
   @include calc(width, "50% - 15px");
+
+  @media #{$default-break} {
+    width: 100%;
+  }
+}
+
+.splitScreen-strip-headline-container {
+  margin-bottom: 7px;
+  @include display(flex);
+  @include align-items(center);
+  @include align-content(center);
+  @include justify-content(space-between);
+
+  @media #{$default-break} {
+    margin-bottom: 0;
+  }
 }
 
 .splitScreen-strip-headline {
   font-size: 24px;
   line-height: 29px;
-  padding-bottom: 5px;
+  margin-right: 15px;
+
+  @media #{$default-break} {
+    font-size: 18px;
+  }
+}
+
+.splitScreen-strip-arrow {
+  display: block;
 }
 
 .splitScreen-strip-subheadline {
   font-size: 14px;
   line-height: 17px;
+
+  @media #{$default-break} {
+    display: none;
+  }
 }
 
 .splitScreen-strip .circledArrow {
   width: 24px;
   height: 24px;
-}
-
-.splitScreen-strip span {
-  display: inline-block;
-  vertical-align: middle;
 }
 
 .splitScreen-strip .circledArrow path {
@@ -251,6 +283,10 @@
   transform-origin: 100% 0;
   @include transform(skew(-20deg));
   z-index: -1;
+
+  @media #{$default-break} {
+    display: none;
+  }
 }
 
 .splitScreen-strip:first-child:after {
