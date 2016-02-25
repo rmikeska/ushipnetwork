@@ -2793,10 +2793,11 @@ article .post-featureImage {
   .splitScreen-panel-headline {
     font-size: 42px;
     line-height: 1.2;
+    text-shadow: none;
   }
 }
 
-/* line 73, sass/_partials/modules/_splitscreen.scss */
+/* line 74, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-panel-subheadline {
   font-size: 16px;
   text-shadow: 0 4px 5.88px rgba(0, 0, 0, 0.72);
@@ -2805,13 +2806,14 @@ article .post-featureImage {
   color: #FFFFFF;
 }
 @media only screen and (max-width: 769px) {
-  /* line 73, sass/_partials/modules/_splitscreen.scss */
+  /* line 74, sass/_partials/modules/_splitscreen.scss */
   .splitScreen-panel-subheadline {
     font-size: 14px;
+    text-shadow: none;
   }
 }
 
-/* line 85, sass/_partials/modules/_splitscreen.scss */
+/* line 87, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-panel .circledArrow {
   display: block;
   width: 40px;
@@ -2819,7 +2821,7 @@ article .post-featureImage {
   margin: 65px auto 90px auto;
 }
 @media only screen and (max-width: 769px) {
-  /* line 85, sass/_partials/modules/_splitscreen.scss */
+  /* line 87, sass/_partials/modules/_splitscreen.scss */
   .splitScreen-panel .circledArrow {
     width: 30px;
     height: 30px;
@@ -2827,12 +2829,12 @@ article .post-featureImage {
   }
 }
 
-/* line 98, sass/_partials/modules/_splitscreen.scss */
+/* line 100, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-panel .circledArrow path {
   fill: #FFFFFF;
 }
 
-/* line 102, sass/_partials/modules/_splitscreen.scss */
+/* line 104, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-panel:before {
   position: absolute;
   content: '';
@@ -2843,7 +2845,7 @@ article .post-featureImage {
   z-index: 0;
 }
 
-/* line 112, sass/_partials/modules/_splitscreen.scss */
+/* line 114, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-panel.panelHover:before {
   opacity: 0;
   -moz-transition-property: all;
@@ -2860,7 +2862,7 @@ article .post-featureImage {
   transition-timing-function: ease-in-out;
 }
 
-/* line 119, sass/_partials/modules/_splitscreen.scss */
+/* line 121, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-panel.panelHover:hover:before {
   opacity: 1;
   -moz-transition-property: all;
@@ -2877,7 +2879,7 @@ article .post-featureImage {
   transition-timing-function: ease-in-out;
 }
 
-/* line 127, sass/_partials/modules/_splitscreen.scss */
+/* line 129, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-panel.panelHover:hover * {
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -2893,47 +2895,47 @@ article .post-featureImage {
   transition-timing-function: ease-in-out;
 }
 
-/* line 135, sass/_partials/modules/_splitscreen.scss */
+/* line 137, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-panel.panelHover:hover .splitScreen-panel-headline {
   text-shadow: none;
 }
-/* line 139, sass/_partials/modules/_splitscreen.scss */
+/* line 141, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-panel.panelHover:hover .splitScreen-panel-subheadline {
   text-shadow: none;
 }
 
-/* line 145, sass/_partials/modules/_splitscreen.scss */
+/* line 147, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-panel.panelLeft.panelHover:hover:before {
   background-color: #1C2431;
 }
-/* line 149, sass/_partials/modules/_splitscreen.scss */
+/* line 151, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-panel.panelLeft.panelHover:hover .splitScreen-panel-headline {
   color: #02AAF3;
 }
-/* line 153, sass/_partials/modules/_splitscreen.scss */
+/* line 155, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-panel.panelLeft.panelHover:hover .circledArrow path {
   fill: #02AAF3;
 }
 
-/* line 159, sass/_partials/modules/_splitscreen.scss */
+/* line 161, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-panel.panelRight.panelHover:hover:before {
   background-color: #02AAF3;
 }
-/* line 163, sass/_partials/modules/_splitscreen.scss */
+/* line 165, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-panel.panelRight.panelHover:hover .splitScreen-panel-headline {
   color: #1C2431;
 }
-/* line 167, sass/_partials/modules/_splitscreen.scss */
+/* line 169, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-panel.panelRight.panelHover:hover .circledArrow path {
   fill: #1C2431;
 }
 
-/* line 172, sass/_partials/modules/_splitscreen.scss */
+/* line 174, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip {
   background-color: #F4F4F4;
 }
 
-/* line 176, sass/_partials/modules/_splitscreen.scss */
+/* line 178, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip-container {
   overflow: hidden;
   *zoom: 1;
@@ -2949,7 +2951,7 @@ article .post-featureImage {
   overflow: hidden;
 }
 @media only screen and (max-width: 769px) {
-  /* line 176, sass/_partials/modules/_splitscreen.scss */
+  /* line 178, sass/_partials/modules/_splitscreen.scss */
   .splitScreen-strip-container {
     overflow: hidden;
     *zoom: 1;
@@ -2964,7 +2966,7 @@ article .post-featureImage {
   }
 }
 
-/* line 186, sass/_partials/modules/_splitscreen.scss */
+/* line 188, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip {
   z-index: 1;
   position: relative;
@@ -2986,31 +2988,32 @@ article .post-featureImage {
   justify-content: center;
 }
 
-/* line 199, sass/_partials/modules/_splitscreen.scss */
+/* line 201, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip:first-child {
   width: -webkit-calc(50% + 15px);
   width: calc(50% + 15px);
 }
 @media only screen and (max-width: 769px) {
-  /* line 199, sass/_partials/modules/_splitscreen.scss */
+  /* line 201, sass/_partials/modules/_splitscreen.scss */
   .splitScreen-strip:first-child {
     width: 100%;
+    border-bottom: 1px solid #dddddd;
   }
 }
 
-/* line 207, sass/_partials/modules/_splitscreen.scss */
+/* line 210, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip:nth-child(2) {
   width: -webkit-calc(50% - 15px);
   width: calc(50% - 15px);
 }
 @media only screen and (max-width: 769px) {
-  /* line 207, sass/_partials/modules/_splitscreen.scss */
+  /* line 210, sass/_partials/modules/_splitscreen.scss */
   .splitScreen-strip:nth-child(2) {
     width: 100%;
   }
 }
 
-/* line 215, sass/_partials/modules/_splitscreen.scss */
+/* line 218, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip-headline-container {
   margin-bottom: 7px;
   display: -webkit-box;
@@ -3028,54 +3031,54 @@ article .post-featureImage {
   justify-content: space-between;
 }
 @media only screen and (max-width: 769px) {
-  /* line 215, sass/_partials/modules/_splitscreen.scss */
+  /* line 218, sass/_partials/modules/_splitscreen.scss */
   .splitScreen-strip-headline-container {
     margin-bottom: 0;
   }
 }
 
-/* line 227, sass/_partials/modules/_splitscreen.scss */
+/* line 230, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip-headline {
   font-size: 24px;
   line-height: 29px;
   margin-right: 15px;
 }
 @media only screen and (max-width: 769px) {
-  /* line 227, sass/_partials/modules/_splitscreen.scss */
+  /* line 230, sass/_partials/modules/_splitscreen.scss */
   .splitScreen-strip-headline {
     font-size: 18px;
   }
 }
 
-/* line 237, sass/_partials/modules/_splitscreen.scss */
+/* line 240, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip-arrow {
   display: block;
 }
 
-/* line 241, sass/_partials/modules/_splitscreen.scss */
+/* line 244, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip-subheadline {
   font-size: 14px;
   line-height: 17px;
 }
 @media only screen and (max-width: 769px) {
-  /* line 241, sass/_partials/modules/_splitscreen.scss */
+  /* line 244, sass/_partials/modules/_splitscreen.scss */
   .splitScreen-strip-subheadline {
     display: none;
   }
 }
 
-/* line 250, sass/_partials/modules/_splitscreen.scss */
+/* line 253, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip .circledArrow {
   width: 24px;
   height: 24px;
 }
 
-/* line 255, sass/_partials/modules/_splitscreen.scss */
+/* line 258, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip .circledArrow path {
   fill: #999999;
 }
 
-/* line 259, sass/_partials/modules/_splitscreen.scss */
+/* line 262, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip:hover {
   background-color: #FFFFFF;
   -moz-transition-property: all;
@@ -3092,7 +3095,7 @@ article .post-featureImage {
   transition-timing-function: ease-in-out;
 }
 
-/* line 266, sass/_partials/modules/_splitscreen.scss */
+/* line 269, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip:hover .circledArrow path {
   fill: #02AAF3;
   -moz-transition-property: all;
@@ -3109,7 +3112,7 @@ article .post-featureImage {
   transition-timing-function: ease-in-out;
 }
 
-/* line 273, sass/_partials/modules/_splitscreen.scss */
+/* line 276, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip:after {
   content: '';
   position: absolute;
@@ -3128,18 +3131,18 @@ article .post-featureImage {
   z-index: -1;
 }
 @media only screen and (max-width: 769px) {
-  /* line 273, sass/_partials/modules/_splitscreen.scss */
+  /* line 276, sass/_partials/modules/_splitscreen.scss */
   .splitScreen-strip:after {
     display: none;
   }
 }
 
-/* line 292, sass/_partials/modules/_splitscreen.scss */
+/* line 295, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip:first-child:after {
   border-right: 1px solid #dddddd;
 }
 
-/* line 296, sass/_partials/modules/_splitscreen.scss */
+/* line 299, sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip:hover:after {
   background: #FFFFFF;
   -moz-transition-property: all;

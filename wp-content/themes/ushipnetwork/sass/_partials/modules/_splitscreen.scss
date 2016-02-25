@@ -67,6 +67,7 @@
   @media #{$default-break} {
     font-size: 42px;
     line-height: 1.2;
+    text-shadow: none;
   }
 }
 
@@ -79,6 +80,7 @@
 
   @media #{$default-break} {
     font-size: 14px;
+    text-shadow: none;
   }
 }
 
@@ -201,6 +203,7 @@
 
   @media #{$default-break} {
     width: 100%;
+    border-bottom: 1px solid $divider-color;
   }
 }
 
