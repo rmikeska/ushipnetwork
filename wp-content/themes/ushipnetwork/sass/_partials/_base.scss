@@ -1,7 +1,27 @@
 /*** Base ***/
 
+// body {
+//   min-width: 315px;
+// }
+
+// .pageWrapper {
+//   @include outer-container(100%);
+// }
+
+
 body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
   min-width: 315px;
+}
+
+.pageWrapper {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+  width: 100%;
 }
 
 a {
@@ -16,10 +36,6 @@ b, strong {
 
 .pageHeader-primaryNav {
   display: none;
-}
-
-.pageWrapper {
-  @include outer-container(100%);
 }
 
 .pageContent {
