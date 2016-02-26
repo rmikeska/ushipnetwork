@@ -24,16 +24,18 @@
 }
 
 .testimonials-row {
-  @include display(flex);
-  @include justify-content(center);
+  display: flex;
+  justify-content: center;
 
   @media #{$default-break} {
-    @include flex-direction(column);
+    flex-direction: column;
   }
 }
 
 .testimonials-block {
-  @include flex(1);
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
 
   &:not(:last-child) {
     margin-right: 70px;

@@ -1,0 +1,3048 @@
+/*
+Theme Name: ushipnetwork
+Author: Rudy Mikeska
+Description: uShip Site Network Theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: ushipnetwork
+Tags:
+*/
+/* line 4, ../sass/neat/grid/_box-sizing.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 9, ../sass/neat/grid/_box-sizing.scss */
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+/* line 5, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, ../sass/_partials/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  box-sizing: border-box;
+}
+
+/* line 16, ../sass/_partials/_normalize.scss */
+*,
+*:before,
+*:after {
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit;
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 26, ../sass/_partials/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 40, ../sass/_partials/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 61, ../sass/_partials/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 74, ../sass/_partials/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 84, ../sass/_partials/_normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 96, ../sass/_partials/_normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 104, ../sass/_partials/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 116, ../sass/_partials/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 124, ../sass/_partials/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 133, ../sass/_partials/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 142, ../sass/_partials/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 151, ../sass/_partials/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 160, ../sass/_partials/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 168, ../sass/_partials/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 176, ../sass/_partials/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 180, ../sass/_partials/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 191, ../sass/_partials/_normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 199, ../sass/_partials/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 210, ../sass/_partials/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 218, ../sass/_partials/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 228, ../sass/_partials/_normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 236, ../sass/_partials/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 259, ../sass/_partials/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 273, ../sass/_partials/_normalize.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 284, ../sass/_partials/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 297, ../sass/_partials/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 309, ../sass/_partials/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 318, ../sass/_partials/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 329, ../sass/_partials/_normalize.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 341, ../sass/_partials/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 353, ../sass/_partials/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 364, ../sass/_partials/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 377, ../sass/_partials/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 386, ../sass/_partials/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 397, ../sass/_partials/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 406, ../sass/_partials/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 415, ../sass/_partials/_normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 426, ../sass/_partials/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 431, ../sass/_partials/_normalize.scss */
+td,
+th {
+  padding: 0;
+}
+
+/*** Lato ***/
+@font-face {
+  font-family: 'LatoRegular';
+  src: url("/wp-content/themes/ushipnetwork/type/lato/lato-regular.eot");
+  src: url("/wp-content/themes/ushipnetwork/type/lato/lato-regular.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/ushipnetwork/type/lato/lato-regular.woff2") format("woff2"), url("/wp-content/themes/ushipnetwork/type/lato/lato-regular.woff") format("woff"), url("/wp-content/themes/ushipnetwork/type/lato/lato-regular.ttf") format("truetype"), url("/wp-content/themes/ushipnetwork/type/lato/lato-regular.svg#lato-regular") format("svg");
+}
+@font-face {
+  font-family: 'LatoBold';
+  src: url("/wp-content/themes/ushipnetwork/type/lato/lato-bold.eot");
+  src: url("/wp-content/themes/ushipnetwork/type/lato/lato-bold.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/ushipnetwork/type/lato/lato-bold.woff2") format("woff2"), url("/wp-content/themes/ushipnetwork/type/lato/lato-bold.woff") format("woff"), url("/wp-content/themes/ushipnetwork/type/lato/lato-bold.ttf") format("truetype"), url("/wp-content/themes/ushipnetwork/type/lato/lato-bold.svg#lato-bold") format("svg");
+}
+@font-face {
+  font-family: 'LatoBlack';
+  src: url("/wp-content/themes/ushipnetwork/type/lato/lato-black.eot");
+  src: url("/wp-content/themes/ushipnetwork/type/lato/lato-black.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/ushipnetwork/type/lato/lato-black.woff2") format("woff2"), url("/wp-content/themes/ushipnetwork/type/lato/lato-black.woff") format("woff"), url("/wp-content/themes/ushipnetwork/type/lato/lato-black.ttf") format("truetype"), url("/wp-content/themes/ushipnetwork/type/lato/lato-black.svg#lato-black") format("svg");
+}
+/*** Set Image Asset Path ***/
+/*** Base Text ***/
+/*** Base Colors ***/
+/*** Helpers ***/
+/*** Typography ***/
+/* line 3, ../sass/_partials/_typography.scss */
+body {
+  color: #262626;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "LatoRegular", sans-serif;
+  letter-spacing: 0.01em;
+}
+
+/* line 11, ../sass/_partials/_typography.scss */
+h1,
+h2,
+h3 {
+  font-family: "LatoBold";
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/*** Header ***/
+/* line 3, ../sass/_partials/_header.scss */
+.pageHeader {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #FFFFFF;
+  z-index: 2;
+  -webkit-transform: translateZ(0);
+}
+
+/* line 12, ../sass/_partials/_header.scss */
+.pageHeader-primaryRow:after {
+  position: absolute;
+  z-index: 0;
+  content: '';
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 5.88px 0.12px rgba(0, 0, 0, 0.13);
+  -webkit-transform: translateZ(0);
+}
+
+/* line 24, ../sass/_partials/_header.scss */
+.pageHeader-homeLink {
+  display: block;
+  padding: 22.5px 34px;
+  height: 80px;
+  max-width: 138px;
+  background: #0083BB;
+}
+@media only screen and (max-width: 769px) {
+  /* line 24, ../sass/_partials/_header.scss */
+  .pageHeader-homeLink {
+    padding: 14.5px 34px;
+    height: 64px;
+    max-width: 100%;
+    background: #FFFFFF;
+  }
+}
+
+/* line 39, ../sass/_partials/_header.scss */
+.pageHeader-logo {
+  width: 70px;
+  height: 35px;
+  margin: 0 auto;
+  background: transparent url("/wp-content/themes/ushipnetwork/images/uship_logo_white.png") center center no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/uship_logo_white.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media only screen and (max-width: 769px) {
+  /* line 39, ../sass/_partials/_header.scss */
+  .pageHeader-logo {
+    background: transparent url("/wp-content/themes/ushipnetwork/images/uship_logo_blue.png") center center no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/uship_logo_blue.svg");
+    background-size: contain;
+  }
+}
+
+/*** Sub Nav ***/
+/* line 57, ../sass/_partials/_header.scss */
+.secondary-menu {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 61px;
+  background: #FFFFFF;
+  box-shadow: 0 4px 5.88px 0.12px rgba(0, 0, 0, 0.13);
+  -webkit-transform: translateZ(0);
+}
+@media only screen and (max-width: 769px) {
+  /* line 57, ../sass/_partials/_header.scss */
+  .secondary-menu {
+    display: none;
+  }
+}
+/* line 70, ../sass/_partials/_header.scss */
+.secondary-menu li {
+  float: left;
+  min-width: 138px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 60px;
+}
+/* line 78, ../sass/_partials/_header.scss */
+.secondary-menu a {
+  padding-bottom: 5px;
+  color: #262626;
+  font-size: 14px;
+}
+
+/* line 85, ../sass/_partials/_header.scss */
+.secondary-menu li:first-of-type {
+  background: #F4F4F4;
+  font-family: "LatoBold";
+}
+
+/* line 90, ../sass/_partials/_header.scss */
+.secondary-menu li:first-of-type a,
+.secondary-menu li:first-of-type a:hover {
+  border: none;
+}
+
+/* line 95, ../sass/_partials/_header.scss */
+.secondary-menu .current-menu-item a,
+.secondary-menu li a:hover {
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: #02AAF3;
+}
+
+/*** Footer ***/
+/* line 3, ../sass/_partials/_footer.scss */
+.pageFooter-container {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: -webkit-calc(1180px + 20px*2);
+  max-width: calc(1180px + 20px*2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 769px) {
+  /* line 3, ../sass/_partials/_footer.scss */
+  .pageFooter-container {
+    flex-direction: column;
+  }
+}
+
+/* line 13, ../sass/_partials/_footer.scss */
+.pageFooter-container > * {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+}
+/* line 18, ../sass/_partials/_footer.scss */
+.pageFooter-container > *:not(:last-child) {
+  margin-right: 50px;
+}
+@media only screen and (max-width: 769px) {
+  /* line 18, ../sass/_partials/_footer.scss */
+  .pageFooter-container > *:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  /* line 27, ../sass/_partials/_footer.scss */
+  .pageFooter-links {
+    order: 1;
+    padding-bottom: 20px;
+  }
+}
+
+/* line 34, ../sass/_partials/_footer.scss */
+.pageFooter-legal {
+  font-size: 16px;
+}
+@media only screen and (max-width: 769px) {
+  /* line 34, ../sass/_partials/_footer.scss */
+  .pageFooter-legal {
+    order: 2;
+  }
+}
+
+/* line 42, ../sass/_partials/_footer.scss */
+.pageFooter-links-list {
+  float: right;
+}
+@media only screen and (max-width: 769px) {
+  /* line 42, ../sass/_partials/_footer.scss */
+  .pageFooter-links-list {
+    float: none;
+  }
+}
+
+/* line 50, ../sass/_partials/_footer.scss */
+.pageFooter-links-list-item {
+  float: left;
+}
+
+/* line 54, ../sass/_partials/_footer.scss */
+.pageFooter-links-list-item:not(:last-child):after {
+  content: "|";
+  padding: 0 5px;
+}
+
+/* line 59, ../sass/_partials/_footer.scss */
+.pageFooter-links-list-item a {
+  color: #02AAF3;
+}
+
+/*** Base ***/
+/* line 3, ../sass/_partials/_base.scss */
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 315px;
+}
+
+/* line 9, ../sass/_partials/_base.scss */
+a {
+  color: #02AAF3;
+  text-decoration: none;
+}
+
+/* line 14, ../sass/_partials/_base.scss */
+b, strong {
+  font-weight: normal;
+  font-family: "LatoBold";
+}
+
+/* line 19, ../sass/_partials/_base.scss */
+.pageHeader-primaryNav {
+  display: none;
+}
+
+/* line 23, ../sass/_partials/_base.scss */
+.pageWrapper {
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+}
+
+/* line 32, ../sass/_partials/_base.scss */
+.pageContent {
+  padding-top: 80px;
+}
+@media screen and (max-width: 769px) {
+  /* line 32, ../sass/_partials/_base.scss */
+  .pageContent {
+    padding-top: 64px;
+  }
+}
+
+/* line 40, ../sass/_partials/_base.scss */
+.sectionWhite {
+  background-color: #FFFFFF;
+}
+
+/* line 44, ../sass/_partials/_base.scss */
+.sectionGrey {
+  background-color: #F4F4F4;
+}
+
+/* line 48, ../sass/_partials/_base.scss */
+.sectionNavy {
+  background-color: #1C2431;
+}
+
+/* line 52, ../sass/_partials/_base.scss */
+.buttonGreen {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  border: none;
+  letter-spacing: 0.01em;
+  text-align: center;
+  background-color: #00B437;
+  border-radius: 3px;
+  color: #FFFFFF;
+  font-family: "LatoBold";
+}
+
+/* line 65, ../sass/_partials/_base.scss */
+.buttonLarge {
+  padding: 13px 10px;
+  max-width: 220px;
+  max-height: 50px;
+}
+
+/* line 71, ../sass/_partials/_base.scss */
+.buttonSmall {
+  padding: 7px 10px;
+  max-width: 124px;
+  max-height: 43px;
+}
+
+/* line 77, ../sass/_partials/_base.scss */
+.buttonGreenTransparent {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  border: none;
+  letter-spacing: 0.01em;
+  text-align: center;
+  border: 3px solid #00B437;
+  border-radius: 3px;
+  color: #00B437;
+  font-family: "LatoBold";
+}
+
+/* line 90, ../sass/_partials/_base.scss */
+.emphasisLink {
+  padding-bottom: 5px;
+  border-bottom: 3px solid #00B437;
+  color: #262626;
+  font-family: "LatoBold";
+  font-size: 18px;
+}
+
+/* line 98, ../sass/_partials/_base.scss */
+.emphasisLink:after {
+  display: inline-block;
+  content: '';
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/arrow_link.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 19px;
+  height: 12px;
+  margin-left: 15px;
+}
+
+/*** Blog Landing ***/
+/* line 3, ../sass/_partials/_blog.scss */
+.categoryMenu {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: -webkit-calc(1020px + 20px*2);
+  max-width: calc(1020px + 20px*2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  padding-right: 20px;
+  padding-bottom: 9px;
+  padding-left: 20px;
+}
+@media only screen and (max-width: 1080px) {
+  /* line 3, ../sass/_partials/_blog.scss */
+  .categoryMenu {
+    display: none;
+  }
+}
+
+/* line 11, ../sass/_partials/_blog.scss */
+.categoryMenu-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 17, ../sass/_partials/_blog.scss */
+.categoryMenu-list li {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  text-align: center;
+}
+
+/* line 24, ../sass/_partials/_blog.scss */
+.categoryMenu-list li a {
+  padding-bottom: 9px;
+  cursor: pointer;
+  color: #262626;
+  text-transform: uppercase;
+  font-family: "LatoBold";
+  letter-spacing: 0.1em;
+  line-height: 24px;
+}
+
+/* line 34, ../sass/_partials/_blog.scss */
+.categoryMenu-list li a:hover,
+.categoryMenu-list li.categoryMenu-active a {
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: #02AAF3;
+}
+
+/* line 41, ../sass/_partials/_blog.scss */
+.postsGroup {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: -webkit-calc(1020px + 20px*2);
+  max-width: calc(1020px + 20px*2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 75px;
+  padding-right: 20px;
+  padding-bottom: 64px;
+  padding-left: 20px;
+}
+
+/* line 45, ../sass/_partials/_blog.scss */
+.postsGroup-container {
+  margin-right: -60px;
+}
+
+/* line 49, ../sass/_partials/_blog.scss */
+.postsGroup-container,
+.alm-reveal {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+
+/* line 59, ../sass/_partials/_blog.scss */
+.postThumb {
+  max-width: 360px;
+  padding-bottom: 100px;
+  padding-right: 60px;
+}
+@media only screen and (max-width: 769px) {
+  /* line 59, ../sass/_partials/_blog.scss */
+  .postThumb {
+    padding-bottom: 60px;
+  }
+}
+
+/* line 69, ../sass/_partials/_blog.scss */
+.post-featureImage-link {
+  display: block;
+}
+
+/* line 73, ../sass/_partials/_blog.scss */
+.post-featureImage {
+  width: 300px;
+  height: 200px;
+}
+
+/* line 78, ../sass/_partials/_blog.scss */
+.post-tag-group {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* line 83, ../sass/_partials/_blog.scss */
+.post-tag {
+  text-transform: uppercase;
+  font-family: "LatoBold";
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+}
+
+/* line 91, ../sass/_partials/_blog.scss */
+.post-title {
+  display: block;
+  font-family: "LatoBold";
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #262626;
+  letter-spacing: 0.05em;
+  line-height: 23px;
+  margin-bottom: 30px;
+}
+
+/* line 102, ../sass/_partials/_blog.scss */
+.ajax-load-more-wrap {
+  width: 100%;
+}
+
+/* line 106, ../sass/_partials/_blog.scss */
+.alm-btn-wrap {
+  padding-right: 60px;
+}
+
+/* line 110, ../sass/_partials/_blog.scss */
+.alm-load-more-btn {
+  padding: 13px 10px;
+  max-width: 220px;
+  max-height: 50px;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  border: none;
+  letter-spacing: 0.01em;
+  text-align: center;
+  background-color: #00B437;
+  border-radius: 3px;
+  color: #FFFFFF;
+  font-family: "LatoBold";
+}
+
+/*** Single Post ***/
+/* line 3, ../sass/_partials/_single.scss */
+article.post {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: -webkit-calc(620px + 20px*2);
+  max-width: calc(620px + 20px*2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 35px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+}
+
+/* line 7, ../sass/_partials/_single.scss */
+article .post-featureImage {
+  width: 100%;
+  height: auto;
+}
+
+/* line 12, ../sass/_partials/_single.scss */
+.entry-header {
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+/* line 17, ../sass/_partials/_single.scss */
+.entry-title {
+  padding-bottom: 30px;
+  font-family: "LatoBold";
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+}
+
+/* line 25, ../sass/_partials/_single.scss */
+.entry-meta,
+.entry-footer {
+  font-family: "LatoBold";
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 14px;
+}
+
+/* line 33, ../sass/_partials/_single.scss */
+.posted-on {
+  padding-top: 14px;
+  padding-bottom: 12px;
+  margin-bottom: 42px;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  line-height: 24px;
+}
+@media only screen and (max-width: 769px) {
+  /* line 33, ../sass/_partials/_single.scss */
+  .posted-on {
+    border: none;
+    padding-top: 0;
+    margin-bottom: 14px;
+  }
+}
+
+/* line 48, ../sass/_partials/_single.scss */
+.entry-content {
+  line-height: 30px;
+}
+
+/* line 52, ../sass/_partials/_single.scss */
+.entry-content p {
+  padding-bottom: 35px;
+}
+
+/* line 56, ../sass/_partials/_single.scss */
+.entry-header .cat-list {
+  float: right;
+}
+
+@media only screen and (max-width: 769px) {
+  /* line 60, ../sass/_partials/_single.scss */
+  .entry-meta .cat-list {
+    display: none;
+  }
+}
+
+/* line 66, ../sass/_partials/_single.scss */
+.share {
+  float: right;
+}
+@media only screen and (max-width: 769px) {
+  /* line 66, ../sass/_partials/_single.scss */
+  .share {
+    float: none;
+    margin-top: 14px;
+    padding-top: 14px;
+    padding-bottom: 12px;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+  }
+}
+
+/* line 79, ../sass/_partials/_single.scss */
+.share-list {
+  float: right;
+  margin-left: 15px;
+}
+
+/* line 84, ../sass/_partials/_single.scss */
+.share-list li:not(:first-child) {
+  margin-left: 10px;
+}
+@media only screen and (max-width: 769px) {
+  /* line 84, ../sass/_partials/_single.scss */
+  .share-list li:not(:first-child) {
+    margin-left: 60px;
+  }
+}
+
+/* line 92, ../sass/_partials/_single.scss */
+.share-list li {
+  float: left;
+}
+
+/* line 96, ../sass/_partials/_single.scss */
+.share-icon {
+  display: block;
+  width: 30px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* line 105, ../sass/_partials/_single.scss */
+.share-icon.share-icon-facebook {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/facebook.svg");
+}
+
+/* line 109, ../sass/_partials/_single.scss */
+.share-icon.share-icon-twitter {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/twitter.svg");
+}
+
+/* line 113, ../sass/_partials/_single.scss */
+.share-icon.share-icon-linkedin {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/linkedin.svg");
+}
+
+/* line 117, ../sass/_partials/_single.scss */
+.footer-byline {
+  padding-top: 14px;
+  padding-bottom: 12px;
+  margin-bottom: 30px;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  line-height: 24px;
+}
+@media only screen and (max-width: 769px) {
+  /* line 117, ../sass/_partials/_single.scss */
+  .footer-byline {
+    border: none;
+    padding-top: 0;
+    margin-bottom: 14px;
+  }
+}
+
+/* line 132, ../sass/_partials/_single.scss */
+.entry-footer .cat-list {
+  float: left;
+}
+
+/* line 136, ../sass/_partials/_single.scss */
+.blog-return {
+  display: inline-block;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+  font-family: "LatoBold";
+  color: #262626;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 24px;
+}
+
+/* line 147, ../sass/_partials/_single.scss */
+.blog-return:before {
+  float: left;
+  content: '';
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/blog_return.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 28px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+/* line 157, ../sass/_partials/_single.scss */
+.relatedPosts {
+  background-color: #F4F4F4;
+}
+
+/* line 161, ../sass/_partials/_single.scss */
+.relatedPosts-container {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: -webkit-calc(1020px + 20px*2);
+  max-width: calc(1020px + 20px*2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 85px;
+  padding-right: 20px;
+  padding-bottom: 85px;
+  padding-left: 20px;
+}
+@media only screen and (max-width: 1080px) {
+  /* line 161, ../sass/_partials/_single.scss */
+  .relatedPosts-container {
+    overflow: hidden;
+    *zoom: 1;
+    max-width: -webkit-calc(100% + 20px*2);
+    max-width: calc(100% + 20px*2);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    padding-right: 20px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+  }
+}
+
+/* line 169, ../sass/_partials/_single.scss */
+.relatedPosts-intro {
+  padding-bottom: 30px;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  padding-bottom: 45px;
+}
+@media only screen and (max-width: 1080px) {
+  /* line 169, ../sass/_partials/_single.scss */
+  .relatedPosts-intro {
+    padding-bottom: 35px;
+  }
+}
+
+/* line 181, ../sass/_partials/_single.scss */
+.relatedPosts-strip {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 1080px) {
+  /* line 181, ../sass/_partials/_single.scss */
+  .relatedPosts-strip {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+}
+
+/* line 191, ../sass/_partials/_single.scss */
+.relatedPosts-strip .postThumb {
+  margin: 0 auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  padding-bottom: 0;
+}
+@media only screen and (max-width: 1080px) {
+  /* line 191, ../sass/_partials/_single.scss */
+  .relatedPosts-strip .postThumb {
+    max-width: 300px;
+    padding-bottom: 60px;
+    padding-right: 0;
+  }
+}
+
+/* line 205, ../sass/_partials/_single.scss */
+.relatedPosts-strip .postThumb:last-child {
+  padding-right: 0;
+}
+@media only screen and (max-width: 1080px) {
+  /* line 205, ../sass/_partials/_single.scss */
+  .relatedPosts-strip .postThumb:last-child {
+    padding-bottom: 0;
+  }
+}
+
+/* line 213, ../sass/_partials/_single.scss */
+.postBookend-container {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: -webkit-calc(100% + 20px*2);
+  max-width: calc(100% + 20px*2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 65px;
+  padding-right: 20px;
+  padding-bottom: 65px;
+  padding-left: 20px;
+}
+@media only screen and (max-width: 1080px) {
+  /* line 213, ../sass/_partials/_single.scss */
+  .postBookend-container {
+    overflow: hidden;
+    *zoom: 1;
+    max-width: -webkit-calc(100% + 20px*2);
+    max-width: calc(100% + 20px*2);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    padding-right: 20px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+  }
+}
+
+/* line 1, ../sass/_partials/_archive.scss */
+.archive-content .page-header {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: -webkit-calc(620px + 20px*2);
+  max-width: calc(620px + 20px*2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 35px;
+  padding-right: 20px;
+  padding-bottom: 0;
+  padding-left: 20px;
+}
+
+/*** Bios ***/
+/* line 3, ../sass/_partials/modules/_bios.scss */
+.bios-container {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: -webkit-calc(820px + 20px*2);
+  max-width: calc(820px + 20px*2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 85px;
+  padding-right: 20px;
+  padding-bottom: 85px;
+  padding-left: 20px;
+}
+@media only screen and (max-width: 769px) {
+  /* line 3, ../sass/_partials/modules/_bios.scss */
+  .bios-container {
+    overflow: hidden;
+    *zoom: 1;
+    max-width: -webkit-calc(100% + 20px*2);
+    max-width: calc(100% + 20px*2);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    padding-right: 20px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+  }
+}
+
+/* line 11, ../sass/_partials/modules/_bios.scss */
+.bios-intro {
+  padding-bottom: 30px;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
+/* line 18, ../sass/_partials/modules/_bios.scss */
+.bios-subintro {
+  padding-bottom: 45px;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+  line-height: 30px;
+}
+
+/* line 26, ../sass/_partials/modules/_bios.scss */
+.bios-row {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 769px) {
+  /* line 26, ../sass/_partials/modules/_bios.scss */
+  .bios-row {
+    flex-direction: column;
+  }
+}
+
+/* line 35, ../sass/_partials/modules/_bios.scss */
+.bios-block {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+}
+/* line 40, ../sass/_partials/modules/_bios.scss */
+.bios-block:not(:last-child) {
+  margin-right: 70px;
+}
+@media only screen and (max-width: 769px) {
+  /* line 40, ../sass/_partials/modules/_bios.scss */
+  .bios-block:not(:last-child) {
+    margin-right: 0;
+    padding-bottom: 60px;
+  }
+}
+
+/* line 50, ../sass/_partials/modules/_bios.scss */
+.bios-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 57, ../sass/_partials/modules/_bios.scss */
+.bios-name {
+  padding-top: 22px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-family: "LatoBold";
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+/* line 66, ../sass/_partials/modules/_bios.scss */
+.bios-description {
+  padding-bottom: 27px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/*** Bookend ***/
+/* line 3, ../sass/_partials/modules/_bookend.scss */
+.bookend {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+}
+
+/* line 8, ../sass/_partials/modules/_bookend.scss */
+.bookend-container {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: -webkit-calc(1140px + 20px*2);
+  max-width: calc(1140px + 20px*2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  padding-right: 20px;
+  padding-bottom: 60px;
+  padding-left: 20px;
+  position: relative;
+}
+
+/* line 13, ../sass/_partials/modules/_bookend.scss */
+.bookend-intro {
+  padding-bottom: 30px;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+}
+@media only screen and (max-width: 769px) {
+  /* line 13, ../sass/_partials/modules/_bookend.scss */
+  .bookend-intro {
+    padding-top: 144px;
+  }
+}
+
+/* line 24, ../sass/_partials/modules/_bookend.scss */
+.bookend-nav {
+  display: block;
+  position: absolute;
+  top: 50%;
+  text-transform: uppercase;
+  font-family: "LatoBold";
+  color: #262626;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 26px;
+}
+@media only screen and (max-width: 769px) {
+  /* line 24, ../sass/_partials/modules/_bookend.scss */
+  .bookend-nav {
+    top: 60px;
+  }
+}
+
+/* line 40, ../sass/_partials/modules/_bookend.scss */
+.bookend-navPrevious {
+  left: 20px;
+}
+
+/* line 44, ../sass/_partials/modules/_bookend.scss */
+.bookend-navPrevious:before {
+  float: left;
+  content: '';
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/back_arrow.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+}
+@media only screen and (max-width: 769px) {
+  /* line 44, ../sass/_partials/modules/_bookend.scss */
+  .bookend-navPrevious:before {
+    margin-right: 10px;
+  }
+}
+
+/* line 58, ../sass/_partials/modules/_bookend.scss */
+.bookend-navNext {
+  right: 20px;
+}
+
+/* line 62, ../sass/_partials/modules/_bookend.scss */
+.bookend-navNext:after {
+  float: right;
+  content: '';
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/forward_arrow.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  margin-left: 20px;
+}
+@media only screen and (max-width: 769px) {
+  /* line 62, ../sass/_partials/modules/_bookend.scss */
+  .bookend-navNext:after {
+    margin-left: 10px;
+  }
+}
+
+/* line 76, ../sass/_partials/modules/_bookend.scss */
+.bookend-divider {
+  display: none;
+}
+@media only screen and (max-width: 769px) {
+  /* line 76, ../sass/_partials/modules/_bookend.scss */
+  .bookend-divider {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 144px;
+    left: 0;
+    right: 0;
+    background: #dddddd;
+  }
+}
+
+/*** Contact ***/
+/* line 3, ../sass/_partials/modules/_contact.scss */
+.contact-container {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: -webkit-calc(1030px + 20px*2);
+  max-width: calc(1030px + 20px*2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 80px;
+  padding-right: 20px;
+  padding-bottom: 80px;
+  padding-left: 20px;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 769px) {
+  /* line 3, ../sass/_partials/modules/_contact.scss */
+  .contact-container {
+    overflow: hidden;
+    *zoom: 1;
+    max-width: -webkit-calc(100% + 20px*2);
+    max-width: calc(100% + 20px*2);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 55px;
+    padding-right: 20px;
+    padding-bottom: 55px;
+    padding-left: 20px;
+    flex-direction: column;
+  }
+}
+
+/* line 14, ../sass/_partials/modules/_contact.scss */
+.contact-container > * {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+}
+/* line 19, ../sass/_partials/modules/_contact.scss */
+.contact-container > *:not(:last-child) {
+  margin-right: 70px;
+}
+@media only screen and (max-width: 769px) {
+  /* line 19, ../sass/_partials/modules/_contact.scss */
+  .contact-container > *:not(:last-child) {
+    margin-right: 0;
+    padding-bottom: 40px;
+  }
+}
+
+/* line 29, ../sass/_partials/modules/_contact.scss */
+.contact-info-intro {
+  padding-bottom: 18px;
+  margin-bottom: 24px;
+  font-size: 24px;
+  line-height: 24px;
+  border-bottom: 1px solid #dddddd;
+}
+
+/* line 37, ../sass/_partials/modules/_contact.scss */
+.contact-links-content {
+  float: right;
+}
+@media only screen and (max-width: 769px) {
+  /* line 37, ../sass/_partials/modules/_contact.scss */
+  .contact-links-content {
+    float: none;
+  }
+}
+
+/* line 45, ../sass/_partials/modules/_contact.scss */
+.contact-links-content-link:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+/*** Strip Data Callout ***/
+/* line 3, ../sass/_partials/modules/_stripdatacallout.scss */
+.stripDataCallout {
+  background-color: #1C2431;
+}
+
+/* line 7, ../sass/_partials/modules/_stripdatacallout.scss */
+.stripDataCallout-container {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: -webkit-calc(980px + 20px*2);
+  max-width: calc(980px + 20px*2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 55px;
+  padding-right: 20px;
+  padding-bottom: 55px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 166px;
+}
+@media only screen and (max-width: 769px) {
+  /* line 7, ../sass/_partials/modules/_stripdatacallout.scss */
+  .stripDataCallout-container {
+    flex-direction: column;
+  }
+}
+
+/* line 19, ../sass/_partials/modules/_stripdatacallout.scss */
+.stripDataCallout-block {
+  color: #FFFFFF;
+}
+/* line 22, ../sass/_partials/modules/_stripdatacallout.scss */
+.stripDataCallout-block:not(:last-child) {
+  margin-right: 50px;
+}
+@media only screen and (max-width: 769px) {
+  /* line 22, ../sass/_partials/modules/_stripdatacallout.scss */
+  .stripDataCallout-block:not(:last-child) {
+    margin-right: 0;
+    padding-bottom: 55px;
+  }
+}
+
+/* line 32, ../sass/_partials/modules/_stripdatacallout.scss */
+.stripDataCallout-block-inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* line 38, ../sass/_partials/modules/_stripdatacallout.scss */
+.stripDataCallout-block-value {
+  padding-right: 10px;
+  font-size: 36px;
+  line-height: 100%;
+  font-family: "LatoBlack";
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+/* line 47, ../sass/_partials/modules/_stripdatacallout.scss */
+.stripDataCallout-block-caption {
+  font-size: 11px;
+  font-family: "LatoBold";
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/*** Full Width Image ***/
+/* line 3, ../sass/_partials/modules/_fullwidthimage.scss */
+.fullWidthImage {
+  max-height: 600px;
+  overflow: hidden;
+}
+
+/* line 8, ../sass/_partials/modules/_fullwidthimage.scss */
+.fullWidthImage-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/*** Hero ***/
+/* line 3, ../sass/_partials/modules/_hero.scss */
+.hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* line 7, ../sass/_partials/modules/_hero.scss */
+.hero-container {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: -webkit-calc(780px + 20px*2);
+  max-width: calc(780px + 20px*2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* line 17, ../sass/_partials/modules/_hero.scss */
+.hero-container > * {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100%;
+}
+
+/* line 23, ../sass/_partials/modules/_hero.scss */
+.heroSmall .hero-container {
+  min-height: 275px;
+}
+@media only screen and (max-width: 769px) {
+  /* line 23, ../sass/_partials/modules/_hero.scss */
+  .heroSmall .hero-container {
+    min-height: 215px;
+  }
+}
+
+/* line 31, ../sass/_partials/modules/_hero.scss */
+.heroLarge .hero-container {
+  min-height: 350px;
+}
+@media only screen and (max-width: 769px) {
+  /* line 31, ../sass/_partials/modules/_hero.scss */
+  .heroLarge .hero-container {
+    min-height: 215px;
+  }
+}
+
+/* line 39, ../sass/_partials/modules/_hero.scss */
+.hero-headline {
+  text-align: center;
+  color: #FFFFFF;
+  line-height: 1.35em;
+  text-shadow: 0 4px 5.88px rgba(0, 0, 0, 0.72);
+  font-size: 36px;
+}
+@media only screen and (max-width: 769px) {
+  /* line 39, ../sass/_partials/modules/_hero.scss */
+  .hero-headline {
+    font-size: 30px;
+  }
+}
+
+/* line 51, ../sass/_partials/modules/_hero.scss */
+.heroLarge .hero-headline {
+  padding-bottom: 40px;
+}
+@media only screen and (max-width: 769px) {
+  /* line 51, ../sass/_partials/modules/_hero.scss */
+  .heroLarge .hero-headline {
+    padding-bottom: 20px;
+  }
+}
+
+/* line 59, ../sass/_partials/modules/_hero.scss */
+.hero-subheadline {
+  max-width: 530px;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 18px;
+  text-shadow: 0 4px 5.88px rgba(0, 0, 0, 0.72);
+}
+
+/*** Long Form Content ***/
+/* line 3, ../sass/_partials/modules/_longformcontent.scss */
+.longFormContent-container {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: -webkit-calc(620px + 20px*2);
+  max-width: calc(620px + 20px*2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 65px;
+  padding-right: 20px;
+  padding-bottom: 65px;
+  padding-left: 20px;
+}
+@media only screen and (max-width: 769px) {
+  /* line 3, ../sass/_partials/modules/_longformcontent.scss */
+  .longFormContent-container {
+    overflow: hidden;
+    *zoom: 1;
+    max-width: -webkit-calc(100% + 20px*2);
+    max-width: calc(100% + 20px*2);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+  }
+}
+
+/* line 11, ../sass/_partials/modules/_longformcontent.scss */
+.longFormContent-text {
+  line-height: 30px;
+}
+
+/* line 15, ../sass/_partials/modules/_longformcontent.scss */
+.longFormContent div:not(:last-child):after {
+  display: block;
+  content: '';
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/paragraph_slash.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 27px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 769px) {
+  /* line 15, ../sass/_partials/modules/_longformcontent.scss */
+  .longFormContent div:not(:last-child):after {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+/*** Slanted Map ***/
+/* line 3, ../sass/_partials/modules/_slantedmap.scss */
+.slantedMap {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 8, ../sass/_partials/modules/_slantedmap.scss */
+.slantedMap:before {
+  content: '';
+  position: absolute;
+  top: -250%;
+  width: 100%;
+  height: 500%;
+}
+
+/* line 16, ../sass/_partials/modules/_slantedmap.scss */
+.slantedMap.mapBackgroundRight:before {
+  left: -40%;
+  -webkit-transform: rotate(-325deg);
+  -moz-transform: rotate(-325deg);
+  transform: rotate(-325deg);
+}
+@media only screen and (max-width: 769px) {
+  /* line 16, ../sass/_partials/modules/_slantedmap.scss */
+  .slantedMap.mapBackgroundRight:before {
+    left: -50%;
+  }
+}
+
+/* line 27, ../sass/_partials/modules/_slantedmap.scss */
+.slantedMap.mapBackgroundLeft:before {
+  right: -40%;
+  -webkit-transform: rotate(325deg);
+  -moz-transform: rotate(325deg);
+  transform: rotate(325deg);
+}
+@media only screen and (max-width: 769px) {
+  /* line 27, ../sass/_partials/modules/_slantedmap.scss */
+  .slantedMap.mapBackgroundLeft:before {
+    right: -50%;
+  }
+}
+
+/* line 38, ../sass/_partials/modules/_slantedmap.scss */
+.slantedMap.mapBackgroundWhite {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/map_lightlines.svg");
+  background-color: #ececec;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* line 44, ../sass/_partials/modules/_slantedmap.scss */
+.slantedMap.mapBackgroundGrey {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/map_darklines.svg");
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* line 50, ../sass/_partials/modules/_slantedmap.scss */
+.slantedMap.mapBackgroundGrey:before {
+  background-color: #F4F4F4;
+}
+
+/* line 54, ../sass/_partials/modules/_slantedmap.scss */
+.slantedMap.mapBackgroundWhite:before {
+  background-color: #FFFFFF;
+}
+
+/* line 58, ../sass/_partials/modules/_slantedmap.scss */
+.slantedMap-container {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: -webkit-calc(1160px + 62px*2);
+  max-width: calc(1160px + 62px*2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0;
+  padding-right: 62px;
+  padding-bottom: 0;
+  padding-left: 62px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 769px) {
+  /* line 58, ../sass/_partials/modules/_slantedmap.scss */
+  .slantedMap-container {
+    min-height: 300px;
+    overflow: hidden;
+    *zoom: 1;
+    max-width: -webkit-calc(100% + 20px*2);
+    max-width: calc(100% + 20px*2);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+    padding-right: 20px;
+    padding-bottom: 0;
+    padding-left: 20px;
+  }
+}
+
+/* line 71, ../sass/_partials/modules/_slantedmap.scss */
+.slantedMap-container > * {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+}
+
+/* line 77, ../sass/_partials/modules/_slantedmap.scss */
+.slantedMap-copy {
+  padding: 75px 0;
+}
+@media only screen and (max-width: 769px) {
+  /* line 77, ../sass/_partials/modules/_slantedmap.scss */
+  .slantedMap-copy {
+    display: none !important;
+  }
+}
+
+/* line 85, ../sass/_partials/modules/_slantedmap.scss */
+.slantedMap.mapBackgroundLeft .slantedMap-image {
+  order: 1;
+}
+
+/* line 89, ../sass/_partials/modules/_slantedmap.scss */
+.slantedMap.mapBackgroundLeft .slantedMap-copy {
+  order: 2;
+  margin-left: 20px;
+}
+
+/* line 94, ../sass/_partials/modules/_slantedmap.scss */
+.slantedMap.mapBackgroundRight .slantedMap-image {
+  order: 2;
+}
+
+/* line 98, ../sass/_partials/modules/_slantedmap.scss */
+.slantedMap.mapBackgroundRight .slantedMap-copy {
+  order: 1;
+  margin-right: 20px;
+}
+
+/* line 103, ../sass/_partials/modules/_slantedmap.scss */
+.slantedMap.alignmentBottom .slantedMap-image {
+  align-self: flex-end;
+}
+
+/* line 107, ../sass/_partials/modules/_slantedmap.scss */
+.slantedMap-image-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 114, ../sass/_partials/modules/_slantedmap.scss */
+.slantedMap.alignmentMiddle .slantedMap-image-image {
+  padding: 75px 0;
+}
+@media only screen and (max-width: 769px) {
+  /* line 114, ../sass/_partials/modules/_slantedmap.scss */
+  .slantedMap.alignmentMiddle .slantedMap-image-image {
+    padding: 40px 0;
+  }
+}
+
+/* line 122, ../sass/_partials/modules/_slantedmap.scss */
+.slantedMap.alignmentLeft .slantedMap-image-image {
+  float: left;
+}
+@media only screen and (max-width: 769px) {
+  /* line 122, ../sass/_partials/modules/_slantedmap.scss */
+  .slantedMap.alignmentLeft .slantedMap-image-image {
+    float: none;
+  }
+}
+
+/* line 130, ../sass/_partials/modules/_slantedmap.scss */
+.slantedMap.alignmentRight .slantedMap-image-image {
+  float: right;
+}
+@media only screen and (max-width: 769px) {
+  /* line 130, ../sass/_partials/modules/_slantedmap.scss */
+  .slantedMap.alignmentRight .slantedMap-image-image {
+    float: none;
+  }
+}
+
+/* line 138, ../sass/_partials/modules/_slantedmap.scss */
+.slantedMap-copyMobile {
+  display: none;
+}
+@media only screen and (max-width: 769px) {
+  /* line 138, ../sass/_partials/modules/_slantedmap.scss */
+  .slantedMap-copyMobile {
+    display: block !important;
+    overflow: hidden;
+    *zoom: 1;
+    max-width: -webkit-calc(100% + 20px*2);
+    max-width: calc(100% + 20px*2);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+  }
+}
+
+/* line 147, ../sass/_partials/modules/_slantedmap.scss */
+.slantedMap.mapBackgroundGrey + .slantedMap-copyMobile {
+  background-color: #F4F4F4;
+}
+
+/* line 151, ../sass/_partials/modules/_slantedmap.scss */
+.slantedMap-copy-intro {
+  padding-bottom: 18px;
+  margin-bottom: 24px;
+  font-size: 24px;
+  line-height: 1.2;
+  border-bottom: 1px solid #dddddd;
+}
+
+/* line 159, ../sass/_partials/modules/_slantedmap.scss */
+.slantedMap-copy-block-text {
+  line-height: 30px;
+}
+
+/* line 163, ../sass/_partials/modules/_slantedmap.scss */
+.slantedMap-copy-block-text:not(:last-child) {
+  padding-bottom: 20px;
+}
+
+/* line 167, ../sass/_partials/modules/_slantedmap.scss */
+.slantedMap-copy-block-text h6 {
+  font-family: "LatoBold";
+  text-transform: uppercase;
+}
+
+/* line 172, ../sass/_partials/modules/_slantedmap.scss */
+.slantedMap-copy-block-text strong {
+  display: inline-block;
+  line-height: 24px;
+}
+
+/* line 177, ../sass/_partials/modules/_slantedmap.scss */
+.slantedMap-copy-block-text strong:not(:last-child) {
+  padding-bottom: 10px;
+}
+
+/*** Strip Copy Callout ***/
+/* line 3, ../sass/_partials/modules/_stripcopycallout.scss */
+.stripCopyCallout-container {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: -webkit-calc(650px + 20px*2);
+  max-width: calc(650px + 20px*2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+}
+
+/* line 7, ../sass/_partials/modules/_stripcopycallout.scss */
+.stripCopyCallout-text {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  font-family: "LatoBold";
+}
+
+/*** Testimonials ***/
+/* line 3, ../sass/_partials/modules/_testimonials.scss */
+.testimonials-container {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: -webkit-calc(1070px + 20px*2);
+  max-width: calc(1070px + 20px*2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 85px;
+  padding-right: 20px;
+  padding-bottom: 85px;
+  padding-left: 20px;
+}
+@media only screen and (max-width: 769px) {
+  /* line 3, ../sass/_partials/modules/_testimonials.scss */
+  .testimonials-container {
+    overflow: hidden;
+    *zoom: 1;
+    max-width: -webkit-calc(100% + 20px*2);
+    max-width: calc(100% + 20px*2);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    padding-right: 20px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+  }
+}
+
+/* line 11, ../sass/_partials/modules/_testimonials.scss */
+.testimonials-intro {
+  padding-bottom: 30px;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
+/* line 18, ../sass/_partials/modules/_testimonials.scss */
+.testimonials-subintro {
+  padding-bottom: 60px;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+  line-height: 30px;
+}
+
+/* line 26, ../sass/_partials/modules/_testimonials.scss */
+.testimonials-row {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 769px) {
+  /* line 26, ../sass/_partials/modules/_testimonials.scss */
+  .testimonials-row {
+    flex-direction: column;
+  }
+}
+
+/* line 35, ../sass/_partials/modules/_testimonials.scss */
+.testimonials-block {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+}
+/* line 40, ../sass/_partials/modules/_testimonials.scss */
+.testimonials-block:not(:last-child) {
+  margin-right: 70px;
+}
+@media only screen and (max-width: 769px) {
+  /* line 40, ../sass/_partials/modules/_testimonials.scss */
+  .testimonials-block:not(:last-child) {
+    margin-right: 0;
+    padding-bottom: 60px;
+  }
+}
+
+/* line 50, ../sass/_partials/modules/_testimonials.scss */
+.testimonials-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 57, ../sass/_partials/modules/_testimonials.scss */
+.testimonials-text {
+  padding: 35px 0;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 30px;
+}
+@media only screen and (max-width: 769px) {
+  /* line 57, ../sass/_partials/modules/_testimonials.scss */
+  .testimonials-text {
+    padding: 10px 0;
+  }
+}
+
+/* line 68, ../sass/_partials/modules/_testimonials.scss */
+.testimonials-source {
+  padding-bottom: 10px;
+}
+
+/* line 1, ../sass/_partials/modules/_press.scss */
+.pressStrip {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: -webkit-calc(1120px + 20px*2);
+  max-width: calc(1120px + 20px*2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 769px) {
+  /* line 1, ../sass/_partials/modules/_press.scss */
+  .pressStrip {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+}
+
+/* line 12, ../sass/_partials/modules/_press.scss */
+.pressStrip-block {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+}
+@media only screen and (max-width: 769px) {
+  /* line 12, ../sass/_partials/modules/_press.scss */
+  .pressStrip-block {
+    padding-bottom: 60px;
+  }
+}
+
+/* line 22, ../sass/_partials/modules/_press.scss */
+.pressStrip-block:not(:last-child) {
+  margin-right: 70px;
+}
+@media only screen and (max-width: 769px) {
+  /* line 22, ../sass/_partials/modules/_press.scss */
+  .pressStrip-block:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+/* line 30, ../sass/_partials/modules/_press.scss */
+.post-caption {
+  font-family: "LatoBold";
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding-bottom: 35px;
+}
+@media only screen and (max-width: 769px) {
+  /* line 30, ../sass/_partials/modules/_press.scss */
+  .post-caption {
+    padding-bottom: 25px;
+  }
+}
+
+/* line 42, ../sass/_partials/modules/_press.scss */
+.post-time {
+  color: #999999;
+}
+
+/* line 3, ../sass/_partials/modules/_careers.scss */
+.careersListings #resumator-logo {
+  display: none;
+}
+/* line 7, ../sass/_partials/modules/_careers.scss */
+.careersListings #resumator-wrapper {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: -webkit-calc(780px + 20px*2);
+  max-width: calc(780px + 20px*2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 70px;
+  padding-right: 20px;
+  padding-bottom: 115px;
+  padding-left: 20px;
+}
+@media only screen and (max-width: 769px) {
+  /* line 7, ../sass/_partials/modules/_careers.scss */
+  .careersListings #resumator-wrapper {
+    padding-top: 40px;
+  }
+}
+/* line 15, ../sass/_partials/modules/_careers.scss */
+.careersListings .resumator-job {
+  position: relative;
+  padding: 27px 0;
+  border-top: 1px solid #dddddd;
+}
+@media only screen and (max-width: 769px) {
+  /* line 15, ../sass/_partials/modules/_careers.scss */
+  .careersListings .resumator-job {
+    padding-bottom: 40px;
+  }
+}
+/* line 25, ../sass/_partials/modules/_careers.scss */
+.careersListings .resumator-job:last-of-type {
+  border-bottom: 1px solid #dddddd;
+}
+/* line 29, ../sass/_partials/modules/_careers.scss */
+.careersListings .resumator-job-title {
+  font-family: "LatoBold";
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding-bottom: 10px;
+}
+@media only screen and (max-width: 769px) {
+  /* line 29, ../sass/_partials/modules/_careers.scss */
+  .careersListings .resumator-job-title {
+    padding-bottom: 50px;
+  }
+}
+/* line 41, ../sass/_partials/modules/_careers.scss */
+.careersListings .resumator-job-info,
+.careersListings .resumator-job-info-details {
+  display: inline;
+}
+@media only screen and (max-width: 769px) {
+  /* line 41, ../sass/_partials/modules/_careers.scss */
+  .careersListings .resumator-job-info,
+  .careersListings .resumator-job-info-details {
+    display: none;
+  }
+}
+/* line 50, ../sass/_partials/modules/_careers.scss */
+.careersListings .resumator-job-heading {
+  font-family: "LatoBold";
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+/* line 57, ../sass/_partials/modules/_careers.scss */
+.careersListings .resumator-jobs-text {
+  line-height: 24px;
+}
+/* line 61, ../sass/_partials/modules/_careers.scss */
+.careersListings .resumator-job-info-details.resumator-jobs-text {
+  line-height: 24px;
+}
+/* line 65, ../sass/_partials/modules/_careers.scss */
+.careersListings .resumator-job-heading.resumator-jobs-text {
+  margin-right: 3px;
+  line-height: 25px;
+}
+/* line 70, ../sass/_partials/modules/_careers.scss */
+.careersListings .resumator-job-department,
+.careersListings .resumator-job-info-details .resumator-job-heading {
+  margin-left: 45px;
+}
+/* line 75, ../sass/_partials/modules/_careers.scss */
+.careersListings p, .careersListings li {
+  line-height: 30px;
+}
+/* line 79, ../sass/_partials/modules/_careers.scss */
+.careersListings strong {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+/* line 84, ../sass/_partials/modules/_careers.scss */
+.careersListings .resumator-view-details {
+  position: absolute;
+  top: 27px;
+  right: 0;
+  line-height: 26px;
+  font-family: "LatoBold";
+  font-size: 17px;
+  cursor: pointer;
+  text-transform: none;
+}
+@media only screen and (max-width: 769px) {
+  /* line 84, ../sass/_partials/modules/_careers.scss */
+  .careersListings .resumator-view-details {
+    top: 90px;
+  }
+}
+/* line 99, ../sass/_partials/modules/_careers.scss */
+.careersListings .resumator-view-details:before {
+  margin-left: 10px;
+  float: right;
+  content: '';
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/accordian_arrow.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 28px;
+  height: 24px;
+}
+/* line 109, ../sass/_partials/modules/_careers.scss */
+.careersListings .resumator-view-details.arrow-closed:before {
+  transform: rotateX(180deg);
+}
+/* line 113, ../sass/_partials/modules/_careers.scss */
+.careersListings .resumator-job-description {
+  display: none;
+  padding-top: 30px;
+}
+/* line 118, ../sass/_partials/modules/_careers.scss */
+.careersListings .resumator-apply-button {
+  display: block;
+  margin: 0 10px 0 auto;
+  width: 100%;
+  border: none;
+  letter-spacing: 0.01em;
+  text-align: center;
+  background-color: #00B437;
+  border-radius: 3px;
+  color: #FFFFFF;
+  font-family: "LatoBold";
+  padding: 0 10px;
+  width: 154px;
+  height: 43px;
+}
+@media only screen and (max-width: 769px) {
+  /* line 118, ../sass/_partials/modules/_careers.scss */
+  .careersListings .resumator-apply-button {
+    margin: 0 auto 20px auto;
+  }
+}
+/* line 138, ../sass/_partials/modules/_careers.scss */
+.careersListings .resumator-forward-button {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  border: none;
+  letter-spacing: 0.01em;
+  text-align: center;
+  border: 3px solid #00B437;
+  border-radius: 3px;
+  color: #00B437;
+  font-family: "LatoBold";
+  padding: 0 10px;
+  width: 154px;
+  height: 43px;
+  background: transparent;
+}
+@media only screen and (max-width: 769px) {
+  /* line 138, ../sass/_partials/modules/_careers.scss */
+  .careersListings .resumator-forward-button {
+    margin: 0 auto 20px auto;
+  }
+}
+/* line 159, ../sass/_partials/modules/_careers.scss */
+.careersListings .resumator-buttons li a img {
+  display: none;
+}
+/* line 163, ../sass/_partials/modules/_careers.scss */
+.careersListings .resumator-buttons li a {
+  display: block;
+  width: 30px;
+  height: 24px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media only screen and (max-width: 769px) {
+  /* line 173, ../sass/_partials/modules/_careers.scss */
+  .careersListings .resumator-buttons li:nth-of-type(1),
+  .careersListings .resumator-buttons li:nth-of-type(2) {
+    width: 100%;
+  }
+}
+/* line 180, ../sass/_partials/modules/_careers.scss */
+.careersListings .resumator-buttons li:nth-of-type(3),
+.careersListings .resumator-buttons li:nth-of-type(4),
+.careersListings .resumator-buttons li:nth-of-type(5) {
+  float: right !important;
+  margin-top: 9px !important;
+}
+@media only screen and (max-width: 769px) {
+  /* line 180, ../sass/_partials/modules/_careers.scss */
+  .careersListings .resumator-buttons li:nth-of-type(3),
+  .careersListings .resumator-buttons li:nth-of-type(4),
+  .careersListings .resumator-buttons li:nth-of-type(5) {
+    margin-right: 0 !important;
+    margin-left: 10px !important;
+  }
+}
+/* line 192, ../sass/_partials/modules/_careers.scss */
+.careersListings .resumator-buttons li:nth-of-type(3) a {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/twitter.svg");
+}
+/* line 196, ../sass/_partials/modules/_careers.scss */
+.careersListings .resumator-buttons li:nth-of-type(4) a {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/facebook.svg");
+}
+/* line 200, ../sass/_partials/modules/_careers.scss */
+.careersListings .resumator-buttons li:nth-of-type(5) a {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/linkedin.svg");
+}
+
+/* line 1, ../sass/_partials/modules/_splitscreen.scss */
+.splitScreen-row {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 5, ../sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel {
+  position: relative;
+  float: left;
+  width: 50%;
+  margin: 0 auto;
+  min-height: 740px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 769px) {
+  /* line 5, ../sass/_partials/modules/_splitscreen.scss */
+  .splitScreen-panel {
+    float: none;
+    width: 100%;
+    min-height: 275px;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  /* line 23, ../sass/_partials/modules/_splitscreen.scss */
+  .splitScreen-panel.panelLeft {
+    background-color: #1C2431;
+    background-image: none !important;
+  }
+}
+@media only screen and (max-width: 769px) {
+  /* line 30, ../sass/_partials/modules/_splitscreen.scss */
+  .splitScreen-panel.panelLeft:before {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  /* line 37, ../sass/_partials/modules/_splitscreen.scss */
+  .splitScreen-panel.panelRight {
+    background-color: #02AAF3;
+    background-image: none !important;
+  }
+}
+@media only screen and (max-width: 769px) {
+  /* line 44, ../sass/_partials/modules/_splitscreen.scss */
+  .splitScreen-panel.panelRight:before {
+    display: none;
+  }
+}
+
+/* line 51, ../sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel-container {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: -webkit-calc(475px + 60px*2);
+  max-width: calc(475px + 60px*2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0;
+  padding-right: 60px;
+  padding-bottom: 0;
+  padding-left: 60px;
+  z-index: 1;
+}
+@media only screen and (max-width: 769px) {
+  /* line 51, ../sass/_partials/modules/_splitscreen.scss */
+  .splitScreen-panel-container {
+    overflow: hidden;
+    *zoom: 1;
+    max-width: -webkit-calc(100% + 20px*2);
+    max-width: calc(100% + 20px*2);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+    padding-right: 20px;
+    padding-bottom: 0;
+    padding-left: 20px;
+  }
+}
+
+/* line 60, ../sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel-headline {
+  font-size: 60px;
+  text-shadow: 0 4px 5.88px rgba(0, 0, 0, 0.72);
+  line-height: 72px;
+  text-align: center;
+  color: #FFFFFF;
+}
+@media only screen and (max-width: 769px) {
+  /* line 60, ../sass/_partials/modules/_splitscreen.scss */
+  .splitScreen-panel-headline {
+    font-size: 42px;
+    line-height: 1.2;
+    text-shadow: none;
+  }
+}
+
+/* line 74, ../sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel-subheadline {
+  font-size: 16px;
+  text-shadow: 0 4px 5.88px rgba(0, 0, 0, 0.72);
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+}
+@media only screen and (max-width: 769px) {
+  /* line 74, ../sass/_partials/modules/_splitscreen.scss */
+  .splitScreen-panel-subheadline {
+    font-size: 14px;
+    text-shadow: none;
+  }
+}
+
+/* line 87, ../sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel .circledArrow {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 65px auto 90px auto;
+}
+@media only screen and (max-width: 769px) {
+  /* line 87, ../sass/_partials/modules/_splitscreen.scss */
+  .splitScreen-panel .circledArrow {
+    width: 30px;
+    height: 30px;
+    margin: 12px auto 12px auto;
+  }
+}
+
+/* line 100, ../sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel .circledArrow path {
+  fill: #FFFFFF;
+}
+
+/* line 104, ../sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* line 114, ../sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel.panelHover:before {
+  opacity: 0;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+/* line 121, ../sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel.panelHover:hover:before {
+  opacity: 1;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+/* line 129, ../sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel.panelHover:hover * {
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+/* line 137, ../sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel.panelHover:hover .splitScreen-panel-headline {
+  text-shadow: none;
+}
+/* line 141, ../sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel.panelHover:hover .splitScreen-panel-subheadline {
+  text-shadow: none;
+}
+
+/* line 147, ../sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel.panelLeft.panelHover:hover:before {
+  background-color: #1C2431;
+}
+/* line 151, ../sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel.panelLeft.panelHover:hover .splitScreen-panel-headline {
+  color: #02AAF3;
+}
+/* line 155, ../sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel.panelLeft.panelHover:hover .circledArrow path {
+  fill: #02AAF3;
+}
+
+/* line 161, ../sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel.panelRight.panelHover:hover:before {
+  background-color: #02AAF3;
+}
+/* line 165, ../sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel.panelRight.panelHover:hover .splitScreen-panel-headline {
+  color: #1C2431;
+}
+/* line 169, ../sass/_partials/modules/_splitscreen.scss */
+.splitScreen-panel.panelRight.panelHover:hover .circledArrow path {
+  fill: #1C2431;
+}
+
+/* line 174, ../sass/_partials/modules/_splitscreen.scss */
+.splitScreen-strip {
+  background-color: #F4F4F4;
+}
+
+/* line 178, ../sass/_partials/modules/_splitscreen.scss */
+.splitScreen-strip-container {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: -webkit-calc(100% + 60px*2);
+  max-width: calc(100% + 60px*2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-right: 60px;
+  padding-bottom: 20px;
+  padding-left: 60px;
+  max-height: 86px;
+  overflow: hidden;
+}
+@media only screen and (max-width: 769px) {
+  /* line 178, ../sass/_partials/modules/_splitscreen.scss */
+  .splitScreen-strip-container {
+    overflow: hidden;
+    *zoom: 1;
+    max-width: -webkit-calc(100% + 20px*2);
+    max-width: calc(100% + 20px*2);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+  }
+}
+
+/* line 188, ../sass/_partials/modules/_splitscreen.scss */
+.splitScreen-strip {
+  z-index: 1;
+  position: relative;
+  float: left;
+  margin: 0 auto;
+  color: #999999;
+  text-transform: uppercase;
+  font-family: "LatoBold";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 201, ../sass/_partials/modules/_splitscreen.scss */
+.splitScreen-strip:first-child {
+  width: -webkit-calc(50% + 15px);
+  width: calc(50% + 15px);
+}
+@media only screen and (max-width: 769px) {
+  /* line 201, ../sass/_partials/modules/_splitscreen.scss */
+  .splitScreen-strip:first-child {
+    width: 100%;
+    border-bottom: 1px solid #dddddd;
+  }
+}
+
+/* line 210, ../sass/_partials/modules/_splitscreen.scss */
+.splitScreen-strip:nth-child(2) {
+  width: -webkit-calc(50% - 15px);
+  width: calc(50% - 15px);
+}
+@media only screen and (max-width: 769px) {
+  /* line 210, ../sass/_partials/modules/_splitscreen.scss */
+  .splitScreen-strip:nth-child(2) {
+    width: 100%;
+  }
+}
+
+/* line 218, ../sass/_partials/modules/_splitscreen.scss */
+.splitScreen-strip-headline-container {
+  margin-bottom: 7px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 769px) {
+  /* line 218, ../sass/_partials/modules/_splitscreen.scss */
+  .splitScreen-strip-headline-container {
+    margin-bottom: 0;
+  }
+}
+
+/* line 230, ../sass/_partials/modules/_splitscreen.scss */
+.splitScreen-strip-headline {
+  font-size: 24px;
+  line-height: 29px;
+  margin-right: 15px;
+}
+@media only screen and (max-width: 769px) {
+  /* line 230, ../sass/_partials/modules/_splitscreen.scss */
+  .splitScreen-strip-headline {
+    font-size: 18px;
+  }
+}
+
+/* line 240, ../sass/_partials/modules/_splitscreen.scss */
+.splitScreen-strip-arrow {
+  display: block;
+}
+
+/* line 244, ../sass/_partials/modules/_splitscreen.scss */
+.splitScreen-strip-subheadline {
+  font-size: 14px;
+  line-height: 17px;
+}
+@media only screen and (max-width: 769px) {
+  /* line 244, ../sass/_partials/modules/_splitscreen.scss */
+  .splitScreen-strip-subheadline {
+    display: none;
+  }
+}
+
+/* line 253, ../sass/_partials/modules/_splitscreen.scss */
+.splitScreen-strip .circledArrow {
+  width: 24px;
+  height: 24px;
+}
+
+/* line 258, ../sass/_partials/modules/_splitscreen.scss */
+.splitScreen-strip .circledArrow path {
+  fill: #999999;
+}
+
+/* line 262, ../sass/_partials/modules/_splitscreen.scss */
+.splitScreen-strip:hover {
+  background-color: #FFFFFF;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+/* line 269, ../sass/_partials/modules/_splitscreen.scss */
+.splitScreen-strip:hover .circledArrow path {
+  fill: #02AAF3;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+/* line 276, ../sass/_partials/modules/_splitscreen.scss */
+.splitScreen-strip:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #F4F4F4;
+  -webkit-transform-origin: 100% 0;
+  -ms-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+  -moz-transform: skew(-20deg);
+  -ms-transform: skew(-20deg);
+  -webkit-transform: skew(-20deg);
+  transform: skew(-20deg);
+  z-index: -1;
+}
+@media only screen and (max-width: 769px) {
+  /* line 276, ../sass/_partials/modules/_splitscreen.scss */
+  .splitScreen-strip:after {
+    display: none;
+  }
+}
+
+/* line 295, ../sass/_partials/modules/_splitscreen.scss */
+.splitScreen-strip:first-child:after {
+  border-right: 1px solid #dddddd;
+}
+
+/* line 299, ../sass/_partials/modules/_splitscreen.scss */
+.splitScreen-strip:hover:after {
+  background: #FFFFFF;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}

@@ -9,9 +9,9 @@
   margin: 0 auto;
   min-height: 740px;
   @include background-image;
-  @include display(flex);
-  @include align-items(center);
-  @include justify-content(center);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @media #{$default-break} {
     float: none;
@@ -193,9 +193,9 @@
   color: $dark-grey;
   text-transform: uppercase;
   font-family: $lato-bold;
-  @include display(flex);
-  @include align-items(center);
-  @include justify-content(center);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .splitScreen-strip:first-child {
@@ -217,10 +217,10 @@
 
 .splitScreen-strip-headline-container {
   margin-bottom: 7px;
-  @include display(flex);
-  @include align-items(center);
-  @include align-content(center);
-  @include justify-content(space-between);
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
 
   @media #{$default-break} {
     margin-bottom: 0;

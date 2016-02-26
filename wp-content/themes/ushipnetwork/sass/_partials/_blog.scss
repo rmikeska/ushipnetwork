@@ -9,13 +9,15 @@
 }
 
 .categoryMenu-list {
-  @include display(flex);
-  @include align-items(center);
-  @include justify-content(space-between);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .categoryMenu-list li {
-  @include flex(1);
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
   text-align: center;
 }
 
@@ -46,11 +48,12 @@
 
 .postsGroup-container,
 .alm-reveal {
-  @include display(flex);
-  @include align-items(flex-start);
-  @include justify-content(space-around);
-  @include flex-flow(row wrap);
-  @include align-content(flex-end);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-end;
 }
 
 .postThumb {

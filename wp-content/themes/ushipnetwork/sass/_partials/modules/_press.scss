@@ -1,16 +1,18 @@
 .pressStrip {
   @include container(1120px, 30px, 50px, 20px);
-  @include display(flex);
-  @include justify-content(center);
+  display: flex;
+  justify-content: center;
 
   @media #{$default-break} {
-    @include flex-direction(column);
+    flex-direction: column;
     padding-bottom: 0;
   }
 }
 
 .pressStrip-block {
-  @include flex(1);
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
 
   @media #{$default-break} {
     padding-bottom: 60px;

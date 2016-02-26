@@ -6,15 +6,18 @@
 
 .hero-container {
   @include container(780px, 30px, 30px, 20px);
-  @include display(flex);
-  @include align-items(center);
-  @include justify-content(center);
-  @include align-content(center);
-  @include flex-flow(row wrap);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .hero-container > * {
-  @include flex(1 100%);
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100%;
 }
 
 .heroSmall .hero-container {

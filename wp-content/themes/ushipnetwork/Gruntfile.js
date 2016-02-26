@@ -1,21 +1,19 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    autoprefixer: {
+    postcss: {
+      options: {
+        map: true,
+        processors: [
+          require('autoprefixer')({browsers: ['last 2 versions']}),
+        ]
+      },
       dist: {
-        files: {
-          'style.css': 'style.css'
-        }
-      }
-    },
-    watch: {
-      css: {
-        files: 'sass/*.scss',
-        tasks: ['autoprefixer']
+        src: 'css/style.css',
+        dest: 'style.css'
       }
     }
   });
 
-  grunt.loadNpmTasks('grunt-autoprefixer');
-  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-postcss');
 };

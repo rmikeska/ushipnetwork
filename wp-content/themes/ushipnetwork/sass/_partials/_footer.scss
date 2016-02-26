@@ -2,16 +2,18 @@
 
 .pageFooter-container {
   @include container(1180px, 30px, 30px, 20px);
-  @include display(flex);
-  @include justify-content(center);
+  display: flex;
+  justify-content: center;
 
   @media #{$default-break} {
-    @include flex-direction(column);
+    flex-direction: column;
   }
 }
 
 .pageFooter-container > * {
-  @include flex(1);
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
 
   &:not(:last-child) {
     margin-right: 50px;

@@ -179,18 +179,20 @@ article .post-featureImage {
 }
 
 .relatedPosts-strip {
-  @include display(flex);
-  @include justify-content(center);
+  display: flex;
+  justify-content: center;
 
   @media only screen and (max-width: 1080px) {
-    @include flex-direction(column);
+    flex-direction: column;
     padding-bottom: 0;
   }
 }
 
 .relatedPosts-strip .postThumb {
   margin: 0 auto;
-  @include flex(1);
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
   padding-bottom: 0;
 
   @media only screen and (max-width: 1080px) {

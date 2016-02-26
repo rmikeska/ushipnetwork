@@ -6,13 +6,13 @@
 
 .stripDataCallout-container {
   @include container(980px, 55px, 55px, 20px);
-  @include display(flex);
-  @include align-items(center);
-  @include justify-content(space-between);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   min-height: 166px;
 
   @media #{$default-break} {
-    @include flex-direction(column);
+    flex-direction: column;
   }
 }
 
@@ -30,9 +30,9 @@
 }
 
 .stripDataCallout-block-inner {
-  @include display(flex);
-  @include align-items(center);
-  @include justify-content(flex-start);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .stripDataCallout-block-value {
