@@ -3,7 +3,7 @@ jQuery(document).ready(function ($) {
     // Page content padding if secondary nav exists
 
     if ($('.secondary-menu').length > 0) {
-        $('.pageContent').css('padding-top', '140px');
+        $('.pageContent').addClass('subNavPush');
     }
 
 

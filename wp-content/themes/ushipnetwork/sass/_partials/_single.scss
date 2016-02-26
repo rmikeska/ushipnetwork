@@ -190,9 +190,7 @@ article .post-featureImage {
 
 .relatedPosts-strip .postThumb {
   margin: 0 auto;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0%;
+  flex: 1;
   padding-bottom: 0;
 
   @media only screen and (max-width: 1080px) {

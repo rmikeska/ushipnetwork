@@ -4,16 +4,34 @@ body {
   min-width: 315px;
 }
 
-.pageWrapper {
-  @include outer-container(100%);
+a {
+  color: $bright-blue;
+  text-decoration: none;
+}
+
+b, strong {
+  font-weight: normal;
+  font-family: $lato-bold;
 }
 
 .pageHeader-primaryNav {
   display: none;
 }
 
+.pageWrapper {
+  @include outer-container(100%);
+}
+
 .pageContent {
   padding-top: 80px;
+
+  @media screen and (max-width: 769px) {
+    padding-top: 64px;
+  }
+}
+
+.pageContent.subNavPush {
+  padding-top: 140px;
 
   @media screen and (max-width: 769px) {
     padding-top: 64px;
@@ -86,14 +104,4 @@ body {
   width: 19px;
   height: 12px;
   margin-left: 15px;
-}
-
-a {
-  color: $bright-blue;
-  text-decoration: none;
-}
-
-b, strong {
-  font-weight: normal;
-  font-family: $lato-bold;
 }

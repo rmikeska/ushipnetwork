@@ -10,9 +10,7 @@
 }
 
 .pressStrip-block {
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0%;
+  flex: 1;
 
   @media #{$default-break} {
     padding-bottom: 60px;
