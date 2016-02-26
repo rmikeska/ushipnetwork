@@ -1804,7 +1804,7 @@ article .post-featureImage {
 
 /* line 17, ../sass/_partials/modules/_hero.scss */
 .hero-container > * {
-  flex: 1;
+  flex: 1 100%;
 }
 
 /* line 21, ../sass/_partials/modules/_hero.scss */
