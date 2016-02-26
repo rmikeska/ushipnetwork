@@ -1,5 +1,11 @@
 /*** Footer ***/
 
+.pageFooter {
+  @media #{$default-break} {
+    display: none;
+  }
+}
+
 .pageFooter-container {
   @include container(1180px, 30px, 30px, 20px);
   display: flex;
