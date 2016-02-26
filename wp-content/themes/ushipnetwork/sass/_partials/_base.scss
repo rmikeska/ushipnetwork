@@ -1,8 +1,6 @@
 /*** Base ***/
 
 body {
-  display: flex;
-  flex-direction: column;
   min-width: 315px;
 }
 
@@ -21,12 +19,7 @@ b, strong {
 }
 
 .pageWrapper {
-  overflow: hidden;
-  width: 100%;
-  max-width: 100%;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0%;
+  @include outer-container(100%);
 }
 
 .pageContent {

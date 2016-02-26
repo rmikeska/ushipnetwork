@@ -771,65 +771,62 @@ h3 {
 /*** Base ***/
 /* line 3, ../sass/_partials/_base.scss */
 body {
-  display: flex;
-  flex-direction: column;
   min-width: 315px;
 }
 
-/* line 9, ../sass/_partials/_base.scss */
+/* line 7, ../sass/_partials/_base.scss */
 a {
   color: #02AAF3;
   text-decoration: none;
 }
 
-/* line 14, ../sass/_partials/_base.scss */
+/* line 12, ../sass/_partials/_base.scss */
 b, strong {
   font-weight: normal;
   font-family: "LatoBold";
 }
 
-/* line 19, ../sass/_partials/_base.scss */
+/* line 17, ../sass/_partials/_base.scss */
 .pageHeader-primaryNav {
   display: none;
 }
 
-/* line 23, ../sass/_partials/_base.scss */
+/* line 21, ../sass/_partials/_base.scss */
 .pageWrapper {
   overflow: hidden;
-  width: 100%;
+  *zoom: 1;
   max-width: 100%;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* line 32, ../sass/_partials/_base.scss */
+/* line 25, ../sass/_partials/_base.scss */
 .pageContent {
   padding-top: 80px;
 }
 @media screen and (max-width: 769px) {
-  /* line 32, ../sass/_partials/_base.scss */
+  /* line 25, ../sass/_partials/_base.scss */
   .pageContent {
     padding-top: 64px;
   }
 }
 
-/* line 40, ../sass/_partials/_base.scss */
+/* line 33, ../sass/_partials/_base.scss */
 .sectionWhite {
   background-color: #FFFFFF;
 }
 
-/* line 44, ../sass/_partials/_base.scss */
+/* line 37, ../sass/_partials/_base.scss */
 .sectionGrey {
   background-color: #F4F4F4;
 }
 
-/* line 48, ../sass/_partials/_base.scss */
+/* line 41, ../sass/_partials/_base.scss */
 .sectionNavy {
   background-color: #1C2431;
 }
 
-/* line 52, ../sass/_partials/_base.scss */
+/* line 45, ../sass/_partials/_base.scss */
 .buttonGreen {
   display: block;
   margin: 0 auto;
@@ -843,21 +840,21 @@ b, strong {
   font-family: "LatoBold";
 }
 
-/* line 65, ../sass/_partials/_base.scss */
+/* line 58, ../sass/_partials/_base.scss */
 .buttonLarge {
   padding: 13px 10px;
   max-width: 220px;
   max-height: 50px;
 }
 
-/* line 71, ../sass/_partials/_base.scss */
+/* line 64, ../sass/_partials/_base.scss */
 .buttonSmall {
   padding: 7px 10px;
   max-width: 124px;
   max-height: 43px;
 }
 
-/* line 77, ../sass/_partials/_base.scss */
+/* line 70, ../sass/_partials/_base.scss */
 .buttonGreenTransparent {
   display: block;
   margin: 0 auto;
@@ -871,7 +868,7 @@ b, strong {
   font-family: "LatoBold";
 }
 
-/* line 90, ../sass/_partials/_base.scss */
+/* line 83, ../sass/_partials/_base.scss */
 .emphasisLink {
   padding-bottom: 5px;
   border-bottom: 3px solid #00B437;
@@ -880,7 +877,7 @@ b, strong {
   font-size: 18px;
 }
 
-/* line 98, ../sass/_partials/_base.scss */
+/* line 91, ../sass/_partials/_base.scss */
 .emphasisLink:after {
   display: inline-block;
   content: '';
