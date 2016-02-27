@@ -577,7 +577,7 @@ h3 {
   width: 100%;
   background: #FFFFFF;
   z-index: 2;
-  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 /* line 12, ../sass/_partials/_header.scss */
@@ -590,7 +590,7 @@ h3 {
   top: 0;
   left: 0;
   box-shadow: 0 4px 5.88px 0.12px rgba(0, 0, 0, 0.13);
-  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 /* line 24, ../sass/_partials/_header.scss */
@@ -639,7 +639,7 @@ h3 {
   height: 61px;
   background: #FFFFFF;
   box-shadow: 0 4px 5.88px 0.12px rgba(0, 0, 0, 0.13);
-  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 @media only screen and (max-width: 769px) {
   /* line 57, ../sass/_partials/_header.scss */
@@ -1937,8 +1937,6 @@ article .post-featureImage {
 /* line 16, ../sass/_partials/modules/_slantedmap.scss */
 .slantedMap.mapBackgroundRight:before {
   left: -40%;
-  -webkit-transform: rotate(-325deg);
-  -moz-transform: rotate(-325deg);
   transform: rotate(-325deg);
 }
 @media only screen and (max-width: 769px) {
@@ -1948,21 +1946,19 @@ article .post-featureImage {
   }
 }
 
-/* line 27, ../sass/_partials/modules/_slantedmap.scss */
+/* line 25, ../sass/_partials/modules/_slantedmap.scss */
 .slantedMap.mapBackgroundLeft:before {
   right: -40%;
-  -webkit-transform: rotate(325deg);
-  -moz-transform: rotate(325deg);
   transform: rotate(325deg);
 }
 @media only screen and (max-width: 769px) {
-  /* line 27, ../sass/_partials/modules/_slantedmap.scss */
+  /* line 25, ../sass/_partials/modules/_slantedmap.scss */
   .slantedMap.mapBackgroundLeft:before {
     right: -50%;
   }
 }
 
-/* line 38, ../sass/_partials/modules/_slantedmap.scss */
+/* line 34, ../sass/_partials/modules/_slantedmap.scss */
 .slantedMap.mapBackgroundWhite {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/map_lightlines.svg");
   background-color: #ececec;
@@ -1971,7 +1967,7 @@ article .post-featureImage {
   background-position: center;
 }
 
-/* line 44, ../sass/_partials/modules/_slantedmap.scss */
+/* line 40, ../sass/_partials/modules/_slantedmap.scss */
 .slantedMap.mapBackgroundGrey {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/wp-content/themes/ushipnetwork/images/map_darklines.svg");
   background-color: #FFFFFF;
@@ -1980,17 +1976,17 @@ article .post-featureImage {
   background-position: center;
 }
 
-/* line 50, ../sass/_partials/modules/_slantedmap.scss */
+/* line 46, ../sass/_partials/modules/_slantedmap.scss */
 .slantedMap.mapBackgroundGrey:before {
   background-color: #F4F4F4;
 }
 
-/* line 54, ../sass/_partials/modules/_slantedmap.scss */
+/* line 50, ../sass/_partials/modules/_slantedmap.scss */
 .slantedMap.mapBackgroundWhite:before {
   background-color: #FFFFFF;
 }
 
-/* line 58, ../sass/_partials/modules/_slantedmap.scss */
+/* line 54, ../sass/_partials/modules/_slantedmap.scss */
 .slantedMap-container {
   overflow: hidden;
   *zoom: 1;
@@ -2008,7 +2004,7 @@ article .post-featureImage {
   justify-content: center;
 }
 @media only screen and (max-width: 769px) {
-  /* line 58, ../sass/_partials/modules/_slantedmap.scss */
+  /* line 54, ../sass/_partials/modules/_slantedmap.scss */
   .slantedMap-container {
     min-height: 300px;
     overflow: hidden;
@@ -2024,50 +2020,50 @@ article .post-featureImage {
   }
 }
 
-/* line 71, ../sass/_partials/modules/_slantedmap.scss */
+/* line 67, ../sass/_partials/modules/_slantedmap.scss */
 .slantedMap-container > * {
   flex: 1;
 }
 
-/* line 75, ../sass/_partials/modules/_slantedmap.scss */
+/* line 71, ../sass/_partials/modules/_slantedmap.scss */
 .slantedMap-copy {
   padding: 75px 0;
 }
 @media only screen and (max-width: 769px) {
-  /* line 75, ../sass/_partials/modules/_slantedmap.scss */
+  /* line 71, ../sass/_partials/modules/_slantedmap.scss */
   .slantedMap-copy {
     display: none !important;
   }
 }
 
-/* line 83, ../sass/_partials/modules/_slantedmap.scss */
+/* line 79, ../sass/_partials/modules/_slantedmap.scss */
 .slantedMap.mapBackgroundLeft .slantedMap-image {
   order: 1;
 }
 
-/* line 87, ../sass/_partials/modules/_slantedmap.scss */
+/* line 83, ../sass/_partials/modules/_slantedmap.scss */
 .slantedMap.mapBackgroundLeft .slantedMap-copy {
   order: 2;
   margin-left: 20px;
 }
 
-/* line 92, ../sass/_partials/modules/_slantedmap.scss */
+/* line 88, ../sass/_partials/modules/_slantedmap.scss */
 .slantedMap.mapBackgroundRight .slantedMap-image {
   order: 2;
 }
 
-/* line 96, ../sass/_partials/modules/_slantedmap.scss */
+/* line 92, ../sass/_partials/modules/_slantedmap.scss */
 .slantedMap.mapBackgroundRight .slantedMap-copy {
   order: 1;
   margin-right: 20px;
 }
 
-/* line 101, ../sass/_partials/modules/_slantedmap.scss */
+/* line 97, ../sass/_partials/modules/_slantedmap.scss */
 .slantedMap.alignmentBottom .slantedMap-image {
   align-self: flex-end;
 }
 
-/* line 105, ../sass/_partials/modules/_slantedmap.scss */
+/* line 101, ../sass/_partials/modules/_slantedmap.scss */
 .slantedMap-image-image {
   display: block;
   margin: 0 auto;
@@ -2075,45 +2071,45 @@ article .post-featureImage {
   height: auto;
 }
 
-/* line 112, ../sass/_partials/modules/_slantedmap.scss */
+/* line 108, ../sass/_partials/modules/_slantedmap.scss */
 .slantedMap.alignmentMiddle .slantedMap-image-image {
   padding: 75px 0;
 }
 @media only screen and (max-width: 769px) {
-  /* line 112, ../sass/_partials/modules/_slantedmap.scss */
+  /* line 108, ../sass/_partials/modules/_slantedmap.scss */
   .slantedMap.alignmentMiddle .slantedMap-image-image {
     padding: 40px 0;
   }
 }
 
-/* line 120, ../sass/_partials/modules/_slantedmap.scss */
+/* line 116, ../sass/_partials/modules/_slantedmap.scss */
 .slantedMap.alignmentLeft .slantedMap-image-image {
   float: left;
 }
 @media only screen and (max-width: 769px) {
-  /* line 120, ../sass/_partials/modules/_slantedmap.scss */
+  /* line 116, ../sass/_partials/modules/_slantedmap.scss */
   .slantedMap.alignmentLeft .slantedMap-image-image {
     float: none;
   }
 }
 
-/* line 128, ../sass/_partials/modules/_slantedmap.scss */
+/* line 124, ../sass/_partials/modules/_slantedmap.scss */
 .slantedMap.alignmentRight .slantedMap-image-image {
   float: right;
 }
 @media only screen and (max-width: 769px) {
-  /* line 128, ../sass/_partials/modules/_slantedmap.scss */
+  /* line 124, ../sass/_partials/modules/_slantedmap.scss */
   .slantedMap.alignmentRight .slantedMap-image-image {
     float: none;
   }
 }
 
-/* line 136, ../sass/_partials/modules/_slantedmap.scss */
+/* line 132, ../sass/_partials/modules/_slantedmap.scss */
 .slantedMap-copyMobile {
   display: none;
 }
 @media only screen and (max-width: 769px) {
-  /* line 136, ../sass/_partials/modules/_slantedmap.scss */
+  /* line 132, ../sass/_partials/modules/_slantedmap.scss */
   .slantedMap-copyMobile {
     display: block !important;
     overflow: hidden;
@@ -2129,12 +2125,12 @@ article .post-featureImage {
   }
 }
 
-/* line 145, ../sass/_partials/modules/_slantedmap.scss */
+/* line 141, ../sass/_partials/modules/_slantedmap.scss */
 .slantedMap.mapBackgroundGrey + .slantedMap-copyMobile {
   background-color: #F4F4F4;
 }
 
-/* line 149, ../sass/_partials/modules/_slantedmap.scss */
+/* line 145, ../sass/_partials/modules/_slantedmap.scss */
 .slantedMap-copy-intro {
   padding-bottom: 18px;
   margin-bottom: 24px;
@@ -2143,29 +2139,29 @@ article .post-featureImage {
   border-bottom: 1px solid #dddddd;
 }
 
-/* line 157, ../sass/_partials/modules/_slantedmap.scss */
+/* line 153, ../sass/_partials/modules/_slantedmap.scss */
 .slantedMap-copy-block-text {
   line-height: 30px;
 }
 
-/* line 161, ../sass/_partials/modules/_slantedmap.scss */
+/* line 157, ../sass/_partials/modules/_slantedmap.scss */
 .slantedMap-copy-block-text:not(:last-child) {
   padding-bottom: 20px;
 }
 
-/* line 165, ../sass/_partials/modules/_slantedmap.scss */
+/* line 161, ../sass/_partials/modules/_slantedmap.scss */
 .slantedMap-copy-block-text h6 {
   font-family: "LatoBold";
   text-transform: uppercase;
 }
 
-/* line 170, ../sass/_partials/modules/_slantedmap.scss */
+/* line 166, ../sass/_partials/modules/_slantedmap.scss */
 .slantedMap-copy-block-text strong {
   display: inline-block;
   line-height: 24px;
 }
 
-/* line 175, ../sass/_partials/modules/_slantedmap.scss */
+/* line 171, ../sass/_partials/modules/_slantedmap.scss */
 .slantedMap-copy-block-text strong:not(:last-child) {
   padding-bottom: 10px;
 }
@@ -2750,94 +2746,61 @@ article .post-featureImage {
 /* line 114, ../sass/_partials/modules/_splitscreen.scss */
 .splitScreen-panel.panelHover:before {
   opacity: 0;
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -moz-transition-timing-function: ease-in-out;
-  -o-transition-timing-function: ease-in-out;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-/* line 121, ../sass/_partials/modules/_splitscreen.scss */
+/* line 119, ../sass/_partials/modules/_splitscreen.scss */
 .splitScreen-panel.panelHover:hover:before {
   opacity: 1;
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -moz-transition-timing-function: ease-in-out;
-  -o-transition-timing-function: ease-in-out;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-/* line 129, ../sass/_partials/modules/_splitscreen.scss */
+/* line 125, ../sass/_partials/modules/_splitscreen.scss */
 .splitScreen-panel.panelHover:hover * {
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -moz-transition-timing-function: ease-in-out;
-  -o-transition-timing-function: ease-in-out;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-/* line 137, ../sass/_partials/modules/_splitscreen.scss */
+/* line 131, ../sass/_partials/modules/_splitscreen.scss */
 .splitScreen-panel.panelHover:hover .splitScreen-panel-headline {
   text-shadow: none;
 }
-/* line 141, ../sass/_partials/modules/_splitscreen.scss */
+/* line 135, ../sass/_partials/modules/_splitscreen.scss */
 .splitScreen-panel.panelHover:hover .splitScreen-panel-subheadline {
   text-shadow: none;
 }
 
-/* line 147, ../sass/_partials/modules/_splitscreen.scss */
+/* line 141, ../sass/_partials/modules/_splitscreen.scss */
 .splitScreen-panel.panelLeft.panelHover:hover:before {
   background-color: #1C2431;
 }
-/* line 151, ../sass/_partials/modules/_splitscreen.scss */
+/* line 145, ../sass/_partials/modules/_splitscreen.scss */
 .splitScreen-panel.panelLeft.panelHover:hover .splitScreen-panel-headline {
   color: #02AAF3;
 }
-/* line 155, ../sass/_partials/modules/_splitscreen.scss */
+/* line 149, ../sass/_partials/modules/_splitscreen.scss */
 .splitScreen-panel.panelLeft.panelHover:hover .circledArrow path {
   fill: #02AAF3;
 }
 
-/* line 161, ../sass/_partials/modules/_splitscreen.scss */
+/* line 155, ../sass/_partials/modules/_splitscreen.scss */
 .splitScreen-panel.panelRight.panelHover:hover:before {
   background-color: #02AAF3;
 }
-/* line 165, ../sass/_partials/modules/_splitscreen.scss */
+/* line 159, ../sass/_partials/modules/_splitscreen.scss */
 .splitScreen-panel.panelRight.panelHover:hover .splitScreen-panel-headline {
   color: #1C2431;
 }
-/* line 169, ../sass/_partials/modules/_splitscreen.scss */
+/* line 163, ../sass/_partials/modules/_splitscreen.scss */
 .splitScreen-panel.panelRight.panelHover:hover .circledArrow path {
   fill: #1C2431;
 }
 
-/* line 174, ../sass/_partials/modules/_splitscreen.scss */
+/* line 168, ../sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip {
   background-color: #F4F4F4;
 }
 
-/* line 178, ../sass/_partials/modules/_splitscreen.scss */
+/* line 172, ../sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip-container {
   overflow: hidden;
   *zoom: 1;
@@ -2853,7 +2816,7 @@ article .post-featureImage {
   overflow: hidden;
 }
 @media only screen and (max-width: 769px) {
-  /* line 178, ../sass/_partials/modules/_splitscreen.scss */
+  /* line 172, ../sass/_partials/modules/_splitscreen.scss */
   .splitScreen-strip-container {
     overflow: hidden;
     *zoom: 1;
@@ -2868,7 +2831,7 @@ article .post-featureImage {
   }
 }
 
-/* line 188, ../sass/_partials/modules/_splitscreen.scss */
+/* line 182, ../sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip {
   z-index: 1;
   position: relative;
@@ -2882,32 +2845,32 @@ article .post-featureImage {
   justify-content: center;
 }
 
-/* line 201, ../sass/_partials/modules/_splitscreen.scss */
+/* line 195, ../sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip:first-child {
   width: -webkit-calc(50% + 15px);
   width: calc(50% + 15px);
 }
 @media only screen and (max-width: 769px) {
-  /* line 201, ../sass/_partials/modules/_splitscreen.scss */
+  /* line 195, ../sass/_partials/modules/_splitscreen.scss */
   .splitScreen-strip:first-child {
     width: 100%;
     border-bottom: 1px solid #dddddd;
   }
 }
 
-/* line 210, ../sass/_partials/modules/_splitscreen.scss */
+/* line 204, ../sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip:nth-child(2) {
   width: -webkit-calc(50% - 15px);
   width: calc(50% - 15px);
 }
 @media only screen and (max-width: 769px) {
-  /* line 210, ../sass/_partials/modules/_splitscreen.scss */
+  /* line 204, ../sass/_partials/modules/_splitscreen.scss */
   .splitScreen-strip:nth-child(2) {
     width: 100%;
   }
 }
 
-/* line 218, ../sass/_partials/modules/_splitscreen.scss */
+/* line 212, ../sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip-headline-container {
   margin-bottom: 7px;
   display: flex;
@@ -2916,88 +2879,66 @@ article .post-featureImage {
   justify-content: space-between;
 }
 @media only screen and (max-width: 769px) {
-  /* line 218, ../sass/_partials/modules/_splitscreen.scss */
+  /* line 212, ../sass/_partials/modules/_splitscreen.scss */
   .splitScreen-strip-headline-container {
     margin-bottom: 0;
   }
 }
 
-/* line 230, ../sass/_partials/modules/_splitscreen.scss */
+/* line 224, ../sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip-headline {
   font-size: 24px;
   line-height: 29px;
   margin-right: 15px;
 }
 @media only screen and (max-width: 769px) {
-  /* line 230, ../sass/_partials/modules/_splitscreen.scss */
+  /* line 224, ../sass/_partials/modules/_splitscreen.scss */
   .splitScreen-strip-headline {
     font-size: 18px;
   }
 }
 
-/* line 240, ../sass/_partials/modules/_splitscreen.scss */
+/* line 234, ../sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip-arrow {
   display: block;
 }
 
-/* line 244, ../sass/_partials/modules/_splitscreen.scss */
+/* line 238, ../sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip-subheadline {
   font-size: 14px;
   line-height: 17px;
 }
 @media only screen and (max-width: 769px) {
-  /* line 244, ../sass/_partials/modules/_splitscreen.scss */
+  /* line 238, ../sass/_partials/modules/_splitscreen.scss */
   .splitScreen-strip-subheadline {
     display: none;
   }
 }
 
-/* line 253, ../sass/_partials/modules/_splitscreen.scss */
+/* line 247, ../sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip .circledArrow {
   width: 24px;
   height: 24px;
 }
 
-/* line 258, ../sass/_partials/modules/_splitscreen.scss */
+/* line 252, ../sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip .circledArrow path {
   fill: #999999;
 }
 
-/* line 262, ../sass/_partials/modules/_splitscreen.scss */
+/* line 256, ../sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip:hover {
   background-color: #FFFFFF;
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -moz-transition-timing-function: ease-in-out;
-  -o-transition-timing-function: ease-in-out;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-/* line 269, ../sass/_partials/modules/_splitscreen.scss */
+/* line 261, ../sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip:hover .circledArrow path {
   fill: #02AAF3;
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -moz-transition-timing-function: ease-in-out;
-  -o-transition-timing-function: ease-in-out;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-/* line 276, ../sass/_partials/modules/_splitscreen.scss */
+/* line 266, ../sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip:after {
   content: '';
   position: absolute;
@@ -3006,40 +2947,24 @@ article .post-featureImage {
   width: 100%;
   height: 100%;
   background: #F4F4F4;
-  -webkit-transform-origin: 100% 0;
-  -ms-transform-origin: 100% 0;
   transform-origin: 100% 0;
-  -moz-transform: skew(-20deg);
-  -ms-transform: skew(-20deg);
-  -webkit-transform: skew(-20deg);
   transform: skew(-20deg);
   z-index: -1;
 }
 @media only screen and (max-width: 769px) {
-  /* line 276, ../sass/_partials/modules/_splitscreen.scss */
+  /* line 266, ../sass/_partials/modules/_splitscreen.scss */
   .splitScreen-strip:after {
     display: none;
   }
 }
 
-/* line 295, ../sass/_partials/modules/_splitscreen.scss */
+/* line 283, ../sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip:first-child:after {
   border-right: 1px solid #dddddd;
 }
 
-/* line 299, ../sass/_partials/modules/_splitscreen.scss */
+/* line 287, ../sass/_partials/modules/_splitscreen.scss */
 .splitScreen-strip:hover:after {
   background: #FFFFFF;
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -moz-transition-timing-function: ease-in-out;
-  -o-transition-timing-function: ease-in-out;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
