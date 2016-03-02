@@ -17,7 +17,7 @@
 }
 
 .splitScreen-row:first-child {
-  flex: 4;
+  flex: 9;
   display: flex;
 }
 
@@ -26,7 +26,6 @@
   float: left;
   width: 50%;
   margin: 0 auto;
-  min-height: 740px;
   @include background-image;
   display: flex;
   align-items: center;
@@ -69,6 +68,8 @@
 
 .splitScreen-panel-container {
   @include container(475px, 0, 0, 60px);
+  margin-top: 20px;
+  margin-bottom: 20px;
   z-index: 1;
 
   @media #{$default-break} {
@@ -189,12 +190,15 @@
 }
 
 .splitScreen-strip-container {
-  @include container(100%, 20px, 20px, 60px);
-  max-height: 86px;
-  overflow: hidden;
+  @include container(100%, 0, 0, 60px);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-height: 55px;
 
   @media #{$default-break} {
-    @include container(100%,15px, 15px, 20px);
+    @include container(100%, 0, 0, 20px);
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
 
@@ -220,7 +224,7 @@
   }
 }
 
-.splitScreen-strip:nth-child(2) {
+.splitScreen-strip:last-child {
   @include calc(width, "50% - 15px");
 
   @media #{$default-break} {

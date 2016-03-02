@@ -5,7 +5,7 @@
 }
 
 .pageFooter-container {
-  @include container(1180px, 30px, 30px, 20px);
+  @include container(1180px, 15px, 15px, 20px);
   display: flex;
   justify-content: center;
 
