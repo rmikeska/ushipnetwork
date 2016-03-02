@@ -1,5 +1,24 @@
+.splitScreen {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+}
+
 .splitScreen-row {
   @include outer-container(100%);
+  width: 100%;
+  height: 100%;
+
+  @media #{$default-break} {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.splitScreen-row:first-child {
+  flex: 4;
+  display: flex;
 }
 
 .splitScreen-panel {

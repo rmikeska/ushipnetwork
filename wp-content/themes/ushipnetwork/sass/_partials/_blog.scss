@@ -2,6 +2,7 @@
 
 .categoryMenu {
   @include container(1020px, 50px, 9px, 20px);
+  width: 100%;
 
   @media only screen and (max-width: 1080px) {
     display: none;

@@ -1,9 +1,7 @@
 /*** Footer ***/
 
 .pageFooter {
-  @media #{$default-break} {
-    display: none;
-  }
+  flex: none;
 }
 
 .pageFooter-container {
