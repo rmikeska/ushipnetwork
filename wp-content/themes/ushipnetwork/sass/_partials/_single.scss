@@ -2,6 +2,7 @@
 
 article.post {
   @include container(620px, 35px, 50px, 20px);
+  width: 100%;
 }
 
 article .post-featureImage {
@@ -180,7 +181,8 @@ article .post-featureImage {
 
 .relatedPosts-strip {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-content: flex-end;
 
   @media only screen and (max-width: 1080px) {
     flex-direction: column;
