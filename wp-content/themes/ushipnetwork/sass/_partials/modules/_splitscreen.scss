@@ -34,7 +34,6 @@
   align-items: center;
   justify-content: center;
   z-index: 1;
-  min-height: 400px;
 
   @media #{$default-break} {
     float: none;
@@ -228,7 +227,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 80px;
 }
 
 .splitScreen-strip:first-child {
