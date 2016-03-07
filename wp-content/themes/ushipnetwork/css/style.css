@@ -2665,28 +2665,28 @@ article .post-featureImage {
 
 @media only screen and (max-width: 769px) {
   /* line 45, ../sass/_partials/modules/_splitscreen.scss */
-  .splitScreen-panel.panelLeft {
+  .splitScreen-panel:first-child {
     background-color: #1C2431;
     background-image: none !important;
   }
 }
 @media only screen and (max-width: 769px) {
   /* line 52, ../sass/_partials/modules/_splitscreen.scss */
-  .splitScreen-panel.panelLeft:before {
+  .splitScreen-panel:first-child:before {
     display: none;
   }
 }
 
 @media only screen and (max-width: 769px) {
   /* line 59, ../sass/_partials/modules/_splitscreen.scss */
-  .splitScreen-panel.panelRight {
+  .splitScreen-panel:last-child {
     background-color: #02AAF3;
     background-image: none !important;
   }
 }
 @media only screen and (max-width: 769px) {
   /* line 66, ../sass/_partials/modules/_splitscreen.scss */
-  .splitScreen-panel.panelRight:before {
+  .splitScreen-panel:last-child:before {
     display: none;
   }
 }
@@ -2801,28 +2801,28 @@ article .post-featureImage {
 }
 
 /* line 171, ../sass/_partials/modules/_splitscreen.scss */
-.splitScreen-panel.panelLeft.panelHover:hover:before {
+.splitScreen-panel.panelHover:first-child:hover:before {
   background-color: #1C2431;
 }
 /* line 175, ../sass/_partials/modules/_splitscreen.scss */
-.splitScreen-panel.panelLeft.panelHover:hover .splitScreen-panel-headline {
+.splitScreen-panel.panelHover:first-child:hover .splitScreen-panel-headline {
   color: #02AAF3;
 }
 /* line 179, ../sass/_partials/modules/_splitscreen.scss */
-.splitScreen-panel.panelLeft.panelHover:hover .circledArrow path {
+.splitScreen-panel.panelHover:first-child:hover .circledArrow path {
   fill: #02AAF3;
 }
 
 /* line 185, ../sass/_partials/modules/_splitscreen.scss */
-.splitScreen-panel.panelRight.panelHover:hover:before {
+.splitScreen-panel.panelHover:last-child:hover:before {
   background-color: #02AAF3;
 }
 /* line 189, ../sass/_partials/modules/_splitscreen.scss */
-.splitScreen-panel.panelRight.panelHover:hover .splitScreen-panel-headline {
+.splitScreen-panel.panelHover:last-child:hover .splitScreen-panel-headline {
   color: #1C2431;
 }
 /* line 193, ../sass/_partials/modules/_splitscreen.scss */
-.splitScreen-panel.panelRight.panelHover:hover .circledArrow path {
+.splitScreen-panel.panelHover:last-child:hover .circledArrow path {
   fill: #1C2431;
 }
 

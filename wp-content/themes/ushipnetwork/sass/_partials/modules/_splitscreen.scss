@@ -42,7 +42,7 @@
   }
 }
 
-.splitScreen-panel.panelLeft {
+.splitScreen-panel:first-child {
 
   @media #{$default-break} {
     background-color: $navy;
@@ -56,7 +56,7 @@
   }
 }
 
-.splitScreen-panel.panelRight {
+.splitScreen-panel:last-child {
 
   @media #{$default-break} {
     background-color: $bright-blue;
@@ -167,7 +167,7 @@
   }
 }
 
-.splitScreen-panel.panelLeft.panelHover:hover {
+.splitScreen-panel.panelHover:first-child:hover {
   &:before {
     background-color: $navy;
   }
@@ -181,7 +181,7 @@
   }
 }
 
-.splitScreen-panel.panelRight.panelHover:hover {
+.splitScreen-panel.panelHover:last-child:hover {
   &:before {
     background-color: $bright-blue;
   }

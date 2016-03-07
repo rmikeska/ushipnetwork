@@ -195,11 +195,7 @@ class acf_field_taxonomy extends acf_field {
 	function ajax_query() {
 		
 		// validate
-		if( !acf_verify_ajax() ) {
-		
-			die();
-			
-		}
+		if( !acf_verify_ajax() ) die();
 		
 		
 		// get choices
@@ -207,11 +203,7 @@ class acf_field_taxonomy extends acf_field {
 		
 		
 		// validate
-		if( !$choices ) {
-			
-			die();
-			
-		}
+		if( !$choices ) die();
 		
 		
 		// return JSON
@@ -376,8 +368,16 @@ class acf_field_taxonomy extends acf_field {
 			}
 			
 			
-			// return
-			return $term_ids;
+			// update value
+			$value = $term_ids;
+						
+		}
+		
+		
+		// convert back from array if neccessary
+		if( $field['field_type'] == 'select' || $field['field_type'] == 'radio' ) {
+			
+			$value = array_shift($value);
 			
 		}
 		
@@ -526,19 +526,11 @@ class acf_field_taxonomy extends acf_field {
 	function format_value( $value, $post_id, $field ) {
 		
 		// bail early if no value
-		if( empty($value) ) {
-			
-			return $value;
-		
-		}
+		if( empty($value) ) return false;
 		
 		
 		// force value to array
 		$value = acf_get_array( $value );
-		
-		
-		// convert values to int
-		$value = array_map('intval', $value);
 		
 		
 		// load posts if needed
@@ -560,6 +552,7 @@ class acf_field_taxonomy extends acf_field {
 
 		// return
 		return $value;
+		
 	}
 	
 	
@@ -579,10 +572,6 @@ class acf_field_taxonomy extends acf_field {
 		
 		// force value to array
 		$field['value'] = acf_get_array( $field['value'] );
-		
-		
-		// convert values to int
-		$field['value'] = array_map('intval', $field['value']);
 		
 		
 		// vars

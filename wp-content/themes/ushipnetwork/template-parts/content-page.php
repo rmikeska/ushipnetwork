@@ -9,11 +9,6 @@
 
 ?>
 
-<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-	<?php include("acf-modules/top-content.php");?>
-	<?php include("acf-modules/body-content.php");?>
-	<?php include("acf-modules/bottom-content.php");?>
-
-</div>
-
+<?php include("acf-modules/top-content.php");?>
+<?php include("acf-modules/body-content.php");?>
+<?php include("acf-modules/bottom-content.php");?>
