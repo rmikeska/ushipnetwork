@@ -1,3 +1,5 @@
+/*** Split Screen ***/
+
 .splitScreen {
   display: flex;
   flex-direction: column;
@@ -297,6 +299,11 @@
 
 .splitScreen-strip:hover .circledArrow path {
   fill: $bright-blue;
+  transition: all 0.2s ease-in-out;
+}
+
+.splitScreen-strip:hover .splitScreen-strip-headline {
+  color: $black;
   transition: all 0.2s ease-in-out;
 }
 
