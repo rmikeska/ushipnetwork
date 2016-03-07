@@ -6,7 +6,7 @@
       <a href="<?php echo $panel_url; ?>" class="splitScreen-panel" style="background-image: url('<?php echo $panel_image['url']; ?>');">
         <div class="splitScreen-panel-container">
           <h1 class="splitScreen-panel-headline"><?php the_sub_field('split_screen_panel_headline'); ?></h1>
-          <?php include("/wp-content/themes/ushipnetwork/images/circled_arrow.svg");?>
+          <?php include( get_template_directory() . '/images/circled_arrow.svg'); ?>
           <h3 class="splitScreen-panel-subheadline"><?php the_sub_field('split_screen_panel_subheadline'); ?></h3>
         </div>
       </a>
@@ -20,7 +20,7 @@
           <div class="splitScreen-strip-headline-container">
             <h2 class="splitScreen-strip-headline"><?php the_sub_field('split_screen_strip_headline'); ?></h2>
             <span class="splitScreen-strip-arrow">
-              <?php include("/wp-content/themes/ushipnetwork/images/circled_arrow.svg");?>
+              <?php include( get_template_directory() . '/images/circled_arrow.svg'); ?>
             </span>
           </div>
           <h4 class="splitScreen-strip-subheadline"><?php the_sub_field('split_screen_strip_subheadline'); ?></h4>
