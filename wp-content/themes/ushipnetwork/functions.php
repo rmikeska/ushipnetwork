@@ -192,7 +192,7 @@ add_action('admin_init', 'remove_editor');
  */
 function remove_about_posts_menu() {
 	$siteurl = network_site_url();
-	if ($siteurl == "https://ushipabout2.staging.wpengine.com") {
+	if ($siteurl == "http://ushipabout2.staging.wpengine.com") {
 		remove_menu_page('edit.php');
 	}
 }
