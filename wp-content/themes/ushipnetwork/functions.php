@@ -178,3 +178,22 @@ function short_title($after = null, $length) {
 	}
 	return $mytitle;
 }
+
+/**
+ * Remove editor from pages as they're unused with ACF Pro
+ */
+function remove_editor() {
+  remove_post_type_support('page', 'editor');
+}
+add_action('admin_init', 'remove_editor');
+
+/**
+ * Remove Posts Menu on About Staging Site
+ */
+function remove_about_posts_menu() {
+	$siteurl = network_site_url();
+	if ($siteurl == "https://ushipabout2.staging.wpengine.com") {
+		remove_menu_page('edit.php');
+	}
+}
+add_action( 'admin_menu', 'remove_about_posts_menu' );
