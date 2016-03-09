@@ -191,7 +191,7 @@ add_action('admin_init', 'remove_editor');
  * Remove Posts Menu on About Staging Site
  */
 function remove_about_posts_menu() {
-	$siteurl = network_site_url();
+	$siteurl = site_url();
 	if ($siteurl == "http://ushipabout2.staging.wpengine.com") {
 		remove_menu_page('edit.php');
 	}
