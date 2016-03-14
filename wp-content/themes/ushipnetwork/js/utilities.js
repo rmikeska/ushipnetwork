@@ -54,4 +54,25 @@ jQuery(document).ready(function ($) {
             }, 1000);
         }
     });
+
+
+
+    // Tabbed Page Template Effects
+
+    $('.tabbedPageWrapper .tabbedPage:not(:first-child)').hide();
+
+    $('.tabbedPageMenu-list li:first-child').addClass('tabbedPage-active');
+
+    $('.tabbedPageMenu-list li a').click(function () {
+
+        var elementClassName = $(this).attr('class');
+
+        $('div.' + elementClassName).show().siblings('div.tabbedPage').hide();
+
+        $('div.' + elementClassName).children().hide().each(function (i) {
+            $(this).delay((i++) * 100).fadeTo(300, 1);
+        });
+
+        $(this).parent().addClass('tabbedPage-active').siblings().removeClass('tabbedPage-active');
+    });
 })

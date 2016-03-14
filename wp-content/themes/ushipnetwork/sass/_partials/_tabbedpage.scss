@@ -1,0 +1,65 @@
+.tabbedPageMenu {
+  @include container(780px, 50px, 40px, 20px);
+  width: 100%;
+
+  @media only screen and (max-width: 1080px) {
+    display: none;
+  }
+}
+
+.tabbedPageMenu-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tabbedPageMenu-list li {
+  flex: 1;
+  text-align: center;
+}
+
+.tabbedPageMenu-list li a {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100px;
+  min-height: 55px;
+  padding-top: 10px;
+  cursor: pointer;
+  color: $base-text-color;
+  text-transform: uppercase;
+  font-family: $lato-bold;
+  letter-spacing: 0.1em;
+  line-height: 17px;
+  font-size: 14px;
+}
+
+.tabbedPageMenu-list li:not(:last-child) a {
+  margin-right: 20px;
+}
+
+.tabbedPageMenu-list li a {
+  border-bottom-color: transparent;
+}
+
+.tabbedPageMenu-list li a:hover,
+.tabbedPageMenu-list li.tabbedPage-active a {
+  transition: border-bottom-color 0.2s ease;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: $bright-blue;
+}
+
+.tabbedPage {
+  outline: none;
+}
+
+.tabbedPageMenu-list li:not(:last-child):after {
+  display: inline-block;
+  vertical-align: middle;
+  content: '';
+  background-image: linear-gradient(transparent, transparent), url("#{$asset-path}/divider_slash.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 55px;
+  width: 27px;
+}

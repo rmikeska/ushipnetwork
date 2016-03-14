@@ -11,9 +11,9 @@ get_header(); ?>
 
   <?php
 
-  $thepages = array ('tabbed_page_1','tabbed_page_2');
+  $thepages = array ('tabbed_page_1','tabbed_page_2','tabbed_page_3','tabbed_page_4','tabbed_page_5');
 
-  echo '<div class="tabbedPageMenu"><ul>';
+  echo '<div class="tabbedPageMenu"><ul class="tabbedPageMenu-list">';
 
   foreach ($thepages as $thepage) {
 
@@ -21,7 +21,9 @@ get_header(); ?>
 
     <?php if (get_row_layout() == 'tab_info'): ?>
 
-      <li><a href=""><?php the_sub_field('tab_title'); ?></a></li>
+      <?php $tab_title = get_sub_field('tab_title'); ?>
+
+      <li><a href="#<?php print (str_replace(' ', '-', strtolower($tab_title))); ?>" class="tab-<?php print (str_replace(' ', '-', strtolower($tab_title))); ?>"><?php echo $tab_title; ?></a></li>
 
     <?php endif; ?>
 
@@ -30,6 +32,7 @@ get_header(); ?>
 
   echo '</ul></div>';
 
+  echo '<section class="tabbedPageWrapper">';
 
   foreach ($thepages as $thepage) {
 
@@ -37,7 +40,9 @@ get_header(); ?>
 
       <?php if (get_row_layout() == 'tab_info'): ?>
 
-        <div class="<?php the_sub_field('tab_title'); ?>">
+        <?php $tab_title = get_sub_field('tab_title'); ?>
+
+        <div class="tabbedPage tab-<?php print (str_replace(' ', '-', strtolower($tab_title))); ?>" id="<?php print (str_replace(' ', '-', strtolower($tab_title))); ?>">
 
       <?php endif; ?>
 
@@ -45,6 +50,8 @@ get_header(); ?>
 
     <?php endwhile; endif; echo '</div>';?>
   <?php }
+
+  echo '</section>';
 
   ?>
 

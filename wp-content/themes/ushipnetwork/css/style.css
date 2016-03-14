@@ -746,8 +746,12 @@ b, strong {
   letter-spacing: 0.1em;
   line-height: 24px; }
 
+.categoryMenu-list li a {
+  border-bottom-color: transparent; }
+
 .categoryMenu-list li a:hover,
 .categoryMenu-list li.categoryMenu-active a {
+  transition: border-bottom-color 0.2s ease;
   border-bottom-width: 3px;
   border-bottom-style: solid;
   border-bottom-color: #02AAF3; }
@@ -1086,6 +1090,73 @@ article .post-featureImage {
     content: "";
     display: table; }
 
+.tabbedPageMenu {
+  max-width: -webkit-calc(780px + 20px*2);
+  max-width: calc(780px + 20px*2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  width: 100%; }
+  .tabbedPageMenu::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media only screen and (max-width: 1080px) {
+    .tabbedPageMenu {
+      display: none; } }
+
+.tabbedPageMenu-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.tabbedPageMenu-list li {
+  flex: 1;
+  text-align: center; }
+
+.tabbedPageMenu-list li a {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100px;
+  min-height: 55px;
+  padding-top: 10px;
+  cursor: pointer;
+  color: #262626;
+  text-transform: uppercase;
+  font-family: "LatoBold";
+  letter-spacing: 0.1em;
+  line-height: 17px;
+  font-size: 14px; }
+
+.tabbedPageMenu-list li:not(:last-child) a {
+  margin-right: 20px; }
+
+.tabbedPageMenu-list li a {
+  border-bottom-color: transparent; }
+
+.tabbedPageMenu-list li a:hover,
+.tabbedPageMenu-list li.tabbedPage-active a {
+  transition: border-bottom-color 0.2s ease;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: #02AAF3; }
+
+.tabbedPage {
+  outline: none; }
+
+.tabbedPageMenu-list li:not(:last-child):after {
+  display: inline-block;
+  vertical-align: middle;
+  content: '';
+  background-image: linear-gradient(transparent, transparent), url("/wp-content/themes/ushipnetwork/images/divider_slash.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 55px;
+  width: 27px; }
+
 /*** Bios ***/
 .bios-container {
   max-width: -webkit-calc(820px + 20px*2);
@@ -1396,8 +1467,14 @@ article .post-featureImage {
     .heroSmall .hero-container {
       min-height: 215px; } }
 
-.heroLarge .hero-container {
+.heroMedium .hero-container {
   min-height: 350px; }
+  @media only screen and (max-width: 769px) {
+    .heroMedium .hero-container {
+      min-height: 215px; } }
+
+.heroLarge .hero-container {
+  min-height: 520px; }
   @media only screen and (max-width: 769px) {
     .heroLarge .hero-container {
       min-height: 215px; } }
@@ -1421,10 +1498,24 @@ article .post-featureImage {
     .hero-headline {
       font-size: 30px; } }
 
-.heroLarge .hero-headline {
+.heroMedium .hero-headline {
   padding-bottom: 40px; }
   @media only screen and (max-width: 769px) {
+    .heroMedium .hero-headline {
+      padding-bottom: 20px; } }
+
+.heroLarge .hero-headline {
+  font-size: 48px;
+  padding-bottom: 20px; }
+  @media only screen and (max-width: 769px) {
     .heroLarge .hero-headline {
+      font-size: 35px;
+      padding-bottom: 20px; } }
+
+.heroLarge .hero-subheadline {
+  padding-bottom: 25px; }
+  @media only screen and (max-width: 769px) {
+    .heroLarge .hero-subheadline {
       padding-bottom: 20px; } }
 
 .hero-subheadline {
@@ -1469,7 +1560,7 @@ article .post-featureImage {
 .longFormContent div:not(:last-child):after {
   display: block;
   content: '';
-  background-image: linear-gradient(transparent, transparent), url("/wp-content/themes/ushipnetwork/images/paragraph_slash.svg");
+  background-image: linear-gradient(transparent, transparent), url("/wp-content/themes/ushipnetwork/images/divider_slash.svg");
   background-repeat: no-repeat;
   background-position: center;
   height: 27px;

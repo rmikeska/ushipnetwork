@@ -30,8 +30,13 @@
   line-height: 24px;
 }
 
+.categoryMenu-list li a {
+  border-bottom-color: transparent;
+}
+
 .categoryMenu-list li a:hover,
-.categoryMenu-list li.categoryMenu-active a{
+.categoryMenu-list li.categoryMenu-active a {
+  transition: border-bottom-color 0.2s ease;
   border-bottom-width: 3px;
   border-bottom-style: solid;
   border-bottom-color: $bright-blue;

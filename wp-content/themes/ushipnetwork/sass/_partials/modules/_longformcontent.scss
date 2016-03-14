@@ -15,7 +15,7 @@
 .longFormContent div:not(:last-child):after {
   display: block;
   content: '';
-  background-image: linear-gradient(transparent, transparent), url("#{$asset-path}/paragraph_slash.svg");
+  background-image: linear-gradient(transparent, transparent), url("#{$asset-path}/divider_slash.svg");
   background-repeat: no-repeat;
   background-position: center;
   height: 27px;
