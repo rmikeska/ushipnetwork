@@ -18,9 +18,9 @@
       <small class="pageFooter-legal">Copyright &copy; 2016, uShip Inc. and its licensors. All rights reserved.</small>
       <div class="pageFooter-links">
         <ul class="pageFooter-links-list">
-          <li class="pageFooter-links-list-item"><a href="#" target="_blank">uShip User Agreement</a></li>
-          <li class="pageFooter-links-list-item"><a href="#" target="_blank">Privacy Policy</a></li>
-          <li class="pageFooter-links-list-item"><a href="#" target="_blank">uShip Site Map</a></li>
+          <li class="pageFooter-links-list-item"><a href="http://www.uship.com/user_agreement.aspx" target="_blank">uShip User Agreement</a></li>
+          <li class="pageFooter-links-list-item"><a href="http://www.uship.com/privacy.aspx" target="_blank">Privacy Policy</a></li>
+          <li class="pageFooter-links-list-item"><a href="http://www.uship.com/sitemap.aspx" target="_blank">uShip Site Map</a></li>
         </ul>
       </div>
     </div>
