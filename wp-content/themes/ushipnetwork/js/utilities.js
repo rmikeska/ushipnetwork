@@ -93,4 +93,22 @@ jQuery(document).ready(function ($) {
             }
         });
     }
+
+
+
+    // Intro Slide Module
+
+    if ($('.introSlide-slideshow-slide').length > 1) {
+
+        $('.introSlide-slideshow > .introSlide-slideshow-slide:gt(0)').hide();
+
+        setInterval(function () {
+            $('.introSlide-slideshow > .introSlide-slideshow-slide:first')
+            .fadeOut(2000)
+            .next()
+            .fadeIn(2000)
+            .end()
+            .appendTo('.introSlide-slideshow');
+        },  3000);
+    }
 })
