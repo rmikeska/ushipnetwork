@@ -75,4 +75,22 @@ jQuery(document).ready(function ($) {
 
         $(this).parent().addClass('tabbedPage-active').siblings().removeClass('tabbedPage-active');
     });
+
+    if (window.location.hash) {
+
+        var hash = window.location.hash;
+        var hashValue = window.location.hash.replace('#', '');
+
+        $('div.tabbedPage').each(function () {
+            if ($(this).attr('id') == hashValue) {
+                $(this).show().siblings('div.tabbedPage').hide();
+            }
+        });
+
+        $('.tabbedPageMenu-list li a').each(function () {
+            if ($(this).attr('href') == hash) {
+                $(this).parent().addClass('tabbedPage-active').siblings().removeClass('tabbedPage-active');
+            }
+        });
+    }
 })
