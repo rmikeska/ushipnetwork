@@ -100,15 +100,15 @@ jQuery(document).ready(function ($) {
 
     if ($('.introSlide-slideshow-slide').length > 1) {
 
-        $('.introSlide-slideshow > .introSlide-slideshow-slide:gt(0)').hide();
+        $('.introSlide-slideshow > .introSlide-slideshow-slide:first-child').show();
 
         setInterval(function () {
             $('.introSlide-slideshow > .introSlide-slideshow-slide:first')
-            .fadeOut(2000)
+            .fadeOut(3000)
             .next()
-            .fadeIn(2000)
+            .fadeIn(3000)
             .end()
             .appendTo('.introSlide-slideshow');
-        },  3000);
+        },  5000);
     }
 })
