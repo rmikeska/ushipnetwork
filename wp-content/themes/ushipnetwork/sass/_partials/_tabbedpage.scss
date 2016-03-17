@@ -22,8 +22,7 @@
   display: inline-block;
   vertical-align: middle;
   max-width: 100px;
-  min-height: 55px;
-  padding-top: 10px;
+  padding-top: 8px;
   cursor: pointer;
   color: $base-text-color;
   text-transform: uppercase;
@@ -33,20 +32,19 @@
   font-size: 14px;
 }
 
-.tabbedPageMenu-list li:not(:last-child) a {
-  margin-right: 20px;
+.tabbedPageMenu-list li a:after {
+  display: block;
+  margin: 5px auto 0 auto;
+  content: '';
+  width: 76px;
+  height: 3px;
+  background: transparent;
 }
 
-.tabbedPageMenu-list li a {
-  border-bottom-color: transparent;
-}
-
-.tabbedPageMenu-list li a:hover,
-.tabbedPageMenu-list li.tabbedPage-active a {
-  transition: border-bottom-color 0.2s ease;
-  border-bottom-width: 3px;
-  border-bottom-style: solid;
-  border-bottom-color: $bright-blue;
+.tabbedPageMenu-list li a:hover:after,
+.tabbedPageMenu-list li.tabbedPage-active a:after {
+  transition: background 0.2s ease;
+  background: $bright-blue;
 }
 
 .tabbedPage {
@@ -62,4 +60,9 @@
   background-position: center;
   height: 55px;
   width: 27px;
+  margin-left: 20px;
+}
+
+.tabbedPageMenu-list li:last-child {
+  margin-left: -20px;
 }

@@ -1121,8 +1121,7 @@ article .post-featureImage {
   display: inline-block;
   vertical-align: middle;
   max-width: 100px;
-  min-height: 55px;
-  padding-top: 10px;
+  padding-top: 8px;
   cursor: pointer;
   color: #262626;
   text-transform: uppercase;
@@ -1131,18 +1130,18 @@ article .post-featureImage {
   line-height: 17px;
   font-size: 14px; }
 
-.tabbedPageMenu-list li:not(:last-child) a {
-  margin-right: 20px; }
+.tabbedPageMenu-list li a:after {
+  display: block;
+  margin: 5px auto 0 auto;
+  content: '';
+  width: 76px;
+  height: 3px;
+  background: transparent; }
 
-.tabbedPageMenu-list li a {
-  border-bottom-color: transparent; }
-
-.tabbedPageMenu-list li a:hover,
-.tabbedPageMenu-list li.tabbedPage-active a {
-  transition: border-bottom-color 0.2s ease;
-  border-bottom-width: 3px;
-  border-bottom-style: solid;
-  border-bottom-color: #02AAF3; }
+.tabbedPageMenu-list li a:hover:after,
+.tabbedPageMenu-list li.tabbedPage-active a:after {
+  transition: background 0.2s ease;
+  background: #02AAF3; }
 
 .tabbedPage {
   outline: none; }
@@ -1155,7 +1154,11 @@ article .post-featureImage {
   background-repeat: no-repeat;
   background-position: center;
   height: 55px;
-  width: 27px; }
+  width: 27px;
+  margin-left: 20px; }
+
+.tabbedPageMenu-list li:last-child {
+  margin-left: -20px; }
 
 /*** Bios ***/
 .bios-container {
