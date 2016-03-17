@@ -98,17 +98,17 @@ jQuery(document).ready(function ($) {
 
     // Intro Slide Module
 
-    if ($('.introSlide-slideshow-slide').length > 1) {
+    $('.introSlide-slideshow > .introSlide-slideshow-slide:first-child').show();
 
-        $('.introSlide-slideshow > .introSlide-slideshow-slide:first-child').show();
+    if ($('.introSlide-slideshow-slide').length > 1) {
 
         setInterval(function () {
             $('.introSlide-slideshow > .introSlide-slideshow-slide:first')
-            .fadeOut(3000)
+            .fadeOut(500)
             .next()
-            .fadeIn(3000)
+            .fadeIn(500)
             .end()
             .appendTo('.introSlide-slideshow');
-        },  5000);
+        },  3000);
     }
 })
