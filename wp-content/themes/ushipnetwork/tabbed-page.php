@@ -23,7 +23,7 @@ get_header(); ?>
 
       <?php $tab_title = get_sub_field('tab_title'); ?>
 
-      <li><a href="#<?php print (str_replace(' ', '-', strtolower($tab_title))); ?>" class="tab-<?php print (str_replace(' ', '-', strtolower($tab_title))); ?>"><?php echo $tab_title; ?></a></li>
+      <li><a class="tab-<?php print (str_replace(' ', '-', strtolower($tab_title))); ?>" title="<?php print (str_replace(' ', '-', strtolower($tab_title))); ?>"><?php echo $tab_title; ?></a></li>
 
     <?php endif; ?>
 
@@ -42,7 +42,7 @@ get_header(); ?>
 
         <?php $tab_title = get_sub_field('tab_title'); ?>
 
-        <div class="tabbedPage tab-<?php print (str_replace(' ', '-', strtolower($tab_title))); ?>" id="<?php print (str_replace(' ', '-', strtolower($tab_title))); ?>">
+        <div class="tabbedPage tab-<?php print (str_replace(' ', '-', strtolower($tab_title))); ?>" title="<?php print (str_replace(' ', '-', strtolower($tab_title))); ?>">
 
       <?php endif; ?>
 

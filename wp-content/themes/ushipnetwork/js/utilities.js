@@ -63,13 +63,17 @@ jQuery(document).ready(function ($) {
 
     $('.tabbedPageMenu-list li:first-child').addClass('tabbedPage-active');
 
-    $('.tabbedPageMenu-list li a').click(function () {
+    $('.tabbedPageMenu-list li a').click(function (e) {
+
+        e.preventDefault();
+
+        window.location.hash = $(this).attr('title');
 
         var elementClassName = $(this).attr('class');
 
-        $('div.' + elementClassName).show().siblings('div.tabbedPage').hide();
+        $('div.tabbedPage.' + elementClassName).show().siblings('div.tabbedPage').hide();
 
-        $('div.' + elementClassName).children().hide().each(function (i) {
+        $('div.tabbedPage.' + elementClassName).children().hide().each(function (i) {
             $(this).delay((i++) * 100).fadeTo(300, 1);
         });
 
@@ -78,17 +82,16 @@ jQuery(document).ready(function ($) {
 
     if (window.location.hash) {
 
-        var hash = window.location.hash;
         var hashValue = window.location.hash.replace('#', '');
 
         $('div.tabbedPage').each(function () {
-            if ($(this).attr('id') == hashValue) {
+            if ($(this).attr('title') == hashValue) {
                 $(this).show().siblings('div.tabbedPage').hide();
             }
         });
 
         $('.tabbedPageMenu-list li a').each(function () {
-            if ($(this).attr('href') == hash) {
+            if ($(this).attr('title') == hashValue) {
                 $(this).parent().addClass('tabbedPage-active').siblings().removeClass('tabbedPage-active');
             }
         });
