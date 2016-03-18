@@ -1854,6 +1854,7 @@ article .post-featureImage {
   padding-right: 20px;
   padding-bottom: 50px;
   padding-left: 20px;
+  width: 100%;
   display: flex;
   justify-content: center; }
   .pressStrip::after {
