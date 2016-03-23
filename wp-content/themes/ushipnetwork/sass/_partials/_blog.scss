@@ -45,6 +45,7 @@
 .postsGroup {
   @include container(1020px, 75px, 64px, 20px);
   width: 100%;
+  overflow: hidden;
 }
 
 .postsGroup-container {

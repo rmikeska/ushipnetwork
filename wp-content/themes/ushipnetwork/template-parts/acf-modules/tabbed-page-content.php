@@ -10,4 +10,12 @@
 
   <?php include("intro-slide.php");?>
 
+<?php elseif (get_row_layout() == 'icon_bullet_points'): ?>
+
+  <?php include("icon-bullet-points.php");?>
+
+<?php elseif (get_row_layout() == 'bookend'): ?>
+
+  <?php include("bookend.php");?>
+
 <?php endif; ?>

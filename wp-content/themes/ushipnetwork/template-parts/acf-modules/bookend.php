@@ -7,11 +7,21 @@
     <div class="bookend-divider"></div>
     <?php while(have_rows('bookend_previous_content')): the_row(); ?>
       <?php $bookend_previous_url = get_sub_field('bookend_previous_url'); ?>
-      <a class="bookend-nav bookend-navPrevious" href="<?php echo $bookend_previous_url; ?>"><?php the_sub_field('bookend_previous_text'); ?></a>
+      <a href="<?php echo $bookend_previous_url; ?>">
+        <div class="bookend-navRow bookend-navPrevious">
+          <?php include( get_template_directory() . '/images/circled_arrow.svg'); ?>
+          <span class="bookend-nav"><?php the_sub_field('bookend_previous_text'); ?></span>
+        </div>
+      </a>
     <?php endwhile; ?>
     <?php while(have_rows('bookend_next_content')): the_row(); ?>
       <?php $bookend_next_url = get_sub_field('bookend_next_url'); ?>
-      <a class="bookend-nav bookend-navNext" href="<?php echo $bookend_next_url; ?>"><?php the_sub_field('bookend_next_text'); ?></a>
+      <a href="<?php echo $bookend_next_url; ?>">
+        <div class="bookend-navRow bookend-navNext">
+          <span class="bookend-nav"><?php the_sub_field('bookend_next_text'); ?></span>
+          <?php include( get_template_directory() . '/images/circled_arrow.svg'); ?>
+        </div>
+      </a>
     <?php endwhile; ?>
   </div>
 </section>

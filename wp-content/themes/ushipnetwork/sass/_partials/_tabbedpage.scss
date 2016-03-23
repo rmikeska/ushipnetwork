@@ -1,21 +1,43 @@
 .tabbedPageMenu {
   @include container(780px, 50px, 20px, 20px);
   width: 100%;
+  overflow: hidden;
 
-  @media only screen and (max-width: 1080px) {
-    display: none;
-  }
+  // @media only screen and (max-width: 1080px) {
+  //   display: none;
+  // }
 }
 
 .tabbedPageMenu-list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-end;
+
+  @media only screen and (max-width: 800px) {
+    flex: none;
+    margin-right: -20px;
+  }
 }
 
 .tabbedPageMenu-list li {
   flex: 1;
   text-align: center;
+
+  @media only screen and (max-width: 800px) {
+    flex: none;
+    padding-right: 20px;
+    padding-bottom: 30px;
+  }
+}
+
+.tabbedPageMenu-list li:last-of-type {
+  @media only screen and (max-width: 800px) {
+    padding-right: 0;
+    padding-bottom: 0;
+  }
 }
 
 .tabbedPageMenu-list li a {
@@ -61,8 +83,16 @@
   height: 55px;
   width: 27px;
   margin-left: 20px;
+
+  @media only screen and (max-width: 800px) {
+    display: none;
+  }
 }
 
 .tabbedPageMenu-list li:last-child {
   margin-left: -20px;
+
+  @media only screen and (max-width: 800px) {
+    margin-left: 0;
+  }
 }
