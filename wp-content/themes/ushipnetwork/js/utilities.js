@@ -103,23 +103,24 @@ jQuery(document).ready(function ($) {
 
     $('.introSlide-slideshow > .introSlide-slideshow-slide:first-child').show();
 
-    if ($('.introSlide-slideshow-slide').length > 1) {
-
-        setInterval(function () {
-            $('.introSlide-slideshow > .introSlide-slideshow-slide:first')
-            .fadeOut(500)
-            .next()
-            .fadeIn(500)
-            .end()
-            .appendTo('.introSlide-slideshow');
-        },  3000);
-    }
+    setInterval(function () {
+        $('.tabbedPage .introSlide .introSlide-container .introSlide-slideshow').each(function () {
+            if ($(this).find('div.introSlide-slideshow-slide').length > 1) {
+                $(this).find('div.introSlide-slideshow-slide:first')
+                .fadeOut(500)
+                .next()
+                .fadeIn(500)
+                .end()
+                .appendTo($(this));
+            }
+        });
+    },  3000);
 
 
 
     // Temporary fix for internal page anchors on booken links
 
-    $('.tabbedPageWrapper .bookend-link').click(function() {
+    $('.tabbedPageWrapper .bookend-link').click(function () {
         location.reload();
     });
 })
