@@ -1721,7 +1721,7 @@ article .post-featureImage {
       float: none; } }
 
 .slantedMap-copyMobile {
-  display: none; }
+  display: none !important; }
   @media only screen and (max-width: 769px) {
     .slantedMap-copyMobile {
       display: block !important;

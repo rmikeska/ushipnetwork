@@ -130,7 +130,7 @@
 }
 
 .slantedMap-copyMobile {
-  display: none;
+  display: none !important;
 
   @media #{$default-break} {
     display: block !important;
