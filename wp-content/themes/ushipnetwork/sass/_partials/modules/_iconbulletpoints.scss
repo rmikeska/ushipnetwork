@@ -41,12 +41,12 @@
 .iconBulletPoints-icon svg {
   position: absolute;
   top: 39px;
-  min-width: 65px;
-  min-height: 50px;
+  width: 65px;
+  height: 50px;
 
   @media #{$default-break} {
-    min-width: 55px;
-    min-height: 40px;
+    width: 55px;
+    height: 40px;
   }
 }
 

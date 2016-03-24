@@ -7,18 +7,18 @@
     <div class="bookend-divider"></div>
     <?php while(have_rows('bookend_previous_content')): the_row(); ?>
       <?php $bookend_previous_url = get_sub_field('bookend_previous_url'); ?>
-      <a href="<?php echo $bookend_previous_url; ?>">
-        <div class="bookend-navRow bookend-navPrevious">
+      <a class="bookend-link" href="<?php echo $bookend_previous_url; ?>">
+        <div class="bookend-linkRow bookend-linkPrevious">
           <?php include( get_template_directory() . '/images/circled_arrow.svg'); ?>
-          <span class="bookend-nav"><?php the_sub_field('bookend_previous_text'); ?></span>
+          <span class="bookend-link-text"><?php the_sub_field('bookend_previous_text'); ?></span>
         </div>
       </a>
     <?php endwhile; ?>
     <?php while(have_rows('bookend_next_content')): the_row(); ?>
       <?php $bookend_next_url = get_sub_field('bookend_next_url'); ?>
-      <a href="<?php echo $bookend_next_url; ?>">
-        <div class="bookend-navRow bookend-navNext">
-          <span class="bookend-nav"><?php the_sub_field('bookend_next_text'); ?></span>
+      <a class="bookend-link" href="<?php echo $bookend_next_url; ?>">
+        <div class="bookend-linkRow bookend-linkNext">
+          <span class="bookend-link-text"><?php the_sub_field('bookend_next_text'); ?></span>
           <?php include( get_template_directory() . '/images/circled_arrow.svg'); ?>
         </div>
       </a>

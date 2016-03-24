@@ -114,4 +114,12 @@ jQuery(document).ready(function ($) {
             .appendTo('.introSlide-slideshow');
         },  3000);
     }
+
+
+
+    // Temporary fix for internal page anchors on booken links
+
+    $('.tabbedPageWrapper .bookend-link').click(function() {
+        location.reload();
+    });
 })

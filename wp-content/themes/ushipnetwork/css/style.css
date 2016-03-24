@@ -1092,8 +1092,8 @@ article .post-featureImage {
     display: table; }
 
 .tabbedPageMenu {
-  max-width: -webkit-calc(780px + 20px*2);
-  max-width: calc(780px + 20px*2);
+  max-width: -webkit-calc(800px + 20px*2);
+  max-width: calc(800px + 20px*2);
   margin-left: auto;
   margin-right: auto;
   padding-top: 50px;
@@ -1106,6 +1106,10 @@ article .post-featureImage {
     clear: both;
     content: "";
     display: table; }
+  @media only screen and (max-width: 769px) {
+    .tabbedPageMenu {
+      padding-top: 25px;
+      padding-bottom: 0; } }
 
 .tabbedPageMenu-list {
   display: flex;
@@ -1114,24 +1118,14 @@ article .post-featureImage {
   flex-direction: row;
   flex-wrap: wrap;
   align-content: flex-end; }
-  @media only screen and (max-width: 800px) {
-    .tabbedPageMenu-list {
-      flex: none;
-      margin-right: -20px; } }
 
 .tabbedPageMenu-list li {
   flex: 1;
   text-align: center; }
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 769px) {
     .tabbedPageMenu-list li {
       flex: none;
-      padding-right: 20px;
       padding-bottom: 30px; } }
-
-@media only screen and (max-width: 800px) {
-  .tabbedPageMenu-list li:last-of-type {
-    padding-right: 0;
-    padding-bottom: 0; } }
 
 .tabbedPageMenu-list li a {
   display: inline-block;
@@ -1171,14 +1165,14 @@ article .post-featureImage {
   background-position: center;
   height: 55px;
   width: 27px;
-  margin-left: 20px; }
-  @media only screen and (max-width: 800px) {
+  margin-left: 15px; }
+  @media only screen and (max-width: 769px) {
     .tabbedPageMenu-list li:not(:last-child):after {
       display: none; } }
 
 .tabbedPageMenu-list li:last-child {
-  margin-left: -20px; }
-  @media only screen and (max-width: 800px) {
+  margin-left: -15px; }
+  @media only screen and (max-width: 769px) {
     .tabbedPageMenu-list li:last-child {
       margin-left: 0; } }
 
@@ -1288,20 +1282,20 @@ article .post-featureImage {
     .bookend-intro {
       padding-top: 144px; } }
 
-.bookend-nav {
+.bookend-link-text {
   text-transform: uppercase;
   font-family: "LatoBold";
   color: #262626;
   font-size: 14px;
   letter-spacing: 0.1em; }
   @media only screen and (max-width: 769px) {
-    .bookend-nav {
+    .bookend-link-text {
       line-height: 17px; } }
 
-.bookend-navPrevious {
+.bookend-linkPrevious {
   left: 20px; }
 
-.bookend-navNext {
+.bookend-linkNext {
   right: 20px; }
 
 .bookend-divider {
@@ -1317,37 +1311,37 @@ article .post-featureImage {
       right: 0;
       background: #dddddd; } }
 
-.bookend-navRow {
+.bookend-linkRow {
   position: absolute;
   top: 50%; }
   @media only screen and (max-width: 769px) {
-    .bookend-navRow {
+    .bookend-linkRow {
       top: 60px; } }
 
-.bookend-navRow .bookend-nav {
+.bookend-linkRow .bookend-link-text {
   display: inline-block;
   vertical-align: middle; }
 
-.bookend-navRow .circledArrow {
+.bookend-linkRow .circledArrow {
   display: inline-block;
   vertical-align: middle;
   width: 24px;
   height: 24px; }
 
-.bookend-navPrevious .circledArrow {
+.bookend-linkPrevious .circledArrow {
   margin-right: 20px;
   transform: rotate(180deg); }
   @media only screen and (max-width: 769px) {
-    .bookend-navPrevious .circledArrow {
+    .bookend-linkPrevious .circledArrow {
       margin-right: 10px; } }
 
-.bookend-navNext .circledArrow {
+.bookend-linkNext .circledArrow {
   margin-left: 20px; }
   @media only screen and (max-width: 769px) {
-    .bookend-navNext .circledArrow {
+    .bookend-linkNext .circledArrow {
       margin-left: 10px; } }
 
-.bookend-navNext .bookend-nav {
+.bookend-linkNext .bookend-link-text {
   text-align: right; }
 
 /*** Contact ***/
@@ -2343,6 +2337,9 @@ article .post-featureImage {
     clear: both;
     content: "";
     display: table; }
+  @media only screen and (max-width: 769px) {
+    .introSlide-container {
+      padding-top: 20px; } }
 
 .introSlide-headline {
   padding-bottom: 30px;
@@ -2416,12 +2413,12 @@ article .post-featureImage {
 .iconBulletPoints-icon svg {
   position: absolute;
   top: 39px;
-  min-width: 65px;
-  min-height: 50px; }
+  width: 65px;
+  height: 50px; }
   @media only screen and (max-width: 769px) {
     .iconBulletPoints-icon svg {
-      min-width: 55px;
-      min-height: 40px; } }
+      width: 55px;
+      height: 40px; } }
 
 .iconBulletPoints-text {
   flex: 8; }

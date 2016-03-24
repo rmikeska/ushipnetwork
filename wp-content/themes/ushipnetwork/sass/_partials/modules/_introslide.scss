@@ -2,6 +2,10 @@
   @include container(780px, 40px, 0, 20px);
   width: 100%;
   height: 100%;
+
+  @media #{$default-break} {
+    padding-top: 20px;
+  }
 }
 
 .introSlide-headline {

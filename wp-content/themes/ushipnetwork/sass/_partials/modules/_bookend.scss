@@ -21,7 +21,7 @@
   }
 }
 
-.bookend-nav {
+.bookend-link-text {
   text-transform: uppercase;
   font-family: $lato-bold;
   color: $base-text-color;
@@ -33,11 +33,11 @@
   }
 }
 
-.bookend-navPrevious {
+.bookend-linkPrevious {
   left: 20px;
 }
 
-.bookend-navNext {
+.bookend-linkNext {
   right: 20px;
 }
 
@@ -56,7 +56,7 @@
   }
 }
 
-.bookend-navRow {
+.bookend-linkRow {
   position: absolute;
   top: 50%;
 
@@ -65,19 +65,19 @@
   }
 }
 
-.bookend-navRow .bookend-nav {
+.bookend-linkRow .bookend-link-text {
   display: inline-block;
   vertical-align: middle;
 }
 
-.bookend-navRow .circledArrow {
+.bookend-linkRow .circledArrow {
   display: inline-block;
   vertical-align: middle;
   width: 24px;
   height: 24px;
 }
 
-.bookend-navPrevious .circledArrow {
+.bookend-linkPrevious .circledArrow {
   margin-right: 20px;
   transform: rotate(180deg);
 
@@ -86,7 +86,7 @@
   }
 }
 
-.bookend-navNext .circledArrow {
+.bookend-linkNext .circledArrow {
   margin-left: 20px;
 
   @media #{$default-break} {
@@ -94,6 +94,6 @@
   }
 }
 
-.bookend-navNext .bookend-nav {
+.bookend-linkNext .bookend-link-text {
   text-align: right;
 }
