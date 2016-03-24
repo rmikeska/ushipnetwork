@@ -1751,6 +1751,27 @@ article .post-featureImage {
 .slantedMap-copy-block-text {
   line-height: 30px; }
 
+.slantedMap-copy-block-text ol {
+  margin-left: 0;
+  padding-right: 0;
+  list-style-type: none; }
+
+.slantedMap-copy-block-text ol li {
+  counter-increment: step-counter; }
+
+.slantedMap-copy-block-text ol li:not(:last-child) {
+  padding-bottom: 20px; }
+
+.slantedMap-copy-block-text ol li p {
+  margin-left: 30px; }
+
+.slantedMap-copy-block-text ol li::before {
+  content: counter(step-counter);
+  float: left;
+  width: 30px;
+  font-size: 18px;
+  font-family: "LatoBold"; }
+
 .slantedMap-copy-block-text:not(:last-child) {
   padding-bottom: 20px; }
 
@@ -2345,7 +2366,7 @@ article .post-featureImage {
 .introSlide-headline {
   padding-bottom: 30px;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 30px;
   text-align: center; }
 
 .introSlide-subheadline {
@@ -2429,6 +2450,9 @@ article .post-featureImage {
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 0.1em; }
+
+.iconBulletPoints-text-body p {
+  line-height: 30px; }
 
 .tertiaryCallout {
   background: #F4F4F4; }
