@@ -1692,6 +1692,9 @@ article .post-featureImage {
   margin: 0 auto;
   max-width: 100%;
   height: auto; }
+  @media only screen and (max-width: 769px) {
+    .slantedMap-image-image {
+      max-height: 300px; } }
 
 .slantedMap.alignmentMiddle .slantedMap-image-image {
   padding: 75px 0; }
@@ -2415,17 +2418,15 @@ article .post-featureImage {
       margin-bottom: 40px; } }
 
 .iconBulletPoints-icon {
-  flex: 1;
   margin-left: 90px;
   margin-right: 44px;
-  position: relative; }
+  margin-top: 8px; }
   @media only screen and (max-width: 769px) {
     .iconBulletPoints-icon {
-      margin-left: 0; } }
+      margin-left: 0;
+      margin-right: 15px; } }
 
 .iconBulletPoints-icon svg {
-  position: absolute;
-  top: 39px;
   width: 65px;
   height: 50px; }
   @media only screen and (max-width: 769px) {
@@ -2433,16 +2434,17 @@ article .post-featureImage {
       width: 55px;
       height: 40px; } }
 
-.iconBulletPoints-text {
-  flex: 8; }
-
-.iconBulletPoints-text-title {
+.iconBulletPoints-title {
   font-family: "LatoBold";
   margin-bottom: 10px;
   text-transform: uppercase;
-  letter-spacing: 0.1em; }
+  letter-spacing: 0.1em;
+  margin-left: 199px; }
+  @media only screen and (max-width: 769px) {
+    .iconBulletPoints-title {
+      margin-left: 70px; } }
 
-.iconBulletPoints-text-body p {
+.iconBulletPoints-body p {
   line-height: 30px; }
 
 .tertiaryCallout {
