@@ -1,4 +1,10 @@
-<?php if (get_row_layout() == 'strip_data_callout'): ?>
+<?php if (get_row_layout() == 'tab_info'): ?>
+
+  <?php $tab_title = get_sub_field('tab_title'); ?>
+
+  <div class="tabbedPage tab-<?php print (str_replace(' ', '-', strtolower($tab_title))); ?>" title="<?php print (str_replace(' ', '-', strtolower($tab_title))); ?>">
+
+<?php elseif (get_row_layout() == 'strip_data_callout'): ?>
 
   <?php include("strip-data-callout.php");?>
 

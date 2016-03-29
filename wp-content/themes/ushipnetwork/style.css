@@ -1139,7 +1139,7 @@ article .post-featureImage {
     display: table; }
 
 .tabbedPageMenu {
-  max-width: calc(800px + 20px*2);
+  max-width: calc(100% + 20px*2);
   margin-left: auto;
   margin-right: auto;
   padding-top: 50px;
@@ -1164,9 +1164,9 @@ article .post-featureImage {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
@@ -1178,29 +1178,23 @@ article .post-featureImage {
           align-content: flex-end; }
 
 .tabbedPageMenu-list li {
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  text-align: center; }
-  @media only screen and (max-width: 769px) {
-    .tabbedPageMenu-list li {
-      -webkit-flex: none;
-          -ms-flex: none;
-              flex: none;
-      padding-bottom: 30px; } }
+  text-align: center;
+  margin-bottom: 20px; }
 
 .tabbedPageMenu-list li a {
   display: inline-block;
   vertical-align: middle;
   max-width: 100px;
-  padding-top: 8px;
   cursor: pointer;
   color: #262626;
   text-transform: uppercase;
   font-family: "LatoBold";
   letter-spacing: 0.1em;
   line-height: 17px;
-  font-size: 14px; }
+  font-size: 14px;
+  margin-top: 8px;
+  margin-left: 20px;
+  margin-right: 20px; }
 
 .tabbedPageMenu-list li a:after {
   display: block;
@@ -1226,17 +1220,10 @@ article .post-featureImage {
   background-repeat: no-repeat;
   background-position: center;
   height: 55px;
-  width: 27px;
-  margin-left: 15px; }
+  width: 27px; }
   @media only screen and (max-width: 769px) {
     .tabbedPageMenu-list li:not(:last-child):after {
       display: none; } }
-
-.tabbedPageMenu-list li:last-child {
-  margin-left: -15px; }
-  @media only screen and (max-width: 769px) {
-    .tabbedPageMenu-list li:last-child {
-      margin-left: 0; } }
 
 /*** Bios ***/
 .bios-container {

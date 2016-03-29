@@ -118,9 +118,9 @@ jQuery(document).ready(function ($) {
 
 
 
-    // Temporary fix for internal page anchors on booken links
+    // Temporary fix for internal page anchors on bookend links
 
-    $('.tabbedPageWrapper .bookend-link').click(function () {
-        location.reload();
-    });
+    // $('.tabbedPageWrapper .bookend-link').click(function () {
+    //     location.reload();
+    // });
 })

@@ -11,7 +11,7 @@ get_header(); ?>
 
   <?php
 
-  $thepages = array ('tabbed_page_1','tabbed_page_2','tabbed_page_3','tabbed_page_4','tabbed_page_5');
+  $thepages = array ('tabbed_page_1','tabbed_page_2','tabbed_page_3','tabbed_page_4','tabbed_page_5','tabbed_page_6','tabbed_page_7');
 
   echo '<div class="tabbedPageMenu"><ul class="tabbedPageMenu-list">';
 
@@ -38,17 +38,9 @@ get_header(); ?>
 
     if (have_rows($thepage)) : while (have_rows($thepage)) : the_row(); ?>
 
-      <?php if (get_row_layout() == 'tab_info'): ?>
-
-        <?php $tab_title = get_sub_field('tab_title'); ?>
-
-        <div class="tabbedPage tab-<?php print (str_replace(' ', '-', strtolower($tab_title))); ?>" title="<?php print (str_replace(' ', '-', strtolower($tab_title))); ?>">
-
-      <?php endif; ?>
-
       <?php include("template-parts/acf-modules/tabbed-page-content.php");?>
 
-    <?php endwhile; endif; echo '</div>';?>
+    <?php endwhile; echo '</div>'; endif;?>
   <?php }
 
   echo '</section>';

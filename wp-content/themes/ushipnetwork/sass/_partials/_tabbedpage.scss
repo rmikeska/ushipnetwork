@@ -1,5 +1,5 @@
 .tabbedPageMenu {
-  @include container(800px, 50px, 20px, 20px);
+  @include container(100%, 50px, 20px, 20px);
   width: 100%;
   overflow: hidden;
 
@@ -12,27 +12,21 @@
 .tabbedPageMenu-list {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: flex-end;
 }
 
 .tabbedPageMenu-list li {
-  flex: 1;
   text-align: center;
-
-  @media #{$default-break} {
-    flex: none;
-    padding-bottom: 30px;
-  }
+  margin-bottom: 20px;
 }
 
 .tabbedPageMenu-list li a {
   display: inline-block;
   vertical-align: middle;
   max-width: 100px;
-  padding-top: 8px;
   cursor: pointer;
   color: $base-text-color;
   text-transform: uppercase;
@@ -40,6 +34,9 @@
   letter-spacing: 0.1em;
   line-height: 17px;
   font-size: 14px;
+  margin-top: 8px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .tabbedPageMenu-list li a:after {
@@ -70,17 +67,8 @@
   background-position: center;
   height: 55px;
   width: 27px;
-  margin-left: 15px;
 
   @media #{$default-break} {
     display: none;
-  }
-}
-
-.tabbedPageMenu-list li:last-child {
-  margin-left: -15px;
-
-  @media #{$default-break} {
-    margin-left: 0;
   }
 }
