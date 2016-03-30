@@ -2419,6 +2419,7 @@ article .post-featureImage {
       padding-bottom: 40px; } }
 
 .iconBulletPoints-icon {
+  flex: 1;
   padding-left: 90px;
   padding-top: 8px; }
   @media only screen and (max-width: 769px) {
