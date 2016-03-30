@@ -14,9 +14,7 @@
 }
 
 .iconBulletPoints-row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  display: inline-block;
   width: 100%;
 }
 
@@ -29,14 +27,13 @@
 }
 
 .iconBulletPoints-icon {
-  flex: 1;
+  float: left;
+  max-width: 20%;
   padding-left: 90px;
-  // padding-right: 44px;
   padding-top: 8px;
 
   @media #{$default-break} {
     padding-left: 0;
-    // padding-right: 15px;
   }
 }
 
@@ -64,6 +61,8 @@
 }
 
 .iconBulletPoints-body {
+  float: left;
+  max-width: 80%;
   padding-left: 44px;
 
   @media #{$default-break} {

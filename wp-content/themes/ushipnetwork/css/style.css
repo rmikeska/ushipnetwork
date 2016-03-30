@@ -2407,9 +2407,7 @@ article .post-featureImage {
       padding-bottom: 50px; } }
 
 .iconBulletPoints-row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  display: inline-block;
   width: 100%; }
 
 .iconBulletPoints-row:not(:last-child) {
@@ -2419,7 +2417,8 @@ article .post-featureImage {
       padding-bottom: 40px; } }
 
 .iconBulletPoints-icon {
-  flex: 1;
+  float: left;
+  max-width: 20%;
   padding-left: 90px;
   padding-top: 8px; }
   @media only screen and (max-width: 769px) {
@@ -2446,6 +2445,8 @@ article .post-featureImage {
       padding-left: 70px; } }
 
 .iconBulletPoints-body {
+  float: left;
+  max-width: 80%;
   padding-left: 44px; }
   @media only screen and (max-width: 769px) {
     .iconBulletPoints-body {
