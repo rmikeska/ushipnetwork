@@ -15,25 +15,27 @@
 
 .iconBulletPoints-row {
   display: flex;
+  align-items: flex-start;
   width: 100%;
 }
 
 .iconBulletPoints-row:not(:last-child) {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 
   @media #{$default-break} {
-    padding-bottom: 40px;
+    margin-bottom: 40px;
   }
 }
 
 .iconBulletPoints-icon {
-  padding-left: 90px;
-  padding-right: 44px;
-  padding-top: 8px;
+  flex: 1;
+  margin-left: 90px;
+  margin-right: 44px;
+  margin-top: 8px;
 
   @media #{$default-break} {
-    padding-left: 0;
-    padding-right: 15px;
+    margin-left: 0;
+    margin-right: 15px;
   }
 }
 
@@ -50,14 +52,18 @@
 
 .iconBulletPoints-title {
   font-family: $lato-bold;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  padding-left: 199px;
+  margin-left: 199px;
 
   @media #{$default-break} {
-    padding-left: 70px;
+    margin-left: 70px;
   }
+}
+
+.iconBulletPoints-body {
+  flex: 10;
 }
 
 .iconBulletPoints-body p {
