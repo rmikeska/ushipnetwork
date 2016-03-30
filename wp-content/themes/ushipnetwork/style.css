@@ -2578,6 +2578,9 @@ article .post-featureImage {
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%; }
 
 .iconBulletPoints-row:not(:last-child) {

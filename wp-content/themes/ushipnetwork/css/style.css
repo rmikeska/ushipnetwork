@@ -2409,6 +2409,7 @@ article .post-featureImage {
 .iconBulletPoints-row {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
   width: 100%; }
 
 .iconBulletPoints-row:not(:last-child) {
