@@ -2421,12 +2421,10 @@ article .post-featureImage {
 .iconBulletPoints-icon {
   flex: 1;
   margin-left: 90px;
-  margin-right: 44px;
   margin-top: 8px; }
   @media only screen and (max-width: 769px) {
     .iconBulletPoints-icon {
-      margin-left: 0;
-      margin-right: 15px; } }
+      margin-left: 0; } }
 
 .iconBulletPoints-icon svg {
   display: block;
@@ -2448,7 +2446,11 @@ article .post-featureImage {
       margin-left: 70px; } }
 
 .iconBulletPoints-body {
-  flex: 10; }
+  flex: 10;
+  margin-left: 44px; }
+  @media only screen and (max-width: 769px) {
+    .iconBulletPoints-body {
+      margin-left: 15px; } }
 
 .iconBulletPoints-body p {
   line-height: 30px; }
