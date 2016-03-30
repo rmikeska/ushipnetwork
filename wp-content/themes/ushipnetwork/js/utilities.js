@@ -1,7 +1,6 @@
 jQuery(document).ready(function ($) {
 
     // Page content padding if secondary nav exists
-
     if ($('.secondary-menu').length > 0) {
         $('.pageContent').addClass('subNavPush');
     }
@@ -9,7 +8,6 @@ jQuery(document).ready(function ($) {
 
 
     // Blog home effects
-
     $('.postThumb').hide().each(function (i) {
         $(this).delay((i++) * 100).fadeTo(300, 1);
     });
@@ -32,7 +30,6 @@ jQuery(document).ready(function ($) {
 
 
     // Open share icons in new window
-
     var socialLink = $('.share-icon');
 
     socialLink.live('click', function () {
@@ -44,7 +41,6 @@ jQuery(document).ready(function ($) {
 
 
     // Delay HIW home page panel hover effects. Remove hover syles for mobile
-
     $(window).on('load resize', function () {
         if ($(window).width() < 769) {
             $('.splitScreen-panel').removeClass('panelHover');
@@ -57,8 +53,7 @@ jQuery(document).ready(function ($) {
 
 
 
-    // Tabbed Page Template Effects
-
+    // Tabbed page hide/show effects
     $('.tabbedPageWrapper .tabbedPage:not(:first-child)').hide();
 
     $('.tabbedPageMenu-list li:first-child').addClass('tabbedPage-active');
@@ -80,6 +75,9 @@ jQuery(document).ready(function ($) {
         $(this).parent().addClass('tabbedPage-active').siblings().removeClass('tabbedPage-active');
     });
 
+
+
+    // Do tabbed page hide/show effects when there's a hash in the URL
     if (window.location.hash) {
 
         var hashValue = window.location.hash.replace('#', '');
@@ -99,8 +97,7 @@ jQuery(document).ready(function ($) {
 
 
 
-    // Intro Slide Module
-
+    // Intro slide module slideshow effects
     $('.introSlide-slideshow > .introSlide-slideshow-slide:first-child').show();
 
     setInterval(function () {
@@ -119,8 +116,7 @@ jQuery(document).ready(function ($) {
 
 
     // Temporary fix for internal page anchors on bookend links
-
-    // $('.tabbedPageWrapper .bookend-link').click(function () {
-    //     location.reload();
-    // });
+    $('.tabbedPageWrapper .bookend-link').click(function () {
+        location.reload();
+    });
 })
