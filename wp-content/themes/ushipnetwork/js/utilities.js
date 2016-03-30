@@ -117,6 +117,7 @@ jQuery(document).ready(function ($) {
 
     // Temporary fix for internal page anchors on bookend links
     $('.tabbedPageWrapper .bookend-link').click(function () {
+        window.location.hash = $(this).attr('href');
         location.reload();
     });
 })
