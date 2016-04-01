@@ -1,7 +1,7 @@
 <section class="introSlide">
   <div class="introSlide-container">
     <h3 class="introSlide-headline"><?php the_sub_field('intro_slide_head'); ?></h3>
-    <h6 class="introSlide-subheadline"><?php the_sub_field('intro_slide_subhead'); ?></h6>
+    <div class="introSlide-text"><?php the_sub_field('intro_slide_subhead'); ?></div>
     <?php while(have_rows('intro_slide_cta')): the_row(); ?>
       <?php $slide_cta_url = get_sub_field('intro_slide_cta_url'); ?>
       <a class="introSlide-cta buttonGreen buttonLarge" href="<?php echo $slide_cta_url; ?>"><?php the_sub_field('intro_slide_cta_text'); ?></a>
