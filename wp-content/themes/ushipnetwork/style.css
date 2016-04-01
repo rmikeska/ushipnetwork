@@ -1629,6 +1629,7 @@ article .post-featureImage {
 
 .hero-subheadline {
   max-width: 530px;
+  margin: 0 auto;
   text-align: center;
   color: #FFFFFF;
   font-size: 18px;
