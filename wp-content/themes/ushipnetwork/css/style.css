@@ -2139,6 +2139,7 @@ article .post-featureImage {
 
 .splitScreen-panel-container {
   max-width: 595px;
+  min-height: 395px;
   padding-left: 60px;
   padding-right: 60px;
   margin-top: 20px;
@@ -2147,6 +2148,7 @@ article .post-featureImage {
   @media only screen and (max-width: 769px) {
     .splitScreen-panel-container {
       max-width: 100%;
+      min-height: 100%;
       padding-left: 20px;
       padding-right: 20px; } }
 
