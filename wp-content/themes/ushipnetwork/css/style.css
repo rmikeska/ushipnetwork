@@ -2472,7 +2472,9 @@ article .post-featureImage {
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap; }
   .tertiaryCallout-container::after {
     clear: both;
     content: "";
@@ -2485,7 +2487,6 @@ article .post-featureImage {
       padding-bottom: 30px; } }
 
 .tertiaryCallout-title {
-  flex: 1;
   padding-right: 40px;
   font-family: "LatoBold";
   letter-spacing: 0.05em;
