@@ -26,7 +26,6 @@
 .tabbedPageMenu-list li a {
   display: inline-block;
   vertical-align: middle;
-  max-width: 100px;
   cursor: pointer;
   color: $base-text-color;
   text-transform: uppercase;
@@ -35,8 +34,8 @@
   line-height: 17px;
   font-size: 14px;
   margin-top: 8px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .tabbedPageMenu-list li a:after {
