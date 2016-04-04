@@ -2,7 +2,7 @@
 
   <?php $tab_title = get_sub_field('tab_title'); ?>
 
-  <div class="tabbedPage tab-<?php print (str_replace('<br>', '-', strtolower($tab_title))); ?>" title="<?php print (str_replace('<br>', '-', strtolower($tab_title))); ?>">
+  <div class="tabbedPage tab-<?php print (str_replace(array(' ', '<br>'), '-', strtolower($tab_title))); ?>" title="<?php print (str_replace(array(' ', '<br>'), '-', strtolower($tab_title))); ?>">
 
 <?php elseif (get_row_layout() == 'strip_data_callout'): ?>
 
