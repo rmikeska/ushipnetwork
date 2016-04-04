@@ -1491,9 +1491,7 @@ article .post-featureImage {
 
 .hero-content {
   max-width: 820px;
-  padding: 20px;
-  flex: none;
-  -webkit-box-flex: 0; }
+  padding: 20px; }
   @media only screen and (max-width: 769px) {
     .hero-content {
       max-width: 100%; } }

@@ -43,8 +43,8 @@
 .hero-content {
   max-width: 820px;
   padding: 20px;
-  flex: none;
-  -webkit-box-flex: 0;
+  // flex: none;
+  // -webkit-box-flex: 0;
 
   @media #{$default-break} {
     max-width: 100%;
