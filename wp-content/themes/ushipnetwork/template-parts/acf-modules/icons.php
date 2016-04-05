@@ -36,4 +36,18 @@
     <?php include( get_template_directory() . '/images/icons/icon_StatusUpdate.svg'); ?>
 <?php elseif (get_sub_field('icon_bullet_points_row_icon') == "icon_trustshield"): ?>
     <?php include( get_template_directory() . '/images/icons/icon_TrustShield.svg'); ?>
+<?php elseif (get_sub_field('icon_bullet_points_row_icon') == "icon_alert"): ?>
+    <?php include( get_template_directory() . '/images/icons/icon_Alert.svg'); ?>
+<?php elseif (get_sub_field('icon_bullet_points_row_icon') == "icon_calculator"): ?>
+    <?php include( get_template_directory() . '/images/icons/icon_Calculator.svg'); ?>
+<?php elseif (get_sub_field('icon_bullet_points_row_icon') == "icon_carriercard"): ?>
+    <?php include( get_template_directory() . '/images/icons/icon_CarrierCard.svg'); ?>
+<?php elseif (get_sub_field('icon_bullet_points_row_icon') == "icon_insights"): ?>
+    <?php include( get_template_directory() . '/images/icons/icon_Insights.svg'); ?>
+<?php elseif (get_sub_field('icon_bullet_points_row_icon') == "icon_pricetagpercent"): ?>
+    <?php include( get_template_directory() . '/images/icons/icon_PriceTag_Percent.svg'); ?>
+<?php elseif (get_sub_field('icon_bullet_points_row_icon') == "icon_reach"): ?>
+    <?php include( get_template_directory() . '/images/icons/icon_Reach.svg'); ?>
+<?php elseif (get_sub_field('icon_bullet_points_row_icon') == "icon_truck"): ?>
+    <?php include( get_template_directory() . '/images/icons/icon_Truck.svg'); ?>
 <?php endif; ?>
