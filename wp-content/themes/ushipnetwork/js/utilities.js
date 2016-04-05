@@ -53,50 +53,6 @@ jQuery(document).ready(function ($) {
 
 
 
-    // Tabbed page hide/show effects
-    $('.tabbedPageWrapper .tabbedPage:not(:first-child)').hide();
-
-    $('.tabbedPageMenu-list li:first-child').addClass('tabbedPage-active');
-
-    $('.tabbedPageMenu-list li a').click(function (e) {
-
-        e.preventDefault();
-
-        window.location.hash = $(this).attr('title');
-
-        var elementClassName = $(this).attr('class');
-
-        $('div.tabbedPage.' + elementClassName).show().siblings('div.tabbedPage').hide();
-
-        $('div.tabbedPage.' + elementClassName).children().hide().each(function (i) {
-            $(this).delay((i++) * 100).fadeTo(300, 1);
-        });
-
-        $(this).parent().addClass('tabbedPage-active').siblings().removeClass('tabbedPage-active');
-    });
-
-
-
-    // Do tabbed page hide/show effects when there's a hash in the URL
-    if (window.location.hash) {
-
-        var hashValue = window.location.hash.replace('#', '');
-
-        $('div.tabbedPage').each(function () {
-            if ($(this).attr('title') == hashValue) {
-                $(this).show().siblings('div.tabbedPage').hide();
-            }
-        });
-
-        $('.tabbedPageMenu-list li a').each(function () {
-            if ($(this).attr('title') == hashValue) {
-                $(this).parent().addClass('tabbedPage-active').siblings().removeClass('tabbedPage-active');
-            }
-        });
-    }
-
-
-
     // Intro slide module slideshow effects
     $('.introSlide-slideshow > .introSlide-slideshow-slide:first-child').show();
 
@@ -115,9 +71,47 @@ jQuery(document).ready(function ($) {
 
 
 
-    // Temporary fix for internal page anchors on bookend links
-    $('.tabbedPageWrapper .bookend-link').click(function () {
-        window.location.hash = $(this).attr('href');
-        location.reload();
-    });
+    // Tabbed page hide/show effects for tab menu
+    $('.tabbedPageWrapper .tabbedPage:not(:first-child)').hide();
+
+    $('.tabbedPageMenu-list li:first-child').addClass('tabbedPage-active');
+
+    $(window).on('hashchange', function (e) {
+
+        e.preventDefault();
+
+        var x = window.pageXOffset,
+            y = window.pageYOffset;
+
+        $(window).one('scroll', function () {
+            window.scrollTo(x, y);
+        })
+
+        var hashValue = window.location.hash.replace('#', '');
+
+        var hashActual = window.location.hash;
+
+        $('div.tabbedPage').each(function () {
+            if ($(this).hasClass(hashValue)) {
+                $(this).show().siblings('div.tabbedPage').hide();
+            }
+        });
+
+        $('.tabbedPageMenu-list li a').each(function () {
+            if ($(this).attr('href') == hashActual) {
+                $(this).parent().addClass('tabbedPage-active').siblings().removeClass('tabbedPage-active');
+            }
+        });
+
+        var firstHash = $('.tabbedPageMenu-list li:first-child a').attr('class');
+
+        if (window.location.hash == '') {
+            window.location.hash = firstHash;
+        }
+
+        $('.tabbedPageWrapper .bookend-link').click(function () {
+            $(window).scrollTop(0);
+        });
+
+    }).trigger('hashchange');
 })
