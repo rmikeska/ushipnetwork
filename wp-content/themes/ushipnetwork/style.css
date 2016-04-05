@@ -1732,6 +1732,7 @@ article .post-featureImage {
   padding-right: 62px;
   padding-bottom: 0;
   padding-left: 62px;
+  min-height: 460px;
   position: relative;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1806,13 +1807,7 @@ article .post-featureImage {
   height: auto; }
   @media only screen and (max-width: 769px) {
     .slantedMap-image-image {
-      max-height: 300px; } }
-
-.slantedMap.alignmentMiddle .slantedMap-image-image {
-  padding: 75px 0; }
-  @media only screen and (max-width: 769px) {
-    .slantedMap.alignmentMiddle .slantedMap-image-image {
-      padding: 40px 0; } }
+      max-height: 200px; } }
 
 .slantedMap.alignmentLeft .slantedMap-image-image {
   float: left; }

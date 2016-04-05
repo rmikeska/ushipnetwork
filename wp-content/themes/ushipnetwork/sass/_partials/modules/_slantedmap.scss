@@ -53,6 +53,7 @@
 
 .slantedMap-container {
   @include container(1160px, 0, 0, 62px);
+  min-height: 460px;
   position: relative;
   display: flex;
   align-items: center;
@@ -105,15 +106,7 @@
   height: auto;
 
   @media #{$default-break} {
-    max-height: 300px;
-  }
-}
-
-.slantedMap.alignmentMiddle .slantedMap-image-image {
-  padding: 75px 0;
-
-  @media #{$default-break} {
-    padding: 40px 0;
+    max-height: 200px;
   }
 }
 
