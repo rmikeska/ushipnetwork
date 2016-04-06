@@ -50,4 +50,14 @@
     <?php include( get_template_directory() . '/images/icons/icon_Reach.svg'); ?>
 <?php elseif (get_sub_field('icon_bullet_points_row_icon') == "icon_truck"): ?>
     <?php include( get_template_directory() . '/images/icons/icon_Truck.svg'); ?>
+<?php elseif (get_sub_field('icon_bullet_points_row_icon') == "icon_boat"): ?>
+    <?php include( get_template_directory() . '/images/icons/icon_Boat.svg'); ?>
+<?php elseif (get_sub_field('icon_bullet_points_row_icon') == "icon_fuelcard"): ?>
+    <?php include( get_template_directory() . '/images/icons/icon_FuelCard.svg'); ?>
+<?php elseif (get_sub_field('icon_bullet_points_row_icon') == "icon_gavel"): ?>
+    <?php include( get_template_directory() . '/images/icons/icon_Gavel.svg'); ?>
+<?php elseif (get_sub_field('icon_bullet_points_row_icon') == "icon_lodging"): ?>
+    <?php include( get_template_directory() . '/images/icons/icon_Lodging.svg'); ?>
+<?php elseif (get_sub_field('icon_bullet_points_row_icon') == "icon_wheel"): ?>
+    <?php include( get_template_directory() . '/images/icons/icon_Wheel.svg'); ?>
 <?php endif; ?>
