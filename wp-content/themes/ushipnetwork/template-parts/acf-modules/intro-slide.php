@@ -4,7 +4,7 @@
     <div class="introSlide-text"><?php the_sub_field('intro_slide_subhead'); ?></div>
     <?php while(have_rows('intro_slide_cta')): the_row(); ?>
       <?php $slide_cta_url = get_sub_field('intro_slide_cta_url'); ?>
-      <a class="introSlide-cta buttonGreen buttonLarge" href="<?php echo $slide_cta_url; ?>"><?php the_sub_field('intro_slide_cta_text'); ?></a>
+      <a class="introSlide-cta buttonGreenTransparent buttonMedium" href="<?php echo $slide_cta_url; ?>"><?php the_sub_field('intro_slide_cta_text'); ?></a>
     <?php endwhile; ?>
     <div class="introSlide-slideshow">
       <?php while(have_rows('intro_slide_slide')): the_row(); ?>

@@ -674,6 +674,11 @@ b, strong {
   max-width: 220px;
   max-height: 50px; }
 
+.buttonMedium {
+  padding: 10px 10px;
+  max-width: 155px;
+  max-height: 43px; }
+
 .buttonSmall {
   padding: 7px 10px;
   max-width: 124px;
@@ -2392,6 +2397,9 @@ article .post-featureImage {
   display: block;
   width: 100%;
   height: auto; }
+
+.introSlide-cta {
+  margin-top: 35px; }
 
 .iconBulletPoints {
   background-color: #F4F4F4; }
