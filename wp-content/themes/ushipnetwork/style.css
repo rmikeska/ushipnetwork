@@ -1731,10 +1731,11 @@ article .post-featureImage {
   max-width: calc(1160px + 62px*2);
   margin-left: auto;
   margin-right: auto;
-  padding-top: 100px;
+  padding-top: 80px;
   padding-right: 62px;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
   padding-left: 62px;
+  min-height: 420px;
   position: relative;
   display: -webkit-flex;
   display: -ms-flexbox;

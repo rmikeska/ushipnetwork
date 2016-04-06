@@ -52,7 +52,8 @@
 }
 
 .slantedMap-container {
-  @include container(1160px, 100px, 100px, 62px);
+  @include container(1160px, 80px, 80px, 62px);
+  min-height: 420px;
   position: relative;
   display: flex;
   align-items: center;
