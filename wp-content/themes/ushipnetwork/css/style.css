@@ -684,6 +684,9 @@ b, strong {
   max-width: 124px;
   max-height: 43px; }
 
+.buttonLarge.buttonGreenTransparent {
+  padding: 10px 10px; }
+
 .buttonGreenTransparent {
   display: block;
   margin: 0 auto;
@@ -1794,6 +1797,9 @@ article .post-featureImage {
 
 .slantedMap-copy-block-text strong:not(:last-child) {
   padding-bottom: 10px; }
+
+.slantedMap-cta {
+  margin-left: 0; }
 
 /*** Strip Copy Callout ***/
 .stripCopyCallout-container {
