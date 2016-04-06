@@ -22,6 +22,9 @@ jQuery(document).ready(function ($) {
         $('div.tabbedPage').each(function () {
             if ($(this).hasClass(hashValue)) {
                 $(this).show().siblings('div.tabbedPage').hide();
+                $(this).children().hide().each(function (i) {
+                    $(this).delay((i++) * 100).fadeTo(300, 1);
+                });
             }
         });
 
