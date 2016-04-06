@@ -22,8 +22,9 @@ get_header(); ?>
     <?php if (get_row_layout() == 'tab_info'): ?>
 
       <?php $tab_title = get_sub_field('tab_title'); ?>
+      <?php $tab_hash = get_sub_field('tab_hash'); ?>
 
-      <li><a class="<?php print (str_replace(array(' ', '<br>'), '-', strtolower($tab_title))); ?>" href="#<?php print (str_replace(array(' ', '<br>'), '-', strtolower($tab_title))); ?>"><?php echo $tab_title; ?></a></li>
+      <li><a class="<?php echo $tab_hash; ?>" href="#<?php echo $tab_hash; ?>"><?php echo $tab_title; ?></a></li>
 
     <?php endif; ?>
 

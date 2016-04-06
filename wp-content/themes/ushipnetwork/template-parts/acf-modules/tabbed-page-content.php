@@ -1,8 +1,8 @@
 <?php if (get_row_layout() == 'tab_info'): ?>
 
-  <?php $tab_title = get_sub_field('tab_title'); ?>
+  <?php $tab_hash = get_sub_field('tab_hash'); ?>
 
-  <div class="tabbedPage <?php print (str_replace(array(' ', '<br>'), '-', strtolower($tab_title))); ?>">
+  <div class="tabbedPage <?php echo $tab_hash; ?>">
 
 <?php elseif (get_row_layout() == 'strip_data_callout'): ?>
 
