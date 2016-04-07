@@ -86,11 +86,11 @@ wp-content/mysql.sql
 *.ra
 *.3gpp
 *.3gp
-# *.mp4
+*.mp4
 *.mpeg
 *.mpg
 *.mov
-# *.webm
+*.webm
 *.flv
 *.m4v
 *.mng

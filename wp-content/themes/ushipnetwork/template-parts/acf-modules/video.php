@@ -6,15 +6,13 @@
     <?php if(get_sub_field('video_file') == "video_ritchie_brothers"): ?>
       <div class="videoFeature-video">
         <video class="video-js" controls preload="auto" poster="<?php echo $video_poster['url']; ?>" data-setup="{}">
-          <source src="<?php echo get_template_directory_uri() . '/videos/never-gonna-give-you-up.mp4'; ?>" type='video/mp4'>
-          <source src="<?php echo get_template_directory_uri() . '/videos/never-gonna-give-you-up.webm'; ?>" type='video/webm'>
+          <source src="http://learn.uship.com/wp-content/uploads/never-gonna-give-you-up.mp4" type='video/mp4'>
         </video>
       </div>
     <?php elseif (get_sub_field('video_file') == "video_red_rooster_antiques"): ?>
       <div class="videoFeature-video">
         <video class="video-js" controls preload="auto" poster="<?php echo $video_poster['url']; ?>" data-setup="{}">
-          <source src="<?php echo get_template_directory_uri() . '/videos/never-gonna-give-you-up.mp4'; ?>" type='video/mp4'>
-          <source src="<?php echo get_template_directory_uri() . '/videos/never-gonna-give-you-up.webm'; ?>" type='video/webm'>
+          <source src="http://learn.uship.com/wp-content/uploads/never-gonna-give-you-up.mp4" type='video/mp4'>
         </video>
       </div>
     <?php endif; ?>
