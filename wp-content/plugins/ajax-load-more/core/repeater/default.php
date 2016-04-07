@@ -23,5 +23,5 @@
     ?>
   </div>
   <a class="post-title" href="<?php the_permalink();?>"><?php echo short_title('...', 70); ?></a>
-  <a class="emphasisLink" href="<?php the_permalink();?>">Read Article</a>
+  <a class="emphasisLink" href="<?php the_permalink();?>">Read Article<?php include( get_template_directory() . '/images/arrow_link.svg'); ?></a>
 </div>

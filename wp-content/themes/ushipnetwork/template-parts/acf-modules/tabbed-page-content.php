@@ -28,4 +28,16 @@
 
   <?php include("tertiary-callout.php");?>
 
+<?php elseif (get_row_layout() == 'link_row'): ?>
+
+  <?php include("link-row.php");?>
+
+<?php elseif (get_row_layout() == 'logo_pile'): ?>
+
+  <?php include("logo-pile.php");?>
+
+<?php elseif (get_row_layout() == 'video'): ?>
+
+  <?php include("video.php");?>
+
 <?php endif; ?>

@@ -1,0 +1,75 @@
+/*** Video Feature ***/
+
+.videoFeature-container {
+  @include container(1080px, 85px, 85px, 20px);
+
+  @media #{$default-break} {
+    @include container(100%, 60px, 60px, 20px);
+  }
+}
+
+.videoFeature-intro {
+  padding-bottom: 30px;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.videoFeature-subintro {
+  padding-bottom: 45px;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.video-cta {
+  margin-top: 50px;
+}
+
+.videoFeature .video-js {
+  margin: 0 auto;
+  width: 100%;
+  height: 0;
+  padding-top: 56.2244898%;
+}
+
+.videoFeature-video {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.videoFeature .video-js .vjs-big-play-button {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 105px;
+  height: 105px;
+  border: none;
+  background-color: transparent;
+  border-radius: 0;
+  transition: none;
+
+  @media #{$default-break} {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+.videoFeature .vjs-icon-play:before,
+.videoFeature .video-js .vjs-big-play-button:before {
+  content: '';
+  background-image: linear-gradient(transparent, transparent), url("#{$asset-path}/play_button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.videoFeature .video-js:hover .vjs-big-play-button,
+.videoFeature .video-js .vjs-big-play-button:focus {
+  background-color: transparent;
+  border-color: transparent;
+  transition: none;
+}

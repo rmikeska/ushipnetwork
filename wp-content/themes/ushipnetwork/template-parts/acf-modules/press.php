@@ -4,7 +4,7 @@
     <div class="pressStrip-block">
       <div class="post-caption">Latest&nbsp;&nbsp;|&nbsp;&nbsp;<span class="post-time"><?php the_time('M j, Y'); ?></span></div>
       <a class="post-title" href="<?php the_permalink();?>"><?php the_title(); ?></a>
-      <a class="emphasisLink" href="<?php the_permalink();?>">Read Press Release</a>
+      <a class="emphasisLink" href="<?php the_permalink();?>">Read Press Release<?php include( get_template_directory() . '/images/arrow_link.svg'); ?></a>
     </div>
   <?php endwhile; endif; ?>
   <?php wp_reset_query(); ?>

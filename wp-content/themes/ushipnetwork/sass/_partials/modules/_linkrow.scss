@@ -1,0 +1,58 @@
+/*** Link Row ***/
+
+.linkRow-container {
+  @include container(970px, 85px, 85px, 20px);
+
+  @media #{$default-break} {
+    @include container(100%, 60px, 60px, 20px);
+  }
+}
+
+.linkRow-intro {
+  padding-bottom: 30px;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.linkRow-subintro {
+  padding-bottom: 45px;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.linkRow-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  @media #{$default-break} {
+    flex-direction: column;
+  }
+}
+
+.linkRow-block {
+  text-align: center;
+  flex: 1;
+
+  &:not(:last-child) {
+    margin-right: 70px;
+
+    @media #{$default-break} {
+      margin-right: 0;
+      padding-bottom: 60px;
+    }
+  }
+}
+
+.linkRow-title {
+  padding-bottom: 30px;
+  text-align: center;
+  font-family: $lato-bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}

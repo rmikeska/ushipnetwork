@@ -1,0 +1,22 @@
+/*** Logo Pile ***/
+
+.logoPile-container {
+  @include container(1080px, 85px, 85px, 20px);
+
+  @media #{$default-break} {
+    @include container(100%, 60px, 60px, 20px);
+  }
+}
+
+.logoPile-intro {
+  padding-bottom: 45px;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.logoPile-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}

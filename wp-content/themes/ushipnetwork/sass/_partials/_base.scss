@@ -116,19 +116,24 @@ b, strong {
 }
 
 .emphasisLink {
-  padding-bottom: 5px;
-  border-bottom: 3px solid $primary-green;
+  display: inline-block;
   color: $base-text-color;
   font-family: $lato-bold;
   font-size: 18px;
 }
 
 .emphasisLink:after {
-  display: inline-block;
+  background: $primary-green;
+  display: block;
+  margin: 5px auto 0 auto;
   content: '';
-  background-image: linear-gradient(transparent, transparent), url("#{$asset-path}/arrow_link.svg");
-  @include background-image;
+  width: 100%;
+  height: 3px;
+}
+
+.emphasisLink svg {
+  display: inline-block;
+  margin-left: 15px;
   width: 19px;
   height: 12px;
-  margin-left: 15px;
 }
