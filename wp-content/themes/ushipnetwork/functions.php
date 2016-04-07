@@ -141,8 +141,8 @@ function ushipnetwork_scripts() {
 	if ( is_page_template('tabbed-page.php') ) {
   	wp_enqueue_script( 'ushipnetwork-hashchange', get_template_directory_uri() . '/js/hashchange.min.js', array(), '20160405', true );
   	wp_enqueue_script( 'ushipnetwork-tabbed-page', get_template_directory_uri() . '/js/tabbed-page.js', array(), '20160405', true );
-  	wp_enqueue_script( 'ushipnetwork-videojs', 'http://vjs.zencdn.net/5.8.8/video.js', array(), '20160407', true );
-  	wp_enqueue_style( 'ushipnetwork-videojs-style', 'http://vjs.zencdn.net/5.8.8/video-js.css' );
+  	wp_enqueue_script( 'ushipnetwork-videojs', 'https://vjs.zencdn.net/5.8.8/video.js', array(), '20160407', true );
+  	wp_enqueue_style( 'ushipnetwork-videojs-style', 'https://vjs.zencdn.net/5.8.8/video-js.css' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'ushipnetwork_scripts' );
