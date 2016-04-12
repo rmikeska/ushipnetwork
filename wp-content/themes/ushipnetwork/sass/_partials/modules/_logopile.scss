@@ -1,10 +1,10 @@
 /*** Logo Pile ***/
 
 .logoPile-container {
-  @include container(1080px, 85px, 85px, 20px);
+  @include container(1080px, 85px, 85px);
 
   @media #{$default-break} {
-    @include container(100%, 60px, 60px, 20px);
+    @include container(100%, 60px, 60px);
   }
 }
 

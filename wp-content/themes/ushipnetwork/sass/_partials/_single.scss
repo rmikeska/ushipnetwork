@@ -1,7 +1,7 @@
 /*** Single Post ***/
 
 article.post {
-  @include container(620px, 35px, 50px, 20px);
+  @include container(790px, 35px, 50px);
   width: 100%;
 }
 
@@ -160,10 +160,10 @@ article .post-featureImage {
 }
 
 .relatedPosts-container {
-  @include container(1020px, 85px, 85px, 20px);
+  @include container(1020px, 85px, 85px);
 
   @media only screen and (max-width: 1080px) {
-    @include container(100%, 60px, 60px, 20px);
+    @include container(100%, 60px, 60px);
   }
 }
 
@@ -211,9 +211,9 @@ article .post-featureImage {
 }
 
 .postBookend-container {
-  @include container(100%, 65px, 65px, 20px);
+  @include container(100%, 65px, 65px);
 
   @media only screen and (max-width: 1080px) {
-    @include container(100%, 60px, 60px, 20px);
+    @include container(100%, 60px, 60px);
   }
 }

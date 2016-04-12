@@ -13,6 +13,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: #0288C2;
+}
+
 b, strong {
   font-weight: normal;
   font-family: $lato-bold;

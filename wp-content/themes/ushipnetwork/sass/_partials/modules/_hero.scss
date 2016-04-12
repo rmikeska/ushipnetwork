@@ -44,8 +44,8 @@
   max-width: 1020px;
   padding-top: 20px;
   padding-bottom: 35px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: $section-padding;;
+  padding-right: $section-padding;;
   // flex: none;
   // -webkit-box-flex: 0;
 
@@ -58,7 +58,7 @@
   text-align: center;
   color: $white;
   line-height: 1.35em;
-  text-shadow: 0 4px 5.88px rgba(0, 0, 0, 0.72);
+  text-shadow: $base-text-shadow;
   font-size: 36px;
 
   @media #{$default-break} {
@@ -98,9 +98,5 @@
   text-align: center;
   color: $white;
   font-size: 18px;
-  text-shadow: 0 4px 5.88px rgba(0, 0, 0, 0.72);
-}
-
-.hero-cta {
-
+  text-shadow: $base-text-shadow;
 }

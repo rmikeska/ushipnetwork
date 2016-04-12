@@ -6,7 +6,7 @@
 }
 
 .bookend-container {
-  @include container(1140px, 60px, 60px, 20px);
+  @include container(1140px, 60px, 60px);
   position: relative;
 }
 
@@ -31,6 +31,16 @@
   @media #{$default-break} {
     line-height: 17px;
   }
+}
+
+.bookend-link:hover .bookend-link-text {
+  color: $bright-blue;
+  transition: all 0.1s ease-in-out;
+}
+
+.bookend-link:hover .circledArrow {
+  fill: $bright-blue;
+  transition: all 0.1s ease-in-out;
 }
 
 .bookend-linkPrevious {

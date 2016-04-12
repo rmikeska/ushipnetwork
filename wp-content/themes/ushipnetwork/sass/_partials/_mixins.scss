@@ -4,17 +4,17 @@
   background-position: center;
 }
 
-@mixin container($container-width, $padding-top, $padding-bottom, $padding-lr) {
+@mixin container($container-width, $padding-top, $padding-bottom) {
   @include clearfix;
-  @include calc(max-width, "#{$container-width} + #{$padding-lr}*2");
+  @include calc(max-width, "#{$container-width} + #{$section-padding}*2");
   margin: {
     left: auto;
     right: auto;
   }
   padding: {
     top: $padding-top;
-    right: $padding-lr;
+    right: $section-padding;
     bottom: $padding-bottom;
-    left: $padding-lr;
+    left: $section-padding;
   }
 }

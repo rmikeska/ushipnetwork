@@ -5,7 +5,7 @@
   }
 
   #resumator-wrapper {
-    @include container(780px, 70px, 115px, 20px);
+    @include container(780px, 70px, 115px);
 
     @media #{$default-break} {
       padding-top: 40px;

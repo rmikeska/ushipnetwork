@@ -44,33 +44,33 @@
   }
 }
 
-.splitScreen-panel:first-child {
+// .splitScreen-panel:first-child {
 
-  @media #{$default-break} {
-    background-color: $navy;
-    background-image: none !important;
-  }
+//   @media #{$default-break} {
+//     background-color: $navy;
+//     background-image: none !important;
+//   }
 
-  &:before {
-    @media #{$default-break} {
-      display: none;
-    }
-  }
-}
+//   &:before {
+//     @media #{$default-break} {
+//       display: none;
+//     }
+//   }
+// }
 
-.splitScreen-panel:last-child {
+// .splitScreen-panel:last-child {
 
-  @media #{$default-break} {
-    background-color: $bright-blue;
-    background-image: none !important;
-  }
+//   @media #{$default-break} {
+//     background-color: $bright-blue;
+//     background-image: none !important;
+//   }
 
-  &:before {
-    @media #{$default-break} {
-      display: none;
-    }
-  }
-}
+//   &:before {
+//     @media #{$default-break} {
+//       display: none;
+//     }
+//   }
+// }
 
 .splitScreen-panel-container {
   max-width: 595px;
@@ -84,14 +84,14 @@
   @media #{$default-break} {
     max-width: 100%;
     min-height: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: $section-padding;;
+    padding-right: $section-padding;;
   }
 }
 
 .splitScreen-panel-headline {
   font-size: 60px;
-  text-shadow: 0 4px 5.88px rgba(0, 0, 0, 0.72);
+  text-shadow: $base-text-shadow;
   line-height: 72px;
   text-align: center;
   color: $white;
@@ -99,13 +99,13 @@
   @media #{$default-break} {
     font-size: 42px;
     line-height: 1.2;
-    text-shadow: none;
+    // text-shadow: none;
   }
 }
 
 .splitScreen-panel-subheadline {
   font-size: 16px;
-  text-shadow: 0 4px 5.88px rgba(0, 0, 0, 0.72);
+  text-shadow: $base-text-shadow;
   line-height: 28px;
   text-align: center;
   color: $white;
@@ -125,7 +125,7 @@
   @media #{$default-break} {
     width: 30px;
     height: 30px;
-    margin: 12px auto 12px auto;
+    margin: 20px auto 22px auto;
   }
 }
 
@@ -141,6 +141,11 @@
   width: 100%;
   height: 100%;
   z-index: -1;
+
+  @media #{$default-break} {
+    background-color: #000000;
+    opacity: 0.1;
+  }
 }
 
 .splitScreen-panel.panelHover:before {
@@ -202,16 +207,14 @@
 }
 
 .splitScreen-strip-container {
-  // @include container(100%, 0, 0, 60px);
   padding-left: 60px;
   padding-right: 60px;
   margin-top: 20px;
   margin-bottom: 20px;
 
   @media #{$default-break} {
-    // @include container(100%, 0, 0, 20px);
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: $section-padding;
+    padding-right: $section-padding;
     margin-top: 15px;
     margin-bottom: 15px;
   }

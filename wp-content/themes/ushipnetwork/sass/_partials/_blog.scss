@@ -1,7 +1,7 @@
 /*** Blog Landing ***/
 
 .categoryMenu {
-  @include container(1020px, 50px, 9px, 20px);
+  @include container(1020px, 50px, 9px);
   width: 100%;
 
   @media only screen and (max-width: 1080px) {
@@ -34,16 +34,19 @@
   border-bottom-color: transparent;
 }
 
-.categoryMenu-list li a:hover,
 .categoryMenu-list li.categoryMenu-active a {
   transition: border-bottom-color 0.2s ease;
-  border-bottom-width: 3px;
+  border-bottom-width: 2px;
   border-bottom-style: solid;
   border-bottom-color: $bright-blue;
 }
 
+.categoryMenu-list li a:hover {
+  color: $bright-blue;
+}
+
 .postsGroup {
-  @include container(1020px, 75px, 64px, 20px);
+  @include container(1020px, 75px, 64px);
   width: 100%;
   overflow: hidden;
 }
