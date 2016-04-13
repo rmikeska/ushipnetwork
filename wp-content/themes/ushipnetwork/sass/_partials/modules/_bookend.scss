@@ -69,6 +69,9 @@
 .bookend-linkRow {
   position: absolute;
   top: 50%;
+  min-height: 45px;
+  display: flex;
+  align-items: center;
 
   @media #{$default-break} {
     top: 60px;
@@ -76,13 +79,10 @@
 }
 
 .bookend-linkRow .bookend-link-text {
-  display: inline-block;
-  vertical-align: middle;
+  padding-top: 3px;
 }
 
 .bookend-linkRow .circledArrow {
-  display: inline-block;
-  vertical-align: middle;
   width: 24px;
   height: 24px;
 }

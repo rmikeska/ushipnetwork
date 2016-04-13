@@ -11,7 +11,7 @@
       <?php while(have_rows('contact_link_content')): the_row(); ?>
         <?php $contact_link_url = get_sub_field('contact_link_url'); ?>
         <div class="contact-links-content-link">
-          <a class="emphasisLink" target="_blank" href="<?php echo $contact_link_url; ?>"><?php the_sub_field('contact_link_text'); ?><?php include( get_template_directory() . '/images/arrow_link.svg'); ?></a>
+          <a class="tertiaryLink tertiaryLinkDark" role="button" target="_blank" href="<?php echo $contact_link_url; ?>"><?php the_sub_field('contact_link_text'); ?><?php include( get_template_directory() . '/images/arrow_link.svg'); ?></a>
         </div>
       <?php endwhile; ?>
       </div>

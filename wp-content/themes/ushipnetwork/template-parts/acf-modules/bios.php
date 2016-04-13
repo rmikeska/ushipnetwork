@@ -14,7 +14,7 @@
         <img class="bios-image" src="<?php echo $bios_image['url']; ?>">
         <p class="bios-name"><?php the_sub_field('bios_name'); ?></p>
         <div class="bios-description"><?php the_sub_field('bios_description'); ?></div>
-        <a class="bios-link buttonGreenTransparent buttonSmall" target="_blank" href="<?php echo $bios_link_url; ?>"><?php the_sub_field('bios_link_text'); ?></a>
+        <a class="bios-link button buttonSecondary buttonSmall" role="button" target="_blank" href="<?php echo $bios_link_url; ?>"><?php the_sub_field('bios_link_text'); ?></a>
       </div>
     <?php endwhile; ?>
     </div>

@@ -19,9 +19,7 @@
         <div class="splitScreen-strip-container">
           <div class="splitScreen-strip-headline-container">
             <h2 class="splitScreen-strip-headline"><?php the_sub_field('split_screen_strip_headline'); ?></h2>
-            <span class="splitScreen-strip-arrow">
-              <?php include( get_template_directory() . '/images/circled_arrow.svg'); ?>
-            </span>
+            <?php include( get_template_directory() . '/images/circled_arrow.svg'); ?>
           </div>
           <h4 class="splitScreen-strip-subheadline"><?php the_sub_field('split_screen_strip_subheadline'); ?></h4>
         </div>
