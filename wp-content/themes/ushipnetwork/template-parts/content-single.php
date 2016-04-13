@@ -75,7 +75,7 @@
 
 <section class="postBookend">
 	<div class="postBookend-container">
-		<a class="buttonGreen buttonLarge" href="/blog/">View All Articles</a>
+		<a class="button buttonPrimary buttonLarge" role="button" href="/blog/">View All Articles</a>
 	</div>
 </section>
 

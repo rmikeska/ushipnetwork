@@ -74,13 +74,10 @@ b, strong {
 /*** Buttons ***/
 
 .button {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
+  display: inline-block;
   text-align: center;
   letter-spacing: 0.025em;
   border-radius: 3px;
-  border: none;
   font-size: 16px;
   line-height: 16px;
   font-family: $lato-bold;
@@ -93,20 +90,20 @@ b, strong {
 
 .buttonExtraLarge {
   padding: 18px 30px;
-  width: 300px;
-  height: 50px;
+  min-width: 300px;
+  min-height: 50px;
 }
 
 .buttonLarge {
   padding: 18px 30px;
-  width: 220px;
-  height: 50px;
+  min-width: 220px;
+  min-height: 50px;
 }
 
 .buttonSmall {
   padding: 15px 20px;
-  width: 148px;
-  height: 43px;
+  min-width: 148px;
+  min-height: 43px;
 }
 
 .buttonPrimary {

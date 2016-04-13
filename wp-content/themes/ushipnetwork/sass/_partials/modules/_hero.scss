@@ -44,10 +44,9 @@
   max-width: 1020px;
   padding-top: 20px;
   padding-bottom: 35px;
-  padding-left: $section-padding;;
-  padding-right: $section-padding;;
-  // flex: none;
-  // -webkit-box-flex: 0;
+  padding-left: $section-padding;
+  padding-right: $section-padding;
+  text-align: center;
 
   @media #{$default-break} {
     max-width: 100%;

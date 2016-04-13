@@ -687,13 +687,10 @@ b, strong {
 
 /*** Buttons ***/
 .button {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
+  display: inline-block;
   text-align: center;
   letter-spacing: 0.025em;
   border-radius: 3px;
-  border: none;
   font-size: 16px;
   line-height: 16px;
   font-family: "LatoBold";
@@ -704,18 +701,18 @@ b, strong {
 
 .buttonExtraLarge {
   padding: 18px 30px;
-  width: 300px;
-  height: 50px; }
+  min-width: 300px;
+  min-height: 50px; }
 
 .buttonLarge {
   padding: 18px 30px;
-  width: 220px;
-  height: 50px; }
+  min-width: 220px;
+  min-height: 50px; }
 
 .buttonSmall {
   padding: 15px 20px;
-  width: 148px;
-  height: 43px; }
+  min-width: 148px;
+  min-height: 43px; }
 
 .buttonPrimary {
   background-color: #00B437;
@@ -1132,7 +1129,8 @@ article .post-featureImage {
           justify-content: space-around;
   -webkit-align-content: flex-end;
       -ms-flex-line-pack: end;
-          align-content: flex-end; }
+          align-content: flex-end;
+  margin-right: -60px; }
   @media only screen and (max-width: 1080px) {
     .relatedPosts-strip {
       -webkit-flex-direction: column;
@@ -1165,7 +1163,8 @@ article .post-featureImage {
   padding-top: 65px;
   padding-right: 15px;
   padding-bottom: 65px;
-  padding-left: 15px; }
+  padding-left: 15px;
+  text-align: center; }
   .postBookend-container::after {
     clear: both;
     content: "";
@@ -1341,7 +1340,8 @@ article .post-featureImage {
 .bios-block {
   -webkit-flex: 1;
       -ms-flex: 1;
-          flex: 1; }
+          flex: 1;
+  text-align: center; }
   .bios-block:not(:last-child) {
     margin-right: 70px; }
     @media only screen and (max-width: 769px) {
@@ -1381,7 +1381,8 @@ article .post-featureImage {
   padding-right: 15px;
   padding-bottom: 60px;
   padding-left: 15px;
-  position: relative; }
+  position: relative;
+  text-align: center; }
   .bookend-container::after {
     clear: both;
     content: "";
@@ -1468,6 +1469,9 @@ article .post-featureImage {
   @media only screen and (max-width: 769px) {
     .bookend-linkNext .circledArrow {
       margin-left: 10px; } }
+
+.bookend-linkPrevious .bookend-link-text {
+  text-align: left; }
 
 .bookend-linkNext .bookend-link-text {
   text-align: right; }
@@ -1663,7 +1667,8 @@ article .post-featureImage {
   padding-top: 20px;
   padding-bottom: 35px;
   padding-left: 15px;
-  padding-right: 15px; }
+  padding-right: 15px;
+  text-align: center; }
   @media only screen and (max-width: 769px) {
     .hero-content {
       max-width: 100%; } }
@@ -2880,7 +2885,8 @@ article .post-featureImage {
   padding-top: 85px;
   padding-right: 15px;
   padding-bottom: 85px;
-  padding-left: 15px; }
+  padding-left: 15px;
+  text-align: center; }
   .videoFeature-container::after {
     clear: both;
     content: "";

@@ -183,6 +183,7 @@ article .post-featureImage {
   display: flex;
   justify-content: space-around;
   align-content: flex-end;
+  margin-right: -60px;
 
   @media only screen and (max-width: 1080px) {
     flex-direction: column;
@@ -212,6 +213,7 @@ article .post-featureImage {
 
 .postBookend-container {
   @include container(100%, 65px, 65px);
+  text-align: center;
 
   @media only screen and (max-width: 1080px) {
     @include container(100%, 60px, 60px);

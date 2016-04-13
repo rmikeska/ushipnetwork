@@ -2,6 +2,7 @@
 
 .videoFeature-container {
   @include container(1080px, 85px, 85px);
+  text-align: center;
 
   @media #{$default-break} {
     @include container(100%, 60px, 60px);

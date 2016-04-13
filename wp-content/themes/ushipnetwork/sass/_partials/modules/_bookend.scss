@@ -8,6 +8,7 @@
 .bookend-container {
   @include container(1140px, 60px, 60px);
   position: relative;
+  text-align: center;
 }
 
 .bookend-intro {
@@ -102,6 +103,10 @@
   @media #{$default-break} {
     margin-left: 10px;
   }
+}
+
+.bookend-linkPrevious .bookend-link-text {
+  text-align: left;
 }
 
 .bookend-linkNext .bookend-link-text {
