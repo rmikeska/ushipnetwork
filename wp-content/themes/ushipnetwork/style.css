@@ -1269,11 +1269,12 @@ article .post-featureImage {
   display: inline-block;
   vertical-align: middle;
   content: '';
-  background-image: linear-gradient(transparent, transparent), url("/wp-content/themes/ushipnetwork/images/divider_slash.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   height: 55px;
-  width: 27px; }
+  width: 1px;
+  background-color: #bbb8b8;
+  -webkit-transform: rotate(22deg);
+      -ms-transform: rotate(22deg);
+          transform: rotate(22deg); }
   @media only screen and (max-width: 769px) {
     .tabbedPageMenu-list li:not(:last-child):after {
       display: none; } }
@@ -1738,16 +1739,16 @@ article .post-featureImage {
 .longFormContent div:not(:last-child):after {
   display: block;
   content: '';
-  background-image: linear-gradient(transparent, transparent), url("/wp-content/themes/ushipnetwork/images/divider_slash.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  margin: 30px auto;
   height: 27px;
-  margin-top: 30px;
-  margin-bottom: 30px; }
+  width: 1px;
+  background-color: #bbb8b8;
+  -webkit-transform: rotate(22deg);
+      -ms-transform: rotate(22deg);
+          transform: rotate(22deg); }
   @media only screen and (max-width: 769px) {
     .longFormContent div:not(:last-child):after {
-      margin-top: 25px;
-      margin-bottom: 25px; } }
+      margin: 25px auto; } }
 
 /*** Slanted Map ***/
 .slantedMap {
