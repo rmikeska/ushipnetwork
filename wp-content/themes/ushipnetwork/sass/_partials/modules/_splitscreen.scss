@@ -77,10 +77,10 @@
 // }
 
 .splitScreen-panel-container {
-  max-width: 595px;
+  max-width: 450px;
   min-height: 395px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: $section-padding;
+  padding-right: $section-padding;
   margin-top: 20px;
   margin-bottom: 20px;
   z-index: 1;
@@ -88,8 +88,6 @@
   @media #{$default-break} {
     max-width: 100%;
     min-height: 100%;
-    padding-left: $section-padding;;
-    padding-right: $section-padding;;
   }
 }
 
@@ -254,7 +252,6 @@
 
 .splitScreen-strip-headline-container {
   width: 100%;
-  min-height: 32px;
   margin-bottom: 7px;
   display: flex;
   align-items: center;
@@ -266,7 +263,6 @@
 }
 
 .splitScreen-strip-headline {
-  padding-top: 4px;
   font-size: 24px;
   line-height: 29px;
   margin-right: 15px;
@@ -289,6 +285,7 @@
 .splitScreen-strip .circledArrow {
   width: 24px;
   height: 24px;
+  margin-bottom: 4px;
 }
 
 .splitScreen-strip .circledArrow path {

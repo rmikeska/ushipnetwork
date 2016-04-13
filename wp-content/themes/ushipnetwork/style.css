@@ -2362,19 +2362,17 @@ article .post-featureImage {
       min-height: 275px; } }
 
 .splitScreen-panel-container {
-  max-width: 595px;
+  max-width: 450px;
   min-height: 395px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-top: 20px;
   margin-bottom: 20px;
   z-index: 1; }
   @media only screen and (max-width: 769px) {
     .splitScreen-panel-container {
       max-width: 100%;
-      min-height: 100%;
-      padding-left: 15px;
-      padding-right: 15px; } }
+      min-height: 100%; } }
 
 .splitScreen-panel-headline {
   font-size: 60px;
@@ -2501,7 +2499,6 @@ article .post-featureImage {
 
 .splitScreen-strip-headline-container {
   width: 100%;
-  min-height: 32px;
   margin-bottom: 7px;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2517,7 +2514,6 @@ article .post-featureImage {
       margin-bottom: 0; } }
 
 .splitScreen-strip-headline {
-  padding-top: 4px;
   font-size: 24px;
   line-height: 29px;
   margin-right: 15px; }
@@ -2535,7 +2531,8 @@ article .post-featureImage {
 
 .splitScreen-strip .circledArrow {
   width: 24px;
-  height: 24px; }
+  height: 24px;
+  margin-bottom: 4px; }
 
 .splitScreen-strip .circledArrow path {
   fill: #999999; }
