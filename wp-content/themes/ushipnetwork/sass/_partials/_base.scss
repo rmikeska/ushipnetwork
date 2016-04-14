@@ -83,10 +83,6 @@ b, strong {
   transition: all 0.15s ease-in-out;
 }
 
-.button:active {
-  background-color: $button-active;
-}
-
 .buttonExtraLarge {
   padding: 18px 30px;
   min-width: 300px;
@@ -138,6 +134,10 @@ b, strong {
 .buttonSecondary:focus {
   background-color: $primary-green;
   color: $white;
+}
+
+.button:active {
+  background-color: $button-active;
 }
 
 .tertiaryLink {

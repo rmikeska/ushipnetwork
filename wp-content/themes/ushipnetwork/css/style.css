@@ -687,9 +687,6 @@ b, strong {
   font-weight: 700;
   transition: all 0.15s ease-in-out; }
 
-.button:active {
-  background-color: #007e26; }
-
 .buttonExtraLarge {
   padding: 18px 30px;
   min-width: 300px;
@@ -732,6 +729,9 @@ b, strong {
 .buttonSecondary:focus {
   background-color: #00B437;
   color: #FFFFFF; }
+
+.button:active {
+  background-color: #007e26; }
 
 .tertiaryLink {
   display: inline-block;
