@@ -1,0 +1,10 @@
+/*** 404 Page ***/
+
+.error404-container {
+  @include container(1020px, 40px, 0);
+  text-align: center;
+}
+
+.error404-headline {
+  line-height: 1.35em;
+}

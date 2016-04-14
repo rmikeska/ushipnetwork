@@ -744,7 +744,8 @@ b, strong {
   color: #00B437; }
 
 .buttonSecondary.buttonSmall {
-  padding: 12px 20px; }
+  padding: 12px 20px;
+  border: 2px solid #00B437; }
 
 .buttonSecondary.buttonLarge {
   padding: 15px 20px; }
@@ -1300,6 +1301,24 @@ article .post-featureImage {
   @media only screen and (max-width: 769px) {
     .tabbedPageMenu-list li:not(:last-child):after {
       display: none; } }
+
+/*** 404 Page ***/
+.error404-container {
+  max-width: calc(1020px + 15px*2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+  padding-right: 15px;
+  padding-bottom: 0;
+  padding-left: 15px;
+  text-align: center; }
+  .error404-container::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.error404-headline {
+  line-height: 1.35em; }
 
 /*** Bios ***/
 .bios-container {
