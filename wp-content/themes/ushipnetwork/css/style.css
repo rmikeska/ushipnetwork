@@ -554,13 +554,11 @@ h3 {
   background: #F4F4F4;
   font-weight: 700; }
 
-.secondary-menu li:first-of-type a,
-.secondary-menu li:first-of-type a:hover {
+.secondary-menu li:first-of-type a {
   border: none; }
 
-.secondary-menu .current-menu-item a,
-.secondary-menu li a:hover {
-  border-bottom-width: 3px;
+.secondary-menu .current-menu-item a {
+  border-bottom-width: 2px;
   border-bottom-style: solid;
   border-bottom-color: #02AAF3; }
 
