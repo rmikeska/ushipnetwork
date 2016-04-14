@@ -4,14 +4,14 @@ body {
   color: $base-text-color;
   font-size: $base-font-size;
   line-height: $base-line-height;
-  font-family: $lato-regular, sans-serif;
-  letter-spacing: 0.01em;
+  font-family: 'LatoWeb', sans-serif;
+  letter-spacing: 0.01rem;
 }
 
 h1,
 h2,
 h3 {
-  font-family: $lato-bold;
+  font-weight: $font-bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }

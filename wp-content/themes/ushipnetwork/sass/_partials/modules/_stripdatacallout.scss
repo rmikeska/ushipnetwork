@@ -39,14 +39,15 @@
   padding-right: 10px;
   font-size: 36px;
   line-height: 100%;
-  font-family: $lato-black;
+  font-weight: $font-bolder;
   text-transform: uppercase;
   letter-spacing: 0.025em;
 }
 
 .stripDataCallout-block-caption {
   font-size: 11px;
-  font-family: $lato-bold;
+  font-weight: $font-bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  line-height: 1.5em;
 }

@@ -1,15 +1,15 @@
-/*** Set Image Asset Path ***/
+/*** Image Asset Path ***/
 
 $asset-path: "/wp-content/themes/ushipnetwork/images";
 
-/*** Base Text ***/
+/*** Text ***/
 
 $base-text-color: #262626;
 $base-font-size: 16px;
-$base-line-height: 1.5;
+$base-line-height: 1.5rem;
 $base-text-shadow: 0 2px 2px rgba(0, 0, 0, 0.60);
 
-/*** Base Colors ***/
+/*** Colors ***/
 
 $navy: #1C2431;
 $primary-green: #00B437;
@@ -22,6 +22,12 @@ $dark-grey: #999999;
 $black: #262626;
 $button-hover-focus: #00902C;
 $button-active: #007e26;
+
+/*** Font Weight ***/
+
+$font-regular: 400;
+$font-bold: 700;
+$font-bolder: 900;
 
 /*** Helpers ***/
 

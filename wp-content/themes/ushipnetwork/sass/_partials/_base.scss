@@ -18,8 +18,7 @@ a:hover {
 }
 
 b, strong {
-  font-weight: normal;
-  font-family: $lato-bold;
+  font-weight: $font-bold;
 }
 
 .pageHeader-primaryNav {
@@ -80,7 +79,7 @@ b, strong {
   border-radius: 3px;
   font-size: 16px;
   line-height: 16px;
-  font-family: $lato-bold;
+  font-weight: $font-bold;
   transition: all 0.15s ease-in-out;
 }
 
@@ -143,7 +142,7 @@ b, strong {
 .tertiaryLink {
   display: inline-block;
   color: $base-text-color;
-  font-family: $lato-bold;
+  font-weight: $font-bold;
   font-size: 18px;
   transition: all 0.15s ease-in-out;
 }

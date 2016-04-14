@@ -17,7 +17,7 @@ article .post-featureImage {
 
 .entry-title {
   padding-bottom: 30px;
-  font-family: $lato-bold;
+  font-weight: $font-bold;
   font-size: 24px;
   line-height: 30px;
   letter-spacing: 0.1em;
@@ -25,7 +25,7 @@ article .post-featureImage {
 
 .entry-meta,
 .entry-footer {
-  font-family: $lato-bold;
+  font-weight: $font-bold;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-size: 14px;
@@ -138,7 +138,7 @@ article .post-featureImage {
   display: inline-block;
   margin-bottom: 35px;
   text-transform: uppercase;
-  font-family: $lato-bold;
+  font-weight: $font-bold;
   color: $base-text-color;
   font-size: 14px;
   letter-spacing: 0.1em;

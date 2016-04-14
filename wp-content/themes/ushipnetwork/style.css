@@ -421,33 +421,58 @@ th {
 
 /*** Lato ***/
 @font-face {
-  font-family: 'LatoRegular';
-  src: url("/wp-content/themes/ushipnetwork/type/lato/lato-regular.eot");
-  src: url("/wp-content/themes/ushipnetwork/type/lato/lato-regular.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/ushipnetwork/type/lato/lato-regular.woff2") format("woff2"), url("/wp-content/themes/ushipnetwork/type/lato/lato-regular.woff") format("woff"), url("/wp-content/themes/ushipnetwork/type/lato/lato-regular.ttf") format("truetype"), url("/wp-content/themes/ushipnetwork/type/lato/lato-regular.svg#lato-regular") format("svg"); }
+  font-family: "LatoWeb";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/wp-content/themes/ushipnetwork/type/lato/lato-regular.woff") format("woff");
+  text-rendering: optimizeLegibility; }
 @font-face {
-  font-family: 'LatoBold';
-  src: url("/wp-content/themes/ushipnetwork/type/lato/lato-bold.eot");
-  src: url("/wp-content/themes/ushipnetwork/type/lato/lato-bold.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/ushipnetwork/type/lato/lato-bold.woff2") format("woff2"), url("/wp-content/themes/ushipnetwork/type/lato/lato-bold.woff") format("woff"), url("/wp-content/themes/ushipnetwork/type/lato/lato-bold.ttf") format("truetype"), url("/wp-content/themes/ushipnetwork/type/lato/lato-bold.svg#lato-bold") format("svg"); }
+  font-family: "LatoWeb";
+  font-weight: 700;
+  font-style: normal;
+  src: url("/wp-content/themes/ushipnetwork/type/lato/lato-bold.woff") format("woff");
+  text-rendering: optimizeLegibility; }
 @font-face {
-  font-family: 'LatoBlack';
-  src: url("/wp-content/themes/ushipnetwork/type/lato/lato-black.eot");
-  src: url("/wp-content/themes/ushipnetwork/type/lato/lato-black.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/ushipnetwork/type/lato/lato-black.woff2") format("woff2"), url("/wp-content/themes/ushipnetwork/type/lato/lato-black.woff") format("woff"), url("/wp-content/themes/ushipnetwork/type/lato/lato-black.ttf") format("truetype"), url("/wp-content/themes/ushipnetwork/type/lato/lato-black.svg#lato-black") format("svg"); }
-/*** Set Image Asset Path ***/
-/*** Base Text ***/
-/*** Base Colors ***/
+  font-family: "LatoWeb";
+  font-weight: 900;
+  font-style: normal;
+  src: url("/wp-content/themes/ushipnetwork/type/lato/lato-black.woff") format("woff");
+  text-rendering: optimizeLegibility; }
+@font-face {
+  font-family: "LatoWeb";
+  font-weight: 400;
+  font-style: italic;
+  src: url("/wp-content/themes/ushipnetwork/type/lato/lato-regular-italic.woff") format("woff");
+  text-rendering: optimizeLegibility; }
+@font-face {
+  font-family: "LatoWeb";
+  font-weight: 700;
+  font-style: italic;
+  src: url("/wp-content/themes/ushipnetwork/type/lato/lato-bold-italic.woff") format("woff");
+  text-rendering: optimizeLegibility; }
+@font-face {
+  font-family: "LatoWeb";
+  font-weight: 900;
+  font-style: italic;
+  src: url("/wp-content/themes/ushipnetwork/type/lato/lato-black-italic.woff") format("woff");
+  text-rendering: optimizeLegibility; }
+/*** Image Asset Path ***/
+/*** Text ***/
+/*** Colors ***/
+/*** Font Weight ***/
 /*** Helpers ***/
 /*** Typography ***/
 body {
   color: #262626;
   font-size: 16px;
-  line-height: 1.5;
-  font-family: "LatoRegular", sans-serif;
-  letter-spacing: 0.01em; }
+  line-height: 1.5rem;
+  font-family: 'LatoWeb', sans-serif;
+  letter-spacing: 0.01rem; }
 
 h1,
 h2,
 h3 {
-  font-family: "LatoBold";
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em; }
 
@@ -529,7 +554,7 @@ h3 {
 
 .secondary-menu li:first-of-type {
   background: #F4F4F4;
-  font-family: "LatoBold"; }
+  font-weight: 700; }
 
 .secondary-menu li:first-of-type a,
 .secondary-menu li:first-of-type a:hover {
@@ -627,8 +652,7 @@ a:hover {
   color: #0288C2; }
 
 b, strong {
-  font-weight: normal;
-  font-family: "LatoBold"; }
+  font-weight: 700; }
 
 .pageHeader-primaryNav {
   display: none; }
@@ -687,7 +711,7 @@ b, strong {
   border-radius: 3px;
   font-size: 16px;
   line-height: 16px;
-  font-family: "LatoBold";
+  font-weight: 700;
   transition: all 0.15s ease-in-out; }
 
 .button:active {
@@ -738,7 +762,7 @@ b, strong {
 .tertiaryLink {
   display: inline-block;
   color: #262626;
-  font-family: "LatoBold";
+  font-weight: 700;
   font-size: 18px;
   transition: all 0.15s ease-in-out; }
 
@@ -822,7 +846,7 @@ b, strong {
   cursor: pointer;
   color: #262626;
   text-transform: uppercase;
-  font-family: "LatoBold";
+  font-weight: 700;
   letter-spacing: 0.1em;
   line-height: 24px; }
 
@@ -898,14 +922,14 @@ b, strong {
 
 .post-tag {
   text-transform: uppercase;
-  font-family: "LatoBold";
+  font-weight: 700;
   font-size: 14px;
   line-height: 30px;
   letter-spacing: 0.05em; }
 
 .post-title {
   display: block;
-  font-family: "LatoBold";
+  font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
   color: #262626;
@@ -932,7 +956,7 @@ b, strong {
   background-color: #00B437;
   border-radius: 3px;
   color: #FFFFFF;
-  font-family: "LatoBold"; }
+  font-weight: 700; }
 
 /*** Single Post ***/
 article.post {
@@ -959,14 +983,14 @@ article .post-featureImage {
 
 .entry-title {
   padding-bottom: 30px;
-  font-family: "LatoBold";
+  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   letter-spacing: 0.1em; }
 
 .entry-meta,
 .entry-footer {
-  font-family: "LatoBold";
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-size: 14px; }
@@ -1058,7 +1082,7 @@ article .post-featureImage {
   display: inline-block;
   margin-bottom: 35px;
   text-transform: uppercase;
-  font-family: "LatoBold";
+  font-weight: 700;
   color: #262626;
   font-size: 14px;
   letter-spacing: 0.1em;
@@ -1239,7 +1263,7 @@ article .post-featureImage {
   cursor: pointer;
   color: #262626;
   text-transform: uppercase;
-  font-family: "LatoBold";
+  font-weight: 700;
   letter-spacing: 0.1em;
   line-height: 17px;
   font-size: 12px;
@@ -1354,7 +1378,7 @@ article .post-featureImage {
   padding-top: 22px;
   padding-bottom: 10px;
   text-align: center;
-  font-family: "LatoBold";
+  font-weight: 700;
   text-transform: uppercase;
   font-size: 14px; }
 
@@ -1394,7 +1418,7 @@ article .post-featureImage {
 
 .bookend-link-text {
   text-transform: uppercase;
-  font-family: "LatoBold";
+  font-weight: 700;
   color: #262626;
   font-size: 14px;
   letter-spacing: 0.1em; }
@@ -1592,15 +1616,16 @@ article .post-featureImage {
   padding-right: 10px;
   font-size: 36px;
   line-height: 100%;
-  font-family: "LatoBlack";
+  font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.025em; }
 
 .stripDataCallout-block-caption {
   font-size: 11px;
-  font-family: "LatoBold";
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.1em; }
+  letter-spacing: 0.1em;
+  line-height: 1.5em; }
 
 /*** Full Width Image ***/
 .fullWidthImage {
@@ -1958,13 +1983,13 @@ article .post-featureImage {
   float: left;
   width: 30px;
   font-size: 16px;
-  font-family: "LatoBold"; }
+  font-weight: 700; }
 
 .slantedMap-copy-block-text:not(:last-child) {
   padding-bottom: 20px; }
 
 .slantedMap-copy-block-text h6 {
-  font-family: "LatoBold";
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em; }
 
@@ -1974,7 +1999,7 @@ article .post-featureImage {
   text-transform: uppercase; }
 
 .slantedMap-copy-block-text strong span {
-  font-family: "LatoRegular";
+  font-weight: 400;
   text-transform: initial; }
 
 .slantedMap-copy-block-text strong:not(:last-child) {
@@ -2001,7 +2026,7 @@ article .post-featureImage {
   font-size: 18px;
   line-height: 24px;
   text-align: center;
-  font-family: "LatoBold"; }
+  font-weight: 700; }
 
 /*** Testimonials ***/
 .testimonials-container {
@@ -2126,7 +2151,7 @@ article .post-featureImage {
       margin-right: 0; } }
 
 .post-caption {
-  font-family: "LatoBold";
+  font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -2165,7 +2190,7 @@ article .post-featureImage {
 .careersListings .resumator-job:last-of-type {
   border-bottom: 1px solid #dddddd; }
 .careersListings .resumator-job-title {
-  font-family: "LatoBold";
+  font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -2181,7 +2206,7 @@ article .post-featureImage {
     .careersListings .resumator-job-info-details {
       display: none; } }
 .careersListings .resumator-job-heading {
-  font-family: "LatoBold";
+  font-weight: 700;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase; }
@@ -2205,7 +2230,7 @@ article .post-featureImage {
   top: 27px;
   right: 0;
   line-height: 26px;
-  font-family: "LatoBold";
+  font-weight: 700;
   font-size: 17px;
   cursor: pointer;
   text-transform: none; }
@@ -2238,7 +2263,7 @@ article .post-featureImage {
   background-color: #00B437;
   border-radius: 3px;
   color: #FFFFFF;
-  font-family: "LatoBold";
+  font-weight: 700;
   padding: 0 10px;
   width: 154px;
   height: 43px; }
@@ -2255,7 +2280,7 @@ article .post-featureImage {
   border: 3px solid #00B437;
   border-radius: 3px;
   color: #00B437;
-  font-family: "LatoBold";
+  font-weight: 700;
   padding: 0 10px;
   width: 154px;
   height: 43px;
@@ -2474,7 +2499,7 @@ article .post-featureImage {
   margin: 0 auto;
   color: #999999;
   text-transform: uppercase;
-  font-family: "LatoBold";
+  font-weight: 700;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -2679,7 +2704,7 @@ article .post-featureImage {
       height: 40px; } }
 
 .iconBulletPoints-title {
-  font-family: "LatoBold";
+  font-weight: 700;
   padding-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -2745,7 +2770,7 @@ article .post-featureImage {
 
 .tertiaryCallout-title {
   padding-right: 40px;
-  font-family: "LatoBold";
+  font-weight: 700;
   letter-spacing: 0.05em;
   font-size: 18px; }
   @media only screen and (max-width: 769px) {
@@ -2827,7 +2852,7 @@ article .post-featureImage {
 .linkRow-title {
   padding-bottom: 30px;
   text-align: center;
-  font-family: "LatoBold";
+  font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 0.1em; }

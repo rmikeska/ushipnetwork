@@ -25,7 +25,7 @@
   cursor: pointer;
   color: $base-text-color;
   text-transform: uppercase;
-  font-family: $lato-bold;
+  font-weight: $font-bold;
   letter-spacing: 0.1em;
   line-height: 24px;
 }
@@ -91,7 +91,7 @@
 
 .post-tag {
   text-transform: uppercase;
-  font-family: $lato-bold;
+  font-weight: $font-bold;
   font-size: 14px;
   line-height: 30px;
   letter-spacing: 0.05em;
@@ -99,7 +99,7 @@
 
 .post-title {
   display: block;
-  font-family: $lato-bold;
+  font-weight: $font-bold;
   text-transform: uppercase;
   font-size: 18px;
   color: $base-text-color;
@@ -129,5 +129,5 @@
   background-color: $primary-green;
   border-radius: 3px;
   color: $white;
-  font-family: $lato-bold;
+  font-weight: $font-bold;
 }

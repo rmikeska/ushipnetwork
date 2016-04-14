@@ -27,7 +27,7 @@
   }
 
   .resumator-job-title {
-    font-family: $lato-bold;
+    font-weight: $font-bold;
     line-height: 30px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -48,7 +48,7 @@
   }
 
   .resumator-job-heading {
-    font-family: $lato-bold;
+    font-weight: $font-bold;
     font-size: 14px;
     line-height: 30px;
     text-transform: uppercase;
@@ -86,7 +86,7 @@
     top: 27px;
     right: 0;
     line-height: 26px;
-    font-family: $lato-bold;
+    font-weight: $font-bold;
     font-size: 17px;
     cursor: pointer;
     text-transform: none;
@@ -125,7 +125,7 @@
     background-color: $primary-green;
     border-radius: 3px;
     color: $white;
-    font-family: $lato-bold;
+    font-weight: $font-bold;
     padding: 0 10px;
     width: 154px;
     height: 43px;
@@ -145,7 +145,7 @@
     border: 3px solid $primary-green;
     border-radius: 3px;
     color: $primary-green;
-    font-family: $lato-bold;
+    font-weight: $font-bold;
     padding: 0 10px;
     width: 154px;
     height: 43px;
