@@ -1,9 +1,14 @@
 /*** Split Screen ***/
 
+.page-template-split-screen .pageContent {
+  // overflow: hidden;
+}
+
 .splitScreen {
   display: flex;
   flex-direction: column;
   flex: 1;
+  // overflow: auto;
 }
 
 .splitScreen-row {
@@ -28,6 +33,7 @@
 .splitScreen-row:last-child {
   flex: 1;
   display: flex;
+  max-height: 85px;
 }
 
 .splitScreen-panel {
@@ -101,7 +107,6 @@
   @media #{$default-break} {
     font-size: 42px;
     line-height: 1.2;
-    // text-shadow: none;
   }
 }
 
@@ -206,21 +211,6 @@
 
 .splitScreen-strip {
   background-color: $light-grey;
-}
-
-.splitScreen-strip-container {
-  padding-left: 60px;
-  padding-right: 60px;
-
-  @media #{$default-break} {
-    padding-left: $section-padding;
-    padding-right: $section-padding;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-}
-
-.splitScreen-strip {
   z-index: 1;
   position: relative;
   float: left;
@@ -250,12 +240,21 @@
   }
 }
 
+.splitScreen-strip-container {
+  padding-left: $section-padding;
+  padding-right: $section-padding;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+
+}
+
+.splitScreen-strip:first-child .splitScreen-strip-container {
+  padding-right: 37px;
+}
+
 .splitScreen-strip-headline-container {
-  width: 100%;
   margin-bottom: 7px;
-  display: flex;
-  align-items: center;
-  align-content: center;
 
   @media #{$default-break} {
     margin-bottom: 0;
@@ -263,12 +262,17 @@
 }
 
 .splitScreen-strip-headline {
+  display: inline-block;
+  vertical-align: middle;
   font-size: 24px;
-  line-height: 29px;
+  line-height: 1em;
+  margin-top: 0.36em;
+  margin-bottom: 0.25em;
   margin-right: 15px;
 
   @media #{$default-break} {
     font-size: 18px;
+    margin-top: 0.4em;
   }
 }
 
@@ -283,9 +287,10 @@
 }
 
 .splitScreen-strip .circledArrow {
+  display: inline-block;
+  vertical-align: middle;
   width: 24px;
   height: 24px;
-  margin-bottom: 4px;
 }
 
 .splitScreen-strip .circledArrow path {
