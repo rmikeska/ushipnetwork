@@ -1580,10 +1580,12 @@ article .post-featureImage {
 .stripDataCallout-block {
   color: #FFFFFF; }
   .stripDataCallout-block:not(:last-child) {
-    flex: 1; }
+    flex: 1;
+    margin-right: 20px; }
     @media only screen and (max-width: 769px) {
       .stripDataCallout-block:not(:last-child) {
-        padding-bottom: 55px; } }
+        padding-bottom: 55px;
+        margin-right: 0; } }
 
 .stripDataCallout-block-inner {
   display: flex;
