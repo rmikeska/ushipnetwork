@@ -1183,8 +1183,7 @@ article .post-featureImage {
     display: table; }
   @media only screen and (max-width: 769px) {
     .tabbedPageMenu {
-      padding-top: 20px;
-      padding-bottom: 0; } }
+      padding-top: 20px; } }
 
 .tabbedPageMenu-list {
   display: flex;
@@ -1193,14 +1192,25 @@ article .post-featureImage {
   flex-direction: row;
   flex-wrap: wrap;
   align-content: flex-end; }
+  @media only screen and (max-width: 769px) {
+    .tabbedPageMenu-list {
+      display: block; } }
 
 .tabbedPageMenu-list li {
   text-align: center;
   margin-bottom: 20px; }
+  @media only screen and (max-width: 769px) {
+    .tabbedPageMenu-list li {
+      float: left;
+      width: 33.3333333333%; } }
+  @media only screen and (max-width: 480px) {
+    .tabbedPageMenu-list li {
+      width: 50%; } }
 
 .tabbedPageMenu-list li a {
   display: inline-block;
   vertical-align: middle;
+  max-width: 120px;
   cursor: pointer;
   color: #262626;
   text-transform: uppercase;
@@ -1241,6 +1251,48 @@ article .post-featureImage {
   @media only screen and (max-width: 769px) {
     .tabbedPageMenu-list li:not(:last-child):after {
       display: none; } }
+
+@media only screen and (max-width: 942px) {
+  .tabbedPageMenu-list.tabs5 {
+    display: block; } }
+@media only screen and (max-width: 942px) {
+  .tabbedPageMenu-list.tabs5 li {
+    float: left;
+    width: 33.3333333333%; } }
+@media only screen and (max-width: 480px) {
+  .tabbedPageMenu-list.tabs5 li {
+    width: 50%; } }
+@media only screen and (max-width: 942px) {
+  .tabbedPageMenu-list.tabs5 li:not(:last-child):after {
+    display: none; } }
+
+@media only screen and (max-width: 1120px) {
+  .tabbedPageMenu-list.tabs6 {
+    display: block; } }
+@media only screen and (max-width: 1120px) {
+  .tabbedPageMenu-list.tabs6 li {
+    float: left;
+    width: 33.3333333333%; } }
+@media only screen and (max-width: 480px) {
+  .tabbedPageMenu-list.tabs6 li {
+    width: 50%; } }
+@media only screen and (max-width: 1120px) {
+  .tabbedPageMenu-list.tabs6 li:not(:last-child):after {
+    display: none; } }
+
+@media only screen and (max-width: 1300px) {
+  .tabbedPageMenu-list.tabs7 {
+    display: block; } }
+@media only screen and (max-width: 1300px) {
+  .tabbedPageMenu-list.tabs7 li {
+    float: left;
+    width: 33.3333333333%; } }
+@media only screen and (max-width: 480px) {
+  .tabbedPageMenu-list.tabs7 li {
+    width: 50%; } }
+@media only screen and (max-width: 1300px) {
+  .tabbedPageMenu-list.tabs7 li:not(:last-child):after {
+    display: none; } }
 
 /*** 404 Page ***/
 .error404-container {

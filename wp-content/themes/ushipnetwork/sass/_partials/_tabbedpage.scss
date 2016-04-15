@@ -5,7 +5,6 @@
 
   @media #{$default-break} {
     padding-top: 20px;
-    padding-bottom: 0;
   }
 }
 
@@ -16,16 +15,30 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-content: flex-end;
+
+  @media #{$default-break} {
+    display: block;
+  }
 }
 
 .tabbedPageMenu-list li {
   text-align: center;
   margin-bottom: 20px;
+
+  @media #{$default-break} {
+    float: left;
+    width: 33.3333333333%;
+  }
+
+  @media only screen and (max-width: 480px) {
+    width: 50%;
+  }
 }
 
 .tabbedPageMenu-list li a {
   display: inline-block;
   vertical-align: middle;
+  max-width: 120px;
   cursor: pointer;
   color: $base-text-color;
   text-transform: uppercase;
@@ -71,5 +84,74 @@
 
   @media #{$default-break} {
     display: none;
+  }
+}
+
+.tabbedPageMenu-list.tabs5 {
+
+  @media only screen and (max-width: 942px) {
+    display: block;
+  }
+
+  li {
+    @media only screen and (max-width: 942px) {
+      float: left;
+      width: 33.3333333333%;
+    }
+    @media only screen and (max-width: 480px) {
+      width: 50%;
+    }
+  }
+
+  li:not(:last-child):after {
+    @media only screen and (max-width: 942px) {
+      display: none;
+    }
+  }
+}
+
+.tabbedPageMenu-list.tabs6 {
+
+  @media only screen and (max-width: 1120px) {
+    display: block;
+  }
+
+  li {
+    @media only screen and (max-width: 1120px) {
+      float: left;
+      width: 33.3333333333%;
+    }
+    @media only screen and (max-width: 480px) {
+      width: 50%;
+    }
+  }
+
+  li:not(:last-child):after {
+    @media only screen and (max-width: 1120px) {
+      display: none;
+    }
+  }
+}
+
+.tabbedPageMenu-list.tabs7 {
+
+  @media only screen and (max-width: 1300px) {
+    display: block;
+  }
+
+  li {
+    @media only screen and (max-width: 1300px) {
+      float: left;
+      width: 33.3333333333%;
+    }
+    @media only screen and (max-width: 480px) {
+      width: 50%;
+    }
+  }
+
+  li:not(:last-child):after {
+    @media only screen and (max-width: 1300px) {
+      display: none;
+    }
   }
 }

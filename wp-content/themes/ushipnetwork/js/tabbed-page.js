@@ -1,9 +1,29 @@
 jQuery(document).ready(function ($) {
 
+    // Hide all but first tab on page ready
     $('.tabbedPageWrapper .tabbedPage:not(:first-child)').hide();
 
+
+
+    // Add active class to first menu item on ready
     $('.tabbedPageMenu-list li:first-child').addClass('tabbedPage-active');
 
+
+
+    // Add classes to larger tab menus for specific wide breakpoints
+    $('.tabbedPageMenu-list').each(function () {
+        if ($(this).children().length == 5) {
+            $(this).addClass('tabs5');
+        } else if ($(this).children().length == 6) {
+            $(this).addClass('tabs6');
+        } else if ($(this).children().length == 7) {
+            $(this).addClass('tabs7');
+        }
+    });
+
+
+
+    // Hashchange
     $(window).on('hashchange', function (e) {
 
         e.preventDefault();
