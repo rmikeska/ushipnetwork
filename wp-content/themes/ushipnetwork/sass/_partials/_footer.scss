@@ -1,5 +1,11 @@
-.page-template-split-screen .footerNew {
+.page-template-split-screen .footerDisplay {
   display: none;
+}
+
+@media screen and (max-width: 750px) {
+  .footerDisplay {
+      display: none;
+  }
 }
 
 .footerNew {
