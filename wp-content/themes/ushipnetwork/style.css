@@ -2519,7 +2519,6 @@ article .post-featureImage {
   padding-bottom: 0;
   padding-left: 15px;
   width: 100%;
-  height: 100%;
   overflow: hidden; }
   .tabbedPageMenu::after {
     clear: both;
@@ -3476,7 +3475,6 @@ article .post-featureImage {
   padding-bottom: 50px;
   padding-left: 15px;
   width: 100%;
-  height: 100%;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
