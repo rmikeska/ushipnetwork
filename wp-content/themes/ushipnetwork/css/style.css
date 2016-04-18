@@ -2924,11 +2924,21 @@ article .post-featureImage {
   background-position: center; }
 
 .hero-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-box-pack: center; }
+  max-width: -webkit-calc(1020px + 15px*2);
+  max-width: calc(1020px + 15px*2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  display: table;
+  height: 100%;
+  text-align: center; }
+  .hero-container::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 .heroSmall .hero-container {
   min-height: 275px; }
@@ -2949,15 +2959,9 @@ article .post-featureImage {
       min-height: 215px; } }
 
 .hero-content {
-  max-width: 1020px;
-  padding-top: 20px;
-  padding-bottom: 35px;
-  padding-left: 15px;
-  padding-right: 15px;
+  display: table-cell;
+  vertical-align: middle;
   text-align: center; }
-  @media only screen and (max-width: 769px) {
-    .hero-content {
-      max-width: 100%; } }
 
 .hero-headline {
   text-align: center;

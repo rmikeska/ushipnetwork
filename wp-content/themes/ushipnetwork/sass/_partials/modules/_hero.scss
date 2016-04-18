@@ -2,19 +2,13 @@
 
 .hero {
   @include background-image;
-  // flex properties here don't seem to play well with the mobile nav. if i remember correctly, they fixed some weird stuff in ie though :/
-  // display: flex;
-  // flex-direction: column;
-  // -webkit-box-orient: vertical;
-  // -webkit-box-direction: normal;
 }
 
 .hero-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-box-pack: center;
+  @include container(1020px, 20px, 20px);
+  display: table;
+  height: 100%;
+  text-align: center;
 }
 
 .heroSmall .hero-container {
@@ -42,16 +36,9 @@
 }
 
 .hero-content {
-  max-width: 1020px;
-  padding-top: 20px;
-  padding-bottom: 35px;
-  padding-left: $section-padding;
-  padding-right: $section-padding;
+  display: table-cell;
+  vertical-align: middle;
   text-align: center;
-
-  @media #{$default-break} {
-    max-width: 100%;
-  }
 }
 
 .hero-headline {
