@@ -178,3 +178,4 @@
 	</div>
 
 	<main class="pageContent page-wrapper container js-pageContainer js-container">
+		<div id="content" class="page-content content content-newHeader content-newFooter">
