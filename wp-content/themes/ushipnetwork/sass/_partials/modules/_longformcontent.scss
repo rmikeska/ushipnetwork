@@ -1,5 +1,11 @@
 /*** Long Form Content ***/
 
+
+.longFormContent {
+  width: 100%;
+  height: 100%;
+}
+
 .longFormContent-container {
   @include container(620px, 65px, 65px);
 
