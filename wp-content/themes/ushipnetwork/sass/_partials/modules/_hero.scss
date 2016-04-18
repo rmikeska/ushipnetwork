@@ -2,16 +2,13 @@
 
 .hero {
   @include background-image;
-}
-
-.hero-container {
-  @include container(1020px, 20px, 20px);
   display: table;
   height: 100%;
+  width: 100%;
   text-align: center;
 }
 
-.heroSmall .hero-container {
+.hero.heroSmall {
   min-height: 275px;
 
   @media #{$default-break} {
@@ -19,7 +16,7 @@
   }
 }
 
-.heroMedium .hero-container {
+.hero.heroMedium {
   min-height: 350px;
 
   @media #{$default-break} {
@@ -27,7 +24,7 @@
   }
 }
 
-.heroLarge .hero-container {
+.hero.heroLarge {
   min-height: 520px;
 
   @media #{$default-break} {
@@ -35,10 +32,14 @@
   }
 }
 
-.hero-content {
+.hero-container {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
+}
+
+.hero-content {
+  @include container(1020px, 20px, 20px);
 }
 
 .hero-headline {
