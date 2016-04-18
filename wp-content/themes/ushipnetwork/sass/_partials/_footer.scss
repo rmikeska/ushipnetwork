@@ -49,7 +49,6 @@
 .footer-companyInfo-link {
   padding: 13px 30px;
   color: #02AAF3;
-  font-family: "LatoWeb";
   font-size: 14px;
   line-height: 1;
   text-transform: uppercase;
@@ -75,7 +74,7 @@
   height: 50px;
   margin: 0;
   padding-left: 27px;
-  font-family: "LatoWebBold";
+  font-weight: $font-bold;
   box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.12); }
 
 .footer-socialMediaIcons {
@@ -104,6 +103,7 @@
   display: flex; }
 
 .footer-copyrightTerms {
+  line-height: 1;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -127,7 +127,6 @@
   padding: 10px 30px;
   color: #02AAF3;
   line-height: 1;
-  font-family: "LatoWeb";
   font-size: 14px;
   text-align: center;
   text-decoration: none; }
@@ -151,7 +150,6 @@
           align-self: center;
   padding-bottom: 30px;
   color: #999999;
-  font-family: "LatoWeb";
   font-size: 14px;
   max-width: 100%; }
 
@@ -188,7 +186,7 @@
 
 .footer-buttonContainer-button {
   border-radius: 5px;
-  font-family: "LatoWebBold";
+  font-weight: $font-bold;
   color: #00B437;
   border: solid #00B437 1px;
   font-size: 14px;

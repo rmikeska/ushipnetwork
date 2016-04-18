@@ -1,0 +1,21 @@
+select {
+  -webkit-appearance: none !important;
+  border-radius: 0;
+  background-color: #FAFAFA;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMTBweCIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCI+PHBhdGggZD0iTTUxMiA0NTQuNGwtMjYyLjQtMjYyLjRoLTI0OS42bDUxMiA1MTIgNTEyLTUxMmgtMjQ5LjZ6Ij48L3BhdGg+PC9zdmc+');
+  background-position: 100% center;
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #cccccc;
+  padding: 0.51563rem;
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.75);
+  line-height: normal;
+  border-radius: 0;
+  height: 2.35938rem;
+}
+
+option {
+  font-weight: $font-bold;
+}

@@ -465,9 +465,9 @@ th {
 body {
   color: #262626;
   font-size: 16px;
-  line-height: 1.5rem;
+  line-height: 1.5;
   font-family: 'LatoWeb', sans-serif;
-  letter-spacing: 0.01rem; }
+  letter-spacing: 0.01em; }
 
 h1,
 h2,
@@ -1464,7 +1464,6 @@ h3 {
 .footer-companyInfo-link {
   padding: 13px 30px;
   color: #02AAF3;
-  font-family: "LatoWeb";
   font-size: 14px;
   line-height: 1;
   text-transform: uppercase;
@@ -1490,7 +1489,7 @@ h3 {
   height: 50px;
   margin: 0;
   padding-left: 27px;
-  font-family: "LatoWebBold";
+  font-weight: 700;
   box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.12); }
 
 .footer-socialMediaIcons {
@@ -1519,6 +1518,7 @@ h3 {
   display: flex; }
 
 .footer-copyrightTerms {
+  line-height: 1;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1542,7 +1542,6 @@ h3 {
   padding: 10px 30px;
   color: #02AAF3;
   line-height: 1;
-  font-family: "LatoWeb";
   font-size: 14px;
   text-align: center;
   text-decoration: none; }
@@ -1566,7 +1565,6 @@ h3 {
           align-self: center;
   padding-bottom: 30px;
   color: #999999;
-  font-family: "LatoWeb";
   font-size: 14px;
   max-width: 100%; }
 
@@ -1603,7 +1601,7 @@ h3 {
 
 .footer-buttonContainer-button {
   border-radius: 5px;
-  font-family: "LatoWebBold";
+  font-weight: 700;
   color: #00B437;
   border: solid #00B437 1px;
   font-size: 14px;
@@ -2668,6 +2666,26 @@ article .post-featureImage {
 
 .error404-headline {
   line-height: 1.35em; }
+
+select {
+  -webkit-appearance: none !important;
+  border-radius: 0;
+  background-color: #FAFAFA;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMTBweCIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCI+PHBhdGggZD0iTTUxMiA0NTQuNGwtMjYyLjQtMjYyLjRoLTI0OS42bDUxMiA1MTIgNTEyLTUxMmgtMjQ5LjZ6Ij48L3BhdGg+PC9zdmc+");
+  background-position: 100% center;
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #cccccc;
+  padding: 0.51563rem;
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.75);
+  line-height: normal;
+  border-radius: 0;
+  height: 2.35938rem; }
+
+option {
+  font-weight: 700; }
 
 /*** Bios ***/
 .bios-container {
