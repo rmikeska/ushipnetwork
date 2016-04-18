@@ -3008,15 +3008,7 @@ article .post-featureImage {
 .hero {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal; }
+  background-position: center; }
 
 .hero-container {
   display: -webkit-flex;

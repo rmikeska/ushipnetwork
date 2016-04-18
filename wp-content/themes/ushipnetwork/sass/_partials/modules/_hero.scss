@@ -2,10 +2,11 @@
 
 .hero {
   @include background-image;
-  display: flex;
-  flex-direction: column;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
+  // flex properties here don't seem to play well with the mobile nav. if i remember correctly, they fixed some weird stuff in ie though :/
+  // display: flex;
+  // flex-direction: column;
+  // -webkit-box-orient: vertical;
+  // -webkit-box-direction: normal;
 }
 
 .hero-container {

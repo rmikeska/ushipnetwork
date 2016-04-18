@@ -58,13 +58,13 @@
 	          <svg class="siteNav-content-mainLinks-link-icon">
 	            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#uship_icon"></use>
 	          </svg>
-	          <span class="siteNav-content-mainLinks-link-text">Learn</span>
+	          <span class="siteNav-content-mainLinks-link-text">How it Works</span>
 	        </a>
 	        <a class="siteNav-content-mainLinks-link" href="https://www.uship.com/find">
 	          <svg class="siteNav-content-mainLinks-link-icon">
 	            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#marketplace_icon"></use>
 	          </svg>
-	          <span class="siteNav-content-mainLinks-link-text">Marketplace</span>
+	          <span class="siteNav-content-mainLinks-link-text">Find Shipments</span>
 	        </a>
 	        <a class="siteNav-content-mainLinks-link" href="https://www.uship.com/commodity_selection.aspx">
 	          <svg class="siteNav-content-mainLinks-link-icon">
@@ -177,4 +177,4 @@
 	  <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_id' => 'secondary-menu', 'container_class' => 'secondary-menu', 'fallback_cb' => 'false' ) ); ?>
 	</div>
 
-	<main class="pageContent">
+	<main class="pageContent page-wrapper container js-pageContainer js-container">
