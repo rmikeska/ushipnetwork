@@ -1420,7 +1420,7 @@ h3 {
 
 @media screen and (max-width: 750px) {
   .footerDisplay {
-    display: none; } }
+    display: none !important; } }
 .footerNew {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1959,12 +1959,6 @@ b, strong {
   width: 100%;
   display: flex;
   flex-direction: column; }
-
-.pageContent:after {
-  content: '\00a0';
-  display: block;
-  height: 0px;
-  visibility: hidden; }
 
 .pageContent.subNavPush {
   padding-top: 140px; }

@@ -77,7 +77,7 @@ jQuery(document).ready(function ($) {
 
 
     // Hide footer until user scrolls on Split Screen Template
-    $(window).scroll(function () {
-        $('.page-template-split-screen .footerDisplay').show($(document).scrollTop() > 100);
-    });
+    // $(window).scroll(function () {
+    //     $('.page-template-split-screen .footerDisplay').show($(document).scrollTop() > 100);
+    // });
 })
