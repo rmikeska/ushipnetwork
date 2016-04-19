@@ -1954,6 +1954,12 @@ b, strong {
     .pageContent {
       padding-top: 64px; } }
 
+.page-content {
+  flex: 1 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+
 .pageContent:after {
   content: '\00a0';
   display: block;
@@ -2703,7 +2709,8 @@ option {
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px; }
+  font-size: 14px;
+  letter-spacing: 0.1em; }
 
 .bios-description {
   padding-bottom: 27px;
@@ -3576,14 +3583,10 @@ option {
   background-image: linear-gradient(transparent, transparent), url("/wp-content/themes/ushipnetwork/images/linkedin.svg"); }
 
 /*** Split Screen ***/
-.page-template-split-screen .pageContent {
-  overflow: hidden; }
-
 .splitScreen {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  overflow: auto; }
+  flex: 1; }
 
 .splitScreen-row {
   width: 100%;

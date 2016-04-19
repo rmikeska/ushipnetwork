@@ -1975,6 +1975,18 @@ b, strong {
     .pageContent {
       padding-top: 64px; } }
 
+.page-content {
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
 .pageContent:after {
   content: '\00a0';
   display: block;
@@ -2764,7 +2776,8 @@ option {
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px; }
+  font-size: 14px;
+  letter-spacing: 0.1em; }
 
 .bios-description {
   padding-bottom: 27px;
@@ -3695,9 +3708,6 @@ option {
   background-image: linear-gradient(transparent, transparent), url("/wp-content/themes/ushipnetwork/images/linkedin.svg"); }
 
 /*** Split Screen ***/
-.page-template-split-screen .pageContent {
-  overflow: hidden; }
-
 .splitScreen {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3707,8 +3717,7 @@ option {
           flex-direction: column;
   -webkit-flex: 1;
       -ms-flex: 1;
-          flex: 1;
-  overflow: auto; }
+          flex: 1; }
 
 .splitScreen-row {
   width: 100%;

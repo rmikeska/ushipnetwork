@@ -1,14 +1,14 @@
 /*** Split Screen ***/
 
 .page-template-split-screen .pageContent {
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .splitScreen {
   display: flex;
   flex-direction: column;
   flex: 1;
-  overflow: auto;
+  // overflow: auto;
 }
 
 .splitScreen-row {
