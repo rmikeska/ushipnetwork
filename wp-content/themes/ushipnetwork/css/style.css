@@ -2640,7 +2640,7 @@ option {
   margin-right: auto;
   padding-top: 85px;
   padding-right: 15px;
-  padding-bottom: 85px;
+  padding-bottom: 10px;
   padding-left: 15px;
   overflow: hidden;
   width: 100%; }
@@ -2691,10 +2691,16 @@ option {
   text-align: center;
   color: #262626;
   padding-right: 20px;
-  padding-bottom: 40px; }
+  margin-bottom: 40px; }
   @media only screen and (max-width: 769px) {
     .bios-block {
       padding-bottom: 20px; } }
+
+.bios-block:hover {
+  color: #262626; }
+
+.bios-block:hover .bios-name {
+  color: #02AAF3; }
 
 .bios-image {
   display: block;
@@ -2704,7 +2710,7 @@ option {
 
 .bios-name {
   padding-top: 22px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
