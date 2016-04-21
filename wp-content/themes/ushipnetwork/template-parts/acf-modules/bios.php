@@ -6,16 +6,15 @@
     <?php if(get_sub_field('bios_intro_sub')): ?>
       <h6 class="bios-subintro"><?php the_sub_field('bios_intro_sub'); ?></h6>
     <?php endif; ?>
-    <div class="bios-row">
+    <div class="bios-group">
     <?php while(have_rows('bios_content')): the_row(); ?>
       <?php $bios_image = get_sub_field('bios_image'); ?>
       <?php $bios_link_url = get_sub_field('bios_link_url'); ?>
-      <div class="bios-block">
+      <a class="bios-block" target="_blank" href="<?php echo $bios_link_url; ?>">
         <img class="bios-image" src="<?php echo $bios_image['url']; ?>">
         <p class="bios-name"><?php the_sub_field('bios_name'); ?></p>
         <div class="bios-description"><?php the_sub_field('bios_description'); ?></div>
-        <a class="bios-link button buttonSecondary buttonSmall" role="button" target="_blank" href="<?php echo $bios_link_url; ?>"><?php the_sub_field('bios_link_text'); ?></a>
-      </div>
+      </a>
     <?php endwhile; ?>
     </div>
   </div>

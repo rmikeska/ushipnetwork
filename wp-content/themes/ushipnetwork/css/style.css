@@ -2634,14 +2634,16 @@ option {
 
 /*** Bios ***/
 .bios-container {
-  max-width: -webkit-calc(820px + 15px*2);
-  max-width: calc(820px + 15px*2);
+  max-width: -webkit-calc(1060px + 15px*2);
+  max-width: calc(1060px + 15px*2);
   margin-left: auto;
   margin-right: auto;
   padding-top: 85px;
   padding-right: 15px;
   padding-bottom: 85px;
-  padding-left: 15px; }
+  padding-left: 15px;
+  overflow: hidden;
+  width: 100%; }
   .bios-container::after {
     clear: both;
     content: "";
@@ -2674,28 +2676,31 @@ option {
   text-align: center;
   line-height: 30px; }
 
-.bios-row {
+.bios-group {
   display: flex;
-  justify-content: center; }
-  @media only screen and (max-width: 769px) {
-    .bios-row {
-      flex-direction: column; } }
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  margin-right: -20px; }
 
 .bios-block {
-  flex: 1;
-  text-align: center; }
-  .bios-block:not(:last-child) {
-    margin-right: 70px; }
-    @media only screen and (max-width: 769px) {
-      .bios-block:not(:last-child) {
-        margin-right: 0;
-        padding-bottom: 60px; } }
+  display: block;
+  width: 270px;
+  text-align: center;
+  color: #262626;
+  padding-right: 20px;
+  padding-bottom: 40px; }
+  @media only screen and (max-width: 769px) {
+    .bios-block {
+      padding-bottom: 20px; } }
 
 .bios-image {
   display: block;
   margin: 0 auto;
-  max-width: 100%;
-  height: auto; }
+  width: 192px;
+  height: 192px; }
 
 .bios-name {
   padding-top: 22px;
@@ -2703,13 +2708,13 @@ option {
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0.1em; }
 
 .bios-description {
   padding-bottom: 27px;
   text-align: center;
-  font-size: 14px; }
+  font-size: 16px; }
 
 /*** Bookend ***/
 .bookend {

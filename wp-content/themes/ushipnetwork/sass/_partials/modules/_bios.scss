@@ -1,7 +1,9 @@
 /*** Bios ***/
 
 .bios-container {
-  @include container(820px, 85px, 85px);
+  @include container(1060px, 85px, 85px);
+  overflow: hidden;
+  width: 100%;
 
   @media #{$default-break} {
     @include container(100%, 60px, 60px);
@@ -23,34 +25,34 @@
   line-height: 30px;
 }
 
-.bios-row {
+.bios-group {
   display: flex;
-  justify-content: center;
-
-  @media #{$default-break} {
-    flex-direction: column;
-  }
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  margin-right: -20px;
 }
 
 .bios-block {
-  flex: 1;
+  display: block;
+  width: 270px;
   text-align: center;
+  color: $base-text-color;
+  padding-right: 20px;
+  padding-bottom: 40px;
 
-  &:not(:last-child) {
-    margin-right: 70px;
-
-    @media #{$default-break} {
-      margin-right: 0;
-      padding-bottom: 60px;
-    }
+  @media #{$default-break} {
+    padding-bottom: 20px;
   }
 }
 
 .bios-image {
   display: block;
   margin: 0 auto;
-  max-width: 100%;
-  height: auto;
+  width: 192px;
+  height: 192px;
 }
 
 .bios-name {
@@ -59,12 +61,12 @@
   text-align: center;
   font-weight: $font-bold;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0.1em;
 }
 
 .bios-description {
   padding-bottom: 27px;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
 }

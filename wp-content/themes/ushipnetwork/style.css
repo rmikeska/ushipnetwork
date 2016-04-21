@@ -2695,13 +2695,15 @@ option {
 
 /*** Bios ***/
 .bios-container {
-  max-width: calc(820px + 15px*2);
+  max-width: calc(1060px + 15px*2);
   margin-left: auto;
   margin-right: auto;
   padding-top: 85px;
   padding-right: 15px;
   padding-bottom: 85px;
-  padding-left: 15px; }
+  padding-left: 15px;
+  overflow: hidden;
+  width: 100%; }
   .bios-container::after {
     clear: both;
     content: "";
@@ -2733,36 +2735,43 @@ option {
   text-align: center;
   line-height: 30px; }
 
-.bios-row {
+.bios-group {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  @media only screen and (max-width: 769px) {
-    .bios-row {
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; } }
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-align-content: flex-end;
+      -ms-flex-line-pack: end;
+          align-content: flex-end;
+  margin-right: -20px; }
 
 .bios-block {
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  text-align: center; }
-  .bios-block:not(:last-child) {
-    margin-right: 70px; }
-    @media only screen and (max-width: 769px) {
-      .bios-block:not(:last-child) {
-        margin-right: 0;
-        padding-bottom: 60px; } }
+  display: block;
+  width: 270px;
+  text-align: center;
+  color: #262626;
+  padding-right: 20px;
+  padding-bottom: 40px; }
+  @media only screen and (max-width: 769px) {
+    .bios-block {
+      padding-bottom: 20px; } }
 
 .bios-image {
   display: block;
   margin: 0 auto;
-  max-width: 100%;
-  height: auto; }
+  width: 192px;
+  height: 192px; }
 
 .bios-name {
   padding-top: 22px;
@@ -2770,13 +2779,13 @@ option {
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0.1em; }
 
 .bios-description {
   padding-bottom: 27px;
   text-align: center;
-  font-size: 14px; }
+  font-size: 16px; }
 
 /*** Bookend ***/
 .bookend {
