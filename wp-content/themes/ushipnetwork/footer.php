@@ -13,7 +13,7 @@
     </div>
   </main>
 
-  <div class="footerDisplay">
+  <footer class="footerDisplay">
     <div class="footerNew">
       <svg style="display: none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <symbol id="svgicon-facebook_icon" viewBox="1 1 22 22"><path d="M12 1C5.9 1 1 5.9 1 12s4.9 11 11 11 11-4.9 11-11S18.1 1 12 1zm2.4 11h-1.5v5.5h-2.2V12H9.5v-1.9h1.2V8.6c0-1.4.7-2.1 2.4-2.1h1.5v1.9h-1.2c-.4 0-.5.2-.5.6v1.1h1.7l-.2 1.9z"></path></symbol>
@@ -98,7 +98,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </footer>
 
 </div>
 
