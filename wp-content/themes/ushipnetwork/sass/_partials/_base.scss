@@ -152,6 +152,8 @@ b, strong {
 
 .button:active {
   background-color: $button-active;
+  border-color: $button-active;
+  color: $white;
 }
 
 .tertiaryLink {

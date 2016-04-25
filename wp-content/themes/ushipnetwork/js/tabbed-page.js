@@ -23,6 +23,17 @@ jQuery(document).ready(function ($) {
 
 
 
+    // Video Modal
+    $('a[href="#video-modal"]').click(function(event) {
+        event.preventDefault();
+        $(this).modal({
+            fadeDuration: 100
+        });
+        return false;
+    });
+
+
+
     // Hashchange
     $(window).on('hashchange', function (e) {
 
