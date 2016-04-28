@@ -20,16 +20,47 @@
           <a class="button buttonSecondary buttonSmall" role="button" href="<?php echo $hero_cta_secondary_url; ?>"><?php the_sub_field('hero_cta_secondary_text'); ?></a>
         </div>
       <?php endwhile; ?>
-      <?php while(have_rows('hero_video_modal_secondary')): the_row(); ?>
-        <?php $video_modal_iframe = get_sub_field('hero_video_modal_secondary_iframe'); ?>
-        <div class="modal" id="video-modal" style="display:none;">
+      <?php while(have_rows('hero_video_modal_primary')): the_row(); ?>
+        <?php $video_modal_iframe = get_sub_field('hero_video_modal_primary_iframe'); ?>
+        <div class="modal modalVideo" id="video-modal" style="display:none;">
           <div class="modal-inner">
             <?php echo $video_modal_iframe; ?>
-            <!-- <a href="#" rel="modal:close" style="display: none;">Close</a> -->
+          </div>
+        </div>
+        <div class="hero-cta-primary">
+          <a class="button buttonPrimary buttonLarge" role="button" href="#video-modal" rel="modal:open"><?php the_sub_field('hero_video_modal_primary_text'); ?></a>
+        </div>
+      <?php endwhile; ?>
+      <?php while(have_rows('hero_video_modal_secondary')): the_row(); ?>
+        <?php $video_modal_iframe = get_sub_field('hero_video_modal_secondary_iframe'); ?>
+        <div class="modal modalVideo" id="video-modal" style="display:none;">
+          <div class="modal-inner">
+            <?php echo $video_modal_iframe; ?>
           </div>
         </div>
         <div class="hero-cta-secondary">
           <a class="button buttonSecondary buttonSmall" role="button" href="#video-modal" rel="modal:open"><?php the_sub_field('hero_video_modal_secondary_text'); ?></a>
+        </div>
+      <?php endwhile; ?>
+      <?php while(have_rows('hero_form_modal_primary')): the_row(); ?>
+        <div class="modal modalForm" id="form-modal" style="display:none;">
+          <div class="modal-inner">
+            <h6 class="formSuccess"></h6>
+            <?php include("forms/forms.php");?>
+          </div>
+        </div>
+        <div class="hero-cta-primary">
+          <a class="button buttonPrimary buttonLarge" role="button" href="#form-modal" rel="modal:open"><?php the_sub_field('hero_form_modal_primary_text'); ?></a>
+        </div>
+      <?php endwhile; ?>
+      <?php while(have_rows('hero_form_modal_secondary')): the_row(); ?>
+        <div class="modal modalForm" id="form-modal" style="display:none;">
+          <div class="modal-inner">
+            <?php include("forms/forms.php");?>
+          </div>
+        </div>
+        <div class="hero-cta-secondary">
+          <a class="button buttonSecondary buttonSmall" role="button" href="#form-modal" rel="modal:open"><?php the_sub_field('hero_form_modal_secondary_text'); ?></a>
         </div>
       <?php endwhile; ?>
     </div>

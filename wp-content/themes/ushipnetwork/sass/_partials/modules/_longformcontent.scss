@@ -12,7 +12,7 @@
   line-height: 30px;
 }
 
-.longFormContent div:not(:last-child):after {
+.longFormContent-text:not(:last-child):after {
   display: block;
   content: '';
   margin: 30px auto;

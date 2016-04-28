@@ -34,6 +34,52 @@ jQuery(document).ready(function ($) {
 
 
 
+    // Form Modal
+    $('a[href="#form-modal"]').click(function(event) {
+        event.preventDefault();
+        $(this).modal({
+            fadeDuration: 100,
+            closeText: 'x'
+        });
+        return false;
+    });
+
+
+
+    // Validate Pardot Forms
+    $('#form-business-shippers').validate({
+        onkeyup: false,
+        rules: {
+            firstname: 'required',
+            lastname: 'required',
+            company: 'required',
+            email: 'required',
+            phone: 'required',
+            ltlshipmentfrequency: 'required'
+        },
+        messages: {
+            firstname: 'Please enter your first name',
+            lastname: 'Please enter your last name',
+            company: 'Please enter your company name',
+            email: 'Please enter your email address',
+            phone: 'Please enter your phone number',
+            ltlshipmentfrequency: 'Please enter your LTL shipment frequency'
+        },
+        errorContainer: '.errorAlert',
+        errorPlacement: function (error, element) {
+            error.insertAfter(element);
+            $('.errorAlert').text('Please correct the errors below.');
+        },
+        submitHandler: function (form) {
+            $('#form-business-shippers').hide();
+            $('.formSuccess').text('Thank you').show().delay(3000);
+            form.submit();
+            return false;
+        }
+    });
+
+
+
     // Hashchange
     $(window).on('hashchange', function (e) {
 

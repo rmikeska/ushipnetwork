@@ -14,7 +14,7 @@
 }
 
 .slantedMap.mapBackgroundRight:before {
-  left: -40%;
+  right: 40%;
   transform: rotate(-325deg);
 
   @media #{$default-break} {
@@ -23,7 +23,7 @@
 }
 
 .slantedMap.mapBackgroundLeft:before {
-  right: -40%;
+  left: 40%;
   transform: rotate(325deg);
 
   @media #{$default-break} {
