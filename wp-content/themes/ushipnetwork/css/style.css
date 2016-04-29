@@ -4082,10 +4082,8 @@ label {
       margin-bottom: 0; } }
 
 .splitScreen-strip-headline {
-  display: inline-block;
-  vertical-align: bottom;
-  font-size: 24px;
-  line-height: 20px; }
+  float: left;
+  font-size: 24px; }
   @media only screen and (max-width: 769px) {
     .splitScreen-strip-headline {
       font-size: 18px; } }
@@ -4099,8 +4097,7 @@ label {
       display: none; } }
 
 .splitScreen-strip .circledArrow {
-  display: inline-block;
-  vertical-align: bottom;
+  float: left;
   width: 24px;
   height: 24px;
   margin-left: 15px; }
