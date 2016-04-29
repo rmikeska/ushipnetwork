@@ -3273,10 +3273,12 @@ label {
   text-align: center; }
 
 .hero.heroLarge .hero-container {
-  padding-top: 100px; }
+  padding-top: 100px;
+  padding-bottom: 50px; }
   @media only screen and (max-width: 769px) {
     .hero.heroLarge .hero-container {
       padding-top: 0;
+      padding-bottom: 20px;
       display: table-cell;
       vertical-align: middle;
       text-align: center; } }
@@ -3337,7 +3339,7 @@ label {
   padding-top: 85px; }
   @media only screen and (max-width: 769px) {
     .hero-cta-secondary {
-      display: none; } }
+      padding-top: 50px; } }
 
 /*** Long Form Content ***/
 .longFormContent-container {

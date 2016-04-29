@@ -43,9 +43,11 @@
 
 .hero.heroLarge .hero-container {
   padding-top: 100px;
+  padding-bottom: 50px;
 
   @media #{$default-break} {
     padding-top: 0;
+    padding-bottom: 20px;
     display: table-cell;
     vertical-align: middle;
     text-align: center;
@@ -107,6 +109,6 @@
   padding-top: 85px;
 
   @media #{$default-break} {
-    display: none;
+    padding-top: 50px;
   }
 }
