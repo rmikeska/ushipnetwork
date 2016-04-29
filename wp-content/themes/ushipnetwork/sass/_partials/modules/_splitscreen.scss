@@ -263,16 +263,12 @@
 
 .splitScreen-strip-headline {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: bottom;
   font-size: 24px;
-  line-height: 1em;
-  margin-top: 0.36em;
-  margin-bottom: 0.25em;
-  margin-right: 15px;
+  line-height: 20px;
 
   @media #{$default-break} {
     font-size: 18px;
-    margin-top: 0.4em;
   }
 }
 
@@ -288,9 +284,10 @@
 
 .splitScreen-strip .circledArrow {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: bottom;
   width: 24px;
   height: 24px;
+  margin-left: 15px;
 }
 
 .splitScreen-strip .circledArrow path {
