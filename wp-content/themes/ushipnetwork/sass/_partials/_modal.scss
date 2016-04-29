@@ -40,7 +40,7 @@
 }
 
 .modal.modalVideo {
-  max-width: 928px;
+  max-width: 930px;
 }
 
 .modalVideo .modal-inner {
@@ -105,12 +105,13 @@
   position: absolute;
   top: 20px;
   right: 20px;
-  color: $dark-grey;
-  font-size: 14px;
-  font-weight: $font-bold;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHJlY3Qgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTE1LjUzLDEybDcuODQtOC4xMmEyLjMzLDIuMzMsMCwwLDAsMC0zLjIxLDIuMTQsMi4xNCwwLDAsMC0zLjEsMEwxMiw5LjIyLDMuNzUsMC42N2EyLjE0LDIuMTQsMCwwLDAtMy4xLDAsMi4zMywyLjMzLDAsMCwwLDAsMy4yMUw4LjQ4LDEyLDAuNjUsMjAuMTJhMi4zMywyLjMzLDAsMCwwLDAsMy4yMSwyLjE0LDIuMTQsMCwwLDAsMy4xLDBMMTIsMTQuNzhsOC4yNiw4LjU2YTIuMTQsMi4xNCwwLDAsMCwzLjEsMCwyLjMzLDIuMzMsMCwwLDAsMC0zLjIxWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTAuMDEgMCkiIGZpbGw9IiM5OTk5OTkiLz48L3N2Zz4=');
+  background-position: 100% center;
+  background-repeat: no-repeat;
+  background-size: 30px 8px;
   width: 30px;
   height: 30px;
-  line-height: 30px;
+  text-indent: -9999px;
 
   @media #{$default-break} {
     top: 5px;

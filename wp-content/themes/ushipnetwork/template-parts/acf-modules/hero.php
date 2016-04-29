@@ -56,6 +56,7 @@
       <?php while(have_rows('hero_form_modal_secondary')): the_row(); ?>
         <div class="modal modalForm" id="form-modal" style="display:none;">
           <div class="modal-inner">
+            <h6 class="formSuccess"></h6>
             <?php include("forms/forms.php");?>
           </div>
         </div>
