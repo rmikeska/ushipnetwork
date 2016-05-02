@@ -254,6 +254,7 @@
 }
 
 .splitScreen-strip-headline-container {
+  display: inline-block;
   margin-bottom: 7px;
 
   @media #{$default-break} {

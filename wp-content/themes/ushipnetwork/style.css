@@ -4231,6 +4231,7 @@ label {
   padding-right: 37px; }
 
 .splitScreen-strip-headline-container {
+  display: inline-block;
   margin-bottom: 7px; }
   @media only screen and (max-width: 769px) {
     .splitScreen-strip-headline-container {
