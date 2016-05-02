@@ -11,7 +11,7 @@
       <?php $link_url = get_sub_field('link_row_content_url'); ?>
       <div class="linkRow-block">
         <h6 class="linkRow-title"><?php the_sub_field('link_row_content_title'); ?></h6>
-        <a class="linkRow-link tertiaryLink tertiaryLinkDark" role="button" target="_blank" href="<?php echo $link_url; ?>" role="button"><?php the_sub_field('link_row_content_text'); ?><?php include( get_template_directory() . '/images/arrow_link.svg'); ?></a>
+        <a class="linkRow-link tertiaryLink tertiaryLinkDark" role="button" href="<?php echo $link_url; ?>" role="button"><?php the_sub_field('link_row_content_text'); ?><?php include( get_template_directory() . '/images/arrow_link.svg'); ?></a>
       </div>
     <?php endwhile; ?>
     </div>

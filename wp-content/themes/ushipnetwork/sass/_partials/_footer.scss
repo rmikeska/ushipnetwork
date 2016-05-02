@@ -171,6 +171,12 @@
           order: 11;
   padding-bottom: 30px; }
 
+  @media (max-width: 749px) {
+  .footer-mobileAppBadges-badge:last-child {
+      padding-bottom: 44px;
+  }
+}
+
 .footer-companyInfo-link:hover,
 .footer-terms-link:hover {
   text-decoration: none; }

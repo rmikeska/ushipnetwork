@@ -704,8 +704,7 @@ h3 {
     padding: 15px 30px; }
 
   .siteNav-content-mainLinks-link:first-child {
-    padding-top: 30px;
-    padding-bottom: 30px; }
+    padding-top: 30px; }
 
   .siteNav-content-carrierLinks-link:first-child {
     padding-top: 28px;
@@ -1550,6 +1549,9 @@ h3 {
   order: 11;
   padding-bottom: 30px; }
 
+@media (max-width: 749px) {
+  .footer-mobileAppBadges-badge:last-child {
+    padding-bottom: 44px; } }
 .footer-companyInfo-link:hover,
 .footer-terms-link:hover {
   text-decoration: none; }
@@ -2137,8 +2139,11 @@ b, strong {
   display: block; }
 
 .post-featureImage {
-  width: 300px;
-  height: 200px; }
+  max-width: 300px;
+  height: auto; }
+  @media only screen and (max-width: 769px) {
+    .post-featureImage {
+      max-width: 290px; } }
 
 .post-tag-group {
   padding-top: 10px;
@@ -2199,6 +2204,7 @@ article.post {
     display: table; }
 
 article .post-featureImage {
+  max-width: 790px;
   width: 100%;
   height: auto; }
 
@@ -2265,7 +2271,7 @@ article .post-featureImage {
   margin-left: 10px; }
   @media only screen and (max-width: 769px) {
     .share-list li:not(:first-child) {
-      margin-left: 60px; } }
+      margin-left: 50px; } }
 
 .share-list li {
   float: left; }
@@ -2367,9 +2373,7 @@ article .post-featureImage {
 
 .relatedPosts-strip {
   display: flex;
-  justify-content: space-around;
-  align-content: flex-end;
-  margin-right: -60px; }
+  justify-content: center; }
   @media only screen and (max-width: 1080px) {
     .relatedPosts-strip {
       flex-direction: column;

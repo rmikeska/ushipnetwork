@@ -6,6 +6,7 @@ article.post {
 }
 
 article .post-featureImage {
+  max-width: 790px;
   width: 100%;
   height: auto;
 }
@@ -86,7 +87,7 @@ article .post-featureImage {
   margin-left: 10px;
 
   @media #{$default-break} {
-    margin-left: 60px;
+    margin-left: 50px;
   }
 }
 
@@ -181,9 +182,7 @@ article .post-featureImage {
 
 .relatedPosts-strip {
   display: flex;
-  justify-content: space-around;
-  align-content: flex-end;
-  margin-right: -60px;
+  justify-content: center;
 
   @media only screen and (max-width: 1080px) {
     flex-direction: column;
