@@ -254,7 +254,9 @@
 }
 
 .splitScreen-strip-headline-container {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 7px;
 
   @media #{$default-break} {
@@ -263,9 +265,9 @@
 }
 
 .splitScreen-strip-headline {
-  float: left;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 1;
+  margin-top: 4px;
 
   @media #{$default-break} {
     font-size: 18px;
@@ -273,7 +275,6 @@
 }
 
 .splitScreen-strip-subheadline {
-  text-align: center;
   font-size: 14px;
   line-height: 17px;
 
@@ -283,7 +284,7 @@
 }
 
 .splitScreen-strip .circledArrow {
-  float: left;
+  flex: 1 0 auto;
   width: 24px;
   height: 24px;
   margin-left: 15px;

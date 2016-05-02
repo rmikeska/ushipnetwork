@@ -4231,22 +4231,29 @@ label {
   padding-right: 37px; }
 
 .splitScreen-strip-headline-container {
-  display: inline-block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 7px; }
   @media only screen and (max-width: 769px) {
     .splitScreen-strip-headline-container {
       margin-bottom: 0; } }
 
 .splitScreen-strip-headline {
-  float: left;
   font-size: 24px;
-  line-height: 24px; }
+  line-height: 1;
+  margin-top: 4px; }
   @media only screen and (max-width: 769px) {
     .splitScreen-strip-headline {
       font-size: 18px; } }
 
 .splitScreen-strip-subheadline {
-  text-align: center;
   font-size: 14px;
   line-height: 17px; }
   @media only screen and (max-width: 769px) {
@@ -4254,7 +4261,9 @@ label {
       display: none; } }
 
 .splitScreen-strip .circledArrow {
-  float: left;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
   width: 24px;
   height: 24px;
   margin-left: 15px; }
