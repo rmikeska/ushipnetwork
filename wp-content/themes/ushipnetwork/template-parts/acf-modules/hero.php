@@ -43,7 +43,7 @@
         </div>
       <?php endwhile; ?>
       <?php while(have_rows('hero_form_modal_primary')): the_row(); ?>
-        <div class="formSuccess-overlay"></div>
+        <div class="formSuccess-overlay" style="display: none;"></div>
         <div class="formSuccess">
           <div class="formSuccess-inner">
             <h3 class="formSuccess-intro">Thank you</h3>
@@ -62,7 +62,7 @@
         </div>
       <?php endwhile; ?>
       <?php while(have_rows('hero_form_modal_secondary')): the_row(); ?>
-        <div class="formSuccess-overlay"></div>
+        <div class="formSuccess-overlay" style="display: none;"></div>
         <div class="formSuccess">
           <div class="formSuccess-inner">
             <h3 class="formSuccess-intro">Thank you</h3>
