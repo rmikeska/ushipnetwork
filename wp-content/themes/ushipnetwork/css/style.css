@@ -2932,6 +2932,14 @@ label {
   display: none; }
 
 .formSuccess {
+  position: fixed;
+  left: 0;
+  right: 0;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 2;
+  width: 100%;
+  cursor: default;
   max-width: 540px;
   margin: 0 auto;
   background: #FFFFFF;
