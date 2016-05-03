@@ -211,9 +211,7 @@ label {
 }
 
 .formSuccess {
-  position: fixed;
-  left: 0;
-  right: 0;
+  position: relative;
   display: inline-block;
   vertical-align: middle;
   z-index: 2;
@@ -238,9 +236,14 @@ label {
 .formSuccess-body {
   padding-top: 50px;
   padding-bottom: 50px;
-  font-weight: $font-bold;
   border-top: 1px solid $divider-color;
   border-bottom: 1px solid $divider-color;
+}
+
+.formSuccess-body-text {
+  font-weight: $font-bold;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .formSuccess-cta {
@@ -262,5 +265,35 @@ label {
   @media #{$default-break} {
     top: 5px;
     right: 5px;
+  }
+}
+
+.formSuccess-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 1;
+  padding: 100px 15px 15px;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgb(255,255,255);
+  background-color: rgba(255,255,255,0.5);
+}
+
+.formSuccess-overlay:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: -0.05em;
+  height: 100%;
+
+  @media #{$default-break} {
+    height: auto;
   }
 }

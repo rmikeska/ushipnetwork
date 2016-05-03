@@ -2639,8 +2639,7 @@ article .post-featureImage {
   color: #02AAF3; }
 
 /*** Modal ***/
-.blocker,
-.formSuccess-overlay {
+.blocker {
   position: fixed;
   top: 0;
   right: 0;
@@ -2657,8 +2656,7 @@ article .post-featureImage {
   background-color: white;
   background-color: rgba(255, 255, 255, 0.5); }
 
-.blocker:before,
-.formSuccess-overlay:before {
+.blocker:before {
   content: '';
   display: inline-block;
   height: 100%;
@@ -2927,14 +2925,8 @@ label {
   background-position: 100% center;
   background-repeat: no-repeat; }
 
-.formSuccess,
-.formSuccess-overlay {
-  display: none; }
-
 .formSuccess {
-  position: fixed;
-  left: 0;
-  right: 0;
+  position: relative;
   display: inline-block;
   vertical-align: middle;
   z-index: 2;
@@ -2956,9 +2948,13 @@ label {
 .formSuccess-body {
   padding-top: 50px;
   padding-bottom: 50px;
-  font-weight: 700;
   border-top: 1px solid #dddddd;
   border-bottom: 1px solid #dddddd; }
+
+.formSuccess-body-text {
+  font-weight: 700;
+  max-width: 300px;
+  margin: 0 auto; }
 
 .formSuccess-cta {
   margin-top: 30px; }
@@ -2978,6 +2974,33 @@ label {
     .formSuccess-close {
       top: 5px;
       right: 5px; } }
+
+.formSuccess-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 1;
+  padding: 100px 15px 15px;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5); }
+
+.formSuccess-overlay:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: -0.05em;
+  height: 100%; }
+  @media only screen and (max-width: 769px) {
+    .formSuccess-overlay:before {
+      height: auto; } }
 
 /*** Bios ***/
 .bios-container {
