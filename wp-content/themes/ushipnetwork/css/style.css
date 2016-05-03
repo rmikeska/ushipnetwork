@@ -2639,7 +2639,8 @@ article .post-featureImage {
   color: #02AAF3; }
 
 /*** Modal ***/
-.blocker {
+.blocker,
+.formSuccess-overlay {
   position: fixed;
   top: 0;
   right: 0;
@@ -2656,7 +2657,8 @@ article .post-featureImage {
   background-color: white;
   background-color: rgba(255, 255, 255, 0.5); }
 
-.blocker:before {
+.blocker:before,
+.formSuccess-overlay:before {
   content: '';
   display: inline-block;
   height: 100%;
@@ -2925,11 +2927,49 @@ label {
   background-position: 100% center;
   background-repeat: no-repeat; }
 
+.formSuccess,
+.formSuccess-overlay {
+  display: none; }
+
 .formSuccess {
-  display: none;
+  max-width: 540px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  border: 1px solid #dddddd;
+  box-shadow: 0 2px 0 0 #d1d1d1; }
+
+.formSuccess-inner {
+  padding: 30px; }
+
+.formSuccess-intro {
+  padding-bottom: 25px;
+  text-align: left; }
+
+.formSuccess-body {
+  padding-top: 50px;
+  padding-bottom: 50px;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.1em; }
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd; }
+
+.formSuccess-cta {
+  margin-top: 30px; }
+
+.formSuccess-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHJlY3Qgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTE1LjUzLDEybDcuODQtOC4xMmEyLjMzLDIuMzMsMCwwLDAsMC0zLjIxLDIuMTQsMi4xNCwwLDAsMC0zLjEsMEwxMiw5LjIyLDMuNzUsMC42N2EyLjE0LDIuMTQsMCwwLDAtMy4xLDAsMi4zMywyLjMzLDAsMCwwLDAsMy4yMUw4LjQ4LDEyLDAuNjUsMjAuMTJhMi4zMywyLjMzLDAsMCwwLDAsMy4yMSwyLjE0LDIuMTQsMCwwLDAsMy4xLDBMMTIsMTQuNzhsOC4yNiw4LjU2YTIuMTQsMi4xNCwwLDAsMCwzLjEsMCwyLjMzLDIuMzMsMCwwLDAsMC0zLjIxWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTAuMDEgMCkiIGZpbGw9IiM5OTk5OTkiLz48L3N2Zz4=");
+  background-position: 100% center;
+  background-repeat: no-repeat;
+  background-size: 30px 8px;
+  width: 30px;
+  height: 30px;
+  text-indent: -9999px; }
+  @media only screen and (max-width: 769px) {
+    .formSuccess-close {
+      top: 5px;
+      right: 5px; } }
 
 /*** Bios ***/
 .bios-container {
@@ -4103,7 +4143,6 @@ label {
       display: none; } }
 
 .splitScreen-strip .circledArrow {
-  flex: 1 0 auto;
   width: 24px;
   height: 24px;
   margin-left: 15px; }

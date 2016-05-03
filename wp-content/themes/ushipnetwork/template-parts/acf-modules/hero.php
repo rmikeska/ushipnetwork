@@ -43,9 +43,17 @@
         </div>
       <?php endwhile; ?>
       <?php while(have_rows('hero_form_modal_primary')): the_row(); ?>
+        <div class="formSuccess-overlay"></div>
+        <div class="formSuccess modal">
+          <div class="formSuccess-inner">
+            <h3 class="formSuccess-intro">Thank you</h3>
+            <p class="formSuccess-body">Thanks for getting in touch. One of our representatives will contact you soon.</p>
+            <a class="formSuccess-cta button buttonPrimary buttonLarge" role="button" href="">Got It</a>
+          </div>
+          <a href="" class="formSuccess-close"></a>
+        </div>
         <div class="modal modalForm" id="form-modal" style="display:none;">
           <div class="modal-inner">
-            <h6 class="formSuccess"></h6>
             <?php include("forms/forms.php");?>
           </div>
         </div>
@@ -54,9 +62,17 @@
         </div>
       <?php endwhile; ?>
       <?php while(have_rows('hero_form_modal_secondary')): the_row(); ?>
+        <div class="formSuccess-overlay"></div>
+        <div class="formSuccess modal">
+          <div class="formSuccess-inner">
+            <h3 class="formSuccess-intro">Thank you</h3>
+            <p class="formSuccess-body">Thanks for getting in touch. One of our representatives will contact you soon.</p>
+            <a class="formSuccess-cta button buttonPrimary buttonLarge" role="button" href="">Got It</a>
+          </div>
+          <a href="" class="formSuccess-close"></a>
+        </div>
         <div class="modal modalForm" id="form-modal" style="display:none;">
           <div class="modal-inner">
-            <h6 class="formSuccess"></h6>
             <?php include("forms/forms.php");?>
           </div>
         </div>

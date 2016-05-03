@@ -1,6 +1,7 @@
 /*** Modal ***/
 
-.blocker {
+.blocker,
+.formSuccess-overlay {
   position: fixed;
   top: 0;
   right: 0;
@@ -18,7 +19,8 @@
   background-color: rgba(255,255,255,0.5);
 }
 
-.blocker:before {
+.blocker:before,
+.formSuccess-overlay:before {
   content: '';
   display: inline-block;
   height: 100%;

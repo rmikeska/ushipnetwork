@@ -75,14 +75,36 @@ jQuery(document).ready(function ($) {
             } else {
                 $('.errorAlert').text('Please correct the errors below.');
             }
-        },
-        submitHandler: function (form) {
-            $('#form-business-shippers').hide();
-            $('.formSuccess').text('Thank you').show().delay(3000);
-            form.submit();
-            return false;
+        }
+        // ,
+        // submitHandler: function (form) {
+        //     $('#form-business-shippers').hide();
+        //     $('.formSuccess').text('Thank you').show().delay(3000);
+        //     form.submit();
+        //     return false;
+        // }
+    });
+
+
+    // Ghetto Pardot Form Success Modal actions
+    $('.formSuccess, .formSuccess-overlay').toggle(document.URL.indexOf('success=true') !== -1);
+
+    $('.formSuccess-overlay').on('click', function (e) {
+
+        var subject = $('.formSuccess');
+
+        if(e.target.class != subject.attr('class')) {
+            subject.fadeOut();
+            $('.formSuccess-overlay').fadeOut();
         }
     });
+
+    $('.formSuccess-cta, .formSuccess-close').on('click', function (e) {
+        e.preventDefault();
+        $('.formSuccess, .formSuccess-overlay').fadeOut();
+    });
+
+
 
 
 
