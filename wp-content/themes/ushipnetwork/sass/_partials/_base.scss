@@ -39,7 +39,7 @@ b, strong {
   display: flex;
   flex-direction: column;
 
-  @media screen and (max-width: 769px) {
+  @media #{$default-break} {
     padding-top: 64px;
   }
 }
@@ -51,24 +51,10 @@ b, strong {
   flex-direction: column;
 }
 
-// .page-content:after {
-//   content: '\00a0';
-//   display: block;
-//   height: 0px;
-//   visibility: hidden;
-// }
-
-// .pageContent:after {
-//   content: '\00a0';
-//   display: block;
-//   height: 0px;
-//   visibility: hidden;
-// }
-
 .pageContent.subNavPush {
   padding-top: 140px;
 
-  @media screen and (max-width: 769px) {
+  @media #{$default-break} {
     padding-top: 64px;
   }
 }
@@ -213,4 +199,20 @@ b, strong {
 
 .tertiaryLink:active svg path {
   fill: $button-hover-focus;
+}
+
+/*** Override some styles in the DLS Header/Footer ***/
+
+.footer-countryChanger {
+  display: none;
+}
+
+.page-template-split-screen .footerDisplay {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  .footerDisplay {
+      display: none !important;
+  }
 }

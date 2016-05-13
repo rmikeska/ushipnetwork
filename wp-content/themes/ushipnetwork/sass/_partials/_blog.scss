@@ -112,6 +112,10 @@
   margin-bottom: 30px;
 }
 
+.post-title:hover {
+  color: $base-text-color;
+}
+
 .ajax-load-more-wrap {
   width: 100%;
 }

@@ -1,13 +1,3 @@
-.page-template-split-screen .footerDisplay {
-  display: none;
-}
-
-@media screen and (max-width: 750px) {
-  .footerDisplay {
-      display: none !important;
-  }
-}
-
 .footerNew {
   display: -webkit-flex;
   display: -ms-flexbox;

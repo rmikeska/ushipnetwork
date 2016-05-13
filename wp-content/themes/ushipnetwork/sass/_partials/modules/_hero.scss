@@ -2,35 +2,34 @@
 
 .hero {
   @include background-image;
-  // height: 100%;
   width: 100%;
   text-align: center;
 }
 
 .hero.heroSmall {
-  min-height: 275px;
+  height: 275px; // Firefox doesn't like min-height here. display: table; allows for expansion without using min-height.
   display: table;
 
   @media #{$default-break} {
-    min-height: 215px;
+    height: 215px;
   }
 }
 
 .hero.heroMedium {
-  min-height: 350px;
+  height: 350px;
   display: table;
 
   @media #{$default-break} {
-    min-height: 215px;
+    height: 215px;
   }
 }
 
 .hero.heroLarge {
-  min-height: 520px;
+  height: 520px;
 
   @media #{$default-break} {
     display: table;
-    min-height: 325px;
+    height: 325px;
   }
 }
 

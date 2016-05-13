@@ -1380,12 +1380,6 @@ h3 {
 
   .siteNav-modeToggle-toggleIconContainer {
     margin-left: 40px; } }
-.page-template-split-screen .footerDisplay {
-  display: none; }
-
-@media screen and (max-width: 750px) {
-  .footerDisplay {
-    display: none !important; } }
 .footerNew {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1919,7 +1913,7 @@ b, strong {
   width: 100%;
   display: flex;
   flex-direction: column; }
-  @media screen and (max-width: 769px) {
+  @media only screen and (max-width: 769px) {
     .pageContent {
       padding-top: 64px; } }
 
@@ -1931,7 +1925,7 @@ b, strong {
 
 .pageContent.subNavPush {
   padding-top: 140px; }
-  @media screen and (max-width: 769px) {
+  @media only screen and (max-width: 769px) {
     .pageContent.subNavPush {
       padding-top: 64px; } }
 
@@ -2050,6 +2044,16 @@ b, strong {
 .tertiaryLink:active svg path {
   fill: #00902C; }
 
+/*** Override some styles in the DLS Header/Footer ***/
+.footer-countryChanger {
+  display: none; }
+
+.page-template-split-screen .footerDisplay {
+  display: none; }
+
+@media screen and (max-width: 750px) {
+  .footerDisplay {
+    display: none !important; } }
 /*** Blog Landing ***/
 .categoryMenu {
   max-width: -webkit-calc(1020px + 15px*2);
@@ -2165,6 +2169,9 @@ b, strong {
   letter-spacing: 0.05em;
   line-height: 23px;
   margin-bottom: 30px; }
+
+.post-title:hover {
+  color: #262626; }
 
 .ajax-load-more-wrap {
   width: 100%; }
@@ -3325,25 +3332,25 @@ label {
   text-align: center; }
 
 .hero.heroSmall {
-  min-height: 275px;
+  height: 275px;
   display: table; }
   @media only screen and (max-width: 769px) {
     .hero.heroSmall {
-      min-height: 215px; } }
+      height: 215px; } }
 
 .hero.heroMedium {
-  min-height: 350px;
+  height: 350px;
   display: table; }
   @media only screen and (max-width: 769px) {
     .hero.heroMedium {
-      min-height: 215px; } }
+      height: 215px; } }
 
 .hero.heroLarge {
-  min-height: 520px; }
+  height: 520px; }
   @media only screen and (max-width: 769px) {
     .hero.heroLarge {
       display: table;
-      min-height: 325px; } }
+      height: 325px; } }
 
 .hero.heroSmall .hero-container,
 .hero.heroMedium .hero-container {
@@ -3904,6 +3911,8 @@ label {
   background-position: center;
   width: 28px;
   height: 24px; }
+.careersListings .resumator-view-details:hover:before {
+  background-image: linear-gradient(transparent, transparent), url("/wp-content/themes/ushipnetwork/images/accordian_arrow_hover.svg"); }
 .careersListings .resumator-view-details.arrow-closed:before {
   transform: rotateX(180deg); }
 .careersListings .resumator-job-description {
@@ -3982,23 +3991,20 @@ label {
   flex-direction: column;
   flex: 1; }
 
-.splitScreen-row {
-  width: 100%;
-  height: 100%; }
-  @media only screen and (max-width: 769px) {
-    .splitScreen-row {
-      flex-direction: row;
-      flex-wrap: wrap; } }
+@media only screen and (max-width: 769px) {
+  .splitScreen-row {
+    flex-direction: row;
+    flex-wrap: wrap; } }
 
 .splitScreen-row a {
   cursor: pointer; }
 
 .splitScreen-row:first-child {
-  flex: 10;
+  flex: 10 0 auto;
   display: flex; }
 
 .splitScreen-row:last-child {
-  flex: 1;
+  flex: 1 0 auto;
   display: flex;
   max-height: 85px; }
 
@@ -4030,8 +4036,7 @@ label {
   z-index: 1; }
   @media only screen and (max-width: 769px) {
     .splitScreen-panel-container {
-      max-width: 100%;
-      min-height: 100%; } }
+      min-height: auto; } }
 
 .splitScreen-panel-headline {
   font-size: 60px;

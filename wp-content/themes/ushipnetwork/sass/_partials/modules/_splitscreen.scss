@@ -12,8 +12,8 @@
 }
 
 .splitScreen-row {
-  width: 100%;
-  height: 100%;
+  // width: 100%; // Not cool on ie11
+  // height: 100%; // Not cool on ie11
 
   @media #{$default-break} {
     flex-direction: row;
@@ -26,12 +26,12 @@
 }
 
 .splitScreen-row:first-child {
-  flex: 10;
+  flex: 10 0 auto;
   display: flex;
 }
 
 .splitScreen-row:last-child {
-  flex: 1;
+  flex: 1 0 auto;
   display: flex;
   max-height: 85px;
 }
@@ -92,8 +92,7 @@
   z-index: 1;
 
   @media #{$default-break} {
-    max-width: 100%;
-    min-height: 100%;
+    min-height: auto;
   }
 }
 
