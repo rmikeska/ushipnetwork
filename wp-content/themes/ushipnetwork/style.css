@@ -3440,11 +3440,11 @@ label {
       height: 215px; } }
 
 .hero.heroLarge {
-  height: 520px; }
+  min-height: 520px; }
   @media only screen and (max-width: 769px) {
     .hero.heroLarge {
       display: table;
-      height: 325px; } }
+      min-height: 325px; } }
 
 .hero.heroSmall .hero-container,
 .hero.heroMedium .hero-container {

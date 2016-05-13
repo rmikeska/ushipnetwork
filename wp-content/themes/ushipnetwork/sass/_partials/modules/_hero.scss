@@ -25,11 +25,11 @@
 }
 
 .hero.heroLarge {
-  height: 520px;
+  min-height: 520px;
 
   @media #{$default-break} {
     display: table;
-    height: 325px;
+    min-height: 325px;
   }
 }
 
