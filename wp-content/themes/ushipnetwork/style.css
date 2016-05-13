@@ -1966,57 +1966,55 @@ b, strong {
 
 /*** Buttons ***/
 .button {
-  display: inline-block;
-  text-align: center;
-  letter-spacing: 0.025em;
-  border-radius: 3px;
-  font-size: 16px;
-  line-height: 16px;
+  border: solid;
+  border-radius: 0.1875rem;
+  cursor: pointer;
   font-weight: 700;
-  transition: all 0.15s ease-in-out; }
+  box-shadow: none;
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 0.025rem;
+  transition: all 0.15s ease-in-out;
+  display: inline-block; }
 
 .buttonExtraLarge {
-  padding: 18px 30px;
-  min-width: 300px;
-  min-height: 50px; }
+  line-height: 2.75;
+  min-width: 18.75rem;
+  padding: 0 1.875rem;
+  border-width: 0.1875rem; }
 
 .buttonLarge {
-  padding: 18px 30px;
-  min-width: 220px;
-  min-height: 50px; }
+  line-height: 2.75;
+  min-width: 13.75rem;
+  padding: 0 1.875rem;
+  border-width: 0.1875rem; }
 
 .buttonSmall {
-  padding: 15px 20px;
-  min-width: 148px;
-  min-height: 43px; }
+  line-height: 2.4375;
+  min-width: 9.25rem;
+  padding: 0 1.25rem;
+  border-width: 0.125rem; }
 
 .buttonPrimary {
   background-color: #00B437;
+  border-color: #00B437;
   color: #FFFFFF; }
 
 .buttonPrimary:hover,
 .buttonPrimary:focus {
   background-color: #00902C;
+  border-color: #00902C;
   color: #FFFFFF; }
 
 .buttonSecondary {
   background-color: transparent;
-  border: 3px solid #00B437;
+  border-color: #00B437;
   color: #00B437; }
-
-.buttonSecondary.buttonSmall {
-  padding: 13px 20px;
-  border: 2px solid #00B437; }
-
-.buttonSecondary.buttonLarge {
-  padding: 15px 20px; }
-
-.buttonSecondary.buttonExtraLarge {
-  padding: 15px 20px; }
 
 .buttonSecondary:hover,
 .buttonSecondary:focus {
   background-color: #00B437;
+  border-color: #00B437;
   color: #FFFFFF; }
 
 .button:active {
@@ -2830,10 +2828,6 @@ article .post-featureImage {
 
 .footer-countryChanger option {
   font-weight: 700; }
-
-input[type="submit"] {
-  border: none;
-  outline: none; }
 
 label {
   font-size: 11px;
@@ -4044,12 +4038,9 @@ label {
 .careersListings .resumator-job-description {
   display: none;
   padding-top: 30px; }
-.careersListings .resumator-apply-button {
-  border: none;
-  outline: none; }
-  @media only screen and (max-width: 769px) {
-    .careersListings .resumator-apply-button {
-      margin: 0 auto 20px auto; } }
+@media only screen and (max-width: 769px) {
+  .careersListings .resumator-apply-button {
+    margin: 0 auto 20px auto; } }
 .careersListings .resumator-forward-button {
   outline: none; }
   @media only screen and (max-width: 769px) {
