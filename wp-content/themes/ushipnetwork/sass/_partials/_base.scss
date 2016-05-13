@@ -114,12 +114,13 @@ b, strong {
 }
 
 .buttonSecondary {
+  background-color: transparent;
   border: 3px solid $primary-green;
   color: $primary-green;
 }
 
 .buttonSecondary.buttonSmall {
-  padding: 12px 20px;
+  padding: 13px 20px;
   border: 2px solid $primary-green;
 }
 

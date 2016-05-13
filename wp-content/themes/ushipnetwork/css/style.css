@@ -1974,11 +1974,12 @@ b, strong {
   color: #FFFFFF; }
 
 .buttonSecondary {
+  background-color: transparent;
   border: 3px solid #00B437;
   color: #00B437; }
 
 .buttonSecondary.buttonSmall {
-  padding: 12px 20px;
+  padding: 13px 20px;
   border: 2px solid #00B437; }
 
 .buttonSecondary.buttonLarge {
@@ -3919,37 +3920,13 @@ label {
   display: none;
   padding-top: 30px; }
 .careersListings .resumator-apply-button {
-  display: block;
-  margin: 0 10px 0 auto;
-  width: 100%;
   border: none;
-  letter-spacing: 0.01em;
-  text-align: center;
-  background-color: #00B437;
-  border-radius: 3px;
-  color: #FFFFFF;
-  font-weight: 700;
-  padding: 0 10px;
-  width: 154px;
-  height: 43px; }
+  outline: none; }
   @media only screen and (max-width: 769px) {
     .careersListings .resumator-apply-button {
       margin: 0 auto 20px auto; } }
 .careersListings .resumator-forward-button {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-  border: none;
-  letter-spacing: 0.01em;
-  text-align: center;
-  border: 3px solid #00B437;
-  border-radius: 3px;
-  color: #00B437;
-  font-weight: 700;
-  padding: 0 10px;
-  width: 154px;
-  height: 43px;
-  background: transparent; }
+  outline: none; }
   @media only screen and (max-width: 769px) {
     .careersListings .resumator-forward-button {
       margin: 0 auto 20px auto; } }

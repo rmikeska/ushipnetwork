@@ -120,19 +120,8 @@
   }
 
   .resumator-apply-button {
-    display: block;
-    margin: 0 10px 0 auto;
-    width: 100%;
     border: none;
-    letter-spacing: 0.01em;
-    text-align: center;
-    background-color: $primary-green;
-    border-radius: 3px;
-    color: $white;
-    font-weight: $font-bold;
-    padding: 0 10px;
-    width: 154px;
-    height: 43px;
+    outline: none;
 
     @media #{$default-break} {
       margin: 0 auto 20px auto;
@@ -140,20 +129,7 @@
   }
 
   .resumator-forward-button {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    border: none;
-    letter-spacing: 0.01em;
-    text-align: center;
-    border: 3px solid $primary-green;
-    border-radius: 3px;
-    color: $primary-green;
-    font-weight: $font-bold;
-    padding: 0 10px;
-    width: 154px;
-    height: 43px;
-    background: transparent;
+    outline: none;
 
     @media #{$default-break} {
       margin: 0 auto 20px auto;
