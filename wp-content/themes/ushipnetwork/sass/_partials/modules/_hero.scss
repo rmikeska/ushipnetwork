@@ -4,23 +4,23 @@
   @include background-image;
   width: 100%;
   text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 .hero.heroSmall {
-  height: 275px; // Firefox doesn't like min-height here. display: table; allows for expansion without using min-height.
-  display: table;
+  min-height: 275px;
 
   @media #{$default-break} {
-    height: 215px;
+    min-height: 215px;
   }
 }
 
 .hero.heroMedium {
-  height: 350px;
-  display: table;
+  min-height: 350px;
 
   @media #{$default-break} {
-    height: 215px;
+    min-height: 215px;
   }
 }
 
@@ -28,34 +28,26 @@
   min-height: 520px;
 
   @media #{$default-break} {
-    display: table;
     min-height: 325px;
   }
 }
 
-.hero.heroSmall .hero-container,
-.hero.heroMedium .hero-container {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-}
-
-.hero.heroLarge .hero-container {
-  padding-top: 100px;
-  padding-bottom: 50px;
-
-  @media #{$default-break} {
-    padding-top: 0;
-    padding-bottom: 20px;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-  }
-}
-
-.hero-content {
+.hero-container {
   @include container(1020px, 20px, 20px);
 }
+
+// .hero.heroLarge .hero-container {
+//   padding-top: 100px;
+//   padding-bottom: 50px;
+
+//   @media #{$default-break} {
+//     padding-top: 0;
+//     padding-bottom: 20px;
+//     display: table-cell;
+//     vertical-align: middle;
+//     text-align: center;
+//   }
+// }
 
 .hero-headline {
   text-align: center;
