@@ -54,7 +54,7 @@ jQuery(document).ready(function ($) {
             company: 'required',
             email: 'required',
             phone: 'required',
-            ltlshipmentfrequency: 'required'
+            iminterestedin: 'required'
         },
         messages: {
             firstname: 'Please enter your first name',
@@ -62,7 +62,7 @@ jQuery(document).ready(function ($) {
             company: 'Please enter your company name',
             email: 'Please enter your email address',
             phone: 'Please enter your phone number',
-            ltlshipmentfrequency: 'Please select your LTL shipment frequency'
+            iminterestedin: 'Please enter what you\'re interested in',
         },
         errorContainer: '.errorAlert',
         errorPlacement: function (error, element) {

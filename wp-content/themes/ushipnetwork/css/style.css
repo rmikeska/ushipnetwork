@@ -3181,7 +3181,7 @@ label {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap; }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1200px) and (min-width: 480px) {
     .recentlyShipped-row {
       display: block; } }
 
@@ -3189,39 +3189,37 @@ label {
   position: relative;
   max-width: 227px;
   background-color: #FFFFFF; }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1200px) and (min-width: 480px) {
     .recentlyShipped-item {
       min-width: 227px;
       max-width: 100%;
       display: flex;
       align-content: center;
       align-items: flex-start; } }
-  @media only screen and (max-width: 769px) {
+  @media only screen and (max-width: 480px) {
     .recentlyShipped-item {
-      margin-bottom: 20px;
-      padding: 15px; } }
+      margin-bottom: 20px; } }
 
 .recentlyShipped-item-image {
-  display: block; }
-  @media only screen and (max-width: 769px) {
-    .recentlyShipped-item-image {
-      max-width: 80px; } }
+  min-width: 227px;
+  height: 151px;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important; }
 
 .recentlyShipped-item-inner {
   position: relative;
   padding: 20px;
   width: 100%;
   overflow: hidden; }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1200px) and (min-width: 480px) {
     .recentlyShipped-item-inner {
-      padding: 15px;
+      padding: 12px;
       min-height: 151px;
       border-bottom: 1px solid #f3f3f3; } }
-  @media only screen and (max-width: 769px) {
+  @media only screen and (max-width: 480px) {
     .recentlyShipped-item-inner {
-      position: static;
-      padding: 0 0 0 20px;
-      border: none; } }
+      padding-bottom: 10px; } }
 
 .recentlyShipped-item-inner:after {
   position: absolute;
@@ -3240,24 +3238,43 @@ label {
 .recentlyShipped-item-title {
   font-weight: 700;
   padding-bottom: 20px;
-  width: 100%;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap; }
-  @media only screen and (max-width: 1200px) {
+  width: 100%; }
+  @media only screen and (max-width: 1200px) and (min-width: 480px) {
     .recentlyShipped-item-title {
-      padding-bottom: 15px; } }
+      padding-bottom: 10px; } }
+  @media only screen and (min-width: 480px) {
+    .recentlyShipped-item-title {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap; } }
 
 .recentlyShipped-item-location {
+  position: relative; }
+
+.recentlyShipped-item-location-name {
   font-weight: 700;
   padding-bottom: 10px;
-  width: 100%;
+  width: calc(100% - 11px);
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap; }
 
-.recentlyShipped-item-location:last-child {
-  padding-bottom: 15px; }
+.recentlyShipped-item-location-name:after {
+  display: block;
+  content: '';
+  width: 9px;
+  height: 12px;
+  position: absolute;
+  right: 0;
+  top: 2px;
+  bottom: 0;
+  background: url("/wp-content/themes/ushipnetwork/images/vortal/icon_location.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.recentlyShipped-item-location-name.location-origin:after {
+  opacity: 0.5; }
 
 .recentlyShipped-item-price {
   display: block;
@@ -3266,17 +3283,13 @@ label {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap; }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1200px) and (min-width: 480px) {
     .recentlyShipped-item-price {
       position: absolute;
-      right: 20px;
-      bottom: 10px; } }
-  @media only screen and (max-width: 769px) {
-    .recentlyShipped-item-price {
-      width: 100%;
-      padding: 0 15px;
-      right: 0;
-      left: 0; } }
+      right: 10px;
+      bottom: 5px;
+      width: 90%;
+      text-align: right; } }
 
 .recentlyShipped-item-price:before {
   display: block;
@@ -3285,10 +3298,10 @@ label {
   width: 185px;
   margin: 8px auto 16px;
   background: #f3f3f3; }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1200px) and (min-width: 480px) {
     .recentlyShipped-item-price:before {
       display: none; } }
-  @media only screen and (max-width: 769px) {
+  @media only screen and (max-width: 480px) {
     .recentlyShipped-item-price:before {
       display: block;
       width: 100%; } }
@@ -3297,6 +3310,9 @@ label {
   text-transform: uppercase;
   font-weight: 700;
   padding-bottom: 25px; }
+  @media only screen and (max-width: 480px) {
+    .recentlyShipped-intro {
+      text-align: center; } }
 
 .productFeatures {
   background-color: #1C2431; }
@@ -3338,17 +3354,15 @@ label {
       margin-bottom: 45px; } }
 
 .productFeatures-item-icon {
-  padding-right: 15px; }
+  width: 40px;
+  height: 40px;
+  margin-right: 15px; }
   @media only screen and (max-width: 769px) {
     .productFeatures-item-icon {
-      padding-right: 0;
-      padding-bottom: 10px; } }
+      margin-right: 0;
+      margin-bottom: 10px; } }
 
-.productFeatures-item-icon svg {
-  width: 40px;
-  height: 40px; }
-
-.productFeatures-item-icon svg path {
+.productFeatures-item-icon path {
   fill: #FFFFFF; }
 
 .productFeatures-item-text {

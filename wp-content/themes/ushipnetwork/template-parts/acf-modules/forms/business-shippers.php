@@ -30,15 +30,8 @@
   </div>
   <div class="pardotForm-group">
     <div class="pardotForm-field">
-      <label for="ltlshipmentfrequency">Average Monthly Freight Shipments</label>
-      <select name="ltlshipmentfrequency">
-        <option value="" selected="selected">Select</option>
-        <option value="0">0</option>
-        <option value="Less than 1">Less than 1</option>
-        <option value="1-4">1-4</option>
-        <option value="5-19">5-19</option>
-        <option value="More than 20">More than 20</option>
-      </select>
+      <label for="iminterestedin">I'm Interested in:</label>
+      <input type="text" name="iminterestedin" placeholder="">
     </div>
   </div>
   <div class="pardotForm-submit-container">
