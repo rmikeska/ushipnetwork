@@ -30,7 +30,7 @@
   </div>
   <div class="pardotForm-group">
     <div class="pardotForm-field">
-      <label for="iminterestedin">I'm Interested in:</label>
+      <label for="iminterestedin">I'm Interested in</label>
       <input type="text" name="iminterestedin" placeholder="">
     </div>
   </div>
