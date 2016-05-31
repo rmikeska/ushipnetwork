@@ -31,7 +31,15 @@
   <div class="pardotForm-group">
     <div class="pardotForm-field">
       <label for="iminterestedin">I'm Interested in</label>
-      <input type="text" name="iminterestedin" placeholder="">
+      <select name="iminterestedin">
+        <option value="" selected="selected">Select</option>
+        <option value="Finding a new transportation provider">Finding a new transportation provider</option>
+        <option value="Getting a quote">Getting a quote</option>
+        <option value="Saving money on my shipments">Saving money on my shipments</option>
+        <option value="Learning about uShip">Learning about uShip</option>
+        <option value="Getting help on my listing">Getting help on my listing</option>
+        <option value="Other">Other</option>
+      </select>
     </div>
   </div>
   <div class="pardotForm-submit-container">

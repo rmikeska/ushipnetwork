@@ -62,7 +62,7 @@ jQuery(document).ready(function ($) {
             company: 'Please enter your company name',
             email: 'Please enter your email address',
             phone: 'Please enter your phone number',
-            iminterestedin: 'Please enter what you\'re interested in',
+            iminterestedin: 'Please select what you\'re interested in',
         },
         errorContainer: '.errorAlert',
         errorPlacement: function (error, element) {
