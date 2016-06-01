@@ -2891,7 +2891,7 @@ label {
 .pardotForm-field select {
   color: #999999;
   cursor: pointer;
-  padding: 5px 5px 5px 15px;
+  padding: 5px 40px 5px 15px;
   -webkit-appearance: none !important;
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NCAyNCI+PHJlY3Qgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTIzLjM3LDUuNTlhMi4xOSwyLjE5LDAsMCwwLTMuMSwwTDEyLDEzLjg1LDMuNzUsNS41OWEyLjE5LDIuMTksMCwwLDAtMy4xLDMuMWw5LjgxLDkuODFhMi4xOSwyLjE5LDAsMCwwLDMuMSwwbDkuODEtOS44MUEyLjE5LDIuMTksMCwwLDAsMjMuMzcsNS41OVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0wLjAxIC0wLjA1KSIgZmlsbD0iI2JiYjhiOCIvPjwvc3ZnPg==");
   background-position: 100% center;
@@ -4300,9 +4300,9 @@ label {
   max-width: calc(1120px + 15px*2);
   margin-left: auto;
   margin-right: auto;
-  padding-top: 30px;
+  padding-top: 0;
   padding-right: 15px;
-  padding-bottom: 50px;
+  padding-bottom: 0;
   padding-left: 15px;
   width: 100%;
   display: -webkit-flex;
@@ -4325,16 +4325,22 @@ label {
 .pressStrip-block {
   -webkit-flex: 1;
       -ms-flex: 1;
-          flex: 1; }
+          flex: 1;
+  padding-top: 30px;
+  padding-bottom: 50px; }
   @media only screen and (max-width: 769px) {
     .pressStrip-block {
       padding-bottom: 60px; } }
 
 .pressStrip-block:not(:last-child) {
-  margin-right: 70px; }
+  margin-right: 50px;
+  padding-right: 30px;
+  border-right: 1px solid #dddddd; }
   @media only screen and (max-width: 769px) {
     .pressStrip-block:not(:last-child) {
-      margin-right: 0; } }
+      margin-right: 0;
+      padding-right: 0;
+      border: none; } }
 
 .post-caption {
   font-weight: 700;

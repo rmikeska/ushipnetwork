@@ -1,5 +1,5 @@
 .pressStrip {
-  @include container(1120px, 30px, 50px);
+  @include container(1120px, 0, 0);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -12,6 +12,8 @@
 
 .pressStrip-block {
   flex: 1;
+  padding-top: 30px;
+  padding-bottom: 50px;
 
   @media #{$default-break} {
     padding-bottom: 60px;
@@ -19,10 +21,14 @@
 }
 
 .pressStrip-block:not(:last-child) {
-  margin-right: 70px;
+  margin-right: 50px;
+  padding-right: 30px;
+  border-right: 1px solid $divider-color;
 
   @media #{$default-break} {
     margin-right: 0;
+    padding-right: 0;
+    border: none;
   }
 }
 
