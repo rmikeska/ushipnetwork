@@ -4132,6 +4132,7 @@ label {
   padding-bottom: 0;
   padding-left: 15px;
   width: 100%;
+  padding: 0;
   display: flex;
   justify-content: center; }
   .pressStrip::after {
@@ -4140,16 +4141,12 @@ label {
     display: table; }
   @media only screen and (max-width: 769px) {
     .pressStrip {
-      flex-direction: column;
-      padding-bottom: 0; } }
+      flex-direction: column; } }
 
 .pressStrip-block {
   flex: 1;
   padding-top: 30px;
   padding-bottom: 50px; }
-  @media only screen and (max-width: 769px) {
-    .pressStrip-block {
-      padding-bottom: 60px; } }
 
 .pressStrip-block:not(:last-child) {
   margin-right: 50px;
@@ -4159,7 +4156,11 @@ label {
     .pressStrip-block:not(:last-child) {
       margin-right: 0;
       padding-right: 0;
-      border: none; } }
+      border-right: none;
+      border-bottom: 1px solid #dddddd; } }
+
+.pressStrip-block-inner {
+  padding: 0 15px; }
 
 .post-caption {
   font-weight: 700;
