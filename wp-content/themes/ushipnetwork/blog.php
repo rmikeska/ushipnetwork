@@ -16,8 +16,8 @@ get_header(); ?>
     echo '<li class="categoryMenu-active"><a class="catall">All Posts</a></li>';
 
     $catIDs = get_cat_ID( $cat_name='Company News' );
+    $catIDs .= ',' . get_cat_ID( $cat_name='Tips' );
     $catIDs .= ',' . get_cat_ID( $cat_name='Just For Fun' );
-    $catIDs .= ',' . get_cat_ID( $cat_name='Product Updates' );
     $catIDs .= ',' . get_cat_ID( $cat_name='Shipping Code' );
 
     $cats = get_categories('include='.$catIDs);
@@ -33,7 +33,7 @@ get_header(); ?>
     echo '<div class="postsGroup-container catall">';
 
 
-    $catIDs = '-' . get_cat_ID( $cat_name='Press' );
+    $catIDs = '-' . get_cat_ID( $cat_name='Shipping Code' );
     query_posts("cat=$catIDs&posts_per_page=12");
 
     if (have_posts()) : while (have_posts()) : the_post(); ?>
