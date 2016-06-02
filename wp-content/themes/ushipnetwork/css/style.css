@@ -2075,10 +2075,10 @@ b, strong {
 .categoryMenu-list {
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: center; }
 
 .categoryMenu-list li {
-  flex: 1;
+  margin: 0 35px;
   text-align: center; }
 
 .categoryMenu-list li a {

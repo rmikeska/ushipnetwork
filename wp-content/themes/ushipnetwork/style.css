@@ -2104,14 +2104,12 @@ b, strong {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .categoryMenu-list li {
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  margin: 0 35px;
   text-align: center; }
 
 .categoryMenu-list li a {

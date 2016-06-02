@@ -11,7 +11,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<a class="blog-return" href="/blog/">All Posts</a>
+	<a class="blog-return" href="<?php echo get_site_url(); ?>">All Posts</a>
 
 	<?php if (has_post_thumbnail( $post->ID ) ): ?>
 	  <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'post-feature' ); ?>
@@ -75,7 +75,7 @@
 
 <section class="postBookend">
 	<div class="postBookend-container">
-		<a class="button buttonPrimary buttonLarge" role="button" href="/blog/">View All Articles</a>
+		<a class="button buttonPrimary buttonLarge" role="button" href="<?php echo get_site_url(); ?>">View All Articles</a>
 	</div>
 </section>
 
