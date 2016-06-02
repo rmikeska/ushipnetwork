@@ -2179,19 +2179,8 @@ b, strong {
   padding-right: 60px; }
 
 .alm-load-more-btn {
-  padding: 13px 10px;
-  max-width: 220px;
-  max-height: 50px;
   display: block;
-  margin: 0 auto;
-  width: 100%;
-  border: none;
-  letter-spacing: 0.01em;
-  text-align: center;
-  background-color: #00B437;
-  border-radius: 3px;
-  color: #FFFFFF;
-  font-weight: 700; }
+  margin: 0 auto; }
 
 /*** Single Post ***/
 article.post {
