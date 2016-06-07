@@ -18,7 +18,7 @@
 	   	<div class="group share-alm">
    	   	<div class="dotted">     
       	   	<h2 style="padding: 0; margin: 0 0 10px;"><?php _e('A small favor to ask', 'ajax-load-more'); ?>...</h2> 	 
-      	   	<p style="padding: 0 0 20px; margin: 0 0 25px; border-bottom: 1px dashed #ccc;">
+      	   	<p style="padding: 0 0 15px; margin: 0 0 20px; border-bottom: 1px dashed #ccc;">
          	   	<?php _e('If you\'re an Ajax Load More user, please consider helping <a href="https://twitter.com/KaptonKaos" target="_blank">me</a> spread the word by sharing with your networks and/or leaving a review on <a href="https://wordpress.org/support/view/plugin-reviews/ajax-load-more" target="_blank">wordpress.org</a> forums.', 'ajax-load-more'); ?></p>  
       	   	<div class="one_half sharing">
          	   	<?php include_once( ALM_PATH . 'admin/includes/cta/sharing.php'); ?>	
@@ -55,10 +55,12 @@
                      echo '<option value="4">'.__('Paging', 'ajax-load-more').'</option>';
          	   	if(has_action('alm_prev_post_settings')) 
                      echo '<option value="5">'.__('Previous Post', 'ajax-load-more').'</option>';
+                  if(has_action('alm_rest_api_settings')) 
+                     echo '<option value="6">'.__('REST API', 'ajax-load-more').'</option>';  
                   if(has_action('alm_seo_settings')) 
-                     echo '<option value="6">'.__('SEO', 'ajax-load-more').'</option>';
+                     echo '<option value="7">'.__('SEO', 'ajax-load-more').'</option>';
                   if(has_action('alm_theme_repeaters_settings')) 
-                     echo '<option value="7">'.__('Theme Repeaters', 'ajax-load-more').'</option>';         	   	 
+                     echo '<option value="8">'.__('Theme Repeaters', 'ajax-load-more').'</option>';         	   	 
          	   ?>
    	   	   </select>
        	   </div>

@@ -7,11 +7,6 @@ jQuery(document).ready(function ($) {
 
 
 
-    // Add button classes to ALM button
-    $('button.alm-load-more-btn').addClass('button buttonPrimary buttonLarge');
-
-
-
     // Blog home effects
     $('.postThumb').hide().each(function (i) {
         $(this).delay((i++) * 100).fadeTo(300, 1);

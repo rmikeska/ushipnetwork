@@ -284,6 +284,44 @@ jQuery(document).ready(function($) {
          $('.prev_post_id').slideUp(100, 'alm_easeInOutQuad');
       }   
       
+        
+      
+      // ---------------------------
+      // - REST API      
+      // ---------------------------     
+       
+      var rest = $('#alm-rest input[name=rest]:checked').val(); 
+      if(rest !== 'false' && rest != undefined){            
+         $('.restapi_options').slideDown(100, 'alm_easeInOutQuad');
+         output += ' restapi="'+rest+'"';    
+         
+         var restapi_base = $('#alm-rest input#rest-base').val().trim(),
+             restapi_namespace = $('#alm-rest input#rest-namespace').val().trim(),
+             restapi_endpoint = $('#alm-rest input#rest-endpoint').val().trim(),
+             restapi_template_id = $('#alm-rest input#rest-template-id').val().trim(),
+             restapi_debug = $('#alm-rest input[name=rest-debug]:checked').val().trim(); 
+      
+         if(restapi_base !== '') 
+            output += ' restapi_base="'+restapi_base+'"';  
+      
+         if(restapi_namespace !== '') 
+            output += ' restapi_namespace="'+restapi_namespace+'"';  
+      
+         if(restapi_endpoint !== '') 
+            output += ' restapi_endpoint="'+restapi_endpoint+'"';  
+      
+         if(restapi_template_id !== ''){
+            restapi_template_id = restapi_template_id.replace("tmpl-", ""); // Remove tmpl- if present in value 
+            output += ' restapi_template_id="'+restapi_template_id+'"'; 
+         }
+      
+         if(restapi_debug !== '' && restapi_debug !== 'false') 
+            output += ' restapi_debug="'+restapi_debug+'"';  
+             
+      }else{
+         $('.restapi_options').slideUp(100, 'alm_easeInOutQuad')
+      } 
+      
       
       
       // ---------------------------
@@ -779,7 +817,10 @@ jQuery(document).ready(function($) {
       var transition = $('.transition input[name=transition]:checked').val(); 
       if(transition !== 'slide')
          output += ' transition="'+transition+'"';
-      
+         
+      var transition_speed = $('.transition input[name=transition-speed]').val(); 
+      if(transition_speed !== '250' && transition !== 'none')
+         output += ' transition_speed="'+transition_speed+'"';
       
       var transition_container = $('.transition input[name=remove_container]:checked').val(); 
       if(transition_container === 'f' && seo !== 'true' && previous !== 'true')
