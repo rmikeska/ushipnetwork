@@ -2287,11 +2287,11 @@ article .post-featureImage {
 .entry-content p {
   padding-bottom: 35px; }
 
-.entry-header .cat-list {
+.entry-header .tag-list {
   float: right; }
 
 @media only screen and (max-width: 769px) {
-  .entry-meta .cat-list {
+  .entry-meta .tag-list {
     display: none; } }
 
 .share {
@@ -2348,7 +2348,7 @@ article .post-featureImage {
       padding-top: 0;
       margin-bottom: 14px; } }
 
-.entry-footer .cat-list {
+.entry-footer .tag-list {
   float: left; }
 
 .blog-return {

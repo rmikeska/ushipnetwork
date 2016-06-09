@@ -11,12 +11,12 @@
   <?php endif; ?>
   <div class="post-tag-group">
     <?php
-    $categories = get_the_category();
+    $posttags = get_the_tags();
     $separator = ', ';
     $output = '';
-    if ( ! empty( $categories ) ) {
-        foreach( $categories as $category ) {
-            $output .= '<a class="post-tag" href="' . esc_url( get_category_link( $category->term_id ) ) . '" alt="' . esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $category->name ) ) . '">' . esc_html( $category->name ) . '</a>' . $separator;
+    if ( ! empty( $posttags ) ) {
+        foreach( $posttags as $posttag ) {
+            $output .= '<a class="post-tag" href="' . esc_url( get_tag_link( $posttag->term_id ) ) . '" alt="' . esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $posttag->name ) ) . '">' . esc_html( $posttag->name ) . '</a>' . $separator;
         }
         echo trim( $output, $separator );
     }
