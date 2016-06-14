@@ -1913,7 +1913,7 @@ hr {
   border: none;
   display: block;
   content: '';
-  margin: 30px auto;
+  margin: 0 auto 40px;
   height: 27px;
   width: 1px;
   background-color: #bbb8b8;
@@ -2308,6 +2308,13 @@ article .post-featureImage {
     margin: 0 auto 30px;
     width: 100%;
     height: auto; }
+  .entry-content ol, .entry-content ul {
+    margin-left: 30px;
+    margin-bottom: 40px; }
+  .entry-content ol {
+    list-style: decimal; }
+  .entry-content ul {
+    list-style: circle; }
 
 .entry-header .tag-list {
   float: right; }

@@ -70,6 +70,19 @@ article .post-featureImage {
     width: 100%;
     height: auto;
   }
+
+  ol, ul {
+    margin-left: 30px;
+    margin-bottom: 40px;
+  }
+
+  ol {
+    list-style: decimal;
+  }
+
+  ul {
+    list-style: circle;
+  }
 }
 
 .entry-header .tag-list {
