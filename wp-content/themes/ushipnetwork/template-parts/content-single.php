@@ -54,7 +54,7 @@
 		      'category__in' => $category_ids,
 		      'post__not_in' => array($post->ID),
 		      'posts_per_page'=> 3, // Number of related posts that will be displayed.
-		      'caller_get_posts'=>1,
+		      'ignore_sticky_posts'=>1,
 		      'orderby'=>'rand' // Randomize the posts
 		    );
 		    $my_query = new wp_query( $args );

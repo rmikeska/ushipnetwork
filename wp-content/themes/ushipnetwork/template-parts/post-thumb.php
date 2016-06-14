@@ -12,11 +12,15 @@
   <div class="post-tag-group">
     <?php
     $posttags = get_the_tags();
+    $count = 0;
     $separator = ', ';
     $output = '';
     if ( ! empty( $posttags ) ) {
         foreach( $posttags as $posttag ) {
-            $output .= '<a class="post-tag" href="' . esc_url( get_tag_link( $posttag->term_id ) ) . '" alt="' . esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $posttag->name ) ) . '">' . esc_html( $posttag->name ) . '</a>' . $separator;
+            $count++;
+            if ($count <= 2 ) {
+              $output .= '<a class="post-tag" href="' . esc_url( get_tag_link( $posttag->term_id ) ) . '" alt="' . esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $posttag->name ) ) . '">' . esc_html( $posttag->name ) . '</a>' . $separator;
+            }
         }
         echo trim( $output, $separator );
     }

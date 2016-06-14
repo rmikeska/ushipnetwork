@@ -37,15 +37,20 @@ function ushipnetwork_posted_on() {
 
 	echo '</div>' . '</div>';
 
-	echo '<div class="byline">' . $byline . '<span class="tag-list">tags: ';
+	echo '<div class="byline">' . $byline;
 
 	$posttags = get_the_tags();
+	$count= 0;
 	$separator = ', ';
 	$output = '';
 	if ( ! empty( $posttags ) ) {
-	    foreach( $posttags as $posttag ) {
-	        $output .= '<a href="' . esc_url( get_tag_link( $posttag->term_id ) ) . '" alt="' . esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $posttag->name ) ) . '">' . esc_html( $posttag->name ) . '</a>' . $separator;
-	    }
+			echo '<span class="tag-list">tags: ';
+			foreach( $posttags as $posttag ) {
+					$count++;
+					if ($count <= 2 ) {
+						$output .= '<a href="' . esc_url( get_tag_link( $posttag->term_id ) ) . '" alt="' . esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $posttag->name ) ) . '">' . esc_html( $posttag->name ) . '</a>' . $separator;
+					}
+			}
 	    echo trim( $output, $separator );
 	}
 
@@ -72,14 +77,17 @@ function ushipnetwork_entry_footer() {
 
 		echo '</div>' . '</div>';
 
-		echo '<span class="tag-list">tags: ';
-
 		$posttags = get_the_tags();
+		$count= 0;
 		$separator = ', ';
 		$output = '';
 		if ( ! empty( $posttags ) ) {
+				echo '<span class="tag-list">tags: ';
 		    foreach( $posttags as $posttag ) {
-		        $output .= '<a href="' . esc_url( get_tag_link( $posttag->term_id ) ) . '" alt="' . esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $posttag->name ) ) . '">' . esc_html( $posttag->name ) . '</a>' . $separator;
+		    		$count++;
+		    		if ($count <= 2 ) {
+		    			$output .= '<a href="' . esc_url( get_tag_link( $posttag->term_id ) ) . '" alt="' . esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $posttag->name ) ) . '">' . esc_html( $posttag->name ) . '</a>' . $separator;
+		    		}
 		    }
 		    echo trim( $output, $separator );
 		}
