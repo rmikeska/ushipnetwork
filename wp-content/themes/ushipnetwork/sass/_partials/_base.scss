@@ -24,17 +24,13 @@ b, strong {
 
 hr {
   border: none;
-  margin: 0 auto 60px;
-
-  &:after {
-    display: block;
-    content: '';
-    margin: 30px auto;
-    height: 27px;
-    width: 1px;
-    background-color: $medium-gray;
-    transform: rotate(22deg);
-  }
+  display: block;
+  content: '';
+  margin: 30px auto;
+  height: 27px;
+  width: 1px;
+  background-color: $medium-gray;
+  transform: rotate(22deg);
 }
 
 .pageHeader-primaryNav {
