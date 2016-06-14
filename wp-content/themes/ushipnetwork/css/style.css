@@ -1901,7 +1901,7 @@ b, strong {
 
 hr {
   border: none;
-  margin: 0; }
+  margin: 0 auto 60px; }
   hr:after {
     display: block;
     content: '';
@@ -2264,8 +2264,8 @@ article .post-featureImage {
     text-align: center; }
   .entry-content img {
     display: block;
-    margin: 0 auto;
-    max-width: 100%;
+    margin: 0 auto 30px;
+    width: 100%;
     height: auto; }
 
 .entry-header .tag-list {
