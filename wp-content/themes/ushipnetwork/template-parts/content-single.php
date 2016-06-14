@@ -11,7 +11,10 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<a class="blog-return" href="<?php echo get_site_url(); ?>">All Posts</a>
+	<a class="blog-return" href="<?php echo get_site_url(); ?>">
+		<?php include( get_template_directory() . '/images/circled_arrow.svg'); ?>
+		<span>All Posts</span>
+	</a>
 
 	<?php if (has_post_thumbnail( $post->ID ) ): ?>
 	  <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'post-feature' ); ?>

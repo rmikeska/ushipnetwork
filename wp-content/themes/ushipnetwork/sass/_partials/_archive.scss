@@ -1,3 +1,7 @@
 .archive-content .page-header {
-  @include container(620px, 35px, 0);
+  padding-top: 35px;
+}
+
+.archive-content .page-title {
+  text-align: center;
 }

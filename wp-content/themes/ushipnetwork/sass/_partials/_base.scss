@@ -22,6 +22,21 @@ b, strong {
   font-weight: $font-bold;
 }
 
+hr {
+  border: none;
+  margin: 0;
+
+  &:after {
+    display: block;
+    content: '';
+    margin: 30px auto;
+    height: 27px;
+    width: 1px;
+    background-color: $medium-gray;
+    transform: rotate(22deg);
+  }
+}
+
 .pageHeader-primaryNav {
   display: none;
 }
