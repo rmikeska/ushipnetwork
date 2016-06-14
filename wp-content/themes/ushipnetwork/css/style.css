@@ -2264,7 +2264,9 @@ article .post-featureImage {
     text-align: center; }
   .entry-content img {
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto; }
 
 .entry-header .tag-list {
   float: right; }
