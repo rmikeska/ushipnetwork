@@ -66,14 +66,14 @@ article .post-featureImage {
 
   img {
     display: block;
-    margin: 0 auto 30px;
+    margin: 0 auto;
     width: 100%;
     height: auto;
   }
 
   ol, ul {
     margin-left: 30px;
-    margin-bottom: 40px;
+    padding-bottom: 35px;
   }
 
   ol {
@@ -81,7 +81,7 @@ article .post-featureImage {
   }
 
   ul {
-    list-style: circle;
+    list-style: disc;
   }
 }
 
