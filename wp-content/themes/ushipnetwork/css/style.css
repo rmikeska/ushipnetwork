@@ -2255,7 +2255,8 @@ article .post-featureImage {
       margin-bottom: 14px; } }
 
 .entry-content {
-  line-height: 30px; }
+  line-height: 30px;
+  padding-bottom: 35px; }
   .entry-content p {
     padding-bottom: 35px; }
   .entry-content figure {
