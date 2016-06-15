@@ -19,8 +19,6 @@
 	<?php if (has_post_thumbnail( $post->ID ) ): ?>
 	  <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'post-feature' ); ?>
 	  <img class="post-featureImage" src="<?php echo $image[0]; ?>">
-	<?php elseif (!has_post_thumbnail( $post->ID ) ): ?>
-	  <img class="post-featureImage emptyImage" src="/wp-content/themes/ushipnetwork/images/empty_image_thumbnail_2x.jpg">
 	<?php endif; ?>
 
 	<div class="entry-header">

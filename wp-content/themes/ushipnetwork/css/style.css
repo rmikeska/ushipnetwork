@@ -2219,7 +2219,7 @@ article.post {
 
 article .post-featureImage {
   display: block;
-  margin: 0 auto;
+  margin: 25px auto 0;
   max-width: 100%;
   height: auto; }
 
@@ -2344,7 +2344,6 @@ article .post-featureImage {
 .blog-return {
   display: flex;
   align-items: center;
-  margin-bottom: 35px;
   text-transform: uppercase;
   font-weight: 700;
   color: #262626;
