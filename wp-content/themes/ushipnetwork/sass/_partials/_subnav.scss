@@ -36,6 +36,39 @@
 #secondary-menu {
   display: flex;
   height: 100%;
+  position: relative;
+}
+
+.secondary-menu .external-menu-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  min-width: initial;
+  padding-right: 35px;
+
+  a {
+    display: inline-block;
+    line-height: 60px;
+    padding-top: 0;
+
+    &:after {
+      display: inline-block;
+      vertical-align: middle;
+      content: '';
+      background-image: url("#{$asset-path}/circled_arrow.svg");
+      width: 24px;
+      height: 24px;
+      margin-left: 20px;
+      margin-top: 0;
+      margin-bottom: 2px;
+    }
+
+    &:hover:after {
+      background-image: url("#{$asset-path}/circled_arrow_blue.svg");
+    }
+  }
 }
 
 .secondary-menu li:first-of-type {
