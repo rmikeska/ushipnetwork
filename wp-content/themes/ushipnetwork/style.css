@@ -2243,6 +2243,9 @@ hr {
   cursor: default; }
 
 /*** Single Post ***/
+#disqus_thread {
+  margin-top: 50px; }
+
 article.post {
   max-width: calc(790px + 15px*2);
   margin-left: auto;
@@ -2316,6 +2319,8 @@ article .post-featureImage {
     list-style: decimal; }
   .entry-content ul {
     list-style: disc; }
+  .entry-content li {
+    overflow-wrap: break-word; }
 
 .entry-header .tag-list {
   float: right; }
@@ -2377,9 +2382,6 @@ article .post-featureImage {
       border: none;
       padding-top: 0;
       margin-bottom: 14px; } }
-
-.entry-footer .tag-list {
-  float: left; }
 
 .blog-return {
   display: -webkit-flex;

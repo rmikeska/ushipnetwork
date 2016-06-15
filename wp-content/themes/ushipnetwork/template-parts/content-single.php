@@ -45,7 +45,8 @@
 	<?php
 	  // If comments are open or we have at least one comment, load up the comment template.
 	  if ( comments_open() || get_comments_number() ) :
-	    comments_template();
+	  	// Display comments only for Shipping Code post category
+	  	if (in_category('shippingcode')) comments_template();
 	  endif;
 	?>
 

@@ -1,5 +1,10 @@
 /*** Single Post ***/
 
+
+#disqus_thread {
+  margin-top: 50px;
+}
+
 article.post {
   @include container(790px, 35px, 50px);
   width: 100%;
@@ -84,6 +89,10 @@ article .post-featureImage {
   ul {
     list-style: disc;
   }
+
+  li {
+    overflow-wrap: break-word;
+  }
 }
 
 .entry-header .tag-list {
@@ -160,10 +169,6 @@ article .post-featureImage {
     padding-top: 0;
     margin-bottom: 14px;
   }
-}
-
-.entry-footer .tag-list {
-  float: left;
 }
 
 .blog-return {
