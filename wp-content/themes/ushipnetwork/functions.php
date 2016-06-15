@@ -47,15 +47,6 @@ function ushipnetwork_setup() {
 	add_image_size( 'post-thumb', 300, 200, true );
 	add_image_size( 'post-feature', 620, 413, true );
 
-	// Replace fixed width and height dimensions for post attachments with max-height and max-width
-	add_filter( 'post_thumbnail_html', 'remove_width_attribute', 10 );
-	add_filter( 'image_send_to_editor', 'remove_width_attribute', 10 );
-
-	function remove_width_attribute( $html ) {
-	   $html = preg_replace('/width="(\d+)"\s*height="(\d+)"/', 'style="max-width: $1px; max-height: $2px;"', $html);
-	   return $html;
-	}
-
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary Menu', 'ushipnetwork' ),
