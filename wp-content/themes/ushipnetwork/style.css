@@ -2323,6 +2323,10 @@ article .post-featureImage {
     list-style: disc; }
   .entry-content li {
     overflow-wrap: break-word; }
+  .entry-content iframe {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; }
 
 .entry-header .tag-list {
   float: right; }
