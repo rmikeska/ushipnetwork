@@ -2261,8 +2261,9 @@ article.post {
     display: table; }
 
 article .post-featureImage {
-  max-width: 790px;
-  width: 100%;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
   height: auto; }
 
 .entry-header {
