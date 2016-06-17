@@ -4,6 +4,10 @@
 
       <?php include("bookend.php");?>
 
+    <?php elseif (get_row_layout() == 'tertiary_callout'): ?>
+
+      <?php include("tertiary-callout.php");?>
+
     <?php endif; ?>
   <?php endwhile; ?>
 <?php endif; ?>

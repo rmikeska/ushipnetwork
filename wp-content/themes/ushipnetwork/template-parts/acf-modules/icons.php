@@ -60,4 +60,14 @@
     <?php include( get_template_directory() . '/images/icons/icon_Lodging.svg'); ?>
 <?php elseif (get_sub_field('icon_bullet_points_row_icon') == "icon_wheel"): ?>
     <?php include( get_template_directory() . '/images/icons/icon_Wheel.svg'); ?>
+<?php elseif (get_sub_field('icon_bullet_points_row_icon') == "icon_compass"): ?>
+    <?php include( get_template_directory() . '/images/icons/icon_Compass.svg'); ?>
+<?php elseif (get_sub_field('icon_bullet_points_row_icon') == "icon_desktop"): ?>
+    <?php include( get_template_directory() . '/images/icons/icon_Desktop.svg'); ?>
+<?php elseif (get_sub_field('icon_bullet_points_row_icon') == "icon_pricetag"): ?>
+    <?php include( get_template_directory() . '/images/icons/icon_PriceTag.svg'); ?>
+<?php elseif (get_sub_field('icon_bullet_points_row_icon') == "icon_truck2"): ?>
+    <?php include( get_template_directory() . '/images/icons/icon_Truck2.svg'); ?>
+<?php elseif (get_sub_field('icon_bullet_points_row_icon') == "icon_truckload"): ?>
+    <?php include( get_template_directory() . '/images/icons/icon_TruckLoad.svg'); ?>
 <?php endif; ?>

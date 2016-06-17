@@ -16,6 +16,14 @@
 
       <?php include("slanted-map.php");?>
 
+    <?php elseif (get_row_layout() == 'intro_slide'): ?>
+
+      <?php include("intro-slide.php");?>
+
+    <?php elseif (get_row_layout() == 'icon_bullet_points'): ?>
+
+      <?php include("icon-bullet-points.php");?>
+
     <?php elseif (get_row_layout() == 'full_width_image'): ?>
 
       <?php include("full-width-image.php");?>
@@ -39,6 +47,10 @@
     <?php elseif (get_row_layout() == 'careers'): ?>
 
       <?php include("careers.php");?>
+
+    <?php elseif (get_row_layout() == 'video'): ?>
+
+      <?php include("video.php");?>
 
     <?php endif; ?>
   <?php endwhile; ?>

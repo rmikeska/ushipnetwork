@@ -89,3 +89,13 @@
     padding-top: 50px;
   }
 }
+
+.hero .tertiaryCallout-title {
+  color: $white;
+  text-shadow: $base-text-shadow;
+}
+
+.hero .tertiaryCallout-container {
+  padding-top: 80px;
+  padding-bottom: 0;
+}
