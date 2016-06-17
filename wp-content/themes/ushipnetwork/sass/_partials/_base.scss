@@ -227,3 +227,17 @@ hr {
       display: none !important;
   }
 }
+
+/*** Special case styles on a page by page basis. These things need to be worked into module options ***/
+
+.page-id-3096 {
+
+  .videoFeature-container {
+    padding-bottom: 0;
+  }
+
+  .videoFeature-video {
+    max-width: 620px;
+  }
+
+}
