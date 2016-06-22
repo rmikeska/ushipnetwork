@@ -17,10 +17,7 @@
       <?php $strip_url = get_sub_field('split_screen_strip_url'); ?>
       <a href="<?php echo $strip_url; ?>" class="splitScreen-strip">
         <div class="splitScreen-strip-container">
-          <div class="splitScreen-strip-headline-container">
-            <h2 class="splitScreen-strip-headline"><?php the_sub_field('split_screen_strip_headline'); ?></h2>
-            <?php include( get_template_directory() . '/images/circled_arrow.svg'); ?>
-          </div>
+          <h2 class="splitScreen-strip-headline"><?php the_sub_field('split_screen_strip_headline'); ?></h2>
           <h4 class="splitScreen-strip-subheadline"><?php the_sub_field('split_screen_strip_subheadline'); ?></h4>
         </div>
       </a>

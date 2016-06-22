@@ -4190,7 +4190,7 @@ label {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  max-height: 85px; }
+  height: 100%; }
 
 .splitScreen-panel {
   position: relative;
@@ -4308,6 +4308,7 @@ label {
   fill: #1C2431; }
 
 .splitScreen-strip {
+  width: 33.3333333%;
   background-color: #F4F4F4;
   z-index: 1;
   position: relative;
@@ -4325,51 +4326,31 @@ label {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center; }
-
-.splitScreen-strip:first-child {
-  width: calc(50% + 15px); }
   @media only screen and (max-width: 769px) {
-    .splitScreen-strip:first-child {
-      width: 100%;
-      border-bottom: 1px solid #dddddd; } }
-
-.splitScreen-strip:last-child {
-  width: calc(50% - 15px); }
-  @media only screen and (max-width: 769px) {
-    .splitScreen-strip:last-child {
+    .splitScreen-strip {
       width: 100%; } }
+  @media only screen and (max-width: 769px) {
+    .splitScreen-strip:not(:last-child) {
+      border-bottom: 1px solid #dddddd; } }
 
 .splitScreen-strip-container {
   padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 50px;
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center; }
-
-.splitScreen-strip:first-child .splitScreen-strip-container {
-  padding-right: 37px; }
-
-.splitScreen-strip-headline-container {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 7px; }
   @media only screen and (max-width: 769px) {
-    .splitScreen-strip-headline-container {
-      margin-bottom: 0; } }
+    .splitScreen-strip-container {
+      padding-right: 15px;
+      margin-bottom: 8px; } }
 
 .splitScreen-strip-headline {
+  margin-bottom: 7px;
   font-size: 24px;
-  line-height: 1;
-  margin-top: 2px; }
+  line-height: 1; }
   @media only screen and (max-width: 769px) {
     .splitScreen-strip-headline {
+      margin-bottom: 0;
       font-size: 18px; } }
 
 .splitScreen-strip-subheadline {
@@ -4379,20 +4360,8 @@ label {
     .splitScreen-strip-subheadline {
       display: none; } }
 
-.splitScreen-strip .circledArrow {
-  width: 24px;
-  height: 24px;
-  margin-left: 15px; }
-
-.splitScreen-strip .circledArrow path {
-  fill: #999999; }
-
 .splitScreen-strip:hover {
   background-color: #FFFFFF;
-  transition: all 0.2s ease-in-out; }
-
-.splitScreen-strip:hover .circledArrow path {
-  fill: #02AAF3;
   transition: all 0.2s ease-in-out; }
 
 .splitScreen-strip:hover .splitScreen-strip-headline {
@@ -4422,7 +4391,7 @@ label {
     .splitScreen-strip:after {
       display: none; } }
 
-.splitScreen-strip:first-child:after {
+.splitScreen-strip:not(:last-child):after {
   border-right: 1px solid #dddddd; }
 
 .splitScreen-strip:hover:after {
