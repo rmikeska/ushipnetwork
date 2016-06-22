@@ -93,7 +93,7 @@
   z-index: 1;
 
   @media #{$default-break} {
-    min-height: auto;
+    min-height: 150px;
   }
 }
 

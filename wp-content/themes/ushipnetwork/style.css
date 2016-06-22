@@ -4226,7 +4226,7 @@ label {
   z-index: 1; }
   @media only screen and (max-width: 769px) {
     .splitScreen-panel-container {
-      min-height: auto; } }
+      min-height: 150px; } }
 
 .splitScreen-panel-headline {
   font-size: 60px;
