@@ -2474,6 +2474,10 @@ article .post-featureImage {
   float: left;
   margin-top: 30px; }
 
+.flowplayer {
+  display: block;
+  margin: 0 auto; }
+
 .archive-content .page-header {
   padding-top: 35px; }
 
