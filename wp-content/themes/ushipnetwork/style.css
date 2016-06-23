@@ -4760,7 +4760,7 @@ iframe#player {
   right: 0;
   width: 105px;
   height: 105px;
-  opacity: .3;
+  opacity: 0.6;
   cursor: pointer;
   transition: all 0.3s; }
   @media only screen and (max-width: 769px) {
@@ -4778,8 +4778,7 @@ iframe#player {
   width: 100%;
   height: 0;
   padding-top: 56.2244898%;
-  overflow: hidden;
-  background-color: #000000; }
+  overflow: hidden; }
 
 .videoFeature-video-poster-image {
   position: absolute;
@@ -4788,7 +4787,6 @@ iframe#player {
   right: 0;
   bottom: 0;
   width: 100%;
-  height: 100%;
-  opacity: 0.5; }
+  height: 100%; }
 
 /*# sourceMappingURL=style.css.map */

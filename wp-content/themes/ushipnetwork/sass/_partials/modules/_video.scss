@@ -58,7 +58,7 @@ iframe#player {
   right: 0;
   width: 105px;
   height: 105px;
-  opacity: .3;
+  opacity: 0.6;
   cursor: pointer;
   transition: all 0.3s;
 
@@ -80,7 +80,6 @@ iframe#player {
   height: 0;
   padding-top: 56.2244898%;
   overflow: hidden;
-  background-color: #000000;
 }
 
 .videoFeature-video-poster-image {
@@ -91,5 +90,4 @@ iframe#player {
   bottom: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.5;
 }
