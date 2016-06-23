@@ -235,4 +235,16 @@ hr {
   .videoFeature-video {
     max-width: 620px;
   }
+
+  .bookend-intro {
+    @media #{$default-break} {
+      padding-top: 0;
+    }
+  }
+
+  .bookend-divider {
+    @media #{$default-break} {
+      display: none;
+    }
+  }
 }

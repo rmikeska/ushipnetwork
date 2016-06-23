@@ -2068,6 +2068,12 @@ hr {
   padding-bottom: 0; }
 .page-id-3096 .videoFeature-video {
   max-width: 620px; }
+@media only screen and (max-width: 769px) {
+  .page-id-3096 .bookend-intro {
+    padding-top: 0; } }
+@media only screen and (max-width: 769px) {
+  .page-id-3096 .bookend-divider {
+    display: none; } }
 
 /*** Blog Landing ***/
 .categoryMenu {
