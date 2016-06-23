@@ -6,7 +6,7 @@
       <div class="videoFeature-video-inner">
         <?php $video_poster = get_sub_field('video_poster'); ?>
         <?php $video_id = get_sub_field('youtube_id'); ?>
-        <iframe id="player" src="//www.youtube.com/embed/<?php echo $video_id; ?>?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+        <iframe id="player" src="//www.youtube.com/embed/<?php echo $video_id; ?>?showinfo=0" frameborder="0" allowfullscreen=""></iframe>
       </div>
     </div>
 
