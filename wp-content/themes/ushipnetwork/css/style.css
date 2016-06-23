@@ -2066,7 +2066,7 @@ hr {
 /*** Special case styles on a page by page basis. These things need to be worked into module options ***/
 .page-id-3096 .videoFeature-container {
   padding-bottom: 0; }
-.page-id-3096 .videoFeature-video-inner {
+.page-id-3096 .videoFeature-video {
   max-width: 620px; }
 
 /*** Blog Landing ***/
