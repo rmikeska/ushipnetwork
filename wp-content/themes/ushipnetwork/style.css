@@ -2094,7 +2094,7 @@ hr {
 /*** Special case styles on a page by page basis. These things need to be worked into module options ***/
 .page-id-3096 .videoFeature-container {
   padding-bottom: 0; }
-.page-id-3096 .videoFeature-video {
+.page-id-3096 .videoFeature-video-inner {
   max-width: 620px; }
 
 /*** Blog Landing ***/
@@ -4733,30 +4733,62 @@ label {
 .video-cta {
   margin-top: 50px; }
 
-.start-video {
+.videoFeature-video {
+  max-width: 980px;
+  margin: 0 auto; }
+
+.videoFeature-video-inner {
+  position: relative;
+  padding-bottom: 56.2244898%;
+  height: 0; }
+
+iframe#player {
   position: absolute;
-  top: 80px;
-  padding: 12px;
-  left: 174px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.videoFeature-video-playButton {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 105px;
+  height: 105px;
   opacity: .3;
   cursor: pointer;
   transition: all 0.3s; }
+  @media only screen and (max-width: 769px) {
+    .videoFeature-video-playButton {
+      width: 65px;
+      height: 65px; } }
 
-.start-video:hover {
+.videoFeature-video-playButton:hover {
   opacity: 1;
   -webkit-filter: brightness 1; }
 
-div.thumbnail_container {
-  width: 434px;
-  height: 244px;
+.videoFeature-video-poster {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 0;
+  padding-top: 56.2244898%;
   overflow: hidden;
-  background-color: #000; }
+  background-color: #000000; }
 
-img.thumbnail {
-  margin-top: -50px;
+.videoFeature-video-poster-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
   opacity: 0.5; }
-
-.videoFeature-video {
-  position: relative; }
 
 /*# sourceMappingURL=style.css.map */

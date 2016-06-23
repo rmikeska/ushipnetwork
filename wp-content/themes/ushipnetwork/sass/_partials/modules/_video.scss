@@ -28,85 +28,68 @@
   margin-top: 50px;
 }
 
-.start-video {
-    position: absolute;
-    top: 80px;
-    padding: 12px;
-    left: 174px;
-    opacity: .3;
-
-    cursor: pointer;
-
-    transition: all 0.3s;
-}
-
-.start-video:hover
-{
-    opacity: 1;
-    -webkit-filter: brightness (1);
-}
-
-div.thumbnail_container
-{
-    width: 434px;
-    height: 244px;
-    overflow: hidden;
-    background-color: #000;
-}
-
-img.thumbnail
-{
-    margin-top: -50px;
-    opacity: 0.5;
-}
-
 .videoFeature-video {
-  position: relative;
+  max-width: 980px;
+  margin: 0 auto;
 }
 
-// .videoFeature .video-js {
-//   margin: 0 auto;
-//   width: 100%;
-//   height: 0;
-//   padding-top: 56.2244898%;
-// }
+.videoFeature-video-inner {
+  position: relative;
+  padding-bottom: 56.2244898%;
+  height: 0;
+}
 
-// .videoFeature-video {
-//   max-width: 980px;
-//   margin: 0 auto;
-// }
+iframe#player {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
-// .videoFeature .video-js .vjs-big-play-button {
-//   position: absolute;
-//   margin: auto;
-//   top: 0;
-//   bottom: 0;
-//   left: 0;
-//   right: 0;
-//   width: 105px;
-//   height: 105px;
-//   border: none;
-//   background-color: transparent;
-//   border-radius: 0;
-//   transition: none;
+.videoFeature-video-playButton {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 105px;
+  height: 105px;
+  opacity: .3;
+  cursor: pointer;
+  transition: all 0.3s;
 
-//   @media #{$default-break} {
-//     width: 65px;
-//     height: 65px;
-//   }
-// }
+  @media #{$default-break} {
+    width: 65px;
+    height: 65px;
+  }
+}
 
-// .videoFeature .vjs-icon-play:before,
-// .videoFeature .video-js .vjs-big-play-button:before {
-//   content: '';
-//   background-image: linear-gradient(transparent, transparent), url("#{$asset-path}/play_button.svg");
-//   background-repeat: no-repeat;
-//   background-position: center;
-// }
+.videoFeature-video-playButton:hover {
+  opacity: 1;
+  -webkit-filter: brightness (1);
+}
 
-// .videoFeature .video-js:hover .vjs-big-play-button,
-// .videoFeature .video-js .vjs-big-play-button:focus {
-//   background-color: transparent;
-//   border-color: transparent;
-//   transition: none;
-// }
+.videoFeature-video-poster {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 0;
+  padding-top: 56.2244898%;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.videoFeature-video-poster-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
