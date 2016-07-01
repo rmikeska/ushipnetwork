@@ -1,7 +1,7 @@
 /*** Bios ***/
 
 .bios-container {
-  @include container(1060px, 85px, 10px);
+  @include container(1200px, 85px, 10px);
   overflow: hidden;
   width: 100%;
 
@@ -26,22 +26,36 @@
 }
 
 .bios-group {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  // Below is why flexbox sucks ass at anything but full horizontal centering
+  @media only screen and (max-width: 1260px) {
+    max-width: 900px;
+  }
+
+  @media only screen and (max-width: 960px) {
+    max-width: 600px;
+  }
+
+  @media only screen and (max-width: 660px) {
+    max-width: 300px;
+  }
+}
+
+.bios-group-container {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
-  flex-direction: row;
   flex-wrap: wrap;
-  align-content: flex-end;
-  margin-right: -20px;
 }
 
 .bios-block {
-  display: block;
-  width: 270px;
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+  width: 250px;
   text-align: center;
   color: $base-text-color;
-  padding-right: 20px;
-  margin-bottom: 55px;
+  margin: 0 25px 55px;
 
   @media #{$default-break} {
     padding-bottom: 20px;

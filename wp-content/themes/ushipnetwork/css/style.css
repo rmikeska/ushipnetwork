@@ -3075,8 +3075,8 @@ label {
 
 /*** Bios ***/
 .bios-container {
-  max-width: -webkit-calc(1060px + 15px*2);
-  max-width: calc(1060px + 15px*2);
+  max-width: -webkit-calc(1200px + 15px*2);
+  max-width: calc(1200px + 15px*2);
   margin-left: auto;
   margin-right: auto;
   padding-top: 85px;
@@ -3118,21 +3118,30 @@ label {
   line-height: 30px; }
 
 .bios-group {
+  max-width: 1200px;
+  margin: 0 auto; }
+  @media only screen and (max-width: 1260px) {
+    .bios-group {
+      max-width: 900px; } }
+  @media only screen and (max-width: 960px) {
+    .bios-group {
+      max-width: 600px; } }
+  @media only screen and (max-width: 660px) {
+    .bios-group {
+      max-width: 300px; } }
+
+.bios-group-container {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: flex-end;
-  margin-right: -20px; }
+  flex-wrap: wrap; }
 
 .bios-block {
-  display: block;
-  width: 270px;
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+  width: 250px;
   text-align: center;
   color: #262626;
-  padding-right: 20px;
-  margin-bottom: 55px; }
+  margin: 0 25px 55px; }
   @media only screen and (max-width: 769px) {
     .bios-block {
       padding-bottom: 20px; } }
