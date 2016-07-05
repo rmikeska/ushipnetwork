@@ -2236,7 +2236,8 @@ hr {
   margin-bottom: 30px; }
 
 .post-title:hover {
-  color: #02AAF3; }
+  color: #02AAF3;
+  transition: all 0.1s ease-in-out; }
 
 .ajax-load-more-wrap {
   width: 100%; }
