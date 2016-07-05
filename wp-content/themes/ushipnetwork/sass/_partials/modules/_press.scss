@@ -1,36 +1,51 @@
-.pressStrip {
-  @include container(1120px, 0, 0);
+.pressStrip-container {
+  @include container(1030px, 80px, 80px);
   width: 100%;
-  padding: 0;
-  display: flex;
-  justify-content: center;
 
   @media #{$default-break} {
-    flex-direction: column;
+    padding-top: 45px;
+    padding-bottom: 45px;
   }
 }
 
-.pressStrip-block {
-  flex: 1;
-  padding-top: 30px;
-  padding-bottom: 50px;
-}
-
-.pressStrip-block:not(:last-child) {
-  margin-right: 50px;
-  padding-right: 30px;
-  border-right: 1px solid $divider-color;
+.pressStrip-column {
+  float: left;
+  width: 50%;
 
   @media #{$default-break} {
-    margin-right: 0;
-    padding-right: 0;
-    border-right: none;
-    border-bottom: 1px solid $divider-color;
+    width: 100%;
+    float: none;
+  }
+
+  &:first-child {
+    border-right: 1px solid $divider-color;
+    padding-right: 85px;
+
+    @media #{$default-break} {
+      border-right: none;
+      border-bottom: 1px solid $divider-color;
+      padding-right: 0;
+      padding-bottom: 50px;
+      margin-bottom: 50px;
+    }
+  }
+
+  &:last-child {
+    padding-left: 85px;
+
+    @media #{$default-break} {
+      padding-left: 0;
+    }
   }
 }
 
-.pressStrip-block-inner {
-  padding: 0 $section-padding;
+.pressStrip-column-title {
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+.pressStrip .post-title {
+  margin-bottom: 50px;
 }
 
 .post-caption {
@@ -38,11 +53,7 @@
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  padding-bottom: 35px;
-
-  @media #{$default-break} {
-    padding-bottom: 25px;
-  }
+  padding-bottom: 20px;
 }
 
 .post-time {

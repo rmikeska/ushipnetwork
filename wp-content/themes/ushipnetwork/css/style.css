@@ -3842,55 +3842,61 @@ label {
 .testimonials-source {
   padding-bottom: 10px; }
 
-.pressStrip {
-  max-width: -webkit-calc(1120px + 15px*2);
-  max-width: calc(1120px + 15px*2);
+.pressStrip-container {
+  max-width: -webkit-calc(1030px + 15px*2);
+  max-width: calc(1030px + 15px*2);
   margin-left: auto;
   margin-right: auto;
-  padding-top: 0;
+  padding-top: 80px;
   padding-right: 15px;
-  padding-bottom: 0;
+  padding-bottom: 80px;
   padding-left: 15px;
-  width: 100%;
-  padding: 0;
-  display: flex;
-  justify-content: center; }
-  .pressStrip::after {
+  width: 100%; }
+  .pressStrip-container::after {
     clear: both;
     content: "";
     display: table; }
   @media only screen and (max-width: 769px) {
-    .pressStrip {
-      flex-direction: column; } }
+    .pressStrip-container {
+      padding-top: 45px;
+      padding-bottom: 45px; } }
 
-.pressStrip-block {
-  flex: 1;
-  padding-top: 30px;
-  padding-bottom: 50px; }
-
-.pressStrip-block:not(:last-child) {
-  margin-right: 50px;
-  padding-right: 30px;
-  border-right: 1px solid #dddddd; }
+.pressStrip-column {
+  float: left;
+  width: 50%; }
   @media only screen and (max-width: 769px) {
-    .pressStrip-block:not(:last-child) {
-      margin-right: 0;
-      padding-right: 0;
-      border-right: none;
-      border-bottom: 1px solid #dddddd; } }
+    .pressStrip-column {
+      width: 100%;
+      float: none; } }
+  .pressStrip-column:first-child {
+    border-right: 1px solid #dddddd;
+    padding-right: 85px; }
+    @media only screen and (max-width: 769px) {
+      .pressStrip-column:first-child {
+        border-right: none;
+        border-bottom: 1px solid #dddddd;
+        padding-right: 0;
+        padding-bottom: 50px;
+        margin-bottom: 50px; } }
+  .pressStrip-column:last-child {
+    padding-left: 85px; }
+    @media only screen and (max-width: 769px) {
+      .pressStrip-column:last-child {
+        padding-left: 0; } }
 
-.pressStrip-block-inner {
-  padding: 0 15px; }
+.pressStrip-column-title {
+  font-size: 24px;
+  margin-bottom: 50px; }
+
+.pressStrip .post-title {
+  margin-bottom: 50px; }
 
 .post-caption {
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  padding-bottom: 35px; }
-  @media only screen and (max-width: 769px) {
-    .post-caption {
-      padding-bottom: 25px; } }
+  padding-bottom: 20px; }
 
 .post-time {
   color: #999999; }
