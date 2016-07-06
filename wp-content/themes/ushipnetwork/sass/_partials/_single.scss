@@ -41,7 +41,6 @@ article .post-featureImage {
 .posted-on {
   padding-top: 14px;
   padding-bottom: 12px;
-  margin-bottom: 42px;
   border-top: 1px solid $divider-color;
   border-bottom: 1px solid $divider-color;
   line-height: 24px;
@@ -49,7 +48,6 @@ article .post-featureImage {
   @media #{$default-break} {
     border: none;
     padding-top: 0;
-    margin-bottom: 14px;
   }
 }
 
@@ -103,13 +101,50 @@ article .post-featureImage {
   }
 }
 
+
+.byline {
+  display: inline-block;
+  width: 100%;
+  margin-top: 30px;
+
+  @media #{$default-break} {
+    margin-top: 14px;
+  }
+}
+
+.entry-header .authorship {
+  float: left;
+
+  // @media #{$default-break} {
+  //   float: none;
+  // }
+}
+
+// .entry-footer .authorship {
+
+// }
+
 .entry-header .tag-list {
   float: right;
 }
 
-.entry-meta .tag-list {
+.entry-footer .tag-list {
+  float: left;
+}
+
+.entry-footer .byline {
+  padding-top: 14px;
+  padding-bottom: 12px;
+  margin-bottom: 30px;
+  margin-top: 0;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  line-height: 24px;
+
   @media #{$default-break} {
-    display: none;
+    border: none;
+    padding-top: 0;
+    margin-bottom: 14px;
   }
 }
 
@@ -162,21 +197,6 @@ article .post-featureImage {
 
 .share-icon.share-icon-linkedin {
   background-image: linear-gradient(transparent, transparent), url("#{$asset-path}/linkedin.svg");
-}
-
-.footer-byline {
-  padding-top: 14px;
-  padding-bottom: 12px;
-  margin-bottom: 30px;
-  border-top: 1px solid #dddddd;
-  border-bottom: 1px solid #dddddd;
-  line-height: 24px;
-
-  @media #{$default-break} {
-    border: none;
-    padding-top: 0;
-    margin-bottom: 14px;
-  }
 }
 
 .blog-return {
@@ -282,4 +302,20 @@ article .post-featureImage {
 .flowplayer {
   display: block;
   margin: 0 auto;
+}
+
+/* Hide Authorship and 'All Posts' return button for Press Release and Media Coverage posts */
+
+article.category-media-coverage,
+article.category-press-release {
+
+  padding-top: 20px;
+
+  .blog-return {
+    display: none;
+  }
+
+  .authorship {
+    display: none;
+  }
 }

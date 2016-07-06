@@ -37,7 +37,7 @@ function ushipnetwork_posted_on() {
 
 	echo '</div>' . '</div>';
 
-	echo '<div class="byline">' . $byline;
+	echo '<div class="byline">' . '<div class="authorship">' . $byline . '</div>';
 
 	$posttags = get_the_tags();
 	$count= 0;
@@ -71,7 +71,7 @@ function ushipnetwork_entry_footer() {
 			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 		);
 
-		echo '<div class="footer-byline">' . $byline . '<div class="share">' . 'Share';
+		echo '<div class="byline">' . '<div class="authorship">' . $byline . '</div>' . '<div class="share">' . 'Share';
 
 		include("share.php");
 

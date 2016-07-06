@@ -2257,15 +2257,13 @@ article .post-featureImage {
 .posted-on {
   padding-top: 14px;
   padding-bottom: 12px;
-  margin-bottom: 42px;
   border-top: 1px solid #dddddd;
   border-bottom: 1px solid #dddddd;
   line-height: 24px; }
   @media only screen and (max-width: 769px) {
     .posted-on {
       border: none;
-      padding-top: 0;
-      margin-bottom: 14px; } }
+      padding-top: 0; } }
 
 .entry-content {
   line-height: 30px;
@@ -2298,12 +2296,36 @@ article .post-featureImage {
     margin: 0 auto;
     max-width: 100%; }
 
+.byline {
+  display: inline-block;
+  width: 100%;
+  margin-top: 30px; }
+  @media only screen and (max-width: 769px) {
+    .byline {
+      margin-top: 14px; } }
+
+.entry-header .authorship {
+  float: left; }
+
 .entry-header .tag-list {
   float: right; }
 
-@media only screen and (max-width: 769px) {
-  .entry-meta .tag-list {
-    display: none; } }
+.entry-footer .tag-list {
+  float: left; }
+
+.entry-footer .byline {
+  padding-top: 14px;
+  padding-bottom: 12px;
+  margin-bottom: 30px;
+  margin-top: 0;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  line-height: 24px; }
+  @media only screen and (max-width: 769px) {
+    .entry-footer .byline {
+      border: none;
+      padding-top: 0;
+      margin-bottom: 14px; } }
 
 .share {
   float: right; }
@@ -2345,19 +2367,6 @@ article .post-featureImage {
 
 .share-icon.share-icon-linkedin {
   background-image: linear-gradient(transparent, transparent), url("/wp-content/themes/ushipnetwork/images/linkedin.svg"); }
-
-.footer-byline {
-  padding-top: 14px;
-  padding-bottom: 12px;
-  margin-bottom: 30px;
-  border-top: 1px solid #dddddd;
-  border-bottom: 1px solid #dddddd;
-  line-height: 24px; }
-  @media only screen and (max-width: 769px) {
-    .footer-byline {
-      border: none;
-      padding-top: 0;
-      margin-bottom: 14px; } }
 
 .blog-return {
   display: flex;
@@ -2481,6 +2490,17 @@ article .post-featureImage {
 .flowplayer {
   display: block;
   margin: 0 auto; }
+
+/* Hide Authorship and 'All Posts' return button for Press Release and Media Coverage posts */
+article.category-media-coverage,
+article.category-press-release {
+  padding-top: 20px; }
+  article.category-media-coverage .blog-return,
+  article.category-press-release .blog-return {
+    display: none; }
+  article.category-media-coverage .authorship,
+  article.category-press-release .authorship {
+    display: none; }
 
 .archive-content .page-header {
   padding-top: 35px; }
