@@ -81,10 +81,12 @@
 
 .post-featureImage {
   max-width: 300px;
+  min-width: 300px;
   height: auto;
 
   @media #{$default-break} {
     max-width: 290px;
+    min-width: 290px;
   }
 }
 

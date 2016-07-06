@@ -2209,10 +2209,12 @@ hr {
 
 .post-featureImage {
   max-width: 300px;
+  min-width: 300px;
   height: auto; }
   @media only screen and (max-width: 769px) {
     .post-featureImage {
-      max-width: 290px; } }
+      max-width: 290px;
+      min-width: 290px; } }
 
 .post-tag-group {
   padding-top: 10px;
@@ -2277,6 +2279,7 @@ article .post-featureImage {
   display: block;
   margin: 25px auto 0;
   max-width: 100%;
+  min-width: 100%;
   height: auto; }
 
 .entry-header {
