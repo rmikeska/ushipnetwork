@@ -39,6 +39,7 @@ article .post-featureImage {
 }
 
 .posted-on {
+  display: flex;
   padding-top: 14px;
   padding-bottom: 12px;
   border-top: 1px solid $divider-color;
@@ -48,6 +49,11 @@ article .post-featureImage {
   @media #{$default-break} {
     border: none;
     padding-top: 0;
+    flex-direction: column;
+  }
+
+  time {
+    flex: 1;
   }
 }
 
@@ -103,56 +109,62 @@ article .post-featureImage {
 
 
 .byline {
-  display: inline-block;
-  width: 100%;
-  margin-top: 30px;
+  display: flex;
 
   @media #{$default-break} {
-    margin-top: 14px;
+    flex-direction: column;
   }
 }
 
-.entry-header .authorship {
-  float: left;
+.entry-header {
 
-  // @media #{$default-break} {
-  //   float: none;
-  // }
+  .authorship {
+    flex: 1;
+    margin-top: 30px;
+
+    @media #{$default-break} {
+      margin-top: 14px;
+    }
+  }
+
+  .tag-list {
+    flex: 1;
+    text-align: right;
+    margin-top: 30px;
+
+    @media #{$default-break} {
+      margin-top: 14px;
+      text-align: left;
+    }
+  }
 }
 
-// .entry-footer .authorship {
 
-// }
+.entry-footer {
 
-.entry-header .tag-list {
-  float: right;
-}
+  .byline {
+    padding-top: 14px;
+    padding-bottom: 12px;
+    margin-bottom: 30px;
+    border-top: 1px solid $divider-color;
+    border-bottom: 1px solid $divider-color;
+    line-height: 24px;
 
-.entry-footer .tag-list {
-  float: left;
-}
+    @media #{$default-break} {
+      border: none;
+      padding-top: 0;
+    }
+  }
 
-.entry-footer .byline {
-  padding-top: 14px;
-  padding-bottom: 12px;
-  margin-bottom: 30px;
-  margin-top: 0;
-  border-top: 1px solid #dddddd;
-  border-bottom: 1px solid #dddddd;
-  line-height: 24px;
-
-  @media #{$default-break} {
-    border: none;
-    padding-top: 0;
-    margin-bottom: 14px;
+  .authorship {
+    flex: 1;
   }
 }
 
 .share {
-  float: right;
+  flex: 1;
 
   @media #{$default-break} {
-    float: none;
     margin-top: 14px;
     padding-top: 14px;
     padding-bottom: 12px;
@@ -162,20 +174,20 @@ article .post-featureImage {
 }
 
 .share-list {
-  float: right;
-  margin-left: 15px;
-}
-
-.share-list li:not(:first-child) {
-  margin-left: 10px;
+  display: flex;
+  justify-content: flex-end;
 
   @media #{$default-break} {
-    margin-left: 50px;
+    justify-content: space-between;
   }
 }
 
 .share-list li {
-  float: left;
+  margin-left: 10px;
+
+  @media #{$default-break} {
+    margin-left: 0;
+  }
 }
 
 .share-icon {

@@ -1,4 +1,5 @@
 <ul class="share-list">
+  Share
   <li class="facebook">
      <a target="_blank" class="share-icon share-icon-facebook" href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&amp;t=<?php the_title(); ?>"></a>
   </li>
