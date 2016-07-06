@@ -2236,7 +2236,7 @@ article .post-featureImage {
   display: block;
   margin: 25px auto 0;
   max-width: 100%;
-  min-width: 100%;
+  min-width: initial;
   height: auto; }
 
 .entry-header {
