@@ -29,7 +29,6 @@
   max-width: 1200px;
   margin: 0 auto;
 
-  // Below is why flexbox sucks ass at anything but full horizontal centering
   @media only screen and (max-width: 1260px) {
     max-width: 900px;
   }

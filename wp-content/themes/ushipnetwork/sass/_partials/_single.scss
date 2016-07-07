@@ -248,10 +248,16 @@ article .post-featureImage {
 }
 
 .relatedPosts-container {
-  @include container(1020px, 85px, 85px);
+  @include container(1080px, 85px, 85px);
+  width: 100%;
+  overflow: hidden;
 
-  @media only screen and (max-width: 1080px) {
-    @include container(100%, 60px, 60px);
+  @media only screen and (max-width: 1140px) {
+    max-width: 750px;
+  }
+
+  @media only screen and (max-width: 780px) {
+    max-width: 390px;
   }
 }
 
@@ -269,32 +275,7 @@ article .post-featureImage {
 
 .relatedPosts-strip {
   display: flex;
-  justify-content: center;
-
-  @media only screen and (max-width: 1080px) {
-    flex-direction: column;
-    padding-bottom: 0;
-  }
-}
-
-.relatedPosts-strip .postThumb {
-  margin: 0 auto;
-  flex: 1;
-  padding-bottom: 0;
-
-  @media only screen and (max-width: 1080px) {
-    max-width: 300px;
-    padding-bottom: 60px;
-    padding-right: 0;
-  }
-}
-
-.relatedPosts-strip .postThumb:last-child {
-  padding-right: 0;
-
-  @media only screen and (max-width: 1080px) {
-    padding-bottom: 0;
-  }
+  flex-wrap: wrap;
 }
 
 .postBookend-container {

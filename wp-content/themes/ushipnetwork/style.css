@@ -2158,7 +2158,7 @@ hr {
   color: #02AAF3; }
 
 .postsGroup {
-  max-width: calc(1020px + 15px*2);
+  max-width: calc(1080px + 15px*2);
   margin-left: auto;
   margin-right: auto;
   padding-top: 75px;
@@ -2171,45 +2171,46 @@ hr {
     clear: both;
     content: "";
     display: table; }
-
-.postsGroup-container {
-  margin-right: -60px; }
+  @media only screen and (max-width: 1140px) {
+    .postsGroup {
+      max-width: 750px; } }
+  @media only screen and (max-width: 780px) {
+    .postsGroup {
+      max-width: 390px; } }
 
 .postsGroup-container,
 .alm-reveal {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-align-content: flex-end;
-      -ms-flex-line-pack: end;
-          align-content: flex-end; }
+          flex-wrap: wrap; }
 
 .postThumb {
-  max-width: 360px;
-  padding-bottom: 100px;
-  padding-right: 60px; }
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 300px;
+  width: 300px;
+  margin: 0 30px 100px; }
   @media only screen and (max-width: 769px) {
     .postThumb {
-      padding-bottom: 60px; } }
+      margin: 0 auto 60px;
+      min-width: 290px; } }
+  .postThumb .tertiaryLink {
+    display: inline-table; }
 
 .post-featureImage-link {
   display: block; }
 
 .post-featureImage {
+  display: block;
+  margin: 0 auto;
   max-width: 300px;
-  min-width: 300px;
   height: auto; }
   @media only screen and (max-width: 769px) {
     .post-featureImage {
@@ -2475,30 +2476,25 @@ article .post-featureImage {
   background-color: #F4F4F4; }
 
 .relatedPosts-container {
-  max-width: calc(1020px + 15px*2);
+  max-width: calc(1080px + 15px*2);
   margin-left: auto;
   margin-right: auto;
   padding-top: 85px;
   padding-right: 15px;
   padding-bottom: 85px;
-  padding-left: 15px; }
+  padding-left: 15px;
+  width: 100%;
+  overflow: hidden; }
   .relatedPosts-container::after {
     clear: both;
     content: "";
     display: table; }
-  @media only screen and (max-width: 1080px) {
+  @media only screen and (max-width: 1140px) {
     .relatedPosts-container {
-      max-width: calc(100% + 15px*2);
-      margin-left: auto;
-      margin-right: auto;
-      padding-top: 60px;
-      padding-right: 15px;
-      padding-bottom: 60px;
-      padding-left: 15px; }
-      .relatedPosts-container::after {
-        clear: both;
-        content: "";
-        display: table; } }
+      max-width: 750px; } }
+  @media only screen and (max-width: 780px) {
+    .relatedPosts-container {
+      max-width: 390px; } }
 
 .relatedPosts-intro {
   padding-bottom: 30px;
@@ -2514,33 +2510,9 @@ article .post-featureImage {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  @media only screen and (max-width: 1080px) {
-    .relatedPosts-strip {
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      padding-bottom: 0; } }
-
-.relatedPosts-strip .postThumb {
-  margin: 0 auto;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  padding-bottom: 0; }
-  @media only screen and (max-width: 1080px) {
-    .relatedPosts-strip .postThumb {
-      max-width: 300px;
-      padding-bottom: 60px;
-      padding-right: 0; } }
-
-.relatedPosts-strip .postThumb:last-child {
-  padding-right: 0; }
-  @media only screen and (max-width: 1080px) {
-    .relatedPosts-strip .postThumb:last-child {
-      padding-bottom: 0; } }
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
 
 .postBookend-container {
   max-width: calc(100% + 15px*2);

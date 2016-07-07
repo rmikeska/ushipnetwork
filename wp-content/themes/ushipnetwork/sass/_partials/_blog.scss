@@ -46,32 +46,39 @@
 }
 
 .postsGroup {
-  @include container(1020px, 75px, 64px);
+  @include container(1080px, 75px, 64px);
   width: 100%;
   overflow: hidden;
-}
 
-.postsGroup-container {
-  margin-right: -60px;
+  @media only screen and (max-width: 1140px) {
+    max-width: 750px;
+  }
+
+  @media only screen and (max-width: 780px) {
+    max-width: 390px;
+  }
 }
 
 .postsGroup-container,
 .alm-reveal {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
-  flex-direction: row;
   flex-wrap: wrap;
-  align-content: flex-end;
 }
 
 .postThumb {
-  max-width: 360px;
-  padding-bottom: 100px;
-  padding-right: 60px;
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  width: 300px;
+  margin: 0 30px 100px;
 
   @media #{$default-break} {
-    padding-bottom: 60px;
+    margin: 0 auto 60px;
+    min-width: 290px;
+  }
+
+  .tertiaryLink {
+    display: inline-table;
   }
 }
 
@@ -80,8 +87,9 @@
 }
 
 .post-featureImage {
+  display: block;
+  margin: 0 auto;
   max-width: 300px;
-  min-width: 300px;
   height: auto;
 
   @media #{$default-break} {
