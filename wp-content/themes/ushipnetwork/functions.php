@@ -200,3 +200,17 @@ function remove_editor() {
   remove_post_type_support('page', 'editor');
 }
 add_action('admin_init', 'remove_editor');
+
+/**
+ * Remove prefixed archive title string (EX: Category: Media Coverage)
+ */
+add_filter( 'get_the_archive_title', function ( $title ) {
+	if( is_category() ) {
+		$title = single_cat_title( '', false );
+	} elseif ( is_tag() ) {
+  	$title = single_tag_title( '', false );
+  } elseif ( is_author() ) {
+    $title = '<span class="vcard">' . get_the_author() . '</span>';
+  }
+	return $title;
+});
