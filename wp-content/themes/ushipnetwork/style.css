@@ -3248,7 +3248,7 @@ body.page-template-contact {
 .contactForm-box-section:not(:last-child) {
   padding-bottom: 25px; }
 .contactForm-box-section ul li:not(:last-child) {
-  padding-bottom: 10px; }
+  padding-bottom: 5px; }
 
 .contactForm-box-section-title {
   display: block;
