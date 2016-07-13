@@ -3154,7 +3154,9 @@ body.page-template-contact {
   line-height: 30px; }
 
 .contactForm-box-section:not(:last-child) {
-  padding-bottom: 20px; }
+  padding-bottom: 25px; }
+.contactForm-box-section ul li:not(:last-child) {
+  padding-bottom: 10px; }
 
 .contactForm-box-section-title {
   display: block;
@@ -3164,9 +3166,6 @@ body.page-template-contact {
   letter-spacing: 0.025rem;
   text-transform: uppercase;
   font-weight: 700; }
-
-.contactForm-box-section-body {
-  line-height: 32px; }
 
 /*** Bios ***/
 .bios-container {

@@ -66,8 +66,15 @@ body.page-template-contact {
   line-height: 30px;
 }
 
-.contactForm-box-section:not(:last-child) {
-  padding-bottom: 20px;
+.contactForm-box-section {
+
+  &:not(:last-child) {
+    padding-bottom: 25px;
+  }
+
+  ul li:not(:last-child) {
+    padding-bottom: 10px;
+  }
 }
 
 .contactForm-box-section-title {
@@ -78,8 +85,4 @@ body.page-template-contact {
   letter-spacing: 0.025rem;
   text-transform: uppercase;
   font-weight: $font-bold;
-}
-
-.contactForm-box-section-body {
-  line-height: 32px;
 }

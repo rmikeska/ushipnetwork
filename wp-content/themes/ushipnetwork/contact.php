@@ -20,18 +20,18 @@ get_header(); ?>
           <div class="form-divider"></div>
           <div class="contactForm-box-section">
             <span class="contactForm-box-section-title">Phone</span>
-            <p class="contactForm-box-section-body">800-698-7447 Ext. 2</p>
+            <p>800-698-7447 Ext. 2</p>
           </div>
           <div class="contactForm-box-section">
             <span class="contactForm-box-section-title">Hours</span>
-            <p class="contactForm-box-section-body">
-              Monday: 7:00 AM - 7:00 PM CST<br>
-              Tuesday: 7:00 AM - 7:00 PM CST<br>
-              Wednesday: 7:00 AM - 7:00 PM CST<br>
-              Thursday: 7:00 AM - 7:00 PM CST<br>
-              Friday: 7:00 AM - 5:00 PM CST<br>
-              Saturday: 10:00 AM - 4:00 PM CST<br>
-            </p>
+            <ul>
+              <li>Monday: 7:00 AM - 7:00 PM CST</li>
+              <li>Tuesday: 7:00 AM - 7:00 PM CST</li>
+              <li>Wednesday: 7:00 AM - 7:00 PM CST</li>
+              <li>Thursday: 7:00 AM - 7:00 PM CST</li>
+              <li>Friday: 7:00 AM - 5:00 PM CST</li>
+              <li>Saturday: 10:00 AM - 4:00 PM CST</li>
+            </ul>
           </div>
         </div>
       </div>
