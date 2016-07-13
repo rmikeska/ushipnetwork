@@ -4,20 +4,20 @@
   <div class="form-divider"></div>
   <div class="form-group">
     <div class="form-field">
-      <label for="subject">Subject</label>
-      <input type="text" name="subject" placeholder="">
+      <label for="subject" id="subject">Subject</label>
+      <input type="text" name="subject" id="subject" placeholder="">
     </div>
     <div class="form-field">
-      <label for="email">Email</label>
-      <input type="email" name="email" placeholder="">
+      <label for="email" id="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="">
     </div>
   </div>
   <div class="form-group">
     <div class="form-field">
-      <label for="question">Question / Problem / Concern</label>
-      <textarea name="question" placeholder=""></textarea>
+      <label for="question" id="question">Question / Problem / Concern</label>
+      <textarea name="question" id="question" placeholder=""></textarea>
     </div>
   </div>
   <div class="form-divider"></div>
-  <input type="submit" id="" class="button buttonSecondary buttonExtraLarge" value="Send">
+  <input type="submit" id="submit" name="submit" class="button buttonSecondary buttonExtraLarge" value="Send">
 </form>
