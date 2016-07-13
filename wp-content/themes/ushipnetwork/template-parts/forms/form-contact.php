@@ -1,4 +1,4 @@
-<form id="form-contact" class="dlsForm" method="post">
+<form id="form-contact" class="dlsForm">
   <h3 class="form-intro">We'll be in touch</h3>
   <p class="errorAlert"></p>
   <div class="form-divider"></div>

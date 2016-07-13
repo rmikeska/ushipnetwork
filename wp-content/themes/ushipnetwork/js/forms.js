@@ -103,11 +103,13 @@ jQuery(document).ready(function ($) {
             }
         },
         submitHandler: function (form) {
-            $(form).ajaxSubmit({
-                type:'POST',
+            alert('valid form submission');
+            $.ajax({
+                type: 'POST',
                 data: $(form).serialize(),
-                url:'https://ushiplearn.staging.wpengine.com/wp-content/themes/ushipnetwork/template-parts/forms/form-contact-process.php'
+                url: '/wp-content/themes/ushipnetwork/template-parts/forms/form-contact-process.php'
             });
+            return false;
         }
     });
 })
