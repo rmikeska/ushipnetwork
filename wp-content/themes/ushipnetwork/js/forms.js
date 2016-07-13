@@ -60,9 +60,7 @@ jQuery(document).ready(function ($) {
         '));
 
         $('.formSuccess-overlay').on('click', function (e) {
-
             var subject = $('.formSuccess');
-
             if(e.target.class != subject.attr('class')) {
                 subject.fadeOut();
                 $('.formSuccess-overlay').fadeOut();
@@ -103,12 +101,14 @@ jQuery(document).ready(function ($) {
             }
         },
         submitHandler: function (form) {
-            alert('valid form submission');
             $.ajax({
                 type: 'POST',
                 data: $(form).serialize(),
                 url: '/wp-content/themes/ushipnetwork/template-parts/forms/form-contact-process.php',
                 success: function () {
+
+                    validator.resetForm();
+
                     $('body').append ($('\
                         <div class="formSuccess-overlay">\
                             <div class="formSuccess">\
@@ -125,9 +125,7 @@ jQuery(document).ready(function ($) {
                     '));
 
                     $('.formSuccess-overlay').on('click', function (e) {
-
                         var subject = $('.formSuccess');
-
                         if(e.target.class != subject.attr('class')) {
                             subject.fadeOut();
                             $('.formSuccess-overlay').fadeOut();
