@@ -19,5 +19,5 @@
     </div>
   </div>
   <div class="form-divider"></div>
-  <input type="submit" id="submit" name="submit" class="button buttonSecondary buttonLarge" value="Send">
+  <input type="submit" id="submit" name="submit" class="button buttonPrimary buttonLarge" value="Send">
 </form>
