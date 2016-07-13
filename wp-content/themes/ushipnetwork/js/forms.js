@@ -106,7 +106,7 @@ jQuery(document).ready(function ($) {
             $(form).ajaxSubmit({
                 type:'POST',
                 data: $(form).serialize(),
-                url:'/wp-content/themes/ushipnetwork/template-parts/forms/form-contact-process.php'
+                url:'https://ushiplearn.staging.wpengine.com/wp-content/themes/ushipnetwork/template-parts/forms/form-contact-process.php'
             });
         }
     });
