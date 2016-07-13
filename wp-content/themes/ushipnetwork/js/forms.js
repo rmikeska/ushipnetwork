@@ -107,7 +107,38 @@ jQuery(document).ready(function ($) {
             $.ajax({
                 type: 'POST',
                 data: $(form).serialize(),
-                url: '/wp-content/themes/ushipnetwork/template-parts/forms/form-contact-process.php'
+                url: '/wp-content/themes/ushipnetwork/template-parts/forms/form-contact-process.php',
+                success: function () {
+                    $('body').append ($('\
+                        <div class="formSuccess-overlay">\
+                            <div class="formSuccess">\
+                              <div class="formSuccess-inner">\
+                                <h3 class="formSuccess-intro">Thank you</h3>\
+                                <div class="formSuccess-body">\
+                                    <p class="formSuccess-body-text">Thanks for getting in touch. One of our representatives will contact you soon.</p>\
+                                </div>\
+                                <a class="formSuccess-cta button buttonPrimary buttonLarge" role="button" href="">Got It</a>\
+                              </div>\
+                              <a href="" class="formSuccess-close"></a>\
+                            </div>\
+                        </div>\
+                    '));
+
+                    $('.formSuccess-overlay').on('click', function (e) {
+
+                        var subject = $('.formSuccess');
+
+                        if(e.target.class != subject.attr('class')) {
+                            subject.fadeOut();
+                            $('.formSuccess-overlay').fadeOut();
+                        }
+                    });
+
+                    $('.formSuccess-cta, .formSuccess-close').on('click', function (e) {
+                        e.preventDefault();
+                        $('.formSuccess, .formSuccess-overlay').fadeOut();
+                    });
+                }
             });
             return false;
         }
