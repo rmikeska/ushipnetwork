@@ -29,6 +29,28 @@ jQuery(document).ready(function ($) {
 
 
 
+    // Video Modal
+    $('a[href="#video-modal"]').click(function(event) {
+        event.preventDefault();
+        $(this).modal({
+            fadeDuration: 100
+        });
+        return false;
+    });
+
+
+
+    // Form Modal
+    $('a[href="#form-modal"]').click(function (event) {
+        event.preventDefault();
+        $(this).modal({
+            fadeDuration: 100
+        });
+        return false;
+    });
+
+
+
     // Open share icons in new window
     var socialLink = $('.share-icon');
 
