@@ -2853,10 +2853,10 @@ select {
   min-height: 50px; }
 
 textarea {
-  min-height: 150px; }
+  min-height: 150px;
+  padding: 15px 15px 15px 20px; }
 
-input,
-textarea {
+input {
   padding: 5px 5px 5px 20px; }
 
 select {
