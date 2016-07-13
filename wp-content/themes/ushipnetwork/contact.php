@@ -9,7 +9,9 @@ get_header(); ?>
 
   <section class="contactForm">
     <div class="contactForm-container">
-      <?php include("template-parts/forms/form-contact.php");?>
+      <div class="contactForm-inner">
+        <?php include("template-parts/forms/form-contact.php");?>
+      </div>
     </div>
   </section>
 

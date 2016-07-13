@@ -6,8 +6,12 @@ body.page-template-contact {
 }
 
 .contactForm-container {
-  max-width: 1000px;
-  margin: 80px auto;
+  @include container(1000px, 85px, 85px);
+  overflow: hidden;
+  width: 100%;
+}
+
+.contactForm-inner {
   padding: 30px;
   background: $white;
   border: 1px solid $divider-color;

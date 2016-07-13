@@ -107,7 +107,7 @@ jQuery(document).ready(function ($) {
                 url: '/wp-content/themes/ushipnetwork/template-parts/forms/form-contact-process.php',
                 success: function () {
 
-                    validator.resetForm();
+                    $(form)[0].reset();
 
                     $('body').append ($('\
                         <div class="formSuccess-overlay">\

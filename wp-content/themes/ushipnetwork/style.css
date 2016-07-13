@@ -3173,8 +3173,21 @@ body.page-template-contact {
   background: #F4F4F4; }
 
 .contactForm-container {
-  max-width: 1000px;
-  margin: 80px auto;
+  max-width: calc(1000px + 15px*2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 85px;
+  padding-right: 15px;
+  padding-bottom: 85px;
+  padding-left: 15px;
+  overflow: hidden;
+  width: 100%; }
+  .contactForm-container::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.contactForm-inner {
   padding: 30px;
   background: #FFFFFF;
   border: 1px solid #dddddd;
