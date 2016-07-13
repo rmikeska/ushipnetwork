@@ -86,7 +86,7 @@ jQuery(document).ready(function ($) {
         messages: {
             subject: 'Please enter a subject',
             email: 'Please enter your email address',
-            question: 'Please tell us your question / problem / concern'
+            question: 'Please tell us your question, problem or concern'
         },
         errorContainer: '.errorAlert',
         errorPlacement: function (error, element) {

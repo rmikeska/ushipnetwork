@@ -3,7 +3,7 @@
   <p class="errorAlert"></p>
   <div class="form-divider"></div>
   <p class="form-subintro">Let us know more about you and your shipping needs.</p>
-  <div class="form-group">
+  <div class="form-row form-row-2column">
     <div class="form-field">
       <label for="firstname">First Name</label>
       <input type="text" name="firstname" placeholder="">
@@ -13,13 +13,13 @@
       <input type="text" name="lastname" placeholder="">
     </div>
   </div>
-  <div class="form-group">
+  <div class="form-row form-row-2column">
     <div class="form-field">
       <label for="company">Company</label>
       <input type="text" name="company" placeholder="">
     </div>
   </div>
-  <div class="form-group">
+  <div class="form-row form-row-2column">
     <div class="form-field">
       <label for="phone">Phone</label>
       <input type="text" name="phone" placeholder="">
@@ -29,7 +29,7 @@
       <input type="email" name="email" placeholder="">
     </div>
   </div>
-  <div class="form-group">
+  <div class="form-row form-row-2column">
     <div class="form-field">
       <label for="iminterestedin">I'm Interested in</label>
       <select name="iminterestedin">

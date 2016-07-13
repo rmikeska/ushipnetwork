@@ -6,14 +6,80 @@ body.page-template-contact {
 }
 
 .contactForm-container {
-  @include container(1000px, 85px, 85px);
+  @include container(1170px, 65px, 65px);
   overflow: hidden;
   width: 100%;
+
+  @media #{$default-break} {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
 }
 
-.contactForm-inner {
+.contactForm-row {
+  display: flex;
+  align-items: flex-start;
+
+  @media #{$default-break} {
+    flex-direction: column;
+  }
+}
+
+.contactForm-box {
   padding: 30px;
   background: $white;
   border: 1px solid $divider-color;
   box-shadow: 0 2px 0 0 #d1d1d1;
+
+  @media #{$default-break} {
+    flex: none;
+    width: 100%;
+  }
+
+  &:first-child {
+    flex: 2;
+    margin-right: 30px;
+
+    @media #{$default-break} {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+
+  &:last-child {
+    flex: 1;
+  }
+}
+
+.contactForm-intro {
+  padding-bottom: 20px;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.contactForm-subintro {
+  padding-bottom: 40px;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.contactForm-box-section:not(:last-child) {
+  padding-bottom: 20px;
+}
+
+.contactForm-box-section-title {
+  display: block;
+  width: 100%;
+  padding-bottom: 12px;
+  font-size: 11px;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  font-weight: $font-bold;
+}
+
+.contactForm-box-section-body {
+  line-height: 32px;
 }

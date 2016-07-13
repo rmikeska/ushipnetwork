@@ -127,32 +127,38 @@ label.error:before {
   font-weight: $font-bold;
 }
 
-.form-group {
+.form-row {
   display: inline-block;
   width: 100%;
-  padding-bottom: 10px;
+}
 
-  @media #{$default-break} {
-    padding-bottom: 0;
+.form-row-2column {
+
+  .form-field {
+    width: 50%;
+
+    @media #{$default-break} {
+      width: 100%;
+    }
+
+    &:first-child {
+      padding-right: 30px;
+
+      @media #{$default-break} {
+        padding-right: 0;
+      }
+    }
   }
 }
 
 .form-field {
-  width: 50%;
+  width: 100%;
   float: left;
   text-align: left;
+  padding-bottom: 10px;
 
   @media #{$default-break} {
-    width: 100%;
     padding-bottom: 20px;
-  }
-
-  &:first-child {
-    padding-right: 30px;
-
-    @media #{$default-break} {
-      padding-right: 0;
-    }
   }
 }
 
@@ -163,6 +169,7 @@ label.error:before {
 
   @media #{$default-break} {
     width: 100%;
+    min-width: 100%;
   }
 }
 

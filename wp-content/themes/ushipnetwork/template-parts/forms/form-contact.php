@@ -1,8 +1,8 @@
 <form id="form-contact" class="dlsForm">
-  <h3 class="form-intro">We'll be in touch</h3>
+  <h3 class="form-intro">We'll get back to you</h3>
   <p class="errorAlert"></p>
   <div class="form-divider"></div>
-  <div class="form-group">
+  <div class="form-row form-row-2column">
     <div class="form-field">
       <label for="subject" id="subject">Subject</label>
       <input type="text" name="subject" id="subject" placeholder="">
@@ -12,12 +12,12 @@
       <input type="email" name="email" id="email" placeholder="">
     </div>
   </div>
-  <div class="form-group">
+  <div class="form-row">
     <div class="form-field">
       <label for="question" id="question">Question / Problem / Concern</label>
       <textarea name="question" id="question" placeholder=""></textarea>
     </div>
   </div>
   <div class="form-divider"></div>
-  <input type="submit" id="submit" name="submit" class="button buttonSecondary buttonExtraLarge" value="Send">
+  <input type="submit" id="submit" name="submit" class="button buttonSecondary buttonLarge" value="Send">
 </form>

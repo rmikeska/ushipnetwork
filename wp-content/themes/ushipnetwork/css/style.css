@@ -2934,27 +2934,29 @@ label.error:before {
   text-align: left;
   font-weight: 700; }
 
-.form-group {
+.form-row {
   display: inline-block;
-  width: 100%;
-  padding-bottom: 10px; }
-  @media only screen and (max-width: 769px) {
-    .form-group {
-      padding-bottom: 0; } }
+  width: 100%; }
 
-.form-field {
-  width: 50%;
-  float: left;
-  text-align: left; }
+.form-row-2column .form-field {
+  width: 50%; }
   @media only screen and (max-width: 769px) {
-    .form-field {
-      width: 100%;
-      padding-bottom: 20px; } }
-  .form-field:first-child {
+    .form-row-2column .form-field {
+      width: 100%; } }
+  .form-row-2column .form-field:first-child {
     padding-right: 30px; }
     @media only screen and (max-width: 769px) {
-      .form-field:first-child {
+      .form-row-2column .form-field:first-child {
         padding-right: 0; } }
+
+.form-field {
+  width: 100%;
+  float: left;
+  text-align: left;
+  padding-bottom: 10px; }
+  @media only screen and (max-width: 769px) {
+    .form-field {
+      padding-bottom: 20px; } }
 
 .dlsForm .button {
   display: block;
@@ -2962,7 +2964,8 @@ label.error:before {
   margin: 0 auto; }
   @media only screen and (max-width: 769px) {
     .dlsForm .button {
-      width: 100%; } }
+      width: 100%;
+      min-width: 100%; } }
 
 .errorAlert {
   display: none;
@@ -3092,13 +3095,13 @@ body.page-template-contact {
   background: #F4F4F4; }
 
 .contactForm-container {
-  max-width: -webkit-calc(1000px + 15px*2);
-  max-width: calc(1000px + 15px*2);
+  max-width: -webkit-calc(1170px + 15px*2);
+  max-width: calc(1170px + 15px*2);
   margin-left: auto;
   margin-right: auto;
-  padding-top: 85px;
+  padding-top: 65px;
   padding-right: 15px;
-  padding-bottom: 85px;
+  padding-bottom: 65px;
   padding-left: 15px;
   overflow: hidden;
   width: 100%; }
@@ -3106,12 +3109,64 @@ body.page-template-contact {
     clear: both;
     content: "";
     display: table; }
+  @media only screen and (max-width: 769px) {
+    .contactForm-container {
+      padding-top: 45px;
+      padding-bottom: 45px; } }
 
-.contactForm-inner {
+.contactForm-row {
+  display: flex;
+  align-items: flex-start; }
+  @media only screen and (max-width: 769px) {
+    .contactForm-row {
+      flex-direction: column; } }
+
+.contactForm-box {
   padding: 30px;
   background: #FFFFFF;
   border: 1px solid #dddddd;
   box-shadow: 0 2px 0 0 #d1d1d1; }
+  @media only screen and (max-width: 769px) {
+    .contactForm-box {
+      flex: none;
+      width: 100%; } }
+  .contactForm-box:first-child {
+    flex: 2;
+    margin-right: 30px; }
+    @media only screen and (max-width: 769px) {
+      .contactForm-box:first-child {
+        margin-right: 0;
+        margin-bottom: 30px; } }
+  .contactForm-box:last-child {
+    flex: 1; }
+
+.contactForm-intro {
+  padding-bottom: 20px;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center; }
+
+.contactForm-subintro {
+  padding-bottom: 40px;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+  line-height: 30px; }
+
+.contactForm-box-section:not(:last-child) {
+  padding-bottom: 20px; }
+
+.contactForm-box-section-title {
+  display: block;
+  width: 100%;
+  padding-bottom: 12px;
+  font-size: 11px;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+.contactForm-box-section-body {
+  line-height: 32px; }
 
 /*** Bios ***/
 .bios-container {
