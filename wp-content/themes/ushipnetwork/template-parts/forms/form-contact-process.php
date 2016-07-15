@@ -1,12 +1,26 @@
 <?php
 
 
-    if($_GET['c'] == 'pets') {
-        $inquiry = "Pets Inquiry: ";
-    } elseif($_GET['c'] == 'freight') {
+    // if($_GET['c'] === 'pets') {
+    //     $inquiry = "Pets Inquiry: ";
+    // } elseif($_GET['c'] === 'freight') {
+    //     $inquiry = "Freight Inquiry: ";
+    // } else {
+    //     $inquiry = "General Inquiry: ";
+    // }
+
+    // if (isset($_GET['c'])) {
+    //     echo $_GET['link'];
+    // } else {
+
+    // }
+
+    if(isset($_GET["c"]) && trim($_GET["c"]) == 'pets') {
+       $inquiry = "Pets Inquiry: ";
+    } elseif(isset($_GET["c"]) && trim($_GET["c"]) == 'freight') {
         $inquiry = "Freight Inquiry: ";
     } else {
-        $inquiry = "General Inquiry: ";
+       $inquiry = "General Inquiry: ";
     }
 
     $to = "rmikeska@uship.com";
