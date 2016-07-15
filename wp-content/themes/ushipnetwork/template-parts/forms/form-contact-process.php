@@ -16,7 +16,7 @@
     $fields = array();
     // $fields{"subject"} = "Subject";
     // $fields{"email"} = "Email";
-    $fields{"question"};
+    $fields{"question"} = "";
 
     $body = "Sent via the contact form on https://learn.uship.com/contact/\n\n"; foreach($fields as $a => $b){   $body .= sprintf("%20s: %s\n",$b,$_REQUEST[$a]); }
 
