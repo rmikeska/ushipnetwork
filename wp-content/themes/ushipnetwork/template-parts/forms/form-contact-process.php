@@ -18,7 +18,7 @@
     // $fields{"email"} = "Email";
     $fields{"question"} = "";
 
-    $body = "Sent via the contact form on https://learn.uship.com/contact/\n\n"; foreach($fields as $a => $b){   $body .= sprintf("\n",$b,$_REQUEST[$a]); }
+    $body = "Sent via the contact form on https://learn.uship.com/contact/\n\n"; foreach($fields as $a => $b){   $body .= sprintf("%s\n",$b,$_REQUEST[$a]); }
 
     $send = mail($to, $subject, $body, $headers);
 
