@@ -85,7 +85,7 @@ jQuery(document).ready(function ($) {
     }
 
     $(function () {
-        var value = getParameterByName('c');
+        var value = getParameterByName('i');
         if (value !== '')
             $('#inquiry-type').val(value);
     });
