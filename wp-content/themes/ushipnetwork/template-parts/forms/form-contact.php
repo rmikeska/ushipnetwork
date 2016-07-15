@@ -1,4 +1,5 @@
 <form id="form-contact" class="dlsForm">
+  <input type="hidden" name="inquiry-type" id="inquiry-type" value="">
   <h3 class="form-intro">We'll get back to you</h3>
   <p class="errorAlert"></p>
   <div class="form-divider"></div>

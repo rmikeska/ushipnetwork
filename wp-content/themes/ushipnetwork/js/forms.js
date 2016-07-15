@@ -76,6 +76,20 @@ jQuery(document).ready(function ($) {
 
 
     // Contact Form - Validation
+
+    function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+
+    $(function () {
+        var value = getParameterByName('c');
+        if (value !== '')
+            $('#inquiry-type').val(value);
+    });
+
     $('#form-contact').validate({
         onkeyup: false,
         rules: {

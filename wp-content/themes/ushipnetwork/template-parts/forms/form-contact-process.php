@@ -1,8 +1,8 @@
 <?php
 
-    if($_REQUEST['c'] == 'pets') {
+    if ($_REQUEST['inquiry-type'] == "pets") {
         $inquiry = "Pets Inquiry: ";
-    } elseif($_REQUEST['c'] == 'freight') {
+    } elseif ($_REQUEST['inquiry-type'] == "freight") {
         $inquiry = "Freight Inquiry: ";
     } else {
         $inquiry = "General Inquiry: ";
