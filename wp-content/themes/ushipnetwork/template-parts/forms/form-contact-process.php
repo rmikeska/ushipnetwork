@@ -1,9 +1,18 @@
 <?php
 
+
+    if($_GET['c'] == 'pets') {
+        $inquiry = "Pets Inquiry: ";
+    } elseif($_GET['c'] == 'freight') {
+        $inquiry = "Freight Inquiry: ";
+    } else {
+        $inquiry = "General Inquiry: ";
+    }
+
     $to = "rmikeska@uship.com";
     $from = $_REQUEST['email'];
     $headers = "From: $from";
-    $subject = $_REQUEST['subject'];
+    $subject = $inquiry . $_REQUEST['subject'];
 
     $fields = array();
     $fields{"subject"} = "Subject";
