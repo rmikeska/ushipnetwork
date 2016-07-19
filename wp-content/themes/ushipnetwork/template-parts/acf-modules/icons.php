@@ -70,4 +70,6 @@
     <?php include( get_template_directory() . '/images/icons/icon_Truck2.svg'); ?>
 <?php elseif (get_sub_field('icon_bullet_points_row_icon') == "icon_truckload"): ?>
     <?php include( get_template_directory() . '/images/icons/icon_TruckLoad.svg'); ?>
+<?php elseif (get_sub_field('icon_bullet_points_row_icon') == "icon_network"): ?>
+    <?php include( get_template_directory() . '/images/icons/icon_Network.svg'); ?>
 <?php endif; ?>
