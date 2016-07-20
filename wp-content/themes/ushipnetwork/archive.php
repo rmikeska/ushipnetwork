@@ -35,6 +35,8 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
+			<?php the_posts_pagination(); ?>
+
 		<?php else : ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>

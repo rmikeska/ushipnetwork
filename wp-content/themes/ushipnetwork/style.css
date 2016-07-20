@@ -2560,9 +2560,24 @@ article.category-press-release {
 
 .archive-content .page-header {
   padding-top: 35px; }
-
 .archive-content .page-title {
   text-align: center; }
+.archive-content .pagination {
+  max-width: calc(790px + 15px*2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 35px;
+  padding-right: 15px;
+  padding-bottom: 35px;
+  padding-left: 15px;
+  width: 100%;
+  text-align: center; }
+  .archive-content .pagination::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .archive-content .pagination .screen-reader-text {
+    display: none; }
 
 .tabbedPageMenu {
   max-width: calc(100% + 15px*2);

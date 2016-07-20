@@ -1,7 +1,21 @@
-.archive-content .page-header {
-  padding-top: 35px;
+.archive-content {
+
+  .page-header {
+    padding-top: 35px;
+  }
+
+  .page-title {
+    text-align: center;
+  }
+
+  .pagination {
+    @include container(790px, 35px, 35px);
+    width: 100%;
+    text-align: center;
+
+    .screen-reader-text {
+      display: none;
+    }
+  }
 }
 
-.archive-content .page-title {
-  text-align: center;
-}
