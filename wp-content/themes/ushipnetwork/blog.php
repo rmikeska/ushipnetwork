@@ -11,6 +11,9 @@ get_header(); ?>
 
   <?php
 
+
+
+    // Category Menu
     echo '<div class="categoryMenu">'.'<ul class="categoryMenu-list">';
 
     echo '<li class="categoryMenu-active"><a class="catall">All Posts</a></li>';
@@ -28,6 +31,9 @@ get_header(); ?>
 
     echo '</ul>'.'</div>';
 
+
+
+    // Category Posts Group
     echo '<div class="postsGroup">';
 
     echo '<div class="postsGroup-container catall">';

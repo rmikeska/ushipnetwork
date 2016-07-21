@@ -29,7 +29,7 @@ body.page-template-contact {
   padding: 30px;
   background: $white;
   border: 1px solid $divider-color;
-  box-shadow: 0 2px 0 0 #d1d1d1;
+  box-shadow: $card-box-shadow;
 
   @media #{$default-break} {
     flex: none;

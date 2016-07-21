@@ -211,7 +211,7 @@ label.error:before {
   margin: 0 auto;
   background: $white;
   border: 1px solid $divider-color;
-  box-shadow: 0 2px 0 0 #d1d1d1;
+  box-shadow: $card-box-shadow;
 }
 
 .formSuccess-inner {
@@ -309,4 +309,34 @@ label.error:before {
 
 .footer-countryChanger option {
   font-weight: $font-bold;
+}
+
+// Sort By Dropdown Filter
+
+select.sortBy {
+  border-radius: initial;
+  color: $base-text-color;
+  font-weight: $font-bold;
+  box-shadow: $card-box-shadow;
+  letter-spacing: 0.025em;
+  background-color: $white;
+
+  option {
+    background-color: $white;
+  }
+
+  &:focus {
+    border: 1px solid $border-gray !important;
+    background-color: $white;
+  }
+
+  &:focus:hover {
+    background-color: $light-grey;
+  }
+
+  &:hover {
+    border: 1px solid $gray;
+    box-shadow: 0 2px 0 0 $bright-blue;
+    background-color: $white;
+  }
 }

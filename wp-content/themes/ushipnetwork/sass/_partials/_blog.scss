@@ -1,11 +1,21 @@
 /*** Blog Landing ***/
 
 .categoryMenu {
-  @include container(1020px, 50px, 9px);
+  @include container(1020px, 50px, 0);
   width: 100%;
 
-  @media only screen and (max-width: 1080px) {
+  select {
     display: none;
+
+    @media only screen and (max-width: 900px) {
+      display: block;
+    }
+  }
+
+  ul {
+    @media only screen and (max-width: 900px) {
+      display: none;
+    }
   }
 }
 
@@ -13,10 +23,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-flow: row wrap;
 }
 
 .categoryMenu-list li {
-  margin: 0 35px;
+  margin: 0 35px 20px;
   text-align: center;
 }
 
@@ -46,7 +57,7 @@
 }
 
 .postsGroup {
-  @include container(1080px, 75px, 64px);
+  @include container(1080px, 55px, 64px);
   width: 100%;
   overflow: hidden;
 

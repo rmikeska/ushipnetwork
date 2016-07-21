@@ -7,13 +7,29 @@ jQuery(document).ready(function ($) {
 
 
 
-    // Blog home effects
+    // Blog Show/Hide Post Thumbnails
     $('.postThumb').hide().each(function (i) {
         $(this).delay((i++) * 100).fadeTo(300, 1);
     });
 
     $('div.postsGroup .postsGroup-container:not(:first-child)').hide();
 
+    // Create Mobile Dropdown Filter
+    $('<select class="sortBy" />').appendTo('.categoryMenu');
+
+    // Convert List Items to Options
+    $('.categoryMenu li a').each(function () {
+        var el = $(this);
+        $('<option />', {
+            'value'   : el.attr('class'),
+            'text'    : el.text()
+        }).appendTo('.categoryMenu select');
+    });
+
+    // Set first option to :selected
+    $('.categoryMenu select option:first').attr('selected', 'selected');
+
+    // Blog Category Menu - Desktop
     $('.categoryMenu-list li a').click(function () {
 
         var elementClassName = $(this).attr('class');
@@ -25,12 +41,37 @@ jQuery(document).ready(function ($) {
         });
 
         $(this).parent().addClass('categoryMenu-active').siblings().removeClass('categoryMenu-active');
+
+        $('.categoryMenu select option').each(function () {
+            if ($(this).val() == elementClassName) {
+                $(this).attr('selected','selected');
+                $(this).siblings().removeAttr('selected');
+            }
+        });
+    });
+
+    // Blog Category Menu - Mobile
+    $('.categoryMenu select').change(function () {
+
+        var elementClassName = $(this).attr('value');
+
+        $('div.' + elementClassName).show().siblings('div.postsGroup-container').hide();
+
+        $('div.' + elementClassName).children('.postThumb').hide().each(function (i) {
+            $(this).delay((i++) * 100).fadeTo(300, 1);
+        });
+
+        $('.categoryMenu-list li a').each(function () {
+            if ($(this).hasClass(elementClassName)) {
+                $(this).parent().addClass('categoryMenu-active').siblings().removeClass('categoryMenu-active');
+            }
+        });
     });
 
 
 
     // Video Modal
-    $('a[href="#video-modal"]').click(function(event) {
+    $('a[href="#video-modal"]').click(function (event) {
         event.preventDefault();
         $(this).modal({
             fadeDuration: 100
