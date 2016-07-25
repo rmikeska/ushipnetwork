@@ -2868,7 +2868,12 @@ select,
 textarea {
   border: 1px solid #dddddd;
   border-radius: 4px;
-  min-width: 100px; }
+  min-width: 100px;
+  transition: border-color 0.15s ease-in-out; }
+  input:hover,
+  select:hover,
+  textarea:hover {
+    border-color: #999999; }
 
 input,
 select {
