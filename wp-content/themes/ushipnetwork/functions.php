@@ -140,6 +140,8 @@ function ushipnetwork_scripts() {
 
 	wp_enqueue_script( 'ushipnetwork-jquery-validate', get_template_directory_uri() . '/js/lib/jquery.validate.min.js', array(), '20160426', true );
 
+	wp_enqueue_script( 'ushipnetwork-youtube-embed', get_template_directory_uri() . '/js/youtube-embed.js', array(), '20160728', true );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

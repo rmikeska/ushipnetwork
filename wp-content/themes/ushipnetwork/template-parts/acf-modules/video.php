@@ -6,7 +6,11 @@
       <div class="videoFeature-video-inner">
         <?php $video_poster = get_sub_field('video_poster'); ?>
         <?php $video_id = get_sub_field('youtube_id'); ?>
-        <iframe id="player" src="//www.youtube.com/embed/<?php echo $video_id; ?>?showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+        <div class="player" id="<?php echo $video_id; ?>"></div>
+        <div class="videoFeature-video-poster">
+            <img class="videoFeature-video-poster-image" src="<?php echo $video_poster['url']; ?>"/>
+        </div>
+        <a class="videoFeature-video-playButton" id="<?php echo $video_id; ?>"><?php include( get_template_directory() . '/images/play_button.svg'); ?></a>
       </div>
     </div>
 

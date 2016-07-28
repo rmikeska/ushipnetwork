@@ -4920,7 +4920,7 @@ body.page-template-contact {
   padding-bottom: 56.2244898%;
   height: 0; }
 
-iframe#player {
+.player {
   position: absolute;
   top: 0;
   right: 0;
