@@ -81,7 +81,14 @@
 
 .slantedMap.mapBackgroundLeft .slantedMap-image {
   order: 1;
-  margin-right: 30px;
+}
+
+.slantedMap.mapBackgroundLeft .slantedMap-image-image {
+  padding-right: 30px;
+
+  @media #{$default-break} {
+    padding-right: 0;
+  }
 }
 
 .slantedMap.mapBackgroundLeft .slantedMap-copy {
@@ -90,7 +97,14 @@
 
 .slantedMap.mapBackgroundRight .slantedMap-image {
   order: 2;
-  margin-left: 30px;
+}
+
+.slantedMap.mapBackgroundRight .slantedMap-image-image {
+  padding-left: 30px;
+
+  @media #{$default-break} {
+    padding-left: 0;
+  }
 }
 
 .slantedMap.mapBackgroundRight .slantedMap-copy {
