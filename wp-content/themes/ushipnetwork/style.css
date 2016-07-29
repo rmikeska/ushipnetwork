@@ -3909,22 +3909,22 @@ body.page-template-contact {
       -ms-flex-order: 1;
           order: 1; }
 
-.slantedMap.mapBackgroundLeft .slantedMap-copy {
+.slantedMap.mapBackgroundLeft .slantedMap-image {
   -webkit-order: 2;
       -ms-flex-order: 2;
           order: 2;
-  margin-left: 30px; }
+  margin-right: 30px; }
 
 .slantedMap.mapBackgroundRight .slantedMap-image {
   -webkit-order: 2;
       -ms-flex-order: 2;
           order: 2; }
 
-.slantedMap.mapBackgroundRight .slantedMap-copy {
+.slantedMap.mapBackgroundRight .slantedMap-image {
   -webkit-order: 1;
       -ms-flex-order: 1;
           order: 1;
-  margin-right: 30px; }
+  margin-left: 30px; }
 
 .slantedMap.alignmentBottom .slantedMap-container {
   padding-top: 0;

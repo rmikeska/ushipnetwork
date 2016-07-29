@@ -83,18 +83,18 @@
   order: 1;
 }
 
-.slantedMap.mapBackgroundLeft .slantedMap-copy {
+.slantedMap.mapBackgroundLeft .slantedMap-image {
   order: 2;
-  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .slantedMap.mapBackgroundRight .slantedMap-image {
   order: 2;
 }
 
-.slantedMap.mapBackgroundRight .slantedMap-copy {
+.slantedMap.mapBackgroundRight .slantedMap-image {
   order: 1;
-  margin-right: 30px;
+  margin-left: 30px;
 }
 
 .slantedMap.alignmentBottom .slantedMap-container {
