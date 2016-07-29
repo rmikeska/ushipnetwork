@@ -81,20 +81,20 @@
 
 .slantedMap.mapBackgroundLeft .slantedMap-image {
   order: 1;
-}
-
-.slantedMap.mapBackgroundLeft .slantedMap-image {
-  order: 2;
   margin-right: 30px;
 }
 
-.slantedMap.mapBackgroundRight .slantedMap-image {
+.slantedMap.mapBackgroundLeft .slantedMap-copy {
   order: 2;
 }
 
 .slantedMap.mapBackgroundRight .slantedMap-image {
-  order: 1;
+  order: 2;
   margin-left: 30px;
+}
+
+.slantedMap.mapBackgroundRight .slantedMap-copy {
+  order: 1;
 }
 
 .slantedMap.alignmentBottom .slantedMap-container {
