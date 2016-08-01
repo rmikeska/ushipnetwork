@@ -5,20 +5,24 @@ jQuery(document).ready(function ($) {
     (function ($) {
         var cssClasses = {
             isHidden: 'is-hidden',
-            overlay: 'containerOverlay'
+            overlay: 'containerOverlay',
+            isOpen: 'is-open'
         };
 
+        var animationDuration = 510;
+
+        var body = $(document.body);
         var menuLink = $('.js-mobileNav-menu');
         var closeLink = $('.js-siteNav-content-closeLink');
         var navContent = $('.js-siteNav-content');
-        var contentContainer = $('.js-container');
+        var contentContainer = $('main');
         var logoBox = $('.js-siteNav-logoBox');
         var moreLink = $('.js-siteNav-moreLink');
-        var moreContainer = $('.js-siteNav-moreLink-container');
         var backLink = $('.js-siteNav-backLink');
-        var backContainer = $('.js-siteNav-backLink-container');
-
+        var banners = $('#banners');
+        var footerLinks = $('.siteNav-content-footerLinks');
         var clickEvent = isMobileBrowser() ? 'touchstart' : 'click';
+        var moreLinksContainer = $('.js-siteNav-moreLink-container');
 
         menuLink.on(clickEvent, function (event) {
             event.stopPropagation();
@@ -36,8 +40,17 @@ jQuery(document).ready(function ($) {
         backLink.on('click', toggleMoreBackDisplay);
 
         function toggleMoreBackDisplay() {
-            moreContainer.toggleClass(cssClasses.isHidden);
-            backContainer.toggleClass(cssClasses.isHidden);
+            if (footerLinks.hasClass(cssClasses.isOpen)) {
+                moreLinksContainer.addClass(cssClasses.isOpen);
+                footerLinks.removeClass(cssClasses.isOpen);
+                setTimeout(scrollDrawersToTop, animationDuration); // wait for drawer to close fully before defaulting the view back to More
+            } else {
+                    scrollDrawersToTop();
+                    setTimeout(function () {
+                        moreLinksContainer.removeClass(cssClasses.isOpen);
+                    }, 400);
+                    footerLinks.addClass(cssClasses.isOpen);
+                }
         }
 
         contentContainer.on('click', interceptClicks);
@@ -63,10 +76,17 @@ jQuery(document).ready(function ($) {
             return MOBILE_UA_STRINGS.test(ua) || MOBILE_UA_PATTERNS.test(ua.substr(0, 4));
         }
 
+        function scrollDrawersToTop() {
+            $('.js-siteNav-content').scrollTop(0);
+        }
+
         function openMobileDrawer() {
+            scrollDrawersToTop();
             navContent.removeClass(cssClasses.isHidden);
             closeLink.removeClass(cssClasses.isHidden);
             contentContainer.addClass(cssClasses.overlay);
+            banners.addClass(cssClasses.overlay);
+            body.addClass(cssClasses.isOpen);
             logoBox.addClass(cssClasses.isHidden);
         }
 
@@ -74,30 +94,53 @@ jQuery(document).ready(function ($) {
             navContent.addClass(cssClasses.isHidden);
             closeLink.addClass(cssClasses.isHidden);
             contentContainer.removeClass(cssClasses.overlay);
+            banners.removeClass(cssClasses.overlay);
             logoBox.removeClass(cssClasses.isHidden);
+            body.removeClass(cssClasses.isOpen);
             setTimeout(function () {
-                moreContainer.removeClass(cssClasses.isHidden);
-                backContainer.addClass(cssClasses.isHidden);
-            }, 510); // wait for drawer to close fully before defaulting the view back to More
+                footerLinks.removeClass(cssClasses.isOpen);
+                moreLinksContainer.addClass(cssClasses.isOpen);
+                scrollDrawersToTop();
+            }, animationDuration); // wait for drawer to close fully before defaulting the view back to More
         }
 
-        // [].slice.call(document.querySelectorAll('.siteNav-content-mainLinks-link')).filter(function (link) {
-        //     return link.pathname === window.location.pathname;
-        // }).forEach(function (link) {
-        //     return link.querySelector('.siteNav-content-mainLinks-link-text').classList.add('is-active');
-        // });
+        [].slice.call(document.querySelectorAll('.siteNav-content-mainLinks-link')).filter(function (link) {
+            return link.pathname === window.location.pathname;
+        }).forEach(function (link) {
+            return link.querySelector('.siteNav-content-mainLinks-link-text').classList.add('is-active');
+        });
 
         var modeToggle = $('.js-siteNav-modeToggle');
         var toggle = $('.js-siteNav-modeToggle-toggle');
 
         modeToggle.click(function () {
-            modeToggle.toggleClass('is-active');
             toggle.prop('checked', !toggle.prop('checked'));
+            toggleMode();
         });
 
-        toggle.click(function () {
+        toggle.click(toggleMode);
+
+        function toggleMode() {
             modeToggle.toggleClass('is-active');
-        });
+
+            var name = 'mode';
+            var carrier = 'Carrier';
+            var shipper = 'Shipper';
+
+            var value = carrier;
+            if (!toggle.prop('checked')) {
+                value = shipper;
+            }
+
+            var daysUntilExpiration = 365;
+            var toMilliseconds = 24 * 60 * 60 * 1000;
+            var expires = new Date(new Date().getTime() + daysUntilExpiration * toMilliseconds);
+            var cookie = name + '=' + value + ';expires=' + expires + ';path=/';
+            document.cookie = cookie;
+
+            var redirect = value === carrier ? '/drivers.aspx' : '/myshipments';
+            window.location.href = redirect;
+        }
     })(jQuery);
 
 })

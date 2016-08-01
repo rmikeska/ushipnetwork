@@ -5,7 +5,6 @@
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  flex: none;
   background-color: #fff;
   bottom: 0;
   width: 100%; }
@@ -38,14 +37,19 @@
 
 .footer-companyInfo-link {
   padding: 13px 30px;
-  color: #02AAF3;
+  color: #262626;
   font-size: 14px;
   line-height: 1;
   text-transform: uppercase;
+  letter-spacing: 0.025em;
   text-decoration: none; }
 
+.footer-companyInfo-link,
+.footer-terms-link {
+  transition: color 0.15s ease-in-out; }
+
 .footer-companyInfo-link:hover {
-  color: #2d8cba; }
+  color: #02AAF3; }
 
 .footer-countryChanger {
   display: -webkit-flex;
@@ -63,9 +67,16 @@
   width: 220px;
   height: 50px;
   margin: 0;
-  padding-left: 27px;
+  padding-left: 20px;
+  background-position: right 12px center;
+  background-color: #fff;
   font-weight: $font-bold;
-  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.12); }
+  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.12);
+  -moz-appearance: treeview; }
+
+.footer-countryChanger select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000; }
 
 .footer-socialMediaIcons {
   display: -webkit-flex;
@@ -83,8 +94,8 @@
 .footer-socialMediaIcons-icon {
   height: 24px;
   width: 24px;
-  margin-right: 8px;
-  margin-left: 8px;
+  margin-right: 10px;
+  margin-left: 10px;
   fill: #999999; }
 
 .footer-socialMediaIcons-icon {
@@ -93,7 +104,6 @@
   display: flex; }
 
 .footer-copyrightTerms {
-  line-height: 1;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -161,12 +171,6 @@
           order: 11;
   padding-bottom: 30px; }
 
-  @media (max-width: 749px) {
-  .footer-mobileAppBadges-badge:last-child {
-      padding-bottom: 44px;
-  }
-}
-
 .footer-companyInfo-link:hover,
 .footer-terms-link:hover {
   text-decoration: none; }
@@ -177,17 +181,22 @@
           flex-direction: row; }
 
 .footer-mobileAppBadges-badge {
+  width: 135px;
+  height: 40px;
   margin: 5px;
-  fill: #999; }
+  fill: #999;
+  display: inline-block; }
+
+.mobileAppBadge-image {
+  display: block; }
 
 .footer-buttonContainer-button {
-  border-radius: 5px;
+  border-radius: 3px;
   font-weight: $font-bold;
   color: #00B437;
-  border: solid #00B437 1px;
+  border: 2px solid #00B437;
   font-size: 14px;
   height: 36px;
-  width: 148px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -198,7 +207,10 @@
       -ms-flex-pack: center;
           justify-content: center;
   line-height: 1;
-  transition: 0.15s background-color; }
+  transition: 0.15s background-color;
+  min-width: 148px;
+  max-width: 250px;
+  padding: 0 18px; }
 
 .footer-buttonContainer-button:hover {
   background-color: #00B437;
@@ -227,10 +239,12 @@ a.footer-buttonContainer-button:hover,
   padding-bottom: 0; }
 
 /* End MVC layout overrides */
-@media (min-width: 750px) {
+@media (min-width: 768px) {
   /* MVC layout overrides */
-  .container {
+  .dls-header:not(.is-fixed) + .minHeightFlexContainer .container {
     min-height: calc(100vh - 80px); }
+  .dls-header.is-fixed + .minHeightFlexContainer .container {
+    min-height: 100vh; }
   /* End MVC layout overrides */
   .footerNew {
     border-top: 1px #ddd solid; }
@@ -260,6 +274,10 @@ a.footer-buttonContainer-button:hover,
         -ms-flex-align: center;
             align-items: center;
     padding: 0 15px; }
+  .footer-companyInfo-link {
+    color: #02AAF3; }
+  .footer-companyInfo-link:hover {
+    color: #2d8cba; }
   .footer-buttonContainer {
     -webkit-align-content: center;
         -ms-flex-line-pack: center;
@@ -279,6 +297,8 @@ a.footer-buttonContainer-button:hover,
             order: 3;
     margin: 0;
     padding-left: 27px; }
+  .footer-buttonContainer-button {
+    padding: 0 15px; }
   .footer-socialMediaIcons {
     -webkit-align-items: center;
         -ms-flex-align: center;
@@ -307,7 +327,7 @@ a.footer-buttonContainer-button:hover,
   .simpleFooterDisplay .footer-mobileAppBadges {
     padding-bottom: 0; } }
 
-@media (min-width: 750px) and (max-width: 990px) {
+@media (min-width: 768px) and (max-width: 990px) {
   .topRow {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -451,7 +471,11 @@ a.footer-buttonContainer-button:hover,
   .footer-mobileAppBadges {
     padding-bottom: 0; } }
 
-@media (max-width: 749px) {
+@media (max-width: 767px) {
+  .footerDisplay {
+    display: none; }
+  .simpleFooterDisplay {
+    border-top: 1px solid #DDDDDD; }
   .simpleFooterDisplay .footer-terms-link {
     padding: 5px 30px; }
   .simpleFooterDisplay .footer-terms-link:first-child {
