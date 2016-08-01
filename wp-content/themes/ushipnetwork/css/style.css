@@ -4204,8 +4204,7 @@ body.page-template-contact {
 
 .splitScreen-row:last-child {
   flex: 1 0 auto;
-  display: flex;
-  height: 100%; }
+  display: flex; }
 
 .splitScreen-panel {
   position: relative;

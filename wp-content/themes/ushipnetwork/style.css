@@ -4375,8 +4375,7 @@ body.page-template-contact {
           flex: 1 0 auto;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
-  height: 100%; }
+  display: flex; }
 
 .splitScreen-panel {
   position: relative;
