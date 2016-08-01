@@ -93,7 +93,7 @@ hr {
   font-size: 1rem;
   text-align: center;
   letter-spacing: 0.025rem;
-  transition: all 0.15s ease-in-out;
+  transition: $default-transition;
   display: inline-block;
 }
 
@@ -155,7 +155,7 @@ hr {
   color: $base-text-color;
   font-weight: $font-bold;
   font-size: 18px;
-  transition: all 0.15s ease-in-out;
+  transition: $default-transition;
 }
 
 .tertiaryLink.tertiaryLinkLight {
@@ -196,7 +196,7 @@ hr {
 }
 
 .tertiaryLink svg path {
-  transition: all 0.15s ease-in;
+  transition: $default-transition;
 }
 
 .tertiaryLink:hover svg path,

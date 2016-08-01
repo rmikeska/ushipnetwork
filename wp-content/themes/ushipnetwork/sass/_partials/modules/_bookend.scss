@@ -35,12 +35,12 @@
 
 .bookend-link:hover .bookend-link-text {
   color: $bright-blue;
-  transition: all 0.1s ease-in-out;
+  transition: $default-transition;
 }
 
 .bookend-link:hover .circledArrow {
   fill: $bright-blue;
-  transition: all 0.1s ease-in-out;
+  transition: $default-transition;
 }
 
 .bookend-linkPrevious {

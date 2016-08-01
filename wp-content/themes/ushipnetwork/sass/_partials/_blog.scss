@@ -135,7 +135,7 @@
 
 .post-title:hover {
   color: $bright-blue;
-  transition: all 0.1s ease-in-out;
+  transition: $default-transition;
 }
 
 .ajax-load-more-wrap {

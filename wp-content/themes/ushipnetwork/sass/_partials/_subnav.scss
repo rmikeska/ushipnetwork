@@ -12,31 +12,37 @@
   @media #{$default-break} {
     display: none;
   }
-
-  li {
-    display: table;
-    min-width: 138px;
-    height: 100%;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  a {
-    display: table-cell;
-    vertical-align: middle;
-    height: 100%;
-    width: 100%;
-    padding-top: 8px;
-    line-height: 1;
-    color: $base-text-color;
-    font-size: 14px;
-  }
 }
 
-#secondary-menu {
+ul#secondary-menu {
   display: flex;
   height: 100%;
   position: relative;
+
+  li {
+    display: table;
+    height: 100%;
+    text-align: center;
+
+    a {
+      display: table-cell;
+      vertical-align: middle;
+      padding: 8px 44px 0;
+      height: 100%;
+      width: 100%;
+      padding-top: 8px;
+      line-height: 1;
+      color: $base-text-color;
+      font-size: 12px;
+      letter-spacing: 0.025rem;
+      text-transform: uppercase;
+      transition: $default-transition;
+
+      &:hover {
+        color: $bright-blue;
+      }
+    }
+  }
 }
 
 .secondary-menu .external-menu-link {
@@ -45,8 +51,6 @@
   bottom: 0;
   right: 0;
   margin: auto;
-  min-width: initial;
-  padding-right: 35px;
 
   a {
     display: inline-block;
@@ -63,6 +67,7 @@
       margin-left: 20px;
       margin-top: 0;
       margin-bottom: 2px;
+      transition: $default-transition;
     }
 
     &:hover:after {
@@ -80,7 +85,7 @@
   display: block;
   margin: 4px auto 0;
   content: '';
-  width: 70px;
+  width: 100%;
   height: 2px;
   background: transparent;
 }
@@ -91,8 +96,4 @@
 
 .secondary-menu li:first-of-type a:after {
   background: transparent;
-}
-
-.secondary-menu a:hover {
-  color: $bright-blue;
 }

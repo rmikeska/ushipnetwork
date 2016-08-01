@@ -22,7 +22,7 @@ textarea {
   border: 1px solid $divider-color;
   border-radius: 4px;
   min-width: 100px;
-  transition: border-color 0.15s ease-in-out;
+  transition: $default-transition;
 
   &:hover {
     border-color: $gray;
@@ -52,7 +52,7 @@ select {
   background-position: 100% center;
   background-repeat: no-repeat;
   background-size: 44px 10px;
-  transition: all 0.15s ease-in-out;
+  transition: $default-transition;
 }
 
 select:hover,
