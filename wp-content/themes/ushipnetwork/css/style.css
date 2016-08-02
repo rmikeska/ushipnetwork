@@ -465,21 +465,6 @@ th {
 /*** Font Weight ***/
 /*** Helpers ***/
 /*** New Color Names ***/
-/*** Typography ***/
-body {
-  color: #262626;
-  font-size: 16px;
-  line-height: 1.5;
-  font-family: 'LatoWeb', sans-serif;
-  letter-spacing: 0.01em; }
-
-h1,
-h2,
-h3 {
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.1em; }
-
 html,
 body {
   height: 100%;
@@ -2209,17 +2194,30 @@ html, body {
 
 body {
   min-width: 300px;
-  width: 100%; }
+  width: 100%;
+  color: #262626;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'LatoWeb', sans-serif;
+  letter-spacing: 0.01em; }
 
 a {
   color: #02AAF3;
   text-decoration: none; }
 
 a:hover {
-  color: #0288C2; }
+  color: #0288C2;
+  cursor: pointer; }
 
 b, strong {
   font-weight: 700; }
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em; }
 
 hr {
   border: none;
