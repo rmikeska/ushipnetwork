@@ -551,9 +551,6 @@ header.dls {
 
 /* Mobile Only */
 @media (max-width: 767px) {
-  header.dls {
-    height: 65px; }
-
   .dls-header {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1191,9 +1188,6 @@ header.dls {
     line-height: 1; } }
 /* Tablet and Desktop */
 @media (min-width: 768px) {
-  header.dls {
-    height: 80px; }
-
   .dls-header {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2246,12 +2240,6 @@ hr {
   @media only screen and (max-width: 769px) {
     .pageContent {
       padding-top: 64px; } }
-
-.page-content {
-  flex: 1 0 auto;
-  width: 100%;
-  display: flex;
-  flex-direction: column; }
 
 .pageContent.subNavPush {
   padding-top: 140px; }

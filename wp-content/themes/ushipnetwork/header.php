@@ -151,5 +151,4 @@
 	    <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_id' => 'secondary-menu', 'container_class' => 'secondary-menu', 'fallback_cb' => 'false' ) ); ?>
 	</header>
 
-	<main class="pageContent page-wrapper container js-pageContainer js-container">
-		<div id="content" class="page-content content content-newHeader content-newFooter">
+	<main role="main" class="pageContent">

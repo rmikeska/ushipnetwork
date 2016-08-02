@@ -84,8 +84,8 @@ header.dls {
 
 /* Mobile Only */
 @media (max-width: 767px) {
-  header.dls {
-    height: 65px; }
+  // header.dls {
+  //   height: 65px; }
   .dls-header {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -650,8 +650,8 @@ header.dls {
 
 /* Tablet and Desktop */
 @media (min-width: 768px) {
-  header.dls {
-    height: 80px; }
+  // header.dls {
+  //   height: 80px; }
   .dls-header {
     display: -webkit-flex;
     display: -ms-flexbox;

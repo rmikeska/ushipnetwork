@@ -10,7 +10,6 @@
  */
 
 ?>
-    </div>
   </main>
 
   <footer role="contentinfo">
