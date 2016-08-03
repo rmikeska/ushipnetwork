@@ -159,6 +159,7 @@ hr {
 
 .tertiaryLink {
   display: inline-flex;
+  align-items: center;
   padding-bottom: 5px;
   text-align: left;
   color: $base-text-color;
@@ -200,7 +201,6 @@ hr {
 
 .tertiaryLink svg {
   display: block;
-  align-self: center;
   margin-left: 15px;
   min-width: 19px;
   min-height: 12px;
