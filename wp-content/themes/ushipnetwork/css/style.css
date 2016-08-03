@@ -2315,9 +2315,11 @@ hr {
   color: #FFFFFF; }
 
 .tertiaryLink {
-  display: inline-block;
+  display: flex;
+  padding-bottom: 5px;
   color: #262626;
   font-weight: 700;
+  border-bottom: 4px solid #00B437;
   font-size: 18px;
   transition: all 0.15s ease-in-out; }
 
@@ -2337,19 +2339,12 @@ hr {
 .tertiaryLink:active {
   color: #00902C; }
 
-.tertiaryLink:after {
-  background: #00B437;
-  display: block;
-  margin: 5px auto 0 auto;
-  content: '';
-  width: 100%;
-  height: 4px; }
-
 .tertiaryLink svg {
-  display: inline-block;
+  display: block;
+  align-self: center;
   margin-left: 15px;
-  width: 19px;
-  height: 12px; }
+  min-width: 19px;
+  min-height: 12px; }
 
 .tertiaryLink svg path {
   transition: all 0.15s ease-in-out; }

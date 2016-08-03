@@ -158,9 +158,11 @@ hr {
 }
 
 .tertiaryLink {
-  display: inline-block;
+  display: flex;
+  padding-bottom: 5px;
   color: $base-text-color;
   font-weight: $font-bold;
+  border-bottom: 4px solid $primary-green;
   font-size: 18px;
   transition: $default-transition;
 }
@@ -186,20 +188,21 @@ hr {
   color: $button-hover-focus;
 }
 
-.tertiaryLink:after {
-  background: $primary-green;
-  display: block;
-  margin: 5px auto 0 auto;
-  content: '';
-  width: 100%;
-  height: 4px;
-}
+// .tertiaryLink:after {
+//   background: $primary-green;
+//   display: block;
+//   margin: 5px auto 0 auto;
+//   content: '';
+//   width: 100%;
+//   height: 4px;
+// }
 
 .tertiaryLink svg {
-  display: inline-block;
+  display: block;
+  align-self: center;
   margin-left: 15px;
-  width: 19px;
-  height: 12px;
+  min-width: 19px;
+  min-height: 12px;
 }
 
 .tertiaryLink svg path {
