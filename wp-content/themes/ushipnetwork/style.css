@@ -2337,9 +2337,9 @@ hr {
   color: #FFFFFF; }
 
 .tertiaryLink {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   padding-bottom: 5px;
   text-align: left;
   color: #262626;
@@ -5122,12 +5122,17 @@ body.page-template-contact {
           -ms-flex-direction: column;
               flex-direction: column; } }
 
-.linkRow-block:not(:last-child) {
-  margin-right: 70px; }
-  @media only screen and (max-width: 769px) {
-    .linkRow-block:not(:last-child) {
-      margin-right: 0;
-      padding-bottom: 60px; } }
+.linkRow-block {
+  text-align: center;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+  .linkRow-block:not(:last-child) {
+    margin-right: 70px; }
+    @media only screen and (max-width: 769px) {
+      .linkRow-block:not(:last-child) {
+        margin-right: 0;
+        padding-bottom: 60px; } }
 
 .linkRow-title {
   padding-bottom: 30px;

@@ -2315,7 +2315,7 @@ hr {
   color: #FFFFFF; }
 
 .tertiaryLink {
-  display: flex;
+  display: inline-flex;
   padding-bottom: 5px;
   text-align: left;
   color: #262626;
@@ -4921,12 +4921,15 @@ body.page-template-contact {
     .linkRow-row {
       flex-direction: column; } }
 
-.linkRow-block:not(:last-child) {
-  margin-right: 70px; }
-  @media only screen and (max-width: 769px) {
-    .linkRow-block:not(:last-child) {
-      margin-right: 0;
-      padding-bottom: 60px; } }
+.linkRow-block {
+  text-align: center;
+  flex: 1; }
+  .linkRow-block:not(:last-child) {
+    margin-right: 70px; }
+    @media only screen and (max-width: 769px) {
+      .linkRow-block:not(:last-child) {
+        margin-right: 0;
+        padding-bottom: 60px; } }
 
 .linkRow-title {
   padding-bottom: 30px;
