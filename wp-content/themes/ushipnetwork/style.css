@@ -2370,6 +2370,8 @@ hr {
 .tertiaryLink svg {
   display: block;
   margin-left: 15px;
+  width: 19px;
+  height: 12px;
   min-width: 19px;
   min-height: 12px; }
 
