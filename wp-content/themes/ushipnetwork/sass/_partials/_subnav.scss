@@ -7,6 +7,7 @@
   height: 60px;
   background: $white;
   box-shadow: $header-box-shadow;
+  z-index: 499;
   transform: translateZ(0); // Suppose to fix weird z-index behavior in iOS Chrome
 
   @media #{$default-break} {

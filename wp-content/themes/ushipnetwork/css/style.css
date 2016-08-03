@@ -2980,6 +2980,7 @@ article.category-press-release {
   height: 60px;
   background: #FFFFFF;
   box-shadow: 0 3px 4px 0.08px rgba(0, 0, 0, 0.2);
+  z-index: 499;
   transform: translateZ(0); }
   @media only screen and (max-width: 769px) {
     .secondary-menu {
