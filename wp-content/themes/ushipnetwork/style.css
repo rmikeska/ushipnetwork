@@ -3283,7 +3283,11 @@ select {
   background-position: 100% center;
   background-repeat: no-repeat;
   background-size: 44px 10px;
-  transition: all 0.15s ease-in-out; }
+  transition: all 0.15s ease-in-out;
+  -moz-appearance: none; }
+
+select::-ms-expand {
+  display: none; }
 
 select:hover,
 select:active,

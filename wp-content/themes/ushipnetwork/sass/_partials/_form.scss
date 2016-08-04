@@ -53,6 +53,11 @@ select {
   background-repeat: no-repeat;
   background-size: 44px 10px;
   transition: $default-transition;
+  -moz-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
 }
 
 select:hover,
