@@ -14,6 +14,10 @@
 .contact-container > * {
   flex: 1;
 
+  @media #{$default-break} {
+    flex: 1 1 auto;
+  }
+
   &:not(:last-child) {
     margin-right: 70px;
 
