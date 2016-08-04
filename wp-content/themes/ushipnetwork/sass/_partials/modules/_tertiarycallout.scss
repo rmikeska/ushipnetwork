@@ -14,8 +14,7 @@
   flex-wrap: wrap;
 
   @media #{$default-break} {
-    flex-direction: column;
-    align-items: flex-start;
+    justify-content: flex-start;
     padding-top: 25px;
     padding-bottom: 30px;
   }

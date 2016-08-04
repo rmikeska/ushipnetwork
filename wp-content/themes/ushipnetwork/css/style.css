@@ -4274,7 +4274,7 @@ body.page-template-contact {
       flex-direction: column; } }
 
 .testimonials-block {
-  flex: 1; }
+  flex: 1 1 auto; }
   .testimonials-block:not(:last-child) {
     margin-right: 70px; }
     @media only screen and (max-width: 769px) {
@@ -4853,8 +4853,7 @@ body.page-template-contact {
     display: table; }
   @media only screen and (max-width: 769px) {
     .tertiaryCallout-container {
-      flex-direction: column;
-      align-items: flex-start;
+      justify-content: flex-start;
       padding-top: 25px;
       padding-bottom: 30px; } }
 
