@@ -21,15 +21,10 @@
 }
 
 .tertiaryCallout-title {
-  padding-right: 40px;
+  margin-right: 40px;
   font-weight: $font-bold;
   letter-spacing: 0.05em;
   font-size: 18px;
-
-  @media #{$default-break} {
-    padding-right: 0;
-    padding-bottom: 7px;
-  }
 }
 
 .tertiaryCallout-link {
