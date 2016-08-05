@@ -2345,6 +2345,7 @@ hr {
           align-items: center;
   padding-bottom: 5px;
   text-align: left;
+  line-height: normal;
   color: #262626;
   font-weight: 700;
   border-bottom: 4px solid #00B437;
@@ -5070,7 +5071,6 @@ body.page-template-contact {
   font-size: 18px; }
 
 .tertiaryCallout-link {
-  line-height: 100%;
   padding-top: 7px; }
 
 /*** Link Row ***/
