@@ -60,7 +60,7 @@ get_header(); ?>
 
         <?php include("template-parts/post-thumb.php");?>
 
-      <?php endwhile; endif; echo do_shortcode('[ajax_load_more post_type="post" posts_per_page="12" offset="12" category="'.$cat_id.'" pause="true" scroll="false" transition="fade" button_label="Load More Articles"]'); echo '</div>';?>
+      <?php endwhile; endif; echo do_shortcode('[ajax_load_more post_type="post" posts_per_page="12" offset="12" pause="true" scroll="false" transition="fade" button_label="Load More Articles"]'); echo '</div>';?>
 
     <?php }
     echo '</div>';
