@@ -2423,7 +2423,8 @@ hr {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.1em;
-  line-height: 24px; }
+  line-height: 24px;
+  transition: all 0.15s ease-in-out; }
 
 .categoryMenu-list li a {
   border-bottom-color: transparent; }
@@ -2432,7 +2433,8 @@ hr {
   transition: border-bottom-color 0.2s ease;
   border-bottom-width: 2px;
   border-bottom-style: solid;
-  border-bottom-color: #02AAF3; }
+  border-bottom-color: #02AAF3;
+  transition: all 0.15s ease-in-out; }
 
 .categoryMenu-list li a:hover {
   color: #02AAF3; }

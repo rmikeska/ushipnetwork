@@ -39,6 +39,7 @@
   font-weight: $font-bold;
   letter-spacing: 0.1em;
   line-height: 24px;
+  transition: $default-transition;
 }
 
 .categoryMenu-list li a {
@@ -50,6 +51,7 @@
   border-bottom-width: 2px;
   border-bottom-style: solid;
   border-bottom-color: $bright-blue;
+  transition: $default-transition;
 }
 
 .categoryMenu-list li a:hover {
