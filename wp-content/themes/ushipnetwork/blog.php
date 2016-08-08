@@ -48,7 +48,7 @@ get_header(); ?>
 
     <?php endwhile; endif;
 
-    echo do_shortcode('[ajax_load_more post_type="post" posts_per_page="12" offset="12" pause="true" scroll="false" transition="fade" button_label="Load More Articles"]');
+    echo do_shortcode('[ajax_load_more post_type="post" posts_per_page="12" offset="12" category__not_in="5" pause="true" scroll="false" transition="fade" button_label="Load More Articles"]');
     echo '</div>';
 
     foreach ($cats as $cat) {
