@@ -2587,7 +2587,7 @@ article .post-featureImage {
       padding-top: 0;
       flex-direction: column; } }
   .posted-on time {
-    flex: 1; }
+    flex: 1 1 auto; }
 
 .entry-content {
   line-height: 30px;
@@ -2627,13 +2627,13 @@ article .post-featureImage {
       flex-direction: column; } }
 
 .entry-header .authorship {
-  flex: 1;
+  flex: 1 1 auto;
   margin-top: 30px; }
   @media only screen and (max-width: 769px) {
     .entry-header .authorship {
       margin-top: 14px; } }
 .entry-header .tag-list {
-  flex: 1;
+  flex: 1 1 auto;
   text-align: right;
   margin-top: 30px; }
   @media only screen and (max-width: 769px) {
@@ -2653,10 +2653,10 @@ article .post-featureImage {
       border: none;
       padding-top: 0; } }
 .entry-footer .authorship {
-  flex: 1; }
+  flex: 1 1 auto; }
 
 .share {
-  flex: 1; }
+  flex: 1 1 auto; }
   @media only screen and (max-width: 769px) {
     .share {
       margin-top: 14px;
@@ -3890,7 +3890,8 @@ body.page-template-contact {
   padding-top: 20px;
   padding-right: 15px;
   padding-bottom: 20px;
-  padding-left: 15px; }
+  padding-left: 15px;
+  width: 100%; }
   .hero-container::after {
     clear: both;
     content: "";

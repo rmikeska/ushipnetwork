@@ -54,7 +54,7 @@ article .post-featureImage {
   }
 
   time {
-    flex: 1;
+    flex: 1 1 auto;
   }
 }
 
@@ -120,7 +120,7 @@ article .post-featureImage {
 .entry-header {
 
   .authorship {
-    flex: 1;
+    flex: 1 1 auto;
     margin-top: 30px;
 
     @media #{$default-break} {
@@ -129,7 +129,7 @@ article .post-featureImage {
   }
 
   .tag-list {
-    flex: 1;
+    flex: 1 1 auto;
     text-align: right;
     margin-top: 30px;
 
@@ -158,12 +158,12 @@ article .post-featureImage {
   }
 
   .authorship {
-    flex: 1;
+    flex: 1 1 auto;
   }
 }
 
 .share {
-  flex: 1;
+  flex: 1 1 auto;
 
   @media #{$default-break} {
     margin-top: 14px;
