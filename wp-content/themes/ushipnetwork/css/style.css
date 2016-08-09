@@ -3714,7 +3714,6 @@ body.page-template-contact {
   @media only screen and (max-width: 769px) {
     .bookendLinksMobile-container {
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
       max-width: -webkit-calc(100% + 15px*2);
       max-width: calc(100% + 15px*2);
@@ -3735,10 +3734,8 @@ body.page-template-contact {
     justify-content: center;
     margin-top: 10px; }
   .bookendLinksMobile-container .bookend-linkPrevious {
-    justify-content: flex-start;
     margin-right: 34px; }
   .bookendLinksMobile-container .bookend-linkNext {
-    justify-content: flex-end;
     margin-left: 34px; }
 
 /*** Contact ***/

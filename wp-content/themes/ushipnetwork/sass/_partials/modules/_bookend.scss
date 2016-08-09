@@ -102,7 +102,6 @@
 
   @media #{$default-break} {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     @include container(100%, 40px, 50px);
     border-bottom: 1px solid $divider-color;
@@ -116,12 +115,10 @@
   }
 
   .bookend-linkPrevious {
-    justify-content: flex-start;
     margin-right: 34px;
   }
 
   .bookend-linkNext {
-    justify-content: flex-end;
     margin-left: 34px;
   }
 }
