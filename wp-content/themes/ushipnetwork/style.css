@@ -2401,12 +2401,6 @@ hr {
   padding-bottom: 0; }
 .page-id-3096 .videoFeature-video {
   max-width: 620px; }
-@media only screen and (max-width: 769px) {
-  .page-id-3096 .bookend-intro {
-    padding-top: 0; } }
-@media only screen and (max-width: 769px) {
-  .page-id-3096 .bookend-divider {
-    display: none; } }
 
 /*** Blog Landing ***/
 .categoryMenu {
@@ -3826,9 +3820,9 @@ body.page-template-contact {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      -webkit-justify-content: space-between;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       max-width: calc(100% + 15px*2);
       margin-left: auto;
       margin-right: auto;

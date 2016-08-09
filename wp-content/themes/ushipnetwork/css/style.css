@@ -2375,12 +2375,6 @@ hr {
   padding-bottom: 0; }
 .page-id-3096 .videoFeature-video {
   max-width: 620px; }
-@media only screen and (max-width: 769px) {
-  .page-id-3096 .bookend-intro {
-    padding-top: 0; } }
-@media only screen and (max-width: 769px) {
-  .page-id-3096 .bookend-divider {
-    display: none; } }
 
 /*** Blog Landing ***/
 .categoryMenu {
@@ -3720,7 +3714,7 @@ body.page-template-contact {
   @media only screen and (max-width: 769px) {
     .bookendLinksMobile-container {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       max-width: -webkit-calc(100% + 15px*2);
       max-width: calc(100% + 15px*2);
       margin-left: auto;

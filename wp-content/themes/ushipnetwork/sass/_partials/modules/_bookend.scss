@@ -102,7 +102,7 @@
 
   @media #{$default-break} {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     @include container(100%, 50px, 50px);
     border-bottom: 1px solid $divider-color;
   }
