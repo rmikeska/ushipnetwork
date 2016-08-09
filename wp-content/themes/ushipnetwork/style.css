@@ -3769,10 +3769,10 @@ body.page-template-contact {
   transition: all 0.15s ease-in-out; }
 
 .bookend-container .bookend-linkPrevious {
-  left: 20px; }
+  left: 15px; }
 
 .bookend-container .bookend-linkNext {
-  right: 20px; }
+  right: 15px; }
 
 .bookend-linkRow {
   min-height: 45px;
@@ -3823,10 +3823,13 @@ body.page-template-contact {
       -webkit-justify-content: center;
           -ms-flex-pack: center;
               justify-content: center;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
       max-width: calc(100% + 15px*2);
       margin-left: auto;
       margin-right: auto;
-      padding-top: 50px;
+      padding-top: 40px;
       padding-right: 15px;
       padding-bottom: 50px;
       padding-left: 15px;
@@ -3841,17 +3844,21 @@ body.page-template-contact {
             flex: 1 1 auto;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 10px; }
   .bookendLinksMobile-container .bookend-linkPrevious {
     -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    margin-right: 10px; }
+    margin-right: 34px; }
   .bookendLinksMobile-container .bookend-linkNext {
     -webkit-justify-content: flex-end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    margin-left: 10px; }
+    margin-left: 34px; }
 
 /*** Contact ***/
 .contact-container {

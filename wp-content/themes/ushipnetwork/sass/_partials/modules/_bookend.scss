@@ -48,11 +48,11 @@
 }
 
 .bookend-container .bookend-linkPrevious {
-  left: 20px;
+  left: 15px;
 }
 
 .bookend-container .bookend-linkNext {
-  right: 20px;
+  right: 15px;
 }
 
 .bookend-linkRow {
@@ -103,22 +103,25 @@
   @media #{$default-break} {
     display: flex;
     justify-content: center;
-    @include container(100%, 50px, 50px);
+    flex-wrap: wrap;
+    @include container(100%, 40px, 50px);
     border-bottom: 1px solid $divider-color;
   }
 
   .bookend-link {
     flex: 1 1 auto;
     display: flex;
+    justify-content: center;
+    margin-top: 10px;
   }
 
   .bookend-linkPrevious {
     justify-content: flex-start;
-    margin-right: 10px;
+    margin-right: 34px;
   }
 
   .bookend-linkNext {
     justify-content: flex-end;
-    margin-left: 10px;
+    margin-left: 34px;
   }
 }

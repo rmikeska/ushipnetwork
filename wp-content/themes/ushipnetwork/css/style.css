@@ -3671,10 +3671,10 @@ body.page-template-contact {
   transition: all 0.15s ease-in-out; }
 
 .bookend-container .bookend-linkPrevious {
-  left: 20px; }
+  left: 15px; }
 
 .bookend-container .bookend-linkNext {
-  right: 20px; }
+  right: 15px; }
 
 .bookend-linkRow {
   min-height: 45px;
@@ -3715,11 +3715,12 @@ body.page-template-contact {
     .bookendLinksMobile-container {
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       max-width: -webkit-calc(100% + 15px*2);
       max-width: calc(100% + 15px*2);
       margin-left: auto;
       margin-right: auto;
-      padding-top: 50px;
+      padding-top: 40px;
       padding-right: 15px;
       padding-bottom: 50px;
       padding-left: 15px;
@@ -3730,13 +3731,15 @@ body.page-template-contact {
         display: table; } }
   .bookendLinksMobile-container .bookend-link {
     flex: 1 1 auto;
-    display: flex; }
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; }
   .bookendLinksMobile-container .bookend-linkPrevious {
     justify-content: flex-start;
-    margin-right: 10px; }
+    margin-right: 34px; }
   .bookendLinksMobile-container .bookend-linkNext {
     justify-content: flex-end;
-    margin-left: 10px; }
+    margin-left: 34px; }
 
 /*** Contact ***/
 .contact-container {
