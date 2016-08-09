@@ -22,7 +22,7 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body role="application" <?php body_class(); ?>>
 <div class="pageWrapper">
 	<header role="banner" class="dls">
 	    <div class="dls-header">

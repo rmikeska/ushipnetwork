@@ -3651,9 +3651,12 @@ body.page-template-contact {
   font-size: 24px;
   line-height: 32px;
   text-align: center; }
+
+.bookend-container .bookend-link {
+  position: absolute; }
   @media only screen and (max-width: 769px) {
-    .bookend-intro {
-      padding-top: 144px; } }
+    .bookend-container .bookend-link {
+      display: none; } }
 
 .bookend-link-text {
   text-transform: uppercase;
@@ -3673,41 +3676,25 @@ body.page-template-contact {
   fill: #02AAF3;
   transition: all 0.15s ease-in-out; }
 
-.bookend-linkPrevious {
+.bookend-container .bookend-linkPrevious {
   left: 20px; }
 
-.bookend-linkNext {
+.bookend-container .bookend-linkNext {
   right: 20px; }
 
-.bookend-divider {
-  display: none; }
-  @media only screen and (max-width: 769px) {
-    .bookend-divider {
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 1px;
-      top: 144px;
-      left: 0;
-      right: 0;
-      background: #dddddd; } }
-
 .bookend-linkRow {
-  position: absolute;
-  top: 50%;
   min-height: 45px;
   display: flex;
   align-items: center; }
-  @media only screen and (max-width: 769px) {
-    .bookend-linkRow {
-      top: 60px; } }
 
 .bookend-linkRow .bookend-link-text {
   padding-top: 3px; }
 
 .bookend-linkRow .circledArrow {
   width: 24px;
-  height: 24px; }
+  height: 24px;
+  min-width: 24px;
+  min-height: 24px; }
 
 .bookend-linkPrevious .circledArrow {
   margin-right: 20px;
@@ -3727,6 +3714,35 @@ body.page-template-contact {
 
 .bookend-linkNext .bookend-link-text {
   text-align: right; }
+
+.bookendLinksMobile-container {
+  display: none; }
+  @media only screen and (max-width: 769px) {
+    .bookendLinksMobile-container {
+      display: flex;
+      justify-content: space-between;
+      max-width: -webkit-calc(100% + 15px*2);
+      max-width: calc(100% + 15px*2);
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 50px;
+      padding-right: 15px;
+      padding-bottom: 50px;
+      padding-left: 15px;
+      border-bottom: 1px solid #dddddd; }
+      .bookendLinksMobile-container::after {
+        clear: both;
+        content: "";
+        display: table; } }
+  .bookendLinksMobile-container .bookend-link {
+    flex: 1 1 auto;
+    display: flex; }
+  .bookendLinksMobile-container .bookend-linkPrevious {
+    justify-content: flex-start;
+    margin-right: 10px; }
+  .bookendLinksMobile-container .bookend-linkNext {
+    justify-content: flex-end;
+    margin-left: 10px; }
 
 /*** Contact ***/
 .contact-container {
