@@ -3182,7 +3182,7 @@ textarea {
 
 input,
 select {
-  min-height: 50px; }
+  height: 50px; }
 
 textarea {
   min-height: 150px;
