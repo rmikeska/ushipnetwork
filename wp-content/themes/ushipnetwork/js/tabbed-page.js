@@ -61,7 +61,9 @@ jQuery(document).ready(function ($) {
         }
 
         $('.tabbedPageWrapper .bookend-link').click(function () {
-            $(window).scrollTop(0);
+            $('html, body').animate({
+                scrollTop: $('.tabbedPageMenu').offset().top - $('.dls-header').height()
+            }, 0);
         });
 
     }).trigger('hashchange');
