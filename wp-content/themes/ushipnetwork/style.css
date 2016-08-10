@@ -5270,9 +5270,6 @@ body.page-template-contact {
   left: 0;
   width: 100%;
   height: 100%; }
-  @media only screen and (max-width: 769px) {
-    .player {
-      display: block; } }
 
 .videoFeature-video-playButton {
   position: absolute;
@@ -5288,7 +5285,8 @@ body.page-template-contact {
   transition: all 0.3s; }
   @media only screen and (max-width: 769px) {
     .videoFeature-video-playButton {
-      display: none; } }
+      width: 65px;
+      height: 65px; } }
 
 .videoFeature-video-playButton:hover {
   opacity: 1;
@@ -5301,9 +5299,6 @@ body.page-template-contact {
   height: 0;
   padding-top: 56.2244898%;
   overflow: hidden; }
-  @media only screen and (max-width: 769px) {
-    .videoFeature-video-poster {
-      display: none; } }
 
 .videoFeature-video-poster-image {
   position: absolute;

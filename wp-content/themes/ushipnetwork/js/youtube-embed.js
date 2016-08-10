@@ -33,6 +33,12 @@ function createPlayer (playerInfo) {
 
 jQuery(document).ready(function ($) {
 
+    // Hide custom video thumbnail and play button for iOS since it doesn't allow .playVideo() actions
+    if (navigator.userAgent.match(/(iPod|iPhone|iPad)/i)) {
+        $('.player').show();
+        $('.videoFeature-video-playButton, .videoFeature-video-poster').hide();
+    }
+
     $('.videoFeature-video-playButton').each(function () {
         $(this).on('click', function () {
             var curButtonId = $(this).attr('id');
