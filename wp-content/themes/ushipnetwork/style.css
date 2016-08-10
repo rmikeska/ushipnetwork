@@ -2956,6 +2956,7 @@ article.category-press-release {
   margin-top: 8px;
   margin-left: 30px;
   margin-right: 30px;
+  overflow: hidden;
   transition: all 0.15s ease-in-out; }
 
 .tabbedPageMenu-list li a:after {
@@ -3003,6 +3004,10 @@ article.category-press-release {
 @media only screen and (max-width: 942px) {
   .tabbedPageMenu-list.tabs5 li:not(:last-child):after {
     display: none; } }
+@media only screen and (max-width: 942px) {
+  .tabbedPageMenu-list.tabs5 li a {
+    margin-left: 0;
+    margin-right: 0; } }
 
 @media only screen and (max-width: 1120px) {
   .tabbedPageMenu-list.tabs6 {
@@ -3017,6 +3022,10 @@ article.category-press-release {
 @media only screen and (max-width: 1120px) {
   .tabbedPageMenu-list.tabs6 li:not(:last-child):after {
     display: none; } }
+@media only screen and (max-width: 1120px) {
+  .tabbedPageMenu-list.tabs6 li a {
+    margin-left: 0;
+    margin-right: 0; } }
 
 @media only screen and (max-width: 1300px) {
   .tabbedPageMenu-list.tabs7 {
@@ -3031,6 +3040,10 @@ article.category-press-release {
 @media only screen and (max-width: 1300px) {
   .tabbedPageMenu-list.tabs7 li:not(:last-child):after {
     display: none; } }
+@media only screen and (max-width: 1300px) {
+  .tabbedPageMenu-list.tabs7 li a {
+    margin-left: 0;
+    margin-right: 0; } }
 
 /*** 404 Page ***/
 .error404-container {
@@ -3842,13 +3855,16 @@ body.page-template-contact {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     margin-top: 10px; }
   .bookendLinksMobile-container .bookend-linkPrevious {
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     margin-right: 10px; }
   .bookendLinksMobile-container .bookend-linkNext {
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     margin-left: 10px; }
 
 /*** Contact ***/

@@ -110,15 +110,16 @@
   .bookend-link {
     flex: 1 1 auto;
     display: flex;
-    justify-content: center;
     margin-top: 10px;
   }
 
   .bookend-linkPrevious {
+    justify-content: flex-start;
     margin-right: 10px;
   }
 
   .bookend-linkNext {
+    justify-content: flex-end;
     margin-left: 10px;
   }
 }

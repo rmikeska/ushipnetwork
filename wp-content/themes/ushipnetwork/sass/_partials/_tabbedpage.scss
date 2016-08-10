@@ -49,6 +49,7 @@
   margin-top: 8px;
   margin-left: 30px;
   margin-right: 30px;
+  overflow: hidden;
   transition: $default-transition;
 }
 
@@ -102,11 +103,19 @@
     @media only screen and (max-width: 480px) {
       width: 50%;
     }
+
   }
 
   li:not(:last-child):after {
     @media only screen and (max-width: 942px) {
       display: none;
+    }
+  }
+
+  li a {
+    @media only screen and (max-width: 942px) {
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 }
@@ -132,6 +141,13 @@
       display: none;
     }
   }
+
+  li a {
+    @media only screen and (max-width: 1120px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
 }
 
 .tabbedPageMenu-list.tabs7 {
@@ -153,6 +169,13 @@
   li:not(:last-child):after {
     @media only screen and (max-width: 1300px) {
       display: none;
+    }
+  }
+
+  li a {
+    @media only screen and (max-width: 1300px) {
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 }
