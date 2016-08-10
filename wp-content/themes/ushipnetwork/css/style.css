@@ -3734,9 +3734,9 @@ body.page-template-contact {
     justify-content: center;
     margin-top: 10px; }
   .bookendLinksMobile-container .bookend-linkPrevious {
-    margin-right: 34px; }
+    margin-right: 10px; }
   .bookendLinksMobile-container .bookend-linkNext {
-    margin-left: 34px; }
+    margin-left: 10px; }
 
 /*** Contact ***/
 .contact-container {
