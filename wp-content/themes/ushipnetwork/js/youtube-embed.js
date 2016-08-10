@@ -33,12 +33,8 @@ function createPlayer (playerInfo) {
 
 jQuery(document).ready(function ($) {
 
-    $('.player').each(function () {
-        $(this).hide();
-    });
-
     $('.videoFeature-video-playButton').each(function () {
-        $(this).on('click', function (){
+        $(this).on('click', function () {
             var curButtonId = $(this).attr('id');
             $(this).hide();
             $(this).siblings('.videoFeature-video-poster').hide();
