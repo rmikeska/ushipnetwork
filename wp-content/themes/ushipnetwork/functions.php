@@ -234,6 +234,7 @@ add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
 /**
  * Add Google Analytics Tracking Code By home_url()
  */
+$gasite = home_url();
 switch (home_url($gasite)) {
   case 'https://ushipabout2.staging.wpengine.com':
     add_action('wp_footer', 'add_googleanalytics');
