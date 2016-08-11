@@ -245,7 +245,7 @@ switch (home_url($gasite)) {
       </script>
       <?php
     }
-  break;
+  	break;
   case 'https://ushiplearn.staging.wpengine.com':
     add_action('wp_footer', 'add_googleanalytics');
     function add_googleanalytics() {
@@ -256,7 +256,7 @@ switch (home_url($gasite)) {
       </script>
       <?php
     }
-  break;
+  	break;
   case 'https://ushipblog.staging.wpengine.com':
     add_action('wp_footer', 'add_googleanalytics');
     function add_googleanalytics() {
@@ -267,5 +267,5 @@ switch (home_url($gasite)) {
       </script>
       <?php
     }
-  break;
+  	break;
 }
