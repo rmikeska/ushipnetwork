@@ -230,3 +230,42 @@ function wpdocs_excerpt_more( $more ) {
     );
 }
 add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+
+/**
+ * Add Google Analytics Tracking Code By home_url()
+ */
+switch (home_url($gasite)) {
+  case 'https://ushipabout2.staging.wpengine.com':
+    add_action('wp_footer', 'add_googleanalytics');
+    function add_googleanalytics() {
+      ?>
+      <!-- Google Analytics -->
+      <script>
+      	// about.uship.com test GA script section
+      </script>
+      <?php
+    }
+  break;
+  case 'https://ushiplearn.staging.wpengine.com':
+    add_action('wp_footer', 'add_googleanalytics');
+    function add_googleanalytics() {
+      ?>
+      <!-- Google Analytics -->
+      <script>
+      	// learn.uship.com test GA script section
+      </script>
+      <?php
+    }
+  break;
+  case 'https://ushipblog.staging.wpengine.com':
+    add_action('wp_footer', 'add_googleanalytics');
+    function add_googleanalytics() {
+      ?>
+      <!-- Google Analytics -->
+      <script>
+      	// blog.uship.com test GA script section
+      </script>
+      <?php
+    }
+  break;
+}
