@@ -251,7 +251,7 @@ function add_googleanalytics() {
       ?>
       <!-- Google Analytics -->
       <script>
-        // about.uship.com test GA script section
+        // learn.uship.com test GA script section
       </script>
       <?php
       break;
@@ -259,7 +259,7 @@ function add_googleanalytics() {
       ?>
       <!-- Google Analytics -->
       <script>
-        // about.uship.com test GA script section
+        // blog.uship.com test GA script section
       </script>
       <?php
       break;
