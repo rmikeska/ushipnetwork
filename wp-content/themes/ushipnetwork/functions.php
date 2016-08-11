@@ -234,41 +234,37 @@ add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
 /**
  * Add Google Analytics Tracking Code By home_url()
  */
-$gasite = home_url();
-switch (home_url($gasite)) {
-  case 'https://ushipabout2.staging.wpengine.com':
-    add_action('wp_footer', 'add_googleanalytics');
-    function add_googleanalytics() {
+function add_googleanalytics() {
+
+	$currentsite = get_home_url();
+
+  switch ($currentsite) {
+    case 'https://ushipabout2.staging.wpengine.com':
       ?>
       <!-- Google Analytics -->
       <script>
-      	// about.uship.com test GA script section
+        // about.uship.com test GA script section
       </script>
       <?php
-    }
-  	break;
-  case 'https://ushiplearn.staging.wpengine.com':
-    add_action('wp_footer', 'add_googleanalytics');
-    function add_googleanalytics() {
+      break;
+    case 'https://ushiplearn.staging.wpengine.com':
       ?>
       <!-- Google Analytics -->
       <script>
-      	// learn.uship.com test GA script section
+        // about.uship.com test GA script section
       </script>
       <?php
-    }
-  	break;
-  case 'https://ushipblog.staging.wpengine.com':
-    add_action('wp_footer', 'add_googleanalytics');
-    function add_googleanalytics() {
+      break;
+    case 'https://ushipblog.staging.wpengine.com':
       ?>
       <!-- Google Analytics -->
       <script>
-      	// blog.uship.com test GA script section
+        // about.uship.com test GA script section
       </script>
       <?php
-    }
-  	break;
-	default:
-	  break;
+      break;
+    default:
+      break;
+  }
 }
+add_action('wp_footer', 'add_googleanalytics');
