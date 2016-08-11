@@ -268,4 +268,6 @@ switch (home_url($gasite)) {
       <?php
     }
   	break;
+	default:
+	  break;
 }
