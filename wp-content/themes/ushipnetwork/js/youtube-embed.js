@@ -39,6 +39,7 @@ jQuery(document).ready(function ($) {
         $('.videoFeature-video-playButton, .videoFeature-video-poster').hide();
     }
 
+    // Play video on click or tab focus+enter of the play button and pause any other videos that are playing.
     $('.videoFeature-video-playButton').each(function () {
         $(this).on('click', function () {
             var curButtonId = $(this).attr('id');
@@ -52,6 +53,22 @@ jQuery(document).ready(function ($) {
                     this.pauseVideo();
                 }
             });
+        });
+
+        $(this).bind('keyup', function (e) {
+            var curButtonId = $(this).attr('id');
+            if (e.keyCode === 13) {
+                $(this).hide();
+                $(this).siblings('.videoFeature-video-poster').hide();
+                $(this).siblings('.player').show();
+                $(players).each(function (i) {
+                    if (curButtonId == players[i].a.id) {
+                        this.playVideo();
+                    } else {
+                        this.pauseVideo();
+                    }
+                });
+            }
         });
     });
 })

@@ -248,7 +248,7 @@ article .post-featureImage {
 }
 
 .relatedPosts-container {
-  @include container(1080px, 85px, 85px);
+  @include container(1080px, 85px, 0);
   width: 100%;
   overflow: hidden;
 

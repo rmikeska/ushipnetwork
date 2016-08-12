@@ -2719,7 +2719,7 @@ article .post-featureImage {
   margin-right: auto;
   padding-top: 85px;
   padding-right: 15px;
-  padding-bottom: 85px;
+  padding-bottom: 0;
   padding-left: 15px;
   width: 100%;
   overflow: hidden; }
