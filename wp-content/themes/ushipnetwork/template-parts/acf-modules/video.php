@@ -10,7 +10,7 @@
         <div class="videoFeature-video-poster">
             <img class="videoFeature-video-poster-image" src="<?php echo $video_poster['url']; ?>"/>
         </div>
-        <a class="videoFeature-video-playButton" tabindex="0" role="button" id="<?php echo $video_id; ?>"><?php include( get_template_directory() . '/images/play_button.svg'); ?></a>
+        <a class="videoFeature-video-playButton" href="" role="button" id="<?php echo $video_id; ?>"><?php include( get_template_directory() . '/images/play_button.svg'); ?></a>
       </div>
     </div>
 
