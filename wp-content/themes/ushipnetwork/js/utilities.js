@@ -94,12 +94,11 @@ jQuery(document).ready(function ($) {
 
     // Focus elements within modal for tab accessibility
     $('.modal').on($.modal.OPEN, function (event, modal) {
-        $('.modal').attr('tabindex', '1');
+        $('form input:first, iframe').focus();
         $('.pageWrapper').find('a, button, object, input, select, textarea').attr('tabindex', '-1');
     });
 
     $('.modal').on($.modal.CLOSE, function (event, modal) {
-        $('.modal').removeAttr('tabindex');
         $('.pageWrapper').find('a, button, object, input, select, textarea').removeAttr('tabindex');
         $('.pageContent a:first').focus();
     });
