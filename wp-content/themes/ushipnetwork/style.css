@@ -2633,6 +2633,10 @@ article .post-featureImage {
 .entry-content {
   line-height: 30px;
   padding-bottom: 35px; }
+  .entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6 {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.1em; }
   .entry-content p {
     padding-bottom: 35px; }
   .entry-content figure {
