@@ -30,48 +30,75 @@ jQuery(document).ready(function ($) {
             } else {
                 $('.errorAlert').text('Please correct the errors below.');
             }
+        },
+        submitHandler: function (form) {
+            $('#form-business-shippers').hide();
+            $('body').append ($('\
+                <div class="formSuccess-overlay">\
+                    <div class="formSuccess">\
+                      <div class="formSuccess-inner">\
+                        <h3 class="formSuccess-intro">Thank you</h3>\
+                        <div class="formSuccess-body">\
+                            <p class="formSuccess-body-text">Thanks for getting in touch. One of our representatives will contact you soon.</p>\
+                        </div>\
+                        <a class="formSuccess-cta button buttonPrimary buttonLarge" role="button" href="">Got It</a>\
+                      </div>\
+                      <a href="" class="formSuccess-close"></a>\
+                    </div>\
+                </div>\
+            '));
+
+            $('.formSuccess-overlay').on('click', function (e) {
+                var subject = $('.formSuccess');
+                if(e.target.class != subject.attr('class')) {
+                    subject.fadeOut();
+                    $('.formSuccess-overlay').fadeOut();
+                }
+            });
+
+            $('.formSuccess-cta, .formSuccess-close').on('click', function (e) {
+                e.preventDefault();
+                $('.formSuccess, .formSuccess-overlay').fadeOut();
+            });
+
+            $('.formSuccess').show().delay(2000);
+            form.submit();
+            return false;
         }
-        // ,
-        // submitHandler: function (form) {
-        //     $('#form-business-shippers').hide();
-        //     $('.formSuccess').text('Thank you').show().delay(3000);
-        //     form.submit();
-        //     return false;
-        // }
     });
 
 
 
     // Business Shippers Pardot Form - Success Modal
-    if (document.URL.indexOf('success=true') !== -1) {
-        $('body').append ($('\
-            <div class="formSuccess-overlay">\
-                <div class="formSuccess">\
-                  <div class="formSuccess-inner">\
-                    <h3 class="formSuccess-intro">Thank you</h3>\
-                    <div class="formSuccess-body">\
-                        <p class="formSuccess-body-text">Thanks for getting in touch. One of our representatives will contact you soon.</p>\
-                    </div>\
-                    <a class="formSuccess-cta button buttonPrimary buttonLarge" role="button" href="">Got It</a>\
-                  </div>\
-                  <a href="" class="formSuccess-close"></a>\
-                </div>\
-            </div>\
-        '));
+    // if (document.URL.indexOf('success=true') !== -1) {
+    //     $('body').append ($('\
+    //         <div class="formSuccess-overlay">\
+    //             <div class="formSuccess">\
+    //               <div class="formSuccess-inner">\
+    //                 <h3 class="formSuccess-intro">Thank you</h3>\
+    //                 <div class="formSuccess-body">\
+    //                     <p class="formSuccess-body-text">Thanks for getting in touch. One of our representatives will contact you soon.</p>\
+    //                 </div>\
+    //                 <a class="formSuccess-cta button buttonPrimary buttonLarge" role="button" href="">Got It</a>\
+    //               </div>\
+    //               <a href="" class="formSuccess-close"></a>\
+    //             </div>\
+    //         </div>\
+    //     '));
 
-        $('.formSuccess-overlay').on('click', function (e) {
-            var subject = $('.formSuccess');
-            if(e.target.class != subject.attr('class')) {
-                subject.fadeOut();
-                $('.formSuccess-overlay').fadeOut();
-            }
-        });
+    //     $('.formSuccess-overlay').on('click', function (e) {
+    //         var subject = $('.formSuccess');
+    //         if(e.target.class != subject.attr('class')) {
+    //             subject.fadeOut();
+    //             $('.formSuccess-overlay').fadeOut();
+    //         }
+    //     });
 
-        $('.formSuccess-cta, .formSuccess-close').on('click', function (e) {
-            e.preventDefault();
-            $('.formSuccess, .formSuccess-overlay').fadeOut();
-        });
-    }
+    //     $('.formSuccess-cta, .formSuccess-close').on('click', function (e) {
+    //         e.preventDefault();
+    //         $('.formSuccess, .formSuccess-overlay').fadeOut();
+    //     });
+    // }
 
 
 
