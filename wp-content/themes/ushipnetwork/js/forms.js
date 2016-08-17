@@ -32,7 +32,7 @@ jQuery(document).ready(function ($) {
             }
         },
         submitHandler: function (form) {
-            $('#form-business-shippers').hide();
+            $('.modal').hide();
             $('body').append ($('\
                 <div class="formSuccess-overlay">\
                     <div class="formSuccess">\
