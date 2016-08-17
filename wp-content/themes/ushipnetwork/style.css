@@ -2634,9 +2634,22 @@ article .post-featureImage {
   line-height: 30px;
   padding-bottom: 35px; }
   .entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6 {
+    font-weight: 700; }
+  .entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5 {
     text-transform: uppercase;
-    font-weight: 700;
     letter-spacing: 0.1em; }
+  .entry-content h1 {
+    font-size: 48px; }
+  .entry-content h2 {
+    font-size: 36px; }
+  .entry-content h3 {
+    font-size: 24px; }
+  .entry-content h4 {
+    font-size: 18px; }
+  .entry-content h5 {
+    font-size: 11px; }
+  .entry-content h6 {
+    font-size: 24px; }
   .entry-content p {
     padding-bottom: 35px; }
   .entry-content figure {
@@ -2659,6 +2672,7 @@ article .post-featureImage {
   .entry-content ul {
     list-style: disc; }
   .entry-content li {
+    margin-bottom: 15px;
     overflow-wrap: break-word; }
   .entry-content iframe {
     display: block;

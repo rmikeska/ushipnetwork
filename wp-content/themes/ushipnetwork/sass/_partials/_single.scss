@@ -63,9 +63,36 @@ article .post-featureImage {
   padding-bottom: 35px;
 
   h1, h2, h3, h4, h5, h6 {
-    text-transform: uppercase;
     font-weight: $font-bold;
+  }
+
+  h1, h2, h3, h4, h5 {
+    text-transform: uppercase;
     letter-spacing: 0.1em;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 11px;
+  }
+
+  h6 {
+    font-size: 24px;
   }
 
   p {
@@ -104,6 +131,7 @@ article .post-featureImage {
   }
 
   li {
+    margin-bottom: 15px;
     overflow-wrap: break-word;
   }
 
