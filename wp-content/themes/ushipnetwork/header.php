@@ -35,7 +35,7 @@
 	            <symbol id="ship_icon" viewBox="0 0 20 20"><path d="M10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0Zm5,10.29a0.76,0.76,0,0,1-.16.25l-3.41,3.41a0.76,0.76,0,0,1-1.08-1.08l2.11-2.11H5.7a0.76,0.76,0,0,1,0-1.52h6.75l-2.1-2.11a0.76,0.76,0,0,1,1.08-1.08l3.41,3.41h0A0.76,0.76,0,0,1,15,9.7h0A0.76,0.76,0,0,1,15,10.29Z"></path></symbol>
 	        </svg>
 	        <nav role="navigation" class="siteNavNew is-public">
-	            <a class="siteNav-logoBox js-siteNav-logoBox" href="http://www.uship.com/">
+	            <a class="siteNav-logoBox js-siteNav-logoBox" href="<?php the_field('uship_logo_url', 'option'); ?>">
 	                <svg class="siteNav-logoBox-logo">
 	                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#uship_logo_white"></use>
 	                </svg>

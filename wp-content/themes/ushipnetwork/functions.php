@@ -268,3 +268,12 @@ function add_googleanalytics() {
   }
 }
 add_action('wp_footer', 'add_googleanalytics');
+
+/**
+ * Add ACF Options Page
+ */
+if( function_exists('acf_add_options_page') ) {
+
+  acf_add_options_page();
+
+}
