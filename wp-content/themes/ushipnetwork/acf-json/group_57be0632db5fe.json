@@ -29,7 +29,7 @@
             {
                 "param": "options_page",
                 "operator": "==",
-                "value": "acf-options"
+                "value": "localization"
             }
         ]
     ],
@@ -41,5 +41,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1472071508
+    "modified": 1472073908
 }
