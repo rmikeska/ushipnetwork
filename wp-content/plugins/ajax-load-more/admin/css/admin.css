@@ -138,7 +138,7 @@
    color: #999;
    padding: 0 0 0 12px;
    border-left: 5px solid #ff5a58;
-   margin: 0 0 16px;
+   margin: 0 0 30px;
    font-size: 13px;
 }
 .ajax-load-more code{
@@ -877,6 +877,7 @@ a.layout-hover{
 .preload_amount,
 .cache_id,
 .alternate_template_wrap,
+.cta_template_wrap,
 .restapi_options{
    display: none;
 }
@@ -1478,7 +1479,9 @@ table.highlight{
    font-size: 14px;
    padding: 8px 14px;
 }
-.ajax-load-more .cnkt-main .group.installed{ }
+.ajax-load-more .cnkt-main .group.installed{ 
+   opacity: 0.7;
+}
 
 #alm-add-ons .group img{
    padding: 12px 18px 12px;  
@@ -1488,17 +1491,8 @@ table.highlight{
    display: block;
    padding: 15px;
 }
-   #alm-add-ons .group:hover{
-      border-color: #999;
-      -webkit-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
-      -moz-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
-      box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
-   }
    #alm-add-ons .group.installed:hover{	   
       border-color: #ccc;
-      -webkit-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
-      -moz-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
-      box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
    }
    #alm-add-ons .group a:hover h2{
       color: #ff5a58 !important;
@@ -1727,13 +1721,14 @@ table.highlight{
    }
       .license-wrap label{
          font-weight: 600;
-         position: relative;
+/*          position: relative; */
          top:-3px;
       }
       .license-wrap input[type=text]{
          background-color: #fff;
          margin: 0 0 15px;
          width: 100% !important;
+         border-color: #ccc;
       }
          .license-wrap input[type=text]:focus{
             background-color: #fff;  

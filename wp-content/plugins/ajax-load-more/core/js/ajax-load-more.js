@@ -61,12 +61,11 @@
       alm.orginal_posts_per_page = alm.content.attr('data-posts-per-page'); // Used for paging add-on
       alm.posts_per_page = alm.content.attr('data-posts-per-page');  
       
-      alm.alternate_array =  '';
-      alm.alternate = alm.content.attr('data-alternate'); // is Alternating Templates enabled?
-      alm.alternate_sequence = alm.content.attr('data-alternate-sequence');
-      alm.alternate_sequence_max = alm.content.attr('data-alternate-sequence-max');
-      alm.alternate_repeater = alm.content.attr('data-alternate-repeater');
-      alm.alternate_theme_repeater = alm.content.attr('data-alternate-theme-repeater');
+      alm.cta_array =  '';
+      alm.cta = alm.content.attr('data-cta'); // is Alternating Templates enabled?
+      alm.cta_position = alm.content.attr('data-cta-position');
+      alm.cta_repeater = alm.content.attr('data-cta-repeater');
+      alm.cta_theme_repeater = alm.content.attr('data-cta-theme-repeater');
       
       alm.previous_post = alm.content.attr('data-previous-post'); // Next Post add-on  
       alm.previous_post_id = alm.content.attr('data-previous-post-id'); // Get the post id 
@@ -351,10 +350,11 @@
       alm.container.append('<div class="' + alm.prefix + 'btn-wrap"/>');
       alm.btnWrap = $('.' + alm.prefix + 'btn-wrap', alm.container);
       if(alm.paging){ 
+	      
    		// Paging add-on				
       	alm.content.parent().addClass('loading'); // add loading class to main container
-		}else{
       	
+		}else{      	
       			
       // If paging is false      
       $('.'+ alm.prefix + 'btn-wrap', alm.container).append('<button id="load-more" class="' + alm.prefix + 'load-more-btn more'+ alm.button_class +'">' + alm.button_label + '</button>');
@@ -440,14 +440,13 @@
             
          }
          
-         // Alternate Query params         
-         if(alm.alternate === 'true'){            
-            alm.alternate_array = { 
-               'alternate': 'true',
-               'alternate_sequence': alm.alternate_sequence,
-               'alternate_sequence_max': alm.alternate_sequence_max,
-               'alternate_repeater': alm.alternate_repeater,
-               'alternate_theme_repeater': alm.alternate_theme_repeater,
+         // CTA Add-on Query params         
+         if(alm.cta === 'true'){            
+            alm.cta_array = { 
+               'cta': 'true',
+               'cta_position': alm.cta_position,
+               'cta_repeater': alm.cta_repeater,
+               'cta_theme_repeater': alm.cta_theme_repeater,
             };            
          }              
          
@@ -531,7 +530,7 @@
                   cache_id             : alm.cache_id,
                   repeater             : alm.repeater,
                   theme_repeater       : alm.theme_repeater,
-                  alternate            : alm.alternate_array,
+                  cta            		: alm.cta_array,
                   comments             : alm.comments_array,
                   post_type            : alm.post_type,
                   post_format          : alm.content.attr('data-post-format'),
@@ -618,17 +617,26 @@
          if(alm.previous_post){ // Get previous page data	         
             alm.AjaxLoadMore.getPreviousPost();           
          }     
-         var html;                  
+         var html, meta, total;                  
          
          if(!is_cache){
             html = data.html;
+            meta = data.meta;
          }else{
             html = data; // If is cache, don't look for json data
          }
          
-         alm.data = $(html); // Convert data to an object   
+         alm.data = $(html); // Convert data to an object            
+         total = alm.data.length;
          
-         if (alm.init) {
+         if(meta){
+            if(meta.cta){
+               total = total - 1; // If has CTA then minus 1 post from the totalposts.
+            }
+         }         
+
+         if (alm.init) { // First Run
+	         
 	         if(!alm.paging){
    	         
             	alm.button.text(alm.button_label);
@@ -636,7 +644,7 @@
             } else { 
                
                // Is pagination
-               if (alm.data.length > 0) {            
+               if (total > 0) {            
                   alm.el = $('<div class="alm-reveal"/>');
                   alm.el.append('<div class="alm-paging-content"></div><div class="alm-paging-loading"></div>');
                   $('.alm-paging-content', alm.el).append(alm.data).hide();
@@ -657,7 +665,7 @@
             }
             
             // ALM Empty - triggers if zero results were returned 
-            if(alm.data.length === 0){
+            if(total === 0){
                if ($.isFunction($.fn.almEmpty)) {
                   $.fn.almEmpty(alm);
                }
@@ -671,7 +679,8 @@
          }         
          
          // We have results!
-         if (alm.data.length > 0) {
+         if (total > 0) {
+            
             if(!alm.paging){
                
                if(alm.previous_post){ // If Previous Post, create container and append data              
@@ -693,11 +702,19 @@
                      // - loop through items and break them separate alm-reveal divs
                      if (alm.init && alm.start_page > 1){
                         
-                        var data = [];
-                        var size = Math.ceil(alm.data.length/alm.start_page); // slice data array into pages
-                        //console.log(size);
-                        for (var i = 0; i < alm.data.length; i += size) {
-                           data.push(alm.data.slice(i, size + i));
+                        var data = [],
+                            posts_per_page = parseInt(alm.posts_per_page);
+                        
+                        if(meta){
+                           // If CTA, +1 to posts_per_page to offset the CTA template and correct the display
+                           if(meta.cta){
+                              posts_per_page = posts_per_page + 1; 
+                           }
+                        }  
+                        
+                        var pages = Math.ceil(total/posts_per_page); // slice data array into pages
+                        for (var i = 0; i < total; i += posts_per_page) {
+                           data.push(alm.data.slice(i, posts_per_page + i));
                         }   
                         
                         alm.el = alm.content; // Set alm.el to be alm-listing div
@@ -772,7 +789,7 @@
 		                     	alm.button.delay(alm.speed).removeClass('loading');
 		                     	alm.resetBtnText();
 		                     }
-		                     if (alm.data.length < alm.posts_per_page) {
+		                     if (total < alm.posts_per_page) {
 		                        alm.finished = true;
 		                        if(!alm.paging){
 		                        	alm.button.addClass('done');
@@ -790,7 +807,7 @@
 	                     	alm.button.delay(alm.speed).removeClass('loading');
 	                     	alm.resetBtnText();
 	                     }
-	                     if (alm.data.length < alm.posts_per_page) {
+	                     if (total < alm.posts_per_page) {
 	                        alm.finished = true;
 	                        if(!alm.paging){
 	                        	alm.button.addClass('done');
@@ -821,7 +838,7 @@
                   	alm.button.delay(alm.speed).removeClass('loading');
                   	alm.resetBtnText();
                   }
-                  if (alm.data.length < alm.posts_per_page) {
+                  if (total < alm.posts_per_page) {
                      alm.finished = true;
                      if(!alm.paging){
                      	alm.button.addClass('done');
@@ -837,7 +854,7 @@
 		                     	alm.button.delay(alm.speed).removeClass('loading');
 		                     	alm.resetBtnText();
 		                     }
-		                     if (alm.data.length < alm.posts_per_page) {
+		                     if (total < alm.posts_per_page) {
 		                        alm.finished = true;
 		                        if(!alm.paging){
 		                        	alm.button.addClass('done');
@@ -855,7 +872,7 @@
 	                     	alm.button.delay(alm.speed).removeClass('loading');
 	                     	alm.resetBtnText();
 	                     }
-	                     if (alm.data.length < alm.posts_per_page) {
+	                     if (total < alm.posts_per_page) {
 	                        alm.finished = true;
 	                        if(!alm.paging){
 	                        	alm.button.addClass('done');
@@ -870,8 +887,7 @@
                
             } else {          
                // Is Paging               
-               if(!alm.init){
-                   
+               if(!alm.init){                   
                   $('.alm-paging-content', alm.el).html('').append(alm.data).almWaitForImages().done(function(){  // Remove loading class and append data
                      $('.alm-paging-loading', alm.el).fadeOut(alm.speed); // Fade out loader
                      if ($.isFunction($.fn.almOnPagingComplete)){
@@ -881,6 +897,10 @@
 			               $.fn.almSEO(alm);
 			            } 
                   });
+               } else {
+	               if ($.isFunction($.fn.almSEO) && alm.seo) { // ALM SEO
+		               $.fn.almSEO(alm);
+		            } 
                }              
             }                            
                   
@@ -897,7 +917,7 @@
             
             // ALM Done
             // - If data is returned but it's less than the posts per page.
-            if(alm.data.length < alm.posts_per_page){
+            if(total < alm.posts_per_page){
                if ($.isFunction($.fn.almDone)) {
                   // Delay done until after animation
                   setTimeout(function(){ 
@@ -1079,24 +1099,20 @@
        */
       if (alm.scroll && !alm.paging) {
          alm.window.bind("scroll touchstart", function () {
-            if (alm.AjaxLoadMore.isVisible() && !alm.fetchingPreviousPost) {
-	            	            
+            if (alm.AjaxLoadMore.isVisible() && !alm.fetchingPreviousPost) {	            	            
                var content_offset = alm.button.offset(),
-               	 top = Math.round(content_offset.top - (alm.window.height() - alm.scroll_distance));  
+               	 top = Math.round(content_offset.top - (alm.window.height() - alm.scroll_distance));               
                
-               // Pause Override	 
-	            if(!alm.loading && !alm.finished && (alm.window.scrollTop() >= top) && alm.page < (alm.max_pages - 1) && alm.proceed && alm.pause === 'true' && alm.pause_override === 'true'){
-		            // If Pause && Pause Override
-		            alm.button.trigger('click');               
-                  
+               // If Pause && Pause Override 
+	            if(!alm.loading && !alm.finished && (alm.window.scrollTop() >= top) && alm.page < (alm.max_pages - 1) && alm.proceed && alm.pause === 'true' && alm.pause_override === 'true'){		            
+		            alm.button.trigger('click');                  
 	            }
+	           
 	            // Standard Scroll event 
 	            else{		                       
-	               if (!alm.loading && !alm.finished && (alm.window.scrollTop() >= top) && alm.page < (alm.max_pages - 1) && alm.proceed && alm.pause !== 'true') {  
-		                               
+	               if (!alm.loading && !alm.finished && (alm.window.scrollTop() >= top) && alm.page < (alm.max_pages - 1) && alm.proceed && alm.pause !== 'true') {  		                               
 	                  alm.page++;
-	                  alm.AjaxLoadMore.loadPosts();
-	                  
+	                  alm.AjaxLoadMore.loadPosts();	                  
 	               }
                }               
             }
@@ -1130,10 +1146,10 @@
       
 
 
-      //flag to prevent unnecessary loading of post on init. Hold for 1 second
+      //flag to prevent unnecessary loading of post on init. Hold for 3/10 of a second
       setTimeout(function () {
          alm.proceed = true;
-      }, 500);
+      }, 300);
       
       
       

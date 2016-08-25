@@ -3,8 +3,8 @@ Contributors: dcooney
 Donate link: https://connekthq.com/donate/
 Tags: infinite scroll, scroll, infinite, lazy load, lazy loading, pagination, ajax pagination, ajax, ajax posts, ajax load posts, loop, query, dynamic, shortcode builder, wp_query, search, tags, category, post types, taxonomy, meta_query, archives, date, infinite scrolling, woocommerce
 Requires at least: 3.6
-Tested up to: 4.5.2
-Stable tag: 2.11.1
+Tested up to: 4.6
+Stable tag: 2.11.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -51,7 +51,6 @@ Check out the examples below:
 Ajax Load More accepts a number of parameters that are passed to the WordPress query. These parameters are transferred via shortcode - don't worry, creating  your custom shortcode is simple with the intuitive [Shortcode Builder](https://connekthq.com/plugins/ajax-load-more/screenshots/#shortcode-builder)
  
 *   **repeater** - Choose a repeater template (<a href="https://connekthq.com/plugins/ajax-load-more/custom-repeaters/">Add-on available</a>). Default = ‘default’
-*   **theme_repeater** - Select from a list of template files in your current theme directory (<a href="https://connekthq.com/plugins/ajax-load-more/add-ons/theme-repeaters/">Add-on only</a>). Default = null
 *   **post_type** - Comma separated list of post types. Default = ‘post’
 *   **post_format** - Query by post format. Default = null
 *   **category** - A comma separated list of categories to include by slug. Default = null
@@ -95,17 +94,6 @@ Ajax Load More accepts a number of parameters that are passed to the WordPress q
 *   **button_loading_label** - Update the text of the Load More button while content is loading. Default = null
 *   **container_type** - Override the global Container Type that was set on ALM Settings page. Default = null
 *   **css_classes** - Add custom CSS classes to the Ajax Load More container. Default = null
-*   **cache** - Turn on content caching for the specific Ajax Load More query. <a href="https://connekthq.com/plugins/ajax-load-more/cache/">add-on only</a> - (true/false). Default = ‘false’
-*   **cache_id** - A unique 10 digit ID for the cached query. <a href="https://connekthq.com/plugins/ajax-load-more/cache/">add-on only</a> - Default = A random 10 digit integer
-*   **seo** - Enable address bar URL rewrites as users page through content - <a href="https://connekthq.com/plugins/ajax-load-more/search-engine-optimization/">add-on only</a> (true/false). Default = ‘false’
-*   **preloaded** - Should Ajax Load More preload posts? <a href="https://connekthq.com/plugins/ajax-load-more/preloaded/">add-on only</a> - (true/false). Default = ‘false’
-*   **preloaded_amount** - The amount of posts to preload. <a href="https://connekthq.com/plugins/ajax-load-more/preloaded/">add-on only</a> - Default = ‘5’
-*   **paging** - Replace infinite scrolling with a paged navigation system. <a href="https://connekthq.com/plugins/ajax-load-more/paging/">add-on only</a> (true/false). Default = ‘false’
-*   **paging_controls** - Show previous(«) and next(») buttons (true/false). Default = ‘false’
-*   **paging_classes** - Add classes to the paging navigation menu for CSS styling.
-*   **paging_show_at_most** - Maximum amount of pages to show at a time. 0 = no maximum. Default = ‘0’
-
-
 ***
 
 = Example Shortcode =
@@ -330,10 +318,20 @@ How to install Ajax Load More.
 
 == Changelog ==
 
+= 2.11.2 - August 4, 2016 =
+* SECURITY - Security fix for Custom Repeaters and Theme Repeaters include file path.
+* FIX - Removed duplicate #ajax-load-more id's being generated when using multiple instances. #ajax-load-more will now only be attached to the 1st instance of the shortcode - please update your CSS if you are targeting the #ajax-load-more ID.
+* FIX - Updated code used to split pages with Search Engine Optimization add-on.
+* FIX - Issue where SEO License key input was not displaying for some users.
+* FIX - Issue for double popstate trigger with Paging + SEO add-on.
+* UPDATE - Various code improvements.
+* NEW - Adding functionality for upcoming Call to Actions add-on.
+
+
 = 2.11.1 - May 30, 2016 =
 * SECURITY - Security fix for posts_status parameter. posts_status is now only available for logged in (admin) users. Non logged in users will only have access to view content in a 'publish' state.
 * UPDATE - Added support for preloading comments with the Comments and Preloaded add-ons.
-* Shortcode Builder UI improvments
+* Shortcode Builder UI improvements
 
 
 = 2.11.0 - May 25, 2016 =

@@ -1220,10 +1220,8 @@ function alm_btn_color_callback() {
     $html .= '<option value="default" class="alm-color default" ' . $selected0 .'>Default</option>';
     $html .= '<option value="blue" class="alm-color blue" ' . $selected1 .'>Blue</option>';
     $html .= '<option value="green" class="alm-color green" ' . $selected2 .'>Green</option>';
-    //$html .= '<option value="red" ' . $selected3 .'>Red</option>';
     $html .= '<option value="purple" class="alm-color purple" ' . $selected4 .'>Purple</option>';
     $html .= '<option value="grey" class="alm-color grey" ' . $selected5 .'>Grey</option>';
-    //$html .= '<option value="white" ' . $selected6 .'>White (Button)</option>';
     $html .= '</optgroup>';
     $html .= '<optgroup label="Infinite Scroll (no button)">';
     $html .= '<option value="infinite classic" class="infinite classic" ' . $selected7 .'>Classic</option>';

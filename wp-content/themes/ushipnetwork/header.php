@@ -40,8 +40,8 @@
 	                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#uship_logo_white"></use>
 	                </svg>
 	            </a>
-	            <a class="siteNav-content-simpleHelpLink" target="_blank" href="https://help.uship.com/hc/en-us">
-	                <span class="siteNav-content-simpleHelpLink-text">Help</span>
+	            <a class="siteNav-content-simpleHelpLink" target="_blank" href="<?php the_field('help_link_url', 'option'); ?>">
+	                <span class="siteNav-content-simpleHelpLink-text"><?php the_field('help_link_text', 'option'); ?></span>
 	            </a>
 	            <div class="mobileNav-menu-container">
 	                <a class="mobileNav-menu mobileNavLink js-mobileNav-menu">
@@ -60,36 +60,36 @@
 	                    <symbol id="uship_icon" viewBox="2 2 20 20"><path d="M21.9 14.9L17.1 3c-.2-.6-.8-1-1.5-1-.2 0-.4 0-.6.1L3 7c-.9.3-1.3 1.3-.9 2.1L6.9 21c.2.6.8 1 1.5 1 .2 0 .4 0 .6-.1L21 17c.9-.3 1.3-1.3.9-2.1zM15.7 7c-.1.4-.5 1.1-1.1 1.8-.2.2-.8.7-1.8.9-.6.1-.9.1-1.2.1h-.4c-.1 0-.4.2-.4.4 0 .4.3.7.6.8.2.1 1.8 1.1 2.2 1.5.5.6 1 1.3.9 2.6-.1 1.2-.7 2.3-1.6 2.7-.6.3-1 .4-1.5.5-.1 0-.2.1-.3.1-.3.1-.4.2-.5.3-.1.1-.2.4-.5 1.5l-.1.3-2.3-.7v-.2c.6-2.6.8-3 1.5-3.4.5-.3 1-.4 1.5-.6.3-.1.6-.2.7-.3.1-.1.1-.1.1-.2 0-.2 0-.3-.1-.5-.2-.3-.6-.5-1.1-.8-1.2-.7-1.8-1.4-2-1.9-.4-.6-.5-1.3-.3-2.1.2-1 .7-1.5 1.1-1.9.5-.5 1.1-.7 1.9-.8.4-.1.6-.1.8-.1h.5c.5 0 .6-.1.7-.2 0-.1.2-.3.3-.7l-1.8-.7 4.2-2 2 4.2-2-.6z"></path></symbol>
 	                </svg>
 	                <div class="siteNav-content-mainLinks">
-	                    <a class="siteNav-content-mainLinks-link" href="https://learn.uship.com/">
+	                    <a class="siteNav-content-mainLinks-link" href="<?php the_field('how_it_works_link_url', 'option'); ?>">
 	                        <svg class="siteNav-content-mainLinks-link-icon">
 	                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#uship_icon"></use>
 	                        </svg>
-	                        <span class="siteNav-content-mainLinks-link-text">How It Works</span>
+	                        <span class="siteNav-content-mainLinks-link-text"><?php the_field('how_it_works_link_text', 'option'); ?></span>
 	                    </a>
-	                    <a class="siteNav-content-mainLinks-link" href="https://www.uship.com/find">
+	                    <a class="siteNav-content-mainLinks-link" href="<?php the_field('find_shipments_link_url', 'option'); ?>">
 	                        <svg class="siteNav-content-mainLinks-link-icon">
 	                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#marketplace_icon"></use>
 	                        </svg>
-	                        <span class="siteNav-content-mainLinks-link-text">Find Shipments</span>
+	                        <span class="siteNav-content-mainLinks-link-text"><?php the_field('find_shipments_link_text', 'option'); ?></span>
 	                    </a>
-	                    <a class="siteNav-content-mainLinks-link" href="https://www.uship.com/ship">
+	                    <a class="siteNav-content-mainLinks-link" href="<?php the_field('ship_link_url', 'option'); ?>">
 	                        <svg class="siteNav-content-mainLinks-link-icon">
 	                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ship_icon"></use>
 	                        </svg>
-	                        <span class="siteNav-content-mainLinks-link-text">Ship</span>
+	                        <span class="siteNav-content-mainLinks-link-text"><?php the_field('ship_link_text', 'option'); ?></span>
 	                    </a>
 	                </div>
 	                <div class="siteNav-content-utilityLinks">
-	                    <a class="siteNav-content-utilityLinks-link" href="https://www.uship.com/signin.aspx">
-	                        <span class="siteNav-content-utilityLinks-link-text">Sign In</span>
+	                    <a class="siteNav-content-utilityLinks-link" href="<?php the_field('sign_in_link_url', 'option'); ?>">
+	                        <span class="siteNav-content-utilityLinks-link-text"><?php the_field('sign_in_link_text', 'option'); ?></span>
 	                    </a>
-	                    <a class="siteNav-content-utilityLinks-link" href="https://www.uship.com/register">
-	                        <span class="siteNav-content-utilityLinks-link-text">Join</span>
+	                    <a class="siteNav-content-utilityLinks-link" href="<?php the_field('join_link_url', 'option'); ?>">
+	                        <span class="siteNav-content-utilityLinks-link-text"><?php the_field('join_link_text', 'option'); ?></span>
 	                    </a>
 	                </div>
 	                <div class="siteNav-content-helpLinks">
-	                    <a class="siteNav-content-helpLinks-link" target="_blank" href="https://help.uship.com/hc/en-us">
-	                        <span class="siteNav-content-helpLinks-link-text">Help</span>
+	                    <a class="siteNav-content-helpLinks-link" target="_blank" href="<?php the_field('help_link_url', 'option'); ?>">
+	                        <span class="siteNav-content-helpLinks-link-text"><?php the_field('help_link_text', 'option'); ?></span>
 	                    </a>
 	                </div>
 	                <div class="siteNav-content-footerLinks">
@@ -102,23 +102,23 @@
 	                        </svg>
 	                        <div class="topRow">
 	                            <div class="footer-companyInfo">
-	                                <a class="footer-companyInfo-link" href="https://about.uship.com/">Company</a>
-	                                <a class="footer-companyInfo-link" href="https://about.uship.com/careers/">Careers </a>
-	                                <a class="footer-companyInfo-link" href="https://about.uship.com/press/">Press</a>
-	                                <a class="footer-companyInfo-link" href="https://blog.uship.com/">Blog</a>
-	                                <a class="footer-companyInfo-link" href="https://www.uship.com/categories">Categories</a>
+	                                <a class="footer-companyInfo-link" href="<?php the_field('company_link_url', 'option'); ?>"><?php the_field('company_link_text', 'option'); ?></a>
+	                                <a class="footer-companyInfo-link" href="<?php the_field('careers_link_url', 'option'); ?>"><?php the_field('careers_link_text', 'option'); ?></a>
+	                                <a class="footer-companyInfo-link" href="<?php the_field('press_link_url', 'option'); ?>"><?php the_field('press_link_text', 'option'); ?></a>
+	                                <a class="footer-companyInfo-link" href="<?php the_field('blog_link_url', 'option'); ?>"><?php the_field('blog_link_text', 'option'); ?></a>
+	                                <a class="footer-companyInfo-link" href="<?php the_field('categories_link_url', 'option'); ?>"><?php the_field('categories_link_text', 'option'); ?></a>
 	                            </div>
 	                            <div class="footer-socialMediaIcons">
-	                                <a class="footer-socialMediaIcons-link" href="https://www.facebook.com/uShip/" target="_blank">
+	                                <a class="footer-socialMediaIcons-link" href="<?php the_field('facebook_link_url', 'option'); ?>" target="_blank">
 	                                    <svg class="footer-socialMediaIcons-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svgicon-facebook_icon"></use></svg>
 	                                </a>
-	                                <a class="footer-socialMediaIcons-link" href="https://twitter.com/uShip" target="_blank">
+	                                <a class="footer-socialMediaIcons-link" href="<?php the_field('twitter_link_url', 'option'); ?>" target="_blank">
 	                                    <svg class="footer-socialMediaIcons-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svgicon-twitter_icon"></use></svg>
 	                                </a>
-	                                <a class="footer-socialMediaIcons-link" href="https://www.youtube.com/user/uShipVideo" target="_blank">
+	                                <a class="footer-socialMediaIcons-link" href="<?php the_field('youtube_link_url', 'option'); ?>" target="_blank">
 	                                    <svg class="footer-socialMediaIcons-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svgicon-youtube_icon"></use></svg>
 	                                </a>
-	                                <a class="footer-socialMediaIcons-link" href="https://www.linkedin.com/groups/2349367/profile" target="_blank">
+	                                <a class="footer-socialMediaIcons-link" href="<?php the_field('linkedin_link_url', 'option'); ?>" target="_blank">
 	                                    <svg class="footer-socialMediaIcons-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svgicon-linkedin_icon"></use></svg>
 	                                </a>
 	                            </div>
@@ -126,19 +126,19 @@
 	                        <div class="bottomRow">
 	                            <div class="footer-copyrightTerms">
 	                                <div class="footer-copyright">
-	                                    Copyright © 2016, uShip Inc. and its licensors. All rights reserved.
+	                                    <?php the_field('copyright_text', 'option'); ?>
 	                                </div>
 	                                <div class="footer-terms">
-	                                    <a class="footer-terms-link" href="https://www.uship.com/user_agreement.aspx">uShip User Agreement</a>
-	                                    <a class="footer-terms-link" href="https://www.uship.com/privacy.aspx">Privacy Policy</a>
-	                                    <a class="footer-terms-link" href="https://www.uship.com/sitemap.aspx">Site Map</a>
+	                                    <a class="footer-terms-link" href="<?php the_field('user_agreement_link_url', 'option'); ?>"><?php the_field('user_agreement_link_text', 'option'); ?></a>
+	                                    <a class="footer-terms-link" href="<?php the_field('privacy_policy_link_url', 'option'); ?>"><?php the_field('privacy_policy_link_text', 'option'); ?></a>
+	                                    <a class="footer-terms-link" href="<?php the_field('site_map_link_url', 'option'); ?>"><?php the_field('site_map_link_text', 'option'); ?></a>
 	                                </div>
 	                            </div>
 	                            <div class="footer-mobileAppBadges">
-	                                <a class="footer-mobileAppBadges-badge" href="https://itunes.apple.com/us/app/uship-for-iphone/id457045275" target="_blank">
+	                                <a class="footer-mobileAppBadges-badge" href="<?php the_field('app_store_link_url', 'option'); ?>" target="_blank">
 	                                    <img class="mobileAppBadge-image" src="//t.ushipcdn.com/images/logos/apple-badge.en.svg?t=5.636027927110000000 " alt=" uship on the app store">
 	                                </a>
-	                                <a class="footer-mobileAppBadges-badge" href="https://play.google.com/store/apps/details?id=com.unwirednation.notifications.android.ushipnew" target="_blank">
+	                                <a class="footer-mobileAppBadges-badge" href="<?php the_field('google_play_link_url', 'option'); ?>" target="_blank">
 	                                    <img class="mobileAppBadge-image" src="//t.ushipcdn.com/images/logos/google-play-badge.en.svg?t=5.636027927110000000" alt="uShip on the Google Play Store">
 	                                </a>
 	                            </div>
