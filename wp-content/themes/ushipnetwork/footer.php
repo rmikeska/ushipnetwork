@@ -57,10 +57,10 @@
                   </div>
                   <div class="footer-mobileAppBadges">
                       <a class="footer-mobileAppBadges-badge" href="<?php the_field('app_store_link_url', 'option'); ?>" target="_blank">
-                          <img class="mobileAppBadge-image" src="//t.ushipcdn.com/images/logos/apple-badge.en.svg?t=5.636027927110000000 " alt=" uship on the app store">
+                          <img class="mobileAppBadge-image" src="<?php the_field('app_store_image_url', 'option'); ?>" alt=" uship on the app store">
                       </a>
                       <a class="footer-mobileAppBadges-badge" href="<?php the_field('google_play_link_url', 'option'); ?>" target="_blank">
-                          <img class="mobileAppBadge-image" src="//t.ushipcdn.com/images/logos/google-play-badge.en.svg?t=5.636027927110000000" alt="uShip on the Google Play Store">
+                          <img class="mobileAppBadge-image" src="<?php the_field('google_play_image_url', 'option'); ?>" alt="uShip on the Google Play Store">
                       </a>
                   </div>
               </div>

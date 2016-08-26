@@ -668,6 +668,25 @@
             "maxlength": ""
         },
         {
+            "key": "field_57c072e2336b7",
+            "label": "App Store Image URL",
+            "name": "app_store_image_url",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "\/wp-content\/themes\/ushipnetwork\/images\/logos\/badges\/apple-badge.en.svg",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_57bf1ce751e6e",
             "label": "Google Play Link URL",
             "name": "google_play_link_url",
@@ -681,6 +700,25 @@
                 "id": ""
             },
             "default_value": "https:\/\/play.google.com\/store\/apps\/details?id=com.unwirednation.notifications.android.ushipnew",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_57c073c0336b8",
+            "label": "Google Play Image URL",
+            "name": "google_play_image_url",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "\/wp-content\/themes\/ushipnetwork\/images\/logos\/badges\/google-play-badge.en.svg",
             "placeholder": "",
             "prepend": "",
             "append": "",
@@ -704,5 +742,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1472142617
+    "modified": 1472230440
 }
