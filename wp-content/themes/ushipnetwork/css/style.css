@@ -4220,6 +4220,7 @@ body.page-template-contact {
   background-color: #F4F4F4; }
 
 .slantedMap-copy-intro {
+  display: flex;
   padding-bottom: 18px;
   margin-bottom: 24px;
   font-size: 24px;
@@ -4233,6 +4234,13 @@ body.page-template-contact {
   margin-left: 0;
   padding-right: 0;
   list-style-type: none; }
+
+.slantedMap-copy-block-text ul {
+  list-style: initial;
+  margin-left: 15px; }
+
+.slantedMap-copy-block-text ul li {
+  padding-bottom: 20px; }
 
 .slantedMap-copy-block-text ol li {
   counter-increment: step-counter; }
@@ -4271,6 +4279,16 @@ body.page-template-contact {
 
 .slantedMap-cta {
   margin-left: 0; }
+
+.introNumber {
+  width: 25px;
+  height: 25px;
+  padding: 5px 8px;
+  margin-right: 12px;
+  font-size: 15px;
+  border-radius: 50%;
+  color: #FFFFFF;
+  background: #262626; }
 
 /*** Strip Copy Callout ***/
 .stripCopyCallout-container {

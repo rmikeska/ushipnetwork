@@ -166,6 +166,7 @@
 }
 
 .slantedMap-copy-intro {
+  display: flex;
   padding-bottom: 18px;
   margin-bottom: 24px;
   font-size: 24px;
@@ -181,6 +182,15 @@
   margin-left: 0;
   padding-right: 0;
   list-style-type: none;
+}
+
+.slantedMap-copy-block-text ul {
+  list-style: initial;
+  margin-left: $section-padding;
+}
+
+.slantedMap-copy-block-text ul li {
+  padding-bottom: 20px;
 }
 
 .slantedMap-copy-block-text ol li {
@@ -229,4 +239,15 @@
 
 .slantedMap-cta {
   margin-left: 0;
+}
+
+.introNumber {
+  width: 25px;
+  height: 25px;
+  padding: 5px 8px;
+  margin-right: 12px;
+  font-size: 15px;
+  border-radius: 50%;
+  color: $white;
+  background: $dark-gray;
 }
