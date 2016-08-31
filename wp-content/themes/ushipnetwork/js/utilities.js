@@ -1,12 +1,5 @@
 jQuery(document).ready(function ($) {
 
-    // Page content padding if secondary nav exists
-    if ($('.secondary-menu').length > 0) {
-        $('.pageContent').addClass('subNavPush');
-    }
-
-
-
     // Blog Show/Hide Post Thumbnails
     $('.postThumb').hide().each(function (i) {
         $(this).delay((i++) * 100).fadeTo(300, 1);
@@ -100,7 +93,7 @@ jQuery(document).ready(function ($) {
 
     $('.modal').on($.modal.CLOSE, function (event, modal) {
         $('.pageWrapper').find('a, button, object, input, select, textarea').removeAttr('tabindex');
-        $('.pageContent a:first').focus();
+        $('main a:first').focus();
     });
 
 
@@ -144,4 +137,13 @@ jQuery(document).ready(function ($) {
             }
         });
     },  3000);
+
+
+
+    // Add .active class to How it Works nav item when on prod and staging Learn sites
+    $(function () {
+        if ((window.location.hostname === 'learn.uship.com') || (window.location.hostname === 'ushiplearn.wpengine.com') || (window.location.hostname === 'ushiplearn.staging.wpengine.com')) {
+            $('.siteNav-links .siteNav-link:first-of-type .siteNav-linkText').addClass('active');
+        }
+    });
 })

@@ -57,24 +57,11 @@ hr {
   height: 100%;
 }
 
-.pageContent {
+main {
   flex: 1 0 auto;
-  padding-top: 80px;
   width: 100%;
   display: flex;
   flex-direction: column;
-
-  @media #{$default-break} {
-    padding-top: 64px;
-  }
-}
-
-.pageContent.subNavPush {
-  padding-top: 140px;
-
-  @media #{$default-break} {
-    padding-top: 64px;
-  }
 }
 
 .sectionWhite {
@@ -222,20 +209,9 @@ hr {
   fill: $button-hover-focus;
 }
 
-/*** Override some styles in the DLS Header/Footer ***/
-
-.footer-countryChanger {
+// Hide desktop footer on split sreen template
+.page-template-split-screen #uship-footer {
   display: none;
-}
-
-.page-template-split-screen .footerDisplay {
-  display: none;
-}
-
-@media screen and (max-width: 750px) {
-  .footerDisplay {
-      display: none !important;
-  }
 }
 
 /*** Special case styles on a page by page basis. These things need to be worked into module options ***/

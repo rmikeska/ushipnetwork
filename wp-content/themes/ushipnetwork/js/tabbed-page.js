@@ -62,7 +62,7 @@ jQuery(document).ready(function ($) {
 
         $('.tabbedPageWrapper .bookend-link').click(function () {
             $('html, body').animate({
-                scrollTop: $('.tabbedPageMenu').offset().top - $('.dls-header').height()
+                scrollTop: $('.tabbedPageMenu').offset().top - $('#uship-header').height()
             }, 0);
         });
 
