@@ -2073,7 +2073,7 @@ a.footer-buttonContainer-button:hover,
     margin: 0;
     padding-top: 27px; } }
 /*** Base ***/
-body, main, footer, header#uship-header, .pageWrapper {
+body, main, footer, header, .pageWrapper {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
