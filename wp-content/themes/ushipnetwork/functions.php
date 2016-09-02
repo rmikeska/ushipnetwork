@@ -236,7 +236,7 @@ add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
  */
 function add_googleanalytics() {
 
-	$currentsite = get_home_url();
+	$currentsite = network_site_url();
 
   switch ($currentsite) {
     case 'https://about.uship.com':
@@ -299,3 +299,23 @@ if( function_exists('acf_add_options_page') ) {
   ));
 
 }
+
+/**
+ * Remove capabilities from editors
+ */
+function wpcodex_set_capabilities() {
+
+  // Get the role object.
+  $editor = get_role( 'editor' );
+
+  // A list of capabilities to remove from editors.
+  $caps = array(
+    'manage_categories'
+  );
+
+  foreach ( $caps as $cap ) {
+    // Remove the capability.
+    $editor->remove_cap( $cap );
+  }
+}
+add_action( 'init', 'wpcodex_set_capabilities' );

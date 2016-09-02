@@ -24,6 +24,10 @@ ul#secondary-menu {
     height: 100%;
     text-align: center;
 
+    &:not(:first-child) a:hover {
+      color: $bright-blue;
+    }
+
     a {
       display: table-cell;
       vertical-align: middle;
@@ -37,10 +41,6 @@ ul#secondary-menu {
       letter-spacing: 0.025rem;
       text-transform: uppercase;
       transition: $default-transition;
-
-      &:hover {
-        color: $bright-blue;
-      }
     }
   }
 }

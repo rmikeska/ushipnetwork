@@ -1096,6 +1096,9 @@ a.siteNav-userProfile-link {
     height: 80px;
     width: 100%; }
 
+  .siteNav-splitLinks .siteNav-linkText {
+    padding-left: 0; }
+
   .siteNav {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2902,6 +2905,8 @@ ul#secondary-menu {
     display: table;
     height: 100%;
     text-align: center; }
+    ul#secondary-menu li:not(:first-child) a:hover {
+      color: #02AAF3; }
     ul#secondary-menu li a {
       display: table-cell;
       vertical-align: middle;
@@ -2915,8 +2920,6 @@ ul#secondary-menu {
       letter-spacing: 0.025rem;
       text-transform: uppercase;
       transition: all 0.15s ease-in-out; }
-      ul#secondary-menu li a:hover {
-        color: #02AAF3; }
 
 .secondary-menu .external-menu-link {
   position: absolute;
