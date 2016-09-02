@@ -232,11 +232,11 @@ function wpdocs_excerpt_more( $more ) {
 add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
 
 /**
- * Add Google Analytics Tracking Code By home_url()
+ * Add Google Analytics Tracking Code by Network
  */
 function add_googleanalytics() {
 
-	$currentsite = get_site_url();
+	$currentsite = get_bloginfo('url');
 
   switch ($currentsite) {
     case 'https://about.uship.com':
