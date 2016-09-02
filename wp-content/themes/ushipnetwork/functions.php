@@ -239,7 +239,7 @@ function add_googleanalytics() {
 	$currentsite = network_home_url();
 
   switch ($currentsite) {
-    case 'https://ushipabout2.staging.uship.com':
+    case 'https://ushipabout2.staging.wpengine.com':
       ?>
       <!-- Google Analytics -->
       <script>
