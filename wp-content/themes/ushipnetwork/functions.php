@@ -236,7 +236,7 @@ add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
  */
 function add_googleanalytics() {
 
-	$currentsite = network_home_url();
+	$currentsite = get_bloginfo('wpurl');
 
   switch ($currentsite) {
     case 'https://ushipabout2.staging.wpengine.com':
