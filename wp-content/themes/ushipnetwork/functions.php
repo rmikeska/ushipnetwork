@@ -232,49 +232,57 @@ function wpdocs_excerpt_more( $more ) {
 add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
 
 /**
- * Add Google Analytics Tracking Code by Network
+ * Add Google Analytics Tracking Code By home_url()
  */
 function add_googleanalytics() {
 
-  if ( network_site_url('https://about.uship.com') ) {
-    ?>
-    <!-- Google Analytics -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	$currentsite = get_home_url();
 
-      ga('create', 'UA-215948-47', 'auto');
-      ga('send', 'pageview');
-    </script>
-    <?php
-  } elseif ( network_site_url('https://learn.uship.com') ) {
-    ?>
-    <!-- Google Analytics -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  switch ($currentsite) {
+    case 'https://about.uship.com':
+      ?>
+      <!-- Google Analytics -->
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-215948-48', 'auto');
-      ga('send', 'pageview');
-    </script>
-    <?php
-  } elseif ( network_site_url('https://blog.uship.com') ) {
-    ?>
-    <!-- Google Analytics -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-215948-47', 'auto');
+        ga('send', 'pageview');
+      </script>
+      <?php
+      break;
+    case 'https://learn.uship.com':
+      ?>
+      <!-- Google Analytics -->
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-215948-10', 'auto');
-      ga('send', 'pageview');
-    </script>
-    <?php
+        ga('create', 'UA-215948-48', 'auto');
+        ga('send', 'pageview');
+      </script>
+      <?php
+      break;
+    case 'https://blog.uship.com':
+      ?>
+      <!-- Google Analytics -->
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-215948-10', 'auto');
+        ga('send', 'pageview');
+      </script>
+      <?php
+      break;
+    default:
+      break;
   }
 }
 add_action('wp_footer', 'add_googleanalytics');
