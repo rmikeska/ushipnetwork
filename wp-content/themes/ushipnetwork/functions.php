@@ -236,7 +236,7 @@ add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
  */
 function add_googleanalytics() {
 
-	$currentsite = network_site_url();
+	$currentsite = get_site_url();
 
   switch ($currentsite) {
     case 'https://about.uship.com':
