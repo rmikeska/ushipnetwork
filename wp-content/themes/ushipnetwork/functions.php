@@ -236,9 +236,17 @@ add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
  */
 function add_googleanalytics() {
 
-	$currentsite = get_bloginfo('url');
+	$currentsite = network_home_url();
 
   switch ($currentsite) {
+    case 'https://ushipabout2.staging.uship.com':
+      ?>
+      <!-- Google Analytics -->
+      <script>
+      // Did it work?
+      </script>
+      <?php
+      break;
     case 'https://about.uship.com':
       ?>
       <!-- Google Analytics -->
