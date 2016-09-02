@@ -241,7 +241,7 @@ function add_googleanalytics() {
   echo $currentsite;
 
   switch ($currentsite) {
-    case 'http://ushipabout2.staging.wpengine.com':
+    case 'http://ushipabout2.staging.wpengine.com/':
       ?>
       <!-- Google Analytics -->
       <script>
