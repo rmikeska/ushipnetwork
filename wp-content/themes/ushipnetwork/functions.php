@@ -236,14 +236,7 @@ add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
  */
 function add_googleanalytics() {
 
-  if ( network_site_url('https://ushipabout2.staging.wpengine.com') ) {
-    ?>
-    <!-- Google Analytics -->
-    <script>
-    // Did it work?
-    </script>
-    <?php
-  } elseif ( network_site_url('https://about.uship.com') ) {
+  if ( network_site_url('https://about.uship.com') ) {
     ?>
     <!-- Google Analytics -->
     <script>
