@@ -65,7 +65,7 @@
 		      'post__not_in' => array($post->ID),
 		      'posts_per_page'=> 3, // Number of related posts that will be displayed.
 		      'ignore_sticky_posts'=>1,
-		      'orderby'=>'rand' // Randomize the posts
+		      'orderby'=>'date' // Show most recent posts
 		    );
 		    $my_query = new wp_query( $args );
 		    if( $my_query->have_posts() ) {
