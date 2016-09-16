@@ -46,6 +46,7 @@ function ushipnetwork_setup() {
 	set_post_thumbnail_size( 300, 200, true );
 	add_image_size( 'post-thumb', 300, 200, true );
 	add_image_size( 'post-feature', 790, 526, true );
+  add_image_size( 'testimonials-thumb', 380, 254, true );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(

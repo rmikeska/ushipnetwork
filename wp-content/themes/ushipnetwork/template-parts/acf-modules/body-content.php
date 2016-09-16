@@ -52,6 +52,10 @@
 
       <?php include("video.php");?>
 
+    <?php elseif (get_row_layout() == 'value_props'): ?>
+
+      <?php include("value-props.php");?>
+
     <?php endif; ?>
   <?php endwhile; ?>
 <?php endif; ?>

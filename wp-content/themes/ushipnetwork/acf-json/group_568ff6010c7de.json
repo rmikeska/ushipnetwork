@@ -50,7 +50,8 @@
                             "ajax": 0,
                             "placeholder": "",
                             "disabled": 0,
-                            "readonly": 0
+                            "readonly": 0,
+                            "return_format": "value"
                         },
                         {
                             "key": "field_568ff601465bd",
@@ -412,7 +413,8 @@
                                     "ajax": 0,
                                     "placeholder": "",
                                     "disabled": 0,
-                                    "readonly": 0
+                                    "readonly": 0,
+                                    "return_format": "value"
                                 },
                                 {
                                     "key": "field_571f8115135eb",
@@ -479,7 +481,8 @@
                                     "ajax": 0,
                                     "placeholder": "",
                                     "disabled": 0,
-                                    "readonly": 0
+                                    "readonly": 0,
+                                    "return_format": "value"
                                 },
                                 {
                                     "key": "field_571f81e61c426",
@@ -511,7 +514,7 @@
                             "type": "repeater",
                             "instructions": "Optional.",
                             "required": 0,
-                            "conditional_logic": "",
+                            "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
                                 "class": "",
@@ -587,6 +590,129 @@
                                     "disabled": 0
                                 }
                             ]
+                        },
+                        {
+                            "key": "field_57d9c41e5fdb8",
+                            "label": "Co-branded Strip",
+                            "name": "hero_cobranded_strip",
+                            "type": "repeater",
+                            "instructions": "Optional.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": "",
+                            "max": 1,
+                            "layout": "table",
+                            "button_label": "Add Row",
+                            "sub_fields": [
+                                {
+                                    "key": "field_57d9d443180bb",
+                                    "label": "Co-branded Strip Content",
+                                    "name": "hero_cobranded_strip_content",
+                                    "type": "repeater",
+                                    "instructions": "Add up to two co-branded logos.",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "collapsed": "",
+                                    "min": "",
+                                    "max": 2,
+                                    "layout": "table",
+                                    "button_label": "Add Row",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_57d9d46d180bc",
+                                            "label": "Logo Image",
+                                            "name": "hero_cobranded_strip_image",
+                                            "type": "image",
+                                            "instructions": "",
+                                            "required": 1,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "return_format": "array",
+                                            "preview_size": "thumbnail",
+                                            "library": "all",
+                                            "min_width": "",
+                                            "min_height": "",
+                                            "min_size": "",
+                                            "max_width": "",
+                                            "max_height": "",
+                                            "max_size": "",
+                                            "mime_types": ""
+                                        },
+                                        {
+                                            "key": "field_57dac7299d686",
+                                            "label": "Logo Height",
+                                            "name": "hero_cobranded_strip_image_height",
+                                            "type": "text",
+                                            "instructions": "Enter the desired image height in \"px\". Default is 40px.",
+                                            "required": 1,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "40px",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        },
+                                        {
+                                            "key": "field_57dadcaf5d912",
+                                            "label": "Logo Caption",
+                                            "name": "hero_cobranded_strip_caption",
+                                            "type": "text",
+                                            "instructions": "Optional. This adds a small caption to the left of the logo. EX: \"Powered by\".",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        },
+                                        {
+                                            "key": "field_57d9d48e180bd",
+                                            "label": "Logo Link",
+                                            "name": "hero_cobranded_strip_url",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 1,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ],
                     "min": "",
@@ -626,6 +752,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "local": "php",
-    "modified": 1469741817
+    "modified": 1473961361
 }

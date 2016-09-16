@@ -1,11 +1,14 @@
 /*** Hero ***/
 
 .hero {
+  position: relative;
   @include background-image;
   width: 100%;
   text-align: center;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero.heroSmall {
@@ -99,4 +102,51 @@
 .hero .tertiaryCallout-container {
   padding-top: 80px;
   padding-bottom: 0;
+}
+
+.cobrandedStrip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $light-grey;
+  width: 100%;
+  padding: 25px $section-padding;
+  margin-bottom: 30px;
+
+  @media #{$default-break} {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.cobrandedStrip-logo {
+  margin: 0 10px;
+}
+
+.cobrandedStrip-logo-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+  @media #{$default-break} {
+    // max-width: 80%;
+  }
+
+  &:first-of-type {
+    margin-right: 30px;
+  }
+}
+
+.hero.cobrandedPush {
+  justify-content: flex-start;
+}
+
+.cobrandedStrip-caption {
+  font-size: 14px;
+  color: $medium-gray;
+
+  @media #{$default-break} {
+    font-size: 10px;
+  }
 }

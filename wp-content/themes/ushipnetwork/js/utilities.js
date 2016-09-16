@@ -146,4 +146,13 @@ jQuery(document).ready(function ($) {
             $('.siteNav-links .siteNav-link:first-of-type .siteNav-linkText').addClass('active');
         }
     });
+
+
+
+    // Add class to hero if co-branded strip is present
+    $('.hero').each(function () {
+        if ($(this).children('.cobrandedStrip').length > 0) {
+            $(this).addClass('cobrandedPush');
+        }
+    });
 })

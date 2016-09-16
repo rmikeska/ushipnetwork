@@ -2,6 +2,20 @@
 <?php $hero_image = get_sub_field('hero_image'); ?>
 
 <section class="hero <?php echo $hero_size; ?>" style="background-image: url('<?php echo $hero_image['url']; ?>');">
+  <?php while(have_rows('hero_cobranded_strip')): the_row(); ?>
+    <div class="cobrandedStrip">
+      <?php while(have_rows('hero_cobranded_strip_content')): the_row(); ?>
+        <?php $hero_cobranded_strip_image = get_sub_field('hero_cobranded_strip_image'); ?>
+        <?php $hero_cobranded_strip_url = get_sub_field('hero_cobranded_strip_url'); ?>
+        <?php $hero_cobranded_strip_image_height = get_sub_field('hero_cobranded_strip_image_height'); ?>
+        <?php $hero_cobranded_strip_caption = get_sub_field('hero_cobranded_strip_caption'); ?>
+        <span class="cobrandedStrip-caption"><?php echo $hero_cobranded_strip_caption; ?></span>
+        <a class="cobrandedStrip-logo" href="<?php echo $hero_cobranded_strip_url; ?>">
+          <img class="cobrandedStrip-logo-image" style="max-height: <?php echo $hero_cobranded_strip_image_height; ?>;" src="<?php echo $hero_cobranded_strip_image['url']; ?>">
+        </a>
+      <?php endwhile; ?>
+    </div>
+  <?php endwhile; ?>
   <div class="hero-container">
     <h1 class="hero-headline"><?php the_sub_field('hero_headline'); ?></h1>
     <?php if(get_sub_field('hero_subheadline')): ?>

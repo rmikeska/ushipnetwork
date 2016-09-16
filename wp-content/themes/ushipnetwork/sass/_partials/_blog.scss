@@ -96,7 +96,14 @@
 }
 
 .post-featureImage-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  min-width: 300px;
+  min-height: 200px;
+
+  @media #{$default-break} {
+    min-width: 290px;
+  }
 }
 
 .post-featureImage {
@@ -107,7 +114,7 @@
 
   @media #{$default-break} {
     max-width: 290px;
-    min-width: 290px;
+    // min-width: 290px; Can't remember why I had this. Seems to be problematic for small feature images.
   }
 }
 

@@ -10,16 +10,22 @@
     <?php endif; ?>
     <div class="testimonials-row">
     <?php while(have_rows('testimonials_content')): the_row(); ?>
-      <?php $testimonials_image = get_sub_field('testimonials_image'); ?>
       <div class="testimonials-block">
         <?php if(get_sub_field('testimonials_image')): ?>
-        <img class="testimonials-image" src="<?php echo $testimonials_image['url']; ?>">
+          <?php $testimonials_image_object = get_sub_field('testimonials_image'); ?>
+          <?php $testimonials_image_size = 'testimonials-thumb'; ?>
+          <?php $testimonials_image_url = $testimonials_image_object['sizes'][$testimonials_image_size]; ?>
+          <img class="testimonials-image" src="<?php echo $testimonials_image_url; ?>">
         <?php endif; ?>
         <div class="testimonials-text"><?php the_sub_field('testimonials_text'); ?></div>
         <p class="testimonials-source"><?php the_sub_field('testimonials_source'); ?></p>
         <?php if(get_sub_field('testimonials_category')): ?>
         <p class="testimonials-category"><?php the_sub_field('testimonials_category'); ?></p>
         <?php endif; ?>
+        <?php while(have_rows('testimonials_tertiary_callout')): the_row(); ?>
+          <?php $testimonials_tertiary_url = get_sub_field('testimonials_tertiary_callout_url'); ?>
+          <a class="tertiaryLink tertiaryLinkDark" role="button" href="<?php echo $testimonials_tertiary_url; ?>"><?php the_sub_field('testimonials_tertiary_callout_text'); ?><?php include( get_template_directory() . '/images/arrow_link.svg'); ?></a>
+        <?php endwhile; ?>
       </div>
     <?php endwhile; ?>
     </div>
