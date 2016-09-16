@@ -3890,9 +3890,14 @@ body.page-template-contact {
 .cobrandedStrip-logo-image {
   display: block;
   max-width: 100%;
-  height: auto; }
-  .cobrandedStrip-logo-image:first-of-type {
-    margin-right: 30px; }
+  height: auto;
+  margin: 0 auto; }
+
+.cobrandedStrip-container {
+  display: flex;
+  align-items: center; }
+  .cobrandedStrip-container:nth-of-type(2n) {
+    margin-left: 45px; }
 
 .hero.cobrandedPush {
   justify-content: flex-start; }

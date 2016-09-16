@@ -9,10 +9,12 @@
         <?php $hero_cobranded_strip_url = get_sub_field('hero_cobranded_strip_url'); ?>
         <?php $hero_cobranded_strip_image_height = get_sub_field('hero_cobranded_strip_image_height'); ?>
         <?php $hero_cobranded_strip_caption = get_sub_field('hero_cobranded_strip_caption'); ?>
-        <span class="cobrandedStrip-caption"><?php echo $hero_cobranded_strip_caption; ?></span>
-        <a class="cobrandedStrip-logo" href="<?php echo $hero_cobranded_strip_url; ?>">
-          <img class="cobrandedStrip-logo-image" style="max-height: <?php echo $hero_cobranded_strip_image_height; ?>;" src="<?php echo $hero_cobranded_strip_image['url']; ?>">
-        </a>
+        <div class="cobrandedStrip-container">
+          <span class="cobrandedStrip-caption"><?php echo $hero_cobranded_strip_caption; ?></span>
+          <a class="cobrandedStrip-logo" href="<?php echo $hero_cobranded_strip_url; ?>">
+            <img class="cobrandedStrip-logo-image" style="max-height: <?php echo $hero_cobranded_strip_image_height; ?>;" src="<?php echo $hero_cobranded_strip_image['url']; ?>">
+          </a>
+        </div>
       <?php endwhile; ?>
     </div>
   <?php endwhile; ?>

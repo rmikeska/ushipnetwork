@@ -128,13 +128,19 @@
   display: block;
   max-width: 100%;
   height: auto;
+  margin: 0 auto;
 
-  @media #{$default-break} {
-    // max-width: 80%;
-  }
+  // @media #{$default-break} {
+  //   max-width: 60%;
+  // }
+}
 
-  &:first-of-type {
-    margin-right: 30px;
+.cobrandedStrip-container {
+  display: flex;
+  align-items: center;
+
+  &:nth-of-type(2n) {
+    margin-left: 45px;
   }
 }
 

@@ -4046,9 +4046,18 @@ body.page-template-contact {
 .cobrandedStrip-logo-image {
   display: block;
   max-width: 100%;
-  height: auto; }
-  .cobrandedStrip-logo-image:first-of-type {
-    margin-right: 30px; }
+  height: auto;
+  margin: 0 auto; }
+
+.cobrandedStrip-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .cobrandedStrip-container:nth-of-type(2n) {
+    margin-left: 45px; }
 
 .hero.cobrandedPush {
   -webkit-justify-content: flex-start;
