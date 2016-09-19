@@ -174,7 +174,8 @@
                             "ajax": 0,
                             "placeholder": "",
                             "disabled": 0,
-                            "readonly": 0
+                            "readonly": 0,
+                            "return_format": "value"
                         },
                         {
                             "key": "field_56e02d044ec14",
@@ -200,7 +201,8 @@
                             "ajax": 0,
                             "placeholder": "",
                             "disabled": 0,
-                            "readonly": 0
+                            "readonly": 0,
+                            "return_format": "value"
                         },
                         {
                             "key": "field_56e02d044ec15",
@@ -250,7 +252,8 @@
                             "ajax": 0,
                             "placeholder": "",
                             "disabled": 0,
-                            "readonly": 0
+                            "readonly": 0,
+                            "return_format": "value"
                         },
                         {
                             "key": "field_56e02d044ec17",
@@ -277,7 +280,8 @@
                             "ajax": 0,
                             "placeholder": "",
                             "disabled": 0,
-                            "readonly": 0
+                            "readonly": 0,
+                            "return_format": "value"
                         },
                         {
                             "key": "field_56e02d044ec18",
@@ -626,7 +630,8 @@
                                     "ajax": 0,
                                     "placeholder": "",
                                     "disabled": 0,
-                                    "readonly": 0
+                                    "readonly": 0,
+                                    "return_format": "value"
                                 },
                                 {
                                     "key": "field_56f18a3947476",
@@ -704,7 +709,8 @@
                             "ajax": 0,
                             "placeholder": "",
                             "disabled": 0,
-                            "readonly": 0
+                            "readonly": 0,
+                            "return_format": "value"
                         },
                         {
                             "key": "field_5706635af69ec",
@@ -762,7 +768,7 @@
                                 "id": ""
                             },
                             "collapsed": "",
-                            "min": 3,
+                            "min": 1,
                             "max": 3,
                             "layout": "table",
                             "button_label": "Add Row",
@@ -1497,7 +1503,8 @@
                             "ajax": 0,
                             "placeholder": "",
                             "disabled": 0,
-                            "readonly": 0
+                            "readonly": 0,
+                            "return_format": "value"
                         },
                         {
                             "key": "field_5723bbe2834d0",
@@ -1523,7 +1530,8 @@
                             "ajax": 0,
                             "placeholder": "",
                             "disabled": 0,
-                            "readonly": 0
+                            "readonly": 0,
+                            "return_format": "value"
                         },
                         {
                             "key": "field_5723bbe2834d1",
@@ -1573,7 +1581,8 @@
                             "ajax": 0,
                             "placeholder": "",
                             "disabled": 0,
-                            "readonly": 0
+                            "readonly": 0,
+                            "return_format": "value"
                         },
                         {
                             "key": "field_5723bbe2834d3",
@@ -1600,7 +1609,8 @@
                             "ajax": 0,
                             "placeholder": "",
                             "disabled": 0,
-                            "readonly": 0
+                            "readonly": 0,
+                            "return_format": "value"
                         },
                         {
                             "key": "field_5723bbe2834d4",
@@ -1949,7 +1959,8 @@
                                     "ajax": 0,
                                     "placeholder": "",
                                     "disabled": 0,
-                                    "readonly": 0
+                                    "readonly": 0,
+                                    "return_format": "value"
                                 },
                                 {
                                     "key": "field_5723bbe2834e2",
@@ -2027,7 +2038,8 @@
                             "ajax": 0,
                             "placeholder": "",
                             "disabled": 0,
-                            "readonly": 0
+                            "readonly": 0,
+                            "return_format": "value"
                         },
                         {
                             "key": "field_5723bbe2834e5",
@@ -2085,7 +2097,7 @@
                                 "id": ""
                             },
                             "collapsed": "",
-                            "min": 3,
+                            "min": 1,
                             "max": 3,
                             "layout": "table",
                             "button_label": "Add Row",
@@ -2820,7 +2832,8 @@
                             "ajax": 0,
                             "placeholder": "",
                             "disabled": 0,
-                            "readonly": 0
+                            "readonly": 0,
+                            "return_format": "value"
                         },
                         {
                             "key": "field_5723bbf5932d8",
@@ -2846,7 +2859,8 @@
                             "ajax": 0,
                             "placeholder": "",
                             "disabled": 0,
-                            "readonly": 0
+                            "readonly": 0,
+                            "return_format": "value"
                         },
                         {
                             "key": "field_5723bbf5932d9",
@@ -2896,7 +2910,8 @@
                             "ajax": 0,
                             "placeholder": "",
                             "disabled": 0,
-                            "readonly": 0
+                            "readonly": 0,
+                            "return_format": "value"
                         },
                         {
                             "key": "field_5723bbf5932db",
@@ -2923,7 +2938,8 @@
                             "ajax": 0,
                             "placeholder": "",
                             "disabled": 0,
-                            "readonly": 0
+                            "readonly": 0,
+                            "return_format": "value"
                         },
                         {
                             "key": "field_5723bbf5932dc",
@@ -3272,7 +3288,8 @@
                                     "ajax": 0,
                                     "placeholder": "",
                                     "disabled": 0,
-                                    "readonly": 0
+                                    "readonly": 0,
+                                    "return_format": "value"
                                 },
                                 {
                                     "key": "field_5723bbf5932ea",
@@ -3350,7 +3367,8 @@
                             "ajax": 0,
                             "placeholder": "",
                             "disabled": 0,
-                            "readonly": 0
+                            "readonly": 0,
+                            "return_format": "value"
                         },
                         {
                             "key": "field_5723bbf5932ed",
@@ -3408,7 +3426,7 @@
                                 "id": ""
                             },
                             "collapsed": "",
-                            "min": 3,
+                            "min": 1,
                             "max": 3,
                             "layout": "table",
                             "button_label": "Add Row",
@@ -4143,7 +4161,8 @@
                             "ajax": 0,
                             "placeholder": "",
                             "disabled": 0,
-                            "readonly": 0
+                            "readonly": 0,
+                            "return_format": "value"
                         },
                         {
                             "key": "field_5723bc0e82778",
@@ -4169,7 +4188,8 @@
                             "ajax": 0,
                             "placeholder": "",
                             "disabled": 0,
-                            "readonly": 0
+                            "readonly": 0,
+                            "return_format": "value"
                         },
                         {
                             "key": "field_5723bc0e82779",
@@ -4219,7 +4239,8 @@
                             "ajax": 0,
                             "placeholder": "",
                             "disabled": 0,
-                            "readonly": 0
+                            "readonly": 0,
+                            "return_format": "value"
                         },
                         {
                             "key": "field_5723bc0e8277b",
@@ -4246,7 +4267,8 @@
                             "ajax": 0,
                             "placeholder": "",
                             "disabled": 0,
-                            "readonly": 0
+                            "readonly": 0,
+                            "return_format": "value"
                         },
                         {
                             "key": "field_5723bc0e8277c",
@@ -4595,7 +4617,8 @@
                                     "ajax": 0,
                                     "placeholder": "",
                                     "disabled": 0,
-                                    "readonly": 0
+                                    "readonly": 0,
+                                    "return_format": "value"
                                 },
                                 {
                                     "key": "field_5723bc0e8278a",
@@ -4673,7 +4696,8 @@
                             "ajax": 0,
                             "placeholder": "",
                             "disabled": 0,
-                            "readonly": 0
+                            "readonly": 0,
+                            "return_format": "value"
                         },
                         {
                             "key": "field_5723bc0e8278d",
@@ -4731,7 +4755,7 @@
                                 "id": ""
                             },
                             "collapsed": "",
-                            "min": 3,
+                            "min": 1,
                             "max": 3,
                             "layout": "table",
                             "button_label": "Add Row",
@@ -5466,7 +5490,8 @@
                             "ajax": 0,
                             "placeholder": "",
                             "disabled": 0,
-                            "readonly": 0
+                            "readonly": 0,
+                            "return_format": "value"
                         },
                         {
                             "key": "field_5723bc4794420",
@@ -5492,7 +5517,8 @@
                             "ajax": 0,
                             "placeholder": "",
                             "disabled": 0,
-                            "readonly": 0
+                            "readonly": 0,
+                            "return_format": "value"
                         },
                         {
                             "key": "field_5723bc4794421",
@@ -5542,7 +5568,8 @@
                             "ajax": 0,
                             "placeholder": "",
                             "disabled": 0,
-                            "readonly": 0
+                            "readonly": 0,
+                            "return_format": "value"
                         },
                         {
                             "key": "field_5723bc4794423",
@@ -5569,7 +5596,8 @@
                             "ajax": 0,
                             "placeholder": "",
                             "disabled": 0,
-                            "readonly": 0
+                            "readonly": 0,
+                            "return_format": "value"
                         },
                         {
                             "key": "field_5723bc4794424",
@@ -5918,7 +5946,8 @@
                                     "ajax": 0,
                                     "placeholder": "",
                                     "disabled": 0,
-                                    "readonly": 0
+                                    "readonly": 0,
+                                    "return_format": "value"
                                 },
                                 {
                                     "key": "field_5723bc4794432",
@@ -5996,7 +6025,8 @@
                             "ajax": 0,
                             "placeholder": "",
                             "disabled": 0,
-                            "readonly": 0
+                            "readonly": 0,
+                            "return_format": "value"
                         },
                         {
                             "key": "field_5723bc4794435",
@@ -6054,7 +6084,7 @@
                                 "id": ""
                             },
                             "collapsed": "",
-                            "min": 3,
+                            "min": 1,
                             "max": 3,
                             "layout": "table",
                             "button_label": "Add Row",
@@ -6789,7 +6819,8 @@
                             "ajax": 0,
                             "placeholder": "",
                             "disabled": 0,
-                            "readonly": 0
+                            "readonly": 0,
+                            "return_format": "value"
                         },
                         {
                             "key": "field_5723bc6fad08f",
@@ -6815,7 +6846,8 @@
                             "ajax": 0,
                             "placeholder": "",
                             "disabled": 0,
-                            "readonly": 0
+                            "readonly": 0,
+                            "return_format": "value"
                         },
                         {
                             "key": "field_5723bc6fad090",
@@ -6865,7 +6897,8 @@
                             "ajax": 0,
                             "placeholder": "",
                             "disabled": 0,
-                            "readonly": 0
+                            "readonly": 0,
+                            "return_format": "value"
                         },
                         {
                             "key": "field_5723bc6fad092",
@@ -6892,7 +6925,8 @@
                             "ajax": 0,
                             "placeholder": "",
                             "disabled": 0,
-                            "readonly": 0
+                            "readonly": 0,
+                            "return_format": "value"
                         },
                         {
                             "key": "field_5723bc6fad093",
@@ -7241,7 +7275,8 @@
                                     "ajax": 0,
                                     "placeholder": "",
                                     "disabled": 0,
-                                    "readonly": 0
+                                    "readonly": 0,
+                                    "return_format": "value"
                                 },
                                 {
                                     "key": "field_5723bc6fad0a1",
@@ -7319,7 +7354,8 @@
                             "ajax": 0,
                             "placeholder": "",
                             "disabled": 0,
-                            "readonly": 0
+                            "readonly": 0,
+                            "return_format": "value"
                         },
                         {
                             "key": "field_5723bc6fad0a4",
@@ -7377,7 +7413,7 @@
                                 "id": ""
                             },
                             "collapsed": "",
-                            "min": 3,
+                            "min": 1,
                             "max": 3,
                             "layout": "table",
                             "button_label": "Add Row",
@@ -8112,7 +8148,8 @@
                             "ajax": 0,
                             "placeholder": "",
                             "disabled": 0,
-                            "readonly": 0
+                            "readonly": 0,
+                            "return_format": "value"
                         },
                         {
                             "key": "field_5723bc92220f6",
@@ -8138,7 +8175,8 @@
                             "ajax": 0,
                             "placeholder": "",
                             "disabled": 0,
-                            "readonly": 0
+                            "readonly": 0,
+                            "return_format": "value"
                         },
                         {
                             "key": "field_5723bc92220f7",
@@ -8188,7 +8226,8 @@
                             "ajax": 0,
                             "placeholder": "",
                             "disabled": 0,
-                            "readonly": 0
+                            "readonly": 0,
+                            "return_format": "value"
                         },
                         {
                             "key": "field_5723bc92220f9",
@@ -8215,7 +8254,8 @@
                             "ajax": 0,
                             "placeholder": "",
                             "disabled": 0,
-                            "readonly": 0
+                            "readonly": 0,
+                            "return_format": "value"
                         },
                         {
                             "key": "field_5723bc92220fa",
@@ -8564,7 +8604,8 @@
                                     "ajax": 0,
                                     "placeholder": "",
                                     "disabled": 0,
-                                    "readonly": 0
+                                    "readonly": 0,
+                                    "return_format": "value"
                                 },
                                 {
                                     "key": "field_5723bc9222108",
@@ -8642,7 +8683,8 @@
                             "ajax": 0,
                             "placeholder": "",
                             "disabled": 0,
-                            "readonly": 0
+                            "readonly": 0,
+                            "return_format": "value"
                         },
                         {
                             "key": "field_5723bc922210b",
@@ -8700,7 +8742,7 @@
                                 "id": ""
                             },
                             "collapsed": "",
-                            "min": 3,
+                            "min": 1,
                             "max": 3,
                             "layout": "table",
                             "button_label": "Add Row",
@@ -9281,6 +9323,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "local": "php",
-    "modified": 1469741802
+    "modified": 1474300448
 }
