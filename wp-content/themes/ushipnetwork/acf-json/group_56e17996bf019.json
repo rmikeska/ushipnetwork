@@ -73,7 +73,7 @@
                                     "label": "Panel Link",
                                     "name": "split_screen_panel_url",
                                     "type": "text",
-                                    "instructions": "",
+                                    "instructions": "Relative paths only! Meaning no full URLs. Always place a forward slash in front of the destination. EX: \/page\/childpage\/ NOT https:\/\/learn.uship.com\/page\/childpage\/",
                                     "required": 1,
                                     "conditional_logic": 0,
                                     "wrapper": {
@@ -85,9 +85,7 @@
                                     "placeholder": "",
                                     "prepend": "",
                                     "append": "",
-                                    "maxlength": "",
-                                    "readonly": 0,
-                                    "disabled": 0
+                                    "maxlength": ""
                                 },
                                 {
                                     "key": "field_56e17b1bed052",
@@ -157,7 +155,7 @@
                                     "label": "Strip Link",
                                     "name": "split_screen_strip_url",
                                     "type": "text",
-                                    "instructions": "",
+                                    "instructions": "Relative paths only! Meaning no full URLs. Always place a forward slash in front of the destination. EX: \/page\/childpage\/ NOT https:\/\/learn.uship.com\/page\/childpage\/",
                                     "required": 1,
                                     "conditional_logic": 0,
                                     "wrapper": {
@@ -169,9 +167,7 @@
                                     "placeholder": "",
                                     "prepend": "",
                                     "append": "",
-                                    "maxlength": "",
-                                    "readonly": 0,
-                                    "disabled": 0
+                                    "maxlength": ""
                                 },
                                 {
                                     "key": "field_56e17bc09f1ed",
@@ -241,6 +237,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "local": "php",
-    "modified": 1469741801
+    "modified": 1474484777
 }
