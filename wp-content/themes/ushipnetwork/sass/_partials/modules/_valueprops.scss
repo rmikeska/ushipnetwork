@@ -12,7 +12,7 @@
   flex-direction: row;
   flex-wrap: wrap;
 
-  @media #{$default-break} {
+  @media only screen and (max-width: 940px) {
     min-height: 100%;
     padding-top: 55px;
   }
@@ -24,7 +24,7 @@
   align-items: center;
   justify-content: center;
 
-  @media #{$default-break} {
+  @media only screen and (max-width: 940px) {
     width: 50%;
     flex-direction: column;
     text-align: center;
@@ -32,22 +32,20 @@
   }
 }
 
-.valueProps-item-icon {
+.valueProps-item-icon svg {
   width: 40px;
   height: 40px;
   margin-right: 15px;
+  fill: $white;
 
-  @media #{$default-break} {
+  @media only screen and (max-width: 940px) {
     margin-right: 0;
     margin-bottom: 10px;
   }
 }
 
-.valueProps-item-icon path {
-  fill: $white;
-}
-
 .valueProps-item-text {
+  max-width: 130px;
   text-transform: uppercase;
   font-weight: $font-bold;
 
@@ -60,5 +58,6 @@
 
   & h5:first-child {
     padding-bottom: 3px;
+    line-height: 12px;
   }
 }
