@@ -7,6 +7,7 @@
 .valueProps-container {
   @include container(1180px, 10px, 10px);
   min-height: 166px;
+  height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: row;

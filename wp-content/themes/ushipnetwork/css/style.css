@@ -4011,6 +4011,7 @@ body.page-template-contact {
   padding-left: 62px;
   padding-right: 62px;
   min-height: 420px;
+  height: 100%;
   position: relative;
   display: flex;
   align-items: center;
@@ -5083,6 +5084,7 @@ body.page-template-contact {
   padding-bottom: 10px;
   padding-left: 15px;
   min-height: 166px;
+  height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: row;
