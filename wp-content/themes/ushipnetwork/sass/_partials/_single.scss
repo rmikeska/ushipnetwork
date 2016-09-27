@@ -157,8 +157,27 @@ article .post-featureImage {
 
   iframe {
     display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
     max-width: 100%;
+  }
+
+  .flowplayer {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .embed-container {
+    position: relative;
+    padding-bottom: 56.2244898% !important;
+    height: 0;
+    margin-bottom: 35px;
   }
 }
 
@@ -345,11 +364,6 @@ article .post-featureImage {
   display: block;
   float: left;
   margin-top: 30px;
-}
-
-.flowplayer {
-  display: block;
-  margin: 0 auto;
 }
 
 /* Hide Authorship and 'All Posts' return button for Press Release and Media Coverage posts */

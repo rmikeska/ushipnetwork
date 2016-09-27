@@ -320,3 +320,16 @@ function wpcodex_set_capabilities() {
   }
 }
 add_action( 'init', 'wpcodex_set_capabilities' );
+
+/**
+ * Force the pasting of text only into TinyMCE editor
+ */
+function tinymce_paste_as_text( $init ) {
+    $init['paste_as_text'] = true;
+
+    // omit the pastetext button so that the user can't change it manually, current toolbar2 content as of 4.1.1 is "formatselect,underline,alignjustify,forecolor,pastetext,removeformat,charmap,outdent,indent,undo,redo,wp_help"
+    $init["toolbar2"] = "formatselect,underline,alignjustify,forecolor,removeformat,charmap,outdent,indent,undo,redo,wp_help";
+
+    return $init;
+}
+add_filter('tiny_mce_before_init', 'tinymce_paste_as_text');

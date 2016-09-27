@@ -155,4 +155,9 @@ jQuery(document).ready(function ($) {
             $(this).addClass('cobrandedPush');
         }
     });
+
+
+
+    // Add class to parent <p> of an iframe embed for responsive styling
+    $('.entry-content iframe').parent('p').addClass('embed-container');
 })
