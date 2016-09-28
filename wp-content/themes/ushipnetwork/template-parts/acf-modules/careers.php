@@ -1,5 +1,5 @@
 <section class="careersListings">
 
-  <script type="text/javascript" src="//app.jazz.co/widgets/basic/create/uShip" charset="utf-8"></script>
+  <script id="gnewtonjs" type="text/javascript" src="//newton.newtonsoftware.com/career/iframe.action?clientId=8a788267569c34d80156b3030a450425"></script>
 
 </section>
