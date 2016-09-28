@@ -7,6 +7,10 @@
 
 get_header(); ?>
 
-  <section></section>
+  <?php include("template-parts/acf-modules/top-content.php");?>
+
+  <section>
+
+  </section>
 
 <?php get_footer(); ?>

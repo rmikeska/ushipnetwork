@@ -1016,15 +1016,6 @@
                     "max": ""
                 },
                 {
-                    "key": "56ba0e1e3a20f",
-                    "name": "careers",
-                    "label": "Careers Listings",
-                    "display": "block",
-                    "sub_fields": [],
-                    "min": "",
-                    "max": ""
-                },
-                {
                     "key": "5762e53bd67c9",
                     "name": "intro_slide",
                     "label": "Intro Slide",
@@ -1612,5 +1603,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1474474104
+    "modified": 1475085777
 }
