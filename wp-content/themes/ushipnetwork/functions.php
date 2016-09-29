@@ -145,9 +145,9 @@ function ushipnetwork_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
-	// if ( is_page('Listings') ) {
-	//   wp_enqueue_script( 'jazz-widget-fixer', get_template_directory_uri() . '/js/jazz-widget-fixer.js', array(), '20160216', true );
-	// }
+	if ( is_page('Listings') ) {
+	  wp_enqueue_script( 'jazz-widget-fixer', get_template_directory_uri() . '/js/jazz-widget-fixer.js', array(), '20160216', true );
+	}
 
 	if ( is_page_template('tabbed-page.php') ) {
   	wp_enqueue_script( 'ushipnetwork-hashchange', get_template_directory_uri() . '/js/hashchange.min.js', array(), '20160405', true );

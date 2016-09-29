@@ -79,6 +79,10 @@ ul#secondary-menu {
 .secondary-menu li:first-of-type {
   background: $light-grey;
   font-weight: $font-bold;
+
+  a {
+    max-width: 130px;
+  }
 }
 
 .secondary-menu a:after {

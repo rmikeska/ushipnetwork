@@ -3063,6 +3063,8 @@ ul#secondary-menu {
 .secondary-menu li:first-of-type {
   background: #F4F4F4;
   font-weight: 700; }
+  .secondary-menu li:first-of-type a {
+    max-width: 130px; }
 
 .secondary-menu a:after {
   display: block;
@@ -3538,6 +3540,46 @@ body.page-template-contact {
   letter-spacing: 0.025rem;
   text-transform: uppercase;
   font-weight: 700; }
+
+/*** Careers ***/
+.careers-container {
+  max-width: calc(780px + 15px*2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 70px;
+  padding-right: 15px;
+  padding-bottom: 70px;
+  padding-left: 15px; }
+  .careers-container::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.careers-entry {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 27px 0;
+  border-top: 1px solid #dddddd; }
+
+.careers-entry-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em; }
+
+.careers-entry-info {
+  font-size: 14px; }
+
+.careers-entry-info-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.05em; }
 
 /*** Bios ***/
 .bios-container {
