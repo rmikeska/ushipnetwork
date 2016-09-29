@@ -1,0 +1,29 @@
+/*** Careers ***/
+
+.careers-container {
+  @include container(780px, 70px, 70px);
+}
+
+.careers-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 27px 0;
+  border-top: 1px solid $divider-color;
+}
+
+.careers-entry-title {
+  font-weight: $font-bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.careers-entry-info {
+  font-size: 14px;
+}
+
+.careers-entry-info-title {
+  text-transform: uppercase;
+  font-weight: $font-bold;
+  letter-spacing: 0.05em;
+}

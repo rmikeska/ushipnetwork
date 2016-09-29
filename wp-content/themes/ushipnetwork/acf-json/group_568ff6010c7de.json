@@ -747,7 +747,14 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "careers-listings.php"
+                "value": "careers-listings-jazz.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "career-listings-newton.php"
             }
         ],
         [
@@ -766,5 +773,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1475093219
+    "modified": 1475175129
 }

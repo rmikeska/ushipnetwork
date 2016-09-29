@@ -2,20 +2,14 @@
 /**
  * @package ushipnetwork
  *
- * template name: Careers Listings
+ * template name: Careers Listings - Newton
  */
 
 get_header(); ?>
 
   <?php include("template-parts/acf-modules/top-content.php");?>
 
-  <section class="careersListings">
-
-    <script type="text/javascript" src="//app.jazz.co/widgets/basic/create/uShip" charset="utf-8"></script>
-
-  </section>
-
-<!--   <section class="careers">
+  <section class="careers">
     <div class="careers-container">
       <?php
 
@@ -48,6 +42,6 @@ get_header(); ?>
 
       ?>
     </div>
-  </section> -->
+  </section>
 
 <?php get_footer(); ?>
