@@ -3548,12 +3548,16 @@ body.page-template-contact {
   margin-right: auto;
   padding-top: 35px;
   padding-right: 15px;
-  padding-bottom: 70px;
+  padding-bottom: 130px;
   padding-left: 15px; }
   .careers-container::after {
     clear: both;
     content: "";
     display: table; }
+  @media only screen and (max-width: 769px) {
+    .careers-container {
+      padding-top: 0px;
+      padding-bottom: 65px; } }
 
 .careers-entry {
   display: -webkit-flex;

@@ -1,7 +1,12 @@
 /*** Careers ***/
 
 .careers-container {
-  @include container(780px, 35px, 70px);
+  @include container(780px, 35px, 130px);
+
+  @media #{$default-break} {
+    padding-top: 0px;
+    padding-bottom: 65px;
+  }
 }
 
 .careers-entry {
