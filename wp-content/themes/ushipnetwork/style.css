@@ -3546,7 +3546,7 @@ body.page-template-contact {
   max-width: calc(780px + 15px*2);
   margin-left: auto;
   margin-right: auto;
-  padding-top: 70px;
+  padding-top: 35px;
   padding-right: 15px;
   padding-bottom: 70px;
   padding-left: 15px; }
@@ -3566,9 +3566,7 @@ body.page-template-contact {
       -ms-flex-align: center;
           align-items: center;
   padding: 35px 0;
-  border-top: 1px solid #dddddd; }
-  .careers-entry:last-of-type {
-    border-bottom: 1px solid #dddddd; }
+  border-bottom: 1px solid #dddddd; }
   @media only screen and (max-width: 769px) {
     .careers-entry {
       -webkit-flex-direction: column;
@@ -3589,7 +3587,8 @@ body.page-template-contact {
 .careers-entry-title {
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.05em; }
+  letter-spacing: 0.05em;
+  padding-bottom: 5px; }
 
 .careers-entry-info {
   font-size: 14px; }

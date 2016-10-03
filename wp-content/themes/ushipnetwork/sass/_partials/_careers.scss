@@ -1,7 +1,7 @@
 /*** Careers ***/
 
 .careers-container {
-  @include container(780px, 70px, 70px);
+  @include container(780px, 35px, 70px);
 }
 
 .careers-entry {
@@ -9,11 +9,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 35px 0;
-  border-top: 1px solid $divider-color;
-
-  &:last-of-type {
-    border-bottom: 1px solid $divider-color;
-  }
+  border-bottom: 1px solid $divider-color;
 
   @media #{$default-break} {
     flex-direction: column;
@@ -34,6 +30,7 @@
   font-weight: $font-bold;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  padding-bottom: 5px;
 }
 
 .careers-entry-info {
