@@ -143,7 +143,7 @@ jQuery(document).ready(function ($) {
     // Add .active class to How it Works nav item when on prod and staging Learn sites
     $(function () {
         if ((window.location.hostname === 'learn.uship.com') || (window.location.hostname === 'ushiplearn.wpengine.com') || (window.location.hostname === 'ushiplearn.staging.wpengine.com')) {
-            $('.siteNav-links .siteNav-link:first-of-type .siteNav-linkText').addClass('active');
+            $('.siteNav-link.sel-navLink-HowItWorks .siteNav-linkText').addClass('active');
         }
     });
 
