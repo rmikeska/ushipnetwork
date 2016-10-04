@@ -31,3 +31,4 @@
 	?>
 
 	<main role="main" class="content-newHeader content-newFooter">
+    <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_id' => 'secondary-menu', 'container_class' => 'secondary-menu', 'fallback_cb' => 'false' ) ); ?>

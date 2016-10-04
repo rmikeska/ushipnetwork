@@ -334,8 +334,9 @@ function tinymce_paste_as_text( $init ) {
 }
 add_filter('tiny_mce_before_init', 'tinymce_paste_as_text');
 
-add_action( 'init', array( 'MvcComponents', 'retrieve_header_footer' ));
-
+/**
+ * Header/Footer
+ */
 class MvcComponents {
 	private function __construct() {}
 	public static $header_output = null;
