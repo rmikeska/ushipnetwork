@@ -333,3 +333,53 @@ function tinymce_paste_as_text( $init ) {
     return $init;
 }
 add_filter('tiny_mce_before_init', 'tinymce_paste_as_text');
+
+add_action( 'init', array( 'MvcComponents', 'retrieve_header_footer' ));
+
+class MvcComponents {
+	private function __construct() {}
+	public static $header_output = null;
+	public static $footer_output = null;
+
+	public static function retrieve_header_footer() {
+		$header_request = curl_init('https://www.uship.com/mvc/components/header');
+		$footer_request = curl_init('https://www.uship.com/mvc/components/footer?showCountryChanger=false');
+
+		$headers = array('Accept-Language: en-US', 'Accept: application/json');
+		if (isset($_COOKIE['uShipTicket'])) {
+			array_push($headers, 'Cookie: uShipTicket=' . $_COOKIE['uShipTicket']);
+		}
+
+		curl_setopt($header_request, CURLOPT_HTTPHEADER, $headers);
+		curl_setopt($footer_request, CURLOPT_HTTPHEADER, $headers);
+
+		curl_setopt($header_request, CURLOPT_RETURNTRANSFER, 1);
+		curl_setopt($footer_request, CURLOPT_RETURNTRANSFER, 1);
+
+		$mh = curl_multi_init();
+		curl_multi_add_handle($mh, $header_request);
+		curl_multi_add_handle($mh, $footer_request);
+
+		$running = null;
+		do {
+		  curl_multi_exec($mh, $running);
+		} while ($running);
+
+		curl_multi_remove_handle($mh, $header_request);
+		curl_multi_remove_handle($mh, $footer_request);
+		curl_multi_close($mh);
+
+		self::$header_output = json_decode(curl_multi_getcontent($header_request));
+		self::$footer_output = json_decode(curl_multi_getcontent($footer_request));
+	}
+
+	public static function header_content() {
+		return self::$header_output;
+	}
+
+	public static function footer_content() {
+		return self::$footer_output;
+	}
+}
+
+MvcComponents::retrieve_header_footer();
