@@ -50,10 +50,10 @@
 }
 
 .testimonials-image {
-  display: block;
   margin: 0 auto 35px;
-  max-width: 100%;
-  height: auto;
+  min-height: 254px;
+  max-width: 380px;
+  @include background-image;
 }
 
 .testimonials-text {

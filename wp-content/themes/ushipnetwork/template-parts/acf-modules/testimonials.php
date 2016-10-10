@@ -15,7 +15,7 @@
           <?php $testimonials_image_object = get_sub_field('testimonials_image'); ?>
           <?php $testimonials_image_size = 'testimonials-thumb'; ?>
           <?php $testimonials_image_url = $testimonials_image_object['sizes'][$testimonials_image_size]; ?>
-          <img class="testimonials-image" src="<?php echo $testimonials_image_url; ?>">
+          <div class="testimonials-image" style="background-image: url('<?php echo $testimonials_image_url; ?>');"></div>
         <?php endif; ?>
         <div class="testimonials-text"><?php the_sub_field('testimonials_text'); ?></div>
         <?php while(have_rows('testimonials_tertiary_callout')): the_row(); ?>

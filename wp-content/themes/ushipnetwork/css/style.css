@@ -2742,10 +2742,12 @@ body.page-template-contact {
         margin-bottom: 60px; } }
 
 .testimonials-image {
-  display: block;
   margin: 0 auto 35px;
-  max-width: 100%;
-  height: auto; }
+  min-height: 254px;
+  max-width: 380px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
 
 .testimonials-text {
   padding: 0 0 35px;
