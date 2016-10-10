@@ -54,6 +54,10 @@
   min-height: 254px;
   max-width: 380px;
   @include background-image;
+
+  @media only screen and (max-width: 480px) {
+    min-height: 175px;
+  }
 }
 
 .testimonials-text {

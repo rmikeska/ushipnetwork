@@ -2748,6 +2748,9 @@ body.page-template-contact {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
+  @media only screen and (max-width: 480px) {
+    .testimonials-image {
+      min-height: 175px; } }
 
 .testimonials-text {
   padding: 0 0 35px;
