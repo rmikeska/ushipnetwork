@@ -55,6 +55,25 @@
   }
 }
 
+.splitScreen-panel.panelFontSmall {
+
+  .splitScreen-panel-headline {
+    font-size: 30px;
+
+    @media #{$default-break} {
+      font-size: 28px;
+    }
+  }
+
+  .splitScreen-panel-subheadline {
+    font-size: 14px;
+
+    @media #{$default-break} {
+      font-size: 12px;
+    }
+  }
+}
+
 // .splitScreen-panel:first-child {
 
 //   @media #{$default-break} {

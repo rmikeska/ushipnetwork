@@ -4,7 +4,8 @@
       <?php $panel_image = get_sub_field('split_screen_panel_image'); ?>
       <?php $panel_url = get_sub_field('split_screen_panel_url'); ?>
       <?php $panel_url_full = get_site_url() . $panel_url; ?>
-      <a href="<?php echo $panel_url_full; ?>" class="splitScreen-panel" style="background-image: url('<?php echo $panel_image['url']; ?>');">
+      <?php $panel_fontsize_adjust = get_sub_field('split_screen_panel_fontsize_adjust'); ?>
+      <a href="<?php echo $panel_url_full; ?>" class="splitScreen-panel <?php echo $panel_fontsize_adjust; ?>" style="background-image: url('<?php echo $panel_image['url']; ?>');">
         <div class="splitScreen-panel-container">
           <h1 class="splitScreen-panel-headline"><?php the_sub_field('split_screen_panel_headline'); ?></h1>
           <?php include( get_template_directory() . '/images/circled_arrow.svg'); ?>
