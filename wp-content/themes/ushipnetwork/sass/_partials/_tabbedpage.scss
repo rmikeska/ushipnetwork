@@ -30,7 +30,7 @@
     width: 33.3333333333%;
   }
 
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 560px) {
     width: 50%;
   }
 }
@@ -38,7 +38,7 @@
 .tabbedPageMenu-list li a {
   display: inline-block;
   vertical-align: middle;
-  max-width: 120px;
+  max-width: 150px;
   cursor: pointer;
   color: $base-text-color;
   text-transform: uppercase;
@@ -51,6 +51,10 @@
   margin-right: 30px;
   overflow: hidden;
   transition: $default-transition;
+
+  @media only screen and (max-width: 375px) {
+    font-size: 10px;
+  }
 }
 
 .tabbedPageMenu-list li a:after {
@@ -91,29 +95,29 @@
 
 .tabbedPageMenu-list.tabs5 {
 
-  @media only screen and (max-width: 942px) {
+  @media only screen and (max-width: 1080px) {
     display: block;
   }
 
   li {
-    @media only screen and (max-width: 942px) {
+    @media only screen and (max-width: 1080px) {
       float: left;
       width: 33.3333333333%;
     }
-    @media only screen and (max-width: 480px) {
+    @media only screen and (max-width: 560px) {
       width: 50%;
     }
 
   }
 
   li:not(:last-child):after {
-    @media only screen and (max-width: 942px) {
+    @media only screen and (max-width: 1080px) {
       display: none;
     }
   }
 
   li a {
-    @media only screen and (max-width: 942px) {
+    @media only screen and (max-width: 1080px) {
       margin-left: 0;
       margin-right: 0;
     }
@@ -122,28 +126,28 @@
 
 .tabbedPageMenu-list.tabs6 {
 
-  @media only screen and (max-width: 1120px) {
+  @media only screen and (max-width: 1290px) {
     display: block;
   }
 
   li {
-    @media only screen and (max-width: 1120px) {
+    @media only screen and (max-width: 1290px) {
       float: left;
       width: 33.3333333333%;
     }
-    @media only screen and (max-width: 480px) {
+    @media only screen and (max-width: 560px) {
       width: 50%;
     }
   }
 
   li:not(:last-child):after {
-    @media only screen and (max-width: 1120px) {
+    @media only screen and (max-width: 1290px) {
       display: none;
     }
   }
 
   li a {
-    @media only screen and (max-width: 1120px) {
+    @media only screen and (max-width: 1290px) {
       margin-left: 0;
       margin-right: 0;
     }
@@ -152,28 +156,28 @@
 
 .tabbedPageMenu-list.tabs7 {
 
-  @media only screen and (max-width: 1300px) {
+  @media only screen and (max-width: 1500px) {
     display: block;
   }
 
   li {
-    @media only screen and (max-width: 1300px) {
+    @media only screen and (max-width: 1500px) {
       float: left;
       width: 33.3333333333%;
     }
-    @media only screen and (max-width: 480px) {
+    @media only screen and (max-width: 560px) {
       width: 50%;
     }
   }
 
   li:not(:last-child):after {
-    @media only screen and (max-width: 1300px) {
+    @media only screen and (max-width: 1500px) {
       display: none;
     }
   }
 
   li a {
-    @media only screen and (max-width: 1300px) {
+    @media only screen and (max-width: 1500px) {
       margin-left: 0;
       margin-right: 0;
     }

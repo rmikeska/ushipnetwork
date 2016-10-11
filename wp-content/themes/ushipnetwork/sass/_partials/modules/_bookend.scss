@@ -4,12 +4,6 @@
   border-top: 1px solid $divider-color;
 }
 
-.bookend-container {
-  @include container(1140px, 60px, 60px);
-  position: relative;
-  text-align: center;
-}
-
 .bookend-intro {
   padding-bottom: 30px;
   font-size: 24px;
@@ -17,11 +11,66 @@
   text-align: center;
 }
 
-.bookend-container .bookend-link {
-  position: absolute;
+.bookend-container {
+  @include container(1140px, 60px, 60px);
+  text-align: center;
+
+  .bookend-row {
+    display: flex;
+    align-items: center;
+
+    .bookend-link {
+      display: flex;
+      flex: 1 1 0;
+
+      @media #{$default-break} {
+        display: none;
+      }
+    }
+
+    .bookend-cta {
+      display: flex;
+      flex: 1 1 0;
+      justify-content: center;
+    }
+
+    .bookend-linkPrevious {
+      justify-content: flex-start;
+      margin-right: 20px;
+    }
+
+    .bookend-linkNext {
+      justify-content: flex-end;
+      margin-left: 20px;
+    }
+
+  }
+}
+
+.bookendLinksMobile-container {
+  display: none;
 
   @media #{$default-break} {
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    @include container(100%, 40px, 50px);
+    border-bottom: 1px solid $divider-color;
+  }
+
+  .bookend-link {
+    flex: 1 1 0;
+    display: flex;
+    margin-top: 10px;
+  }
+
+  .bookend-linkPrevious {
+    justify-content: flex-start;
+    margin-right: 10px;
+  }
+
+  .bookend-linkNext {
+    justify-content: flex-end;
+    margin-left: 10px;
   }
 }
 
@@ -45,14 +94,6 @@
 .bookend-link:hover .circledArrow {
   fill: $bright-blue;
   transition: $default-transition;
-}
-
-.bookend-container .bookend-linkPrevious {
-  left: 15px;
-}
-
-.bookend-container .bookend-linkNext {
-  right: 15px;
 }
 
 .bookend-linkRow {
@@ -95,31 +136,4 @@
 
 .bookend-linkNext .bookend-link-text {
   text-align: right;
-}
-
-.bookendLinksMobile-container {
-  display: none;
-
-  @media #{$default-break} {
-    display: flex;
-    flex-wrap: wrap;
-    @include container(100%, 40px, 50px);
-    border-bottom: 1px solid $divider-color;
-  }
-
-  .bookend-link {
-    flex: 1 1 auto;
-    display: flex;
-    margin-top: 10px;
-  }
-
-  .bookend-linkPrevious {
-    justify-content: flex-start;
-    margin-right: 10px;
-  }
-
-  .bookend-linkNext {
-    justify-content: flex-end;
-    margin-left: 10px;
-  }
 }
