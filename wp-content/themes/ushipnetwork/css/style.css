@@ -2036,13 +2036,13 @@ body.page-template-contact {
     align-items: center; }
     .bookend-container .bookend-row .bookend-link {
       display: flex;
-      flex: 1 1 0; }
+      flex: 1 1 auto; }
       @media only screen and (max-width: 769px) {
         .bookend-container .bookend-row .bookend-link {
           display: none; } }
     .bookend-container .bookend-row .bookend-cta {
       display: flex;
-      flex: 1 1 0;
+      flex: 1 1 auto;
       justify-content: center; }
     .bookend-container .bookend-row .bookend-linkPrevious {
       justify-content: flex-start;
@@ -2071,7 +2071,7 @@ body.page-template-contact {
         content: "";
         display: table; } }
   .bookendLinksMobile-container .bookend-link {
-    flex: 1 1 0;
+    flex: 1 1 auto;
     display: flex;
     margin-top: 10px; }
   .bookendLinksMobile-container .bookend-linkPrevious {

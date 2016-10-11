@@ -2142,9 +2142,9 @@ body.page-template-contact {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      -webkit-flex: 1 1 0;
-          -ms-flex: 1 1 0;
-              flex: 1 1 0; }
+      -webkit-flex: 1 1 auto;
+          -ms-flex: 1 1 auto;
+              flex: 1 1 auto; }
       @media only screen and (max-width: 769px) {
         .bookend-container .bookend-row .bookend-link {
           display: none; } }
@@ -2152,9 +2152,9 @@ body.page-template-contact {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      -webkit-flex: 1 1 0;
-          -ms-flex: 1 1 0;
-              flex: 1 1 0;
+      -webkit-flex: 1 1 auto;
+          -ms-flex: 1 1 auto;
+              flex: 1 1 auto;
       -webkit-justify-content: center;
           -ms-flex-pack: center;
               justify-content: center; }
@@ -2192,9 +2192,9 @@ body.page-template-contact {
         content: "";
         display: table; } }
   .bookendLinksMobile-container .bookend-link {
-    -webkit-flex: 1 1 0;
-        -ms-flex: 1 1 0;
-            flex: 1 1 0;
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;

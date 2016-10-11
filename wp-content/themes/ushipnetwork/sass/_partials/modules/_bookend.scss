@@ -21,7 +21,7 @@
 
     .bookend-link {
       display: flex;
-      flex: 1 1 0;
+      flex: 1 1 auto;
 
       @media #{$default-break} {
         display: none;
@@ -30,7 +30,7 @@
 
     .bookend-cta {
       display: flex;
-      flex: 1 1 0;
+      flex: 1 1 auto;
       justify-content: center;
     }
 
@@ -58,7 +58,7 @@
   }
 
   .bookend-link {
-    flex: 1 1 0;
+    flex: 1 1 auto;
     display: flex;
     margin-top: 10px;
   }
