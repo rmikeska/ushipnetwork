@@ -1,6 +1,6 @@
 <?php $section_bg_color = get_sub_field('link_row_background_color'); ?>
 
-<section class="linkRow <?php echo $section_bg_color; ?>">
+<section class="linkRow <?php echo $section_bg_color; ?>" <?php if(get_sub_field('link_row_id')): ?>id="<?php the_sub_field('link_row_id'); ?>"<?php endif; ?>>
   <div class="linkRow-container">
     <h3 class="linkRow-intro"><?php the_sub_field('link_row_intro'); ?></h3>
     <?php if(get_sub_field('link_row_intro_sub')): ?>

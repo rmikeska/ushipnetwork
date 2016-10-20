@@ -1,4 +1,4 @@
-<section class="stripDataCallout">
+<section class="stripDataCallout" <?php if(get_sub_field('strip_data_callout_id')): ?>id="<?php the_sub_field('strip_data_callout_id'); ?>"<?php endif; ?>>
   <div class="stripDataCallout-container">
     <?php while(have_rows('strip_data_callout_content')): the_row(); ?>
       <div class="stripDataCallout-block">

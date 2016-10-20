@@ -1,6 +1,6 @@
 <?php $section_bg_color = get_sub_field('bios_background_color'); ?>
 
-<section class="bios <?php echo $section_bg_color; ?>">
+<section class="bios <?php echo $section_bg_color; ?>" <?php if(get_sub_field('bios_id')): ?>id="<?php the_sub_field('bios_id'); ?>"<?php endif; ?>>
   <div class="bios-container">
     <h3 class="bios-intro"><?php the_sub_field('bios_intro'); ?></h3>
     <?php if(get_sub_field('bios_intro_sub')): ?>

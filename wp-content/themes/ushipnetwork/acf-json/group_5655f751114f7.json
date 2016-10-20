@@ -26,6 +26,25 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_5808e23e796bb",
+                            "label": "Section ID",
+                            "name": "long_form_content_id",
+                            "type": "text",
+                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
                             "key": "field_565c98fa9cd16",
                             "label": "Content",
                             "name": "long_form_content_content",
@@ -74,6 +93,25 @@
                     "label": "Strip Copy Callout",
                     "display": "block",
                     "sub_fields": [
+                        {
+                            "key": "field_5808ee00c927b",
+                            "label": "Section ID",
+                            "name": "strip_copy_callout_id",
+                            "type": "text",
+                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
                         {
                             "key": "field_5668688ed6d0c",
                             "label": "Background Color",
@@ -133,6 +171,25 @@
                     "label": "Strip Data Callout",
                     "display": "block",
                     "sub_fields": [
+                        {
+                            "key": "field_5808efcf20b76",
+                            "label": "Section ID",
+                            "name": "strip_data_callout_id",
+                            "type": "text",
+                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
                         {
                             "key": "field_565e252b15b69",
                             "label": "Content",
@@ -207,6 +264,25 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_5808f0faa8e32",
+                            "label": "Section ID",
+                            "name": "full_width_image_id",
+                            "type": "text",
+                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
                             "key": "field_565e11a15dc76",
                             "label": "Image",
                             "name": "full_width_image_image",
@@ -240,6 +316,25 @@
                     "label": "Testimonials",
                     "display": "block",
                     "sub_fields": [
+                        {
+                            "key": "field_5808f16c75162",
+                            "label": "Section ID",
+                            "name": "testimonials_id",
+                            "type": "text",
+                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
                         {
                             "key": "field_56673f4530fe7",
                             "label": "Background Color",
@@ -443,6 +538,25 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_5808f1bc98042",
+                            "label": "Section ID",
+                            "name": "bios_id",
+                            "type": "text",
+                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
                             "key": "field_56686d06db784",
                             "label": "Background Color",
                             "name": "bios_background_color",
@@ -628,12 +742,31 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_5808f21099aa1",
+                            "label": "Section ID",
+                            "name": "slanted_map_id",
+                            "type": "text",
+                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
                             "key": "field_56718de19060b",
                             "label": "Background Color",
                             "name": "slanted_map_bg_color",
                             "type": "select",
                             "instructions": "",
-                            "required": 0,
+                            "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -649,10 +782,8 @@
                             "multiple": 0,
                             "ui": 0,
                             "ajax": 0,
-                            "placeholder": "",
-                            "disabled": 0,
-                            "readonly": 0,
-                            "return_format": "value"
+                            "return_format": "value",
+                            "placeholder": ""
                         },
                         {
                             "key": "field_56718f689060c",
@@ -873,6 +1004,25 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_5808f30dd14e7",
+                            "label": "Section ID",
+                            "name": "contact_id",
+                            "type": "text",
+                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
                             "key": "field_568422ef051f2",
                             "label": "Background Color",
                             "name": "contact_background_color",
@@ -1011,7 +1161,27 @@
                     "name": "press",
                     "label": "Press Strip",
                     "display": "block",
-                    "sub_fields": [],
+                    "sub_fields": [
+                        {
+                            "key": "field_5808f39306870",
+                            "label": "Section ID",
+                            "name": "press_id",
+                            "type": "text",
+                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
                     "min": "",
                     "max": ""
                 },
@@ -1021,6 +1191,25 @@
                     "label": "Intro Slide",
                     "display": "block",
                     "sub_fields": [
+                        {
+                            "key": "field_5808f414a4afc",
+                            "label": "Section ID",
+                            "name": "intro_slide_id",
+                            "type": "text",
+                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
                         {
                             "key": "field_5762e54dd67ca",
                             "label": "Headline",
@@ -1179,6 +1368,25 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_5808f4873031a",
+                            "label": "Section ID",
+                            "name": "icon_bullet_points_id",
+                            "type": "text",
+                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
                             "key": "field_5762ead319259",
                             "label": "Row",
                             "name": "icon_bullet_points_row",
@@ -1310,6 +1518,25 @@
                     "label": "Video",
                     "display": "block",
                     "sub_fields": [
+                        {
+                            "key": "field_5808f4fb84df8",
+                            "label": "Section ID",
+                            "name": "video_id",
+                            "type": "text",
+                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
                         {
                             "key": "field_5762f75b30e68",
                             "label": "Intro Text",
@@ -1471,6 +1698,25 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_5808f5560e025",
+                            "label": "Section ID",
+                            "name": "value_props_id",
+                            "type": "text",
+                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
                             "key": "field_57e2aed8560b2",
                             "label": "Item",
                             "name": "value_props_item",
@@ -1582,6 +1828,249 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                {
+                    "key": "5808dbd32645f",
+                    "name": "link_row",
+                    "label": "Link Row",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5808f59d97436",
+                            "label": "Section ID",
+                            "name": "link_row_id",
+                            "type": "text",
+                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5808dbe726460",
+                            "label": "Background Color",
+                            "name": "link_row_background_color",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "sectionWhite": "White",
+                                "sectionGrey": "Grey",
+                                "sectionNavy": "Navy"
+                            },
+                            "default_value": [],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5808dc8826461",
+                            "label": "Intro Text",
+                            "name": "link_row_intro",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5808dcb126462",
+                            "label": "Intro Sub Text",
+                            "name": "link_row_intro_sub",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5808dccf26463",
+                            "label": "Link Content",
+                            "name": "link_row_content",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 1,
+                            "max": 3,
+                            "layout": "table",
+                            "button_label": "Add Row",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5808dd0526464",
+                                    "label": "Link Title",
+                                    "name": "link_row_content_title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5808dd2c26465",
+                                    "label": "Link URL",
+                                    "name": "link_row_content_url",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5808dd5526466",
+                                    "label": "Link Text",
+                                    "name": "link_row_content_text",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "5808ddc3244ab",
+                    "name": "logo_pile",
+                    "label": "Logo Pile",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5808f6090820c",
+                            "label": "Section ID",
+                            "name": "logo_pile_id",
+                            "type": "text",
+                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5808ddda244ac",
+                            "label": "Intro Text",
+                            "name": "logo_pile_intro",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5808dded244ad",
+                            "label": "Image",
+                            "name": "logo_pile_image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             ]
         }
@@ -1593,6 +2082,13 @@
                 "operator": "==",
                 "value": "default"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "tabbed-page-v2-child.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -1603,5 +2099,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1475085777
+    "modified": 1476982350
 }

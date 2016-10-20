@@ -1,4 +1,4 @@
-<section class="introSlide">
+<section class="introSlide" <?php if(get_sub_field('intro_slide_id')): ?>id="<?php the_sub_field('intro_slide_id'); ?>"<?php endif; ?>>
   <div class="introSlide-container">
     <h3 class="introSlide-headline"><?php the_sub_field('intro_slide_head'); ?></h3>
     <div class="introSlide-text"><?php the_sub_field('intro_slide_subhead'); ?></div>

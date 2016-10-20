@@ -1,6 +1,6 @@
 <?php $section_bg_color = get_sub_field('contact_background_color'); ?>
 
-<section class="contact <?php echo $section_bg_color; ?>">
+<section class="contact <?php echo $section_bg_color; ?>" <?php if(get_sub_field('contact_id')): ?>id="<?php the_sub_field('contact_id'); ?>"<?php endif; ?>>
   <div class="contact-container">
     <div class="contact-info">
       <h3 class="contact-info-intro"><?php the_sub_field('contact_intro'); ?></h3>

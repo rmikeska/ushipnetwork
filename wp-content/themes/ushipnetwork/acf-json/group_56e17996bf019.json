@@ -70,10 +70,10 @@
                                 },
                                 {
                                     "key": "field_56e17afced051",
-                                    "label": "Panel Link",
+                                    "label": "Panel Page Link",
                                     "name": "split_screen_panel_url",
-                                    "type": "text",
-                                    "instructions": "Relative paths only! Meaning no full URLs. Always place a forward slash in front of the destination. EX: \/page\/childpage\/ NOT https:\/\/learn.uship.com\/page\/childpage\/",
+                                    "type": "page_link",
+                                    "instructions": "",
                                     "required": 1,
                                     "conditional_logic": 0,
                                     "wrapper": {
@@ -81,11 +81,13 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": ""
+                                    "post_type": [
+                                        "page"
+                                    ],
+                                    "taxonomy": [],
+                                    "allow_null": 0,
+                                    "allow_archives": 0,
+                                    "multiple": 0
                                 },
                                 {
                                     "key": "field_56e17b1bed052",
@@ -177,10 +179,10 @@
                             "sub_fields": [
                                 {
                                     "key": "field_56e17baf9f1ec",
-                                    "label": "Strip Link",
+                                    "label": "Strip Page Link",
                                     "name": "split_screen_strip_url",
-                                    "type": "text",
-                                    "instructions": "Relative paths only! Meaning no full URLs. Always place a forward slash in front of the destination. EX: \/page\/childpage\/ NOT https:\/\/learn.uship.com\/page\/childpage\/",
+                                    "type": "page_link",
+                                    "instructions": "",
                                     "required": 1,
                                     "conditional_logic": 0,
                                     "wrapper": {
@@ -188,11 +190,13 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": ""
+                                    "post_type": [
+                                        "page"
+                                    ],
+                                    "taxonomy": [],
+                                    "allow_null": 0,
+                                    "allow_archives": 0,
+                                    "multiple": 0
                                 },
                                 {
                                     "key": "field_56e17bc09f1ed",
@@ -262,5 +266,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1476214942
+    "modified": 1476979236
 }

@@ -109,9 +109,9 @@
                             "sub_fields": [
                                 {
                                     "key": "field_56956fc2efd43",
-                                    "label": "URL",
+                                    "label": "Page Link",
                                     "name": "bookend_previous_url",
-                                    "type": "text",
+                                    "type": "page_link",
                                     "instructions": "",
                                     "required": 1,
                                     "conditional_logic": 0,
@@ -120,13 +120,13 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": "",
-                                    "readonly": 0,
-                                    "disabled": 0
+                                    "post_type": [
+                                        "page"
+                                    ],
+                                    "taxonomy": [],
+                                    "allow_null": 0,
+                                    "allow_archives": 0,
+                                    "multiple": 0
                                 },
                                 {
                                     "key": "field_56956fdbefd44",
@@ -172,9 +172,9 @@
                             "sub_fields": [
                                 {
                                     "key": "field_5695702befd45",
-                                    "label": "URL",
+                                    "label": "Page Link",
                                     "name": "bookend_next_url",
-                                    "type": "text",
+                                    "type": "page_link",
                                     "instructions": "",
                                     "required": 1,
                                     "conditional_logic": 0,
@@ -183,13 +183,13 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": "",
-                                    "readonly": 0,
-                                    "disabled": 0
+                                    "post_type": [
+                                        "page"
+                                    ],
+                                    "taxonomy": [],
+                                    "allow_null": 0,
+                                    "allow_archives": 0,
+                                    "multiple": 0
                                 },
                                 {
                                     "key": "field_5695703defd46",
@@ -301,6 +301,13 @@
                 "operator": "==",
                 "value": "default"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "tabbed-page-v2-child.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -311,6 +318,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "local": "php",
-    "modified": 1469741801
+    "modified": 1476979302
 }

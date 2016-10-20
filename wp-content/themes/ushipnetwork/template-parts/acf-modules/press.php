@@ -1,4 +1,4 @@
-<section class="pressStrip">
+<section class="pressStrip" <?php if(get_sub_field('press_id')): ?>id="<?php the_sub_field('press_id'); ?>"<?php endif; ?>>
   <div class="pressStrip-container">
     <div class="pressStrip-column">
       <h3 class="pressStrip-column-title">Press Releases</h3>

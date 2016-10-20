@@ -763,6 +763,13 @@
                 "operator": "==",
                 "value": "career-listings-detail.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "tabbed-page-v2.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -773,5 +780,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1475175129
+    "modified": 1476739317
 }

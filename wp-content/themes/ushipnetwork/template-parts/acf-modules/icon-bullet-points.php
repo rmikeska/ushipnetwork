@@ -1,4 +1,4 @@
-<section class="iconBulletPoints">
+<section class="iconBulletPoints" <?php if(get_sub_field('icon_bullet_points_id')): ?>id="<?php the_sub_field('icon_bullet_points_id'); ?>"<?php endif; ?>>
   <div class="iconBulletPoints-container">
     <?php while(have_rows('icon_bullet_points_row')): the_row(); ?>
       <h5 class="iconBulletPoints-title"><?php the_sub_field('icon_bullet_points_row_title'); ?></h5>
@@ -11,5 +11,3 @@
     <?php endwhile; ?>
   </div>
 </section>
-
-

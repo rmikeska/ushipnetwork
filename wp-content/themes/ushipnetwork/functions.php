@@ -121,7 +121,7 @@ add_action( 'widgets_init', 'ushipnetwork_widgets_init' );
  * Enqueue scripts and styles.
  */
 function ushipnetwork_scripts() {
-	wp_enqueue_style( 'ushipnetwork-style', get_stylesheet_uri(), array(), '20161011', 'all' );
+	wp_enqueue_style( 'ushipnetwork-style', get_stylesheet_uri(), array(), '20161020', 'all' );
 
 	wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/lib/jquery-2.2.0.min.js', array(), '20160121', true );
 
@@ -153,6 +153,10 @@ function ushipnetwork_scripts() {
   	wp_enqueue_script( 'ushipnetwork-hashchange', get_template_directory_uri() . '/js/hashchange.min.js', array(), '20160405', true );
   	wp_enqueue_script( 'ushipnetwork-tabbed-page', get_template_directory_uri() . '/js/tabbed-page.js', array(), '20160405', true );
 	}
+
+  if ( is_page_template('tabbed-page-v2.php') || is_page_template('tabbed-page-v2-child.php')) {
+    wp_enqueue_script( 'ushipnetwork-tabbed-page-v2', get_template_directory_uri() . '/js/tabbed-page-v2.js', array(), '20161013', true );
+  }
 }
 add_action( 'wp_enqueue_scripts', 'ushipnetwork_scripts' );
 

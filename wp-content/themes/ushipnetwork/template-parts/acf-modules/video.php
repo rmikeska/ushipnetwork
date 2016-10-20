@@ -1,4 +1,4 @@
-<section class="videoFeature">
+<section class="videoFeature" <?php if(get_sub_field('video_id')): ?>id="<?php the_sub_field('video_id'); ?>"<?php endif; ?>>
   <div class="videoFeature-container">
     <h3 class="videoFeature-intro"><?php the_sub_field('video_intro'); ?></h3>
     <h6 class="videoFeature-subintro"><?php the_sub_field('video_intro_sub'); ?></h6>

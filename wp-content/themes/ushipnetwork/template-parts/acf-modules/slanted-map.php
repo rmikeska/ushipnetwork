@@ -4,7 +4,7 @@
 <?php $image_horizontal_alignment = get_sub_field('slanted_map_image_horizontal_alignment'); ?>
 <?php $image = get_sub_field('slanted_map_image'); ?>
 
-<section class="slantedMap <?php echo $bg_color . ' ' . $bg_position . ' ' . $image_vertical_alignment . ' ' . $image_horizontal_alignment; ?>">
+<section class="slantedMap <?php echo $bg_color . ' ' . $bg_position . ' ' . $image_vertical_alignment . ' ' . $image_horizontal_alignment; ?>" <?php if(get_sub_field('slanted_map_id')): ?>id="<?php the_sub_field('slanted_map_id'); ?>"<?php endif; ?>>
   <div class="slantedMap-container">
     <div class="slantedMap-image">
       <img class="slantedMap-image-image" src="<?php echo $image['url']; ?>">

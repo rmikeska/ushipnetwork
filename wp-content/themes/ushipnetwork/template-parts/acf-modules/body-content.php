@@ -1,4 +1,5 @@
 <?php if (have_rows('body_content')): ?>
+  <div class="bodyContent">
   <?php while (have_rows('body_content')) : the_row(); ?>
     <?php if (get_row_layout() == 'long_form_content'): ?>
 
@@ -52,6 +53,15 @@
 
       <?php include("value-props.php");?>
 
+    <?php elseif (get_row_layout() == 'link_row'): ?>
+
+      <?php include("link-row.php");?>
+
+    <?php elseif (get_row_layout() == 'logo_pile'): ?>
+
+      <?php include("logo-pile.php");?>
+
     <?php endif; ?>
   <?php endwhile; ?>
+  </div>
 <?php endif; ?>

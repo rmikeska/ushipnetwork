@@ -1,4 +1,4 @@
-<section class="valueProps">
+<section class="valueProps" <?php if(get_sub_field('value_props_id')): ?>id="<?php the_sub_field('value_props_id'); ?>"<?php endif; ?>>
   <div class="valueProps-container">
     <?php while(have_rows('value_props_item')): the_row(); ?>
       <div class="valueProps-item">

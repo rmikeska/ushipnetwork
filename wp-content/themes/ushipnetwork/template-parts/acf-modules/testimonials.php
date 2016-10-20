@@ -1,6 +1,6 @@
 <?php $section_bg_color = get_sub_field('testimonials_background_color'); ?>
 
-<section class="testimonials <?php echo $section_bg_color; ?>">
+<section class="testimonials <?php echo $section_bg_color; ?>" <?php if(get_sub_field('testimonials_id')): ?>id="<?php the_sub_field('testimonials_id'); ?>"<?php endif; ?>>
   <div class="testimonials-container">
     <?php if(get_sub_field('testimonials_intro')): ?>
       <h3 class="testimonials-intro"><?php the_sub_field('testimonials_intro'); ?></h3>
