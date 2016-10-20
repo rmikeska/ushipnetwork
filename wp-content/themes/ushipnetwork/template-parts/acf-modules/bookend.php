@@ -1,6 +1,6 @@
 <?php $bookend_cta_url = get_sub_field('bookend_cta_url'); ?>
 
-<section class="bookend">
+<div class="bookend">
   <?php if( get_sub_field('bookend_previous_content') && get_sub_field('bookend_next_content') ): ?>
     <div class="bookendLinksMobile-container">
       <?php while(have_rows('bookend_previous_content')): the_row(); ?>
@@ -45,4 +45,4 @@
       <?php endwhile; ?>
     </div>
   </div>
-</section>
+</div>
