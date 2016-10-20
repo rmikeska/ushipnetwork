@@ -1,12 +1,5 @@
 /*** Bios ***/
 
-
-.bios {
-  border-top: 140px solid transparent;
-  margin-top: -140px;
-  background-clip: padding-box;
-}
-
 .bios-container {
   @include container(1200px, 85px, 10px);
   overflow: hidden;

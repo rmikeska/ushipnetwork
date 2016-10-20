@@ -485,6 +485,15 @@ body {
   font-family: 'LatoWeb', sans-serif;
   -webkit-font-smoothing: antialiased; }
 
+.pageWrapper {
+  height: 100%;
+  min-height: 100vh; }
+
+main {
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
 a {
   color: #02AAF3;
   text-decoration: none; }
@@ -521,15 +530,6 @@ p {
 em {
   font-style: italic; }
 
-.pageWrapper {
-  height: 100%;
-  min-height: 100vh; }
-
-main {
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1; }
-
 .sectionWhite {
   background-color: #FFFFFF; }
 
@@ -539,7 +539,16 @@ main {
 .sectionNavy {
   background-color: #1C2431; }
 
-/*** Buttons ***/
+.bodyContent section {
+  border-top: 80px solid transparent;
+  margin-top: -80px;
+  background-clip: padding-box; }
+
+.bodyContent.subnavPush section {
+  border-top: 140px solid transparent;
+  margin-top: -140px;
+  background-clip: padding-box; }
+
 .button {
   border: solid;
   border-radius: 0.1875rem;
@@ -650,7 +659,6 @@ main {
 .page-template-split-screen #uship-footer {
   display: none; }
 
-/*** Special case styles on a page by page basis. These things need to be worked into module options ***/
 .page-id-3096 .videoFeature-container {
   padding-bottom: 0; }
 .page-id-3096 .videoFeature-video {
@@ -2005,11 +2013,6 @@ body.page-template-contact {
     display: table; }
 
 /*** Bios ***/
-.bios {
-  border-top: 140px solid transparent;
-  margin-top: -140px;
-  background-clip: padding-box; }
-
 .bios-container {
   max-width: calc(1200px + 15px*2);
   margin-left: auto;

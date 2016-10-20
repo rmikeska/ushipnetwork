@@ -1,5 +1,6 @@
 /*** Base ***/
 
+// Page Structure
 body, main, footer, header, .pageWrapper {
   display: flex;
   flex-direction: column;
@@ -22,6 +23,16 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.pageWrapper {
+  height: 100%;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+// Base Text
 a {
   color: $bright-blue;
   text-decoration: none;
@@ -63,15 +74,7 @@ em {
   font-style: italic;
 }
 
-.pageWrapper {
-  height: 100%;
-  min-height: 100vh;
-}
-
-main {
-  flex-grow: 1;
-}
-
+// Utility Styles
 .sectionWhite {
   background-color: $white;
 }
@@ -84,8 +87,19 @@ main {
   background-color: $navy;
 }
 
-/*** Buttons ***/
+.bodyContent section {
+  border-top: 80px solid transparent;
+  margin-top: -80px;
+  background-clip: padding-box;
+}
 
+.bodyContent.subnavPush section {
+  border-top: 140px solid transparent;
+  margin-top: -140px;
+  background-clip: padding-box;
+}
+
+// Buttons
 .button {
   border: solid;
   border-radius: 0.1875rem;
@@ -222,8 +236,7 @@ main {
   display: none;
 }
 
-/*** Special case styles on a page by page basis. These things need to be worked into module options ***/
-
+// Special case styles on a page by page basis. These things need to be worked into module options
 .page-id-3096 {
 
   .videoFeature-container {

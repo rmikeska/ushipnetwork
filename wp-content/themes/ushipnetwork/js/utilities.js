@@ -160,4 +160,11 @@ jQuery(document).ready(function ($) {
 
     // Add class to parent <p> of an iframe embed for responsive styling
     $('.entry-content iframe').parent('p').addClass('embed-container');
+
+
+
+    // Add class to .bodyContent if the secondary menu is active in order to adjust jump link positioning
+    if ($('#secondary-menu').length) {
+        $('.bodyContent').addClass('subnavPush');
+    }
 })
