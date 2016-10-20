@@ -3,7 +3,7 @@
     <?php while(have_rows('split_screen_panel')): the_row(); ?>
       <?php $panel_image = get_sub_field('split_screen_panel_image'); ?>
       <?php $panel_fontsize_adjust = get_sub_field('split_screen_panel_fontsize_adjust'); ?>
-      <a href="<?php get_sub_field('split_screen_panel_url'); ?>" class="splitScreen-panel <?php echo $panel_fontsize_adjust; ?>" style="background-image: url('<?php echo $panel_image['url']; ?>');">
+      <a href="<?php the_sub_field('split_screen_panel_url'); ?>" class="splitScreen-panel <?php echo $panel_fontsize_adjust; ?>" style="background-image: url('<?php echo $panel_image['url']; ?>');">
         <div class="splitScreen-panel-container">
           <h1 class="splitScreen-panel-headline"><?php the_sub_field('split_screen_panel_headline'); ?></h1>
           <?php include( get_template_directory() . '/images/circled_arrow.svg'); ?>
@@ -14,7 +14,7 @@
   </div>
   <div class="splitScreen-row">
     <?php while(have_rows('split_screen_strip')): the_row(); ?>
-      <a href="<?php get_sub_field('split_screen_strip_url'); ?>" class="splitScreen-strip">
+      <a href="<?php the_sub_field('split_screen_strip_url'); ?>" class="splitScreen-strip">
         <div class="splitScreen-strip-container">
           <h2 class="splitScreen-strip-headline"><?php the_sub_field('split_screen_strip_headline'); ?></h2>
           <h4 class="splitScreen-strip-subheadline"><?php the_sub_field('split_screen_strip_subheadline'); ?></h4>
