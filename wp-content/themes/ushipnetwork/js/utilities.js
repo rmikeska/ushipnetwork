@@ -140,6 +140,24 @@ jQuery(document).ready(function ($) {
 
 
 
+    // Repeat above for tabbed page v2 test
+    $('.introSlide-slideshow > .introSlide-slideshow-slide:first-child').show();
+
+    setInterval(function () {
+        $('.tabContent .introSlide .introSlide-container .introSlide-slideshow').each(function () {
+            if ($(this).find('div.introSlide-slideshow-slide').length > 1) {
+                $(this).find('div.introSlide-slideshow-slide:first')
+                .fadeOut(500)
+                .next()
+                .fadeIn(500)
+                .end()
+                .appendTo($(this));
+            }
+        });
+    },  3000);
+
+
+
     // Add .active class to How it Works nav item when on prod and staging Learn sites
     $(function () {
         if ((window.location.hostname === 'learn.uship.com') || (window.location.hostname === 'ushiplearn.wpengine.com') || (window.location.hostname === 'ushiplearn.staging.wpengine.com')) {
