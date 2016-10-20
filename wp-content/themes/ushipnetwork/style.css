@@ -2005,6 +2005,11 @@ body.page-template-contact {
     display: table; }
 
 /*** Bios ***/
+.bios {
+  border-top: 80px solid transparent;
+  margin-top: -80px;
+  background-clip: padding-box; }
+
 .bios-container {
   max-width: calc(1200px + 15px*2);
   margin-left: auto;

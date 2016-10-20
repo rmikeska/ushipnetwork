@@ -1910,6 +1910,13 @@ body.page-template-contact {
     display: table; }
 
 /*** Bios ***/
+.bios {
+  border-top: 80px solid transparent;
+  margin-top: -80px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box; }
+
 .bios-container {
   max-width: -webkit-calc(1200px + 15px*2);
   max-width: calc(1200px + 15px*2);
