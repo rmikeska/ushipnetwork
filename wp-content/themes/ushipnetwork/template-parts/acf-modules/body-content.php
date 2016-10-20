@@ -1,5 +1,4 @@
 <?php if (have_rows('body_content')): ?>
-  <div class="bodyContent">
   <?php while (have_rows('body_content')) : the_row(); ?>
     <?php if (get_row_layout() == 'long_form_content'): ?>
 
@@ -63,5 +62,4 @@
 
     <?php endif; ?>
   <?php endwhile; ?>
-  </div>
 <?php endif; ?>

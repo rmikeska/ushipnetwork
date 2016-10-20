@@ -41,8 +41,10 @@ get_header(); ?>
 </div>
 
 <div class="tabContent">
+  <div class="bodyContent">
   <?php include("template-parts/acf-modules/body-content.php");?>
   <?php include("template-parts/acf-modules/bottom-content.php");?>
+  </div>
 </div>
 
 <?php get_footer(); ?>
