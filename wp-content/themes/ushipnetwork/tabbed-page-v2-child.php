@@ -44,4 +44,6 @@ get_header(); ?>
   <?php include("template-parts/acf-modules/body-content.php");?>
 </div>
 
+<?php include("template-parts/acf-modules/bottom-content.php");?>
+
 <?php get_footer(); ?>
