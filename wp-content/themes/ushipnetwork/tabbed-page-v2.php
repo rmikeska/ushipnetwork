@@ -30,12 +30,6 @@ get_header(); ?>
   </ul>
 </div>
 
-<div class="tabContent">
-  <script type="text/javascript">
-    jQuery(document).ready(function ($) {
-        $('.introSlide-slideshow-slide:first-of-type').show();
-    })
-  </script>
-</div>
+<div class="tabContent"></div>
 
 <?php get_footer(); ?>

@@ -67,6 +67,7 @@
     var loadContent = function (url) {
         $.get(url).done(function (data) {
             $('.tabContent').html($(data).find('.bodyContent'));
+            $('.introSlide-slideshow-slide:first-of-type').show();
             animatePageContent();
         })
 
