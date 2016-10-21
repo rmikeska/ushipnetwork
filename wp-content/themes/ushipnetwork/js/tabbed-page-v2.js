@@ -28,7 +28,6 @@
 
         $.get(firstPage).done(function (data) {
             $('.tabContent').html($(data).find('.bodyContent'));
-            animatePageContent();
         })
     }
 
@@ -53,11 +52,12 @@
     var loadContent = function (url) {
         $.get(url).done(function (data) {
             $('.tabContent').html($(data).find('.bodyContent'));
-            animatePageContent();
         })
 
         $('.tabbedPageMenu-list li').removeClass('tabbedPage-active');
         $('.tabbedPageMenu-list li a[href="' + url + '"]').parent().addClass('tabbedPage-active');
+
+        animatePageContent();
     };
 
 
@@ -90,5 +90,7 @@
             loadFirstPage();
         }
     });
+
+    animatePageContent();
 
 })(jQuery);
