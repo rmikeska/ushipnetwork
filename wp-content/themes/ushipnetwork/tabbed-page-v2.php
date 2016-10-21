@@ -23,7 +23,7 @@ get_header(); ?>
   <?php if (have_rows('tabbed_page_content')): ?>
     <?php while (have_rows('tabbed_page_content')) : the_row(); ?>
 
-      <li><a href="<?php the_sub_field('tabbed_page_page'); ?>" rel="tab"><?php the_sub_field('tabbed_page_page_menu_title'); ?></a></li>
+      <li><a href="<?php the_sub_field('tabbed_page_page'); ?>"><?php the_sub_field('tabbed_page_page_menu_title'); ?></a></li>
 
     <?php endwhile; ?>
   <?php endif; ?>
