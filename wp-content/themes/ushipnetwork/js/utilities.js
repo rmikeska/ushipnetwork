@@ -123,7 +123,7 @@ jQuery(document).ready(function ($) {
 
 
     // Intro slide module slideshow effects
-    $('.tabbedPage .introSlide-slideshow-slide:first-child').show();
+    $('.introSlide-slideshow-slide:first-child').show();
 
     setInterval(function () {
         $('.introSlide-slideshow').each(function () {
@@ -159,7 +159,7 @@ jQuery(document).ready(function ($) {
 
 
     // Add class to parent <p> of an iframe embed for responsive styling
-    $('.entry-content iframe').parent('p').addClass('embed-container');
+    $('.entry-content iframe').parent().addClass('embed-container');
 
 
 
