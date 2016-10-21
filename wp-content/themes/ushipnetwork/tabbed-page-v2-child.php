@@ -42,6 +42,11 @@ get_header(); ?>
 
 <div class="tabContent">
   <div class="bodyContent">
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $('.introSlide-slideshow-slide:first-of-type').show();
+    })
+  </script>
   <?php include("template-parts/acf-modules/body-content.php");?>
   <?php include("template-parts/acf-modules/bottom-content.php");?>
   </div>
