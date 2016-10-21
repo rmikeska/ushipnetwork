@@ -28,6 +28,7 @@
 
         $.get(firstPage).done(function (data) {
             $('.tabContent').html($(data).find('.bodyContent'));
+            $('.introSlide-slideshow-slide:first-child').show();
         })
     }
 
@@ -52,6 +53,7 @@
     var loadContent = function (url) {
         $.get(url).done(function (data) {
             $('.tabContent').html($(data).find('.bodyContent'));
+            $('.introSlide-slideshow-slide:first-child').show();
             animatePageContent();
         })
 
