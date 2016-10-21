@@ -123,6 +123,8 @@ jQuery(document).ready(function ($) {
 
 
     // Intro slide module slideshow effects
+    $('.introSlide-slideshow-slide:first-child').show();
+
     setInterval(function () {
         $('.introSlide-slideshow').each(function () {
             if ($(this).find('.introSlide-slideshow-slide').length > 1) {
