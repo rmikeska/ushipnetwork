@@ -2,21 +2,6 @@
 
 
 
-    setInterval(function () {
-        $('.introSlide-slideshow').each(function () {
-            if ($(this).find('.introSlide-slideshow-slide').length > 1) {
-                $(this).find('.introSlide-slideshow-slide:first')
-                .fadeOut(500)
-                .next()
-                .fadeIn(500)
-                .end()
-                .appendTo($(this));
-            }
-        });
-    },  3000);
-
-
-
     // Add classes to larger tab menus for specific wide breakpoints
     $('.tabbedPageMenu-list').each(function () {
         if ($(this).children().length == 5) {
@@ -67,7 +52,6 @@
     var loadContent = function (url) {
         $.get(url).done(function (data) {
             $('.tabContent').html($(data).find('.bodyContent'));
-            $('.introSlide-slideshow-slide:first-of-type').show();
             animatePageContent();
         })
 
