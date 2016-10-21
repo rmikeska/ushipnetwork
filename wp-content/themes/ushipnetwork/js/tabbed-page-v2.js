@@ -2,8 +2,6 @@
 
 
 
-    $('.introSlide-slideshow-slide:first-of-type').show();
-
     setInterval(function () {
         $('.introSlide-slideshow').each(function () {
             if ($(this).find('.introSlide-slideshow-slide').length > 1) {
