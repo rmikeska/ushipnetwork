@@ -123,10 +123,10 @@ jQuery(document).ready(function ($) {
 
 
     // Intro slide module slideshow effects
-    $('.introSlide-slideshow > .introSlide-slideshow-slide:first-child').show();
+    $('.tabbedPage .introSlide-slideshow > .introSlide-slideshow-slide:first-child').show();
 
     setInterval(function () {
-        $('.introSlide .introSlide-container .introSlide-slideshow').each(function () {
+        $('.tabbedPage .introSlide .introSlide-container .introSlide-slideshow').each(function () {
             if ($(this).find('div.introSlide-slideshow-slide').length > 1) {
                 $(this).find('div.introSlide-slideshow-slide:first')
                 .fadeOut(500)

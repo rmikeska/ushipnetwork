@@ -43,6 +43,22 @@
             } else if (window.location.href == parentPageURL) {
                 $(this).parent(':first-child').addClass('tabbedPage-active').siblings().removeClass('tabbedPage-active');
                 loadFirstPage();
+
+                // Intro slide module slideshow effects
+                $('.introSlide-slideshow > .introSlide-slideshow-slide:first-child').show();
+
+                setInterval(function () {
+                    $('.introSlide .introSlide-container .introSlide-slideshow').each(function () {
+                        if ($(this).find('div.introSlide-slideshow-slide').length > 1) {
+                            $(this).find('div.introSlide-slideshow-slide:first')
+                            .fadeOut(500)
+                            .next()
+                            .fadeIn(500)
+                            .end()
+                            .appendTo($(this));
+                        }
+                    });
+                },  3000);
             }
         });
     });
@@ -71,6 +87,22 @@
         document.title = title;
 
         loadContent(url);
+
+        // Intro slide module slideshow effects
+        $('.introSlide-slideshow > .introSlide-slideshow-slide:first-child').show();
+
+        setInterval(function () {
+            $('.introSlide .introSlide-container .introSlide-slideshow').each(function () {
+                if ($(this).find('div.introSlide-slideshow-slide').length > 1) {
+                    $(this).find('div.introSlide-slideshow-slide:first')
+                    .fadeOut(500)
+                    .next()
+                    .fadeIn(500)
+                    .end()
+                    .appendTo($(this));
+                }
+            });
+        },  3000);
 
         return false;
     });
