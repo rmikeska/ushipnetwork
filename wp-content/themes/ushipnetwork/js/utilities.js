@@ -129,7 +129,7 @@ jQuery(document).ready(function ($) {
         $('.introSlide .introSlide-container .introSlide-slideshow').each(function () {
             if ($(this).find('div.introSlide-slideshow-slide').length > 1) {
                 $(this).find('div.introSlide-slideshow-slide:first')
-                .fadeOut(1000)
+                .fadeOut(500)
                 .next()
                 .fadeIn(500)
                 .end()

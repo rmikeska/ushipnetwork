@@ -56,8 +56,6 @@
 
         $('.tabbedPageMenu-list li').removeClass('tabbedPage-active');
         $('.tabbedPageMenu-list li a[href="' + url + '"]').parent().addClass('tabbedPage-active');
-
-        animatePageContent();
     };
 
 
@@ -90,7 +88,5 @@
             loadFirstPage();
         }
     });
-
-    animatePageContent();
 
 })(jQuery);
