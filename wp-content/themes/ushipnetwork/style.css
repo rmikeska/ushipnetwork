@@ -971,7 +971,7 @@ article .post-featureImage {
     overflow-wrap: break-word; }
   .entry-content i {
     font-style: italic; }
-  .entry-content iframe {
+  .entry-content .embed-container iframe {
     display: block;
     position: absolute;
     top: 0;

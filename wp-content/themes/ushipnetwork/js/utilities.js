@@ -158,7 +158,7 @@ jQuery(document).ready(function ($) {
 
 
 
-    // Add class to parent <p> of an iframe embed for responsive styling
+    // Add class to parent of an iframe embed for responsive styling
     $('.entry-content iframe').parent().addClass('embed-container');
 
 
