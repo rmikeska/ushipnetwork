@@ -33,7 +33,6 @@
         $.get(firstPage).done(function (data) {
             $('.tabContent').html($(data).find('.bodyContent'));
             $('.tabContent .introSlide-slideshow-slide:first-child').show();
-            animatePageContent();
         })
     }
 
@@ -110,6 +109,6 @@
                 .appendTo($(this));
             }
         });
-    },  3000);
+    },  6000);
 
 })(jQuery);
