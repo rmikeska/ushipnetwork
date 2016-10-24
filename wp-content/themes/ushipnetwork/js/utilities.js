@@ -123,23 +123,6 @@ jQuery(document).ready(function ($) {
 
 
     // Intro slide module slideshow effects
-    $('.tabbedPage .introSlide-slideshow-slide:first-child').show();
-
-    setInterval(function () {
-        $('.tabbedPage .introSlide-slideshow').each(function () {
-            if ($(this).find('.introSlide-slideshow-slide').length > 1) {
-                $(this).find('.introSlide-slideshow-slide:first')
-                .fadeOut(500)
-                .next()
-                .fadeIn(500)
-                .end()
-                .appendTo($(this));
-            }
-        });
-    },  3000);
-
-
-
     $('.page-template-default .introSlide-slideshow-slide:first-child').show();
 
     setInterval(function () {
