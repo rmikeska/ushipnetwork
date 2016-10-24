@@ -121,7 +121,7 @@ add_action( 'widgets_init', 'ushipnetwork_widgets_init' );
  * Enqueue scripts and styles.
  */
 function ushipnetwork_scripts() {
-	wp_enqueue_style( 'ushipnetwork-style', get_stylesheet_uri(), array(), '20161020', 'all' );
+	wp_enqueue_style( 'ushipnetwork-style', get_stylesheet_uri(), array(), '20161024', 'all' );
 
 	wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/lib/jquery-2.2.0.min.js', array(), '20160121', true );
 
@@ -133,7 +133,7 @@ function ushipnetwork_scripts() {
 
 	wp_enqueue_script( 'ushipnetwork-forms', get_template_directory_uri() . '/js/forms.js', array(), '20160714', true );
 
-	wp_enqueue_script( 'ushipnetwork-utilities', get_template_directory_uri() . '/js/utilities.js', array(), '20161021', true );
+	wp_enqueue_script( 'ushipnetwork-utilities', get_template_directory_uri() . '/js/utilities.js', array(), '20161024', true );
 
 	wp_enqueue_script( 'ushipnetwork-jquery-modal', get_template_directory_uri() . '/js/lib/jquery.modal.js', array(), '20160425', true );
 
@@ -151,11 +151,11 @@ function ushipnetwork_scripts() {
 
 	if ( is_page_template('tabbed-page.php') ) {
   	wp_enqueue_script( 'ushipnetwork-hashchange', get_template_directory_uri() . '/js/hashchange.min.js', array(), '20160405', true );
-  	wp_enqueue_script( 'ushipnetwork-tabbed-page', get_template_directory_uri() . '/js/tabbed-page.js', array(), '20160405', true );
+  	wp_enqueue_script( 'ushipnetwork-tabbed-page', get_template_directory_uri() . '/js/tabbed-page.js', array(), '20161024', true );
 	}
 
   if ( is_page_template('tabbed-page-v2.php') || is_page_template('tabbed-page-v2-child.php')) {
-    wp_enqueue_script( 'ushipnetwork-tabbed-page-v2', get_template_directory_uri() . '/js/tabbed-page-v2.js', array(), '20161013', true );
+    wp_enqueue_script( 'ushipnetwork-tabbed-page-v2', get_template_directory_uri() . '/js/tabbed-page-v2.js', array(), '20161024', true );
   }
 }
 add_action( 'wp_enqueue_scripts', 'ushipnetwork_scripts' );
