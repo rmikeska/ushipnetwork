@@ -97,7 +97,7 @@
 
 
 
-    $('.tabContent .introSlide-slideshow-slide:first-child').show();
+    $('.tabChild .introSlide-slideshow-slide:first-child').show();
 
     setInterval(function () {
         $('.tabContent .introSlide-slideshow').each(function () {
