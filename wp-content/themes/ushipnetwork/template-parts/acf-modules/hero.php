@@ -78,10 +78,12 @@
       </div>
     <?php endwhile; ?>
     <?php while(have_rows('hero_tertiary_callout')): the_row(); ?>
-      <div class="tertiaryCallout-container">
-        <?php $hero_tertiary_url = get_sub_field('hero_tertiary_callout_url'); ?>
-        <h6 class="tertiaryCallout-title"><?php the_sub_field('hero_tertiary_callout_title'); ?></h6>
-        <a class="tertiaryCallout-link tertiaryLink tertiaryLinkLight" role="button" href="<?php echo $hero_tertiary_url; ?>"><?php the_sub_field('hero_tertiary_callout_link_text'); ?><?php include( get_template_directory() . '/images/arrow_link.svg'); ?></a>
+      <div class="hero-tertiaryCallout">
+        <div class="tertiaryCallout-container">
+          <?php $hero_tertiary_url = get_sub_field('hero_tertiary_callout_url'); ?>
+          <h6 class="tertiaryCallout-title"><?php the_sub_field('hero_tertiary_callout_title'); ?></h6>
+          <a class="tertiaryCallout-link tertiaryLink tertiaryLinkLight" role="button" href="<?php echo $hero_tertiary_url; ?>"><?php the_sub_field('hero_tertiary_callout_link_text'); ?><?php include( get_template_directory() . '/images/arrow_link.svg'); ?></a>
+        </div>
       </div>
     <?php endwhile; ?>
   </div>

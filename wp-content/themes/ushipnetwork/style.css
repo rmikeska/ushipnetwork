@@ -1225,7 +1225,8 @@ article.category-press-release {
   padding-bottom: 0;
   padding-left: 15px;
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 2; }
   .tabbedPageMenu::after {
     clear: both;
     content: "";
