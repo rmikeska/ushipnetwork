@@ -72,7 +72,8 @@
 
         url = $(this).attr('href');
         // Strip out <br> from Tab Titles
-        anchor = $(this).html().replace(/<br\s*[\/]?>/gi, ' ');
+        // anchor = $(this).html().replace(/<br\s*[\/]?>/gi, ' ');
+        anchor = $(this).text();
         title = anchor + ' - ' + parentPageTitle;
 
         history.pushState({url: url,title: title}, title, url);
