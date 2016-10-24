@@ -40,7 +40,7 @@ get_header(); ?>
   </ul>
 </div>
 
-<div class="tabContent">
+<div class="tabContent tabChild">
   <div class="bodyContent">
   <?php include("template-parts/acf-modules/body-content.php");?>
   <?php include("template-parts/acf-modules/bottom-content.php");?>
