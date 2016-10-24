@@ -126,7 +126,7 @@ jQuery(document).ready(function ($) {
     $('.tabbedPage .introSlide-slideshow-slide:first-child').show();
 
     setInterval(function () {
-        $('.introSlide-slideshow').each(function () {
+        $('.tabbedPage .introSlide-slideshow').each(function () {
             if ($(this).find('.introSlide-slideshow-slide').length > 1) {
                 $(this).find('.introSlide-slideshow-slide:first')
                 .fadeOut(500)
