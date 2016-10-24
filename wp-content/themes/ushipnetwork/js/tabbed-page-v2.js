@@ -2,10 +2,6 @@
 
 
 
-    $('.tabChild .introSlide-slideshow-slide:first-child').show();
-
-
-
     // Add classes to larger tab menus for specific wide breakpoints
     $('.tabbedPageMenu-list').each(function () {
         if ($(this).children().length == 5) {
@@ -32,7 +28,7 @@
 
         $.get(firstPage).done(function (data) {
             $('.tabContent').html($(data).find('.bodyContent'));
-            $('.tabContent .introSlide-slideshow-slide:first-child').show();
+            $('.tabContent .introSlide-slideshow-slide:first-child').hide(500).show();
         })
     }
 
@@ -57,7 +53,7 @@
     var loadContent = function (url) {
         $.get(url).done(function (data) {
             $('.tabContent').html($(data).find('.bodyContent'));
-            $('.tabContent .introSlide-slideshow-slide:first-child').show();
+            $('.tabContent .introSlide-slideshow-slide:first-child').hide(500).show();
             animatePageContent();
         })
 
@@ -101,10 +97,12 @@
 
 
 
+    $('.tabContent .introSlide-slideshow-slide:first-child').show();
+
     setInterval(function () {
         $('.tabContent .introSlide-slideshow').each(function () {
             if ($(this).find('.introSlide-slideshow-slide').length > 1) {
-                $(this).find('.introSlide-slideshow-slide:first')
+                $(this).find('.introSlide-slideshow-slide:first-child')
                 .fadeOut(500)
                 .next()
                 .fadeIn(500)
