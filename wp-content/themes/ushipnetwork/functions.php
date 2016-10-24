@@ -155,7 +155,7 @@ function ushipnetwork_scripts() {
 	}
 
   if ( is_page_template('tabbed-page-v2.php') || is_page_template('tabbed-page-v2-child.php')) {
-    wp_enqueue_script( 'ushipnetwork-tabbed-page-v2', get_template_directory_uri() . '/js/tabbed-page-v2.js', array(), '20161024', true );
+    wp_enqueue_script( 'ushipnetwork-tabbed-page-v2', get_template_directory_uri() . '/js/tabbed-page-v2.js', array(), '2016102401', true );
   }
 }
 add_action( 'wp_enqueue_scripts', 'ushipnetwork_scripts' );

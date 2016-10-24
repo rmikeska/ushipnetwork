@@ -11,10 +11,12 @@ get_header(); ?>
 <?php $parent = $post->post_parent; ?>
 <?php $parentTitle = get_the_title($parent); ?>
 <?php $parentURL = get_permalink($parent); ?>
+<?php $siteTitle = get_bloginfo(); ?>
 
 <script type="text/javascript">
   var parentPageTitle = '<?php echo $parentTitle; ?>';
   var parentPageURL = '<?php echo $parentURL; ?>';
+  var siteTitle = '<?php echo $siteTitle; ?>';
 </script>
 
 <?php if (have_rows('top_content', $parent)): ?>

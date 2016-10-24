@@ -10,10 +10,12 @@ get_header(); ?>
 <?php global $post; ?>
 <?php $parentTitle = get_the_title($post); ?>
 <?php $parentURL = get_permalink($post); ?>
+<?php $siteTitle = get_bloginfo(); ?>
 
 <script type="text/javascript">
   var parentPageTitle = '<?php echo $parentTitle; ?>';
   var parentPageURL = '<?php echo $parentURL; ?>';
+  var siteTitle = '<?php echo $siteTitle; ?>';
 </script>
 
 <?php include("template-parts/acf-modules/top-content.php");?>

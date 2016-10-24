@@ -93,7 +93,7 @@
             document.title = state.title;
             loadContent(state.url);
         } else {
-            document.title = parentPageTitle;
+            document.title = siteTitle + ' - ' + parentPageTitle;
             $('.tabbedPageMenu-list li:first-child').addClass('tabbedPage-active').siblings().removeClass('tabbedPage-active');
             loadFirstPage();
         }
@@ -112,6 +112,6 @@
                 .appendTo($(this));
             }
         });
-    },  6000);
+    },  3000);
 
 })(jQuery);
