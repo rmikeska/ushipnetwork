@@ -1317,9 +1317,9 @@
                             "label": "Slide",
                             "name": "intro_slide_slide",
                             "type": "repeater",
-                            "instructions": "",
-                            "required": "",
-                            "conditional_logic": "",
+                            "instructions": "Add up to 4 image slides. Adding more than 1 image will automatically initiate a slideshow animation.",
+                            "required": 1,
+                            "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
                                 "class": "",
@@ -1327,7 +1327,7 @@
                             },
                             "collapsed": "",
                             "min": 1,
-                            "max": 5,
+                            "max": 4,
                             "layout": "table",
                             "button_label": "Add Row",
                             "sub_fields": [
@@ -1336,7 +1336,7 @@
                                     "label": "Image",
                                     "name": "intro_slide_slide_image",
                                     "type": "image",
-                                    "instructions": "",
+                                    "instructions": "Slide show image must be at least 780px wide! Background white space needs to be included in the minimum 780px wide image for the transition animation to perform properly.",
                                     "required": 1,
                                     "conditional_logic": 0,
                                     "wrapper": {
@@ -1347,7 +1347,7 @@
                                     "return_format": "array",
                                     "preview_size": "medium",
                                     "library": "all",
-                                    "min_width": "",
+                                    "min_width": 780,
                                     "min_height": "",
                                     "min_size": "",
                                     "max_width": "",
@@ -2099,5 +2099,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1476982350
+    "modified": 1477420975
 }
