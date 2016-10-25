@@ -3467,17 +3467,11 @@ body.page-template-contact {
   margin-top: 50%; }
 
 .introSlide-slideshow-slide {
+  display: none;
   position: absolute;
   left: 0px;
   right: 0px;
   bottom: 0px; }
-
-.tabContent .introSlide-slideshow-slide {
-  display: block; }
-
-.page-template-default .introSlide-slideshow-slide,
-.tabbedPage .introSlide-slideshow-slide {
-  display: none; }
 
 .introSlide-slideshow-slide-image {
   display: block;

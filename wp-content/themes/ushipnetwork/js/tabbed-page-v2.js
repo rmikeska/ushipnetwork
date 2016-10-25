@@ -4,6 +4,9 @@
 
     // Add classes for slideshow number
     function slideNumber () {
+
+        $('.introSlide-slideshow-slide').show();
+
         $('.introSlide-slideshow').each(function () {
             if ($(this).children().length == 4) {
                 $(this).addClass('slides4');
@@ -59,6 +62,7 @@
 
         slideNumber();
 
+        // Set global variable on page load to determine if page has a history state
         var firstLoad = 1;
 
         $('.tabbedPageMenu-list a').each(function () {
@@ -73,6 +77,7 @@
             }
         });
 
+        // Load first page if state is not found
         if (firstLoad == 1) {
             loadFirstPage();
         }
