@@ -4,6 +4,8 @@
 
     $('.tabChild .introSlide-slideshow-slide:first-child').show();
 
+    slideShow();
+
     setInterval(slideShow, 3000);
 
     function slideShow () {
