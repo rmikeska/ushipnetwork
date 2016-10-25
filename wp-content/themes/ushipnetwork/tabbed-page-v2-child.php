@@ -42,8 +42,15 @@ get_header(); ?>
   </ul>
 </div>
 
-<div class="tabContent tabChild">
+<div class="tabContent">
   <div class="bodyContent">
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+      $('.introSlide-slideshow').each(function () {
+          $('.introSlide-slideshow-slide:first-child').show();
+      });
+    })
+  </script>
   <?php include("template-parts/acf-modules/body-content.php");?>
   <?php include("template-parts/acf-modules/bottom-content.php");?>
   </div>
