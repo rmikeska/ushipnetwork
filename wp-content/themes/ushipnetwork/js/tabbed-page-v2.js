@@ -51,7 +51,7 @@
 
         $.get(firstPage).done(function (data) {
             $('.tabContent').html($(data).find('.bodyContent'));
-            $('.tabContent .introSlide-slideshow-slide:first-child').show();
+            // $('.tabContent .introSlide-slideshow-slide:first-child').show();
             clearInterval(slideShow);
         })
     }
