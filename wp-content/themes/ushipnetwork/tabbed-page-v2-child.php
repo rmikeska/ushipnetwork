@@ -44,6 +44,21 @@ get_header(); ?>
 
 <div class="tabContent">
   <div class="bodyContent">
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $('.introSlide-slideshow').each(function () {
+            if ($(this).children().length == 4) {
+                $(this).addClass('slides4');
+            } else if ($(this).children().length == 3) {
+                $(this).addClass('slides3');
+            } else if ($(this).children().length == 2) {
+                $(this).addClass('slides2');
+            } else if ($(this).children().length == 1) {
+                $(this).addClass('slides1');
+            }
+        });
+    })
+  </script>
   <?php include("template-parts/acf-modules/body-content.php");?>
   <?php include("template-parts/acf-modules/bottom-content.php");?>
   </div>

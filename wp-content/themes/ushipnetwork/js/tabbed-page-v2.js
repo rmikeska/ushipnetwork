@@ -1,22 +1,38 @@
 (function ($) {
 
 
-    $('.introSlide-slideshow-slide:first-child').show();
+    // $('.introSlide-slideshow-slide:first-child').show();
 
-    function slideShow () {
-        $('.introSlide-slideshow').each(function () {
-            if ($(this).find('.introSlide-slideshow-slide').length > 1) {
-                $(this).find('.introSlide-slideshow-slide:first-child')
-                .fadeOut(500)
-                .next()
-                .fadeIn(500)
-                .end()
-                .appendTo($(this));
-            }
-        });
-    }
+    // function slideShow () {
+    //     $('.introSlide-slideshow').each(function () {
+    //         if ($(this).find('.introSlide-slideshow-slide').length > 1) {
+    //             $(this).find('.introSlide-slideshow-slide:first-child')
+    //             .fadeOut(500)
+    //             .next()
+    //             .fadeIn(500)
+    //             .end()
+    //             .appendTo($(this));
+    //         }
+    //     });
+    // }
 
-    setInterval(slideShow, 3000);
+    // setInterval(slideShow, 3000);
+
+    // function slideNumber () {
+    //     $('.introSlide-slideshow').each(function () {
+    //         if ($(this).children().length == 4) {
+    //             $(this).addClass('slides4');
+    //         } else if ($(this).children().length == 3) {
+    //             $(this).addClass('slides3');
+    //         } else if ($(this).children().length == 2) {
+    //             $(this).addClass('slides2');
+    //         } else if ($(this).children().length == 1) {
+    //             $(this).addClass('slides1');
+    //         }
+    //     });
+    // }
+
+    // slideNumber();
 
 
 
@@ -33,6 +49,7 @@
 
 
 
+    // Fade animation for the body content
     function animatePageContent () {
         $('.bodyContent').children().hide().each(function (i) {
             $(this).delay((i++) * 100).fadeTo(300, 1);
@@ -41,18 +58,21 @@
 
 
 
+    // Find and load the first page tab
     function loadFirstPage () {
         var firstPage = $('.tabbedPageMenu-list:first-child a').attr('href');
 
         $.get(firstPage).done(function (data) {
             $('.tabContent').html($(data).find('.bodyContent'));
-            clearInterval(slideShow);
-            $('.introSlide-slideshow-slide:first-child').show();
+            // clearInterval(slideShow);
+            // $('.introSlide-slideshow-slide:first-child').show();
+            // slideNumber();
         })
     }
 
 
 
+    // Handle intitial, stateless page load
     $(window).load(function () {
         $('.tabbedPageMenu-list a').each(function () {
 
@@ -69,11 +89,13 @@
 
 
 
+    // Load page tabs, add/remove active states
     var loadContent = function (url) {
         $.get(url).done(function (data) {
             $('.tabContent').html($(data).find('.bodyContent'));
-            clearInterval(slideShow);
-            $('.introSlide-slideshow-slide:first-child').show();
+            // clearInterval(slideShow);
+            // $('.introSlide-slideshow-slide:first-child').show();
+            // slideNumber();
             animatePageContent();
         })
 
@@ -83,14 +105,13 @@
 
 
 
+    // Initiate history.pushState on click of tab menu links
     $(document).on('click', '.tabbedPageMenu-list a', function (e) {
         e.preventDefault();
 
         url = $(this).attr('href');
-        // Strip out <br> from Tab Titles
-        // anchor = $(this).html().replace(/<br\s*[\/]?>/gi, ' ');
-        anchor = $(this).text();
-        title = anchor + ' - ' + parentPageTitle;
+        anchorText = $(this).text();
+        title = anchorText + ' - ' + parentPageTitle;
 
         history.pushState({url: url,title: title}, title, url);
 
@@ -103,6 +124,7 @@
 
 
 
+    // Handle back/forward button actions
     $(window).on('popstate', function (e) {
         var state = e.originalEvent.state;
         if (state !== null) {

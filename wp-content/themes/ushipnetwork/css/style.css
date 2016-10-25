@@ -3232,11 +3232,17 @@ body.page-template-contact {
   margin-top: 50%; }
 
 .introSlide-slideshow-slide {
-  display: none;
   position: absolute;
   left: 0px;
   right: 0px;
   bottom: 0px; }
+
+.tabContent .introSlide-slideshow-slide {
+  display: block; }
+
+.page-template-default .introSlide-slideshow-slide,
+.tabbedPage .introSlide-slideshow-slide {
+  display: none; }
 
 .introSlide-slideshow-slide-image {
   display: block;
@@ -3248,6 +3254,76 @@ body.page-template-contact {
 
 .page-template-default .introSlide-container {
   padding-top: 70px; }
+
+/* Slideshow module animations */
+@keyframes slides4 {
+  0% {
+    opacity: 0; }
+  8.33% {
+    opacity: 1; }
+  25% {
+    opacity: 1; }
+  33.32% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+.introSlide-slideshow.slides4 div {
+  opacity: 0;
+  animation-name: slides4;
+  animation-iteration-count: infinite;
+  animation-duration: 12s; }
+.introSlide-slideshow.slides4 div:nth-of-type(1) {
+  animation-delay: 0; }
+.introSlide-slideshow.slides4 div:nth-of-type(2) {
+  animation-delay: 3s; }
+.introSlide-slideshow.slides4 div:nth-of-type(3) {
+  animation-delay: 6s; }
+.introSlide-slideshow.slides4 div:nth-of-type(4) {
+  animation-delay: 9s; }
+
+@keyframes slides3 {
+  0% {
+    opacity: 0; }
+  11.11% {
+    opacity: 1; }
+  33.33% {
+    opacity: 1; }
+  44.44% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+.introSlide-slideshow.slides3 div {
+  opacity: 0;
+  animation-name: slides3;
+  animation-iteration-count: infinite;
+  animation-duration: 9s; }
+.introSlide-slideshow.slides3 div:nth-of-type(1) {
+  animation-delay: 0; }
+.introSlide-slideshow.slides3 div:nth-of-type(2) {
+  animation-delay: 3s; }
+.introSlide-slideshow.slides3 div:nth-of-type(3) {
+  animation-delay: 6s; }
+
+@keyframes slides2 {
+  0% {
+    opacity: 0; }
+  16.66% {
+    opacity: 1; }
+  50% {
+    opacity: 1; }
+  66.66% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+.introSlide-slideshow.slides2 div {
+  opacity: 0;
+  animation-name: slides2;
+  animation-iteration-count: infinite;
+  animation-duration: 6s; }
+.introSlide-slideshow.slides2 div:nth-of-type(1) {
+  animation-delay: 0; }
+.introSlide-slideshow.slides2 div:nth-of-type(2) {
+  animation-delay: 3s; }
 
 .iconBulletPoints {
   background-color: #F4F4F4; }
