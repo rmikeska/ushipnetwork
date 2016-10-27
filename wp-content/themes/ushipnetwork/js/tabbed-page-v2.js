@@ -2,6 +2,22 @@
 
 
 
+    var videoArray = [];
+
+    // Video.js player
+    function videoPlayer () {
+        $('.tabContent .video-js').each(function () {
+            vidId = $(this).attr('id');
+            videoArray.push(this);
+            vidURL = 'https://www.youtube.com/watch?v=' + vidId;
+            var vidPlayer = videojs(vidId, {
+                "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": vidURL}]
+            });
+        });
+    }
+
+
+
     // Add classes for slideshow number
     function slideNumber () {
 
@@ -46,10 +62,18 @@
 
     // Find and load the first page tab
     function loadFirstPage () {
+
+        if (videoArray.length != 0) {
+            videoArray.forEach(function(e) {
+                videojs(e).dispose();
+            });
+        }
+
         var firstPage = $('.tabbedPageMenu-list:first-child a').attr('href');
 
         $.get(firstPage).done(function (data) {
             $('.tabContent').html($(data).find('.bodyContent'));
+            videoPlayer();
             slideNumber();
             animatePageContent();
         })
@@ -60,6 +84,13 @@
     // Handle intitial, stateless page load
     $(window).load(function () {
 
+        if (videoArray.length != 0) {
+            videoArray.forEach(function(e) {
+                videojs(e).dispose();
+            });
+        }
+
+        videoPlayer();
         slideNumber();
 
         // Set global variable on page load to determine if page has a history state
@@ -87,8 +118,16 @@
 
     // Load page tabs, add/remove active states
     var loadContent = function (url) {
+
+        if (videoArray.length != 0) {
+            videoArray.forEach(function(e) {
+                videojs(e).dispose();
+            });
+        }
+
         $.get(url).done(function (data) {
             $('.tabContent').html($(data).find('.bodyContent'));
+            videoPlayer();
             slideNumber();
             animatePageContent();
         })
@@ -101,6 +140,7 @@
 
     // Initiate history.pushState on click of tab menu links
     $(document).on('click', '.tabbedPageMenu-list a', function (e) {
+
         e.preventDefault();
 
         url = $(this).attr('href');

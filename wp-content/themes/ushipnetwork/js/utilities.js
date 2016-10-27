@@ -167,4 +167,24 @@ jQuery(document).ready(function ($) {
     if ($('#secondary-menu').length) {
         $('.bodyContent').addClass('subnavPush');
     }
+
+
+
+    $('.page-template-default .video-js').each(function () {
+        vidId = $(this).attr('id');
+        vidURL = 'https://www.youtube.com/watch?v=' + vidId;
+        var vidPlayer = videojs(vidId, {
+            "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": vidURL}]
+        });
+    });
+
+
+
+    $('.tabbedPage .video-js').each(function () {
+        vidId = $(this).attr('id');
+        vidURL = 'https://www.youtube.com/watch?v=' + vidId;
+        var vidPlayer = videojs(vidId, {
+            "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": vidURL}]
+        });
+    });
 })
