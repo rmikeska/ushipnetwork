@@ -93,7 +93,16 @@
 //   height: 100%;
 // }
 
+
+
 // Video.js player
+
+.videoFeature .vjs-poster {
+  @media #{$default-break} {
+    display: none; // Remove the poster to show native YouTube controls on mobile
+  }
+}
+
 .videoFeature .video-js {
   margin: 0 auto;
   width: 100%;

@@ -3591,6 +3591,10 @@ body.page-template-contact {
   max-width: 980px;
   margin: 0 auto; }
 
+@media only screen and (max-width: 769px) {
+  .videoFeature .vjs-poster {
+    display: none; } }
+
 .videoFeature .video-js {
   margin: 0 auto;
   width: 100%;
