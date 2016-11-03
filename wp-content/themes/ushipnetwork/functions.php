@@ -121,7 +121,7 @@ add_action( 'widgets_init', 'ushipnetwork_widgets_init' );
  * Enqueue scripts and styles.
  */
 function ushipnetwork_scripts() {
-	wp_enqueue_style( 'ushipnetwork-style', get_stylesheet_uri(), array(), '20161027', 'all' );
+	wp_enqueue_style( 'ushipnetwork-style', get_stylesheet_uri(), array(), '20161103', 'all' );
 
 	wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/lib/jquery-2.2.0.min.js', array(), '20160121', true );
 
@@ -133,7 +133,7 @@ function ushipnetwork_scripts() {
 
 	wp_enqueue_script( 'ushipnetwork-forms', get_template_directory_uri() . '/js/forms.js', array(), '20160714', true );
 
-	wp_enqueue_script( 'ushipnetwork-utilities', get_template_directory_uri() . '/js/utilities.js', array(), '20161027', true );
+	wp_enqueue_script( 'ushipnetwork-utilities', get_template_directory_uri() . '/js/utilities.js', array(), '20161103', true );
 
 	wp_enqueue_script( 'ushipnetwork-jquery-modal', get_template_directory_uri() . '/js/lib/jquery.modal.js', array(), '20160425', true );
 
@@ -141,9 +141,9 @@ function ushipnetwork_scripts() {
 
 	// wp_enqueue_script( 'ushipnetwork-youtube-embed', get_template_directory_uri() . '/js/youtube-embed.js', array(), '20160728', true );
 
-  wp_enqueue_script( 'ushipnetwork-videojs', 'https://vjs.zencdn.net/5.8.8/video.js', array(), '20161027', true );
+  wp_enqueue_script( 'ushipnetwork-videojs', 'https://vjs.zencdn.net/5.8.8/video.js', array(), '20161103', true );
 
-  wp_enqueue_script( 'ushipnetwork-videojs-youtube', get_template_directory_uri() . '/js/lib/videojs-youtube.min.js', array(), '20161027', true );
+  wp_enqueue_script( 'ushipnetwork-videojs-youtube', get_template_directory_uri() . '/js/lib/videojs-youtube.min.js', array(), '20161103', true );
 
   wp_enqueue_style( 'ushipnetwork-videojs-style', 'https://vjs.zencdn.net/5.8.8/video-js.css' );
 
@@ -161,7 +161,7 @@ function ushipnetwork_scripts() {
 	}
 
   if ( is_page_template('tabbed-page-v2.php') || is_page_template('tabbed-page-v2-child.php')) {
-    wp_enqueue_script( 'ushipnetwork-tabbed-page-v2', get_template_directory_uri() . '/js/tabbed-page-v2.js', array(), '20161027', true );
+    wp_enqueue_script( 'ushipnetwork-tabbed-page-v2', get_template_directory_uri() . '/js/tabbed-page-v2.js', array(), '20161103', true );
   }
 }
 add_action( 'wp_enqueue_scripts', 'ushipnetwork_scripts' );
