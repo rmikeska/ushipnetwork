@@ -133,7 +133,7 @@
       }
       this.$elm.addClass(this.options.modalClass).appendTo(this.$blocker);
       if(this.options.doFade) {
-        this.$elm.css('opacity',0).show().animate({opacity: 1}, this.options.fadeDuration);
+        this.$elm.css('opacity',0).css('display', 'inline-block').animate({opacity: 1}, this.options.fadeDuration);
       } else {
         this.$elm.show();
       }
