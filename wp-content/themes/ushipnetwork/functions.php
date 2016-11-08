@@ -129,8 +129,6 @@ function ushipnetwork_scripts() {
 
 	wp_enqueue_script( 'ushipnetwork-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
-	wp_enqueue_script( 'ushipnetwork-header', get_template_directory_uri() . '/js/header.js', array(), '20160919', true );
-
 	wp_enqueue_script( 'ushipnetwork-forms', get_template_directory_uri() . '/js/forms.js', array(), '20160714', true );
 
 	wp_enqueue_script( 'ushipnetwork-utilities', get_template_directory_uri() . '/js/utilities.js', array(), '20161103', true );
