@@ -32,7 +32,7 @@
 
 .modal {
   position: relative;
-  display: inline-block;
+  display: inline-block !important;
   vertical-align: middle;
   z-index: 2;
   width: 100%;
