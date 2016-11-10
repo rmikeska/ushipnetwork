@@ -2321,7 +2321,7 @@ body.page-template-contact {
   font-size: 36px; }
   @media only screen and (max-width: 769px) {
     .hero-headline {
-      font-size: 30px; } }
+      font-size: 28px; } }
 
 .heroMedium .hero-headline {
   padding-bottom: 40px; }
@@ -2334,7 +2334,7 @@ body.page-template-contact {
   padding-bottom: 25px; }
   @media only screen and (max-width: 769px) {
     .heroLarge .hero-headline {
-      font-size: 35px;
+      font-size: 28px;
       padding-bottom: 20px; } }
 
 .heroLarge .hero-subheadline {
