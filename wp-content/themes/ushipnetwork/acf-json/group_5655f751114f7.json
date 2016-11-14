@@ -2100,7 +2100,7 @@
                         {
                             "key": "field_5826181679912",
                             "label": "Background Color",
-                            "name": "bios_background_color",
+                            "name": "thumbnail_grid_background_color",
                             "type": "select",
                             "instructions": "",
                             "required": 1,
@@ -2415,5 +2415,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1479141042
+    "modified": 1479142481
 }

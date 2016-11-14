@@ -1,7 +1,7 @@
 /*** Thumbnail Grid ***/
 
 .thumbnailGrid-container {
-  @include container(1080px, 40px, 40px);
+  @include container(1080px, 60px, 0);
   width: 100%;
   overflow: hidden;
 

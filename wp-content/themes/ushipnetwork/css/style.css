@@ -3702,9 +3702,9 @@ body.page-template-contact {
   max-width: calc(1080px + 15px*2);
   margin-left: auto;
   margin-right: auto;
-  padding-top: 40px;
+  padding-top: 60px;
   padding-right: 15px;
-  padding-bottom: 40px;
+  padding-bottom: 0;
   padding-left: 15px;
   width: 100%;
   overflow: hidden; }
