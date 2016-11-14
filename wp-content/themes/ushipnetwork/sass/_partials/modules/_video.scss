@@ -122,11 +122,11 @@
   border: none;
   background-color: transparent;
   border-radius: 0;
-  transition: none;
+  transition: all 0.3s;
+  opacity: 0.6;
 
   @media #{$default-break} {
-    width: 65px;
-    height: 65px;
+    display: none; // Remove the button to show native YouTube controls on mobile
   }
 }
 
@@ -142,5 +142,6 @@
 .videoFeature .video-js .vjs-big-play-button:focus {
   background-color: transparent;
   border-color: transparent;
-  transition: none;
+  transition: all 0.3s;
+  opacity: 1;
 }

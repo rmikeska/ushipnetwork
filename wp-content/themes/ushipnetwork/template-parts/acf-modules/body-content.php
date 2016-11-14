@@ -60,6 +60,10 @@
 
       <?php include("logo-pile.php");?>
 
+    <?php elseif (get_row_layout() == 'thumbnail_grid'): ?>
+
+      <?php include("thumbnail-grid.php");?>
+
     <?php endif; ?>
   <?php endwhile; ?>
 <?php endif; ?>

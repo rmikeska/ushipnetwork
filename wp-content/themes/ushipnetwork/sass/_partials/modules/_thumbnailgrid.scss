@@ -1,0 +1,77 @@
+/*** Thumbnail Grid ***/
+
+.thumbnailGrid-container {
+  @include container(1080px, 40px, 40px);
+  width: 100%;
+  overflow: hidden;
+
+  @media only screen and (max-width: 1140px) {
+    max-width: 750px;
+  }
+
+  @media only screen and (max-width: 780px) {
+    max-width: 390px;
+  }
+}
+
+.thumbnailGrid-intro {
+  padding-bottom: 40px;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.thumbnailGrid-subintro {
+  padding-bottom: 60px;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.thumbnailGrid-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+.thumbnailGrid-block {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  width: 300px;
+  margin: 0 30px 100px;
+
+  @media #{$default-break} {
+    margin: 0 auto 60px;
+    min-width: 290px;
+  }
+
+  .tertiaryLink {
+    align-self: flex-start;
+  }
+}
+
+.thumbnailGrid-image {
+  margin: 0 auto 20px;
+  min-height: 200px;
+  max-width: 300px;
+  width: 100%;
+  @include background-image;
+}
+
+.thumbnailGrid-text {
+  padding: 0 0 20px;
+  font-size: 16px;
+  line-height: 30px;
+
+  @media #{$default-break} {
+    padding: 10px 0;
+  }
+
+  h6 {
+    text-transform: uppercase;
+    font-weight: $font-bold;
+    font-size: 18px;
+  }
+}

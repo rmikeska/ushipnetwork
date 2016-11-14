@@ -102,7 +102,7 @@
     block: function() {
       this.$elm.trigger($.modal.BEFORE_BLOCK, [this._ctx()]);
       this.$body.css('overflow','hidden');
-      this.$body.css('position','fixed');
+      // this.$body.css('position','fixed');
       this.$blocker = $('<div class="jquery-modal blocker current"></div>').appendTo(this.$body);
       selectCurrent();
       if(this.options.doFade) {
@@ -135,7 +135,7 @@
       if(this.options.doFade) {
         this.$elm.css('opacity',0).css('display', 'inline-block').animate({opacity: 1}, this.options.fadeDuration);
       } else {
-        this.$elm.show();
+        this.$elm.css('display', 'inline-block');
       }
       this.$elm.trigger($.modal.OPEN, [this._ctx()]);
     },

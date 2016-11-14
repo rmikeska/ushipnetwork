@@ -86,14 +86,25 @@ jQuery(document).ready(function ($) {
 
 
     // Focus elements within modal for tab accessibility
-    $('.modal').on($.modal.OPEN, function (event, modal) {
+    $('.hero .modal').on($.modal.OPEN, function (event, modal) {
         $('form input:first, iframe').focus();
         $('.pageWrapper').find('a, button, object, input, select, textarea').attr('tabindex', '-1');
     });
 
-    $('.modal').on($.modal.CLOSE, function (event, modal) {
+    $('.hero .modal').on($.modal.CLOSE, function (event, modal) {
         $('.pageWrapper').find('a, button, object, input, select, textarea').removeAttr('tabindex');
         $('main a:first').focus();
+    });
+
+
+
+    // Give unique id to video modals in order to have multiple on one page
+    $('.thumbnailGrid .modalVideo').each(function (i) {
+        $(this).attr('id', 'video-modal-' + (i + 1));
+    });
+
+    $('.thumbnailGrid-modalButton').each(function (i) {
+        $(this).attr('href', '#video-modal-' + (i + 1));
     });
 
 
