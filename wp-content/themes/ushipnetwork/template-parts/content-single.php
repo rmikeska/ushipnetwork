@@ -35,7 +35,20 @@
 				'after'  => '</div>',
 			) );
 		?>
+
+		<?php if (have_rows('blog_post_content')): ?>
+		  <?php while (have_rows('blog_post_content')) : the_row(); ?>
+		    <?php if (get_row_layout() == 'blog_post_entry_footer'): ?>
+	    		<div class="postCallout-container">
+		    		<?php while(have_rows('blog_post_entry_footer_cta')): the_row(); ?>
+		    			<a class="button buttonPrimary buttonLarge" role="button" href="<?php the_sub_field('blog_post_entry_footer_cta_url'); ?>"><?php the_sub_field('blog_post_entry_footer_cta_text'); ?></a>
+		    		<?php endwhile; ?>
+	    		</div>
+		    <?php endif; ?>
+		  <?php endwhile; ?>
+		<?php endif; ?>
 	</div>
+
 	<div class="entry-footer">
 		<?php ushipnetwork_entry_footer(); ?>
 	</div>
@@ -85,9 +98,6 @@
 
 <section class="postBookend">
 	<div class="postBookend-container">
-		<a class="button buttonPrimary buttonLarge" role="button" href="<?php echo get_site_url(); ?>">View All Articles</a>
+		<a class="button buttonSecondary buttonSmall" role="button" href="<?php echo get_site_url(); ?>">View All Articles</a>
 	</div>
 </section>
-
-
-

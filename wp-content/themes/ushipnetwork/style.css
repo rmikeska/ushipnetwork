@@ -1179,6 +1179,20 @@ article .post-featureImage {
         content: "";
         display: table; } }
 
+.postCallout-container {
+  max-width: calc(100% + 15px*2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-right: 15px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  text-align: center; }
+  .postCallout-container::after {
+    clear: both;
+    content: "";
+    display: table; }
+
 .edit-link {
   display: block;
   float: left;

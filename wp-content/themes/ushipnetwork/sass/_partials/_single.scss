@@ -360,6 +360,11 @@ article .post-featureImage {
   }
 }
 
+.postCallout-container {
+  @include container(100%, 30px, 30px);
+  text-align: center;
+}
+
 .edit-link {
   display: block;
   float: left;
