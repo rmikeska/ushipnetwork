@@ -8,6 +8,10 @@
 
       <?php include("tertiary-callout.php");?>
 
+    <?php elseif (get_row_layout() == 'footnote'): ?>
+
+      <?php include("footnote.php");?>
+
     <?php endif; ?>
   <?php endwhile; ?>
 <?php endif; ?>

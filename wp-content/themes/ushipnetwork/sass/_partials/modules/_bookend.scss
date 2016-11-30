@@ -11,6 +11,14 @@
   text-align: center;
 }
 
+.bookend-intro-sub {
+
+  p {
+    line-height: 30px;
+  }
+
+}
+
 .bookend-container {
   @include container(1140px, 60px, 60px);
   text-align: center;
