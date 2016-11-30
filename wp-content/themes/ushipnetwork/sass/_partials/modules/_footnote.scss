@@ -1,0 +1,16 @@
+.footnote {
+	background-color: $light-grey;
+  border-top: 1px solid $divider-color;
+}
+
+.footnote-container {
+	@include container(1050px, 30px, 30px);
+	text-align: center;
+}
+
+.footnote p {
+	padding-bottom: 20px;
+	font-size: 14px;
+  line-height:  20px;
+	color: $gray;
+}
