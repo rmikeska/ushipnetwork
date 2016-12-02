@@ -889,16 +889,14 @@
                             "label": "Copy Intro Text",
                             "name": "slanted_map_copy_intro",
                             "type": "text",
-                            "instructions": "",
-                            "required": 1,
+                            "instructions": "Optional.",
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
                                 "class": "",
                                 "id": ""
-                            },
-                            "readonly": 0,
-                            "disabled": 0
+                            }
                         },
                         {
                             "tabs": "all",
@@ -2668,5 +2666,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1480695231
+    "modified": 1480708152
 }

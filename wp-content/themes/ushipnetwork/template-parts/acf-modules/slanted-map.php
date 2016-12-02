@@ -10,7 +10,9 @@
       <img class="slantedMap-image-image" src="<?php echo $image['url']; ?>">
     </div>
     <div class="slantedMap-copy">
-      <h3 class="slantedMap-copy-intro"><?php the_sub_field('slanted_map_copy_intro'); ?></h3>
+      <?php if(get_sub_field('slanted_map_copy_intro')): ?>
+        <h3 class="slantedMap-copy-intro"><?php the_sub_field('slanted_map_copy_intro'); ?></h3>
+      <?php endif; ?>
       <div class="slantedMap-copy-block-text"><?php the_sub_field('slanted_map_copy_block_text'); ?></div>
       <?php while(have_rows('slanted_map_copy_cta')): the_row(); ?>
         <?php $cta_url = get_sub_field('slanted_map_copy_cta_url'); ?>
@@ -20,7 +22,9 @@
   </div>
 </section>
 <section class="slantedMap-copyMobile">
-  <h3 class="slantedMap-copy-intro"><?php the_sub_field('slanted_map_copy_intro'); ?></h3>
+  <?php if(get_sub_field('slanted_map_copy_intro')): ?>
+    <h3 class="slantedMap-copy-intro"><?php the_sub_field('slanted_map_copy_intro'); ?></h3>
+  <?php endif; ?>
   <div class="slantedMap-copy-block-text"><?php the_sub_field('slanted_map_copy_block_text'); ?></div>
   <?php while(have_rows('slanted_map_copy_cta')): the_row(); ?>
     <?php $cta_url = get_sub_field('slanted_map_copy_cta_url'); ?>
