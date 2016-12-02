@@ -64,6 +64,14 @@
 
       <?php include("thumbnail-grid.php");?>
 
+    <?php elseif (get_row_layout() == 'text_columns'): ?>
+
+      <?php include("text-columns.php");?>
+
+    <?php elseif (get_row_layout() == 'text_block'): ?>
+
+      <?php include("text-block.php");?>
+
     <?php endif; ?>
   <?php endwhile; ?>
 <?php endif; ?>

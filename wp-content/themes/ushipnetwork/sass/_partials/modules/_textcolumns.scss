@@ -1,0 +1,60 @@
+.textColumns-container {
+  @include container(1100px, 85px, 25px);
+}
+
+.textColumns-intro {
+  padding-bottom: 30px;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.textColumns-subintro {
+  padding-bottom: 45px;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.textColumns-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.textColumns-group-item {
+  display: flex;
+  flex-direction: column;
+  min-width: 515px;
+  width: 515px;
+  padding-top: 15px;
+  padding-bottom: 35px;
+
+  @media only screen and (max-width: 1100px) {
+    min-width: 415px;
+    width: 415px;
+  }
+
+  @media only screen and (max-width: 900px) {
+    min-width: 315px;
+    width: 315px;
+  }
+
+  @media #{$default-break} {
+    min-width: 100%;
+    width: 100%;
+  }
+}
+
+.textColumns-group-item-title {
+  padding-bottom: 5px;
+  font-weight: $font-bold;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+}
+
+.textColumns-group-item-content {
+  line-height: 30px;
+}

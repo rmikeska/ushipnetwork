@@ -2380,6 +2380,251 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                {
+                    "key": "58407e370f9e4",
+                    "name": "text_columns",
+                    "label": "Text Columns",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "key": "field_58407e4a0f9e5",
+                            "label": "Section ID",
+                            "name": "text_columns_id",
+                            "type": "text",
+                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "choices": {
+                                "sectionWhite": "White",
+                                "sectionGrey": "Grey",
+                                "sectionNavy": "Navy"
+                            },
+                            "default_value": [],
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "return_format": "value",
+                            "key": "field_58407e9b5563c",
+                            "label": "Background Color",
+                            "name": "text_columns_background_color",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "key": "field_58407f3209fd3",
+                            "label": "Intro",
+                            "name": "text_columns_intro",
+                            "type": "text",
+                            "instructions": "Optional.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "key": "field_58407f4a09fd4",
+                            "label": "Sub Intro",
+                            "name": "text_columns_intro_sub",
+                            "type": "text",
+                            "instructions": "Optional.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "sub_fields": [
+                                {
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "key": "field_58407f8809fd6",
+                                    "label": "Item Title",
+                                    "name": "text_columns_item_title",
+                                    "type": "text",
+                                    "instructions": "Optional.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 0,
+                                    "default_value": "",
+                                    "delay": 0,
+                                    "key": "field_58407fa309fd7",
+                                    "label": "Item Content",
+                                    "name": "text_columns_item_content",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                }
+                            ],
+                            "min": 2,
+                            "max": 0,
+                            "layout": "row",
+                            "button_label": "",
+                            "collapsed": "",
+                            "key": "field_58407f6209fd5",
+                            "label": "Column Item",
+                            "name": "text_columns_item",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "58419d21e7e56",
+                    "name": "text_block",
+                    "label": "Text Block",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "key": "field_58419d28e7e57",
+                            "label": "Section ID",
+                            "name": "text_block_id",
+                            "type": "text",
+                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "choices": {
+                                "sectionWhite": "White",
+                                "sectionGrey": "Grey",
+                                "sectionNavy": "Navy"
+                            },
+                            "default_value": [],
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "return_format": "value",
+                            "key": "field_58419d4ce7e58",
+                            "label": "Background Color",
+                            "name": "text_block_background_color",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "key": "field_58419d7ce7e59",
+                            "label": "Intro",
+                            "name": "text_block_intro",
+                            "type": "text",
+                            "instructions": "Optional.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "default_value": "",
+                            "delay": 0,
+                            "key": "field_58419d96e7e5a",
+                            "label": "Content",
+                            "name": "text_block_content",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             ],
             "min": "",
@@ -2423,5 +2668,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1480526368
+    "modified": 1480695231
 }

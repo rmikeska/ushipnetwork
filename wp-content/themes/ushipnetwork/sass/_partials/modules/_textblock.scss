@@ -1,0 +1,14 @@
+.textBlock-container {
+  @include container(820px, 85px, 85px);
+  text-align: center;
+}
+
+.textBlock-intro {
+  padding-bottom: 30px;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.textBlock-content {
+  line-height: 30px;
+}
