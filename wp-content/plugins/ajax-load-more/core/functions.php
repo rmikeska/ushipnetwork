@@ -432,7 +432,7 @@ function alm_get_canonical_url(){
    else{            
       $canonicalURL = get_permalink();
    } 
-   
+	
 	return $canonicalURL;
 }
 

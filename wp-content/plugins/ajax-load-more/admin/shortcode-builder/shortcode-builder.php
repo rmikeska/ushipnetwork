@@ -835,7 +835,7 @@
       <h3 class="heading"><?php _e('Pause', 'ajax-load-more'); ?></h3>
       <div class="expand-wrap">
          <div class="section-title">
-   		 	<p><?php _e('Do <u>NOT</u> load any posts until user the clicks <em>Load More</em> button.', 'ajax-load-more'); ?></p>
+   		 	<p><?php _e('Do <u>NOT</u> load any posts until user clicks the <em>Load More</em> button.', 'ajax-load-more'); ?></p>
    		 </div>
          <div class="wrap">
             <div class="inner">	               
@@ -1051,6 +1051,7 @@
             echo '<li><input class="alm_element" type="checkbox" name="chk-'.$typeobj->name.'" id="chk-'.$typeobj->name.'" data-type="'.$typeobj->name.'"><label for="chk-'.$typeobj->name.'">'.$typeobj->labels->singular_name.'</label></li>';
 			}
 	    }
+	     echo '<li><input class="alm_element chk-any" type="checkbox" name="chk-any" id="chk-any" data-type="any"><label for="chk-any">Any</label></li>';
 	    echo '</ul></div></div>';
 	    echo '</div>';
 	    echo '</div>';
@@ -1221,7 +1222,7 @@
 			<div class="wrap">			
 				<?php include( ALM_PATH . 'admin/shortcode-builder/includes/tax-query-options.php'); ?>			   
 			   <div class="controls">
-               <button id="add-tax-query" class="button button-primary">Add Another</button>  
+               <button id="add-tax-query" class="button button-primary"><?php _e('Add Another', 'ajax-load-more'); ?></button>  
             </div>		    	    
 		    </div>		    
 	    </div>

@@ -286,7 +286,7 @@
    				<h3><?php _e('Repeater Template Help', 'ajax-load-more'); ?></h3>
    				<div class="item">
    					<p><strong><?php _e('What is a repeater template?', 'ajax-load-more'); ?></strong></p>
-   					<p><?php _e('A <a href="https://connekthq.com/plugins/ajax-load-more/docs/repeater-templates/" target="_blank">repeater template</a> is a snippet of code that will execute over and over within a <a href="http://codex.wordpress.org/The_Loop" target="_blank">WordPress loop</a>.</p>', 'ajax-load-more'); ?></p>
+   					<p><?php _e('A <a href="https://connekthq.com/plugins/ajax-load-more/docs/repeater-templates/" target="_blank">repeater template</a> is a snippet of code that will execute over and over within a <a href="http://codex.wordpress.org/The_Loop" target="_blank">WordPress loop</a>', 'ajax-load-more'); ?>.</p>
    				</div>
    				<a class="visit" href="https://connekthq.com/plugins/ajax-load-more/docs/repeater-templates/" target="_blank"><i class="fa fa-chevron-circle-right"></i> <?php _e('More About Templating', 'ajax-load-more'); ?></a>		
    	   	</div>

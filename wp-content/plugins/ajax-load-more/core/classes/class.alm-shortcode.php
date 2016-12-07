@@ -105,7 +105,7 @@ if( !class_exists('ALM_SHORTCODE') ):
    			'posts_per_page' => '5',
    			'scroll' => 'true',
    			'scroll_distance' => '150',
-   			'max_pages' => '5',
+   			'max_pages' => '0',
    			'pause_override' => 'false',
    			'pause' => 'false',
    			'destroy_after' => '',
@@ -650,12 +650,24 @@ if( !class_exists('ALM_SHORTCODE') ):
       		$repeater_type = $repeater_type[0]; // (default | repeater | template_)       		
       		if($theme_repeater != 'null' && has_filter('alm_get_theme_repeater')){
                $repeater_type = null;
-            }              
-            // Get next post include and build the output from the next post filter    
-            $previous_post_output = '<div class="alm-reveal alm-previous-post post-'. $previous_post_id .'" data-url="'. get_permalink($previous_post_id) .'" data-title="'. get_the_title($previous_post_id) .'" data-id="'. $previous_post_id .'">'; // Set the post id .alm-reveal div
+            }          
+            // Get current permalink - (including querystring)    
+				$previous_post_permanlink =  ($_SERVER["QUERY_STRING"]) ? get_permalink($previous_post_id) .'?'. $_SERVER["QUERY_STRING"] : get_permalink($previous_post_id); 
+				
+            // Get previous post include, build output from the next post filter    
+            $previous_post_output = '<div class="alm-reveal alm-previous-post post-'. $previous_post_id .'" data-url="'. $previous_post_permanlink .'" data-title="'. get_the_title($previous_post_id) .'" data-id="'. $previous_post_id .'">'; // Set the post id .alm-reveal div
+            
+            /*
+		   	 *	alm_prev_post_inc
+		   	 *
+		   	 * Previous Post Add-on hook
+		   	 *
+		   	 * @return $args;
+		   	 */ 
       		$previous_post_output .= apply_filters('alm_prev_post_inc', $repeater, $repeater_type, $theme_repeater, $previous_post_id, $post_type);
+      		
             $previous_post_output .= '</div>';
-   			$ajaxloadmore .= $previous_post_output; // Add $next_post_output data to $ajaxloadmore
+   			$ajaxloadmore .= $previous_post_output; // Add $previous_post_output data to $ajaxloadmore
    
          }
          // / Previous Post Add-on        

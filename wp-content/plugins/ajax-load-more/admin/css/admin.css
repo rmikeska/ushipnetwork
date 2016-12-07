@@ -75,6 +75,11 @@
 *  @since 1.0
 */
 
+.ajax-load-more *{
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
 .forceColors{
 	background: #fff !important;
 }
@@ -95,12 +100,6 @@
    -webkit-box-shadow: none;
    -moz-box-shadow: none;
    box-shadow: none;
-}
-
-.ajax-load-more *{
-   -webkit-box-sizing: border-box;
-   -moz-box-sizing: border-box;
-   box-sizing: border-box;
 }
 
 .ajax-load-more img{
@@ -610,7 +609,7 @@ a.layout-hover{
 }
 .ajax-load-more input[type=text],
 .ajax-load-more input[type=number]{
-   padding: 10px;
+   padding: 14px;
    line-height: 1.3;
    border: 1px solid #e7e7e7;
    width: 60%;  
@@ -874,7 +873,7 @@ a.layout-hover{
 		.ajax-load-more label.template-title{
    		padding: 10px 0;
    		margin: 0;
-   		font-size: 14px;
+   		font-size: 13px;
    		color: #888;
 		}
 		
@@ -1212,25 +1211,25 @@ a.layout-hover{
 }
 
 .header-wrap{
-	background: url(../img/alm-logo-48x48.png) no-repeat left 12px;
-	background: url(../img/alm-logo-48x48.svg) no-repeat left 12px;
-	padding-left: 60px;
-	min-height: 48px;
 	overflow: hidden;
-	padding-top: 11px;
+	padding: 10px 0 3px;
 }
 	.ajax-load-more .header-wrap h1{
-		padding-top: 0;
+		padding-left: 60px;
+		min-height: 48px;
+		padding-top: 0;		
+		background: url(../img/alm-logo-48x48.png) no-repeat left 0;
+		background: url(../img/alm-logo-48x48.svg) no-repeat left 0;
 	}
-	.ajax-load-more .header-wrap h1 em{
-   	display: block;
-   	position: relative;
-		margin-top: -4px;
-		font-size: 14px;
-		opacity: 0.7;
-		font-style: normal;
-		font-weight: 400;
-	}
+		.ajax-load-more .header-wrap h1 em{
+	   	display: block;
+	   	position: relative;
+			margin-top: -4px;
+			font-size: 14px;
+			opacity: 0.7;
+			font-style: normal;
+			font-weight: 400;
+		}
 	
 .ajax-load-more h1 span{
 	color: #999;
@@ -1264,7 +1263,8 @@ a.layout-hover{
    border-bottom: 1px solid #efefef;
 }
 .ajax-load-more .cnkt-sidebar h3{
-   font-size: 17px;
+   font-size: 15px;
+   padding: 0 0 15px !important;
 }
 .ajax-load-more h3{
    margin-bottom: 10px;
@@ -1280,8 +1280,8 @@ a.layout-hover{
 	padding: 0 0 2px 28px;
 }
 .ajax-load-more p.desc{
-   opacity: 0.85;
    font-size: 13px !important;
+   line-height: 19px !important;
 }
 .ajax-load-more p.writeable-title{
    position: relative;
@@ -1347,7 +1347,7 @@ p.loading{
 	}
 	
 input.save-repeater{
-	margin-bottom: 10px !important;
+	margin-bottom: 5px !important;
 }
 .restore-default{
 	float: right;
@@ -1430,9 +1430,9 @@ table.highlight{
    top: 0; 
    text-decoration: none;
    width: 40px;
-   height: auto;
-   line-height: 1;
-   padding: 10px;
+   height: 40px;
+   line-height: 38px;
+   padding: 0;
    text-align: center;  
    background: #f7f7f7;
    color: #777;
@@ -1973,25 +1973,35 @@ table.highlight{
       padding: 0;	
    }
 	.ajax-load-more .cnkt-sidebar .project-listing li{
-      margin: 10px 0;
+      margin: 20px 0 0;
+      padding: 0;
       font-size: 13px;
-      min-height: 48px;
-      padding-left: 53px;
       position: relative;
+      clear: both;
 	}
+	   .ajax-load-more .cnkt-sidebar .project-listing li a{
+   	   display: block;
+         position: static;
+         padding-left: 50px;
+         min-height: 48px;
+         text-decoration: none;
+      }
 	.ajax-load-more .cnkt-sidebar .project-listing li:first-of-type{
-      margin: 0;	
+      margin-top: 0;	
    }
 	.ajax-load-more .cnkt-sidebar .project-listing img {
-      height: 40px;
+      height: 38px;
       left: 0;
       position: absolute;
       top: 2px;
-      width: 40px;
+      width: 38px;
    }
 	.ajax-load-more .cnkt-sidebar .project-listing li strong{
       font-size: 14px;	
       display: block;
+   }
+	.ajax-load-more .cnkt-sidebar .project-listing li span{
+      color: #777;	
    }
 	
 		
@@ -2288,8 +2298,8 @@ table.highlight{
    }
    .alm-cache-search-wrap i{
       position: absolute;
-      right: 10px;
-      top:10px;
+      right: 14px;
+      top: 14px;
       color: #ccc;
       font-size: 20px;
       z-index: 1;
@@ -2343,7 +2353,8 @@ table.highlight{
    .alm-dir-listing .dir-title .delete{
       position: absolute;
       right:8px;
-      top:7px;
+      top:11px;
+      font-weight: 400;
       font-size: 14px;
       text-decoration: none;
       padding: 5px 10px;
@@ -2707,7 +2718,6 @@ p.cache-stats{
          border-color: #e7e7e7;
          color: #555;
          text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.2);
-         opacity: 0.8;
       }
       .alm-drop-btn.alm-layout-selection > a > i{
          left: 12px;

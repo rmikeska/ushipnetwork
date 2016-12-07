@@ -277,6 +277,7 @@ jQuery(document).ready(function($) {
       e.preventDefault();
       var el = $(this),
           type = el.data('type'),
+          custom = (el.hasClass('custom')) ? 'true' : 'false',
           textarea = el.closest('.repeater-wrap').find('.CodeMirror'),
           layout_btn_text = el.html(),
           name = el.closest('.repeater-wrap').data('name');
@@ -299,12 +300,14 @@ jQuery(document).ready(function($) {
       		type: 'GET',
       		url: alm_admin_localize.ajax_admin_url,
       		data: {
-      			action: 'alm_layouts_get',
-      			type: type,
-      			nonce: alm_admin_localize.alm_admin_nonce,
+      			action   : 'alm_get_layout',
+      			type     : type,
+      			custom   : custom,
+      			nonce    : alm_admin_localize.alm_admin_nonce,
       		},
-      		dataType: "JSON",
+      		dataType    : "JSON",
       		success: function(data) {  
+         		
                eid.setValue(data.value);
                
                // Clear button styles				  

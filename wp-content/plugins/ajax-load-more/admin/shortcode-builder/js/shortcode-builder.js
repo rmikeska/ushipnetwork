@@ -21,7 +21,7 @@ jQuery(document).ready(function($) {
       
       // multiple
       $('.ajax-load-more .categories select.multiple').select2({
-         placeholder : '-- '+ alm_admin_localize.select_cats +' --',
+         placeholder : '-- '+  alm_admin_localize.select_cats +' --',
       });     
       $('.ajax-load-more .tags select.multiple').select2({
          placeholder : '-- '+ alm_admin_localize.select_tags +' --'         
@@ -924,7 +924,7 @@ jQuery(document).ready(function($) {
       // If post type is not selected, select 'post'.
       if(!$('.post_types input[type=checkbox]:checked').length > 0){
          $('.post_types input[type=checkbox]#chk-post').prop('checked', true);
-      }       
+      }   
       
       // If Tax Term Operator is not selected, select 'IN'.
       if(!$('#tax-operator-select input[type=radio]:checked').length > 0){

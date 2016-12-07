@@ -65,17 +65,23 @@ tinyMCEPopup.onInit.add(AjaxLoadMoreModal.init, AjaxLoadMoreModal);
    <script type="text/javascript" src="<?php echo ALM_ADMIN_URL; ?>js/libs/select2.min.js"></script>
    <script type="text/javascript" src="<?php echo ALM_ADMIN_URL; ?>shortcode-builder/js/shortcode-builder.js"></script>
    <script type="text/javascript" src="<?php echo ALM_ADMIN_URL; ?>js/libs/jquery.tooltipster.min.js"></script>
-   <script type='text/javascript'>
-	 /* <![CDATA[ */
-    var alm_admin_localize = <?php echo json_encode( array( 
+	<script type='text/javascript'>
+	/* <![CDATA[ */
+   var alm_admin_localize = <?php echo json_encode( array( 
         'ajax_admin_url' => admin_url( 'admin-ajax.php' ),
         'active' => __('Active', 'ajax-load-more'),
         'inactive' => __('Inactive', 'ajax-load-more'),
-        'alm_admin_nonce' => wp_create_nonce( 'alm_repeater_nonce' )
-    )); ?>
-    /* ]]> */
-    </script>
-    
+        'applying_layout' => __('Applying layout', 'ajax-load-more'),
+        'template_updated' => __('Template Updated', 'ajax-load-more'),
+        'alm_admin_nonce' => wp_create_nonce( 'alm_repeater_nonce' ),
+        'select_authors' => __('Select Author(s)', 'ajax-load-more'),
+        'select_cats' => __('Select Categories', 'ajax-load-more'),
+        'select_tags' => __('Select Tags', 'ajax-load-more'),
+        'jump_to_option' => __('Jump to Option', 'ajax-load-more'),
+        'jump_to_template' => __('Jump to Template', 'ajax-load-more')
+   )); ?>
+	/* ]]> */
+   </script>    
    <script type="text/javascript" src="<?php echo ALM_ADMIN_URL; ?>js/libs/jquery.tooltipster.min.js"></script>
    <script type="text/javascript" src="<?php echo ALM_ADMIN_URL; ?>js/admin.js"></script>
 </body>

@@ -64,14 +64,18 @@
 	   		      </div>
 			      </div>
 			   </div>
-			   			   
-			   <div class="row no-brd">
-					<p class="back2top"><a href="#wpcontent"><i class="fa fa-chevron-up"></i> <?php _e('Back to Top', 'ajax-load-more'); ?></a></p>					
-			   </div>
 		   </div>
+		   
+		   <p class="back2top"><a href="#wpcontent" class="group"><i class="fa fa-angle-up"></i> Back to Top</a></p>
 		   
 	   </div>	   
 	   <div class="cnkt-sidebar">
+         <div class="cta padding-bottom">
+         <h3>Example Library</h3>
+         <p style="padding-bottom: 10px;">We have a collection of over 20 real-world Ajax Load More <a href="https://connekthq.com/plugins/ajax-load-more/examples/"  target="_blank">examples</a> available on the plugin website.</p>
+         
+         <a href="https://connekthq.com/plugins/ajax-load-more/examples/" class="visit" target="_blank"><i class="fa fa-chevron-circle-right"></i> <?php _e('View All Examples', 'ajax-load-more'); ?></a>
+         </div>			
 	   	<?php include_once( ALM_PATH . 'admin/includes/cta/dyk.php');	?>   	
 	   	<?php include_once( ALM_PATH . 'admin/includes/cta/resources.php');	?>
 	   </div>	  

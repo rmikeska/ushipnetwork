@@ -8,7 +8,7 @@ add_action( 'wp_ajax_alm_delete_cache', 'alm_delete_cache' ); // Delete Cache
 add_action( 'wp_ajax_alm_layouts_dismiss', 'alm_layouts_dismiss' ); // Dismiss Layouts CTA
 add_action( 'wp_ajax_alm_license_activation', 'alm_license_activation' ); // Activate Add-on
 add_action( 'alm_get_layouts', 'alm_get_layouts' ); // Add layout selection  
-add_action( 'wp_ajax_alm_layouts_get', 'alm_layouts_get' ); // Get layout
+add_action( 'wp_ajax_alm_get_layout', 'alm_get_layout' ); // Get layout
 add_action( 'wp_ajax_alm_dismiss_sharing', 'alm_dismiss_sharing' ); // Dismiss sharing
 add_filter( 'admin_footer_text', 'alm_filter_admin_footer_text'); // Admin menu text
 
@@ -98,26 +98,54 @@ function alm_license_activation(){
 
 
 /*
-*  alm_layouts_get
+*  alm_get_layout
 *  Get layout and return value to repeater template
 *
 *  @since 2.8.3
+*  @updated 2.14.0
 */
 
-function alm_layouts_get(){	
+function alm_get_layout(){	
    if (current_user_can( 'edit_theme_options' )){         
    
-      $nonce = $_GET["nonce"];
-      $type = $_GET["type"];      
+      $nonce = sanitize_text_field($_GET["nonce"]);
+      $type = sanitize_text_field($_GET["type"]);           
+      $custom = sanitize_text_field($_GET["custom"]); 
+      
       // Check our nonce, if they don't match then bounce!
       if (! wp_verify_nonce( $nonce, 'alm_repeater_nonce' ))
          die('Error - unable to verify nonce, please try again.');    
       
       if($type === 'default'){
+	      
+	      // Default Layout
          $content =  file_get_contents(ALM_PATH.'admin/includes/layout/'.$type.'.php');
+         
       }else{
-         $content =  file_get_contents(ALM_LAYOUTS_PATH.'layouts/'.$type.'.php');         
-      }      
+	      
+		   // Custom Layout
+	      if($custom == 'true'){
+		      $dir = 'alm_layouts';
+		      
+				if(is_child_theme()){
+					$path = get_stylesheet_directory().'/'. $dir .'/' .$type;
+					// if child theme does not have the layout, check the parent theme
+					if(!file_exists($path)){
+						$path = get_template_directory().'/'. $dir .'/' .$type;
+					}
+				}
+				else{
+					$path = get_template_directory().'/'. $dir .'/' .$type;
+				}
+         	$content =  file_get_contents($path); 		      
+		      
+		   } 
+		   
+		   // Layouts Add-on
+		   else {			   
+         	$content =  file_get_contents(ALM_LAYOUTS_PATH.'layouts/'.$type.'.php');      
+         }   
+      }       
       
       $return["value"] = $content;
       echo json_encode($return);        
@@ -389,6 +417,7 @@ function alm_admin_menu() {
       );
       add_action( 'load-' . $alm_cache_page, 'alm_load_admin_js' );
       add_action( 'load-' . $alm_cache_page, 'alm_load_cache_admin_js' );
+      add_action( 'load-' . $alm_cache_page, 'alm_set_admin_nonce' ); 
    }
    
    //Add our admin scripts
@@ -399,6 +428,7 @@ function alm_admin_menu() {
    add_action( 'load-' . $alm_shortcode_page, 'alm_load_admin_js' );
    add_action( 'load-' . $alm_shortcode_page, 'alm_set_admin_nonce' );
    add_action( 'load-' . $alm_examples_page, 'alm_load_admin_js' );
+   add_action( 'load-' . $alm_examples_page, 'alm_set_admin_nonce' );
    add_action( 'load-' . $alm_help_page, 'alm_load_admin_js' );
    add_action( 'load-' . $alm_addons_page, 'alm_load_admin_js' );
    add_action( 'load-' . $alm_licenses_page, 'alm_load_admin_js' );
@@ -847,7 +877,7 @@ function alm_filter_admin_footer_text( $text ) {
 		return;
 	}
 	
-	echo 'Ajax Load More is made with <span style="color: #e25555;">♥</span> by <a href="https://connekthq.com" target="_blank" style="font-weight: 500;">Connekt</a> | <a href="https://wordpress.org/support/plugin/ajax-load-more/reviews/" target="_blank" style="font-weight: 500;">Leave a Review</a> | <a href="https://connekthq.com/plugins/ajax-load-more/support/" target="_blank" style="font-weight: 500;">Get Support</a>';
+	echo '<strong>Ajax Load More</strong> is made with <span style="color: #e25555;">♥</span> by <a href="https://connekthq.com" target="_blank" style="font-weight: 500;">Connekt</a> | <a href="https://wordpress.org/support/plugin/ajax-load-more/reviews/" target="_blank" style="font-weight: 500;">Leave a Review</a> | <a href="https://connekthq.com/plugins/ajax-load-more/support/" target="_blank" style="font-weight: 500;">Get Support</a>';
 }
 
 

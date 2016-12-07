@@ -4,7 +4,7 @@ Donate link: https://connekthq.com/donate/
 Tags: infinite scroll, infinite scrolling, scroll, infinite, lazy load, lazy loading, pagination, ajax pagination, ajax, ajax posts, ajax load posts, search, tags, category, post types, taxonomy, meta_query, woocommerce
 Requires at least: 3.6
 Tested up to: 4.7
-Stable tag: 2.13.0.1
+Stable tag: 2.13.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -82,7 +82,7 @@ Ajax Load More accepts a number of parameters that are passed to the WordPress q
 *   **posts_per_page** - Number of posts to load with each Ajax request. Default = ’5′
 *   **scroll** - Load more posts as the user scrolls the page (true/false). Default = ‘true’
 *   **scroll_distance** - The distance from the bottom of the screen to trigger the loading of posts while scrolling. Default = '150'
-*   **max_pages** - Maximum number of pages to load while user is scrolling (activated on when scroll = true). Default = '5' 
+*   **max_pages** - Maximum number of pages to load while user is scrolling (activated on when scroll = true). Default = '0' 
 *   **pause_override** - Allow scrolling to override the Pause parameter and trigger the loading of posts on scroll. Default = null 
 *   **pause** - Do not load posts until user clicks the Load More button (true/false). Default = 'false'
 *   **transition** - Choose a posts reveal transition (slide/fade/none). Default = 'slide' 
@@ -328,6 +328,24 @@ How to install Ajax Load More.
 
 
 == Changelog ==
+
+
+= 2.13.1 - December 5, 2016 =
+
+* NEW - Adding support for multiple instances of filtering.
+* NEW - Adding caching support for initial requests if page > 1. e.g. /page/10/ will now be cached and served to visitors as page-1-10.html
+* NEW - Added new filter for creating and listing custom layouts within repeater template admin (docs coming soon).
+* Update - Adding Post Type 'any' to shortcode builder.
+* Update - Updating max_pages parameter to be '0' as the plugin default.
+* Update - Various UI updates and enhancements. 
+* FIX - Updated post_status parameter to support inherit for attachments.
+* FIX - Undefined variables in Shortcode Builder pop up.
+* FIX - Shortcode Builder UI and copy updates.
+* FIX - JS error on Examples page within plugin.
+* FIX - JS errors on with ALM Cache admin page.
+* FIX - Support for preserving querystring parameters in Previous Post add-on.
+
+
 
 = 2.13.0.1 - November 10, 2016 =
 

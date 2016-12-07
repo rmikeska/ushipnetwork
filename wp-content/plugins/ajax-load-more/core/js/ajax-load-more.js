@@ -388,22 +388,25 @@
             
             // If cache = true && cache_logged_in setting is false
             if(alm.cache === 'true' && !alm.cache_logged_in){
+               
+               var cache_page;
+               
                if(alm.init && alm.seo && alm.isPaged){ 
+                  // If the request a paged URL (/page/3/)
+                  var firstpage = '1';          
+                  cache_page = alm.cache_path + '/page-' + firstpage +'-'+ alm.start_page +'.html';
                   
-                  // if alm.init = true, SEO = true and SEO page > 1
-                  // - skip cache build process because we can't build cache from multiple loaded queries
-                  alm.AjaxLoadMore.ajax('standard');
+               } else { 
+                  // standard request url                  
+                  cache_page = alm.cache_path + '/page-' + (alm.page + 1) +'.html';
                   
-               } else {
-                  // Build and/or get cache                  
-                  var cachePage = alm.cache_path + '/page-' + alm.page +'.html';
-                         
-                  $.get(cachePage, function( data ) {       
-                     alm.AjaxLoadMore.success(data, true); // data contains whatever the request has returned                     
-                  }).fail(function() { 
-                     alm.AjaxLoadMore.ajax('standard'); 
-                  });
                }
+               
+               $.get(cache_page, function( data ) {       
+                  alm.AjaxLoadMore.success(data, true); // data contains whatever the request has returned                     
+               }).fail(function() { 
+                  alm.AjaxLoadMore.ajax('standard'); 
+               });
                
             } else { // Standard ALM query
                
@@ -1305,39 +1308,57 @@
     *  @since 2.6.1
     */
    $.fn.almFilter = function (transition, speed, data) {
-      
-      $(".ajax-load-more-wrap").each(function (e) {
-         var el = $(this);         
-         if(transition === 'slide'){ // Slide transition
-            el.slideUp(speed, function(){
-               $('.alm-listing', el).html(''); // Clear listings
-               $('.alm-btn-wrap', el).remove(); // remove buttons   
-               el.fadeIn(speed);    
-                
-               $.fn.almSetFilters(el, data);
-                  
-            });
-         }else if(transition === 'fade'){ // Fade transition
-            el.fadeOut(speed, function(){
-               $('.alm-listing', el).html(''); // Clear listings 
-               $('.alm-btn-wrap', el).remove(); // remove buttons   
-               el.fadeIn(speed);     
-               
-               $.fn.almSetFilters(el, data);
-                          
-            });
-         }else{
+            
+      if(data.target){
+	      // if a target has been specified
+	      $(".ajax-load-more-wrap[data-id='" + data.target + "']").each(function (e) {	
+		      var el = $(this);	      
+		      $.fn.almFilterTransition(transition, speed, data, el);
+		   });
+      } else {
+	      // Target not specified
+	      $(".ajax-load-more-wrap").each(function (e) {
+		      var el = $(this);
+		      $.fn.almFilterTransition(transition, speed, data, el);
+		   });
+      }
+   };
+   
+   
+   /* $.fn.almFilterTransition(transition, speed, data, el)
+    * 
+    *  Transition Ajax Load More
+    *
+    *  @since 2.13.1
+    */
+   $.fn.almFilterTransition  = function(transition, speed, data, el){
+	   if(transition === 'slide'){ // Slide transition
+         el.slideUp(speed, function(){
             $('.alm-listing', el).html(''); // Clear listings
+            $('.alm-btn-wrap', el).remove(); // remove buttons   
+            el.fadeIn(speed);    
+             
+            $.fn.almSetFilters(el, data);
+               
+         });
+      }else if(transition === 'fade'){ // Fade transition
+         el.fadeOut(speed, function(){
+            $('.alm-listing', el).html(''); // Clear listings 
             $('.alm-btn-wrap', el).remove(); // remove buttons   
             el.fadeIn(speed);     
             
             $.fn.almSetFilters(el, data);
-                
-         }        
+                       
+         });
+      }else{
+         $('.alm-listing', el).html(''); // Clear listings
+         $('.alm-btn-wrap', el).remove(); // remove buttons   
+         el.fadeIn(speed);     
          
-      });
+         $.fn.almSetFilters(el, data);
+             
+      }
    };
-   
    
    
    /* $.fn.almSetFilters(el, data)
@@ -1355,8 +1376,14 @@
       if ($.isFunction($.fn.almFilterComplete)){
          $.fn.almFilterComplete();
       }
-         
-      $(".ajax-load-more-wrap").ajaxloadmore(); // re-initiate Ajax Load More
+      
+      if(data.target){
+	      // if a target has been specified
+      	$(".ajax-load-more-wrap[data-id="+data.target+"").ajaxloadmore(); // re-initiate Ajax Load More	      
+      } else {
+	      // Target not specified
+      	$(".ajax-load-more-wrap").ajaxloadmore(); // re-initiate Ajax Load More	      
+      }
    };
       
    
