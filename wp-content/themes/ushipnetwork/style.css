@@ -4227,4 +4227,7 @@ body.page-template-contact {
 .textBlock-content {
   line-height: 30px; }
 
+.tabContent .textBlock-container {
+  padding-top: 40px; }
+
 /*# sourceMappingURL=style.css.map */
