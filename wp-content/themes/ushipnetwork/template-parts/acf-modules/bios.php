@@ -14,7 +14,9 @@
           <a class="bios-block" target="_blank" href="<?php echo $bios_link_url; ?>">
             <img class="bios-image" src="<?php echo $bios_image['url']; ?>">
             <p class="bios-name"><?php the_sub_field('bios_name'); ?></p>
-            <div class="bios-description"><?php the_sub_field('bios_description'); ?></div>
+            <?php if(get_sub_field('bios_description')): ?>
+              <div class="bios-description"><?php the_sub_field('bios_description'); ?></div>
+            <?php endif; ?>
           </a>
         <?php endwhile; ?>
       </div>
