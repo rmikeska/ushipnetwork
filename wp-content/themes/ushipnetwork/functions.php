@@ -121,7 +121,7 @@ add_action( 'widgets_init', 'ushipnetwork_widgets_init' );
  * Enqueue scripts and styles.
  */
 function ushipnetwork_scripts() {
-	wp_enqueue_style( 'ushipnetwork-style', get_stylesheet_uri(), array(), '20161207', 'all' );
+	wp_enqueue_style( 'ushipnetwork-style', get_stylesheet_uri(), array(), '20161208', 'all' );
 
 	wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/lib/jquery-2.2.0.min.js', array(), '20160121', true );
 

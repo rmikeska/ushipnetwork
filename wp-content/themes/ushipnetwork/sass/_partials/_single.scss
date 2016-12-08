@@ -385,4 +385,11 @@ article.category-press-release {
   .authorship {
     display: none;
   }
+
+  & + section.relatedPosts {
+
+    .post-featureImage-link {
+      display: none;
+    }
+  }
 }

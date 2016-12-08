@@ -1208,6 +1208,9 @@ article.category-press-release {
   article.category-media-coverage .authorship,
   article.category-press-release .authorship {
     display: none; }
+  article.category-media-coverage + section.relatedPosts .post-featureImage-link,
+  article.category-press-release + section.relatedPosts .post-featureImage-link {
+    display: none; }
 
 .archive-content .page-header {
   padding-top: 35px; }
