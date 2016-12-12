@@ -245,12 +245,12 @@ add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
  */
 function add_googleanalytics() {
 
-	$currentsite = get_bloginfo('url');
+	$currentsite = network_home_url();
 
   switch ($currentsite) {
     case 'http://ushipnetwork':
       ?>
-      <!-- Google Analytics Test -->
+      <!-- Google Analytics Test - Local -->
       <?php
       break;
     case 'https://ushipabout2.staging.wpengine.com':
