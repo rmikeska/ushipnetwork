@@ -20,8 +20,6 @@
 
 <?php include("template-parts/favicons.php");?>
 
-<?php $network_home = network_home_url();?>
-
 <?php wp_head(); ?>
 </head>
 <body role="application" <?php body_class(); ?>>
@@ -34,4 +32,3 @@
 
 	<main role="main" class="content-newHeader content-newFooter">
     <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_id' => 'secondary-menu', 'container_class' => 'secondary-menu', 'fallback_cb' => 'false' ) ); ?>
-    <h1 style="color: red;"><?php echo $network_home;?></h1>

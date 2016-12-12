@@ -248,12 +248,7 @@ function add_googleanalytics() {
 	$currentsite = network_home_url();
 
   switch ($currentsite) {
-    case 'https://ushipabout2.staging.wpengine.com/':
-      ?>
-      <!-- Google Analytics Test - About -->
-      <?php
-      break;
-    case 'https://about.uship.com':
+    case 'https://about.uship.com/':
       ?>
       <!-- Google Analytics -->
       <script>
@@ -267,7 +262,7 @@ function add_googleanalytics() {
       </script>
       <?php
       break;
-    case 'https://learn.uship.com':
+    case 'https://learn.uship.com/':
       ?>
       <!-- Google Analytics -->
       <script>
@@ -281,7 +276,7 @@ function add_googleanalytics() {
       </script>
       <?php
       break;
-    case 'https://blog.uship.com':
+    case 'https://blog.uship.com/':
       ?>
       <!-- Google Analytics -->
       <script>
