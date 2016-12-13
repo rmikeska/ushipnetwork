@@ -392,3 +392,22 @@ class MvcComponents {
 }
 
 MvcComponents::retrieve_header_footer();
+
+/*
+ * Change My Sites Menu Names to domain.com as the menu name
+ */
+function change_site_names() {
+  global $wp_admin_bar;
+    $blavatar = '<div class="blavatar"></div>';
+  foreach ( (array) $wp_admin_bar->user->blogs as $blog ) {
+      $menu_id  = 'blog-' . $blog->userblog_id;
+      $blogname = $blog->domain;
+    $wp_admin_bar->add_menu( array(
+      'parent'  => 'my-sites-list',
+      'id'  => $menu_id,
+      'title'   => $blavatar . $blogname,
+      'href'  => get_admin_url( $blog->userblog_id ) )
+    );
+  }
+}
+add_action( 'wp_before_admin_bar_render', 'change_site_names' );
