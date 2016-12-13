@@ -400,11 +400,12 @@ function change_site_names() {
   global $wp_admin_bar;
   foreach ( (array) $wp_admin_bar->user->blogs as $blog ) {
     $menu_id  = 'blog-' . $blog->userblog_id;
-    $blogname = $blog->path;
+    $sitepath = $blog->path;
+    $sitename = $blog->blogname;
     $wp_admin_bar->add_menu( array(
       'parent'  => 'my-sites-list',
       'id'  => $menu_id,
-      'title'   => $blogname,
+      'title'   => $sitepath . $sitename,
       'href'  => get_admin_url( $blog->userblog_id ) )
     );
   }
