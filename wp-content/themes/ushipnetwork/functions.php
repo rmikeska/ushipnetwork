@@ -411,3 +411,21 @@ function change_site_names() {
   }
 }
 add_action( 'wp_before_admin_bar_render', 'change_site_names' );
+
+
+
+// function my_custom_admin_head() {
+//   echo '<h1 style="color: red; font-size: 40px; text-align: center; font-weight: bold; line-height: 40px; padding: 10px 0;">Site:</h1>';
+// }
+// add_action( 'admin_head', 'my_custom_admin_head' );
+
+
+function display_current_site_path() {
+
+  if ( is_multisite() ) {
+    $current_site = get_current_site();
+    $current_path = $current_site->path;
+    echo '<h1 style="color: red; font-size: 40px; text-align: center; font-weight: bold; line-height: 40px; padding: 10px 0;">Site: ' . $current_path . '</h1>';
+  }
+}
+add_action( 'all_admin_notices', 'display_current_site_path' );
