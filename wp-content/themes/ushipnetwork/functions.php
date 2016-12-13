@@ -412,20 +412,15 @@ function change_site_names() {
 }
 add_action( 'wp_before_admin_bar_render', 'change_site_names' );
 
-
-
-// function my_custom_admin_head() {
-//   echo '<h1 style="color: red; font-size: 40px; text-align: center; font-weight: bold; line-height: 40px; padding: 10px 0;">Site:</h1>';
-// }
-// add_action( 'admin_head', 'my_custom_admin_head' );
-
-
+/*
+ * Add message to the top of the admin to show current multisite path
+ */
 function display_current_site_path() {
 
   if ( is_multisite() ) {
     $current_site = get_current_site();
     $current_path = $current_site->path;
-    echo '<h1 style="color: red; font-size: 40px; text-align: center; font-weight: bold; line-height: 40px; padding: 10px 0;">Site: ' . $current_path . '</h1>';
+    echo '<h1 style="font-size: 30px; text-align: center; font-weight: bold; line-height: 30px; padding: 10px 0; color: #F65F5F; border-color: #FCCFCF; background-color: #FFFAFA; border-width: 1px; border-style: solid; border-radius: 3px">Current Site: ' . $current_path . '</h1>';
   }
 }
 add_action( 'all_admin_notices', 'display_current_site_path' );
