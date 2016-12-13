@@ -401,7 +401,7 @@ function change_site_names() {
     $blavatar = '<div class="blavatar"></div>';
   foreach ( (array) $wp_admin_bar->user->blogs as $blog ) {
       $menu_id  = 'blog-' . $blog->userblog_id;
-      $blogname = $blog->domain;
+      $blogname = $blog->path;
     $wp_admin_bar->add_menu( array(
       'parent'  => 'my-sites-list',
       'id'  => $menu_id,
