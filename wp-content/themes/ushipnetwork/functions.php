@@ -405,7 +405,7 @@ function change_site_names() {
     $wp_admin_bar->add_menu( array(
       'parent'  => 'my-sites-list',
       'id'  => $menu_id,
-      'title'   => $sitepath . '' . $sitename,
+      'title'   => $sitepath . ' ' . $sitename,
       'href'  => get_admin_url( $blog->userblog_id ) )
     );
   }
