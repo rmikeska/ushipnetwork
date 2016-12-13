@@ -394,18 +394,17 @@ class MvcComponents {
 MvcComponents::retrieve_header_footer();
 
 /*
- * Change My Sites Menu Names to display multisite subdirectory + site title
+ * Change 'My Sites' admin menu names to their multisite /path/ instead of site title
  */
 function change_site_names() {
   global $wp_admin_bar;
   foreach ( (array) $wp_admin_bar->user->blogs as $blog ) {
     $menu_id  = 'blog-' . $blog->userblog_id;
-    $blogname = $blog->site_name;
-    $blogdirectory = $blog->path;
+    $blogname = $blog->path;
     $wp_admin_bar->add_menu( array(
       'parent'  => 'my-sites-list',
       'id'  => $menu_id,
-      'title'   => $blogdirectory . $blogname,
+      'title'   => $blogname,
       'href'  => get_admin_url( $blog->userblog_id ) )
     );
   }
