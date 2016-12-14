@@ -420,7 +420,7 @@ function display_current_site_path() {
   if ( is_multisite() ) {
     $current_site = get_blog_details();
     $current_path = $current_site->path;
-    echo '<h1 style="font-size: 30px; text-align: center; font-weight: bold; line-height: 30px; padding: 10px 0; color: #F65F5F; border-color: #FCCFCF; background-color: #FFFAFA; border-width: 1px; border-style: solid; border-radius: 3px">Current Site: ' . $current_path . '</h1>';
+    echo '<h1 style="font-size: 20px; font-weight: bold; margin: 35px 20px 20px 0; padding: 15px; color: #F65F5F; border-color: #FCCFCF; background-color: #FFFAFA; border-width: 1px; border-style: solid; border-radius: 3px">Current Site: ' . $current_path . '</h1>';
   }
 }
 add_action( 'all_admin_notices', 'display_current_site_path' );
