@@ -1,0 +1,132 @@
+/*** HubSpot Forms ***/
+
+.hbspt-form {
+
+  .submitted-message {
+    padding: 50px 0;
+  }
+
+  .hs-form {
+    fieldset {
+      max-width: 100% !important;
+    }
+
+    .hs-form-required {
+      display: none;
+    }
+
+    .hs-form-field {
+      width: 50%;
+      text-align: left;
+      padding-bottom: 15px;
+
+      @media #{$default-break} {
+        width: 100% !important;
+        padding-bottom: 20px;
+      }
+    }
+
+    .form-columns-2 .hs-form-field .input {
+      margin-right: 0;
+    }
+
+    .form-columns-1 .input {
+      margin-right: 0;
+      padding-right: 30px;
+
+      @media #{$default-break} {
+        padding-right: 0;
+      }
+    }
+
+    .form-columns-2 .hs-form-field:first-of-type .input {
+      padding-right: 30px;
+
+      @media #{$default-break} {
+        padding-right: 0;
+      }
+    }
+
+    .form-columns-1 .hs-input {
+      width: 100%;
+    }
+
+    .hs-button {
+      display: block;
+      width: inherit;
+      margin: 0 auto;
+      border: solid;
+      border-radius: 0.1875rem;
+      cursor: pointer;
+      font-weight: $font-bold;
+      box-shadow: none;
+      font-size: 1rem;
+      text-align: center;
+      letter-spacing: 0.025rem;
+      transition: $default-transition;
+      display: inline-block;
+      line-height: 2.75;
+      min-width: 18.75rem;
+      padding: 0 1.875rem;
+      border-width: 0.1875rem;
+      background-color: $primary-green;
+      border-color: $primary-green;
+      color: $white;
+
+      @media #{$default-break} {
+        width: 100%;
+        min-width: 100%;
+      }
+
+      &:hover,
+      &:focus {
+        background-color: $button-hover-focus;
+        border-color: $button-hover-focus;
+        color: $white;
+      }
+
+      &:active {
+        background-color: $button-active;
+        border-color: $button-active;
+        color: $white;
+      }
+    }
+
+    .actions:before {
+      display: block;
+      content: '';
+      height: 1px;
+      width: 100%;
+      background-color: $divider-color;
+      margin: 25px auto 32px;
+    }
+
+    .hs-error-msgs {
+
+      display: inline-block !important;
+
+      label {
+        display: block;
+        float: left;
+        padding-top: 8px;
+        padding-bottom: 0;
+        line-height: 12px;
+        text-transform: none;
+        color: $red;
+
+        &:before {
+          display: block;
+          float: left;
+          content: '';
+          width: 12px;
+          height: 12px;
+          margin-right: 5px;
+          margin-bottom: 5px;
+          background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHJlY3Qgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTEyLDBBMTIsMTIsMCwxLDAsMjQsMTIsMTIsMTIsMCwwLDAsMTIsMFptMCwxOGExLjEzLDEuMTMsMCwxLDEsMS4xMy0xLjEzQTEuMTMsMS4xMywwLDAsMSwxMiwxOFptMS4wOS00LjY5YTEuMTMsMS4xMywwLDAsMS0yLjI2LDBWNy4xNWExLjEzLDEuMTMsMCwxLDEsMi4yNiwwdjYuMThaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIC0wLjAyKSIgZmlsbD0iI0Y2NUY1RiIvPjwvc3ZnPg==');
+          background-position: 100% center;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+}
