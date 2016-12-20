@@ -26,12 +26,11 @@
       }
     }
 
-    .form-columns-2 .hs-form-field .input {
-      margin-right: 0;
+    .hs-form-field .input {
+      margin-right: 0 !important;
     }
 
-    .form-columns-1 .input {
-      margin-right: 0;
+    .hs-form fieldset .hs-form-field:not(:last-of-type) {
       padding-right: 30px;
 
       @media #{$default-break} {
@@ -39,7 +38,7 @@
       }
     }
 
-    .form-columns-2 .hs-form-field:first-of-type .input {
+    .form-columns-1 .input {
       padding-right: 30px;
 
       @media #{$default-break} {
