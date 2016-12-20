@@ -2047,10 +2047,10 @@ body.page-template-contact {
       padding-bottom: 20px; } }
 .hbspt-form .hs-form .hs-form-field .input {
   margin-right: 0 !important; }
-.hbspt-form .hs-form .hs-form fieldset .hs-form-field:not(:last-of-type) {
+.hbspt-form .hs-form fieldset .hs-form-field:not(:last-of-type) {
   padding-right: 30px; }
   @media only screen and (max-width: 769px) {
-    .hbspt-form .hs-form .hs-form fieldset .hs-form-field:not(:last-of-type) {
+    .hbspt-form .hs-form fieldset .hs-form-field:not(:last-of-type) {
       padding-right: 0; } }
 .hbspt-form .hs-form .form-columns-1 .input {
   padding-right: 30px; }
