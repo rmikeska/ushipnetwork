@@ -357,7 +357,8 @@ class MvcComponents {
 
     echo '<h1>'.$locale.'</h1>';
 
-    $headers = array('Accept-Language: '.$locale.','.'Accept: application/json');
+    // $headers = array('Accept-Language: en-US', 'Accept: application/json');
+    $headers = array('Accept-Language: '.$locale.'.', 'Accept: application/json');
 		if (isset($_COOKIE['uShipTicket'])) {
 			array_push($headers, 'Cookie: uShipTicket=' . $_COOKIE['uShipTicket']);
 		}
