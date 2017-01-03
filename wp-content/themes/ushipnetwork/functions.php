@@ -353,9 +353,8 @@ class MvcComponents {
 	public static function retrieve_header_footer() {
 		$header_request = curl_init('https://www.uship.com/mvc/components/header');
 		$footer_request = curl_init('https://www.uship.com/mvc/components/footer?showCountryChanger=false');
-    $locale = get_locale();
 
-		$headers = array('Accept-Language:' .$locale.', Accept: application/json');
+		$headers = array('Accept-Language: en-US', 'Accept: application/json');
 		if (isset($_COOKIE['uShipTicket'])) {
 			array_push($headers, 'Cookie: uShipTicket=' . $_COOKIE['uShipTicket']);
 		}
