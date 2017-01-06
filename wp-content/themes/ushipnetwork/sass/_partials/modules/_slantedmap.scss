@@ -240,4 +240,8 @@
 
 .slantedMap-cta {
   margin-left: 0;
+
+  @media #{$default-break} {
+    margin-bottom: 50px; // Not ideal, but adding this in order to get around the negative border fix for anchor linking to sections with our fixed header. This gives enough margin for the cta to be clickable.
+  }
 }

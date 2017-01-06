@@ -2987,6 +2987,9 @@ body.page-template-contact {
 
 .slantedMap-cta {
   margin-left: 0; }
+  @media only screen and (max-width: 769px) {
+    .slantedMap-cta {
+      margin-bottom: 50px; } }
 
 /*** Strip Copy Callout ***/
 .stripCopyCallout-container {
