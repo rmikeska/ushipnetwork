@@ -1766,8 +1766,8 @@
                                     "label": "Link URL",
                                     "name": "value_props_item_link_url",
                                     "type": "text",
-                                    "instructions": "",
-                                    "required": 1,
+                                    "instructions": "Optional.",
+                                    "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
                                         "width": "",
@@ -1785,8 +1785,8 @@
                                     "label": "Link Text",
                                     "name": "value_props_item_link_text",
                                     "type": "text",
-                                    "instructions": "",
-                                    "required": 1,
+                                    "instructions": "Optional.",
+                                    "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
                                         "width": "",
@@ -2664,5 +2664,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1481302198
+    "modified": 1483720738
 }
