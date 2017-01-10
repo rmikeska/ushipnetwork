@@ -532,7 +532,7 @@ em {
 .sectionNavy {
   background-color: #1C2431; }
 
-.bodyContent section:not(:first-child) {
+.bodyContent section {
   border-top: 80px solid transparent;
   margin-top: -80px;
   background-clip: padding-box; }
@@ -2390,7 +2390,8 @@ body.page-template-contact {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  z-index: 2; }
 
 .hero.heroSmall {
   min-height: 275px; }

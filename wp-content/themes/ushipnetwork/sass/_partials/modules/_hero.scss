@@ -9,6 +9,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  z-index: 2; // this is to get around the fixed nav anchor fix problem where the bottom CTA is not clickable
 }
 
 .hero.heroSmall {
