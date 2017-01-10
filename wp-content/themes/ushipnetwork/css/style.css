@@ -532,7 +532,7 @@ em {
 .sectionNavy {
   background-color: #1C2431; }
 
-.bodyContent section {
+.bodyContent section:not(:first-child) {
   border-top: 80px solid transparent;
   margin-top: -80px;
   background-clip: padding-box; }
