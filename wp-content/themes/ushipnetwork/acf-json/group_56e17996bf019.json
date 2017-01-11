@@ -3,21 +3,6 @@
     "title": "Split Screen",
     "fields": [
         {
-            "key": "field_56e179a6fd7ee",
-            "label": "Split Screen Content",
-            "name": "split_screen_content",
-            "type": "flexible_content",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "button_label": "Add Row",
-            "min": "",
-            "max": "",
             "layouts": [
                 {
                     "key": "56e17a017acf8",
@@ -26,25 +11,18 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_56e17a7bed04f",
-                            "label": "Panel",
-                            "name": "split_screen_panel",
-                            "type": "repeater",
-                            "instructions": "",
-                            "required": 1,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "collapsed": "",
-                            "min": 2,
-                            "max": 2,
-                            "layout": "block",
-                            "button_label": "Add Row",
                             "sub_fields": [
                                 {
+                                    "return_format": "array",
+                                    "preview_size": "medium",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "",
                                     "key": "field_56e17ab4ed050",
                                     "label": "Panel Image",
                                     "name": "split_screen_panel_image",
@@ -56,19 +34,16 @@
                                         "width": "",
                                         "class": "",
                                         "id": ""
-                                    },
-                                    "return_format": "array",
-                                    "preview_size": "medium",
-                                    "library": "all",
-                                    "min_width": "",
-                                    "min_height": "",
-                                    "min_size": "",
-                                    "max_width": "",
-                                    "max_height": "",
-                                    "max_size": "",
-                                    "mime_types": ""
+                                    }
                                 },
                                 {
+                                    "post_type": [
+                                        "page"
+                                    ],
+                                    "taxonomy": [],
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "allow_archives": 0,
                                     "key": "field_56e17afced051",
                                     "label": "Panel Page Link",
                                     "name": "split_screen_panel_url",
@@ -80,16 +55,14 @@
                                         "width": "",
                                         "class": "",
                                         "id": ""
-                                    },
-                                    "post_type": [
-                                        "page"
-                                    ],
-                                    "taxonomy": [],
-                                    "allow_null": 0,
-                                    "allow_archives": 0,
-                                    "multiple": 0
+                                    }
                                 },
                                 {
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
                                     "key": "field_56e17b1bed052",
                                     "label": "Panel Headline",
                                     "name": "split_screen_panel_headline",
@@ -102,15 +75,15 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": "",
                                     "readonly": 0,
                                     "disabled": 0
                                 },
                                 {
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
                                     "key": "field_56e17b32ed053",
                                     "label": "Panel Sub Headline",
                                     "name": "split_screen_panel_subheadline",
@@ -123,15 +96,22 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": "",
                                     "readonly": 0,
                                     "disabled": 0
                                 },
                                 {
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "choices": {
+                                        "panelFontDefault": "Default",
+                                        "panelFontSmall": "Small",
+                                        "panelFontExtraSmall": "Extra Small"
+                                    },
+                                    "default_value": [],
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "return_format": "value",
                                     "key": "field_57fd3ecb682be",
                                     "label": "Overflow text adjustment",
                                     "name": "split_screen_panel_fontsize_adjust",
@@ -143,25 +123,17 @@
                                         "width": "",
                                         "class": "",
                                         "id": ""
-                                    },
-                                    "choices": {
-                                        "panelFontDefault": "Default",
-                                        "panelFontSmall": "Small"
-                                    },
-                                    "default_value": [],
-                                    "allow_null": 0,
-                                    "multiple": 0,
-                                    "ui": 0,
-                                    "ajax": 0,
-                                    "return_format": "value",
-                                    "placeholder": ""
+                                    }
                                 }
-                            ]
-                        },
-                        {
-                            "key": "field_56e17b829f1eb",
-                            "label": "Strip",
-                            "name": "split_screen_strip",
+                            ],
+                            "min": 2,
+                            "max": 2,
+                            "layout": "block",
+                            "button_label": "Add Row",
+                            "collapsed": "",
+                            "key": "field_56e17a7bed04f",
+                            "label": "Panel",
+                            "name": "split_screen_panel",
                             "type": "repeater",
                             "instructions": "",
                             "required": 1,
@@ -170,14 +142,18 @@
                                 "width": "",
                                 "class": "",
                                 "id": ""
-                            },
-                            "collapsed": "",
-                            "min": 3,
-                            "max": 3,
-                            "layout": "block",
-                            "button_label": "Add Row",
+                            }
+                        },
+                        {
                             "sub_fields": [
                                 {
+                                    "post_type": [
+                                        "page"
+                                    ],
+                                    "taxonomy": [],
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "allow_archives": 0,
                                     "key": "field_56e17baf9f1ec",
                                     "label": "Strip Page Link",
                                     "name": "split_screen_strip_url",
@@ -189,16 +165,14 @@
                                         "width": "",
                                         "class": "",
                                         "id": ""
-                                    },
-                                    "post_type": [
-                                        "page"
-                                    ],
-                                    "taxonomy": [],
-                                    "allow_null": 0,
-                                    "allow_archives": 0,
-                                    "multiple": 0
+                                    }
                                 },
                                 {
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
                                     "key": "field_56e17bc09f1ed",
                                     "label": "Strip Headline",
                                     "name": "split_screen_strip_headline",
@@ -211,15 +185,15 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": "",
                                     "readonly": 0,
                                     "disabled": 0
                                 },
                                 {
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
                                     "key": "field_56e17be89f1ee",
                                     "label": "Strip Sub Headline",
                                     "name": "split_screen_strip_subheadline",
@@ -232,21 +206,73 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": "",
                                     "readonly": 0,
                                     "disabled": 0
+                                },
+                                {
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "choices": {
+                                        "stripFontDefault": "Default",
+                                        "stripFontSmall": "Small"
+                                    },
+                                    "default_value": [],
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "return_format": "value",
+                                    "key": "field_5876754da21e8",
+                                    "label": "Overflow Text Adjustment",
+                                    "name": "split_screen_strip_fontsize_adjust",
+                                    "type": "select",
+                                    "instructions": "This is an option to decrease the header and subheader font size for languages that will overflow the allowable container width. Leave the default selected if no adjustment is needed.",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
                                 }
-                            ]
+                            ],
+                            "min": 3,
+                            "max": 3,
+                            "layout": "block",
+                            "button_label": "Add Row",
+                            "collapsed": "",
+                            "key": "field_56e17b829f1eb",
+                            "label": "Strip",
+                            "name": "split_screen_strip",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
                         }
                     ],
                     "min": "",
                     "max": ""
                 }
-            ]
+            ],
+            "min": "",
+            "max": "",
+            "button_label": "Add Row",
+            "key": "field_56e179a6fd7ee",
+            "label": "Split Screen Content",
+            "name": "split_screen_content",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
         }
     ],
     "location": [
@@ -266,5 +292,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1476979236
+    "modified": 1484158478
 }

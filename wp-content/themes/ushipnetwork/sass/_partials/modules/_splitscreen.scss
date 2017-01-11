@@ -1,20 +1,12 @@
 /*** Split Screen ***/
 
-.page-template-split-screen .pageContent {
-  // overflow: hidden;
-}
-
 .splitScreen {
   display: flex;
   flex-direction: column;
   flex: 1;
-  // overflow: auto;
 }
 
 .splitScreen-row {
-  // width: 100%; // Not cool on ie11
-  // height: 100%; // Not cool on ie11
-
   @media #{$default-break} {
     flex-direction: row;
     flex-wrap: wrap;
@@ -33,8 +25,6 @@
 .splitScreen-row:last-child {
   flex: 1 0 auto;
   display: flex;
-  // max-height: 85px;
-  // height: 100%; //all fucked in firefox
 }
 
 .splitScreen-panel {
@@ -54,53 +44,6 @@
     min-height: 275px;
   }
 }
-
-.splitScreen-panel.panelFontSmall {
-
-  .splitScreen-panel-headline {
-    font-size: 30px;
-
-    @media #{$default-break} {
-      font-size: 28px;
-    }
-  }
-
-  .splitScreen-panel-subheadline {
-    font-size: 14px;
-
-    @media #{$default-break} {
-      font-size: 12px;
-    }
-  }
-}
-
-// .splitScreen-panel:first-child {
-
-//   @media #{$default-break} {
-//     background-color: $navy;
-//     background-image: none !important;
-//   }
-
-//   &:before {
-//     @media #{$default-break} {
-//       display: none;
-//     }
-//   }
-// }
-
-// .splitScreen-panel:last-child {
-
-//   @media #{$default-break} {
-//     background-color: $bright-blue;
-//     background-image: none !important;
-//   }
-
-//   &:before {
-//     @media #{$default-break} {
-//       display: none;
-//     }
-//   }
-// }
 
 .splitScreen-panel-container {
   max-width: 450px;
@@ -253,23 +196,6 @@
   }
 }
 
-// .splitScreen-strip:first-child {
-//   @include calc(width, "50% + 15px");
-
-//   @media #{$default-break} {
-//     width: 100%;
-//     border-bottom: 1px solid $divider-color;
-//   }
-// }
-
-// .splitScreen-strip:last-child {
-//   @include calc(width, "50% - 15px");
-
-//   @media #{$default-break} {
-//     width: 100%;
-//   }
-// }
-
 .splitScreen-strip-container {
   padding-left: $section-padding;
   padding-right: 50px;
@@ -283,26 +209,14 @@
   }
 }
 
-// .splitScreen-strip:first-child .splitScreen-strip-container {
-//   padding-right: 37px;
-// }
-
-// .splitScreen-strip-headline-container {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   margin-bottom: 7px;
-
-//   @media #{$default-break} {
-//     margin-bottom: 0;
-//   }
-// }
+.splitScreen-strip:last-child .splitScreen-strip-container {
+  padding-right: $section-padding;
+}
 
 .splitScreen-strip-headline {
   margin-bottom: 7px;
   font-size: 24px;
   line-height: 1;
-  // margin-top: 2px;
 
   @media #{$default-break} {
     margin-bottom: 0;
@@ -319,25 +233,10 @@
   }
 }
 
-// .splitScreen-strip .circledArrow {
-//   width: 24px;
-//   height: 24px;
-//   margin-left: 15px;
-// }
-
-// .splitScreen-strip .circledArrow path {
-//   fill: $dark-grey;
-// }
-
 .splitScreen-strip:hover {
   background-color: $white;
   transition: all 0.2s ease-in-out;
 }
-
-// .splitScreen-strip:hover .circledArrow path {
-//   fill: $bright-blue;
-//   transition: all 0.2s ease-in-out;
-// }
 
 .splitScreen-strip:hover .splitScreen-strip-headline {
   color: $black;
@@ -373,4 +272,56 @@
 .splitScreen-strip:hover:after {
   background: $white;
   transition: all 0.2s ease-in-out;
+}
+
+
+
+// Font size adjustments
+.splitScreen-panel.panelFontSmall {
+
+  .splitScreen-panel-headline {
+    font-size: 30px;
+
+    @media #{$default-break} {
+      font-size: 28px;
+    }
+  }
+
+  .splitScreen-panel-subheadline {
+    font-size: 14px;
+
+    @media #{$default-break} {
+      font-size: 12px;
+    }
+  }
+}
+
+.splitScreen-panel.panelFontExtraSmall {
+
+  .splitScreen-panel-headline {
+    font-size: 20px;
+
+    @media #{$default-break} {
+      font-size: 16px;
+    }
+  }
+
+  .splitScreen-panel-subheadline {
+    font-size: 14px;
+
+    @media #{$default-break} {
+      font-size: 12px;
+    }
+  }
+}
+
+.splitScreen-strip.stripFontSmall {
+
+  .splitScreen-strip-headline {
+    font-size: 16px;
+
+    @media #{$default-break} {
+      font-size: 16px;
+    }
+  }
 }

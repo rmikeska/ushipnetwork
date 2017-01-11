@@ -14,7 +14,8 @@
   </div>
   <div class="splitScreen-row">
     <?php while(have_rows('split_screen_strip')): the_row(); ?>
-      <a href="<?php the_sub_field('split_screen_strip_url'); ?>" class="splitScreen-strip">
+      <?php $strip_fontsize_adjust = get_sub_field('split_screen_strip_fontsize_adjust'); ?>
+      <a href="<?php the_sub_field('split_screen_strip_url'); ?>" class="splitScreen-strip <?php echo $strip_fontsize_adjust; ?>">
         <div class="splitScreen-strip-container">
           <h2 class="splitScreen-strip-headline"><?php the_sub_field('split_screen_strip_headline'); ?></h2>
           <h4 class="splitScreen-strip-subheadline"><?php the_sub_field('split_screen_strip_subheadline'); ?></h4>

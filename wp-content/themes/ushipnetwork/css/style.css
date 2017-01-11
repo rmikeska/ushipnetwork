@@ -3130,17 +3130,6 @@ body.page-template-contact {
       width: 100%;
       min-height: 275px; } }
 
-.splitScreen-panel.panelFontSmall .splitScreen-panel-headline {
-  font-size: 30px; }
-  @media only screen and (max-width: 769px) {
-    .splitScreen-panel.panelFontSmall .splitScreen-panel-headline {
-      font-size: 28px; } }
-.splitScreen-panel.panelFontSmall .splitScreen-panel-subheadline {
-  font-size: 14px; }
-  @media only screen and (max-width: 769px) {
-    .splitScreen-panel.panelFontSmall .splitScreen-panel-subheadline {
-      font-size: 12px; } }
-
 .splitScreen-panel-container {
   max-width: 450px;
   min-height: 395px;
@@ -3263,6 +3252,9 @@ body.page-template-contact {
       padding-right: 15px;
       margin-bottom: 8px; } }
 
+.splitScreen-strip:last-child .splitScreen-strip-container {
+  padding-right: 15px; }
+
 .splitScreen-strip-headline {
   margin-bottom: 7px;
   font-size: 24px;
@@ -3312,6 +3304,34 @@ body.page-template-contact {
 .splitScreen-strip:hover:after {
   background: #FFFFFF;
   transition: all 0.2s ease-in-out; }
+
+.splitScreen-panel.panelFontSmall .splitScreen-panel-headline {
+  font-size: 30px; }
+  @media only screen and (max-width: 769px) {
+    .splitScreen-panel.panelFontSmall .splitScreen-panel-headline {
+      font-size: 28px; } }
+.splitScreen-panel.panelFontSmall .splitScreen-panel-subheadline {
+  font-size: 14px; }
+  @media only screen and (max-width: 769px) {
+    .splitScreen-panel.panelFontSmall .splitScreen-panel-subheadline {
+      font-size: 12px; } }
+
+.splitScreen-panel.panelFontExtraSmall .splitScreen-panel-headline {
+  font-size: 20px; }
+  @media only screen and (max-width: 769px) {
+    .splitScreen-panel.panelFontExtraSmall .splitScreen-panel-headline {
+      font-size: 16px; } }
+.splitScreen-panel.panelFontExtraSmall .splitScreen-panel-subheadline {
+  font-size: 14px; }
+  @media only screen and (max-width: 769px) {
+    .splitScreen-panel.panelFontExtraSmall .splitScreen-panel-subheadline {
+      font-size: 12px; } }
+
+.splitScreen-strip.stripFontSmall .splitScreen-strip-headline {
+  font-size: 16px; }
+  @media only screen and (max-width: 769px) {
+    .splitScreen-strip.stripFontSmall .splitScreen-strip-headline {
+      font-size: 16px; } }
 
 .introSlide-container {
   max-width: -webkit-calc(780px + 15px*2);
