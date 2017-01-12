@@ -3375,6 +3375,10 @@ body.page-template-contact {
   font-size: 24px;
   line-height: 30px;
   text-align: center; }
+  @media only screen and (max-width: 769px) {
+    .introSlide-headline {
+      overflow: hidden;
+      text-overflow: ellipsis; } }
 
 .introSlide-text p {
   text-align: center;
