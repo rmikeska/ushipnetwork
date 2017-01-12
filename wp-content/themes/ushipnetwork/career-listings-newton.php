@@ -33,7 +33,7 @@ get_header(); ?>
               echo '<span class="careers-entry-info"><span class="careers-entry-info-title">'.$locationText.': '.'</span>'.$newton->location.', '.$newton->state.'</span>';
             echo '</div>';
             echo '<div class="careers-entry-link">';
-              echo '<a class="tertiaryLink tertiaryLinkDark" role="button" href="'.$entry->link->attributes()->href.'">'.$detailsLinkText.''.$arrowIcon.'</a>';
+              echo '<a class="tertiaryLink tertiaryLinkDark" type="button" href="'.$entry->link->attributes()->href.'">'.$detailsLinkText.''.$arrowIcon.'</a>';
             echo '</div>';
           echo '</div>';
         }

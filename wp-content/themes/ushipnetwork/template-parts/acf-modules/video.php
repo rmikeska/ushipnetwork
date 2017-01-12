@@ -15,7 +15,9 @@
     </div>
     <?php while(have_rows('video_cta')): the_row(); ?>
       <?php $video_cta_url = get_sub_field('video_cta_url'); ?>
-      <a class="video-cta button buttonPrimary buttonLarge" role="button" href="<?php echo $video_cta_url; ?>"><?php the_sub_field('video_cta_text'); ?></a>
+      <a class="video-cta <?php include("/class-groups/buttons/large-primary.php");?>" type="button" aria-label="<?php the_sub_field('video_cta_text'); ?>" href="<?php echo $video_cta_url; ?>">
+        <div class="button-content"><?php the_sub_field('video_cta_text'); ?></div>
+      </a>
     <?php endwhile; ?>
   </div>
 </section>

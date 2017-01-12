@@ -20,7 +20,7 @@
         <div class="testimonials-text"><?php the_sub_field('testimonials_text'); ?></div>
         <?php while(have_rows('testimonials_tertiary_callout')): the_row(); ?>
           <?php $testimonials_tertiary_url = get_sub_field('testimonials_tertiary_callout_url'); ?>
-          <a class="tertiaryLink tertiaryLinkDark" role="button" href="<?php echo $testimonials_tertiary_url; ?>"><?php the_sub_field('testimonials_tertiary_callout_text'); ?><?php include( get_template_directory() . '/images/arrow_link.svg'); ?></a>
+          <a class="tertiaryLink tertiaryLinkDark" type="button" href="<?php echo $testimonials_tertiary_url; ?>"><?php the_sub_field('testimonials_tertiary_callout_text'); ?><?php include( get_template_directory() . '/images/arrow_link.svg'); ?></a>
         <?php endwhile; ?>
       </div>
     <?php endwhile; ?>

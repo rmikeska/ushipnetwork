@@ -41,7 +41,7 @@ jQuery(document).ready(function ($) {
                         <div class="formSuccess-body">\
                             <p class="formSuccess-body-text">Thanks for getting in touch. One of our representatives will contact you soon.</p>\
                         </div>\
-                        <a class="formSuccess-cta button buttonPrimary buttonLarge" role="button" href="">Got It</a>\
+                        <a class="formSuccess-cta button buttonPrimary buttonLarge" type="button" href="">Got It</a>\
                       </div>\
                       <a href="" class="formSuccess-close"></a>\
                     </div>\
@@ -79,7 +79,7 @@ jQuery(document).ready(function ($) {
     //                 <div class="formSuccess-body">\
     //                     <p class="formSuccess-body-text">Thanks for getting in touch. One of our representatives will contact you soon.</p>\
     //                 </div>\
-    //                 <a class="formSuccess-cta button buttonPrimary buttonLarge" role="button" href="">Got It</a>\
+    //                 <a class="formSuccess-cta button buttonPrimary buttonLarge" type="button" href="">Got It</a>\
     //               </div>\
     //               <a href="" class="formSuccess-close"></a>\
     //             </div>\
@@ -158,7 +158,7 @@ jQuery(document).ready(function ($) {
                                 <div class="formSuccess-body">\
                                     <p class="formSuccess-body-text">Thanks for getting in touch. One of our representatives will contact you soon.</p>\
                                 </div>\
-                                <a class="formSuccess-cta button buttonPrimary buttonLarge" role="button" href="">Got It</a>\
+                                <a class="formSuccess-cta button buttonPrimary buttonLarge" type="button" href="">Got It</a>\
                               </div>\
                               <a href="" class="formSuccess-close"></a>\
                             </div>\

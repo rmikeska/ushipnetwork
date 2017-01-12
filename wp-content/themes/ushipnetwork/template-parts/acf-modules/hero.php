@@ -26,13 +26,17 @@
     <?php while(have_rows('hero_cta')): the_row(); ?>
       <?php $hero_cta_url = get_sub_field('hero_cta_url'); ?>
       <div class="hero-cta">
-        <a class="button buttonPrimary buttonLarge" role="button" href="<?php echo $hero_cta_url; ?>"><?php the_sub_field('hero_cta_text'); ?></a>
+        <a class="<?php include("/class-groups/buttons/large-primary.php");?>" type="button" aria-label="<?php the_sub_field('hero_cta_text'); ?>" href="<?php echo $hero_cta_url; ?>">
+          <div class="button-content"><?php the_sub_field('hero_cta_text'); ?></div>
+        </a>
       </div>
     <?php endwhile; ?>
     <?php while(have_rows('hero_cta_secondary')): the_row(); ?>
       <?php $hero_cta_secondary_url = get_sub_field('hero_cta_secondary_url'); ?>
       <div class="hero-cta-secondary">
-        <a class="button buttonSecondary buttonSmall" role="button" href="<?php echo $hero_cta_secondary_url; ?>"><?php the_sub_field('hero_cta_secondary_text'); ?></a>
+        <a class="<?php include("/class-groups/buttons/small-secondary.php");?>" type="button" aria-label="<?php the_sub_field('hero_cta_secondary_text'); ?>" href="<?php echo $hero_cta_secondary_url; ?>">
+          <div class="button-content"><?php the_sub_field('hero_cta_secondary_text'); ?></div>
+        </a>
       </div>
     <?php endwhile; ?>
     <?php while(have_rows('hero_video_modal_primary')): the_row(); ?>
@@ -43,7 +47,9 @@
         </div>
       </div>
       <div class="hero-cta-primary">
-        <a class="button buttonPrimary buttonLarge" role="button" href="#video-modal" rel="modal:open"><?php the_sub_field('hero_video_modal_primary_text'); ?></a>
+        <a class="<?php include("/class-groups/buttons/large-primary.php");?>" type="button" aria-label="<?php the_sub_field('hero_video_modal_primary_text'); ?>" href="#video-modal" rel="modal:open">
+          <div class="button-content"><?php the_sub_field('hero_video_modal_primary_text'); ?></div>
+        </a>
       </div>
     <?php endwhile; ?>
     <?php while(have_rows('hero_video_modal_secondary')): the_row(); ?>
@@ -54,7 +60,9 @@
         </div>
       </div>
       <div class="hero-cta-secondary">
-        <a class="button buttonSecondary buttonSmall" role="button" href="#video-modal" rel="modal:open"><?php the_sub_field('hero_video_modal_secondary_text'); ?></a>
+        <a class="<?php include("/class-groups/buttons/small-secondary.php");?>" type="button" aria-label="<?php the_sub_field('hero_video_modal_secondary_text'); ?>" href="#video-modal" rel="modal:open">
+          <div class="button-content"><?php the_sub_field('hero_video_modal_secondary_text'); ?></div>
+        </a>
       </div>
     <?php endwhile; ?>
     <?php while(have_rows('hero_form_modal_primary')): the_row(); ?>
@@ -64,7 +72,9 @@
         </div>
       </div>
       <div class="hero-cta-primary">
-        <a class="button buttonPrimary buttonLarge" role="button" href="#form-modal" rel="modal:open"><?php the_sub_field('hero_form_modal_primary_text'); ?></a>
+        <a class="<?php include("/class-groups/buttons/large-primary.php");?>" type="button" href="#form-modal" aria-label="<?php the_sub_field('hero_form_modal_primary_text'); ?>" rel="modal:open">
+          <div class="button-content"><?php the_sub_field('hero_form_modal_primary_text'); ?></div>
+        </a>
       </div>
     <?php endwhile; ?>
     <?php while(have_rows('hero_form_modal_secondary')): the_row(); ?>
@@ -74,7 +84,9 @@
         </div>
       </div>
       <div class="hero-cta-secondary">
-        <a class="button buttonSecondary buttonSmall" role="button" href="#form-modal" rel="modal:open"><?php the_sub_field('hero_form_modal_secondary_text'); ?></a>
+        <a class="<?php include("/class-groups/buttons/small-secondary.php");?>" type="button" href="#form-modal" aria-label="<?php the_sub_field('hero_form_modal_secondary_text'); ?>" rel="modal:open">
+          <div class="button-content"><?php the_sub_field('hero_form_modal_secondary_text'); ?></div>
+        </a>
       </div>
     <?php endwhile; ?>
     <?php while(have_rows('hero_tertiary_callout')): the_row(); ?>
@@ -82,7 +94,7 @@
         <div class="tertiaryCallout-container">
           <?php $hero_tertiary_url = get_sub_field('hero_tertiary_callout_url'); ?>
           <h6 class="tertiaryCallout-title"><?php the_sub_field('hero_tertiary_callout_title'); ?></h6>
-          <a class="tertiaryCallout-link tertiaryLink tertiaryLinkLight" role="button" href="<?php echo $hero_tertiary_url; ?>"><?php the_sub_field('hero_tertiary_callout_link_text'); ?><?php include( get_template_directory() . '/images/arrow_link.svg'); ?></a>
+          <a class="tertiaryCallout-link tertiaryLink tertiaryLinkLight" type="button" href="<?php echo $hero_tertiary_url; ?>"><?php the_sub_field('hero_tertiary_callout_link_text'); ?><?php include( get_template_directory() . '/images/arrow_link.svg'); ?></a>
         </div>
       </div>
     <?php endwhile; ?>

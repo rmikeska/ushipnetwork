@@ -27,5 +27,5 @@
     ?>
   </div>
   <a class="post-title" href="<?php the_permalink();?>"><?php echo short_title('...', 70); ?></a>
-  <a class="tertiaryLink tertiaryLinkDark" role="button" href="<?php the_permalink();?>">Read Article<?php include( get_template_directory() . '/images/arrow_link.svg'); ?></a>
+  <a class="tertiaryLink tertiaryLinkDark" type="button" href="<?php the_permalink();?>">Read Article<?php include( get_template_directory() . '/images/arrow_link.svg'); ?></a>
 </div>

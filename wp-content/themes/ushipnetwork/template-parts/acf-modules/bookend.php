@@ -2,7 +2,7 @@
   <?php if( get_sub_field('bookend_previous_content') && get_sub_field('bookend_next_content') ): ?>
     <div class="bookendLinksMobile-container">
       <?php while(have_rows('bookend_previous_content')): the_row(); ?>
-        <a class="bookend-link bookend-linkPrevious" role="button" href="<?php the_sub_field('bookend_previous_url'); ?>">
+        <a class="bookend-link bookend-linkPrevious" type="button" href="<?php the_sub_field('bookend_previous_url'); ?>">
           <div class="bookend-linkRow">
             <?php include( get_template_directory() . '/images/circled_arrow.svg'); ?>
             <span class="bookend-link-text"><?php the_sub_field('bookend_previous_text'); ?></span>
@@ -10,7 +10,7 @@
         </a>
       <?php endwhile; ?>
       <?php while(have_rows('bookend_next_content')): the_row(); ?>
-        <a class="bookend-link bookend-linkNext" role="button" href="<?php the_sub_field('bookend_next_url'); ?>">
+        <a class="bookend-link bookend-linkNext" type="button" href="<?php the_sub_field('bookend_next_url'); ?>">
           <div class="bookend-linkRow">
             <span class="bookend-link-text"><?php the_sub_field('bookend_next_text'); ?></span>
             <?php include( get_template_directory() . '/images/circled_arrow.svg'); ?>
@@ -26,7 +26,7 @@
     <?php endif; ?>
     <div class="bookend-row">
       <?php while(have_rows('bookend_previous_content')): the_row(); ?>
-        <a class="bookend-link bookend-linkPrevious" role="button" href="<?php the_sub_field('bookend_previous_url'); ?>">
+        <a class="bookend-link bookend-linkPrevious" type="button" href="<?php the_sub_field('bookend_previous_url'); ?>">
           <div class="bookend-linkRow">
             <?php include( get_template_directory() . '/images/circled_arrow.svg'); ?>
             <span class="bookend-link-text"><?php the_sub_field('bookend_previous_text'); ?></span>
@@ -35,11 +35,13 @@
       <?php endwhile; ?>
       <?php if(get_sub_field('bookend_cta_text') && get_sub_field('bookend_cta_url')): ?>
         <div class="bookend-cta">
-          <a class="button buttonPrimary buttonLarge" role="button" href="<?php the_sub_field('bookend_cta_url'); ?>"><?php the_sub_field('bookend_cta_text'); ?></a>
+          <a class="<?php include("/class-groups/buttons/large-primary.php");?>" type="button" aria-label="<?php the_sub_field('bookend_cta_text'); ?>" href="<?php the_sub_field('bookend_cta_url'); ?>">
+            <div class="button-content"><?php the_sub_field('bookend_cta_text'); ?></div>
+          </a>
         </div>
       <?php endif; ?>
       <?php while(have_rows('bookend_next_content')): the_row(); ?>
-        <a class="bookend-link bookend-linkNext" role="button" href="<?php the_sub_field('bookend_next_url'); ?>">
+        <a class="bookend-link bookend-linkNext" type="button" href="<?php the_sub_field('bookend_next_url'); ?>">
           <div class="bookend-linkRow">
             <span class="bookend-link-text"><?php the_sub_field('bookend_next_text'); ?></span>
             <?php include( get_template_directory() . '/images/circled_arrow.svg'); ?>

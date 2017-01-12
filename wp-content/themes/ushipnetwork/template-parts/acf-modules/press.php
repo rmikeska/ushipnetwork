@@ -12,7 +12,7 @@
         </div>
       <?php endwhile; endif; ?>
       <?php wp_reset_query(); ?>
-      <a class="tertiaryLink tertiaryLinkDark" role="button" href="/press-release/">See All Press Releases<?php include( get_template_directory() . '/images/arrow_link.svg'); ?></a>
+      <a class="tertiaryLink tertiaryLinkDark" type="button" href="/press-release/">See All Press Releases<?php include( get_template_directory() . '/images/arrow_link.svg'); ?></a>
     </div>
     <div class="pressStrip-column">
       <h3 class="pressStrip-column-title">Media Coverage</h3>
@@ -39,7 +39,7 @@
         </div>
       <?php endwhile; endif; ?>
       <?php wp_reset_query(); ?>
-      <a class="tertiaryLink tertiaryLinkDark" role="button" href="/media-coverage/">See All Media Coverage<?php include( get_template_directory() . '/images/arrow_link.svg'); ?></a>
+      <a class="tertiaryLink tertiaryLinkDark" type="button" href="/media-coverage/">See All Media Coverage<?php include( get_template_directory() . '/images/arrow_link.svg'); ?></a>
     </div>
   </div>
 </section>

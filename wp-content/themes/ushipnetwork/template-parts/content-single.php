@@ -41,7 +41,9 @@
 		    <?php if (get_row_layout() == 'blog_post_entry_footer'): ?>
 	    		<div class="postCallout-container">
 		    		<?php while(have_rows('blog_post_entry_footer_cta')): the_row(); ?>
-		    			<a class="button buttonPrimary buttonLarge" role="button" href="<?php the_sub_field('blog_post_entry_footer_cta_url'); ?>"><?php the_sub_field('blog_post_entry_footer_cta_text'); ?></a>
+		    			<a class="<?php include("/acf-modules/class-groups/buttons/large-primary.php");?>" type="button" aria-label="<?php the_sub_field('blog_post_entry_footer_cta_text'); ?>" href="<?php the_sub_field('blog_post_entry_footer_cta_url'); ?>">
+		    				<div class="button-content"><?php the_sub_field('blog_post_entry_footer_cta_text'); ?></div>
+		    			</a>
 		    		<?php endwhile; ?>
 	    		</div>
 		    <?php endif; ?>
@@ -98,6 +100,8 @@
 
 <section class="postBookend">
 	<div class="postBookend-container">
-		<a class="button buttonSecondary buttonSmall" role="button" href="<?php echo get_site_url(); ?>">View All Articles</a>
+		<a class="<?php include("/acf-modules/class-groups/buttons/small-secondary.php");?>" type="button" aria-label="View All Articles" href="<?php echo get_site_url(); ?>">
+			<div class="button-content">View All Articles</div>
+		</a>
 	</div>
 </section>
