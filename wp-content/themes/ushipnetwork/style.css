@@ -2291,7 +2291,8 @@ body.page-template-contact {
               flex: 1 1 0;
       -webkit-justify-content: center;
           -ms-flex-pack: center;
-              justify-content: center; }
+              justify-content: center;
+      max-width: 100%; }
     .bookend-container .bookend-row .bookend-linkPrevious {
       -webkit-justify-content: flex-start;
           -ms-flex-pack: start;
