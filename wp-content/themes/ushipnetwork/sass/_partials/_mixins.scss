@@ -4,6 +4,12 @@
   background-position: center;
 }
 
+@mixin overflow-text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 @mixin container($container-width, $padding-top, $padding-bottom) {
   @include clearfix;
   @include calc(max-width, "#{$container-width} + #{$section-padding}*2");

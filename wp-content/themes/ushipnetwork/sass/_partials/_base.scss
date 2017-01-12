@@ -117,9 +117,7 @@ em {
 }
 
 .button-content {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  @include overflow-text;
   // transition: color 0.15s ease-in-out;
 }
 

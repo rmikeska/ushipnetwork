@@ -1318,7 +1318,10 @@ article.category-press-release {
   transition: all 0.15s ease-in-out; }
   @media only screen and (max-width: 375px) {
     .tabbedPageMenu-list li a {
-      font-size: 10px; } }
+      font-size: 10px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis; } }
 
 .tabbedPageMenu-list li a:after {
   display: block;
@@ -3816,7 +3819,10 @@ body.page-template-contact {
   padding-left: 199px; }
   @media only screen and (max-width: 769px) {
     .iconBulletPoints-title {
-      padding-left: 70px; } }
+      padding-left: 70px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis; } }
 
 .iconBulletPoints-body {
   float: left;
