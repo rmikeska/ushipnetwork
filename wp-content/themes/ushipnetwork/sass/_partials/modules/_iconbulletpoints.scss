@@ -58,7 +58,7 @@
 
   @media #{$default-break} {
     padding-left: 70px;
-    @include overflow-text;
+    @include overflow-text-wrap;
   }
 }
 

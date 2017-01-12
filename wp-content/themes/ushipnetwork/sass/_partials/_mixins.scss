@@ -4,7 +4,12 @@
   background-position: center;
 }
 
-@mixin overflow-text {
+@mixin overflow-text-wrap {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin overflow-text-no-wrap {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;

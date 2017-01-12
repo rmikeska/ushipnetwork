@@ -1132,7 +1132,9 @@ article .post-featureImage {
   padding-right: 15px;
   padding-bottom: 30px;
   padding-left: 15px;
-  text-align: center; }
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0; }
   .postCallout-container::after {
     clear: both;
     content: "";
@@ -3529,7 +3531,6 @@ body.page-template-contact {
     .iconBulletPoints-title {
       padding-left: 70px;
       overflow: hidden;
-      white-space: nowrap;
       text-overflow: ellipsis; } }
 
 .iconBulletPoints-body {

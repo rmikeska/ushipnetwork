@@ -117,7 +117,7 @@ em {
 }
 
 .button-content {
-  @include overflow-text;
+  @include overflow-text-no-wrap;
   // transition: color 0.15s ease-in-out;
 }
 

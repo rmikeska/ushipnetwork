@@ -363,6 +363,8 @@ article .post-featureImage {
 .postCallout-container {
   @include container(100%, 30px, 30px);
   text-align: center;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .edit-link {
