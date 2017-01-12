@@ -167,12 +167,16 @@
 }
 
 .slantedMap-copy-intro {
-  display: flex;
+  // display: flex; Why was this here?
   padding-bottom: 18px;
   margin-bottom: 24px;
   font-size: 24px;
   line-height: 1.2;
   border-bottom: 1px solid $divider-color;
+
+  @media #{$default-break} {
+    @include overflow-text-wrap;
+  }
 }
 
 .slantedMap-copy-block-text {

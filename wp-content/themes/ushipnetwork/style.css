@@ -2947,14 +2947,15 @@ body.page-template-contact {
   background-color: #F4F4F4; }
 
 .slantedMap-copy-intro {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   padding-bottom: 18px;
   margin-bottom: 24px;
   font-size: 24px;
   line-height: 1.2;
   border-bottom: 1px solid #dddddd; }
+  @media only screen and (max-width: 769px) {
+    .slantedMap-copy-intro {
+      overflow: hidden;
+      text-overflow: ellipsis; } }
 
 .slantedMap-copy-block-text {
   line-height: 30px; }
