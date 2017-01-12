@@ -20,5 +20,5 @@
     </div>
   </div>
   <div class="form-divider"></div>
-  <input type="submit" id="submit" name="submit" class="<?php include("/../acf-modules/class-groups/buttons/large-primary.php");?>" type="submit" value="Send">
+  <input type="submit" id="submit" name="submit" class="button buttonPrimary buttonLarge" type="submit" value="Send">
 </form>

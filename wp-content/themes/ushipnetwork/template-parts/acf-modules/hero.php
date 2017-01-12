@@ -26,7 +26,7 @@
     <?php while(have_rows('hero_cta')): the_row(); ?>
       <?php $hero_cta_url = get_sub_field('hero_cta_url'); ?>
       <div class="hero-cta">
-        <a class="<?php include("/class-groups/buttons/large-primary.php");?>" type="button" aria-label="<?php the_sub_field('hero_cta_text'); ?>" href="<?php echo $hero_cta_url; ?>">
+        <a class="button buttonPrimary buttonLarge" type="button" aria-label="<?php the_sub_field('hero_cta_text'); ?>" href="<?php echo $hero_cta_url; ?>">
           <div class="button-content"><?php the_sub_field('hero_cta_text'); ?></div>
         </a>
       </div>
@@ -34,7 +34,7 @@
     <?php while(have_rows('hero_cta_secondary')): the_row(); ?>
       <?php $hero_cta_secondary_url = get_sub_field('hero_cta_secondary_url'); ?>
       <div class="hero-cta-secondary">
-        <a class="<?php include("/class-groups/buttons/small-secondary.php");?>" type="button" aria-label="<?php the_sub_field('hero_cta_secondary_text'); ?>" href="<?php echo $hero_cta_secondary_url; ?>">
+        <a class="button buttonSecondary buttonSmall" type="button" aria-label="<?php the_sub_field('hero_cta_secondary_text'); ?>" href="<?php echo $hero_cta_secondary_url; ?>">
           <div class="button-content"><?php the_sub_field('hero_cta_secondary_text'); ?></div>
         </a>
       </div>
@@ -47,7 +47,7 @@
         </div>
       </div>
       <div class="hero-cta-primary">
-        <a class="<?php include("/class-groups/buttons/large-primary.php");?>" type="button" aria-label="<?php the_sub_field('hero_video_modal_primary_text'); ?>" href="#video-modal" rel="modal:open">
+        <a class="button buttonPrimary buttonLarge" type="button" aria-label="<?php the_sub_field('hero_video_modal_primary_text'); ?>" href="#video-modal" rel="modal:open">
           <div class="button-content"><?php the_sub_field('hero_video_modal_primary_text'); ?></div>
         </a>
       </div>
@@ -60,7 +60,7 @@
         </div>
       </div>
       <div class="hero-cta-secondary">
-        <a class="<?php include("/class-groups/buttons/small-secondary.php");?>" type="button" aria-label="<?php the_sub_field('hero_video_modal_secondary_text'); ?>" href="#video-modal" rel="modal:open">
+        <a class="button buttonSecondary buttonSmall" type="button" aria-label="<?php the_sub_field('hero_video_modal_secondary_text'); ?>" href="#video-modal" rel="modal:open">
           <div class="button-content"><?php the_sub_field('hero_video_modal_secondary_text'); ?></div>
         </a>
       </div>
@@ -72,7 +72,7 @@
         </div>
       </div>
       <div class="hero-cta-primary">
-        <a class="<?php include("/class-groups/buttons/large-primary.php");?>" type="button" href="#form-modal" aria-label="<?php the_sub_field('hero_form_modal_primary_text'); ?>" rel="modal:open">
+        <a class="button buttonPrimary buttonLarge" type="button" href="#form-modal" aria-label="<?php the_sub_field('hero_form_modal_primary_text'); ?>" rel="modal:open">
           <div class="button-content"><?php the_sub_field('hero_form_modal_primary_text'); ?></div>
         </a>
       </div>
@@ -84,7 +84,7 @@
         </div>
       </div>
       <div class="hero-cta-secondary">
-        <a class="<?php include("/class-groups/buttons/small-secondary.php");?>" type="button" href="#form-modal" aria-label="<?php the_sub_field('hero_form_modal_secondary_text'); ?>" rel="modal:open">
+        <a class="button buttonSecondary buttonSmall" type="button" href="#form-modal" aria-label="<?php the_sub_field('hero_form_modal_secondary_text'); ?>" rel="modal:open">
           <div class="button-content"><?php the_sub_field('hero_form_modal_secondary_text'); ?></div>
         </a>
       </div>
