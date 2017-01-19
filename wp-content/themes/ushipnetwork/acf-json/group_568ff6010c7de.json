@@ -775,7 +775,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "no-header-footer.php"
+                "value": "unbranded.php"
             }
         ]
     ],
@@ -787,5 +787,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1484844919
+    "modified": 1484845801
 }

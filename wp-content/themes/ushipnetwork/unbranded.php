@@ -2,7 +2,7 @@
 /**
  * @package ushipnetwork
  *
- * template name: No Header and Footer
+ * template name: Unbranded
  */
 ?>
 
