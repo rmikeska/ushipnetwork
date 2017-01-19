@@ -770,6 +770,13 @@
                 "operator": "==",
                 "value": "tabbed-page-v2.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "no-header-footer.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -780,5 +787,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1484080863
+    "modified": 1484844919
 }
