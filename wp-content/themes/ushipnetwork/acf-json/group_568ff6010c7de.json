@@ -34,9 +34,7 @@
                                 "width": "",
                                 "class": "",
                                 "id": ""
-                            },
-                            "disabled": 0,
-                            "readonly": 0
+                            }
                         },
                         {
                             "return_format": "array",
@@ -79,9 +77,7 @@
                                 "width": "",
                                 "class": "",
                                 "id": ""
-                            },
-                            "readonly": 0,
-                            "disabled": 0
+                            }
                         },
                         {
                             "default_value": "",
@@ -100,9 +96,34 @@
                                 "width": "",
                                 "class": "",
                                 "id": ""
+                            }
+                        },
+                        {
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "choices": {
+                                "none": "None",
+                                "standard_link": "Standard Link",
+                                "video_modal": "Video Modal",
+                                "form_modal": "Form Modal"
                             },
-                            "readonly": 0,
-                            "disabled": 0
+                            "default_value": [],
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "return_format": "value",
+                            "key": "field_588a53b1e85d2",
+                            "label": "Primary CTA Type",
+                            "name": "hero_cta_type",
+                            "type": "select",
+                            "instructions": "Choose the type of primary CTA.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
                         },
                         {
                             "sub_fields": [
@@ -152,7 +173,7 @@
                             "min": 0,
                             "max": 1,
                             "layout": "table",
-                            "button_label": "Add Row",
+                            "button_label": "Add Primary CTA",
                             "collapsed": "",
                             "key": "field_568ff60147176",
                             "label": "Primary CTA",
@@ -160,70 +181,15 @@
                             "type": "repeater",
                             "instructions": "Optional.",
                             "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            }
-                        },
-                        {
-                            "sub_fields": [
-                                {
-                                    "default_value": "",
-                                    "maxlength": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "key": "field_571e333f5c932",
-                                    "label": "Secondary CTA URL",
-                                    "name": "hero_cta_secondary_url",
-                                    "type": "text",
-                                    "instructions": "",
-                                    "required": 1,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "readonly": 0,
-                                    "disabled": 0
-                                },
-                                {
-                                    "default_value": "",
-                                    "maxlength": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "key": "field_571e33765c933",
-                                    "label": "Secondary CTA Text",
-                                    "name": "hero_cta_secondary_text",
-                                    "type": "text",
-                                    "instructions": "",
-                                    "required": 1,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "readonly": 0,
-                                    "disabled": 0
-                                }
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_588a53b1e85d2",
+                                        "operator": "==",
+                                        "value": "standard_link"
+                                    }
+                                ]
                             ],
-                            "min": 0,
-                            "max": 1,
-                            "layout": "table",
-                            "button_label": "Add Row",
-                            "collapsed": "",
-                            "key": "field_571e32e35c931",
-                            "label": "Secondary CTA",
-                            "name": "hero_cta_secondary",
-                            "type": "repeater",
-                            "instructions": "Optional.",
-                            "required": 0,
-                            "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
                                 "class": "",
@@ -278,7 +244,7 @@
                             "min": 0,
                             "max": 1,
                             "layout": "table",
-                            "button_label": "Add Row",
+                            "button_label": "Add Video Modal Primary CTA",
                             "collapsed": "",
                             "key": "field_571e39025d085",
                             "label": "Video Modal - Primary",
@@ -286,70 +252,15 @@
                             "type": "repeater",
                             "instructions": "Optional.",
                             "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            }
-                        },
-                        {
-                            "sub_fields": [
-                                {
-                                    "default_value": "",
-                                    "new_lines": "",
-                                    "maxlength": "",
-                                    "placeholder": "",
-                                    "rows": "",
-                                    "key": "field_571e4421d1bb0",
-                                    "label": "Video Iframe",
-                                    "name": "hero_video_modal_secondary_iframe",
-                                    "type": "textarea",
-                                    "instructions": "YouTube or Vimeo iframe. Do not include width and height dimensions!",
-                                    "required": 1,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "readonly": 0,
-                                    "disabled": 0
-                                },
-                                {
-                                    "default_value": "",
-                                    "maxlength": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "key": "field_571e4421d1bb1",
-                                    "label": "Video Button Text",
-                                    "name": "hero_video_modal_secondary_text",
-                                    "type": "text",
-                                    "instructions": "",
-                                    "required": 1,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "readonly": 0,
-                                    "disabled": 0
-                                }
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_588a53b1e85d2",
+                                        "operator": "==",
+                                        "value": "video_modal"
+                                    }
+                                ]
                             ],
-                            "min": 0,
-                            "max": 1,
-                            "layout": "table",
-                            "button_label": "Add Row",
-                            "collapsed": "",
-                            "key": "field_571e4421d1baf",
-                            "label": "Video Modal - Secondary",
-                            "name": "hero_video_modal_secondary",
-                            "type": "repeater",
-                            "instructions": "Optional.",
-                            "required": 0,
-                            "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
                                 "class": "",
@@ -409,7 +320,7 @@
                             "min": 0,
                             "max": 1,
                             "layout": "table",
-                            "button_label": "Add Row",
+                            "button_label": "Add Form Modal Primary CTA",
                             "collapsed": "",
                             "key": "field_571f8115135e9",
                             "label": "Form Modal - Primary",
@@ -417,7 +328,184 @@
                             "type": "repeater",
                             "instructions": "Optional.",
                             "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_588a53b1e85d2",
+                                        "operator": "==",
+                                        "value": "form_modal"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "choices": {
+                                "none": "None",
+                                "standard_link": "Standard Link",
+                                "video_modal": "Video Modal",
+                                "form_modal": "Form Modal"
+                            },
+                            "default_value": [],
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "return_format": "value",
+                            "key": "field_588a54a8e85d3",
+                            "label": "Secondary CTA Type",
+                            "name": "hero_cta_secondary",
+                            "type": "select",
+                            "instructions": "Choose the type of secondary CTA.",
+                            "required": 0,
                             "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "sub_fields": [
+                                {
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "key": "field_571e333f5c932",
+                                    "label": "Secondary CTA URL",
+                                    "name": "hero_cta_secondary_url",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "readonly": 0,
+                                    "disabled": 0
+                                },
+                                {
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "key": "field_571e33765c933",
+                                    "label": "Secondary CTA Text",
+                                    "name": "hero_cta_secondary_text",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "readonly": 0,
+                                    "disabled": 0
+                                }
+                            ],
+                            "min": 0,
+                            "max": 1,
+                            "layout": "table",
+                            "button_label": "Add Secondary CTA",
+                            "collapsed": "",
+                            "key": "field_571e32e35c931",
+                            "label": "Secondary CTA",
+                            "name": "hero_cta_secondary",
+                            "type": "repeater",
+                            "instructions": "Optional.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_588a54a8e85d3",
+                                        "operator": "==",
+                                        "value": "standard_link"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "sub_fields": [
+                                {
+                                    "default_value": "",
+                                    "new_lines": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "rows": "",
+                                    "key": "field_571e4421d1bb0",
+                                    "label": "Video Iframe",
+                                    "name": "hero_video_modal_secondary_iframe",
+                                    "type": "textarea",
+                                    "instructions": "YouTube or Vimeo iframe. Do not include width and height dimensions!",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "readonly": 0,
+                                    "disabled": 0
+                                },
+                                {
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "key": "field_571e4421d1bb1",
+                                    "label": "Video Button Text",
+                                    "name": "hero_video_modal_secondary_text",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "readonly": 0,
+                                    "disabled": 0
+                                }
+                            ],
+                            "min": 0,
+                            "max": 1,
+                            "layout": "table",
+                            "button_label": "Add Video Modal Secondary CTA",
+                            "collapsed": "",
+                            "key": "field_571e4421d1baf",
+                            "label": "Video Modal - Secondary",
+                            "name": "hero_video_modal_secondary",
+                            "type": "repeater",
+                            "instructions": "Optional.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_588a54a8e85d3",
+                                        "operator": "==",
+                                        "value": "video_modal"
+                                    }
+                                ]
+                            ],
                             "wrapper": {
                                 "width": "",
                                 "class": "",
@@ -477,7 +565,7 @@
                             "min": 0,
                             "max": 1,
                             "layout": "table",
-                            "button_label": "Add Row",
+                            "button_label": "Add Form Modal Secondary CTA",
                             "collapsed": "",
                             "key": "field_571f81e61c425",
                             "label": "Form Modal - Secondary",
@@ -485,7 +573,15 @@
                             "type": "repeater",
                             "instructions": "Optional.",
                             "required": 0,
-                            "conditional_logic": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_588a54a8e85d3",
+                                        "operator": "==",
+                                        "value": "form_modal"
+                                    }
+                                ]
+                            ],
                             "wrapper": {
                                 "width": "",
                                 "class": "",
@@ -561,7 +657,7 @@
                             "min": 0,
                             "max": 1,
                             "layout": "table",
-                            "button_label": "Add Row",
+                            "button_label": "Add Tertiary Callout",
                             "collapsed": "",
                             "key": "field_5762c867401c3",
                             "label": "Tertiary Callout",
@@ -684,7 +780,7 @@
                             "min": 0,
                             "max": 1,
                             "layout": "table",
-                            "button_label": "Add Row",
+                            "button_label": "Add Co-branded Strip",
                             "collapsed": "",
                             "key": "field_57d9c41e5fdb8",
                             "label": "Co-branded Strip",
@@ -706,7 +802,7 @@
             ],
             "min": "",
             "max": "",
-            "button_label": "Add Row",
+            "button_label": "Add Module",
             "key": "field_568ff6013c1a9",
             "label": "Top Content",
             "name": "top_content",
@@ -787,5 +883,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1484845801
+    "modified": 1485460953
 }

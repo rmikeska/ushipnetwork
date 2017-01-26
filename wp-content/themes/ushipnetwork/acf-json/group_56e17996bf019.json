@@ -129,7 +129,7 @@
                             "min": 2,
                             "max": 2,
                             "layout": "block",
-                            "button_label": "Add Row",
+                            "button_label": "Add Panel",
                             "collapsed": "",
                             "key": "field_56e17a7bed04f",
                             "label": "Panel",
@@ -238,7 +238,7 @@
                             "min": 3,
                             "max": 3,
                             "layout": "block",
-                            "button_label": "Add Row",
+                            "button_label": "Add Strip",
                             "collapsed": "",
                             "key": "field_56e17b829f1eb",
                             "label": "Strip",
@@ -260,7 +260,7 @@
             ],
             "min": "",
             "max": "",
-            "button_label": "Add Row",
+            "button_label": "Add Module",
             "key": "field_56e179a6fd7ee",
             "label": "Split Screen Content",
             "name": "split_screen_content",
@@ -292,5 +292,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1484158478
+    "modified": 1485464075
 }

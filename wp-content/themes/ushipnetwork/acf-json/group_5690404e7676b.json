@@ -121,22 +121,20 @@
                                     "label": "Text",
                                     "name": "bookend_previous_text",
                                     "type": "text",
-                                    "instructions": "",
+                                    "instructions": "Use the &lt;br&gt; tag where you want to add a line break (if necessary on multiple word titles). Omit the space before and after the &lt;br&gt; tag. EX: The uShip&lt;br&gt;Difference",
                                     "required": 1,
                                     "conditional_logic": 0,
                                     "wrapper": {
                                         "width": "",
                                         "class": "",
                                         "id": ""
-                                    },
-                                    "readonly": 0,
-                                    "disabled": 0
+                                    }
                                 }
                             ],
                             "min": 0,
                             "max": 1,
                             "layout": "table",
-                            "button_label": "Add Row",
+                            "button_label": "Add Previous Link",
                             "collapsed": "",
                             "key": "field_5690404eab340",
                             "label": "Previous Link",
@@ -184,22 +182,20 @@
                                     "label": "Text",
                                     "name": "bookend_next_text",
                                     "type": "text",
-                                    "instructions": "",
+                                    "instructions": "Use the &lt;br&gt; tag where you want to add a line break (if necessary on multiple word titles). Omit the space before and after the &lt;br&gt; tag. EX: The uShip&lt;br&gt;Difference",
                                     "required": 1,
                                     "conditional_logic": 0,
                                     "wrapper": {
                                         "width": "",
                                         "class": "",
                                         "id": ""
-                                    },
-                                    "readonly": 0,
-                                    "disabled": 0
+                                    }
                                 }
                             ],
                             "min": 0,
                             "max": 1,
                             "layout": "table",
-                            "button_label": "Add Row",
+                            "button_label": "Add Next Link",
                             "collapsed": "",
                             "key": "field_5690404eab729",
                             "label": "Next Link",
@@ -323,7 +319,7 @@
             ],
             "min": "",
             "max": "",
-            "button_label": "Add Row",
+            "button_label": "Add Module",
             "key": "field_5690404e920de",
             "label": "Bottom Content",
             "name": "bottom_content",
@@ -369,5 +365,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1484845913
+    "modified": 1485463689
 }
