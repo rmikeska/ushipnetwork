@@ -189,6 +189,8 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
+
+
 /**
  * Shorten post thumb titles
  */
@@ -204,6 +206,8 @@ function short_title($after = null, $length) {
 	return $mytitle;
 }
 
+
+
 /**
  * Remove editor from pages as they're unused with ACF Pro
  */
@@ -211,6 +215,8 @@ function remove_editor() {
   remove_post_type_support('page', 'editor');
 }
 add_action('admin_init', 'remove_editor');
+
+
 
 /**
  * Remove prefixed archive title string (EX: Category: Media Coverage)
@@ -226,6 +232,8 @@ add_filter( 'get_the_archive_title', function ( $title ) {
 	return $title;
 });
 
+
+
 /**
  * Filter the "read more" excerpt string link to the post.
  *
@@ -240,8 +248,10 @@ function wpdocs_excerpt_more( $more ) {
 }
 add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
 
+
+
 /**
- * Add Google Analytics Tracking Code By home_url()
+ * Add Google Analytics Tracking Code By network_home_url()
  */
 function add_googleanalytics() {
 
@@ -296,6 +306,8 @@ function add_googleanalytics() {
 }
 add_action('wp_footer', 'add_googleanalytics');
 
+
+
 /**
  * Add ACF Options Page
  */
@@ -309,25 +321,26 @@ if( function_exists('acf_add_options_page') ) {
 
 }
 
+
+
 /**
  * Remove capabilities from editors
  */
 function wpcodex_set_capabilities() {
 
-  // Get the role object.
   $editor = get_role( 'editor' );
 
-  // A list of capabilities to remove from editors.
   $caps = array(
     'manage_categories'
   );
 
   foreach ( $caps as $cap ) {
-    // Remove the capability.
     $editor->remove_cap( $cap );
   }
 }
 add_action( 'init', 'wpcodex_set_capabilities' );
+
+
 
 /**
  * Force the pasting of text only into TinyMCE editor
@@ -341,6 +354,8 @@ function tinymce_paste_as_text( $init ) {
     return $init;
 }
 add_filter('tiny_mce_before_init', 'tinymce_paste_as_text');
+
+
 
 /**
  * Header/Footer
@@ -394,6 +409,8 @@ class MvcComponents {
 
 MvcComponents::retrieve_header_footer();
 
+
+
 /*
  * Change 'My Sites' admin menu names to their multisite /path/ instead of site title
  */
@@ -413,6 +430,8 @@ function change_site_names() {
 }
 add_action( 'wp_before_admin_bar_render', 'change_site_names' );
 
+
+
 /*
  * Add message to the top of the admin to show current multisite path
  */
@@ -425,3 +444,20 @@ function display_current_site_path() {
   }
 }
 add_action( 'all_admin_notices', 'display_current_site_path' );
+
+
+
+/*
+ * Keep ACF fields collapsed on page load
+ */
+function collapse_acf_fields() {
+  ?>
+  <script type="text/javascript">
+      jQuery(document).ready(function ($) {
+          $('.layout').addClass('-collapsed');
+          $('.acf-postbox').addClass('closed');
+      })
+  </script>
+  <?php
+}
+add_action('acf/input/admin_head', 'collapse_acf_fields');
