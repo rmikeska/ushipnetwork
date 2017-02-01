@@ -198,4 +198,11 @@ jQuery(document).ready(function ($) {
             "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": vidURL}]
         });
     });
+
+
+
+    // Quick and diry fix to make CycleTrader iframed partner page links open in a new tab
+    $('.page-id-5725 .hero-cta a').attr('target', '_blank');
+    $('.page-id-5725 .textColumns-group-item-content p a').attr('target', '_blank');
+    $('.page-id-5725 .bookend-cta a').attr('target', '_blank');
 })
