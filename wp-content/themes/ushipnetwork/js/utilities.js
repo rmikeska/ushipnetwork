@@ -202,7 +202,5 @@ jQuery(document).ready(function ($) {
 
 
     // Quick and diry fix to make CycleTrader iframed partner page links open in a new tab
-    $('.page-id-5725 .hero-cta a').attr('target', '_blank');
-    $('.page-id-5725 .textColumns-group-item-content p a').attr('target', '_blank');
-    $('.page-id-5725 .bookend-cta a').attr('target', '_blank');
+    $('.page-id-5725 a').attr('target', '_blank');
 })
