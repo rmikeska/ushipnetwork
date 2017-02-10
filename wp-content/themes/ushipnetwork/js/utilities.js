@@ -1,5 +1,20 @@
 jQuery(document).ready(function ($) {
 
+    // Append any present query strings to any page links that include uship.com base domain URLs
+    $("a[href*='uship.com']").each(function () {
+        var href = $(this).attr('href');
+
+        if (href.indexOf('?') !== -1) {
+            href += '&' + location.search.replace(/^\?/, '');
+        } else {
+            href += location.search;
+        }
+
+        $(this).attr('href', href);
+    });
+
+
+
     // Blog Show/Hide Post Thumbnails
     $('.postThumb').hide().each(function (i) {
         $(this).delay((i++) * 100).fadeTo(300, 1);
@@ -181,7 +196,8 @@ jQuery(document).ready(function ($) {
 
 
 
-    $('.page-template-default .video-js').each(function () {
+    // VideoJS setup for non tabbed-page-v2 template videos
+    $('.page-template-default .video-js, .tabbedPage .video-js').each(function () {
         vidId = $(this).attr('id');
         vidURL = 'https://www.youtube.com/watch?v=' + vidId;
         var vidPlayer = videojs(vidId, {
@@ -191,16 +207,6 @@ jQuery(document).ready(function ($) {
 
 
 
-    $('.tabbedPage .video-js').each(function () {
-        vidId = $(this).attr('id');
-        vidURL = 'https://www.youtube.com/watch?v=' + vidId;
-        var vidPlayer = videojs(vidId, {
-            "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": vidURL}]
-        });
-    });
-
-
-
-    // Quick and diry fix to make CycleTrader iframed partner page links open in a new tab
+    // Quick and diry fix to make CycleTrader iframed partner page links open in a new tab. Need to add formal acf pro option
     $('.page-id-5725 a').attr('target', '_blank');
 })
