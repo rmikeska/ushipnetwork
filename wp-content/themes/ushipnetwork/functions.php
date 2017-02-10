@@ -366,8 +366,25 @@ class MvcComponents {
 	public static $footer_output = null;
 
 	public static function retrieve_header_footer() {
-		$header_request = curl_init('https://www.uship.com/mvc/components/header');
-		$footer_request = curl_init('https://www.uship.com/mvc/components/footer?showCountryChanger=false');
+
+    $currentURL = home_url(add_query_arg(array()));
+    $currentPageId = url_to_postid($currentURL);
+
+    if ($header_footer_type = get_field('header_footer_type', $currentPageId)) {
+      if ($header_footer_type == 'simple') {
+        $header_request_url = 'https://www.uship.com/mvc/components/header?simpleOnly=true';
+        $footer_request_url = 'https://www.uship.com/mvc/components/footer?simpleOnly=true';
+      } elseif ($header_footer_type == 'full') {
+        $header_request_url = 'https://www.uship.com/mvc/components/header';
+        $footer_request_url = 'https://www.uship.com/mvc/components/footer?showCountryChanger=false';
+      }
+    } else {
+      $header_request_url = 'https://www.uship.com/mvc/components/header';
+      $footer_request_url = 'https://www.uship.com/mvc/components/footer?showCountryChanger=false';
+    }
+
+		$header_request = curl_init($header_request_url);
+		$footer_request = curl_init($footer_request_url);
     $locale = get_bloginfo('language');
 
     $headers = array('Accept-Language: '.$locale.'', 'Accept: application/json');
