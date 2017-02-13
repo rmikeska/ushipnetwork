@@ -3,29 +3,29 @@
     "title": "Header\/Footer Options",
     "fields": [
         {
-            "multiple": 0,
-            "allow_null": 0,
-            "choices": {
-                "full": "Full",
-                "simple": "Simple"
-            },
-            "default_value": [],
-            "ui": 0,
-            "ajax": 0,
-            "placeholder": "",
-            "return_format": "value",
             "key": "field_589b73e473eeb",
             "label": "Header\/Footer Type",
             "name": "header_footer_type",
             "type": "select",
-            "instructions": "",
+            "instructions": "This option allows you to select a full or simple header and footer. Used primarily for direct marketing campaign pages where fewer page link distractions are desired. Full header and footer are default.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
-            }
+            },
+            "choices": {
+                "full": "Full",
+                "simple": "Simple"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
         }
     ],
     "location": [
@@ -45,5 +45,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1486583194
+    "modified": 1487005398
 }

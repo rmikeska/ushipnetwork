@@ -9,6 +9,7 @@
 
 ?>
 
+<!-- If a query sting field value is set, append value to all uship domain page links -->
 <?php if ($query_string = get_field('add_query_string')): ?>
   <script type="text/javascript">
     jQuery(document).ready(function ($) {

@@ -7,7 +7,7 @@
             "label": "Add Query String",
             "name": "add_query_string",
             "type": "text",
-            "instructions": "This field input will automatically be appended to any uship.com link on the page, including subdomains like learn.uship.com. Exclude the beginning '?'. Example input: r=4034552&ag=findshipmentsemail",
+            "instructions": "This field input will automatically be appended to any uship.com links on the page, including uship subdomains like learn.uship.com. Exclude the beginning '?'. Example input: r=4034552&ag=findshipmentsemail",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -39,5 +39,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1486761153
+    "modified": 1487005523
 }

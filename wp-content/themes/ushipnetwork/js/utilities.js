@@ -1,17 +1,19 @@
 jQuery(document).ready(function ($) {
 
-    // Append any present query strings to any page links that include uship.com base domain URLs
-    $("a[href*='uship.com']").each(function () {
-        var href = $(this).attr('href');
+    // If there are query strings present in the URL, append them to any uship domain page links
+    if (window.location.search.length) {
+        $("a[href*='uship.com']").each(function () {
+            var ushipHref = $(this).attr('href');
 
-        if (href.indexOf('?') !== -1) {
-            href += '&' + location.search.replace(/^\?/, '');
-        } else {
-            href += location.search;
-        }
+            if (ushipHref.indexOf('?') !== -1) {
+                ushipHref += '&' + location.search.replace(/^\?/, '');
+            } else {
+                ushipHref += location.search;
+            }
 
-        $(this).attr('href', href);
-    });
+            $(this).attr('href', ushipHref);
+        });
+    }
 
 
 
