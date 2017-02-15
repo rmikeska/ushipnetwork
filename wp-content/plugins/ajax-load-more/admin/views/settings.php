@@ -38,7 +38,7 @@
 	   	
 	   	<div class="group">
    	   	<?php
-      	   	if(has_action('alm_cache_settings') || has_action('alm_layouts_installed') || has_action('alm_next_post_settings')  || has_action('alm_paging_settings') || has_action('alm_seo_settings') || has_action('alm_theme_repeaters_settings')) {
+      	   	if(has_action('alm_cache_settings') || has_action('alm_layouts_installed') || has_action('alm_prev_post_settings')  || has_action('alm_paging_settings') || has_action('alm_seo_settings') || has_action('alm_theme_repeaters_settings')) {
        	   ?>
        	   <div class="admin-select">
           	   <label fo"alm-settings-nav" class="offscreen">
@@ -62,7 +62,7 @@
                   if(has_action('alm_seo_settings')) 
                      echo '<option value="7">'.__('SEO', 'ajax-load-more').'</option>';
                   if(has_action('alm_theme_repeaters_settings')) 
-                     echo '<option value="8">'.__('Theme Repeaters', 'ajax-load-more').'</option>';         	   	 
+                     echo '<option value="8">'.__('Theme Repeaters', 'ajax-load-more').'</option>';        	   	 
          	   ?>
    	   	   </select>
        	   </div>

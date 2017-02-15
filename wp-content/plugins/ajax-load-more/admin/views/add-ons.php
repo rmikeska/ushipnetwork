@@ -1,3 +1,4 @@
+<?php $target = 'target="_blank"'; ?>
 <div class="admin ajax-load-more" id="alm-add-ons">	
 	<div class="wrap">
 		<div class="header-wrap">
@@ -14,7 +15,7 @@
    			   <?php 
                   	$cache_url = 'https://connekthq.com/plugins/ajax-load-more/add-ons/cache/?utm_source=WP%20Admin&utm_medium=ALM%20Add-ons&utm_campaign=Cache'; ?>
                   	
-               <a href="<?php echo $cache_url; ?>">
+               <a href="<?php echo $cache_url; ?>" <?php echo $target; ?>>
    			      <div class="expand-wrap">
                      <img src="<?php echo ALM_ADMIN_URL; ?>img/add-ons/cache-add-on.jpg" alt="">                         
                      <h2 class="addon-title"><?php _e('Cache', 'ajax-load-more'); ?></h2>
@@ -41,7 +42,7 @@
    			   <?php 
                   	$cta_url = 'https://connekthq.com/plugins/ajax-load-more/add-ons/call-to-actions/?utm_source=WP%20Admin&utm_medium=ALM%20Add-ons&utm_campaign=Call to Actions'; ?>
                   	
-               <a href="<?php echo $cta_url; ?>">
+               <a href="<?php echo $cta_url; ?>" <?php echo $target; ?>>
    			      <div class="expand-wrap">
                      <img src="<?php echo ALM_ADMIN_URL; ?>img/add-ons/cta-add-on.jpg" alt="">                         
                      <h2 class="addon-title"><?php _e('Call to Actions', 'ajax-load-more'); ?></h2>
@@ -68,7 +69,7 @@
    			   <?php 
                   	$comments_url = 'https://connekthq.com/plugins/ajax-load-more/add-ons/comments/?utm_source=WP%20Admin&utm_medium=ALM%20Add-ons&utm_campaign=Comments'; ?>
                   	
-               <a href="<?php echo $comments_url; ?>">
+               <a href="<?php echo $comments_url; ?>" <?php echo $target; ?>>
    			      <div class="expand-wrap">
                      <img src="<?php echo ALM_ADMIN_URL; ?>img/add-ons/comments-add-on.jpg" alt="">                         
                      <h2 class="addon-title"><?php _e('Comments', 'ajax-load-more'); ?></h2>
@@ -93,7 +94,7 @@
 		   <div class="group<?php if (has_action('alm_unlimited_installed')){echo ' installed'; } ?>">
 			   <div class="row no-brd">
    			   <?php $cr_url = 'https://connekthq.com/plugins/ajax-load-more/add-ons/custom-repeaters/?utm_source=WP%20Admin&utm_medium=ALM%20Add-ons&utm_campaign=Custom%20Repeaters'; ?>
-   			   <a href="<?php echo $cr_url; ?>">
+   			   <a href="<?php echo $cr_url; ?>" <?php echo $target; ?>>
    			      <div class="expand-wrap">
                      <img src="<?php echo ALM_ADMIN_URL; ?>img/add-ons/unlimited-add-ons.jpg" alt="">      
                      <h2 class="addon-title"><?php _e('Custom Repeaters', 'ajax-load-more'); ?></h2>
@@ -121,7 +122,7 @@
    			   <?php
       			   $layout_url = 'https://connekthq.com/plugins/ajax-load-more/add-ons/layouts/?utm_source=WP%20Admin&utm_medium=ALM%20Add-ons&utm_campaign=Layouts';
       			   ?>
-   			   <a href="<?php echo $layout_url; ?>">
+   			   <a href="<?php echo $layout_url; ?>" <?php echo $target; ?>>
    			      <div class="expand-wrap">
                      <img src="<?php echo ALM_ADMIN_URL; ?>img/add-ons/layouts-add-on.jpg" alt="">  
                      <h2 class="addon-title"><?php _e('Layouts', 'ajax-load-more'); ?></h2>
@@ -138,7 +139,33 @@
    			   </a>
 			   </div>				   
 		   </div>
-		   <!-- End Layouts -->  
+		   <!-- End Layouts -->  	  
+		   
+		   
+		   <!-- Layouts -->
+		   <div class="group<?php if (has_action('alm_nextpage_installed')){echo ' installed'; } ?>">
+			   <div class="row no-brd">   			   
+   			   <?php
+      			   $layout_url = 'https://connekthq.com/plugins/ajax-load-more/add-ons/next-page/?utm_source=WP%20Admin&utm_medium=ALM%20Add-ons&utm_campaign=Next Page';
+      			   ?>
+   			   <a href="<?php echo $layout_url; ?>" <?php echo $target; ?>>
+   			      <div class="expand-wrap">
+                     <img src="<?php echo ALM_ADMIN_URL; ?>img/add-ons/next-page-add-on.jpg" alt="">  
+                     <h2 class="addon-title"><?php _e('Next Page', 'ajax-load-more'); ?></h2>
+                     <p class="addon-intro"><?php _e('Load and display multipage WordPress content.', 'ajax-load-more'); ?></p>
+                     <p><?php _e('The Next Page add-on will provide functionality for infinite scrolling paginated posts and pages.', 'ajax-load-more'); ?></p>        	   
+                     <?php
+                        if (has_action('alm_nextpage_installed')){
+                           echo '<span class="cnkt-button installed"><i class="fa fa-check-square"></i> Installed</span> ';
+                        }else{
+                           echo '<span class="cnkt-button"><i class="fa fa-download"></i> Purchase &amp; Install</span>';
+                        }
+                     ?>            
+                  </div>
+   			   </a>
+			   </div>				   
+		   </div>
+		   <!-- End Next Page -->
 		   
 		   
 		   <!-- Paging -->
@@ -147,7 +174,7 @@
    			   <?php
                   	$paging_url = 'https://connekthq.com/plugins/ajax-load-more/add-ons/paging/?utm_source=WP%20Admin&utm_medium=ALM%20Add-ons&utm_campaign=Paging';
       			   ?>
-   			   <a href="<?php echo $paging_url; ?>">
+   			   <a href="<?php echo $paging_url; ?>" <?php echo $target; ?>>
 			      <div class="expand-wrap">
                   <img src="<?php echo ALM_ADMIN_URL; ?>img/add-ons/paging-add-ons.jpg" alt="">          
                   <h2 class="addon-title"><?php _e('Paging', 'ajax-load-more'); ?></h2>
@@ -174,7 +201,7 @@
    			   <?php
       			   $preload_url = 'https://connekthq.com/plugins/ajax-load-more/add-ons/preloaded/?utm_source=WP%20Admin&utm_medium=ALM%20Add-ons&utm_campaign=Preloaded';
       			   ?>
-   			   <a href="<?php echo $preload_url; ?>">
+   			   <a href="<?php echo $preload_url; ?>" <?php echo $target; ?>>
    			      <div class="expand-wrap">
                      <img src="<?php echo ALM_ADMIN_URL; ?>img/add-ons/preloaded-add-ons.jpg" alt="">  
                      <h2 class="addon-title"><?php _e('Preloaded', 'ajax-load-more'); ?></h2>
@@ -200,7 +227,7 @@
    			   <?php
       			   $prev_url = 'https://connekthq.com/plugins/ajax-load-more/add-ons/previous-post/?utm_source=WP%20Admin&utm_medium=ALM%20Add-ons&utm_campaign=Previous Post';
       			?>
-   			   <a href="<?php echo $prev_url; ?>">
+   			   <a href="<?php echo $prev_url; ?>" <?php echo $target; ?>>
    			      <div class="expand-wrap">
                      <img src="<?php echo ALM_ADMIN_URL; ?>img/add-ons/prev-post-add-on.jpg" alt="">  
                      <h2 class="addon-title"><?php _e('Previous Post', 'ajax-load-more'); ?></h2>
@@ -226,7 +253,7 @@
    			   <?php
       			   $seo_url = 'https://connekthq.com/plugins/ajax-load-more/add-ons/rest-api/?utm_source=WP%20Admin&utm_medium=ALM%20Add-ons&utm_campaign=RESTAPI';
       			   ?>
-   			   <a href="<?php echo $seo_url; ?>">
+   			   <a href="<?php echo $seo_url; ?>" <?php echo $target; ?>>
    			      <div class="expand-wrap">
                      <img src="<?php echo ALM_ADMIN_URL; ?>img/add-ons/rest-api-add-on.jpg" alt=""> 
                      <h2 class="addon-title"><?php _e('REST API', 'ajax-load-more'); ?></h2>
@@ -254,7 +281,7 @@
    			   <?php
       			   $seo_url = 'https://connekthq.com/plugins/ajax-load-more/add-ons/search-engine-optimization/?utm_source=WP%20Admin&utm_medium=ALM%20Add-ons&utm_campaign=SEO';
       			   ?>
-   			   <a href="<?php echo $seo_url; ?>">
+   			   <a href="<?php echo $seo_url; ?>" <?php echo $target; ?>>
    			      <div class="expand-wrap">
                      <img src="<?php echo ALM_ADMIN_URL; ?>img/add-ons/seo-add-ons.jpg" alt=""> 
                      <h2 class="addon-title"><?php _e('Search Engine Optimization', 'ajax-load-more'); ?></h2>
@@ -280,7 +307,7 @@
 		   <div class="group<?php if (has_action('alm_theme_repeaters_installed')){echo ' installed'; } ?>">
 			   <div class="row no-brd">
 			      <?php $themer_url = 'https://connekthq.com/plugins/ajax-load-more/add-ons/theme-repeaters/?utm_source=WP%20Admin&utm_medium=ALM%20Add-ons&utm_campaign=Theme Repeaters'; ?>
-			      <a href="<?php echo $themer_url; ?>">
+			      <a href="<?php echo $themer_url; ?>" <?php echo $target; ?>>
 			         <div class="expand-wrap">
                      <img src="<?php echo ALM_ADMIN_URL; ?>img/add-ons/theme-repeater-add-on.jpg" alt=""> 
                      <h2 class="addon-title"><?php _e('Theme Repeaters', 'ajax-load-more'); ?></h2>

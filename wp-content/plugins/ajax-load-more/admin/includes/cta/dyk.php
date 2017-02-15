@@ -1,7 +1,7 @@
 <div class="cta dyk">
 	<h3><?php _e('Did You Know?', 'ajax-load-more'); ?></h3>
 	<?php
-		$random = rand(1, 4);
+		$random = rand(1, 5);
 	?>
 	<?php if($random == 1){ ?>
 	<img src="<?php echo ALM_ADMIN_URL; ?>img/add-ons/shortcode-editor.jpg"><br/>
@@ -28,6 +28,13 @@
 	<p class="addon-intro">You can lazy load your comments with Ajax Load More!</p>
 	<p>The <a target="blank" style="font-weight: 600;" href="https://connekthq.com/plugins/ajax-load-more/add-ons/comments/?utm_source=WP%20Admin&utm_medium=ALM%20DYK&utm_campaign=Comments">Comments</a> add-on will load and display blog comments using the core Ajax Load More infinite scroll functionality.</p>
 	<p><a target="blank" style="font-weight: 600;" href="https://connekthq.com/plugins/ajax-load-more/add-ons/comments/?utm_source=WP%20Admin&utm_medium=ALM%20DYK&utm_campaign=Comments">Learn More &raquo;</a></p>
+	<?php } ?>
+	
+	<?php if($random == 5){ ?>
+	<img src="<?php echo ALM_ADMIN_URL; ?>img/add-ons/next-page-add-on.jpg"><br/>
+	<p class="addon-intro">You can infinite scroll just about anything with the Next Page add-on!</p>
+	<p>The <a target="blank" style="font-weight: 600;" href="https://connekthq.com/plugins/ajax-load-more/add-ons/next-page/?utm_source=WP%20Admin&utm_medium=ALM%20DYK&utm_campaign=Next Page">Next Page</a> add-on will allow you to split post content into pages using the <span style="display: inline-block; font-style: italic; color: #999;">&lt;!--nextpage--&gt;</span> <a href="https://codex.wordpress.org/Write_Post_SubPanel#Quicktags" target="_blank">Quicktag</a> and load the generated pages on demand.</p>
+	<p><a target="blank" style="font-weight: 600;" href="https://connekthq.com/plugins/ajax-load-more/add-ons/next-page/?utm_source=WP%20Admin&utm_medium=ALM%20DYK&utm_campaign=Next Page">Learn More &raquo;</a></p>
 	<?php } ?>
 	
 </div>

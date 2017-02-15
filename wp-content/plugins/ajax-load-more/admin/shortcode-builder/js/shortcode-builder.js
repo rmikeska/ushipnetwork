@@ -279,6 +279,43 @@ jQuery(document).ready(function($) {
       }else{
          $('.comments_extras').slideUp(100, 'alm_easeInOutQuad');
       }
+            
+      
+      
+      // ---------------------------
+      // - Next Page      
+      // ---------------------------
+      
+      var nextpage = $('.next-page input[name=next-page]:checked').val();
+      if(nextpage !== 'false' && nextpage != undefined){   
+              
+         var nextpage_post_id = $('#next-page_post_id').val(),
+             nextpage_url = $('input#next-page-url:checked').val(),
+             nextpage_pageviews = $('input#next-page-pageviews:checked').val(),
+             nextpage_scrollspeed = $('input#next-page-scroll-speed').val(),
+             nextpage_scrolltop = $('input#next-page-scroll-top').val();
+                      
+         $('.next-page-content').slideDown(100, 'alm_easeInOutQuad');
+                  
+         output += ' nextpage="'+nextpage+'"'; 
+         output += ' nextpage_post_id="\'.'+nextpage_post_id+'.\'"'; 
+         
+         if(nextpage_url !== 'true'){
+            output += ' nextpage_urls="false"';
+         }
+         if(nextpage_pageviews !== 'true'){
+            output += ' nextpage_pageviews="false"';
+         }
+         
+         if(!nextpage_scrollspeed.length) nextpage_scrollspeed = 250;
+         if(!nextpage_scrolltop.length) nextpage_scrollspeed = 30;
+         
+         output += ' nextpage_scroll="'+ nextpage_scrollspeed +':'+ nextpage_scrolltop +'"';
+         
+         
+      }else{
+         $('.next-page-content').slideUp(100, 'alm_easeInOutQuad');
+      } 
       
       
       

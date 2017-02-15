@@ -7,15 +7,14 @@ Text Domain: ajax-load-more
 Author: Darren Cooney
 Twitter: @KaptonKaos
 Author URI: http://connekthq.com
-Version: 2.13.1
+Version: 2.14.0
 License: GPL
 Copyright: Darren Cooney & Connekt Media
-*/	  
-
+*/	
 
    		
-define('ALM_VERSION', '2.13.1');
-define('ALM_RELEASE', 'December 5, 2016');
+define('ALM_VERSION', '2.14.0');
+define('ALM_RELEASE', 'February 14, 2016');
 define('ALM_STORE_URL', 'https://connekthq.com');	
 
 
@@ -153,6 +152,7 @@ if( !class_exists('AjaxLoadMore') ):
          if (!defined('ALM_COMMENTS_ITEM_NAME')) define('ALM_COMMENTS_ITEM_NAME', '12172');
          if (!defined('ALM_UNLIMITED_ITEM_NAME')) define('ALM_UNLIMITED_ITEM_NAME', '3118');
          if (!defined('ALM_LAYOUTS_ITEM_NAME')) define('ALM_LAYOUTS_ITEM_NAME', '11398');
+         if (!defined('ALM_NEXTPAGE_ITEM_NAME')) define('ALM_NEXTPAGE_ITEM_NAME', '24540');
          if (!defined('ALM_PAGING_ITEM_NAME')) define('ALM_PAGING_ITEM_NAME', '6898');
          if (!defined('ALM_PRELOADED_ITEM_NAME')) define('ALM_PRELOADED_ITEM_NAME', '4293');
          if (!defined('ALM_PREV_POST_ITEM_NAME')) define('ALM_PREV_POST_ITEM_NAME', '9686');
@@ -274,6 +274,7 @@ if( !class_exists('AjaxLoadMore') ):
    				'alm_nonce' => wp_create_nonce( "ajax_load_more_nonce" ),
    				'pluginurl' => ALM_URL,
    				'scrolltop' => $scrolltop,
+   				'ajax_object' => array('is_single' => true, 'is_singular' => true )
    			)
    		);
    		
@@ -288,10 +289,8 @@ if( !class_exists('AjaxLoadMore') ):
    	*  @since 2.0.0
    	*/
    
-   	public function alm_shortcode($atts) {
-      	
-      	return ALM_SHORTCODE::alm_render_shortcode($atts);
-      		
+   	public function alm_shortcode($atts) {      	
+      	return ALM_SHORTCODE::alm_render_shortcode($atts);      		
    	}
    
    
@@ -321,7 +320,7 @@ if( !class_exists('AjaxLoadMore') ):
    		$canonical_url = (isset($_GET['canonical_url'])) ? $_GET['canonical_url'] : $_SERVER['HTTP_REFERER'];
    
    		$queryType = (isset($_GET['query_type'])) ? $_GET['query_type'] : 'standard';	// 'standard' or 'totalposts'; totalposts returns $alm_found_posts
-   		
+   		 
    		$cache_id = (isset($_GET['cache_id'])) ? $_GET['cache_id'] : '';
    		
    		$repeater = (isset($_GET['repeater'])) ? $_GET['repeater'] : 'default';		
@@ -385,13 +384,13 @@ if( !class_exists('AjaxLoadMore') ):
             } else {
                $post_status = 'publish';
             }
-         }
-         
+         }       
    		
    		
    		// Page Parameters
    		$posts_per_page = (isset($_GET['posts_per_page'])) ? $_GET['posts_per_page'] : 5;		
    		$page = (isset($_GET['page'])) ? $_GET['page'] : 0;   	   		
+   		
    		
    		// Preload Add-on
    		$preloaded = (isset($_GET['preloaded'])) ? $_GET['preloaded'] : 'false'; 
@@ -401,6 +400,7 @@ if( !class_exists('AjaxLoadMore') ):
    		   $old_offset = $preloaded_amount;  	
    		   $offset = $offset + $preloaded_amount;	
          }
+         
          
    		// CTA Add-on
          $cta = false;
@@ -418,15 +418,19 @@ if( !class_exists('AjaxLoadMore') ):
    		   $cta_theme_repeater = (isset($ctaData['cta_theme_repeater'])) ? $ctaData['cta_theme_repeater'] : 'null';
          }
          
+         
          // Previous Post Add-on
    		$is_previous_post = (isset($_GET['previous_post'])) ? $_GET['previous_post'] : false;
    		$previous_post_id = (isset($_GET['previous_post_id'])) ? $_GET['previous_post_id'] : '';
          
+         
          // Paging Add-on
          $paging = (isset($_GET['paging'])) ? $_GET['paging'] : false;
          
+         
          // SEO Add-on
    		$seo_start_page = (isset($_GET['seo_start_page'])) ? $_GET['seo_start_page'] : 1;         
+   		
    		
    		// Language (Is this required?)   			
    		$lang = (isset($_GET['lang'])) ? $_GET['lang'] : '';
@@ -603,8 +607,7 @@ if( !class_exists('AjaxLoadMore') ):
    			      $args[$argument[0]] = $argument_arr;
    			   }else{
    			      $args[$argument[0]] = $argument[1];      			   
-   			   }
-   			   
+   			   }   			   
    			}
    		}  
    		
@@ -619,7 +622,8 @@ if( !class_exists('AjaxLoadMore') ):
    		}else{   		
    		   $alm_page_count = $page + 1;
    		}   	   		
-   		
+            
+           		
    		
    		/*
 	   	 *	alm_prev_post_args
@@ -654,7 +658,8 @@ if( !class_exists('AjaxLoadMore') ):
 	   	 * @return $args;
 	   	 */  
          $args = apply_filters('alm_query_args_'.$id, $args); // ALM Core Filter Hook              
-   		
+   		   		
+   		  		
    		
    		/*
 	   	 *	WP_Query
@@ -663,10 +668,11 @@ if( !class_exists('AjaxLoadMore') ):
 	   	 *
 	   	 * @return $alm_query;
 	   	 */
-   		$alm_query = new WP_Query( $args ); // WP_Query()	
    		
+   		$alm_query = new WP_Query( $args );
+   		   		
    		
-   		// If preload, update our loop count and total posts
+   		// If preloaded, update our loop count and total posts
          if(has_action('alm_preload_installed') && $preloaded === 'true'){ 
             $alm_total_posts = $alm_query->found_posts - $offset + $preloaded_amount;
             if($old_offset > 0)
@@ -800,9 +806,10 @@ if( !class_exists('AjaxLoadMore') ):
 	   		
 	   		}
    		
-   		}elseif($queryType === 'totalposts'){
+   		}
+   		elseif($queryType === 'totalposts'){ // Paging add-on 
 	   		
-	   		echo $alm_total_posts; // Paging add-on 
+	   		echo $alm_total_posts; 
 	   		
 	   	}
 	   	

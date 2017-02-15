@@ -3,8 +3,8 @@ Contributors: dcooney
 Donate link: https://connekthq.com/donate/
 Tags: infinite scroll, infinite scrolling, scroll, infinite, lazy load, lazy loading, pagination, ajax pagination, ajax, ajax posts, ajax load posts, search, tags, category, post types, taxonomy, meta_query, woocommerce
 Requires at least: 3.6
-Tested up to: 4.7
-Stable tag: 2.13.1
+Tested up to: 4.7.2
+Stable tag: 2.14.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -33,15 +33,16 @@ Check out the **[demo site](https://connekthq.com/plugins/ajax-load-more/)** for
 ***
 
 = Content Types =
-Ajax Load More can infinite scroll any content type WordPress offers - from blog posts to WooCommerce products Ajax Load More can handle it.
+Ajax Load More can infinite scroll any content type WordPress offers - from blog posts to multipage content to WooCommerce products - Ajax Load More can handle it all.
 
 Check out the examples below:
 
 *   [Standard Posts](https://connekthq.com/plugins/ajax-load-more/examples/default/)
 *   [Custom Post Types](https://connekthq.com/plugins/ajax-load-more/examples/masonry/)
 *   [Pages](https://connekthq.com/plugins/ajax-load-more/examples/search-results/)
+*   [Multipage Posts & Pages](https://connekthq.com/plugins/ajax-load-more/add-ons/next-page/next-page-default/) **
 *   [Single Posts](https://connekthq.com/ajax-load-more-posts/alm-post-example/) **
-*   [Comments](http://comments.connekthq.com/example-post/) **
+*   [Comments](http://examples.connekthq.com/alm-comments/example-post/) **
 
 ** Add-on required
 
@@ -151,6 +152,10 @@ Ajax Load More accepts a number of parameters that are passed to the WordPress q
 > #### Layouts
 > The **[Layouts](https://connekthq.com/plugins/ajax-load-more/layouts/)** add-on will provide a library of fully responsive layout templates ready for use on your website.<br />
 > [Get More Information](https://connekthq.com/plugins/ajax-load-more/layouts/)
+>
+> #### Next Page
+> The **[Next Page](https://connekthq.com/plugins/ajax-load-more/next-page/)** add-on Load and display paginated WordPress content on demand using the `<!–-nextpage–->` Quicktag.<br />
+> [Get More Information](https://connekthq.com/plugins/ajax-load-more/next-page/)
 >
 > #### Paging
 > The **[Paging](https://connekthq.com/plugins/ajax-load-more/paging/)** add-on will transform Ajax Load More’s lazy load/infinite scroll functionality into a robust ajax powered navigation system.<br />
@@ -329,6 +334,15 @@ How to install Ajax Load More.
 
 == Changelog ==
 
+= 2.14.0 - February 14, 2016 =
+
+* NEW - Adding functionality for Next Page add-on (https://connekthq.com/plugins/ajax-load-more/add-ons/next-page/).
+* NEW - Added support for SEO add-on to be integrated with default WP search page.
+* NEW - Added support for Paging + Preloaded + SEO to be used on a single instance.
+* NEW - Added functions for triggering callbacks to various addons on load complete.
+* UPDATE - Various UI tweaks
+* UPDATE - Improving core JS functions and methods
+
 
 = 2.13.1 - December 5, 2016 =
 
@@ -346,12 +360,12 @@ How to install Ajax Load More.
 * FIX - Support for preserving querystring parameters in Previous Post add-on.
 
 
-
 = 2.13.0.1 - November 10, 2016 =
 
 * FIX - almEmpty() callback function not firing because of updated return value of empty query.
 * FIX - almdebug() filter causing 'Missing argument 2 for apply_filters()' error for some users.
 * FIX - Shortcode builder UI heading update.
+
 
 = 2.13.0 - November 6, 2016 =
 

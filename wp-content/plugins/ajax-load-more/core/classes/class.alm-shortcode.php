@@ -56,6 +56,12 @@ if( !class_exists('ALM_SHORTCODE') ):
    			'comments_template' => 'none',
    			'comments_callback' => '',
    			'comments_post_id' => 'null',
+      		'nextpage' => false,
+      		'nextpage_post_id' => 'null',
+      		'nextpage_urls' => 'true',
+      		'nextpage_scroll' => '250:30',
+      		'nextpage_pageviews' => 'true',
+      		'nextpage_start' => 1,
       		'previous_post' => false,
       		'previous_post_id' => 'null',
       		'previous_post_taxonomy' => '',
@@ -135,8 +141,8 @@ if( !class_exists('ALM_SHORTCODE') ):
          if(has_action('alm_prev_post_installed') && $previous_post === 'true'){
       		wp_enqueue_script( 'ajax-load-more-previous-post' );            
          }       
-         if(has_action('alm_layouts_installed')){
-      		//wp_enqueue_script( 'ajax-load-more-layouts' );  // Not yet :)           
+         if(has_action('alm_nextpage_installed') && $nextpage === 'true'){
+      		wp_enqueue_script( 'ajax-load-more-nextpage' );        
          }
    					
          if($previous_post === 'true'){
@@ -224,9 +230,8 @@ if( !class_exists('ALM_SHORTCODE') ):
       	if($paging === 'true'){
          	$paging_container_class = ' alm-paging-wrap';
             
-            $preloaded = false;
             // If Preloaded & Paging, pause loading by default.
-            // Still work to do here with SEO add-on
+            // Added in 2.14.0
          	if($preloaded === 'true'){
             	$pause = 'true';
             	$pause_override = 'false';  
@@ -254,7 +259,13 @@ if( !class_exists('ALM_SHORTCODE') ):
 	         $the_id = '';
          }
          
-   		$ajaxloadmore .= '<div id="'. $div_id .'" class="ajax-load-more-wrap'. $btn_color .''. $paging_color .''. $alm_layouts .'" '.$the_id.' data-alm-id="" data-canonical-url="'. $canonicalURL .'" data-slug="'. $slug .'">';
+         // Is Search
+         $is_search = '';
+         if(is_search()){
+            $is_search = 'data-search="true"'; // set attr for use with SEO
+         }
+         
+   		$ajaxloadmore .= '<div id="'. $div_id .'" class="ajax-load-more-wrap'. $btn_color .''. $paging_color .''. $alm_layouts .'" '.$the_id.' data-alm-id="" data-canonical-url="'. $canonicalURL .'" data-slug="'. $slug .'" '. $is_search .'>';
    		
    		
    		// Previous Post Add-on
@@ -275,6 +286,17 @@ if( !class_exists('ALM_SHORTCODE') ):
       		$seo = false;
       		$paging = false;
       		$cache = false;
+   		} 
+   		
+   		
+   		// Nextpage Add-on
+   		// - Set other add-on params to false
+   		if($nextpage){
+      		$previous_post = false;
+      		$seo = false;
+      		$cache = false;
+      		$comments = false;
+      		$pause = 'true';
    		}   		
    		
    		
@@ -434,7 +456,12 @@ if( !class_exists('ALM_SHORTCODE') ):
       			$preloaded_output .= '<'.$container_element.' class="alm-listing alm-preloaded'. $classname .' '. $css_classes .'" data-total-posts="'. $alm_total_posts .'">';
       			
       			if($seo === "true" && $paging === 'false'){
-         			$preloaded_output .= '<div class="alm-reveal alm-seo" data-page="1" data-url="'.$canonicalURL.'">';
+         			if(is_search()){
+            			// If search, append slug (?s=term) to data-url
+         			   $preloaded_output .= '<div class="alm-reveal alm-seo" data-page="1" data-url="'.$canonicalURL.''. $slug .'">';            			
+         			}else{
+         			   $preloaded_output .= '<div class="alm-reveal alm-seo" data-page="1" data-url="'.$canonicalURL.'">';
+         			}
                }
                if($seo === "false" && $paging === 'true' || $seo === "true" && $paging === 'true'){
                   $preloaded_output .= '<div class="alm-reveal">';
@@ -583,7 +610,22 @@ if( !class_exists('ALM_SHORTCODE') ):
    		   	$options
    		   );   		   	
    			$ajaxloadmore .= $prev_post_return;		
-         }    		
+         }
+   		   
+   		   			
+   		// Nextpage Post Add-on   		
+   		if(has_action('alm_nextpage_installed') && $nextpage){   		
+   		   $nextpage_return = apply_filters(
+   		   	'alm_nextpage_shortcode', 
+   		   	$nextpage_urls,  
+   		   	$nextpage_pageviews, 
+   		   	$nextpage_post_id, 
+   		   	$nextpage_scroll, 
+   		   	$options
+   		   );   		   	
+   			$ajaxloadmore .= $nextpage_return;		
+         }
+            		
    		
    		$ajaxloadmore .= ' data-repeater="'.$repeater.'"';   		
    		if($theme_repeater != 'null'){
@@ -644,7 +686,7 @@ if( !class_exists('ALM_SHORTCODE') ):
    		   		
    		
    		// Previous Post Add-on       
-         // - Get first post and append to ajax load more object
+         // - Get first post, append data to ajax load more object
    		if(has_action('alm_prev_post_installed') && $previous_post){ 
       		$repeater_type = preg_split('/(?=\d)/', $repeater, 2); // split $repeater at number to retrieve type
       		$repeater_type = $repeater_type[0]; // (default | repeater | template_)       		
@@ -656,6 +698,7 @@ if( !class_exists('ALM_SHORTCODE') ):
 				
             // Get previous post include, build output from the next post filter    
             $previous_post_output = '<div class="alm-reveal alm-previous-post post-'. $previous_post_id .'" data-url="'. $previous_post_permanlink .'" data-title="'. get_the_title($previous_post_id) .'" data-id="'. $previous_post_id .'">'; // Set the post id .alm-reveal div
+            
             
             /*
 		   	 *	alm_prev_post_inc
@@ -670,8 +713,24 @@ if( !class_exists('ALM_SHORTCODE') ):
    			$ajaxloadmore .= $previous_post_output; // Add $previous_post_output data to $ajaxloadmore
    
          }
-         // / Previous Post Add-on        
-   		
+         // End Previous Post Add-on       
+         
+         
+         // Next Page Add-on
+         if(has_action('alm_nextpage_installed') && $nextpage){ 
+            
+            $nextpage_start = alm_get_startpage();
+            
+            $nextpage_is_paged = false;
+            if($nextpage_start > 1){
+               $nextpage_is_paged = true;
+            }
+            
+            $alm_nextpage_output = apply_filters('alm_init_nextpage', $nextpage_post_id, $nextpage_start,$nextpage_is_paged, $paging);
+            $ajaxloadmore .= $alm_nextpage_output;
+         
+         }
+   		// End Next Page Add-on
    		
    		$ajaxloadmore .= '</'.$container_element.'>';
    		 

@@ -18,6 +18,7 @@
    		      // alm_comments_installed
    		      // alm_unlimited_installed
    		      // alm_layouts_installed
+   		      // alm_nextpage_installed
    		      // alm_preload_installed
    		      // alm_paging_installed
    		      // alm_prev_post_installed
@@ -27,7 +28,7 @@
    		   ?>
    		   
    		   <?php 
-      		   // Check if any add ons are installed. 
+      		   // Check if any add ons are installed. /admin/admin-functions.php
       		   if(alm_has_addon()) : ?>	  
 		     		      
 		      
@@ -358,6 +359,72 @@
                }
                // End LAYOUTS 
             ?>	
+            
+            
+            <?php 
+   		      if (has_action('alm_nextpage_installed')){
+   		      // NEXT PAGE 
+				   $alm_nextpage_license = get_option( 'alm_nextpage_license_key' );
+               $alm_nextpage_status = get_option( 'alm_nextpage_license_status' );
+               $alm_nextpage_url = 'https://connekthq.com/plugins/ajax-load-more/add-ons/next-page/';
+		      ?>
+	         <div class="license" id="license-nextpage">
+		         <div class="license-title">       
+   		         <div class="status <?php if($alm_nextpage_status == 'valid'){echo 'valid';}else{echo 'invalid';} ?> "></div>   
+         			<h2><?php _e('Next Page', 'ajax-load-more'); ?></h2> 
+		         </div>	
+               <div class="license-wrap">
+   			      <form method="post" action="options.php">       
+            		
+	            		<?php if( $alm_nextpage_status !== false && $alm_nextpage_status == 'valid' ) { ?>
+         			   <!-- nothing -->
+         			   <?php } else { ?>
+         			   <div class="no-license">
+            	         <h4><?php _e('Don\'t have a license?', 'ajax-load-more'); ?></h4>
+            	         <p><?php _e('A valid license is required to activate and receive plugin updates directly in your WordPress dashboard', 'ajax-load-more'); ?> &rarr; <a href="<?php echo $alm_nextpage_url; ?>?utm_source=WP%20Admin&utm_medium=Licenses&utm_campaign=nextpage" target="blank"><strong><?php _e('Purchase Now', 'ajax-load-more'); ?>!</strong></a></p>
+                     </div> 
+         			   <?php } ?>
+         			   
+	         			<?php settings_fields('alm_nextpage_license'); ?>   
+	         			
+	         			<label class="description offscreen" for="alm_nextpage_license_key"><?php _e('Enter License Key', 'ajax-load-more'); ?></label>
+	         			<div class="license-key-field">
+	         			   <input id="alm_nextpage_license_key" name="alm_nextpage_license_key" type="text" class="regular-text" value="<?php esc_attr_e( $alm_nextpage_license ); ?>" placeholder="<?php _e('Enter License Key', 'ajax-load-more'); ?>" />
+	         			   <?php if( $alm_nextpage_status !== false && $alm_nextpage_status == 'valid' ) { ?>
+	            		   <span class="status active">
+	            		      <?php _e('Active', 'ajax-load-more'); ?>
+	            		   </span>
+	            		   <?php } else { ?>
+	            		   <span class="status inactive">
+	            		      <?php _e('Inactive', 'ajax-load-more'); ?>
+	            		   </span>
+	            		   <?php } ?>
+	         			</div>
+         			
+         				<?php wp_nonce_field( 'alm_nextpage_license_nonce', 'alm_nextpage_license_nonce' ); ?>
+         				<div class="license-btn-wrap"	         			
+						   		data-name="<?php echo ALM_NEXTPAGE_ITEM_NAME; ?>" 
+				         		data-url="<?php echo ALM_STORE_URL; ?>" 
+					         	data-option-status="alm_nextpage_license_status" 
+						         data-option-key="alm_nextpage_license_key"
+						         data-upgrade-url="<?php echo $alm_nextpage_url; ?>">
+		         			<button type="button" class="activate license-btn <?php if($alm_nextpage_status === 'valid'){ echo 'hide'; } ?> button-primary" data-type="activate">
+							   	<?php _e('Activate License', 'ajax-load-more'); ?>
+							   </button>
+							   
+							   <button type="button" class="deactivate license-btn <?php if($alm_nextpage_status !== 'valid'){ echo 'hide'; } ?> button-secondary" data-type="deactivate">
+							   	<?php _e('Deactivate License', 'ajax-load-more'); ?>
+							   </button>  
+	         			</div>
+         			
+               	</form>
+			      </div> 
+			      <div class="loading"></div>
+            </div> 	
+            <?php 
+               }
+               // End NEXT PAGE 
+            ?>
             
             
             

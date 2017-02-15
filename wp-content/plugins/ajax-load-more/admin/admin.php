@@ -430,7 +430,9 @@ function alm_admin_menu() {
    add_action( 'load-' . $alm_examples_page, 'alm_load_admin_js' );
    add_action( 'load-' . $alm_examples_page, 'alm_set_admin_nonce' );
    add_action( 'load-' . $alm_help_page, 'alm_load_admin_js' );
+   add_action( 'load-' . $alm_help_page, 'alm_set_admin_nonce' );
    add_action( 'load-' . $alm_addons_page, 'alm_load_admin_js' );
+   add_action( 'load-' . $alm_addons_page, 'alm_set_admin_nonce' );
    add_action( 'load-' . $alm_licenses_page, 'alm_load_admin_js' );
    add_action( 'load-' . $alm_licenses_page, 'alm_set_admin_nonce' );
 }   
@@ -448,7 +450,9 @@ function alm_load_admin_js(){
 	add_action( 'admin_enqueue_scripts', 'alm_enqueue_admin_scripts' );
 }
 function alm_load_cache_admin_js(){
-	add_action( 'admin_enqueue_scripts', 'alm_enqueue_cache_admin_scripts' );
+	if(class_exists('ALMCache')){
+   	ALMCache::alm_enqueue_cache_admin_scripts();
+   }
 }
 
 
@@ -497,9 +501,6 @@ function alm_enqueue_admin_scripts(){
    wp_enqueue_script( 'alm-shortcode-builder', ALM_ADMIN_URL. 'shortcode-builder/js/shortcode-builder.js', array( 'jquery' ));
 }
 
-function alm_enqueue_cache_admin_scripts(){
-   wp_enqueue_script( 'alm-cache-admin', ALM_CACHE_URL. '/js/alm-cache.js', array( 'jquery' ));
-}
 
 
 

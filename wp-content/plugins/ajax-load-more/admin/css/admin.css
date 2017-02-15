@@ -123,20 +123,22 @@
       min-width: 48%;
       display: inline-block;
       vertical-align: top;
-   }
-   
+   }   
    
 #alm-settings form h2{
-   padding: 2px 0 6px 12px;
-   border-left: 5px solid #ff5a58;
+   padding: 12px 0 6px 12px;
+   border-left: 7px solid #ff5a58;
    margin: 0;
+   font-weight: 600;
+   font-size: 1.35em;
 }
 #alm-settings form h2 + p{
    color: #999;
-   padding: 0 0 0 12px;
-   border-left: 5px solid #ff5a58;
+   padding: 0 0 10px 12px;
+   border-left: 7px solid #ff5a58;
    margin: 0 0 24px;
    font-size: 14px;
+   font-style: italic;
 }
 .ajax-load-more code{
 	background: #fcf3d0;
@@ -708,7 +710,7 @@ a.layout-hover{
 
 .ajax-load-more .row{ 
    padding: 0 !important; 
-   margin: 10px 0 0;
+   margin: 15px 0 0;
    height: auto; 
    width: 100%;
    display: block;
@@ -824,11 +826,16 @@ a.layout-hover{
       font-size: 15px;	
       margin-bottom: 13px;
    }
-	.ajax-load-more .section-title p{		
+	.ajax-load-more .section-title p,
+	.ajax-load-more .wrap p.descriptor{		
 		font-size: 13px;
 		line-height: 20px;
 		color: #999;
 	}
+	.ajax-load-more .wrap p.descriptor{	
+      margin: 0;
+      font-style: italic;
+   }
 	.ajax-load-more .section-title p .fa.tooltip,
 	.form-table label .fa.tooltip{
 		margin: 0 2px;
@@ -886,7 +893,8 @@ a.layout-hover{
 .cache_id,
 .alternate_template_wrap,
 .cta_template_wrap,
-.restapi_options{
+.restapi_options,
+.next-page-content{
    display: none;
 }
 	
@@ -1100,17 +1108,17 @@ a.layout-hover{
    
    .form-table .template-tags{
 	   overflow: hidden;
-	   border: 1px solid #eeeddf;
-	   padding: 6px 10px;
-	   background: #faf9ee;
+	   border: 1px solid #dfd8c2;;
+	   padding: 15px;
+	   background: #fff9ea;
 	   margin: 10px 0 0;
-	   border-radius: 3px;
+	   border-radius: 2px;
    }
    	.form-table .template-tags h4,
    	.form-table .template-tags li{
 	   	margin: 0 0 8px;	
 			padding:0;
-         font-size: 14px;
+         font-size: 13px;
 	   }
    	.form-table .template-tags li{	
          margin: 2px 0;
@@ -1192,13 +1200,12 @@ a.layout-hover{
 /* Table Overrides */
 .admin.ajax-load-more.settings .form-table td,
 .admin.ajax-load-more.settings .form-table th{
-   padding: 20px 0 16px;
+   padding: 24px 0 20px;
    line-height: 1.5;
 }
 .admin.ajax-load-more.settings .form-table th{
 	padding-left: 17px;	
 }
-
 .admin.ajax-load-more.settings .form-table p{
    margin-top: 0;
 }
@@ -1209,7 +1216,6 @@ a.layout-hover{
    overflow: hidden;
    color: #999;
 }
-
 .header-wrap{
 	overflow: hidden;
 	padding: 10px 0 3px;
@@ -1401,11 +1407,6 @@ table.highlight{
    -webkit-border-radius: 3px; 
    -moz-border-radius: 3px; 
    border-radius: 3px; 
-/*
-   -webkit-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
-   -moz-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
-   box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
-*/
 }
 .ajax-load-more .cnkt-main.full{
    width: 100%;
@@ -1787,8 +1788,8 @@ table.highlight{
       }
       .license-key-field .status{
          position: absolute;
-         right:5px;
-         top: 5px;
+         right:9px;
+         top: 9px;
          display: inline-block;
          border-radius: 2px;
          padding: 6px 12px;
@@ -1839,7 +1840,7 @@ table.highlight{
 	   background: #fff;
 	   padding: 20px;
 	   margin: 0 0 20px;
-	   overflow: hidden;
+	   overflow: visible;
 	   position: relative;	
 	}
 	.ajax-load-more .cnkt-sidebar .cta.mailing-list{
@@ -1876,7 +1877,7 @@ table.highlight{
 			font-size: 14px;
 		}
 		.ajax-load-more .cnkt-sidebar .cta.dyk p{
-			margin: 5px 0;
+			margin: 15px 0 0;
 			display: block;
 			overflow: hidden;
 		}
@@ -1888,7 +1889,7 @@ table.highlight{
 		.ajax-load-more .cnkt-sidebar li{
 			font-size: 14px;
 			margin: 0 0 10px;
-			line-height: 1.4;
+			line-height: 1.5;
 		}
 		
 		.ajax-load-more .cnkt-sidebar .cta.resources li{
@@ -2553,7 +2554,7 @@ p.cache-stats{
    .ajax-load-more .form-table input[type=radio] + label{
       background: #fff url('../img/bkg-chkbox_off.png') no-repeat left 1px;
       height: auto;
-      min-height: 20px;
+      min-height: 22px;
       width: 100%;
       display:inline-block;
       padding: 1px 0 0 30px;
@@ -3437,6 +3438,12 @@ ul.share li.facebook a:hover{
       display: block;
       float: none;
       padding: 10px;
+   }
+   .ajax-load-more .section-title{
+	   padding: 20px 20px 10px;
+   }
+   .ajax-load-more .row .wrap{
+	   padding: 10px 20px;
    }
    .ajax-load-more input[type=text], 
    .ajax-load-more input[type=number],

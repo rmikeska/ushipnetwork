@@ -424,10 +424,14 @@ function alm_get_canonical_url(){
       $tax_id = $tax_term->term_id;
       $canonicalURL = get_term_link($tax_id);
    }
-   // post_type
+   // Post Type
    elseif(is_post_type_archive()){
       $post_type_archive = get_post_type();
       $canonicalURL = get_post_type_archive_link($post_type_archive);            
+   } 
+   // Search
+   elseif(is_search()){
+      $canonicalURL = get_home_url().'/';        
    }       
    else{            
       $canonicalURL = get_permalink();
@@ -452,7 +456,17 @@ function alm_get_page_slug($post){
 		if(is_front_page() || is_home()){
 			$slug = 'home';
 		}else{
-		   $slug = $post->post_name;
+   		// Search
+   		if(is_search()){
+      		$search_query = get_search_query();
+      		if($search_query){
+         		$slug = "?s=$search_query";
+      		}else{
+         		$slug = '?s=';
+      		}
+         }else{
+		      $slug = $post->post_name;
+		   }
       }
 	}else{	   		
 		// Tax
@@ -499,6 +513,25 @@ function alm_get_page_slug($post){
 	}
    
 	return $slug;
+}
+
+
+
+/*
+*  alm_get_startpage
+*  Get query param of start page (paged, page)
+*
+*  @since 2.14.0
+*/
+function alm_get_startpage(){
+   if ( get_query_var('paged') ) {
+      $start_page = get_query_var('paged');
+   } elseif ( get_query_var('page') ) {
+      $start_page = get_query_var('page');
+   } else {
+      $start_page = 1;
+   }   
+   return $start_page;
 }
 
 

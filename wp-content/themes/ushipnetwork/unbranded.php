@@ -21,11 +21,11 @@
 <body role="application" <?php body_class(); ?>>
 <div class="pageWrapper">
   <main role="main" class="content-newHeader content-newFooter">
-    <?php include("template-parts/acf-modules/top-content.php");?>
-    <div class="bodyContent">
-    <?php include("template-parts/acf-modules/body-content.php");?>
-    </div>
-    <?php include("template-parts/acf-modules/bottom-content.php");?>
+    <?php while ( have_posts() ) : the_post(); ?>
+
+      <?php get_template_part( 'template-parts/content', 'page' ); ?>
+
+    <?php endwhile; // End of the loop. ?>
   </main>
 <!-- .pageWrapper -->
 </div>
