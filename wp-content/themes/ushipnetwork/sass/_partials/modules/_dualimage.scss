@@ -1,0 +1,60 @@
+/*** Dual Image ***/
+
+.dualImage-container {
+  @include container(1200px, 55px, 45px);
+  overflow: hidden;
+  width: 100%;
+}
+
+.dualImage-intro {
+  padding-bottom: 30px;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.dualImage-subintro {
+  padding-bottom: 45px;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.dualImage-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 15px;
+
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column;
+  }
+}
+
+.dualImage-block {
+  max-width: 597px;
+
+  &:not(:last-child) {
+
+    @media only screen and (max-width: 1000px) {
+      padding-bottom: 30px;
+    }
+  }
+}
+
+.dualImage-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.dualImage-caption {
+  text-align: center;
+  padding-top: 40px;
+  font-size: 12px;
+
+  @media only screen and (max-width: 1000px) {
+    padding-top: 25px;
+  }
+}

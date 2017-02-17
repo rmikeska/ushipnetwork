@@ -72,6 +72,10 @@
 
       <?php include("text-block.php");?>
 
+    <?php elseif (get_row_layout() == 'dual_image'): ?>
+
+      <?php include("dual-image.php");?>
+
     <?php endif; ?>
   <?php endwhile; ?>
 <?php endif; ?>
