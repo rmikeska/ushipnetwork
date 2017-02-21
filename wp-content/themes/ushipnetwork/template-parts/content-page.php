@@ -9,8 +9,9 @@
 
 ?>
 
-<!-- If a query sting field value is set, append value to all uship domain page links -->
+
 <?php if ($query_string = get_field('add_query_string')): ?>
+  <!-- If a query sting field value is set, append value to all uship domain page links -->
   <script type="text/javascript">
     jQuery(document).ready(function ($) {
       var acfQueryString = '<?php echo $query_string; ?>';
@@ -26,6 +27,7 @@
     })
   </script>
 <?php endif; ?>
+
 
 <?php include("acf-modules/top-content.php");?>
 <div class="bodyContent">

@@ -739,7 +739,7 @@
                 {
                     "key": "56718d8c90609",
                     "name": "slanted_map",
-                    "label": "Slanted Map Background with Image and Copy",
+                    "label": "Slanted Map",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -2828,5 +2828,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1487363362
+    "modified": 1487697355
 }

@@ -18,6 +18,26 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
+
+<?php
+
+// Add robots meta tag acf field option
+global $wp_query;
+$post = $wp_query->post;
+
+if ($robots_meta = get_field('add_robots_meta_tag', $post->ID)) {
+  if ($robots_meta == 'noindex_follow') {
+    echo '<META NAME="ROBOTS" CONTENT="NOINDEX, FOLLOW">';
+  } elseif ($robots_meta == 'index_nofollow') {
+    echo '<META NAME="ROBOTS" CONTENT="INDEX, NOFOLLOW">';
+  } elseif ($robots_meta == 'noindex_nofollow') {
+    echo '<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">';
+  }
+}
+
+?>
+
+
 <?php include("template-parts/favicons.php");?>
 
 <?php wp_head(); ?>

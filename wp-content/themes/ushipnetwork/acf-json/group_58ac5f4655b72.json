@@ -1,13 +1,13 @@
 {
-    "key": "group_589b73cc248c0",
-    "title": "Header\/Footer",
+    "key": "group_58ac5f4655b72",
+    "title": "Search",
     "fields": [
         {
-            "key": "field_589b73e473eeb",
-            "label": "Header\/Footer Type",
-            "name": "header_footer_type",
+            "key": "field_58ac5f4d2eeec",
+            "label": "Add Robots Meta Tag",
+            "name": "add_robots_meta_tag",
             "type": "select",
-            "instructions": "This option allows you to select a full or simple header and footer. Used primarily for direct marketing campaign pages where fewer page link distractions are desired. Full header and footer are default.",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -16,11 +16,12 @@
                 "id": ""
             },
             "choices": {
-                "full": "Full",
-                "simple": "Simple"
+                "noindex_follow": "NOINDEX, FOLLOW",
+                "index_nofollow": "INDEX, NOFOLLOW",
+                "noindex_nofollow": "NOINDEX, NOFOLLOW"
             },
             "default_value": [],
-            "allow_null": 0,
+            "allow_null": 1,
             "multiple": 0,
             "ui": 0,
             "ajax": 0,
@@ -45,5 +46,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1487691525
+    "modified": 1487692650
 }
