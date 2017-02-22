@@ -9,9 +9,13 @@
     <div class="contact-links">
       <div class="contact-links-content">
       <?php while(have_rows('contact_link_content')): the_row(); ?>
-        <?php $contact_link_url = get_sub_field('contact_link_url'); ?>
+        <?php if(get_sub_field('contact_link_type') == 'standard'): ?>
+          <?php $contact_link = get_sub_field('contact_link_url'); ?>
+        <?php elseif (get_sub_field('contact_link_type') == 'file'): ?>
+          <?php $contact_link = get_sub_field('contact_link_file'); ?>
+        <?php endif; ?>
         <div class="contact-links-content-link">
-          <a class="tertiaryLink tertiaryLinkDark" type="button" target="_blank" href="<?php echo $contact_link_url; ?>"><?php the_sub_field('contact_link_text'); ?><?php include( get_template_directory() . '/images/arrow_link.svg'); ?></a>
+          <a class="tertiaryLink tertiaryLinkDark" type="button" target="_blank" href="<?php echo $contact_link; ?>"><?php the_sub_field('contact_link_text'); ?><?php include( get_template_directory() . '/images/arrow_link.svg'); ?></a>
         </div>
       <?php endwhile; ?>
       </div>

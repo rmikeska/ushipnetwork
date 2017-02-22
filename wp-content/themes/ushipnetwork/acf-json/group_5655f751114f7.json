@@ -1103,20 +1103,53 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "collapsed": "",
                             "min": 0,
                             "max": 0,
                             "layout": "table",
                             "button_label": "Add Link",
-                            "collapsed": "",
                             "sub_fields": [
+                                {
+                                    "key": "field_58addf3d88698",
+                                    "label": "Link Type",
+                                    "name": "contact_link_type",
+                                    "type": "select",
+                                    "instructions": "Choose from a standard page link URL or a file uploaded to the Media library.",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "standard": "Standard",
+                                        "file": "File"
+                                    },
+                                    "default_value": [],
+                                    "allow_null": 1,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "return_format": "value",
+                                    "placeholder": ""
+                                },
                                 {
                                     "key": "field_56956cc855b23",
                                     "label": "Link URL",
                                     "name": "contact_link_url",
                                     "type": "text",
                                     "instructions": "",
-                                    "required": 1,
-                                    "conditional_logic": 0,
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_58addf3d88698",
+                                                "operator": "==",
+                                                "value": "standard"
+                                            }
+                                        ]
+                                    ],
                                     "wrapper": {
                                         "width": "",
                                         "class": "",
@@ -1126,9 +1159,34 @@
                                     "placeholder": "",
                                     "prepend": "",
                                     "append": "",
-                                    "maxlength": "",
-                                    "readonly": 0,
-                                    "disabled": 0
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_58ade04188699",
+                                    "label": "Link File",
+                                    "name": "contact_link_file",
+                                    "type": "file",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_58addf3d88698",
+                                                "operator": "==",
+                                                "value": "file"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "url",
+                                    "library": "all",
+                                    "min_size": "",
+                                    "max_size": "",
+                                    "mime_types": ""
                                 },
                                 {
                                     "key": "field_56956d3655b24",
@@ -2828,5 +2886,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1487697355
+    "modified": 1487791279
 }
