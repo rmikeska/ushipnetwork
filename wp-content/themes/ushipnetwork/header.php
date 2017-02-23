@@ -21,7 +21,7 @@
 
 <?php
 
-// Add robots meta tag acf field option
+// Add robots meta tag from ACF option
 global $wp_query;
 $post = $wp_query->post;
 
