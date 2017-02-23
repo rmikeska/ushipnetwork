@@ -15,7 +15,7 @@
           <?php $contact_link = get_sub_field('contact_link_file'); ?>
         <?php endif; ?>
         <div class="contact-links-content-link">
-          <a class="tertiaryLink tertiaryLinkDark" type="button" target="_blank" href="<?php echo $contact_link; ?>"><?php the_sub_field('contact_link_text'); ?><?php include( get_template_directory() . '/images/arrow_link.svg'); ?></a>
+          <a class="tertiaryLink tertiaryLinkDark" type="button" target="_blank" href="<?php echo $contact_link; ?>" onclick="<?php the_sub_field('contact_link_onclick'); ?>"><?php the_sub_field('contact_link_text'); ?><?php include( get_template_directory() . '/images/arrow_link.svg'); ?></a>
         </div>
       <?php endwhile; ?>
       </div>

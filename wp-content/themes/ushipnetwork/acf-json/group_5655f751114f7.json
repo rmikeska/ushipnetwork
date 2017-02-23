@@ -20,518 +20,6 @@
             "max": "",
             "layouts": [
                 {
-                    "key": "565c98ac9cd15",
-                    "name": "long_form_content",
-                    "label": "Long Form Content",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5808e23e796bb",
-                            "label": "Section ID",
-                            "name": "long_form_content_id",
-                            "type": "text",
-                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_565c98fa9cd16",
-                            "label": "Content",
-                            "name": "long_form_content_content",
-                            "type": "repeater",
-                            "instructions": "",
-                            "required": 1,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "min": 0,
-                            "max": 0,
-                            "layout": "table",
-                            "button_label": "Add Long Form Text Block",
-                            "collapsed": "",
-                            "sub_fields": [
-                                {
-                                    "key": "field_565cb4ad2fb53",
-                                    "label": "Text Block",
-                                    "name": "long_form_content_text",
-                                    "type": "wysiwyg",
-                                    "instructions": "",
-                                    "required": 1,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "tabs": "all",
-                                    "toolbar": "basic",
-                                    "media_upload": 0,
-                                    "default_value": "",
-                                    "delay": 0
-                                }
-                            ]
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                {
-                    "key": "565e0ce12706e",
-                    "name": "strip_copy_callout",
-                    "label": "Strip Copy Callout",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5808ee00c927b",
-                            "label": "Section ID",
-                            "name": "strip_copy_callout_id",
-                            "type": "text",
-                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_5668688ed6d0c",
-                            "label": "Background Color",
-                            "name": "strip_copy_callout_background_color",
-                            "type": "select",
-                            "instructions": "",
-                            "required": 1,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "sectionWhite": "White",
-                                "sectionGrey": "Grey",
-                                "sectionNavy": "Navy"
-                            },
-                            "default_value": [],
-                            "allow_null": 0,
-                            "multiple": 0,
-                            "ui": 0,
-                            "ajax": 0,
-                            "placeholder": "",
-                            "disabled": 0,
-                            "readonly": 0,
-                            "return_format": "value"
-                        },
-                        {
-                            "key": "field_565e0cee2706f",
-                            "label": "Text",
-                            "name": "strip_copy_callout_text",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 1,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": ""
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                {
-                    "key": "565e250915b68",
-                    "name": "strip_data_callout",
-                    "label": "Strip Data Callout",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5808efcf20b76",
-                            "label": "Section ID",
-                            "name": "strip_data_callout_id",
-                            "type": "text",
-                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_565e252b15b69",
-                            "label": "Content",
-                            "name": "strip_data_callout_content",
-                            "type": "repeater",
-                            "instructions": "",
-                            "required": 1,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "collapsed": "",
-                            "min": 1,
-                            "max": 3,
-                            "layout": "table",
-                            "button_label": "Add Data Item",
-                            "sub_fields": [
-                                {
-                                    "key": "field_569555a709ba6",
-                                    "label": "Data Value",
-                                    "name": "strip_data_callout_block_value",
-                                    "type": "text",
-                                    "instructions": "",
-                                    "required": 1,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": "",
-                                    "readonly": 0,
-                                    "disabled": 0
-                                },
-                                {
-                                    "key": "field_569555ee09ba7",
-                                    "label": "Data Caption",
-                                    "name": "strip_data_callout_block_caption",
-                                    "type": "text",
-                                    "instructions": "",
-                                    "required": 1,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": "",
-                                    "readonly": 0,
-                                    "disabled": 0
-                                }
-                            ]
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                {
-                    "key": "565e11955dc75",
-                    "name": "full_width_image",
-                    "label": "Full Width Image",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5808f0faa8e32",
-                            "label": "Section ID",
-                            "name": "full_width_image_id",
-                            "type": "text",
-                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_565e11a15dc76",
-                            "label": "Image",
-                            "name": "full_width_image_image",
-                            "type": "image",
-                            "instructions": "",
-                            "required": 1,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "array",
-                            "preview_size": "medium",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": ""
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                {
-                    "key": "5667355e4de9d",
-                    "name": "testimonials",
-                    "label": "Testimonials",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5808f16c75162",
-                            "label": "Section ID",
-                            "name": "testimonials_id",
-                            "type": "text",
-                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_56673f4530fe7",
-                            "label": "Background Color",
-                            "name": "testimonials_background_color",
-                            "type": "select",
-                            "instructions": "",
-                            "required": 1,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "sectionWhite": "White",
-                                "sectionGrey": "Grey",
-                                "sectionNavy": "Navy"
-                            },
-                            "default_value": [],
-                            "allow_null": 0,
-                            "multiple": 0,
-                            "ui": 0,
-                            "ajax": 0,
-                            "placeholder": "",
-                            "disabled": 0,
-                            "readonly": 0,
-                            "return_format": "value"
-                        },
-                        {
-                            "key": "field_566735744de9e",
-                            "label": "Intro Text",
-                            "name": "testimonials_intro",
-                            "type": "text",
-                            "instructions": "Optional.",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": "",
-                            "readonly": 0,
-                            "disabled": 0
-                        },
-                        {
-                            "key": "field_5696eab9b7639",
-                            "label": "Intro Sub Text",
-                            "name": "testimonials_intro_sub",
-                            "type": "text",
-                            "instructions": "Optional.",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": "",
-                            "readonly": 0,
-                            "disabled": 0
-                        },
-                        {
-                            "key": "field_566735b44de9f",
-                            "label": "Content",
-                            "name": "testimonials_content",
-                            "type": "repeater",
-                            "instructions": "",
-                            "required": 1,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "min": 2,
-                            "max": 2,
-                            "layout": "row",
-                            "button_label": "Add Testimonial",
-                            "collapsed": "",
-                            "sub_fields": [
-                                {
-                                    "key": "field_56955da1c5398",
-                                    "label": "Image",
-                                    "name": "testimonials_image",
-                                    "type": "image",
-                                    "instructions": "Optional. Minimum width: 380px. Minimum height: 254px.",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "return_format": "array",
-                                    "preview_size": "medium",
-                                    "library": "all",
-                                    "min_width": "",
-                                    "min_height": "",
-                                    "min_size": "",
-                                    "max_width": "",
-                                    "max_height": "",
-                                    "max_size": "",
-                                    "mime_types": ""
-                                },
-                                {
-                                    "key": "field_56955df4c5399",
-                                    "label": "Text",
-                                    "name": "testimonials_text",
-                                    "type": "wysiwyg",
-                                    "instructions": "",
-                                    "required": 1,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "tabs": "all",
-                                    "toolbar": "basic",
-                                    "media_upload": 0,
-                                    "default_value": "",
-                                    "delay": 0
-                                },
-                                {
-                                    "key": "field_57dc437a5361b",
-                                    "label": "Read More Link",
-                                    "name": "testimonials_tertiary_callout",
-                                    "type": "repeater",
-                                    "instructions": "Optional.",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "min": 0,
-                                    "max": 1,
-                                    "layout": "table",
-                                    "button_label": "Add Read More Link",
-                                    "collapsed": "",
-                                    "sub_fields": [
-                                        {
-                                            "key": "field_57dc43ad5361c",
-                                            "label": "Read More Link URL",
-                                            "name": "testimonials_tertiary_callout_url",
-                                            "type": "text",
-                                            "instructions": "",
-                                            "required": 1,
-                                            "conditional_logic": 0,
-                                            "wrapper": {
-                                                "width": "",
-                                                "class": "",
-                                                "id": ""
-                                            },
-                                            "default_value": "",
-                                            "placeholder": "",
-                                            "prepend": "",
-                                            "append": "",
-                                            "maxlength": ""
-                                        },
-                                        {
-                                            "key": "field_57dc43e45361d",
-                                            "label": "Read More Link Text",
-                                            "name": "testimonials_tertiary_callout_text",
-                                            "type": "text",
-                                            "instructions": "",
-                                            "required": 1,
-                                            "conditional_logic": 0,
-                                            "wrapper": {
-                                                "width": "",
-                                                "class": "",
-                                                "id": ""
-                                            },
-                                            "default_value": "",
-                                            "placeholder": "",
-                                            "prepend": "",
-                                            "append": "",
-                                            "maxlength": ""
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                {
                     "key": "56686b12d1851",
                     "name": "bios",
                     "label": "Bios",
@@ -639,11 +127,11 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "collapsed": "",
                             "min": 0,
                             "max": 0,
                             "layout": "row",
                             "button_label": "Add Bio",
-                            "collapsed": "",
                             "sub_fields": [
                                 {
                                     "key": "field_5695691de66be",
@@ -714,7 +202,7 @@
                                     "label": "Link URL",
                                     "name": "bios_link_url",
                                     "type": "text",
-                                    "instructions": "LinkedIn profile or the like. ",
+                                    "instructions": "LinkedIn profile or the like.",
                                     "required": 1,
                                     "conditional_logic": 0,
                                     "wrapper": {
@@ -726,257 +214,15 @@
                                     "placeholder": "",
                                     "prepend": "",
                                     "append": "",
-                                    "maxlength": "",
-                                    "readonly": 0,
-                                    "disabled": 0
-                                }
-                            ]
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                {
-                    "key": "56718d8c90609",
-                    "name": "slanted_map",
-                    "label": "Slanted Map",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5808f21099aa1",
-                            "label": "Section ID",
-                            "name": "slanted_map_id",
-                            "type": "text",
-                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_56718de19060b",
-                            "label": "Background Color",
-                            "name": "slanted_map_bg_color",
-                            "type": "select",
-                            "instructions": "",
-                            "required": 1,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "mapBackgroundWhite": "White",
-                                "mapBackgroundGrey": "Grey"
-                            },
-                            "default_value": [],
-                            "allow_null": 0,
-                            "multiple": 0,
-                            "ui": 0,
-                            "ajax": 0,
-                            "return_format": "value",
-                            "placeholder": ""
-                        },
-                        {
-                            "key": "field_56718f689060c",
-                            "label": "Background Left\/Right Position",
-                            "name": "slanted_map_bg_position",
-                            "type": "select",
-                            "instructions": "Aligns the map background to the left or right. The foreground image will automatically fix to the direction of the map background.",
-                            "required": 1,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "mapBackgroundLeft": "Left",
-                                "mapBackgroundRight": "Right"
-                            },
-                            "default_value": [],
-                            "allow_null": 0,
-                            "multiple": 0,
-                            "ui": 0,
-                            "ajax": 0,
-                            "placeholder": "",
-                            "disabled": 0,
-                            "readonly": 0,
-                            "return_format": "value"
-                        },
-                        {
-                            "key": "field_567191189060e",
-                            "label": "Image",
-                            "name": "slanted_map_image",
-                            "type": "image",
-                            "instructions": "",
-                            "required": 1,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "array",
-                            "preview_size": "medium",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": ""
-                        },
-                        {
-                            "key": "field_56718fd89060d",
-                            "label": "Image Middle\/Bottom Alignment",
-                            "name": "slanted_map_image_vertical_alignment",
-                            "type": "select",
-                            "instructions": "Aligning \"Middle\" will make the foreground image fix to the vertical middle of its container.\r\nAligning \"Bottom\" will make the foreground image fix to the bottom of its container.",
-                            "required": 1,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "alignmentMiddle": "Middle",
-                                "alignmentBottom": "Bottom"
-                            },
-                            "default_value": [],
-                            "allow_null": 0,
-                            "multiple": 0,
-                            "ui": 0,
-                            "ajax": 0,
-                            "placeholder": "",
-                            "disabled": 0,
-                            "readonly": 0,
-                            "return_format": "value"
-                        },
-                        {
-                            "key": "field_568ec012a8653",
-                            "label": "Image Center\/Left\/Right Alignment",
-                            "name": "slanted_map_image_horizontal_alignment",
-                            "type": "select",
-                            "instructions": "Aligning \"Center\" will make the foreground image float in the center of its container.\r\nAligning \"Left\" will make the foreground image float to the left of its container.\r\nAligning \"Right\" will make the foreground image float to the right of its container.",
-                            "required": 1,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "alignmentCenter": "Center",
-                                "alignmentLeft": "Left",
-                                "alignmentRight": "Right"
-                            },
-                            "default_value": [],
-                            "allow_null": 0,
-                            "multiple": 0,
-                            "ui": 0,
-                            "ajax": 0,
-                            "placeholder": "",
-                            "disabled": 0,
-                            "readonly": 0,
-                            "return_format": "value"
-                        },
-                        {
-                            "key": "field_567191fb9060f",
-                            "label": "Copy Intro Text",
-                            "name": "slanted_map_copy_intro",
-                            "type": "text",
-                            "instructions": "Optional.",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": ""
-                        },
-                        {
-                            "key": "field_568fe5c7aecc2",
-                            "label": "Copy Block Text",
-                            "name": "slanted_map_copy_block_text",
-                            "type": "wysiwyg",
-                            "instructions": "Use only \"Heading 6\" for adding a title to a block of text.",
-                            "required": 1,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "tabs": "all",
-                            "toolbar": "basic",
-                            "media_upload": 0,
-                            "default_value": "",
-                            "delay": 0
-                        },
-                        {
-                            "key": "field_5671930b90613",
-                            "label": "CTA",
-                            "name": "slanted_map_copy_cta",
-                            "type": "repeater",
-                            "instructions": "Optional",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "min": 0,
-                            "max": 1,
-                            "layout": "table",
-                            "button_label": "Add CTA",
-                            "collapsed": "",
-                            "sub_fields": [
-                                {
-                                    "key": "field_5671932890614",
-                                    "label": "CTA URL",
-                                    "name": "slanted_map_copy_cta_url",
-                                    "type": "text",
-                                    "instructions": "",
-                                    "required": 1,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": "",
-                                    "readonly": 0,
-                                    "disabled": 0
+                                    "maxlength": ""
                                 },
                                 {
-                                    "key": "field_56957412a7bfd",
-                                    "label": "CTA Text",
-                                    "name": "slanted_map_copy_cta_text",
+                                    "key": "field_58af595725512",
+                                    "label": "Link onclick Event",
+                                    "name": "bios_link_onclick",
                                     "type": "text",
-                                    "instructions": "",
-                                    "required": 1,
+                                    "instructions": "Optional. Input only the contents between the onclick attribute parenthesis (onclick=\"\"). Example input: goog_report_conversion ('http:\/\/example.com\/your-link')",
+                                    "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
                                         "width": "",
@@ -987,9 +233,7 @@
                                     "placeholder": "",
                                     "prepend": "",
                                     "append": "",
-                                    "maxlength": "",
-                                    "readonly": 0,
-                                    "disabled": 0
+                                    "maxlength": ""
                                 }
                             ]
                         }
@@ -1208,154 +452,14 @@
                                     "maxlength": "",
                                     "readonly": 0,
                                     "disabled": 0
-                                }
-                            ]
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                {
-                    "key": "56abca960ad6a",
-                    "name": "press",
-                    "label": "Press Strip",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5808f39306870",
-                            "label": "Section ID",
-                            "name": "press_id",
-                            "type": "text",
-                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                {
-                    "key": "5762e53bd67c9",
-                    "name": "intro_slide",
-                    "label": "Intro Slide",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5808f414a4afc",
-                            "label": "Section ID",
-                            "name": "intro_slide_id",
-                            "type": "text",
-                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_5762e54dd67ca",
-                            "label": "Headline",
-                            "name": "intro_slide_head",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 1,
-                            "conditional_logic": "",
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": "",
-                            "readonly": 0,
-                            "disabled": 0
-                        },
-                        {
-                            "key": "field_5762e566d67cb",
-                            "label": "Text",
-                            "name": "intro_slide_subhead",
-                            "type": "wysiwyg",
-                            "instructions": "",
-                            "required": 1,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "tabs": "all",
-                            "toolbar": "basic",
-                            "media_upload": 0,
-                            "default_value": "",
-                            "delay": 0
-                        },
-                        {
-                            "key": "field_5762e5a0d67cc",
-                            "label": "CTA",
-                            "name": "intro_slide_cta",
-                            "type": "repeater",
-                            "instructions": "Optional.",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "min": 0,
-                            "max": 1,
-                            "layout": "table",
-                            "button_label": "Add CTA",
-                            "collapsed": "",
-                            "sub_fields": [
-                                {
-                                    "key": "field_5762e5c3d67cd",
-                                    "label": "CTA URL",
-                                    "name": "intro_slide_cta_url",
-                                    "type": "text",
-                                    "instructions": "",
-                                    "required": 1,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": "",
-                                    "readonly": 0,
-                                    "disabled": 0
                                 },
                                 {
-                                    "key": "field_5762e5d6d67ce",
-                                    "label": "CTA Text",
-                                    "name": "intro_slide_cta_text",
+                                    "key": "field_58af59b13a721",
+                                    "label": "Link onclick Event",
+                                    "name": "contact_link_onclick",
                                     "type": "text",
-                                    "instructions": "",
-                                    "required": 1,
+                                    "instructions": "Optional. Input only the contents between the onclick attribute parenthesis (onclick=\"\"). Example input: goog_report_conversion ('http:\/\/example.com\/your-link')",
+                                    "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
                                         "width": "",
@@ -1366,18 +470,45 @@
                                     "placeholder": "",
                                     "prepend": "",
                                     "append": "",
-                                    "maxlength": "",
-                                    "readonly": 0,
-                                    "disabled": 0
+                                    "maxlength": ""
                                 }
                             ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "58a754450f55d",
+                    "name": "dual_image",
+                    "label": "Dual Image",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_58a754610f55e",
+                            "label": "Section ID",
+                            "name": "dual_image_id",
+                            "type": "text",
+                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
                         },
                         {
-                            "key": "field_5762e603d67cf",
-                            "label": "Slide",
-                            "name": "intro_slide_slide",
-                            "type": "repeater",
-                            "instructions": "Add up to 4 image slides. Adding more than 1 image will automatically initiate a slideshow animation.",
+                            "key": "field_58a7549c0f55f",
+                            "label": "Background Color",
+                            "name": "dual_image_background_color",
+                            "type": "select",
+                            "instructions": "",
                             "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -1385,19 +516,83 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "min": 1,
-                            "max": 4,
-                            "layout": "table",
-                            "button_label": "Add Slide",
+                            "choices": {
+                                "sectionWhite": "White",
+                                "sectionGrey": "Grey",
+                                "sectionNavy": "Navy"
+                            },
+                            "default_value": [],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_58a754e20f560",
+                            "label": "Intro",
+                            "name": "dual_image_intro",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_58a7551e0f561",
+                            "label": "Sub Intro",
+                            "name": "dual_image_intro_sub",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_58a7553b0f562",
+                            "label": "Image Blocks",
+                            "name": "dual_image_block",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
                             "collapsed": "",
+                            "min": 2,
+                            "max": 2,
+                            "layout": "table",
+                            "button_label": "Add Image Block",
                             "sub_fields": [
                                 {
-                                    "key": "field_5762e62dd67d0",
-                                    "label": "Image",
-                                    "name": "intro_slide_slide_image",
+                                    "key": "field_58a7566e0f563",
+                                    "label": "Images",
+                                    "name": "dual_image_image",
                                     "type": "image",
-                                    "instructions": "Slide show image must be at least 780px wide! Background white space needs to be included in the minimum 780px wide image for the transition animation to perform properly.",
-                                    "required": 1,
+                                    "instructions": "",
+                                    "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
                                         "width": "",
@@ -1407,7 +602,7 @@
                                     "return_format": "array",
                                     "preview_size": "medium",
                                     "library": "all",
-                                    "min_width": 780,
+                                    "min_width": "",
                                     "min_height": "",
                                     "min_size": "",
                                     "max_width": "",
@@ -1416,6 +611,78 @@
                                     "mime_types": ""
                                 }
                             ]
+                        },
+                        {
+                            "key": "field_58a75a4b4dd9f",
+                            "label": "Caption",
+                            "name": "dual_image_caption",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "basic",
+                            "media_upload": 0,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "565e11955dc75",
+                    "name": "full_width_image",
+                    "label": "Full Width Image",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5808f0faa8e32",
+                            "label": "Section ID",
+                            "name": "full_width_image_id",
+                            "type": "text",
+                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_565e11a15dc76",
+                            "label": "Image",
+                            "name": "full_width_image_image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
                         }
                     ],
                     "min": "",
@@ -1574,15 +841,15 @@
                     "max": ""
                 },
                 {
-                    "key": "5762f6f030e67",
-                    "name": "video",
-                    "label": "Video",
+                    "key": "5762e53bd67c9",
+                    "name": "intro_slide",
+                    "label": "Intro Slide",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5808f4fb84df8",
+                            "key": "field_5808f414a4afc",
                             "label": "Section ID",
-                            "name": "video_id",
+                            "name": "intro_slide_id",
                             "type": "text",
                             "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
                             "required": 0,
@@ -1599,9 +866,9 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5762f75b30e68",
-                            "label": "Intro Text",
-                            "name": "video_intro",
+                            "key": "field_5762e54dd67ca",
+                            "label": "Headline",
+                            "name": "intro_slide_head",
                             "type": "text",
                             "instructions": "",
                             "required": 1,
@@ -1620,55 +887,10 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_5762f78430e69",
-                            "label": "Intro Sub Text",
-                            "name": "video_intro_sub",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": "",
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": "",
-                            "readonly": 0,
-                            "disabled": 0
-                        },
-                        {
-                            "key": "field_5762f80f30e6a",
-                            "label": "Poster Image",
-                            "name": "video_poster",
-                            "type": "image",
-                            "instructions": "",
-                            "required": 1,
-                            "conditional_logic": "",
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "array",
-                            "preview_size": "medium",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": ""
-                        },
-                        {
-                            "key": "field_5762f87130e6b",
-                            "label": "YouTube ID",
-                            "name": "youtube_id",
-                            "type": "text",
+                            "key": "field_5762e566d67cb",
+                            "label": "Text",
+                            "name": "intro_slide_subhead",
+                            "type": "wysiwyg",
                             "instructions": "",
                             "required": 1,
                             "conditional_logic": 0,
@@ -1677,18 +899,16 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "tabs": "all",
+                            "toolbar": "basic",
+                            "media_upload": 0,
                             "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": "",
-                            "readonly": 0,
-                            "disabled": 0
+                            "delay": 0
                         },
                         {
-                            "key": "field_5762f89c30e6c",
+                            "key": "field_5762e5a0d67cc",
                             "label": "CTA",
-                            "name": "video_cta",
+                            "name": "intro_slide_cta",
                             "type": "repeater",
                             "instructions": "Optional.",
                             "required": 0,
@@ -1698,16 +918,16 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "collapsed": "",
                             "min": 0,
-                            "max": 0,
+                            "max": 1,
                             "layout": "table",
                             "button_label": "Add CTA",
-                            "collapsed": "",
                             "sub_fields": [
                                 {
-                                    "key": "field_5762f8bb30e6d",
+                                    "key": "field_5762e5c3d67cd",
                                     "label": "CTA URL",
-                                    "name": "video_cta_url",
+                                    "name": "intro_slide_cta_url",
                                     "type": "text",
                                     "instructions": "",
                                     "required": 1,
@@ -1726,9 +946,9 @@
                                     "disabled": 0
                                 },
                                 {
-                                    "key": "field_5762f8d430e6e",
+                                    "key": "field_5762e5d6d67ce",
                                     "label": "CTA Text",
-                                    "name": "video_cta_text",
+                                    "name": "intro_slide_cta_text",
                                     "type": "text",
                                     "instructions": "",
                                     "required": 1,
@@ -1745,95 +965,14 @@
                                     "maxlength": "",
                                     "readonly": 0,
                                     "disabled": 0
-                                }
-                            ]
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                {
-                    "key": "57dc3caba9b35",
-                    "name": "value_props",
-                    "label": "Value Props",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5808f5560e025",
-                            "label": "Section ID",
-                            "name": "value_props_id",
-                            "type": "text",
-                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_57e2aed8560b2",
-                            "label": "Item",
-                            "name": "value_props_item",
-                            "type": "repeater",
-                            "instructions": "",
-                            "required": 1,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "min": 1,
-                            "max": 4,
-                            "layout": "table",
-                            "button_label": "Add Value Prop",
-                            "collapsed": "",
-                            "sub_fields": [
-                                {
-                                    "key": "field_57e2af03560b3",
-                                    "label": "Icon",
-                                    "name": "value_props_icon",
-                                    "type": "select",
-                                    "instructions": "",
-                                    "required": 1,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "choices": {
-                                        "icon_circledcheck": "Circled Check",
-                                        "icon_circleddiagonalarrow": "Circled Diagonal Arrow",
-                                        "icon_creditcard": "Credit Card",
-                                        "icon_shieldcheck": "Shield Check",
-                                        "icon_desktop": "Desktop",
-                                        "icon_frontfacingtruck": "Front Facing Truck",
-                                        "icon_newspaper": "Newspaper",
-                                        "icon_rotatingarrows": "Rotating Arrows"
-                                    },
-                                    "default_value": [],
-                                    "allow_null": 0,
-                                    "multiple": 0,
-                                    "ui": 0,
-                                    "ajax": 0,
-                                    "return_format": "value",
-                                    "placeholder": ""
                                 },
                                 {
-                                    "key": "field_57e2b020560b4",
-                                    "label": "Title",
-                                    "name": "value_props_item_title",
+                                    "key": "field_58af5a7f8be15",
+                                    "label": "CTA onclick Event",
+                                    "name": "intro_slide_cta_onclick",
                                     "type": "text",
-                                    "instructions": "",
-                                    "required": 1,
+                                    "instructions": "Optional. Input only the contents between the onclick attribute parenthesis (onclick=\"\"). Example input: goog_report_conversion ('http:\/\/example.com\/your-link')",
+                                    "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
                                         "width": "",
@@ -1845,44 +984,51 @@
                                     "prepend": "",
                                     "append": "",
                                     "maxlength": ""
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_5762e603d67cf",
+                            "label": "Slide",
+                            "name": "intro_slide_slide",
+                            "type": "repeater",
+                            "instructions": "Add up to 4 image slides. Adding more than 1 image will automatically initiate a slideshow animation.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "min": 1,
+                            "max": 4,
+                            "layout": "table",
+                            "button_label": "Add Slide",
+                            "collapsed": "",
+                            "sub_fields": [
                                 {
-                                    "key": "field_57e2b038560b5",
-                                    "label": "Link URL",
-                                    "name": "value_props_item_link_url",
-                                    "type": "text",
-                                    "instructions": "Optional.",
-                                    "required": 0,
+                                    "key": "field_5762e62dd67d0",
+                                    "label": "Image",
+                                    "name": "intro_slide_slide_image",
+                                    "type": "image",
+                                    "instructions": "Slide show image must be at least 780px wide! Background white space needs to be included in the minimum 780px wide image for the transition animation to perform properly.",
+                                    "required": 1,
                                     "conditional_logic": 0,
                                     "wrapper": {
                                         "width": "",
                                         "class": "",
                                         "id": ""
                                     },
-                                    "default_value": "",
-                                    "maxlength": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": ""
-                                },
-                                {
-                                    "key": "field_57e2b050560b6",
-                                    "label": "Link Text",
-                                    "name": "value_props_item_link_text",
-                                    "type": "text",
-                                    "instructions": "Optional.",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "maxlength": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": ""
+                                    "return_format": "array",
+                                    "preview_size": "medium",
+                                    "library": "all",
+                                    "min_width": 780,
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
                                 }
                             ]
                         }
@@ -1992,11 +1138,11 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "collapsed": "",
                             "min": 1,
                             "max": 3,
                             "layout": "table",
                             "button_label": "Add Link",
-                            "collapsed": "",
                             "sub_fields": [
                                 {
                                     "key": "field_5808dd0526464",
@@ -2043,6 +1189,25 @@
                                     "type": "text",
                                     "instructions": "",
                                     "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_58af5afe77451",
+                                    "label": "Link onclick Event",
+                                    "name": "link_row_content_onclick",
+                                    "type": "text",
+                                    "instructions": "Optional. Input only the contents between the onclick attribute parenthesis (onclick=\"\"). Example input: goog_report_conversion ('http:\/\/example.com\/your-link')",
+                                    "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
                                         "width": "",
@@ -2128,6 +1293,1038 @@
                             "max_height": "",
                             "max_size": "",
                             "mime_types": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "565c98ac9cd15",
+                    "name": "long_form_content",
+                    "label": "Long Form Content",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5808e23e796bb",
+                            "label": "Section ID",
+                            "name": "long_form_content_id",
+                            "type": "text",
+                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_565c98fa9cd16",
+                            "label": "Content",
+                            "name": "long_form_content_content",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "min": 0,
+                            "max": 0,
+                            "layout": "table",
+                            "button_label": "Add Long Form Text Block",
+                            "collapsed": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_565cb4ad2fb53",
+                                    "label": "Text Block",
+                                    "name": "long_form_content_text",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "tabs": "all",
+                                    "toolbar": "basic",
+                                    "media_upload": 0,
+                                    "default_value": "",
+                                    "delay": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "56abca960ad6a",
+                    "name": "press",
+                    "label": "Press Strip",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5808f39306870",
+                            "label": "Section ID",
+                            "name": "press_id",
+                            "type": "text",
+                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "56718d8c90609",
+                    "name": "slanted_map",
+                    "label": "Slanted Map",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5808f21099aa1",
+                            "label": "Section ID",
+                            "name": "slanted_map_id",
+                            "type": "text",
+                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_56718de19060b",
+                            "label": "Background Color",
+                            "name": "slanted_map_bg_color",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "mapBackgroundWhite": "White",
+                                "mapBackgroundGrey": "Grey"
+                            },
+                            "default_value": [],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_56718f689060c",
+                            "label": "Background Left\/Right Position",
+                            "name": "slanted_map_bg_position",
+                            "type": "select",
+                            "instructions": "Aligns the map background to the left or right. The foreground image will automatically fix to the direction of the map background.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "mapBackgroundLeft": "Left",
+                                "mapBackgroundRight": "Right"
+                            },
+                            "default_value": [],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "disabled": 0,
+                            "readonly": 0,
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_567191189060e",
+                            "label": "Image",
+                            "name": "slanted_map_image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_56718fd89060d",
+                            "label": "Image Middle\/Bottom Alignment",
+                            "name": "slanted_map_image_vertical_alignment",
+                            "type": "select",
+                            "instructions": "Aligning \"Middle\" will make the foreground image fix to the vertical middle of its container.\r\nAligning \"Bottom\" will make the foreground image fix to the bottom of its container.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "alignmentMiddle": "Middle",
+                                "alignmentBottom": "Bottom"
+                            },
+                            "default_value": [],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "disabled": 0,
+                            "readonly": 0,
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_568ec012a8653",
+                            "label": "Image Center\/Left\/Right Alignment",
+                            "name": "slanted_map_image_horizontal_alignment",
+                            "type": "select",
+                            "instructions": "Aligning \"Center\" will make the foreground image float in the center of its container.\r\nAligning \"Left\" will make the foreground image float to the left of its container.\r\nAligning \"Right\" will make the foreground image float to the right of its container.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "alignmentCenter": "Center",
+                                "alignmentLeft": "Left",
+                                "alignmentRight": "Right"
+                            },
+                            "default_value": [],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "disabled": 0,
+                            "readonly": 0,
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_567191fb9060f",
+                            "label": "Copy Intro Text",
+                            "name": "slanted_map_copy_intro",
+                            "type": "text",
+                            "instructions": "Optional.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_568fe5c7aecc2",
+                            "label": "Copy Block Text",
+                            "name": "slanted_map_copy_block_text",
+                            "type": "wysiwyg",
+                            "instructions": "Use only \"Heading 6\" for adding a title to a block of text.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "tabs": "all",
+                            "toolbar": "basic",
+                            "media_upload": 0,
+                            "default_value": "",
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5671930b90613",
+                            "label": "CTA",
+                            "name": "slanted_map_copy_cta",
+                            "type": "repeater",
+                            "instructions": "Optional",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 1,
+                            "layout": "table",
+                            "button_label": "Add CTA",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5671932890614",
+                                    "label": "CTA URL",
+                                    "name": "slanted_map_copy_cta_url",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": "",
+                                    "readonly": 0,
+                                    "disabled": 0
+                                },
+                                {
+                                    "key": "field_56957412a7bfd",
+                                    "label": "CTA Text",
+                                    "name": "slanted_map_copy_cta_text",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": "",
+                                    "readonly": 0,
+                                    "disabled": 0
+                                },
+                                {
+                                    "key": "field_58af5ba911642",
+                                    "label": "CTA onclick Event",
+                                    "name": "slanted_map_copy_cta_onclick",
+                                    "type": "text",
+                                    "instructions": "Optional. Input only the contents between the onclick attribute parenthesis (onclick=\"\"). Example input: goog_report_conversion ('http:\/\/example.com\/your-link')",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "565e0ce12706e",
+                    "name": "strip_copy_callout",
+                    "label": "Strip Copy Callout",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5808ee00c927b",
+                            "label": "Section ID",
+                            "name": "strip_copy_callout_id",
+                            "type": "text",
+                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5668688ed6d0c",
+                            "label": "Background Color",
+                            "name": "strip_copy_callout_background_color",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "sectionWhite": "White",
+                                "sectionGrey": "Grey",
+                                "sectionNavy": "Navy"
+                            },
+                            "default_value": [],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "disabled": 0,
+                            "readonly": 0,
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_565e0cee2706f",
+                            "label": "Text",
+                            "name": "strip_copy_callout_text",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "565e250915b68",
+                    "name": "strip_data_callout",
+                    "label": "Strip Data Callout",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5808efcf20b76",
+                            "label": "Section ID",
+                            "name": "strip_data_callout_id",
+                            "type": "text",
+                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_565e252b15b69",
+                            "label": "Content",
+                            "name": "strip_data_callout_content",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 1,
+                            "max": 3,
+                            "layout": "table",
+                            "button_label": "Add Data Item",
+                            "sub_fields": [
+                                {
+                                    "key": "field_569555a709ba6",
+                                    "label": "Data Value",
+                                    "name": "strip_data_callout_block_value",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": "",
+                                    "readonly": 0,
+                                    "disabled": 0
+                                },
+                                {
+                                    "key": "field_569555ee09ba7",
+                                    "label": "Data Caption",
+                                    "name": "strip_data_callout_block_caption",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": "",
+                                    "readonly": 0,
+                                    "disabled": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "5667355e4de9d",
+                    "name": "testimonials",
+                    "label": "Testimonials",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5808f16c75162",
+                            "label": "Section ID",
+                            "name": "testimonials_id",
+                            "type": "text",
+                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_56673f4530fe7",
+                            "label": "Background Color",
+                            "name": "testimonials_background_color",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "sectionWhite": "White",
+                                "sectionGrey": "Grey",
+                                "sectionNavy": "Navy"
+                            },
+                            "default_value": [],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "disabled": 0,
+                            "readonly": 0,
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_566735744de9e",
+                            "label": "Intro Text",
+                            "name": "testimonials_intro",
+                            "type": "text",
+                            "instructions": "Optional.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_5696eab9b7639",
+                            "label": "Intro Sub Text",
+                            "name": "testimonials_intro_sub",
+                            "type": "text",
+                            "instructions": "Optional.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_566735b44de9f",
+                            "label": "Content",
+                            "name": "testimonials_content",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 2,
+                            "max": 2,
+                            "layout": "row",
+                            "button_label": "Add Testimonial",
+                            "sub_fields": [
+                                {
+                                    "key": "field_56955da1c5398",
+                                    "label": "Image",
+                                    "name": "testimonials_image",
+                                    "type": "image",
+                                    "instructions": "Optional. Minimum width: 380px. Minimum height: 254px.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "medium",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                },
+                                {
+                                    "key": "field_56955df4c5399",
+                                    "label": "Text",
+                                    "name": "testimonials_text",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "tabs": "all",
+                                    "toolbar": "basic",
+                                    "media_upload": 0,
+                                    "default_value": "",
+                                    "delay": 0
+                                },
+                                {
+                                    "key": "field_57dc437a5361b",
+                                    "label": "Read More Link",
+                                    "name": "testimonials_tertiary_callout",
+                                    "type": "repeater",
+                                    "instructions": "Optional.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "collapsed": "",
+                                    "min": 0,
+                                    "max": 1,
+                                    "layout": "table",
+                                    "button_label": "Add Read More Link",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_57dc43ad5361c",
+                                            "label": "Read More Link URL",
+                                            "name": "testimonials_tertiary_callout_url",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 1,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        },
+                                        {
+                                            "key": "field_57dc43e45361d",
+                                            "label": "Read More Link Text",
+                                            "name": "testimonials_tertiary_callout_text",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 1,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        },
+                                        {
+                                            "key": "field_58af5c68d67fa",
+                                            "label": "Read More Link onclick Event",
+                                            "name": "testimonials_tertiary_callout_onclick",
+                                            "type": "text",
+                                            "instructions": "Optional. Input only the contents between the onclick attribute parenthesis (onclick=\"\"). Example input: goog_report_conversion ('http:\/\/example.com\/your-link')",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "58419d21e7e56",
+                    "name": "text_block",
+                    "label": "Text Block",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_58419d28e7e57",
+                            "label": "Section ID",
+                            "name": "text_block_id",
+                            "type": "text",
+                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_58419d4ce7e58",
+                            "label": "Background Color",
+                            "name": "text_block_background_color",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "sectionWhite": "White",
+                                "sectionGrey": "Grey",
+                                "sectionNavy": "Navy"
+                            },
+                            "default_value": [],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_58419d7ce7e59",
+                            "label": "Intro",
+                            "name": "text_block_intro",
+                            "type": "text",
+                            "instructions": "Optional.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_58419d96e7e5a",
+                            "label": "Content",
+                            "name": "text_block_content",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "basic",
+                            "media_upload": 0,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "58407e370f9e4",
+                    "name": "text_columns",
+                    "label": "Text Columns",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_58407e4a0f9e5",
+                            "label": "Section ID",
+                            "name": "text_columns_id",
+                            "type": "text",
+                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_58407e9b5563c",
+                            "label": "Background Color",
+                            "name": "text_columns_background_color",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "choices": {
+                                "sectionWhite": "White",
+                                "sectionGrey": "Grey",
+                                "sectionNavy": "Navy"
+                            },
+                            "default_value": [],
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_58407f3209fd3",
+                            "label": "Intro",
+                            "name": "text_columns_intro",
+                            "type": "text",
+                            "instructions": "Optional.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_58407f4a09fd4",
+                            "label": "Sub Intro",
+                            "name": "text_columns_intro_sub",
+                            "type": "text",
+                            "instructions": "Optional.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_58407f6209fd5",
+                            "label": "Column Item",
+                            "name": "text_columns_item",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 2,
+                            "max": 0,
+                            "layout": "row",
+                            "button_label": "Add Text Column",
+                            "sub_fields": [
+                                {
+                                    "key": "field_58407f8809fd6",
+                                    "label": "Item Title",
+                                    "name": "text_columns_item_title",
+                                    "type": "text",
+                                    "instructions": "Optional.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": ""
+                                },
+                                {
+                                    "key": "field_58407fa309fd7",
+                                    "label": "Item Content",
+                                    "name": "text_columns_item_content",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "tabs": "all",
+                                    "toolbar": "basic",
+                                    "media_upload": 0,
+                                    "default_value": "",
+                                    "delay": 0
+                                }
+                            ]
                         }
                     ],
                     "min": "",
@@ -2290,7 +2487,7 @@
                                     "name": "thumbnail_grid_button_type",
                                     "type": "select",
                                     "instructions": "",
-                                    "required": 1,
+                                    "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
                                         "width": "",
@@ -2298,12 +2495,11 @@
                                         "id": ""
                                     },
                                     "choices": {
-                                        "selectbuttontype": "Select Button Type",
-                                        "standardlink": "Standard Link",
-                                        "videomodal": "Video Modal"
+                                        "standard_link": "Standard Link",
+                                        "video_modal": "Video Modal"
                                     },
                                     "default_value": [],
-                                    "allow_null": 0,
+                                    "allow_null": 1,
                                     "multiple": 0,
                                     "ui": 0,
                                     "ajax": 0,
@@ -2322,7 +2518,7 @@
                                             {
                                                 "field": "field_582635bd5b190",
                                                 "operator": "==",
-                                                "value": "standardlink"
+                                                "value": "standard_link"
                                             }
                                         ]
                                     ],
@@ -2331,11 +2527,11 @@
                                         "class": "",
                                         "id": ""
                                     },
+                                    "collapsed": "",
                                     "min": 1,
                                     "max": 1,
                                     "layout": "table",
                                     "button_label": "Add Link",
-                                    "collapsed": "",
                                     "sub_fields": [
                                         {
                                             "key": "field_58261abea372c",
@@ -2374,6 +2570,25 @@
                                             "prepend": "",
                                             "append": "",
                                             "maxlength": ""
+                                        },
+                                        {
+                                            "key": "field_58af60fba54a7",
+                                            "label": "Link onclick Event",
+                                            "name": "thumbnail_grid_tertiary_callout_onclick",
+                                            "type": "text",
+                                            "instructions": "Optional. Input only the contents between the onclick attribute parenthesis (onclick=\"\"). Example input: goog_report_conversion ('http:\/\/example.com\/your-link')",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
                                         }
                                     ]
                                 },
@@ -2389,7 +2604,7 @@
                                             {
                                                 "field": "field_582635bd5b190",
                                                 "operator": "==",
-                                                "value": "videomodal"
+                                                "value": "video_modal"
                                             }
                                         ]
                                     ],
@@ -2398,11 +2613,11 @@
                                         "class": "",
                                         "id": ""
                                     },
+                                    "collapsed": "",
                                     "min": 1,
                                     "max": 1,
                                     "layout": "table",
                                     "button_label": "Add Video Modal",
-                                    "collapsed": "",
                                     "sub_fields": [
                                         {
                                             "key": "field_5826377b5da39",
@@ -2441,6 +2656,25 @@
                                             "prepend": "",
                                             "append": "",
                                             "maxlength": ""
+                                        },
+                                        {
+                                            "key": "field_58af611fa54a8",
+                                            "label": "Video Button onclick Event",
+                                            "name": "thumbnail_grid_video_modal_onclick",
+                                            "type": "text",
+                                            "instructions": "Optional. Input only the contents between the onclick attribute parenthesis (onclick=\"\"). Example input: goog_report_conversion ('http:\/\/example.com\/your-link')",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
                                         }
                                     ]
                                 }
@@ -2451,15 +2685,15 @@
                     "max": ""
                 },
                 {
-                    "key": "58407e370f9e4",
-                    "name": "text_columns",
-                    "label": "Text Columns",
+                    "key": "57dc3caba9b35",
+                    "name": "value_props",
+                    "label": "Value Props",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_58407e4a0f9e5",
+                            "key": "field_5808f5560e025",
                             "label": "Section ID",
-                            "name": "text_columns_id",
+                            "name": "value_props_id",
                             "type": "text",
                             "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
                             "required": 0,
@@ -2470,79 +2704,15 @@
                                 "id": ""
                             },
                             "default_value": "",
-                            "maxlength": "",
                             "placeholder": "",
                             "prepend": "",
-                            "append": ""
+                            "append": "",
+                            "maxlength": ""
                         },
                         {
-                            "key": "field_58407e9b5563c",
-                            "label": "Background Color",
-                            "name": "text_columns_background_color",
-                            "type": "select",
-                            "instructions": "",
-                            "required": 1,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "multiple": 0,
-                            "allow_null": 0,
-                            "choices": {
-                                "sectionWhite": "White",
-                                "sectionGrey": "Grey",
-                                "sectionNavy": "Navy"
-                            },
-                            "default_value": [],
-                            "ui": 0,
-                            "ajax": 0,
-                            "placeholder": "",
-                            "return_format": "value"
-                        },
-                        {
-                            "key": "field_58407f3209fd3",
-                            "label": "Intro",
-                            "name": "text_columns_intro",
-                            "type": "text",
-                            "instructions": "Optional.",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": ""
-                        },
-                        {
-                            "key": "field_58407f4a09fd4",
-                            "label": "Sub Intro",
-                            "name": "text_columns_intro_sub",
-                            "type": "text",
-                            "instructions": "Optional.",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": ""
-                        },
-                        {
-                            "key": "field_58407f6209fd5",
-                            "label": "Column Item",
-                            "name": "text_columns_item",
+                            "key": "field_57e2aed8560b2",
+                            "label": "Item",
+                            "name": "value_props_item",
                             "type": "repeater",
                             "instructions": "",
                             "required": 1,
@@ -2552,16 +2722,66 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "min": 2,
-                            "max": 0,
-                            "layout": "row",
-                            "button_label": "Add Text Column",
                             "collapsed": "",
+                            "min": 1,
+                            "max": 4,
+                            "layout": "table",
+                            "button_label": "Add Value Prop",
                             "sub_fields": [
                                 {
-                                    "key": "field_58407f8809fd6",
-                                    "label": "Item Title",
-                                    "name": "text_columns_item_title",
+                                    "key": "field_57e2af03560b3",
+                                    "label": "Icon",
+                                    "name": "value_props_icon",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "icon_circledcheck": "Circled Check",
+                                        "icon_circleddiagonalarrow": "Circled Diagonal Arrow",
+                                        "icon_creditcard": "Credit Card",
+                                        "icon_shieldcheck": "Shield Check",
+                                        "icon_desktop": "Desktop",
+                                        "icon_frontfacingtruck": "Front Facing Truck",
+                                        "icon_newspaper": "Newspaper",
+                                        "icon_rotatingarrows": "Rotating Arrows"
+                                    },
+                                    "default_value": [],
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "return_format": "value",
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_57e2b020560b4",
+                                    "label": "Title",
+                                    "name": "value_props_item_title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_57e2b038560b5",
+                                    "label": "Link URL",
+                                    "name": "value_props_item_link_url",
                                     "type": "text",
                                     "instructions": "Optional.",
                                     "required": 0,
@@ -2578,23 +2798,42 @@
                                     "append": ""
                                 },
                                 {
-                                    "key": "field_58407fa309fd7",
-                                    "label": "Item Content",
-                                    "name": "text_columns_item_content",
-                                    "type": "wysiwyg",
-                                    "instructions": "",
-                                    "required": 1,
+                                    "key": "field_57e2b050560b6",
+                                    "label": "Link Text",
+                                    "name": "value_props_item_link_text",
+                                    "type": "text",
+                                    "instructions": "Optional.",
+                                    "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
                                         "width": "",
                                         "class": "",
                                         "id": ""
                                     },
-                                    "tabs": "all",
-                                    "toolbar": "basic",
-                                    "media_upload": 0,
                                     "default_value": "",
-                                    "delay": 0
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": ""
+                                },
+                                {
+                                    "key": "field_58af632462972",
+                                    "label": "Link onclick Event",
+                                    "name": "value_props_item_link_onclick",
+                                    "type": "text",
+                                    "instructions": "Optional. Input only the contents between the onclick attribute parenthesis (onclick=\"\"). Example input: goog_report_conversion ('http:\/\/example.com\/your-link')",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
                                 }
                             ]
                         }
@@ -2603,15 +2842,15 @@
                     "max": ""
                 },
                 {
-                    "key": "58419d21e7e56",
-                    "name": "text_block",
-                    "label": "Text Block",
+                    "key": "5762f6f030e67",
+                    "name": "video",
+                    "label": "Video",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_58419d28e7e57",
+                            "key": "field_5808f4fb84df8",
                             "label": "Section ID",
-                            "name": "text_block_id",
+                            "name": "video_id",
                             "type": "text",
                             "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
                             "required": 0,
@@ -2628,10 +2867,76 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_58419d4ce7e58",
-                            "label": "Background Color",
-                            "name": "text_block_background_color",
-                            "type": "select",
+                            "key": "field_5762f75b30e68",
+                            "label": "Intro Text",
+                            "name": "video_intro",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": "",
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_5762f78430e69",
+                            "label": "Intro Sub Text",
+                            "name": "video_intro_sub",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": "",
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_5762f80f30e6a",
+                            "label": "Poster Image",
+                            "name": "video_poster",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": "",
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_5762f87130e6b",
+                            "label": "YouTube ID",
+                            "name": "youtube_id",
+                            "type": "text",
                             "instructions": "",
                             "required": 1,
                             "conditional_logic": 0,
@@ -2640,24 +2945,19 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "choices": {
-                                "sectionWhite": "White",
-                                "sectionGrey": "Grey",
-                                "sectionNavy": "Navy"
-                            },
-                            "default_value": [],
-                            "allow_null": 0,
-                            "multiple": 0,
-                            "ui": 0,
-                            "ajax": 0,
-                            "return_format": "value",
-                            "placeholder": ""
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
                         },
                         {
-                            "key": "field_58419d7ce7e59",
-                            "label": "Intro",
-                            "name": "text_block_intro",
-                            "type": "text",
+                            "key": "field_5762f89c30e6c",
+                            "label": "CTA",
+                            "name": "video_cta",
+                            "type": "repeater",
                             "instructions": "Optional.",
                             "required": 0,
                             "conditional_logic": 0,
@@ -2666,149 +2966,60 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": ""
-                        },
-                        {
-                            "key": "field_58419d96e7e5a",
-                            "label": "Content",
-                            "name": "text_block_content",
-                            "type": "wysiwyg",
-                            "instructions": "",
-                            "required": 1,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "tabs": "all",
-                            "toolbar": "basic",
-                            "media_upload": 0,
-                            "delay": 0
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                {
-                    "key": "58a754450f55d",
-                    "name": "dual_image",
-                    "label": "Dual Image",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_58a754610f55e",
-                            "label": "Section ID",
-                            "name": "dual_image_id",
-                            "type": "text",
-                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_58a7549c0f55f",
-                            "label": "Background Color",
-                            "name": "dual_image_background_color",
-                            "type": "select",
-                            "instructions": "",
-                            "required": 1,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "sectionWhite": "White",
-                                "sectionGrey": "Grey",
-                                "sectionNavy": "Navy"
-                            },
-                            "default_value": [],
-                            "allow_null": 0,
-                            "multiple": 0,
-                            "ui": 0,
-                            "ajax": 0,
-                            "return_format": "value",
-                            "placeholder": ""
-                        },
-                        {
-                            "key": "field_58a754e20f560",
-                            "label": "Intro",
-                            "name": "dual_image_intro",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_58a7551e0f561",
-                            "label": "Sub Intro",
-                            "name": "dual_image_intro_sub",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_58a7553b0f562",
-                            "label": "Image Blocks",
-                            "name": "dual_image_block",
-                            "type": "repeater",
-                            "instructions": "",
-                            "required": 1,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
                             "collapsed": "",
-                            "min": 2,
-                            "max": 2,
+                            "min": 0,
+                            "max": 0,
                             "layout": "table",
-                            "button_label": "Add Image Block",
+                            "button_label": "Add CTA",
                             "sub_fields": [
                                 {
-                                    "key": "field_58a7566e0f563",
-                                    "label": "Images",
-                                    "name": "dual_image_image",
-                                    "type": "image",
+                                    "key": "field_5762f8bb30e6d",
+                                    "label": "CTA URL",
+                                    "name": "video_cta_url",
+                                    "type": "text",
                                     "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": "",
+                                    "readonly": 0,
+                                    "disabled": 0
+                                },
+                                {
+                                    "key": "field_5762f8d430e6e",
+                                    "label": "CTA Text",
+                                    "name": "video_cta_text",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": "",
+                                    "readonly": 0,
+                                    "disabled": 0
+                                },
+                                {
+                                    "key": "field_58af63cba898f",
+                                    "label": "CTA onclick Event",
+                                    "name": "video_cta_onclick",
+                                    "type": "text",
+                                    "instructions": "Optional. Input only the contents between the onclick attribute parenthesis (onclick=\"\"). Example input: goog_report_conversion ('http:\/\/example.com\/your-link')",
                                     "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
@@ -2816,37 +3027,13 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "return_format": "array",
-                                    "preview_size": "medium",
-                                    "library": "all",
-                                    "min_width": "",
-                                    "min_height": "",
-                                    "min_size": "",
-                                    "max_width": "",
-                                    "max_height": "",
-                                    "max_size": "",
-                                    "mime_types": ""
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
                                 }
                             ]
-                        },
-                        {
-                            "key": "field_58a75a4b4dd9f",
-                            "label": "Caption",
-                            "name": "dual_image_caption",
-                            "type": "wysiwyg",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "tabs": "all",
-                            "toolbar": "basic",
-                            "media_upload": 0,
-                            "delay": 0
                         }
                     ],
                     "min": "",
@@ -2886,5 +3073,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1487791279
+    "modified": 1487889426
 }

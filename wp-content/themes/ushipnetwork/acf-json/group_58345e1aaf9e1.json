@@ -3,80 +3,6 @@
     "title": "Blog Post Custom Fields",
     "fields": [
         {
-            "layouts": [
-                {
-                    "key": "58345f60ce0a2",
-                    "name": "blog_post_entry_footer",
-                    "label": "Entry Footer",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "sub_fields": [
-                                {
-                                    "default_value": "",
-                                    "maxlength": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "key": "field_5834606dda3c2",
-                                    "label": "CTA URL",
-                                    "name": "blog_post_entry_footer_cta_url",
-                                    "type": "text",
-                                    "instructions": "",
-                                    "required": 1,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    }
-                                },
-                                {
-                                    "default_value": "",
-                                    "maxlength": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "key": "field_5834607dda3c3",
-                                    "label": "CTA Text",
-                                    "name": "blog_post_entry_footer_cta_text",
-                                    "type": "text",
-                                    "instructions": "",
-                                    "required": 1,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    }
-                                }
-                            ],
-                            "min": 0,
-                            "max": 1,
-                            "layout": "table",
-                            "button_label": "Add CTA",
-                            "collapsed": "",
-                            "key": "field_58346046da3c1",
-                            "label": "CTA",
-                            "name": "blog_post_entry_footer_cta",
-                            "type": "repeater",
-                            "instructions": "Optional.",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            }
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                }
-            ],
-            "min": "",
-            "max": "",
-            "button_label": "Add Module",
             "key": "field_58345e23c1cc1",
             "label": "Blog Post Content",
             "name": "blog_post_content",
@@ -88,7 +14,100 @@
                 "width": "",
                 "class": "",
                 "id": ""
-            }
+            },
+            "min": "",
+            "max": "",
+            "button_label": "Add Module",
+            "layouts": [
+                {
+                    "key": "58345f60ce0a2",
+                    "name": "blog_post_entry_footer",
+                    "label": "Entry Footer",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_58346046da3c1",
+                            "label": "CTA",
+                            "name": "blog_post_entry_footer_cta",
+                            "type": "repeater",
+                            "instructions": "Optional.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 1,
+                            "layout": "table",
+                            "button_label": "Add CTA",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5834606dda3c2",
+                                    "label": "CTA URL",
+                                    "name": "blog_post_entry_footer_cta_url",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5834607dda3c3",
+                                    "label": "CTA Text",
+                                    "name": "blog_post_entry_footer_cta_text",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_58af57d6eddfc",
+                                    "label": "CTA onclick Event",
+                                    "name": "blog_post_entry_footer_onclick",
+                                    "type": "text",
+                                    "instructions": "Optional. Input only the contents between the onclick attribute parenthesis (onclick=\"\"). Example input: goog_report_conversion ('http:\/\/example.com\/your-link')",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            ]
         }
     ],
     "location": [
@@ -108,5 +127,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1485463958
+    "modified": 1487886339
 }

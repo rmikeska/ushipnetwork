@@ -41,7 +41,7 @@
 		    <?php if (get_row_layout() == 'blog_post_entry_footer'): ?>
 	    		<div class="postCallout-container">
 		    		<?php while(have_rows('blog_post_entry_footer_cta')): the_row(); ?>
-		    			<a class="button buttonPrimary buttonLarge" type="button" aria-label="<?php the_sub_field('blog_post_entry_footer_cta_text'); ?>" href="<?php the_sub_field('blog_post_entry_footer_cta_url'); ?>">
+		    			<a class="button buttonPrimary buttonLarge" type="button" aria-label="<?php the_sub_field('blog_post_entry_footer_cta_text'); ?>" href="<?php the_sub_field('blog_post_entry_footer_cta_url'); ?>" onclick="<?php the_sub_field('blog_post_entry_footer_onclick'); ?>">
 		    				<div class="button-content"><?php the_sub_field('blog_post_entry_footer_cta_text'); ?></div>
 		    			</a>
 		    		<?php endwhile; ?>

@@ -35,7 +35,7 @@
       <?php endwhile; ?>
       <?php if(get_sub_field('bookend_cta_text') && get_sub_field('bookend_cta_url')): ?>
         <div class="bookend-cta">
-          <a class="button buttonPrimary buttonLarge" type="button" aria-label="<?php the_sub_field('bookend_cta_text'); ?>" href="<?php the_sub_field('bookend_cta_url'); ?>">
+          <a class="button buttonPrimary buttonLarge" type="button" aria-label="<?php the_sub_field('bookend_cta_text'); ?>" href="<?php the_sub_field('bookend_cta_url'); ?>" onclick="<?php the_sub_field('bookend_cta_onclick'); ?>">
             <div class="button-content"><?php the_sub_field('bookend_cta_text'); ?></div>
           </a>
         </div>

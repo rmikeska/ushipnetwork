@@ -18,19 +18,22 @@
           <div class="thumbnailGrid-image" style="background-image: url('<?php echo $thumbnail_grid_image_url; ?>');"></div>
         <?php endif; ?>
         <div class="thumbnailGrid-text"><?php the_sub_field('thumbnail_grid_text'); ?></div>
-        <?php while(have_rows('thumbnail_grid_tertiary_callout')): the_row(); ?>
-          <?php $thumbnail_grid_tertiary_url = get_sub_field('thumbnail_grid_tertiary_callout_url'); ?>
-          <a class="tertiaryLink tertiaryLinkDark" type="button" href="<?php echo $thumbnail_grid_tertiary_url; ?>"><?php the_sub_field('thumbnail_grid_tertiary_callout_text'); ?><?php include( get_template_directory() . '/images/arrow_link.svg'); ?></a>
-        <?php endwhile; ?>
-        <?php while(have_rows('thumbnail_grid_video_modal')): the_row(); ?>
-          <?php $video_modal_iframe = get_sub_field('thumbnail_grid_video_modal_iframe'); ?>
-          <div class="modal modalVideo" style="display:none;">
-            <div class="modal-inner">
-              <?php echo $video_modal_iframe; ?>
+        <?php if(get_sub_field('thumbnail_grid_button_type') == 'standard_link'): ?>
+          <?php while(have_rows('thumbnail_grid_tertiary_callout')): the_row(); ?>
+            <?php $thumbnail_grid_tertiary_url = get_sub_field('thumbnail_grid_tertiary_callout_url'); ?>
+            <a class="tertiaryLink tertiaryLinkDark" type="button" href="<?php echo $thumbnail_grid_tertiary_url; ?>" onclick="<?php the_sub_field('thumbnail_grid_tertiary_callout_onclick'); ?>"><?php the_sub_field('thumbnail_grid_tertiary_callout_text'); ?><?php include( get_template_directory() . '/images/arrow_link.svg'); ?></a>
+          <?php endwhile; ?>
+        <?php elseif (get_sub_field('thumbnail_grid_button_type') == 'video_modal'): ?>
+          <?php while(have_rows('thumbnail_grid_video_modal')): the_row(); ?>
+            <?php $video_modal_iframe = get_sub_field('thumbnail_grid_video_modal_iframe'); ?>
+            <div class="modal modalVideo" style="display:none;">
+              <div class="modal-inner">
+                <?php echo $video_modal_iframe; ?>
+              </div>
             </div>
-          </div>
-          <a class="tertiaryLink tertiaryLinkDark thumbnailGrid-modalButton" type="button" rel="modal:open"><?php the_sub_field('thumbnail_grid_video_modal_text'); ?><?php include( get_template_directory() . '/images/arrow_link.svg'); ?></a>
-        <?php endwhile; ?>
+            <a class="tertiaryLink tertiaryLinkDark thumbnailGrid-modalButton" type="button" rel="modal:open" onclick="<?php the_sub_field('thumbnail_grid_video_modal_onclick'); ?>"><?php the_sub_field('thumbnail_grid_video_modal_text'); ?><?php include( get_template_directory() . '/images/arrow_link.svg'); ?></a>
+          <?php endwhile; ?>
+        <?php endif; ?>
       </div>
     <?php endwhile; ?>
     </div>

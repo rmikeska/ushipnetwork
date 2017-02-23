@@ -7,7 +7,7 @@
         </div>
         <div class="valueProps-item-text">
           <h5><?php the_sub_field('value_props_item_title'); ?></h5>
-          <h5><a href="<?php the_sub_field('value_props_item_link_url'); ?>"><?php the_sub_field('value_props_item_link_text'); ?></a></h5>
+          <h5><a href="<?php the_sub_field('value_props_item_link_url'); ?>" onclick="<?php the_sub_field('value_props_item_link_onclick'); ?>"><?php the_sub_field('value_props_item_link_text'); ?></a></h5>
         </div>
       </div>
     <?php endwhile; ?>

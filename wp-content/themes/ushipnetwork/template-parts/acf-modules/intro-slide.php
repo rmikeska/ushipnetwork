@@ -4,7 +4,7 @@
     <div class="introSlide-text"><?php the_sub_field('intro_slide_subhead'); ?></div>
     <?php while(have_rows('intro_slide_cta')): the_row(); ?>
       <?php $slide_cta_url = get_sub_field('intro_slide_cta_url'); ?>
-      <a class="introSlide-cta button buttonSecondary buttonSmall" type="button" aria-label="<?php the_sub_field('intro_slide_cta_text'); ?>" href="<?php echo $slide_cta_url; ?>">
+      <a class="introSlide-cta button buttonSecondary buttonSmall" type="button" aria-label="<?php the_sub_field('intro_slide_cta_text'); ?>" href="<?php echo $slide_cta_url; ?>" onclick="<?php the_sub_field('intro_slide_cta_onclick'); ?>">
         <div class="button-content"><?php the_sub_field('intro_slide_cta_text'); ?></div>
       </a>
     <?php endwhile; ?>

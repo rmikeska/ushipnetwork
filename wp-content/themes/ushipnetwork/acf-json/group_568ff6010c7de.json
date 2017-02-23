@@ -628,11 +628,11 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "collapsed": "",
                             "min": 0,
                             "max": 1,
                             "layout": "table",
                             "button_label": "Add Tertiary Callout",
-                            "collapsed": "",
                             "sub_fields": [
                                 {
                                     "key": "field_5762c956401c4",
@@ -696,6 +696,25 @@
                                     "maxlength": "",
                                     "readonly": 0,
                                     "disabled": 0
+                                },
+                                {
+                                    "key": "field_58af4e9d38e75",
+                                    "label": "Callout Link onclick Event",
+                                    "name": "hero_tertiary_callout_url_onclick",
+                                    "type": "text",
+                                    "instructions": "Optional. Input only the contents between the onclick attribute parenthesis (onclick=\"\"). Example input: goog_report_conversion ('http:\/\/example.com\/your-link')",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
                                 }
                             ]
                         },
@@ -712,11 +731,11 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "collapsed": "",
                             "min": 0,
                             "max": 1,
                             "layout": "table",
                             "button_label": "Add Co-branded Strip",
-                            "collapsed": "",
                             "sub_fields": [
                                 {
                                     "key": "field_57d9d443180bb",
@@ -895,5 +914,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1487882464
+    "modified": 1487884000
 }

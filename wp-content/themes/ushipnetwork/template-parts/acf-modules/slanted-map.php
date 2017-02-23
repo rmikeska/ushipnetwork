@@ -16,7 +16,7 @@
       <div class="slantedMap-copy-block-text"><?php the_sub_field('slanted_map_copy_block_text'); ?></div>
       <?php while(have_rows('slanted_map_copy_cta')): the_row(); ?>
         <?php $cta_url = get_sub_field('slanted_map_copy_cta_url'); ?>
-        <a class="slantedMap-cta button buttonSecondary buttonLarge" type="button" aria-label="<?php the_sub_field('slanted_map_copy_cta_text'); ?>" href="<?php echo $cta_url; ?>">
+        <a class="slantedMap-cta button buttonSecondary buttonLarge" type="button" aria-label="<?php the_sub_field('slanted_map_copy_cta_text'); ?>" href="<?php echo $cta_url; ?>" onclick="<?php the_sub_field('slanted_map_copy_cta_onclick'); ?>">
           <div class="button-content"><?php the_sub_field('slanted_map_copy_cta_text'); ?></div>
         </a>
       <?php endwhile; ?>
@@ -30,7 +30,7 @@
   <div class="slantedMap-copy-block-text"><?php the_sub_field('slanted_map_copy_block_text'); ?></div>
   <?php while(have_rows('slanted_map_copy_cta')): the_row(); ?>
     <?php $cta_url = get_sub_field('slanted_map_copy_cta_url'); ?>
-    <a class="slantedMap-cta button buttonSecondary buttonLarge" type="button" aria-label="<?php the_sub_field('slanted_map_copy_cta_text'); ?>" href="<?php echo $cta_url; ?>">
+    <a class="slantedMap-cta button buttonSecondary buttonLarge" type="button" aria-label="<?php the_sub_field('slanted_map_copy_cta_text'); ?>" href="<?php echo $cta_url; ?>" onclick="<?php the_sub_field('slanted_map_copy_cta_onclick'); ?>">
       <div class="button-content"><?php the_sub_field('slanted_map_copy_cta_text'); ?></div>
     </a>
   <?php endwhile; ?>

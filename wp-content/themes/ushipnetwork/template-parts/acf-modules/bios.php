@@ -11,7 +11,7 @@
         <?php while(have_rows('bios_content')): the_row(); ?>
           <?php $bios_image = get_sub_field('bios_image'); ?>
           <?php $bios_link_url = get_sub_field('bios_link_url'); ?>
-          <a class="bios-block" target="_blank" href="<?php echo $bios_link_url; ?>">
+          <a class="bios-block" target="_blank" href="<?php echo $bios_link_url; ?>" onclick="<?php the_sub_field('bios_link_onclick'); ?>">
             <img class="bios-image" src="<?php echo $bios_image['url']; ?>">
             <p class="bios-name"><?php the_sub_field('bios_name'); ?></p>
             <?php if(get_sub_field('bios_description')): ?>
