@@ -11,7 +11,7 @@
 
 
 <?php if ($query_string = get_field('add_query_string')): ?>
-  <!-- If a query sting field value is set, append value to all uship domain page links -->
+<!-- If a query sting field value is set, append value to all uship domain page links -->
   <script type="text/javascript">
     jQuery(document).ready(function ($) {
       var acfQueryString = '<?php echo $query_string; ?>';
@@ -34,3 +34,9 @@
 <?php include("acf-modules/body-content.php");?>
 </div>
 <?php include("acf-modules/bottom-content.php");?>
+
+
+<?php if ($script_content = get_field('script_content')): ?>
+<!-- Add ACF custom js code  -->
+    <?php echo $script_content; ?>
+<?php endif; ?>
