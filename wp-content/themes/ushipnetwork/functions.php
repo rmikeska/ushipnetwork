@@ -326,13 +326,11 @@ add_action('wp_footer', 'add_googleanalytics');
  * Add ACF Options Page
  */
 if( function_exists('acf_add_options_page') ) {
-
   acf_add_options_page(array(
     'page_title'  => 'Localization',
     'menu_title'  => 'Localization',
     'menu_slug'   => 'localization'
   ));
-
 }
 
 
@@ -467,7 +465,6 @@ add_action( 'wp_before_admin_bar_render', 'change_site_names' );
  * Add message to the top of the admin to show current multisite path
  */
 function display_current_site_path() {
-
   if ( is_multisite() ) {
     $current_site = get_blog_details();
     $current_path = $current_site->path;
@@ -492,3 +489,15 @@ function collapse_acf_fields() {
   <?php
 }
 add_action('acf/input/admin_head', 'collapse_acf_fields');
+
+
+
+/*
+ * Add Optimizely script to campaigns.uship.com
+ */
+function add_optimizely_script() {
+  if ( network_home_url() == 'https://campaigns.uship.com/' ) {
+    wp_enqueue_script( 'optimizely', 'https://cdn.optimizely.com/js/172893921.js', array(), '20170224', false );
+  }
+}
+add_action( 'wp_enqueue_scripts', 'add_optimizely_script' );
