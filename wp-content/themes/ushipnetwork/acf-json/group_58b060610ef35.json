@@ -1,0 +1,50 @@
+{
+    "key": "group_58b060610ef35",
+    "title": "Custom JS",
+    "fields": [
+        {
+            "key": "field_58b060683cdf1",
+            "label": "Script Content",
+            "name": "script_content",
+            "type": "textarea",
+            "instructions": "BE CAREFUL. There is no validation built into this field. After adding your script(s), preview the changes and check the console log for errors. If adding jQuery, wrap it in jQuery(document).ready(function ($) {    })",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 10,
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1487958574
+}
