@@ -76,6 +76,10 @@
 
       <?php include("dual-image.php");?>
 
+    <?php elseif (get_row_layout() == 'steps'): ?>
+
+      <?php include("steps.php");?>
+
     <?php endif; ?>
   <?php endwhile; ?>
 <?php endif; ?>

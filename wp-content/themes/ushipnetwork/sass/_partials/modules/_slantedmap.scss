@@ -249,3 +249,25 @@
     margin-bottom: 50px; // Not ideal, but adding this in order to get around the negative border fix for anchor linking to sections with our fixed header. This gives enough margin for the cta to be clickable.
   }
 }
+
+ul.checklist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline-flex;
+    align-items: center;
+
+    &:before {
+      content:'';
+      display:inline-block;
+      margin-right: 15px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMyNjI2MjYiIGQ9Ik03LjUxIDIxLjFMLjYzIDE0LjI4YTIuMTUgMi4xNSAwIDAgMSAwLTNsLjU5LS41OWEyLjE1IDIuMTUgMCAwIDEgMyAwbDQuMjcgNC4xN0wxOS40MSAzYTIuMTUgMi4xNSAwIDAgMSAzLS4xNGwuODguNzVhMi4xNSAyLjE1IDAgMCAxIC4xNiAzTDEwLjYzIDIxYTIuMTUgMi4xNSAwIDAgMS0zLjEyLjF6Ij48L3BhdGg+PC9zdmc+');
+      min-width: 22px;
+      min-height: 22px;
+    }
+  }
+}

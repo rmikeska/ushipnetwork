@@ -1256,8 +1256,8 @@
                             "label": "Intro Text",
                             "name": "logo_pile_intro",
                             "type": "text",
-                            "instructions": "",
-                            "required": 1,
+                            "instructions": "Optional.",
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -1677,6 +1677,120 @@
                     "max": ""
                 },
                 {
+                    "key": "58b5b39a34ede",
+                    "name": "steps",
+                    "label": "Steps",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_58b5b3cd34edf",
+                            "label": "Section ID",
+                            "name": "steps_id",
+                            "type": "text",
+                            "instructions": "Optional. Enter in the desired id for this page section. This allows for deep linking directly to this section via a '#' appended to the URL. Lowercase, alphanumeric characters and dashes only. Make the id concise and relevant to this section's content. Example input: \"our-team\" allows for a link to the section as: about.uship.com\/#our-team",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_58b5b43034ee0",
+                            "label": "Background Color",
+                            "name": "steps_background_color",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "sectionWhite": "White",
+                                "sectionGrey": "Grey",
+                                "sectionNavy": "Navy"
+                            },
+                            "default_value": [],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_58b5b47a34ee1",
+                            "label": "Intro",
+                            "name": "steps_intro",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_58b5b48a34ee2",
+                            "label": "Step Item",
+                            "name": "steps_item",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 1,
+                            "max": 0,
+                            "layout": "table",
+                            "button_label": "Add Step",
+                            "sub_fields": [
+                                {
+                                    "key": "field_58b5b4dc34ee3",
+                                    "label": "Text",
+                                    "name": "steps_item_text",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "basic",
+                                    "media_upload": 0,
+                                    "delay": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
                     "key": "565e0ce12706e",
                     "name": "strip_copy_callout",
                     "label": "Strip Copy Callout",
@@ -1953,8 +2067,8 @@
                                 "id": ""
                             },
                             "collapsed": "",
-                            "min": 2,
-                            "max": 2,
+                            "min": 1,
+                            "max": 0,
                             "layout": "row",
                             "button_label": "Add Testimonial",
                             "sub_fields": [
@@ -2443,8 +2557,8 @@
                                     "label": "Image",
                                     "name": "thumbnail_grid_image",
                                     "type": "image",
-                                    "instructions": "",
-                                    "required": 1,
+                                    "instructions": "Optional.",
+                                    "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
                                         "width": "",
@@ -2725,7 +2839,7 @@
                             "collapsed": "",
                             "min": 1,
                             "max": 4,
-                            "layout": "table",
+                            "layout": "row",
                             "button_label": "Add Value Prop",
                             "sub_fields": [
                                 {
@@ -2742,14 +2856,16 @@
                                         "id": ""
                                     },
                                     "choices": {
+                                        "icon_4stars": "4 Stars",
                                         "icon_circledcheck": "Circled Check",
                                         "icon_circleddiagonalarrow": "Circled Diagonal Arrow",
                                         "icon_creditcard": "Credit Card",
-                                        "icon_shieldcheck": "Shield Check",
                                         "icon_desktop": "Desktop",
                                         "icon_frontfacingtruck": "Front Facing Truck",
+                                        "icon_phone": "Phone",
                                         "icon_newspaper": "Newspaper",
-                                        "icon_rotatingarrows": "Rotating Arrows"
+                                        "icon_rotatingarrows": "Rotating Arrows",
+                                        "icon_shieldcheck": "Shield Check"
                                     },
                                     "default_value": [],
                                     "allow_null": 0,
@@ -2777,6 +2893,25 @@
                                     "prepend": "",
                                     "append": "",
                                     "maxlength": ""
+                                },
+                                {
+                                    "key": "field_58b45850cc6b4",
+                                    "label": "Text",
+                                    "name": "value_props_item_text",
+                                    "type": "wysiwyg",
+                                    "instructions": "Optional.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "basic",
+                                    "media_upload": 0,
+                                    "delay": 0
                                 },
                                 {
                                     "key": "field_57e2b038560b5",
@@ -3073,5 +3208,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1487959294
+    "modified": 1488303606
 }

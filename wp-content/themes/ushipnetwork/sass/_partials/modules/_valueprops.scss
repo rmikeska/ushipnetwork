@@ -47,10 +47,15 @@
 }
 
 .valueProps-item-text {
-  text-transform: uppercase;
-  font-weight: $font-bold;
+  max-width: 150px;
+
+  @media only screen and (max-width: 940px) {
+    max-width: 100%;
+  }
 
   h5 {
+    text-transform: uppercase;
+    font-weight: $font-bold;
     color: $white;
     line-height: 1;
     font-size: 11px;
@@ -60,5 +65,12 @@
   & h5:first-child {
     padding-bottom: 3px;
     line-height: 12px;
+  }
+
+  div {
+    padding-bottom: 5px;
+    color: $white;
+    font-size: 11px;
+    line-height: 20px;
   }
 }

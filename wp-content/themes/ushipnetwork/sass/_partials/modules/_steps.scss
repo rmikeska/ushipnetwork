@@ -1,0 +1,42 @@
+.steps-container {
+  @include container(1200px, 50px, 0);
+  overflow: hidden;
+  width: 100%;
+}
+
+.steps-intro {
+  padding-bottom: 30px;
+  font-size: 34px;
+  text-align: center;
+  color: $white;
+}
+
+.steps-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: $white;
+}
+
+.steps-list-item {
+  display: inline-flex;
+  counter-increment: item;
+  width: 250px;
+  min-width: 250px;
+  margin: 0 60px 50px;
+  line-height: 30px;
+
+  @media only screen and (max-width: 480px) {
+    width: 100%;
+    min-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  &:before {
+    content: counter(item);
+    font-weight: bold;
+    margin-right: 20px;
+    font-size: 18px;
+  }
+}

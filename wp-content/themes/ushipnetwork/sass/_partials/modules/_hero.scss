@@ -87,6 +87,26 @@
   text-shadow: $base-text-shadow;
 }
 
+.hero-cta {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  @media #{$default-break} {
+    flex-direction: column;
+  }
+
+  .buttonPrimary:nth-of-type(2) {
+    margin-left: 30px;
+
+    @media #{$default-break} {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+}
+
 .hero-cta-secondary {
   padding-top: 85px;
 

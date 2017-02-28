@@ -1,10 +1,10 @@
 /*** Testimonials ***/
 
 .testimonials-container {
-  @include container(1070px, 85px, 85px);
+  @include container(1140px, 85px, 0);
 
   @media #{$default-break} {
-    @include container(100%, 60px, 60px);
+    @include container(100%, 60px, 0);
   }
 }
 
@@ -25,27 +25,22 @@
 
 .testimonials-row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-
-  @media #{$default-break} {
-    flex-direction: column;
-  }
 }
 
 .testimonials-block {
-  width: 50%;
+  margin: 0 35px 85px;
+  min-width: 500px;
+  width: 500px;
 
-  @media #{$default-break} {
+  @media only screen and (max-width: 600px) {
+    min-width: 100%;
     width: 100%;
   }
 
-  &:not(:last-child) {
-    margin-right: 70px;
-
-    @media #{$default-break} {
-      margin-right: 0;
-      margin-bottom: 60px;
-    }
+  .tertiaryLink {
+    margin-top: 35px;
   }
 }
 
@@ -61,14 +56,8 @@
 }
 
 .testimonials-text {
-  padding: 0 0 35px;
   font-size: 16px;
   line-height: 30px;
-
-  @media #{$default-break} {
-    padding: 10px 0;
-    text-align: center;
-  }
 
   h6 {
     text-transform: uppercase;
