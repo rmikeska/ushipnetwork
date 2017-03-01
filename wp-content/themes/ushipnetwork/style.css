@@ -1228,6 +1228,7 @@ article.category-press-release {
   article.category-press-release + section.relatedPosts .post-featureImage-link {
     display: none; }
 
+/*** Archive ***/
 .archive-content .page-header {
   padding-top: 35px; }
 .archive-content .page-title {
@@ -1249,6 +1250,7 @@ article.category-press-release {
   .archive-content .pagination .screen-reader-text {
     display: none; }
 
+/*** Tabbed Page ***/
 .tabbedPageMenu {
   max-width: calc(100% + 15px*2);
   margin-left: auto;
@@ -3165,6 +3167,7 @@ ul.checklist {
     font-weight: 700;
     font-size: 18px; }
 
+/*** Press ***/
 .pressStrip-container {
   max-width: calc(1030px + 15px*2);
   margin-left: auto;
@@ -3223,6 +3226,7 @@ ul.checklist {
 .post-time {
   color: #999999; }
 
+/*** Careers ***/
 .careersListings #resumator-logo {
   display: none; }
 .careersListings #resumator-wrapper {
@@ -3632,6 +3636,7 @@ ul.checklist {
     .splitScreen-strip.stripFontSmall .splitScreen-strip-headline {
       font-size: 16px; } }
 
+/*** Intro Slide ***/
 .introSlide-container {
   max-width: calc(780px + 15px*2);
   margin-left: auto;
@@ -3810,6 +3815,7 @@ ul.checklist {
   -webkit-animation-delay: 3s;
           animation-delay: 3s; }
 
+/*** Icon Bullet Points ***/
 .iconBulletPoints {
   background-color: #F4F4F4; }
 
@@ -3884,6 +3890,7 @@ ul.checklist {
 .iconBulletPoints-body p {
   line-height: 30px; }
 
+/*** Tertiary Callout ***/
 .tertiaryCallout {
   background: #F4F4F4;
   border-top: 1px solid #dddddd; }
@@ -4048,7 +4055,7 @@ ul.checklist {
   width: 100%;
   height: auto; }
 
-/*** Video Feature ***/
+/*** Video ***/
 .videoFeature-container {
   max-width: calc(1080px + 15px*2);
   margin-left: auto;
@@ -4307,6 +4314,7 @@ ul.checklist {
     font-weight: 700;
     font-size: 18px; }
 
+/*** Footnote ***/
 .footnote {
   background-color: #F4F4F4;
   border-top: 1px solid #dddddd; }
@@ -4331,6 +4339,7 @@ ul.checklist {
   line-height: 20px;
   color: #999999; }
 
+/*** Text Columns ***/
 .textColumns-container {
   max-width: calc(1100px + 15px*2);
   margin-left: auto;
@@ -4402,6 +4411,7 @@ ul.checklist {
 .textColumns-group-item-content {
   line-height: 30px; }
 
+/*** Text Block ***/
 .textBlock-container {
   max-width: calc(820px + 15px*2);
   margin-left: auto;
@@ -4495,6 +4505,7 @@ ul.checklist {
     .dualImage-caption {
       padding-top: 25px; } }
 
+/*** Steps ***/
 .steps-container {
   max-width: calc(1200px + 15px*2);
   margin-left: auto;
