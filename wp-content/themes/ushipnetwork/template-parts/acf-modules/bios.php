@@ -9,10 +9,12 @@
     <div class="bios-group">
       <div class="bios-group-container">
         <?php while(have_rows('bios_content')): the_row(); ?>
-          <?php $bios_image = get_sub_field('bios_image'); ?>
           <?php $bios_link_url = get_sub_field('bios_link_url'); ?>
+          <?php $bios_image_object = get_sub_field('bios_image'); ?>
+          <?php $bios_image_size = 'bios-thumb'; ?>
+          <?php $bios_image_url = $bios_image_object['sizes'][$bios_image_size]; ?>
           <a class="bios-block" target="_blank" href="<?php echo $bios_link_url; ?>" onclick="<?php the_sub_field('bios_link_onclick'); ?>">
-            <img class="bios-image" src="<?php echo $bios_image['url']; ?>">
+            <img class="bios-image" src="<?php echo $bios_image_url; ?>">
             <p class="bios-name"><?php the_sub_field('bios_name'); ?></p>
             <?php if(get_sub_field('bios_description')): ?>
               <div class="bios-description"><?php the_sub_field('bios_description'); ?></div>
