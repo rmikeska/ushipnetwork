@@ -47,7 +47,6 @@ function ushipnetwork_setup() {
 	add_image_size( 'post-thumb', 300, 200, true );
 	add_image_size( 'post-feature', 790, 526, true );
   add_image_size( 'testimonials-thumb', 380, 254, true );
-
   add_image_size( 'bios-thumb', 192, 192, true );
 
 	// This theme uses wp_nav_menu() in one location.
@@ -123,7 +122,7 @@ add_action( 'widgets_init', 'ushipnetwork_widgets_init' );
  * Enqueue scripts and styles.
  */
 function ushipnetwork_scripts() {
-	wp_enqueue_style( 'ushipnetwork-style', get_stylesheet_uri(), array(), '20170302-1', 'all' );
+	wp_enqueue_style( 'ushipnetwork-style', get_stylesheet_uri(), array(), '20170302', 'all' );
 
 	wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/lib/jquery-2.2.0.min.js', array(), '20160121', true );
 

@@ -13,7 +13,6 @@
           <?php $bios_image_object = get_sub_field('bios_image'); ?>
           <?php $bios_image_size = 'bios-thumb'; ?>
           <?php $bios_image_url = $bios_image_object['sizes'][$bios_image_size]; ?>
-
           <a class="bios-block" target="_blank" href="<?php echo $bios_link_url; ?>" onclick="<?php the_sub_field('bios_link_onclick'); ?>">
             <img class="bios-image" src="<?php echo $bios_image_url; ?>">
             <p class="bios-name"><?php the_sub_field('bios_name'); ?></p>
